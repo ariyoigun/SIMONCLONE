@@ -18,6 +18,11 @@ $db_user = 'u123456789_user';         // Ganti dengan Nama Pengguna Database And
 $db_pass = 'PasswordRahasiaAnda123!'; // Ganti dengan Kata Sandi Database Anda
 $db_port = '3306';
 
+// Memuat kredensial lokal Hostinger jika ada file config.local.php (Aman dari overwrite Git)
+if (file_exists(__DIR__ . '/config.local.php')) {
+    require __DIR__ . '/config.local.php';
+}
+
 // Header CORS & Format Output JSON
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');

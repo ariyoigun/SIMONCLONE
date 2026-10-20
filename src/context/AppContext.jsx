@@ -364,6 +364,26 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const syncUserToRemote = async (user) => {
+    try {
+      await fetch('/api/api.php?action=save_user', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(user)
+      });
+    } catch (e) {
+      // offline fallback
+    }
+  };
+
+  const deleteUserFromRemote = async (userId) => {
+    try {
+      await fetch(`/api/api.php?action=delete_user&id=${encodeURIComponent(userId)}`);
+    } catch (e) {
+      // offline fallback
+    }
+  };
+
   const showToast = (message, type = 'success') => {
     setToast({ message, type, id: Date.now() });
     setTimeout(() => {
@@ -437,10 +457,12 @@ export const AppProvider = ({ children }) => {
     };
     setUsers((prev) => [...prev, newUser]);
     showToast(`Pengguna baru ${newUser.nama} berhasil ditambahkan!`, 'success');
+    syncUserToRemote(newUser);
     return true;
   };
 
   const updateUser = (userId, updatedData) => {
+    let updatedUserObj = null;
     setUsers((prev) =>
       prev.map((u) => {
         if (u.id === userId) {
@@ -449,6 +471,7 @@ export const AppProvider = ({ children }) => {
           if (!updatedData.password) {
             merged.password = u.password || 'pupr2025';
           }
+          updatedUserObj = merged;
           return merged;
         }
         return u;
@@ -464,6 +487,9 @@ export const AppProvider = ({ children }) => {
       });
     }
     showToast('Data pengguna & kredensial berhasil diperbarui!', 'success');
+    if (updatedUserObj) {
+      syncUserToRemote(updatedUserObj);
+    }
     return true;
   };
 
@@ -478,6 +504,7 @@ export const AppProvider = ({ children }) => {
     }
     setUsers((prev) => prev.filter((u) => u.id !== userId));
     showToast('Pengguna berhasil dihapus.', 'info');
+    deleteUserFromRemote(userId);
     return true;
   };
 
@@ -715,10 +742,11 @@ export const AppProvider = ({ children }) => {
 
   // Update SPJ Status for a Project
   const updateSPJStatus = (projectId, spjData) => {
+    let updatedTarget = null;
     setProjects((prev) =>
       prev.map((p) => {
         if (p.id !== projectId) return p;
-        return {
+        const merged = {
           ...p,
           administrasiSPJ: {
             ...p.administrasiSPJ,
@@ -729,9 +757,14 @@ export const AppProvider = ({ children }) => {
           updatedAt: new Date().toLocaleString('id-ID'),
           updatedBy: currentUser.nama
         };
+        updatedTarget = merged;
+        return merged;
       })
     );
     showToast(`Status berkas SPJ pekerjaan ${projectId} berhasil diperbarui!`, 'success');
+    if (updatedTarget) {
+      syncProjectToRemote(updatedTarget);
+    }
     return true;
   };
 

@@ -52,7 +52,7 @@ if ($action === 'load_all') {
         }
 
         // Ambil Users
-        $stmtUsers = $pdo->query("SELECT id, username, nama, nip, jabatan, role, bidang_id AS bidangId, email, avatar FROM users ORDER BY id ASC");
+        $stmtUsers = $pdo->query("SELECT id, username, password, nama, nip, jabatan, role, bidang_id AS bidangId, email, avatar FROM users ORDER BY id ASC");
         $users = $stmtUsers->fetchAll();
 
         // Ambil Master Tags
@@ -325,6 +325,71 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
         ]);
 
         echo json_encode(['status' => 'success', 'message' => 'Pengaturan sistem & pimpinan dinas tersimpan']);
+    } catch (Exception $e) {
+        http_response_code(500);
+        echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
+    }
+    exit;
+}
+
+// 6. SIMPAN PENGGUNA (SAVE USER)
+if ($action === 'save_user' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    $u = json_decode(file_get_contents('php://input'), true);
+    if (!$u || empty($u['id']) || empty($u['nama'])) {
+        http_response_code(400);
+        echo json_encode(['status' => 'error', 'message' => 'Data pengguna tidak lengkap']);
+        exit;
+    }
+
+    try {
+        $sql = "INSERT INTO users (id, username, password, nama, nip, jabatan, role, bidang_id, email, avatar)
+            VALUES (:id, :username, :password, :nama, :nip, :jabatan, :role, :bidang_id, :email, :avatar)
+            ON DUPLICATE KEY UPDATE
+            username = VALUES(username),
+            password = IF(VALUES(password) != '', VALUES(password), password),
+            nama = VALUES(nama),
+            nip = VALUES(nip),
+            jabatan = VALUES(jabatan),
+            role = VALUES(role),
+            bidang_id = VALUES(bidang_id),
+            email = VALUES(email),
+            avatar = VALUES(avatar)";
+
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            ':id' => $u['id'],
+            ':username' => $u['username'] ?? (!empty($u['email']) ? explode('@', $u['email'])[0] : 'user_' . substr(time(), -4)),
+            ':password' => $u['password'] ?? 'pupr2025',
+            ':nama' => $u['nama'],
+            ':nip' => $u['nip'] ?? '',
+            ':jabatan' => $u['jabatan'] ?? '',
+            ':role' => $u['role'] ?? 'koordinator',
+            ':bidang_id' => !empty($u['bidangId']) ? $u['bidangId'] : null,
+            ':email' => $u['email'] ?? '',
+            ':avatar' => $u['avatar'] ?? null
+        ]);
+
+        echo json_encode(['status' => 'success', 'message' => 'Data pengguna berhasil disimpan ke database']);
+    } catch (Exception $e) {
+        http_response_code(500);
+        echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
+    }
+    exit;
+}
+
+// 7. HAPUS PENGGUNA (DELETE USER)
+if ($action === 'delete_user') {
+    $id = $_GET['id'] ?? '';
+    if (empty($id)) {
+        http_response_code(400);
+        echo json_encode(['status' => 'error', 'message' => 'ID pengguna diperlukan']);
+        exit;
+    }
+
+    try {
+        $stmt = $pdo->prepare("DELETE FROM users WHERE id = :id");
+        $stmt->execute([':id' => $id]);
+        echo json_encode(['status' => 'success', 'message' => 'Pengguna berhasil dihapus dari database']);
     } catch (Exception $e) {
         http_response_code(500);
         echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);

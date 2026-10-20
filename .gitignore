@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+*.local.php
+config.local.php
 *.zip
 
 # Editor directories and files
