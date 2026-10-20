@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Trigger otomatis setiap push ke branch main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -24,7 +27,18 @@ jobs:
       - name: 🏗️ 4. Build Production Bundle
         run: npm run build
 
-      - name: 🚀 5. Deploy to Hostinger via FTP
+      - name: 🌐 5. Update production branch for Hostinger Git
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: production
+          publish_dir: ./dist
+          force_orphan: true
+
+      - name: 🚀 6. Deploy via FTP (Optional jika Secrets FTP diisi)
+        if: "${{ env.FTP_SERVER != '' }}"
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
