@@ -47,8 +47,16 @@ if ($action === 'load_all') {
         // Ambil System Settings
         $stmtSettings = $pdo->query("SELECT * FROM system_settings WHERE id = 1 LIMIT 1");
         $settings = $stmtSettings->fetch();
-        if ($settings && !empty($settings['galeri_json'])) {
-            $settings['galeri'] = json_decode($settings['galeri_json'], true);
+        if ($settings) {
+            if (!empty($settings['galeri_json'])) {
+                $settings['galeri'] = json_decode($settings['galeri_json'], true);
+            }
+            if (!empty($settings['custom_texts_json'])) {
+                $settings['customTexts'] = json_decode($settings['custom_texts_json'], true);
+            }
+            if (!empty($settings['bidang_descriptions_json'])) {
+                $settings['bidangDescriptions'] = json_decode($settings['bidang_descriptions_json'], true);
+            }
         }
 
         // Ambil Users
@@ -285,27 +293,7 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     try {
-        $sql = "UPDATE system_settings SET
-            nama_sistem = :nama_sistem,
-            instansi = :instansi,
-            pemerintah_daerah = :pemerintah_daerah,
-            alamat = :alamat,
-            telepon = :telepon,
-            email = :email,
-            website = :website,
-            nama_kepala_dinas = :nama_kepala_dinas,
-            nip_kepala_dinas = :nip_kepala_dinas,
-            pangkat_kepala_dinas = :pangkat_kepala_dinas,
-            jabatan_kepala_dinas = :jabatan_kepala_dinas,
-            nama_sekretaris = :nama_sekretaris,
-            nip_sekretaris = :nip_sekretaris,
-            pangkat_sekretaris = :pangkat_sekretaris,
-            jabatan_sekretaris = :jabatan_sekretaris,
-            max_public_highlights = :max_public_highlights
-            WHERE id = 1";
-
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([
+        $params = [
             ':nama_sistem' => $input['namaSistem'] ?? 'SIMON - SATUPUTARU',
             ':instansi' => $input['instansi'] ?? 'Dinas Pekerjaan Umum dan Penataan Ruang',
             ':pemerintah_daerah' => $input['pemerintahDaerah'] ?? 'Pemerintah Kabupaten Demak',
@@ -322,7 +310,59 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             ':pangkat_sekretaris' => $input['pangkatSekretaris'] ?? '',
             ':jabatan_sekretaris' => $input['jabatanSekretaris'] ?? '',
             ':max_public_highlights' => (int)($input['maxPublicHighlights'] ?? 10)
-        ]);
+        ];
+
+        try {
+            $sql = "UPDATE system_settings SET
+                nama_sistem = :nama_sistem,
+                instansi = :instansi,
+                pemerintah_daerah = :pemerintah_daerah,
+                alamat = :alamat,
+                telepon = :telepon,
+                email = :email,
+                website = :website,
+                nama_kepala_dinas = :nama_kepala_dinas,
+                nip_kepala_dinas = :nip_kepala_dinas,
+                pangkat_kepala_dinas = :pangkat_kepala_dinas,
+                jabatan_kepala_dinas = :jabatan_kepala_dinas,
+                nama_sekretaris = :nama_sekretaris,
+                nip_sekretaris = :nip_sekretaris,
+                pangkat_sekretaris = :pangkat_sekretaris,
+                jabatan_sekretaris = :jabatan_sekretaris,
+                max_public_highlights = :max_public_highlights,
+                custom_texts_json = :custom_texts_json,
+                bidang_descriptions_json = :bidang_descriptions_json
+                WHERE id = 1";
+
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(array_merge($params, [
+                ':custom_texts_json' => !empty($input['customTexts']) ? json_encode($input['customTexts']) : null,
+                ':bidang_descriptions_json' => !empty($input['bidangDescriptions']) ? json_encode($input['bidangDescriptions']) : null
+            ]));
+        } catch (Exception $colEx) {
+            // Fallback jika kolom json belum ditambahkan ke tabel
+            $sql = "UPDATE system_settings SET
+                nama_sistem = :nama_sistem,
+                instansi = :instansi,
+                pemerintah_daerah = :pemerintah_daerah,
+                alamat = :alamat,
+                telepon = :telepon,
+                email = :email,
+                website = :website,
+                nama_kepala_dinas = :nama_kepala_dinas,
+                nip_kepala_dinas = :nip_kepala_dinas,
+                pangkat_kepala_dinas = :pangkat_kepala_dinas,
+                jabatan_kepala_dinas = :jabatan_kepala_dinas,
+                nama_sekretaris = :nama_sekretaris,
+                nip_sekretaris = :nip_sekretaris,
+                pangkat_sekretaris = :pangkat_sekretaris,
+                jabatan_sekretaris = :jabatan_sekretaris,
+                max_public_highlights = :max_public_highlights
+                WHERE id = 1";
+
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute($params);
+        }
 
         echo json_encode(['status' => 'success', 'message' => 'Pengaturan sistem & pimpinan dinas tersimpan']);
     } catch (Exception $e) {

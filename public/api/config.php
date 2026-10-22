@@ -13,9 +13,9 @@
 
 // Konfigurasi Kredensial Database Hostinger
 $db_host = 'localhost';               // Default di Hostinger biasanya 'localhost' atau '127.0.0.1'
-$db_name = 'u123456789_simon';        // Ganti dengan Nama Database Hostinger Anda (contoh: u123456789_simon)
-$db_user = 'u123456789_user';         // Ganti dengan Nama Pengguna Database Anda
-$db_pass = 'PasswordRahasiaAnda123!'; // Ganti dengan Kata Sandi Database Anda
+$db_name = 'u490770675_simon';        // Nama Database di Hostinger (u490770675_simon)
+$db_user = 'u490770675_simonadmin';   // Nama Pengguna Database di Hostinger (u490770675_simonadmin)
+$db_pass = 'PasswordRahasiaAnda123!'; // Ganti dengan Kata Sandi Database yang Anda buat di Hostinger
 $db_port = '3306';
 
 // Memuat kredensial lokal Hostinger jika ada file config.local.php (Aman dari overwrite Git)

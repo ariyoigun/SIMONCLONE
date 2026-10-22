@@ -39,6 +39,8 @@ CREATE TABLE IF NOT EXISTS `system_settings` (
   `jabatan_sekretaris` varchar(150) NOT NULL DEFAULT 'Sekretaris DINPUTARU',
   `max_public_highlights` int(11) NOT NULL DEFAULT 10,
   `galeri_json` longtext DEFAULT NULL,
+  `custom_texts_json` longtext DEFAULT NULL,
+  `bidang_descriptions_json` longtext DEFAULT NULL,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
