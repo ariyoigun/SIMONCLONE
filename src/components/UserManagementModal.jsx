@@ -14,7 +14,9 @@ import {
   EyeOff,
   CheckCircle2,
   Lock,
-  UserCheck
+  UserCheck,
+  Camera,
+  Upload
 } from 'lucide-react';
 
 const emptyForm = {
@@ -341,20 +343,100 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                 </div>
 
                 <div className="form-group form-grid-full">
-                  <label className="form-label">URL Foto Profil / Avatar (Opsional)</label>
-                  <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-                    <img
-                      src={formData.avatar}
-                      alt="Preview"
-                      style={{ width: 38, height: 38, borderRadius: '50%', objectFit: 'cover', border: '1px solid #cbd5e1' }}
-                    />
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="https://..."
-                      value={formData.avatar}
-                      onChange={(e) => setFormData({ ...formData, avatar: e.target.value })}
-                    />
+                  <label className="form-label" style={{ fontWeight: 700, display: 'flex', alignItems: 'center', gap: 6 }}>
+                    <Camera size={15} color="#0284c7" />
+                    <span>Foto Profil Pegawai (Upload File dari Perangkat)</span>
+                  </label>
+                  <div
+                    style={{
+                      display: 'flex',
+                      gap: 16,
+                      alignItems: 'center',
+                      background: '#ffffff',
+                      border: '1.5px dashed #cbd5e1',
+                      borderRadius: 12,
+                      padding: '14px 18px'
+                    }}
+                  >
+                    <div style={{ position: 'relative', flexShrink: 0 }}>
+                      <img
+                        src={
+                          formData.avatar ||
+                          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&auto=format&fit=crop&q=80'
+                        }
+                        alt="Preview Foto Profil"
+                        style={{
+                          width: 58,
+                          height: 58,
+                          borderRadius: '50%',
+                          objectFit: 'cover',
+                          border: '2px solid #0284c7',
+                          boxShadow: '0 2px 8px rgba(2, 132, 199, 0.15)'
+                        }}
+                        onError={(e) => {
+                          e.currentTarget.src =
+                            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&auto=format&fit=crop&q=80';
+                        }}
+                      />
+                    </div>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 6, flex: 1 }}>
+                      <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+                        <label
+                          className="btn btn-primary btn-sm"
+                          style={{
+                            cursor: 'pointer',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: 6,
+                            padding: '7px 14px',
+                            fontSize: 12.5,
+                            fontWeight: 700
+                          }}
+                        >
+                          <Upload size={14} />
+                          <span>Pilih Foto dari Perangkat</span>
+                          <input
+                            type="file"
+                            accept="image/*"
+                            style={{ display: 'none' }}
+                            onChange={(e) => {
+                              const file = e.target.files?.[0];
+                              if (file) {
+                                if (file.size > 2 * 1024 * 1024) {
+                                  alert('Ukuran foto maksimal 2MB.');
+                                  return;
+                                }
+                                const reader = new FileReader();
+                                reader.onload = (event) => {
+                                  setFormData((prev) => ({ ...prev, avatar: event.target.result }));
+                                };
+                                reader.readAsDataURL(file);
+                              }
+                            }}
+                          />
+                        </label>
+
+                        {formData.avatar && (
+                          <button
+                            type="button"
+                            className="btn btn-outline btn-sm"
+                            onClick={() =>
+                              setFormData((prev) => ({
+                                ...prev,
+                                avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&auto=format&fit=crop&q=80'
+                              }))
+                            }
+                            style={{ color: '#ef4444', borderColor: '#fca5a5', fontSize: 12 }}
+                          >
+                            Reset ke Default
+                          </button>
+                        )}
+                      </div>
+                      <span style={{ fontSize: 11.5, color: '#64748b' }}>
+                        Unggah foto resmi pegawai (JPG, PNG, WEBP, maks. 2MB). Foto akan tersimpan langsung di dalam sistem.
+                      </span>
+                    </div>
                   </div>
                 </div>
 

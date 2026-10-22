@@ -22,8 +22,19 @@ import {
   Layers,
   RotateCcw,
   DollarSign,
-  Coins
+  Coins,
+  ChevronRight,
+  Sliders,
+  Type,
+  FileText,
+  Sparkles,
+  AlignLeft,
+  Check,
+  Monitor,
+  Layout,
+  Eye
 } from 'lucide-react';
+import { DEFAULT_CUSTOM_TEXTS, DEFAULT_BIDANG_DESCRIPTIONS, BIDANG_LIST } from '../data/constants';
 
 const SystemSettingsModal = ({ isOpen, onClose }) => {
   const {
@@ -104,6 +115,12 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     url: ''
   });
 
+  // Custom Texts & Bidang Descriptions State (Superadmin)
+  const [customTextsForm, setCustomTextsForm] = useState(DEFAULT_CUSTOM_TEXTS);
+  const [bidangDescForm, setBidangDescForm] = useState(DEFAULT_BIDANG_DESCRIPTIONS);
+  const [activeTextCategory, setActiveTextCategory] = useState('bidang_pelayanan');
+  // 'bidang_pelayanan' | 'landing_hero' | 'landing_seksi' | 'landing_footer' | 'panel_internal'
+
   // Sync identity and officials form with systemSettings on mount or settings change
   useEffect(() => {
     if (systemSettings) {
@@ -131,8 +148,51 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
         pangkatSekretaris: systemSettings.pangkatSekretaris || 'Pembina Tingkat I (IV/b)',
         jabatanSekretaris: (systemSettings.jabatanSekretaris || 'Sekretaris DINPUTARU').replace(/PUPR/g, 'DINPUTARU')
       });
+
+      setCustomTextsForm({
+        ...DEFAULT_CUSTOM_TEXTS,
+        ...(systemSettings.customTexts || {})
+      });
+
+      setBidangDescForm({
+        ...DEFAULT_BIDANG_DESCRIPTIONS,
+        ...(systemSettings.bidangDescriptions || {})
+      });
     }
   }, [systemSettings, isOpen]);
+
+  const handleSaveTexts = (e) => {
+    if (e) e.preventDefault();
+    updateSystemSettings({
+      customTexts: customTextsForm,
+      bidangDescriptions: bidangDescForm
+    });
+  };
+
+  const handleResetSingleText = (key) => {
+    setCustomTextsForm((prev) => ({
+      ...prev,
+      [key]: DEFAULT_CUSTOM_TEXTS[key] || ''
+    }));
+  };
+
+  const handleResetSingleBidang = (bidangId) => {
+    setBidangDescForm((prev) => ({
+      ...prev,
+      [bidangId]: DEFAULT_BIDANG_DESCRIPTIONS[bidangId] || ''
+    }));
+  };
+
+  const handleResetAllTexts = () => {
+    if (window.confirm('Apakah Anda yakin ingin mengembalikan seluruh teks dan deskripsi bidang ke pengaturan awal sistem?')) {
+      setCustomTextsForm(DEFAULT_CUSTOM_TEXTS);
+      setBidangDescForm(DEFAULT_BIDANG_DESCRIPTIONS);
+      updateSystemSettings({
+        customTexts: DEFAULT_CUSTOM_TEXTS,
+        bidangDescriptions: DEFAULT_BIDANG_DESCRIPTIONS
+      });
+    }
+  };
 
   if (!isOpen || !canManageSettings) return null;
 
@@ -212,84 +272,381 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     }
   };
 
+  const menuCategories = [
+    {
+      groupTitle: 'SISTEM & BERANDA',
+      items: [
+        {
+          id: 'identitas',
+          label: 'Identitas & Beranda',
+          sub: 'Nama, Logo & Kontak Dinas',
+          desc: 'Konfigurasi nama aplikasi SIMON, instansi dinas, logo, kontak telepon, email, serta alamat kantor dinas.',
+          icon: Globe,
+          badge: null
+        },
+        {
+          id: 'pimpinan',
+          label: 'Pimpinan Dinas',
+          sub: 'Kadin & Sekretaris Dinas',
+          desc: 'Pengaturan pejabat resmi penandatangan laporan (Kepala Dinas dan Sekretaris Dinas) termasuk NIP, pangkat, dan jabatan.',
+          icon: Award,
+          badge: null
+        },
+        {
+          id: 'galeri',
+          label: 'Slideshow Galeri Foto',
+          sub: 'Foto Landing Page Publik',
+          desc: 'Kelola foto-foto infrastruktur yang tampil pada slideshow bagian atas beranda portal publik. Bisa tambah dan hapus foto.',
+          icon: ImageIcon,
+          badge: (systemSettings?.galeri || []).length
+        }
+      ]
+    },
+    {
+      groupTitle: 'KONTEN & COPYWRITING',
+      items: [
+        {
+          id: 'teks_narasi',
+          label: 'Manajemen Teks & Narasi',
+          sub: 'Landing & Panel Internal',
+          desc: 'Ubah seluruh tulisan, narasi modul internal, dan deskripsi 4 bidang pelayanan dinas langsung tanpa coding.',
+          icon: Type,
+          badge: 'Editor'
+        }
+      ]
+    },
+    {
+      groupTitle: 'MASTER PENGADAAN',
+      items: [
+        {
+          id: 'kategori',
+          label: 'Tipe Pekerjaan',
+          sub: 'Kategori & Pengadaan',
+          desc: 'Master kategori pekerjaan teknis dan metode pemilihan penyedia (Tender, E-Katalog, Pengadaan Langsung, dll).',
+          icon: Briefcase,
+          badge: kategoriPekerjaanList.length
+        },
+        {
+          id: 'sumberdana',
+          label: 'Sumber Pendanaan',
+          sub: 'APBD, DAK, Banprov dll',
+          desc: 'Daftar master sumber anggaran pendanaan paket pekerjaan di Kabupaten Demak.',
+          icon: Coins,
+          badge: sumberDanaList.length
+        },
+        {
+          id: 'prakontrak',
+          label: 'Alur Pra-Kontrak',
+          sub: 'Tahapan Siklus PBJ',
+          desc: 'Tahapan standar siklus persiapan dan pemilihan penyedia mulai SiRUP sampai penandatanganan SPPBJ/Kontrak.',
+          icon: Clock,
+          badge: praKontrakStages.length
+        }
+      ]
+    },
+    {
+      groupTitle: 'VERIFIKASI & TAGGING',
+      items: [
+        {
+          id: 'tagging',
+          label: 'Master Tagging',
+          sub: 'Label Klasifikasi Pekerjaan',
+          desc: 'Koleksi label penanda khusus (Strategis Daerah, Prioritas Bupati, Multi-Years, Tanggap Darurat, dll).',
+          icon: Tag,
+          badge: tags.length
+        },
+        {
+          id: 'spj',
+          label: 'Status Berkas SPJ',
+          sub: 'Alur Verifikasi Keuangan',
+          desc: 'Tahapan verifikasi dan validasi kelengkapan dokumen Surat Pertanggungjawaban (SPJ) keuangan oleh verifikator.',
+          icon: Receipt,
+          badge: spjStatuses.length
+        }
+      ]
+    }
+  ];
+
+  const allMenuItems = menuCategories.flatMap((g) => g.items);
+  const activeTabInfo = allMenuItems.find((m) => m.id === activeTab) || allMenuItems[0];
+
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-dialog modal-xl" onClick={(e) => e.stopPropagation()} style={{ maxWidth: 860 }}>
-        <div className="modal-header">
-          <div>
-            <h3>Pengaturan Master & Keberlanjutan Sistem (Super Admin)</h3>
-            <p>
-              Konfigurasi identitas sistem, deskripsi, logo, galeri landing page, master tagging, alur pra-kontrak, tipe pekerjaan & pengadaan, dan status SPJ
-            </p>
+      <div
+        className="modal-dialog modal-xl"
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          maxWidth: 1100,
+          width: '96vw',
+          height: '88vh',
+          maxHeight: 860,
+          display: 'flex',
+          flexDirection: 'column',
+          padding: 0,
+          overflow: 'hidden',
+          borderRadius: 16
+        }}
+      >
+        {/* Modern Modal Header */}
+        <div
+          style={{
+            padding: '16px 24px',
+            background: '#ffffff',
+            borderBottom: '1px solid #e2e8f0',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexShrink: 0
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <div
+              style={{
+                width: 38,
+                height: 38,
+                borderRadius: 10,
+                background: 'linear-gradient(135deg, #0284c7, #0f2c59)',
+                color: '#ffffff',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 2px 8px rgba(2, 132, 199, 0.3)'
+              }}
+            >
+              <Settings size={20} />
+            </div>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <h3 style={{ fontSize: 17, fontWeight: 900, color: '#0f2c59', margin: 0 }}>
+                  Pengaturan Master & Keberlanjutan Sistem
+                </h3>
+                <span
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 800,
+                    padding: '2px 8px',
+                    borderRadius: 9999,
+                    background: '#fef3c7',
+                    color: '#92400e',
+                    border: '1px solid #fde68a'
+                  }}
+                >
+                  Super Admin Control Panel
+                </span>
+              </div>
+              <p style={{ fontSize: 12, color: '#64748b', margin: '2px 0 0' }}>
+                Pusat kendali master data, alur pra-kontrak, slideshow publik, pejabat dinas, dan parameter verifikasi SIMON DINPUTARU.
+              </p>
+            </div>
           </div>
-          <button className="btn-icon" onClick={onClose}>
+          <button className="btn-icon" onClick={onClose} style={{ borderRadius: 8 }}>
             <X size={18} />
           </button>
         </div>
 
-        {/* Tab Nav */}
-        <div style={{ padding: '0 24px', background: '#fafbfc', borderBottom: '1px solid #e2e8f0', overflowX: 'auto' }}>
-          <div className="tab-nav" style={{ marginBottom: 0, flexWrap: 'nowrap', minWidth: 'max-content' }}>
-            <button
-              className={`tab-btn ${activeTab === 'identitas' ? 'active' : ''}`}
-              onClick={() => setActiveTab('identitas')}
-            >
-              <Globe size={15} />
-              1. Identitas & Beranda
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'pimpinan' ? 'active' : ''}`}
-              onClick={() => setActiveTab('pimpinan')}
-            >
-              <Award size={15} />
-              2. Pimpinan Dinas (Kadin & Sekdin)
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'galeri' ? 'active' : ''}`}
-              onClick={() => setActiveTab('galeri')}
-            >
-              <ImageIcon size={15} />
-              3. Galeri Bangunan DINPUTARU ({(systemSettings?.galeri || []).length})
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'kategori' ? 'active' : ''}`}
-              onClick={() => setActiveTab('kategori')}
-            >
-              <Briefcase size={15} />
-              4. Tipe Pekerjaan & Pengadaan ({kategoriPekerjaanList.length})
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'sumberdana' ? 'active' : ''}`}
-              onClick={() => setActiveTab('sumberdana')}
-            >
-              <Coins size={15} />
-              5. Sumber Pendanaan ({sumberDanaList.length})
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'prakontrak' ? 'active' : ''}`}
-              onClick={() => setActiveTab('prakontrak')}
-            >
-              <Clock size={15} />
-              6. Alur Pra-Kontrak ({praKontrakStages.length})
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'tagging' ? 'active' : ''}`}
-              onClick={() => setActiveTab('tagging')}
-            >
-              <Tag size={15} />
-              7. Master Tagging ({tags.length})
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'spj' ? 'active' : ''}`}
-              onClick={() => setActiveTab('spj')}
-            >
-              <Receipt size={15} />
-              8. Status SPJ ({spjStatuses.length})
-            </button>
-          </div>
-        </div>
+        {/* 2-Column Split: Sub-menu Left Sidebar & Right Content Panel */}
+        <div style={{ display: 'flex', flex: 1, minHeight: 0, overflow: 'hidden' }}>
+          {/* LEFT SUB-MENU SIDEBAR */}
+          <aside
+            style={{
+              width: 275,
+              background: 'linear-gradient(180deg, #071527 0%, #0f2c59 100%)',
+              color: '#ffffff',
+              display: 'flex',
+              flexDirection: 'column',
+              flexShrink: 0,
+              borderRight: '1px solid rgba(255,255,255,0.1)',
+              overflowY: 'auto'
+            }}
+          >
+            <div style={{ padding: '16px 16px 10px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 7,
+                  color: '#38bdf8',
+                  fontSize: 11,
+                  fontWeight: 800,
+                  letterSpacing: 0.8,
+                  textTransform: 'uppercase'
+                }}
+              >
+                <Sliders size={13} />
+                <span>Pilih Sub-Menu Pengaturan</span>
+              </div>
+            </div>
 
-        <div className="modal-body" style={{ maxHeight: '70vh', overflowY: 'auto' }}>
+            <div style={{ padding: '12px 10px', display: 'flex', flexDirection: 'column', gap: 14 }}>
+              {menuCategories.map((group, gIdx) => (
+                <div key={gIdx}>
+                  <div
+                    style={{
+                      fontSize: 10,
+                      fontWeight: 800,
+                      color: '#93c5fd',
+                      letterSpacing: 1,
+                      textTransform: 'uppercase',
+                      padding: '4px 10px 6px'
+                    }}
+                  >
+                    {group.groupTitle}
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                    {group.items.map((item) => {
+                      const Icon = item.icon;
+                      const isActive = activeTab === item.id;
+                      return (
+                        <button
+                          key={item.id}
+                          type="button"
+                          onClick={() => setActiveTab(item.id)}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            width: '100%',
+                            padding: '9px 12px',
+                            borderRadius: 10,
+                            border: isActive ? '1px solid #38bdf8' : '1px solid transparent',
+                            background: isActive
+                              ? 'linear-gradient(135deg, rgba(14, 165, 233, 0.28), rgba(59, 130, 246, 0.16))'
+                              : 'transparent',
+                            color: isActive ? '#ffffff' : '#cbd5e1',
+                            cursor: 'pointer',
+                            textAlign: 'left',
+                            transition: 'all 0.15s ease',
+                            boxShadow: isActive ? '0 3px 10px rgba(14, 165, 233, 0.25)' : 'none'
+                          }}
+                          onMouseEnter={(e) => {
+                            if (!isActive) {
+                              e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+                              e.currentTarget.style.color = '#ffffff';
+                            }
+                          }}
+                          onMouseLeave={(e) => {
+                            if (!isActive) {
+                              e.currentTarget.style.background = 'transparent';
+                              e.currentTarget.style.color = '#cbd5e1';
+                            }
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+                            <div
+                              style={{
+                                width: 30,
+                                height: 30,
+                                borderRadius: 8,
+                                background: isActive ? 'rgba(56, 189, 248, 0.25)' : 'rgba(255,255,255,0.06)',
+                                color: isActive ? '#38bdf8' : '#94a3b8',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                flexShrink: 0
+                              }}
+                            >
+                              <Icon size={15} />
+                            </div>
+                            <div style={{ minWidth: 0 }}>
+                              <div
+                                style={{
+                                  fontSize: 12.5,
+                                  fontWeight: 700,
+                                  color: isActive ? '#ffffff' : '#e2e8f0',
+                                  lineHeight: 1.25
+                                }}
+                              >
+                                {item.label}
+                              </div>
+                              <div
+                                style={{
+                                  fontSize: 10.5,
+                                  color: isActive ? '#93c5fd' : '#94a3b8',
+                                  marginTop: 1,
+                                  whiteSpace: 'nowrap',
+                                  overflow: 'hidden',
+                                  textOverflow: 'ellipsis'
+                                }}
+                              >
+                                {item.sub}
+                              </div>
+                            </div>
+                          </div>
+
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexShrink: 0 }}>
+                            {item.badge !== null && (
+                              <span
+                                style={{
+                                  fontSize: 10,
+                                  fontWeight: 800,
+                                  padding: '1px 6px',
+                                  borderRadius: 9999,
+                                  background: isActive ? '#38bdf8' : 'rgba(255,255,255,0.12)',
+                                  color: isActive ? '#071527' : '#cbd5e1'
+                                }}
+                              >
+                                {item.badge}
+                              </span>
+                            )}
+                            <ChevronRight size={13} color={isActive ? '#38bdf8' : '#64748b'} />
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </aside>
+
+          {/* RIGHT CONTENT PANEL */}
+          <main
+            style={{
+              flex: 1,
+              minWidth: 0,
+              overflowY: 'auto',
+              padding: '24px 28px',
+              background: '#f8fafc',
+              display: 'flex',
+              flexDirection: 'column'
+            }}
+          >
+            {/* Active Sub-Menu Header Banner */}
+            <div
+              style={{
+                background: '#ffffff',
+                borderRadius: 12,
+                padding: '16px 20px',
+                border: '1px solid #e2e8f0',
+                marginBottom: 20,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+              }}
+            >
+              <div>
+                <h4 style={{ fontSize: 16, fontWeight: 800, color: '#0f2c59', margin: 0, display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <span>{activeTabInfo?.label}</span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      fontWeight: 700,
+                      padding: '2px 8px',
+                      borderRadius: 6,
+                      background: '#eff6ff',
+                      color: '#1d4ed8',
+                      border: '1px solid #bfdbfe'
+                    }}
+                  >
+                    Super Admin
+                  </span>
+                </h4>
+                <p style={{ fontSize: 12.5, color: '#64748b', margin: '4px 0 0' }}>
+                  {activeTabInfo?.desc}
+                </p>
+              </div>
+            </div>
           {/* TAB: IDENTITAS & LOGO SISTEM */}
           {activeTab === 'identitas' && (
             <div>
@@ -724,7 +1081,7 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                       <input
                         type="text"
                         className="form-control"
-                        placeholder="Contoh: Jl. Kyai Singkil, Kec. Demak"
+                        placeholder="Contoh: Jl. Kyai Jebat No. 35 Bintoro Kec. Demak"
                         value={newGalleryInput.lokasi}
                         onChange={(e) => setNewGalleryInput({ ...newGalleryInput, lokasi: e.target.value })}
                       />
@@ -1468,11 +1825,1019 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
               </div>
             </div>
           )}
+
+          {/* TAB: MANAJEMEN TEKS & NARASI (LANDING & INTERNAL PANEL) */}
+          {activeTab === 'teks_narasi' && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+              {/* Top Banner */}
+              <div
+                style={{
+                  padding: '16px 20px',
+                  background: 'linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%)',
+                  borderRadius: 14,
+                  border: '1px solid #a7f3d0',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: 12
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <div
+                    style={{
+                      width: 42,
+                      height: 42,
+                      borderRadius: 10,
+                      background: 'linear-gradient(135deg, #059669, #047857)',
+                      color: '#ffffff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 2px 8px rgba(5, 150, 105, 0.3)'
+                    }}
+                  >
+                    <Type size={22} />
+                  </div>
+                  <div>
+                    <h4 style={{ margin: 0, fontSize: 15, fontWeight: 800, color: '#065f46' }}>
+                      Editor Seluruh Teks & Narasi Sistem DINPUTARU
+                    </h4>
+                    <p style={{ margin: '3px 0 0', fontSize: 12.5, color: '#047857' }}>
+                      Ubah seluruh teks publik dan teks internal dinas langsung dari panel ini tanpa harus menyentuh source code.
+                    </p>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <button
+                    type="button"
+                    onClick={handleResetAllTexts}
+                    className="btn btn-outline"
+                    style={{
+                      fontSize: 12,
+                      padding: '6px 14px',
+                      borderRadius: 8,
+                      borderColor: '#cbd5e1',
+                      background: '#ffffff',
+                      color: '#64748b',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6
+                    }}
+                    title="Kembalikan semua teks sistem ke teks bawaan awal"
+                  >
+                    <RotateCcw size={13} />
+                    <span>Reset Semua Bawaan</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleSaveTexts}
+                    className="btn btn-primary"
+                    style={{
+                      fontSize: 12.5,
+                      padding: '7px 18px',
+                      borderRadius: 8,
+                      fontWeight: 800,
+                      background: 'linear-gradient(135deg, #0284c7, #0369a1)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      boxShadow: '0 2px 8px rgba(2, 132, 199, 0.3)'
+                    }}
+                  >
+                    <Save size={14} />
+                    <span>Simpan Perubahan Teks</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Sub-Category Pills Navigation */}
+              <div
+                style={{
+                  display: 'flex',
+                  gap: 8,
+                  overflowX: 'auto',
+                  paddingBottom: 4,
+                  borderBottom: '1px solid #e2e8f0'
+                }}
+              >
+                {[
+                  {
+                    id: 'bidang_pelayanan',
+                    label: '🏛️ 4 Bidang Pelayanan (Landing)',
+                    count: 4,
+                    hint: 'Deskripsi kartu Bina Marga, Cipta Karya, SDA-BK, Tata Ruang'
+                  },
+                  {
+                    id: 'landing_hero',
+                    label: '🌐 Landing: Hero & Header',
+                    count: 5,
+                    hint: 'Tagline, Judul Hero, Deskripsi, Tombol Aksi'
+                  },
+                  {
+                    id: 'landing_seksi',
+                    label: '⭐ Landing: Sorotan & Peta',
+                    count: 6,
+                    hint: 'Badge, Judul, Deskripsi Seksi Sorotan & Peta'
+                  },
+                  {
+                    id: 'landing_footer',
+                    label: '📜 Landing: Footer & Kedinasan',
+                    count: 2,
+                    hint: 'Deskripsi instansi footer & teks akses kedinasan ASN'
+                  },
+                  {
+                    id: 'panel_internal',
+                    label: '📊 Panel Internal: Dashboard & Modul',
+                    count: 5,
+                    hint: 'Narasi Executive Dashboard, Pra-Kontrak, Fisik, Keuangan, SPJ'
+                  }
+                ].map((cat) => {
+                  const isCatActive = activeTextCategory === cat.id;
+                  return (
+                    <button
+                      key={cat.id}
+                      type="button"
+                      onClick={() => setActiveTextCategory(cat.id)}
+                      style={{
+                        padding: '8px 16px',
+                        borderRadius: 10,
+                        border: isCatActive ? '1px solid #0284c7' : '1px solid #e2e8f0',
+                        background: isCatActive ? '#e0f2fe' : '#ffffff',
+                        color: isCatActive ? '#0369a1' : '#475569',
+                        fontSize: 12.5,
+                        fontWeight: isCatActive ? 800 : 600,
+                        cursor: 'pointer',
+                        whiteSpace: 'nowrap',
+                        transition: 'all 0.2s ease',
+                        boxShadow: isCatActive ? '0 1px 3px rgba(2, 132, 199, 0.15)' : 'none'
+                      }}
+                      title={cat.hint}
+                    >
+                      {cat.label}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* KATEGORI 1: 🏛️ DESKRIPSI 4 BIDANG PELAYANAN (LANDING PAGE) */}
+              {activeTextCategory === 'bidang_pelayanan' && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+                  {/* Seksi Header Form */}
+                  <div
+                    style={{
+                      background: '#f8fafc',
+                      borderRadius: 12,
+                      padding: '16px 20px',
+                      border: '1px solid #e2e8f0'
+                    }}
+                  >
+                    <div style={{ fontSize: 13, fontWeight: 800, color: '#0f2c59', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 6 }}>
+                      <AlignLeft size={16} color="#0284c7" />
+                      <span>Teks Pengantar Seksi 4 Bidang di Beranda Portal Publik</span>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 14 }}>
+                      <div className="form-group" style={{ marginBottom: 0 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0, fontSize: 12 }}>Badge Seksi Bidang</label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_bidang_badge')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer', padding: 0 }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control"
+                          value={customTextsForm.landing_bidang_badge || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_bidang_badge: e.target.value })}
+                          placeholder="BIDANG PELAYANAN INFRASTRUKTUR"
+                        />
+                      </div>
+
+                      <div className="form-group" style={{ marginBottom: 0 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0, fontSize: 12 }}>Judul Utama Seksi Bidang</label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_bidang_title')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer', padding: 0 }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control"
+                          value={customTextsForm.landing_bidang_title || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_bidang_title: e.target.value })}
+                          placeholder="Pembangunan Berkelanjutan di 4 Bidang Teknis"
+                        />
+                      </div>
+
+                      <div className="form-group" style={{ gridColumn: '1 / -1', marginBottom: 0 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0, fontSize: 12 }}>Deskripsi Subtitle Seksi Bidang</label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_bidang_desc')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer', padding: 0 }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <textarea
+                          rows={2}
+                          className="form-control"
+                          value={customTextsForm.landing_bidang_desc || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_bidang_desc: e.target.value })}
+                          placeholder="Setiap bidang di Dinas Pekerjaan Umum dan Penataan Ruang bertanggung jawab..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 4 Cards Bidang Pelayanan Editor */}
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+                      <div>
+                        <h5 style={{ margin: 0, fontSize: 14, fontWeight: 900, color: '#0f2c59' }}>
+                          Deskripsi Masing-Masing Kartu Bidang Pelayanan (Landing Page)
+                        </h5>
+                        <p style={{ margin: '2px 0 0', fontSize: 12, color: '#64748b' }}>
+                          Teks ini tampil langsung pada 4 kartu interaktif portal depan publik DINPUTARU.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: 16 }}>
+                      {BIDANG_LIST.filter((b) => b.id !== 'sekretariat').map((b) => {
+                        const desc = bidangDescForm[b.id] || '';
+                        return (
+                          <div
+                            key={b.id}
+                            style={{
+                              background: '#ffffff',
+                              border: `1.5px solid ${b.warna}40`,
+                              borderRadius: 14,
+                              padding: '18px 20px',
+                              boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: 12
+                            }}
+                          >
+                            {/* Card Header */}
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                                <div
+                                  style={{
+                                    padding: '5px 12px',
+                                    borderRadius: 8,
+                                    background: b.bgLight,
+                                    color: b.warna,
+                                    fontSize: 12,
+                                    fontWeight: 800,
+                                    border: `1px solid ${b.warna}33`
+                                  }}
+                                >
+                                  {b.id === 'sda_bk' ? 'SDA-BK' : b.singkatan}
+                                </div>
+                                <div>
+                                  <div style={{ fontSize: 14, fontWeight: 800, color: '#0f2c59' }}>
+                                    {b.nama}
+                                  </div>
+                                  <div style={{ fontSize: 11, color: '#64748b' }}>
+                                    Kode Bidang: <code>{b.id}</code>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <button
+                                type="button"
+                                onClick={() => handleResetSingleBidang(b.id)}
+                                className="btn-icon"
+                                title="Kembalikan narasi bawaan bidang ini"
+                                style={{
+                                  fontSize: 11,
+                                  color: '#0284c7',
+                                  padding: '4px 8px',
+                                  borderRadius: 6,
+                                  background: '#f0f9ff'
+                                }}
+                              >
+                                <RotateCcw size={12} />
+                              </button>
+                            </div>
+
+                            {/* Textarea Field */}
+                            <div className="form-group" style={{ marginBottom: 0 }}>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                                <label className="form-label" style={{ fontSize: 11.5, color: '#475569', margin: 0 }}>
+                                  Narasi Deskripsi Kartu (Landing):
+                                </label>
+                                <span style={{ fontSize: 11, color: '#94a3b8' }}>
+                                  {desc.length} Karakter
+                                </span>
+                              </div>
+                              <textarea
+                                rows={3}
+                                className="form-control"
+                                value={desc}
+                                onChange={(e) =>
+                                  setBidangDescForm({
+                                    ...bidangDescForm,
+                                    [b.id]: e.target.value
+                                  })
+                                }
+                                style={{ fontSize: 12.5, lineHeight: 1.5 }}
+                                placeholder={`Tuliskan narasi deskripsi bidang ${b.nama}...`}
+                              />
+                            </div>
+
+                            {/* Live Preview Box */}
+                            <div
+                              style={{
+                                background: '#f8fafc',
+                                borderRadius: 10,
+                                padding: '12px 14px',
+                                border: '1px dashed #cbd5e1'
+                              }}
+                            >
+                              <div style={{ fontSize: 10.5, fontWeight: 800, color: '#64748b', textTransform: 'uppercase', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <Eye size={12} />
+                                <span>Pratinjau Kartu di Landing Page</span>
+                              </div>
+                              <p style={{ fontSize: 12, color: '#334155', lineHeight: 1.5, margin: 0, fontStyle: desc ? 'normal' : 'italic' }}>
+                                {desc || '(Teks deskripsi kosong - silakan ketik di atas)'}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* KATEGORI 2: 🌐 LANDING: HERO & HEADER */}
+              {activeTextCategory === 'landing_hero' && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+                  <div
+                    style={{
+                      background: '#ffffff',
+                      borderRadius: 14,
+                      padding: '20px',
+                      border: '1px solid #e2e8f0',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.03)'
+                    }}
+                  >
+                    <h5 style={{ margin: '0 0 16px', fontSize: 14, fontWeight: 800, color: '#0f2c59', display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <Sparkles size={16} color="#f59e0b" />
+                      <span>Pengaturan Teks Bagian Utama (Hero Banner) Beranda</span>
+                    </h5>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 16 }}>
+                      {/* Tagline Hero */}
+                      <div className="form-group" style={{ gridColumn: '1 / -1' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0 }}>
+                            Badge Tagline Kecil (Atas Judul Hero)
+                          </label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_hero_tagline')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control"
+                          value={customTextsForm.landing_hero_tagline || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_hero_tagline: e.target.value })}
+                          placeholder="Transparansi Pembangunan Infrastruktur Daerah"
+                        />
+                      </div>
+
+                      {/* Judul Hero */}
+                      <div className="form-group" style={{ gridColumn: '1 / -1' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0 }}>
+                            Judul Besar Hero Banner
+                          </label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_hero_title')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control"
+                          value={customTextsForm.landing_hero_title || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_hero_title: e.target.value })}
+                          placeholder="Portal Pemantauan Progres Pekerjaan"
+                        />
+                        <span style={{ fontSize: 11.5, color: '#64748b', marginTop: 4, display: 'block' }}>
+                          Catatan: Nama Instansi Dinas akan otomatis disambung pada baris kedua judul.
+                        </span>
+                      </div>
+
+                      {/* Deskripsi Hero */}
+                      <div className="form-group" style={{ gridColumn: '1 / -1' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0 }}>
+                            Deskripsi Paragraf Hero Banner
+                          </label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_hero_desc')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <textarea
+                          rows={3}
+                          className="form-control"
+                          value={customTextsForm.landing_hero_desc || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_hero_desc: e.target.value })}
+                          placeholder="Sistem resmi keterbukaan informasi publik untuk memantau kemajuan fisik..."
+                        />
+                      </div>
+
+                      {/* Tombol 1 */}
+                      <div className="form-group">
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0 }}>
+                            Teks Tombol Aksi Utama (Kuning)
+                          </label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_hero_btn_explore')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control"
+                          value={customTextsForm.landing_hero_btn_explore || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_hero_btn_explore: e.target.value })}
+                          placeholder="Jelajahi Pekerjaan Sorotan"
+                        />
+                      </div>
+
+                      {/* Tombol 2 */}
+                      <div className="form-group">
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                          <label className="form-label" style={{ margin: 0 }}>
+                            Teks Tombol Slideshow (Outline)
+                          </label>
+                          <button
+                            type="button"
+                            onClick={() => handleResetSingleText('landing_hero_btn_slideshow')}
+                            style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                          >
+                            Reset Bawaan
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control"
+                          value={customTextsForm.landing_hero_btn_slideshow || ''}
+                          onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_hero_btn_slideshow: e.target.value })}
+                          placeholder="Lihat Slideshow Foto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Live Hero Preview */}
+                  <div
+                    style={{
+                      background: 'linear-gradient(135deg, #071527 0%, #0f2c59 100%)',
+                      borderRadius: 14,
+                      padding: '24px 28px',
+                      color: '#ffffff',
+                      boxShadow: '0 4px 16px rgba(15, 44, 89, 0.25)'
+                    }}
+                  >
+                    <div style={{ fontSize: 11, fontWeight: 800, color: '#38bdf8', textTransform: 'uppercase', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 6 }}>
+                      <Eye size={13} />
+                      <span>Pratinjau Tampilan Hero Banner di Beranda Publik</span>
+                    </div>
+
+                    <div
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: 6,
+                        padding: '4px 10px',
+                        borderRadius: 9999,
+                        background: 'rgba(255, 255, 255, 0.12)',
+                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        fontSize: 11,
+                        fontWeight: 600,
+                        color: '#fde68a',
+                        marginBottom: 10
+                      }}
+                    >
+                      <Sparkles size={12} color="#f59e0b" />
+                      <span>{customTextsForm.landing_hero_tagline || 'Tagline Hero'}</span>
+                    </div>
+
+                    <div style={{ fontSize: 22, fontWeight: 900, lineHeight: 1.3, marginBottom: 8 }}>
+                      {customTextsForm.landing_hero_title || 'Portal Pemantauan Progres Pekerjaan'}<br />
+                      <span style={{ color: '#38bdf8' }}>{identityForm.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang'}</span>
+                    </div>
+
+                    <p style={{ fontSize: 13, color: '#cbd5e1', lineHeight: 1.5, maxWidth: 600, marginBottom: 16 }}>
+                      {customTextsForm.landing_hero_desc || 'Deskripsi hero banner...'}
+                    </p>
+
+                    <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                      <span
+                        style={{
+                          background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                          color: '#071527',
+                          fontWeight: 800,
+                          fontSize: 12,
+                          padding: '8px 16px',
+                          borderRadius: 8,
+                          display: 'inline-block'
+                        }}
+                      >
+                        {customTextsForm.landing_hero_btn_explore || 'Jelajahi Pekerjaan'}
+                      </span>
+                      <span
+                        style={{
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          color: '#ffffff',
+                          border: '1px solid rgba(255, 255, 255, 0.3)',
+                          fontWeight: 700,
+                          fontSize: 12,
+                          padding: '8px 16px',
+                          borderRadius: 8,
+                          display: 'inline-block'
+                        }}
+                      >
+                        {customTextsForm.landing_hero_btn_slideshow || 'Lihat Slideshow'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* KATEGORI 3: ⭐ LANDING: SEKSI SOROTAN & PETA */}
+              {activeTextCategory === 'landing_seksi' && (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: 18 }}>
+                  {/* Seksi Pekerjaan Sorotan */}
+                  <div
+                    style={{
+                      background: '#ffffff',
+                      borderRadius: 14,
+                      padding: '20px',
+                      border: '1px solid #e2e8f0',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: 14
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <Sparkles size={18} color="#0284c7" />
+                      <h5 style={{ margin: 0, fontSize: 14, fontWeight: 800, color: '#0f2c59' }}>
+                        Seksi Pekerjaan Sorotan Publik
+                      </h5>
+                    </div>
+
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 11.5 }}>Badge Seksi</label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_sorotan_badge')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.landing_sorotan_badge || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_sorotan_badge: e.target.value })}
+                        placeholder="SOROTAN PUBLIK DINPUTARU"
+                      />
+                    </div>
+
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 11.5 }}>Judul Seksi Sorotan</label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_sorotan_title')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.landing_sorotan_title || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_sorotan_title: e.target.value })}
+                        placeholder="Pekerjaan Unggulan & Progres Terkini"
+                      />
+                    </div>
+
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 11.5 }}>Deskripsi Seksi Sorotan</label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_sorotan_desc')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <textarea
+                        rows={3}
+                        className="form-control"
+                        value={customTextsForm.landing_sorotan_desc || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_sorotan_desc: e.target.value })}
+                        placeholder="Daftar pekerjaan yang dipublikasikan secara terbuka..."
+                      />
+                    </div>
+                  </div>
+
+                  {/* Seksi Geografis & Peta Koordinat */}
+                  <div
+                    style={{
+                      background: '#ffffff',
+                      borderRadius: 14,
+                      padding: '20px',
+                      border: '1px solid #e2e8f0',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: 14
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <MapPin size={18} color="#059669" />
+                      <h5 style={{ margin: 0, fontSize: 14, fontWeight: 800, color: '#0f2c59' }}>
+                        Seksi Geografis & Peta Koordinat
+                      </h5>
+                    </div>
+
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 11.5 }}>Badge Seksi Peta</label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_peta_badge')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.landing_peta_badge || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_peta_badge: e.target.value })}
+                        placeholder="GEOGRAFIS & PEMETAAN"
+                      />
+                    </div>
+
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 11.5 }}>Judul Seksi Peta</label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_peta_title')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.landing_peta_title || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_peta_title: e.target.value })}
+                        placeholder="Peta Titik Koordinat Pekerjaan"
+                      />
+                    </div>
+
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 11.5 }}>Deskripsi Seksi Peta</label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_peta_desc')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <textarea
+                        rows={3}
+                        className="form-control"
+                        value={customTextsForm.landing_peta_desc || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_peta_desc: e.target.value })}
+                        placeholder="Masyarakat dapat memverifikasi langsung lokasi fisik..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* KATEGORI 4: 📜 LANDING: FOOTER & KEDINASAN */}
+              {activeTextCategory === 'landing_footer' && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+                  <div
+                    style={{
+                      background: '#ffffff',
+                      borderRadius: 14,
+                      padding: '20px',
+                      border: '1px solid #e2e8f0',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: 16
+                    }}
+                  >
+                    <h5 style={{ margin: 0, fontSize: 14, fontWeight: 800, color: '#0f2c59' }}>
+                      Copywriting Footer & Akses Kedinasan ASN
+                    </h5>
+
+                    {/* Deskripsi Footer Instansi */}
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0 }}>
+                          Deskripsi Singkat Profil Instansi (Kolom Kiri Footer)
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_footer_desc')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <textarea
+                        rows={3}
+                        className="form-control"
+                        value={customTextsForm.landing_footer_desc || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_footer_desc: e.target.value })}
+                        placeholder="Sistem Informasi Monitoring Pekerjaan Dinas Pekerjaan Umum dan Penataan Ruang..."
+                      />
+                    </div>
+
+                    {/* Teks Akses Kedinasan */}
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0 }}>
+                          Teks Informasi Akses Kedinasan (Kolom Kanan Footer)
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('landing_footer_access_desc')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <textarea
+                        rows={3}
+                        className="form-control"
+                        value={customTextsForm.landing_footer_access_desc || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, landing_footer_access_desc: e.target.value })}
+                        placeholder="Panel khusus bagi ASN, Pejabat Pembuat Komitmen (PPK)..."
+                      />
+                      <span style={{ fontSize: 11.5, color: '#64748b', marginTop: 4, display: 'block' }}>
+                        Teks ini mengarahkan ASN / Pejabat untuk mengklik tombol login di pojok kanan atas portal publik.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* KATEGORI 5: 📊 PANEL INTERNAL: DASHBOARD & MODUL */}
+              {activeTextCategory === 'panel_internal' && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+                  <div style={{ marginBottom: 4 }}>
+                    <h5 style={{ margin: 0, fontSize: 14, fontWeight: 900, color: '#0f2c59' }}>
+                      Narasi Subtitle Halaman Modul Internal
+                    </h5>
+                    <p style={{ margin: '2px 0 0', fontSize: 12, color: '#64748b' }}>
+                      Teks penjelasan/panduan yang tampil di bawah judul header masing-masing halaman modul internal.
+                    </p>
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: 16 }}>
+                    {[
+                      {
+                        key: 'internal_dashboard_desc',
+                        moduleName: 'Dashboard Eksekutif',
+                        badge: 'Utama',
+                        color: '#0284c7',
+                        icon: Sparkles
+                      },
+                      {
+                        key: 'internal_prakontrak_desc',
+                        moduleName: 'Menu 1: Monitoring Pra-Kontrak',
+                        badge: 'Menu 1',
+                        color: '#6366f1',
+                        icon: Clock
+                      },
+                      {
+                        key: 'internal_fisik_desc',
+                        moduleName: 'Menu 2: Monitoring Progres Fisik',
+                        badge: 'Menu 2',
+                        color: '#059669',
+                        icon: Layers
+                      },
+                      {
+                        key: 'internal_keuangan_desc',
+                        moduleName: 'Menu 3: Monitoring Progres Keuangan',
+                        badge: 'Menu 3',
+                        color: '#d97706',
+                        icon: DollarSign
+                      },
+                      {
+                        key: 'internal_spj_desc',
+                        moduleName: 'Menu 4: Administrasi SPJ Keuangan',
+                        badge: 'Menu 4',
+                        color: '#e11d48',
+                        icon: Receipt
+                      }
+                    ].map((mod) => {
+                      const Icon = mod.icon;
+                      const val = customTextsForm[mod.key] || '';
+                      return (
+                        <div
+                          key={mod.key}
+                          style={{
+                            background: '#ffffff',
+                            borderRadius: 14,
+                            padding: '18px 20px',
+                            border: `1.5px solid ${mod.color}33`,
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: 12
+                          }}
+                        >
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                              <div
+                                style={{
+                                  width: 32,
+                                  height: 32,
+                                  borderRadius: 8,
+                                  background: `${mod.color}15`,
+                                  color: mod.color,
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'center'
+                                }}
+                              >
+                                <Icon size={16} />
+                              </div>
+                              <div>
+                                <div style={{ fontSize: 13.5, fontWeight: 800, color: '#0f2c59' }}>
+                                  {mod.moduleName}
+                                </div>
+                                <span style={{ fontSize: 10.5, fontWeight: 700, color: mod.color }}>
+                                  {mod.badge}
+                                </span>
+                              </div>
+                            </div>
+
+                            <button
+                              type="button"
+                              onClick={() => handleResetSingleText(mod.key)}
+                              style={{
+                                background: 'none',
+                                border: 'none',
+                                color: '#0284c7',
+                                fontSize: 11,
+                                cursor: 'pointer',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: 4
+                              }}
+                            >
+                              <RotateCcw size={11} />
+                              <span>Reset Bawaan</span>
+                            </button>
+                          </div>
+
+                          <div className="form-group" style={{ marginBottom: 0 }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                              <label className="form-label" style={{ margin: 0, fontSize: 11.5, color: '#64748b' }}>
+                                Narasi Subtitle Halaman:
+                              </label>
+                              <span style={{ fontSize: 11, color: '#94a3b8' }}>
+                                {val.length} Karakter
+                              </span>
+                            </div>
+                            <textarea
+                              rows={3}
+                              className="form-control"
+                              value={val}
+                              onChange={(e) => setCustomTextsForm({ ...customTextsForm, [mod.key]: e.target.value })}
+                              style={{ fontSize: 12.5, lineHeight: 1.5 }}
+                              placeholder={`Tuliskan subtitle penjelasan untuk ${mod.moduleName}...`}
+                            />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Sticky / Floating Save Bar */}
+              <div
+                style={{
+                  position: 'sticky',
+                  bottom: -20,
+                  marginTop: 10,
+                  padding: '14px 20px',
+                  background: '#ffffff',
+                  border: '1px solid #bae6fd',
+                  borderRadius: 12,
+                  boxShadow: '0 4px 16px rgba(2, 132, 199, 0.12)',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  gap: 12
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 12.5, color: '#0369a1' }}>
+                  <Check size={16} color="#059669" />
+                  <span>
+                    Perubahan teks otomatis diterapkan seketika pada landing page & panel internal.
+                  </span>
+                </div>
+
+                <div style={{ display: 'flex', gap: 10 }}>
+                  <button
+                    type="button"
+                    onClick={handleResetAllTexts}
+                    className="btn btn-outline"
+                    style={{ fontSize: 12.5, padding: '7px 16px', borderRadius: 8 }}
+                  >
+                    Reset Semua
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleSaveTexts}
+                    className="btn btn-primary"
+                    style={{
+                      fontSize: 13,
+                      fontWeight: 800,
+                      padding: '8px 24px',
+                      borderRadius: 8,
+                      background: 'linear-gradient(135deg, #0284c7, #0369a1)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      boxShadow: '0 2px 10px rgba(2, 132, 199, 0.3)'
+                    }}
+                  >
+                    <Save size={15} />
+                    <span>Simpan Seluruh Perubahan Teks</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+          </main>
         </div>
 
-        <div className="modal-footer">
-          <button className="btn btn-outline" onClick={onClose}>
-            Selesai
+        <div className="modal-footer" style={{ padding: '12px 24px', background: '#ffffff', borderTop: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexShrink: 0 }}>
+          <div style={{ fontSize: 12, color: '#64748b' }}>
+            Perubahan konfigurasi master disimpan otomatis ke database sistem DINPUTARU.
+          </div>
+          <button className="btn btn-primary" onClick={onClose} style={{ padding: '8px 22px', fontSize: 13, fontWeight: 700 }}>
+            Selesai & Tutup Pengaturan
           </button>
         </div>
       </div>

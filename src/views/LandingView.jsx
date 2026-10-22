@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
-import { BIDANG_LIST } from '../data/constants';
+import { BIDANG_LIST, DEFAULT_CUSTOM_TEXTS, DEFAULT_BIDANG_DESCRIPTIONS } from '../data/constants';
 import {
   Building2,
   MapPin,
@@ -12,7 +12,9 @@ import {
   Sparkles,
   Navigation,
   LayoutDashboard,
-  X
+  X,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 
 const LandingView = ({ onGoToLogin, onBackToInternal }) => {
@@ -22,15 +24,36 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeProjectDetail, setActiveProjectDetail] = useState(null);
 
-  // Gallery Filter & Modal State
-  const [selectedGalleryCategory, setSelectedGalleryCategory] = useState('SEMUA');
-  const [activeGalleryModal, setActiveGalleryModal] = useState(null);
+  // Slideshow State at Top (Configured by Superadmin)
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [selectedBidangPeta, setSelectedBidangPeta] = useState('ALL');
 
-  const galleryList = useMemo(() => systemSettings?.galeri || [], [systemSettings?.galeri]);
-  const filteredGallery = useMemo(() => {
-    if (selectedGalleryCategory === 'SEMUA') return galleryList;
-    return galleryList.filter((item) => item.kategori === selectedGalleryCategory);
-  }, [galleryList, selectedGalleryCategory]);
+  const gallerySlides = useMemo(() => {
+    const list = systemSettings?.galeri || [];
+    return list.length > 0
+      ? list
+      : [
+          {
+            id: 'gal-def-1',
+            judul: 'Gedung Kantor DINPUTARU Kabupaten Demak',
+            kategori: 'Gedung Kantor',
+            lokasi: 'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak',
+            tahun: activeYear,
+            deskripsi: 'Gedung induk pelayanan administrasi teknis dan penataan ruang DINPUTARU Kab. Demak.',
+            url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80'
+          }
+        ];
+  }, [systemSettings?.galeri, activeYear]);
+
+  // Slideshow auto-rotation every 5 seconds
+  useEffect(() => {
+    if (gallerySlides.length <= 1 || isPaused) return;
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % gallerySlides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [gallerySlides.length, isPaused]);
 
   // Filter projects that are marked as public highlight (or fallback to active projects if none marked)
   const highlightedProjects = useMemo(() => {
@@ -62,6 +85,12 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
   const displayedProjects = useMemo(() => {
     return filteredProjects.slice(0, maxHighlights);
   }, [filteredProjects, maxHighlights]);
+
+  // Peta filtered projects per Bidang
+  const petaFilteredProjects = useMemo(() => {
+    if (selectedBidangPeta === 'ALL') return highlightedProjects;
+    return highlightedProjects.filter((p) => p.bidangId === selectedBidangPeta);
+  }, [highlightedProjects, selectedBidangPeta]);
 
   // Aggregate Public Stats (No financial data!)
   const totalCount = projects.length;
@@ -158,8 +187,8 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
               <a href="#sorotan" style={{ color: 'inherit', textDecoration: 'none' }} onMouseEnter={(e) => (e.target.style.color = '#0284c7')} onMouseLeave={(e) => (e.target.style.color = 'inherit')}>
                 Pekerjaan Sorotan
               </a>
-              <a href="#galeri" style={{ color: 'inherit', textDecoration: 'none' }} onMouseEnter={(e) => (e.target.style.color = '#0284c7')} onMouseLeave={(e) => (e.target.style.color = 'inherit')}>
-                🏛️ Galeri Bangunan DINPUTARU
+              <a href="#slideshow" style={{ color: 'inherit', textDecoration: 'none' }} onMouseEnter={(e) => (e.target.style.color = '#0284c7')} onMouseLeave={(e) => (e.target.style.color = 'inherit')}>
+                📸 Slideshow Infrastruktur
               </a>
               <a href="#tentang" style={{ color: 'inherit', textDecoration: 'none' }} onMouseEnter={(e) => (e.target.style.color = '#0284c7')} onMouseLeave={(e) => (e.target.style.color = 'inherit')}>
                 Bidang Layanan
@@ -169,7 +198,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
               </a>
             </nav>
 
-            {/* Login Internal / Return to Dashboard Button */}
+            {/* Login Button strictly in top-right with text "Login" */}
             {isLoggedIn ? (
               <button
                 type="button"
@@ -197,14 +226,15 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                   display: 'flex',
                   alignItems: 'center',
                   gap: 8,
-                  padding: '8px 18px',
+                  padding: '8px 22px',
                   fontSize: 13,
-                  fontWeight: 700,
-                  borderRadius: 8
+                  fontWeight: 800,
+                  borderRadius: 8,
+                  boxShadow: '0 2px 8px rgba(2, 132, 199, 0.3)'
                 }}
               >
                 <LogIn size={15} />
-                <span>Login Internal Pegawai</span>
+                <span>Login</span>
               </button>
             )}
           </div>
@@ -253,7 +283,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
               }}
             >
               <Sparkles size={14} color="#f59e0b" />
-              <span>Transparansi Pembangunan Infrastruktur Daerah</span>
+              <span>{systemSettings?.customTexts?.landing_hero_tagline || DEFAULT_CUSTOM_TEXTS.landing_hero_tagline}</span>
             </div>
 
             <h1
@@ -265,12 +295,12 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 letterSpacing: -0.5
               }}
             >
-              Portal Pemantauan Progres Pekerjaan <br />
+              {systemSettings?.customTexts?.landing_hero_title || DEFAULT_CUSTOM_TEXTS.landing_hero_title} <br />
               <span style={{ color: '#38bdf8' }}>{systemSettings?.instansi || 'Dinas Pekerjaan Umum & Tata Ruang Kab. Demak'}</span>
             </h1>
 
             <p style={{ fontSize: 16, color: '#cbd5e1', lineHeight: 1.6, marginBottom: 28, maxWidth: 680 }}>
-              {systemSettings?.deskripsi || 'Sistem resmi keterbukaan informasi publik untuk memantau kemajuan fisik, lokasi koordinat, dan tahapan pekerjaan infrastruktur jalan, jembatan, gedung, irigasi, dan penataan ruang secara akuntabel.'}
+              {systemSettings?.customTexts?.landing_hero_desc || systemSettings?.deskripsi || DEFAULT_CUSTOM_TEXTS.landing_hero_desc}
             </p>
 
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
@@ -288,16 +318,16 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                   textDecoration: 'none',
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: 8
+                  gap: 8,
+                  boxShadow: '0 4px 12px rgba(245, 158, 11, 0.35)'
                 }}
               >
-                <span>Jelajahi Proyek Sorotan</span>
+                <span>{systemSettings?.customTexts?.landing_hero_btn_explore || DEFAULT_CUSTOM_TEXTS.landing_hero_btn_explore}</span>
                 <ArrowRight size={16} />
               </a>
 
-              <button
-                type="button"
-                onClick={isLoggedIn ? (onBackToInternal || onGoToLogin) : onGoToLogin}
+              <a
+                href="#slideshow"
                 className="btn btn-outline"
                 style={{
                   color: '#ffffff',
@@ -310,18 +340,12 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                   backdropFilter: 'blur(8px)',
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: 8
+                  gap: 8,
+                  textDecoration: 'none'
                 }}
               >
-                {isLoggedIn ? (
-                  <>
-                    <LayoutDashboard size={15} />
-                    <span>Masuk ke Panel Internal</span>
-                  </>
-                ) : (
-                  <span>Akses Pegawai DINPUTARU</span>
-                )}
-              </button>
+                <span>{systemSettings?.customTexts?.landing_hero_btn_slideshow || DEFAULT_CUSTOM_TEXTS.landing_hero_btn_slideshow}</span>
+              </a>
             </div>
           </div>
 
@@ -374,17 +398,257 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </div>
       </section>
 
-      {/* 3. SECTION: 4 BIDANG UTAMA PELAYANAN */}
-      <section id="tentang" style={{ padding: '64px 24px', maxWidth: 1280, margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: 40 }}>
+      {/* 3. SLIDESHOW FOTO INFRASTRUKTUR DI ATAS (BISA DIATUR OLEH SUPERADMIN) */}
+      <section
+        id="slideshow"
+        style={{
+          maxWidth: 1280,
+          margin: '-36px auto 44px',
+          padding: '0 24px',
+          position: 'relative',
+          zIndex: 20
+        }}
+      >
+        <div
+          style={{
+            position: 'relative',
+            height: 440,
+            borderRadius: 20,
+            overflow: 'hidden',
+            boxShadow: '0 20px 45px -10px rgba(15, 44, 89, 0.35)',
+            border: '4px solid #ffffff',
+            background: '#071527'
+          }}
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {gallerySlides.map((slide, sIdx) => {
+            const isCurrent = sIdx === currentSlide;
+            return (
+              <div
+                key={slide.id || sIdx}
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  opacity: isCurrent ? 1 : 0,
+                  transition: 'opacity 0.7s ease-in-out',
+                  pointerEvents: isCurrent ? 'auto' : 'none'
+                }}
+              >
+                <img
+                  src={slide.url}
+                  alt={slide.judul}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                  onError={(e) => {
+                    e.currentTarget.src =
+                      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80';
+                  }}
+                />
+
+                {/* Dark gradient overlay for crystal clear text readability */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background:
+                      'linear-gradient(to top, rgba(7, 21, 39, 0.94) 0%, rgba(7, 21, 39, 0.45) 50%, rgba(7, 21, 39, 0.1) 100%)'
+                  }}
+                />
+
+                {/* Slide Caption Info */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    padding: '32px 36px',
+                    color: '#ffffff'
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8, flexWrap: 'wrap' }}>
+                    <span
+                      style={{
+                        fontSize: 11.5,
+                        fontWeight: 800,
+                        padding: '4px 10px',
+                        borderRadius: 6,
+                        background: '#0284c7',
+                        color: '#ffffff',
+                        textTransform: 'uppercase',
+                        letterSpacing: 0.5
+                      }}
+                    >
+                      {slide.kategori || 'Infrastruktur'}
+                    </span>
+                    {slide.tahun && (
+                      <span
+                        style={{
+                          fontSize: 11.5,
+                          fontWeight: 800,
+                          padding: '4px 10px',
+                          borderRadius: 6,
+                          background: 'rgba(255,255,255,0.2)',
+                          backdropFilter: 'blur(6px)',
+                          color: '#fde68a'
+                        }}
+                      >
+                        TA {slide.tahun}
+                      </span>
+                    )}
+                    <span style={{ fontSize: 11.5, color: '#94a3b8' }}>
+                      Foto {sIdx + 1} dari {gallerySlides.length} • Slideshow DINPUTARU
+                    </span>
+                  </div>
+
+                  <h3
+                    style={{
+                      fontSize: 24,
+                      fontWeight: 900,
+                      color: '#ffffff',
+                      margin: '0 0 8px',
+                      lineHeight: 1.3,
+                      textShadow: '0 2px 4px rgba(0,0,0,0.5)'
+                    }}
+                  >
+                    {slide.judul}
+                  </h3>
+
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      fontSize: 13,
+                      color: '#38bdf8',
+                      fontWeight: 600
+                    }}
+                  >
+                    <MapPin size={15} color="#38bdf8" />
+                    <span>{slide.lokasi || 'Kabupaten Demak'}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+
+          {/* Previous / Next Arrow Controls */}
+          {gallerySlides.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCurrentSlide((prev) => (prev - 1 + gallerySlides.length) % gallerySlides.length);
+                }}
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: 18,
+                  transform: 'translateY(-50%)',
+                  width: 44,
+                  height: 44,
+                  borderRadius: '50%',
+                  background: 'rgba(15, 23, 42, 0.65)',
+                  border: '1px solid rgba(255,255,255,0.3)',
+                  color: '#ffffff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(8px)',
+                  transition: 'all 0.2s',
+                  zIndex: 10
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = '#0284c7')}
+                onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(15, 23, 42, 0.65)')}
+                title="Foto Sebelumnya"
+              >
+                <ChevronLeft size={22} />
+              </button>
+
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCurrentSlide((prev) => (prev + 1) % gallerySlides.length);
+                }}
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  right: 18,
+                  transform: 'translateY(-50%)',
+                  width: 44,
+                  height: 44,
+                  borderRadius: '50%',
+                  background: 'rgba(15, 23, 42, 0.65)',
+                  border: '1px solid rgba(255,255,255,0.3)',
+                  color: '#ffffff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(8px)',
+                  transition: 'all 0.2s',
+                  zIndex: 10
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = '#0284c7')}
+                onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(15, 23, 42, 0.65)')}
+                title="Foto Selanjutnya"
+              >
+                <ChevronRight size={22} />
+              </button>
+
+              {/* Dot Indicators */}
+              <div
+                style={{
+                  position: 'absolute',
+                  bottom: 16,
+                  right: 28,
+                  display: 'flex',
+                  gap: 6,
+                  zIndex: 10
+                }}
+              >
+                {gallerySlides.map((_, dotIdx) => (
+                  <button
+                    key={dotIdx}
+                    type="button"
+                    onClick={() => setCurrentSlide(dotIdx)}
+                    style={{
+                      width: dotIdx === currentSlide ? 24 : 8,
+                      height: 8,
+                      borderRadius: 9999,
+                      background: dotIdx === currentSlide ? '#38bdf8' : 'rgba(255,255,255,0.4)',
+                      border: 'none',
+                      cursor: 'pointer',
+                      padding: 0,
+                      transition: 'all 0.25s ease'
+                    }}
+                    title={`Pindah ke slide ${dotIdx + 1}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </section>
+
+      {/* 4. SECTION: 4 BIDANG UTAMA PELAYANAN (INTERACTIVE & SDA-BK SATU BARIS) */}
+      <section id="tentang" style={{ padding: '48px 24px 64px', maxWidth: 1280, margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <span style={{ fontSize: 12, fontWeight: 800, color: '#0284c7', letterSpacing: 1, textTransform: 'uppercase' }}>
-            BIDANG PELAYANAN INFRASTRUKTUR
+            {systemSettings?.customTexts?.landing_bidang_badge || DEFAULT_CUSTOM_TEXTS.landing_bidang_badge}
           </span>
           <h2 style={{ fontSize: 26, fontWeight: 900, color: '#0f2c59', marginTop: 6 }}>
-            Pembangunan Berkelanjutan di 4 Bidang Teknis
+            {systemSettings?.customTexts?.landing_bidang_title || DEFAULT_CUSTOM_TEXTS.landing_bidang_title}
           </h2>
           <p style={{ fontSize: 14, color: '#64748b', maxWidth: 640, margin: '8px auto 0' }}>
-            Setiap bidang di Dinas Pekerjaan Umum dan Penataan Ruang bertanggung jawab dalam memastikan kualitas dan ketepatan waktu proyek strategis daerah.
+            {systemSettings?.customTexts?.landing_bidang_desc || DEFAULT_CUSTOM_TEXTS.landing_bidang_desc}
           </p>
         </div>
 
@@ -398,202 +662,88 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 padding: '24px',
                 border: '1px solid #e2e8f0',
                 boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
-                transition: 'all 0.2s',
+                transition: 'all 0.25s ease',
                 display: 'flex',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-5px)';
+                e.currentTarget.style.boxShadow = `0 14px 28px ${b.warna}22`;
+                e.currentTarget.style.borderColor = b.warna;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.03)';
+                e.currentTarget.style.borderColor = '#e2e8f0';
+              }}
+              onClick={() => {
+                setSelectedBidang(b.id);
+                document.getElementById('sorotan')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <div
-                style={{
-                  width: 48,
-                  height: 48,
-                  borderRadius: 12,
-                  background: b.bgLight,
-                  color: b.warna,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: 18,
-                  fontWeight: 800,
-                  marginBottom: 16
-                }}
-              >
-                {b.singkatan}
+              {/* Badge Singkatan: SDA-BK Satu Baris */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+                <div
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '6px 14px',
+                    borderRadius: 8,
+                    background: b.bgLight,
+                    color: b.warna,
+                    fontSize: 13,
+                    fontWeight: 800,
+                    letterSpacing: 0.5,
+                    whiteSpace: 'nowrap',
+                    width: 'fit-content',
+                    border: `1px solid ${b.warna}33`
+                  }}
+                >
+                  {b.id === 'sda_bk' ? 'SDA-BK' : b.singkatan}
+                </div>
+                <span
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 700,
+                    color: b.warna,
+                    background: b.bgLight,
+                    padding: '3px 8px',
+                    borderRadius: 6
+                  }}
+                >
+                  Teknis
+                </span>
               </div>
 
-              <h3 style={{ fontSize: 16, fontWeight: 800, color: '#0f2c59', marginBottom: 8 }}>
+              <h3 style={{ fontSize: 16, fontWeight: 800, color: '#0f2c59', marginBottom: 8, lineHeight: 1.3 }}>
                 {b.nama}
               </h3>
 
-              <p style={{ fontSize: 12.5, color: '#64748b', lineHeight: 1.5, flex: 1 }}>
-                {b.id === 'bina_marga' && 'Pembangunan jalan kabupaten, rekonstruksi ruas poros, pemeliharaan jembatan, dan konektivitas transportasi.'}
-                {b.id === 'cipta_karya' && 'Pembangunan gedung workshop & kantor pelayanan, sanitasi masyarakat, serta penyediaan sarana air minum pedesaan.'}
-                {b.id === 'sda_bk' && 'Normalisasi sungai, rehabilitasi jaringan irigasi bendung, pencegahan banjir, dan pembinaan tenaga konstruksi.'}
-                {b.id === 'tata_ruang' && 'Perencanaan tata ruang wilayah (RTRW/RDTR), kesesuaian kegiatan pemanfaatan ruang, dan tertib administrasi pertanahan.'}
+              <p style={{ fontSize: 12.5, color: '#64748b', lineHeight: 1.55, flex: 1, margin: 0 }}>
+                {systemSettings?.bidangDescriptions?.[b.id] || DEFAULT_BIDANG_DESCRIPTIONS[b.id] || ''}
               </p>
 
-              <div style={{ marginTop: 16, paddingTop: 14, borderTop: '1px solid #f1f5f9', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: 11.5, color: '#64748b' }}>
-                  {projects.filter((p) => p.bidangId === b.id).length} Paket Terdaftar
+              <div
+                style={{
+                  marginTop: 16,
+                  paddingTop: 14,
+                  borderTop: '1px solid #f1f5f9',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center'
+                }}
+              >
+                <span style={{ fontSize: 11.5, color: '#64748b', fontWeight: 600 }}>
+                  {projects.filter((p) => p.bidangId === b.id).length} Paket Pekerjaan
                 </span>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSelectedBidang(b.id);
-                    document.getElementById('sorotan')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    color: b.warna,
-                    fontSize: 12,
-                    fontWeight: 700,
-                    cursor: 'pointer'
-                  }}
-                >
-                  Lihat Proyek →
-                </button>
+                <span style={{ color: b.warna, fontSize: 12, fontWeight: 800, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                  Lihat Pekerjaan →
+                </span>
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* SECTION: GALERI BANGUNAN & INFRASTRUKTUR DINPUTARU KABUPATEN DEMAK */}
-      <section id="galeri" style={{ padding: '72px 24px', background: '#ffffff', borderTop: '1px solid #e2e8f0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: 36 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 12, fontWeight: 800, color: '#0284c7', textTransform: 'uppercase', letterSpacing: 1 }}>
-              <Building2 size={15} color="#0284c7" />
-              <span>DOKUMENTASI INFRASTRUKTUR KABUPATEN DEMAK</span>
-            </div>
-            <h2 style={{ fontSize: 28, fontWeight: 900, color: '#0f2c59', marginTop: 6 }}>
-              Galeri Bangunan & Infrastruktur DINPUTARU
-            </h2>
-            <p style={{ fontSize: 14, color: '#64748b', maxWidth: 680, margin: '8px auto 0' }}>
-              Dokumentasi pembangunan gedung kantor dinas, workshop teknis, jalan poros antar-kecamatan, jembatan, sarana air minum, dan tanggul pengendali banjir di Kabupaten Demak.
-            </p>
-          </div>
-
-          {/* Category Filter Pills */}
-          <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
-            {['SEMUA', 'Gedung Kantor', 'Bina Marga', 'Cipta Karya', 'Sumber Daya Air', 'Tata Ruang'].map((cat) => (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => setSelectedGalleryCategory(cat)}
-                style={{
-                  padding: '7px 16px',
-                  borderRadius: 9999,
-                  fontSize: 12.5,
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                  border: selectedGalleryCategory === cat ? '1px solid #0f2c59' : '1px solid #e2e8f0',
-                  background: selectedGalleryCategory === cat ? '#0f2c59' : '#f8fafc',
-                  color: selectedGalleryCategory === cat ? '#ffffff' : '#475569',
-                  transition: 'all 0.15s ease'
-                }}
-              >
-                {cat === 'SEMUA' ? `Semua Galeri (${galleryList.length})` : cat}
-              </button>
-            ))}
-          </div>
-
-          {/* Gallery Cards Grid */}
-          {filteredGallery.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '48px', color: '#94a3b8', background: '#f8fafc', borderRadius: 16 }}>
-              Belum ada foto pada kategori ini.
-            </div>
-          ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
-              {filteredGallery.map((item) => (
-                <div
-                  key={item.id}
-                  onClick={() => setActiveGalleryModal(item)}
-                  style={{
-                    background: '#ffffff',
-                    borderRadius: 16,
-                    overflow: 'hidden',
-                    border: '1px solid #e2e8f0',
-                    boxShadow: '0 4px 14px rgba(0,0,0,0.04)',
-                    cursor: 'pointer',
-                    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-4px)';
-                    e.currentTarget.style.boxShadow = '0 10px 24px rgba(0,0,0,0.09)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = '0 4px 14px rgba(0,0,0,0.04)';
-                  }}
-                >
-                  <div style={{ height: 180, position: 'relative', overflow: 'hidden', background: '#e2e8f0' }}>
-                    <img
-                      src={item.url}
-                      alt={item.judul}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                      loading="lazy"
-                    />
-                    <div
-                      style={{
-                        position: 'absolute',
-                        top: 10,
-                        left: 10,
-                        padding: '3px 10px',
-                        borderRadius: 6,
-                        background: 'rgba(15, 44, 89, 0.85)',
-                        backdropFilter: 'blur(4px)',
-                        color: '#ffffff',
-                        fontSize: 10.5,
-                        fontWeight: 800
-                      }}
-                    >
-                      {item.kategori}
-                    </div>
-                    {item.tahun && (
-                      <div
-                        style={{
-                          position: 'absolute',
-                          top: 10,
-                          right: 10,
-                          padding: '3px 8px',
-                          borderRadius: 6,
-                          background: 'rgba(245, 158, 11, 0.9)',
-                          color: '#071527',
-                          fontSize: 10.5,
-                          fontWeight: 800
-                        }}
-                      >
-                        TA {item.tahun}
-                      </div>
-                    )}
-                  </div>
-
-                  <div style={{ padding: '18px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: 15, fontWeight: 800, color: '#0f2c59', marginBottom: 6, lineHeight: 1.35 }}>
-                      {item.judul}
-                    </h3>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: '#0284c7', marginBottom: 8, fontWeight: 600 }}>
-                      <MapPin size={13} />
-                      <span>{item.lokasi || 'Kabupaten Demak'}</span>
-                    </div>
-                    <p style={{ fontSize: 12, color: '#64748b', lineHeight: 1.5, margin: 0, flex: 1 }}>
-                      {item.deskripsi}
-                    </p>
-                    <div style={{ marginTop: 14, paddingTop: 10, borderTop: '1px solid #f1f5f9', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: 11, color: '#94a3b8' }}>DINPUTARU Demak</span>
-                      <span style={{ fontSize: 11.5, color: '#0284c7', fontWeight: 700 }}>
-                        Perbesar Foto ↗
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
         </div>
       </section>
 
@@ -604,13 +754,13 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             <div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 12, fontWeight: 800, color: '#0284c7', textTransform: 'uppercase', letterSpacing: 1 }}>
                 <Sparkles size={14} color="#f59e0b" />
-                <span>SOROTAN PUBLIK DINPUTARU</span>
+                <span>{systemSettings?.customTexts?.landing_sorotan_badge || DEFAULT_CUSTOM_TEXTS.landing_sorotan_badge}</span>
               </div>
               <h2 style={{ fontSize: 26, fontWeight: 900, color: '#0f2c59', marginTop: 4 }}>
-                Pekerjaan Unggulan & Progres Terkini
+                {systemSettings?.customTexts?.landing_sorotan_title || DEFAULT_CUSTOM_TEXTS.landing_sorotan_title}
               </h2>
               <p style={{ fontSize: 13.5, color: '#64748b', margin: '4px 0 0' }}>
-                Daftar pekerjaan yang dipublikasikan secara terbuka untuk pengawasan partisipatif masyarakat (Maksimal {maxHighlights} paket sorotan)
+                {systemSettings?.customTexts?.landing_sorotan_desc || DEFAULT_CUSTOM_TEXTS.landing_sorotan_desc} (Maksimal {maxHighlights} paket sorotan)
               </p>
             </div>
 
@@ -907,14 +1057,62 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
       <section id="peta" style={{ padding: '64px 24px', maxWidth: 1280, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <span style={{ fontSize: 12, fontWeight: 800, color: '#0284c7', letterSpacing: 1, textTransform: 'uppercase' }}>
-            GEOGRAFIS & PEMETAAN
+            {systemSettings?.customTexts?.landing_peta_badge || DEFAULT_CUSTOM_TEXTS.landing_peta_badge}
           </span>
           <h2 style={{ fontSize: 26, fontWeight: 900, color: '#0f2c59', marginTop: 4 }}>
-            Peta Titik Koordinat Pekerjaan
+            {systemSettings?.customTexts?.landing_peta_title || DEFAULT_CUSTOM_TEXTS.landing_peta_title}
           </h2>
           <p style={{ fontSize: 13.5, color: '#64748b', maxWidth: 640, margin: '6px auto 0' }}>
-            Masyarakat dapat memverifikasi langsung lokasi fisik pekerjaan di lapangan melalui integrasi koordinat latitude dan longitude.
+            {systemSettings?.customTexts?.landing_peta_desc || DEFAULT_CUSTOM_TEXTS.landing_peta_desc}
           </p>
+        </div>
+
+        {/* Filter Berdasarkan Kategori Bidang Dropdown */}
+        <div
+          style={{
+            background: '#ffffff',
+            borderRadius: 14,
+            padding: '14px 20px',
+            border: '1px solid #e2e8f0',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+            marginBottom: 16,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: 12
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+            <span style={{ fontSize: 13, fontWeight: 700, color: '#0f2c59', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <Navigation size={15} color="#0284c7" />
+              <span>Filter Berdasarkan Bidang:</span>
+            </span>
+            <select
+              className="form-control"
+              value={selectedBidangPeta}
+              onChange={(e) => setSelectedBidangPeta(e.target.value)}
+              style={{
+                minWidth: 260,
+                fontSize: 13,
+                fontWeight: 600,
+                padding: '7px 14px',
+                borderRadius: 8,
+                borderColor: '#cbd5e1'
+              }}
+            >
+              <option value="ALL">Semua Bidang ({highlightedProjects.length} Titik Koordinat)</option>
+              {BIDANG_LIST.filter((b) => b.id !== 'sekretariat').map((b) => (
+                <option key={b.id} value={b.id}>
+                  {b.nama} ({highlightedProjects.filter((p) => p.bidangId === b.id).length} Titik)
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div style={{ fontSize: 12.5, color: '#64748b', fontWeight: 600 }}>
+            Menampilkan {petaFilteredProjects.slice(0, 15).length} dari {petaFilteredProjects.length} lokasi titik koordinat
+          </div>
         </div>
 
         <div
@@ -926,9 +1124,9 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             overflow: 'hidden'
           }}
         >
-          <div className="table-container" style={{ border: 'none' }}>
+          <div className="table-container" style={{ border: 'none', maxHeight: '460px', overflowY: 'auto' }}>
             <table className="data-table">
-              <thead>
+              <thead style={{ position: 'sticky', top: 0, zIndex: 5, background: '#f8fafc' }}>
                 <tr>
                   <th>Nama Paket Pekerjaan</th>
                   <th>Bidang</th>
@@ -939,56 +1137,72 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 </tr>
               </thead>
               <tbody>
-                {highlightedProjects.map((p) => {
-                  const bidang = BIDANG_LIST.find((b) => b.id === p.bidangId);
-                  const lat = p.latitude || p.koordinat?.lat || '-6.9923';
-                  const lng = p.longitude || p.koordinat?.lng || '110.4285';
-                  const fRealisasi = p.dataFisik?.progresRealisasi || 0;
+                {petaFilteredProjects.length === 0 ? (
+                  <tr>
+                    <td colSpan={6} style={{ textAlign: 'center', padding: '36px', color: '#94a3b8' }}>
+                      Tidak ada titik koordinat pekerjaan pada kategori bidang ini.
+                    </td>
+                  </tr>
+                ) : (
+                  petaFilteredProjects.slice(0, 20).map((p) => {
+                    const bidang = BIDANG_LIST.find((b) => b.id === p.bidangId);
+                    const lat = p.latitude || p.koordinat?.lat || '-6.9923';
+                    const lng = p.longitude || p.koordinat?.lng || '110.4285';
+                    const fRealisasi = p.dataFisik?.progresRealisasi || 0;
 
-                  return (
-                    <tr key={p.id}>
-                      <td>
-                        <div style={{ fontWeight: 700, color: '#0f2c59' }}>{p.namaPaket}</div>
-                        <div style={{ fontSize: 11, color: '#64748b' }}>Metode: {p.tipePengadaan}</div>
-                      </td>
-                      <td>
-                        <span className="badge badge-bidang" style={{ background: bidang?.bgLight, color: bidang?.warna }}>
-                          {bidang?.singkatan}
-                        </span>
-                      </td>
-                      <td style={{ fontSize: 12.5, color: '#475569' }}>{p.lokasi || '-'}</td>
-                      <td>
-                        <code style={{ fontSize: 12, color: '#0284c7', background: '#f0f9ff', padding: '3px 8px', borderRadius: 6 }}>
-                          {lat}, {lng}
-                        </code>
-                      </td>
-                      <td>
-                        <span style={{ fontWeight: 800, color: fRealisasi >= 100 ? '#15803d' : '#0284c7' }}>
-                          {fRealisasi}%
-                        </span>
-                      </td>
-                      <td>
-                        <a
-                          href={`https://www.google.com/maps?q=${lat},${lng}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn btn-outline btn-sm"
-                          style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: 6,
-                            fontSize: 11.5,
-                            padding: '4px 10px'
-                          }}
-                        >
-                          <Navigation size={12} />
-                          <span>Buka Peta</span>
-                          <ExternalLink size={11} />
-                        </a>
-                      </td>
-                    </tr>
-                  );
-                })}
+                    return (
+                      <tr key={p.id}>
+                        <td>
+                          <div style={{ fontWeight: 700, color: '#0f2c59' }}>{p.namaPaket}</div>
+                          <div style={{ fontSize: 11, color: '#64748b' }}>Metode: {p.tipePengadaan}</div>
+                        </td>
+                        <td>
+                          <span
+                            className="badge badge-bidang"
+                            style={{
+                              background: bidang?.bgLight,
+                              color: bidang?.warna,
+                              whiteSpace: 'nowrap',
+                              display: 'inline-flex'
+                            }}
+                          >
+                            {bidang?.id === 'sda_bk' ? 'SDA-BK' : bidang?.singkatan}
+                          </span>
+                        </td>
+                        <td style={{ fontSize: 12.5, color: '#475569' }}>{p.lokasi || '-'}</td>
+                        <td>
+                          <code style={{ fontSize: 12, color: '#0284c7', background: '#f0f9ff', padding: '3px 8px', borderRadius: 6 }}>
+                            {lat}, {lng}
+                          </code>
+                        </td>
+                        <td>
+                          <span style={{ fontWeight: 800, color: fRealisasi >= 100 ? '#15803d' : '#0284c7' }}>
+                            {fRealisasi}%
+                          </span>
+                        </td>
+                        <td>
+                          <a
+                            href={`https://www.google.com/maps?q=${lat},${lng}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-outline btn-sm"
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: 6,
+                              fontSize: 11.5,
+                              padding: '4px 10px'
+                            }}
+                          >
+                            <Navigation size={12} />
+                            <span>Buka Peta</span>
+                            <ExternalLink size={11} />
+                          </a>
+                        </td>
+                      </tr>
+                    );
+                  })
+                )}
               </tbody>
             </table>
           </div>
@@ -1030,7 +1244,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
               </span>
             </div>
             <p style={{ fontSize: 13, lineHeight: 1.6, color: '#94a3b8' }}>
-              {systemSettings?.deskripsi || 'Sistem Informasi Monitoring Pekerjaan Dinas Pekerjaan Umum dan Penataan Ruang. Menyajikan data progres fisik dan status pengadaan infrastruktur daerah secara terbuka dan bertanggung jawab.'}
+              {systemSettings?.customTexts?.landing_footer_desc || systemSettings?.deskripsi || DEFAULT_CUSTOM_TEXTS.landing_footer_desc}
             </p>
           </div>
 
@@ -1038,7 +1252,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             <h4 style={{ fontSize: 14, fontWeight: 700, color: '#ffffff', marginBottom: 12 }}>Kontak & Pelayanan</h4>
             <div style={{ fontSize: 13, lineHeight: 1.7, color: '#94a3b8' }}>
               <div style={{ fontWeight: 600, color: '#e2e8f0' }}>{systemSettings?.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang'}</div>
-              <div>{systemSettings?.alamat || 'Jl. Kyai Singkil No. 7, Bintoro, Kec. Demak'}</div>
+              <div>{systemSettings?.alamat || 'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak'}</div>
               <div>Email: {systemSettings?.email || 'dinputaru@demakkab.go.id'}</div>
               <div>Telp: {systemSettings?.telepon || '(0291) 685123'}</div>
               {systemSettings?.website && <div>Web: {systemSettings.website}</div>}
@@ -1046,28 +1260,10 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
           </div>
 
           <div>
-            <h4 style={{ fontSize: 14, fontWeight: 700, color: '#ffffff', marginBottom: 12 }}>Akses Terbatas</h4>
-            <p style={{ fontSize: 13, color: '#94a3b8', lineHeight: 1.5, marginBottom: 14 }}>
-              Panel khusus bagi ASN, Pejabat Pembuat Komitmen (PPK), PPTK, dan Tim Verifikator Keuangan.
+            <h4 style={{ fontSize: 14, fontWeight: 700, color: '#ffffff', marginBottom: 12 }}>Akses Kedinasan</h4>
+            <p style={{ fontSize: 13, color: '#94a3b8', lineHeight: 1.6, marginBottom: 14 }}>
+              {systemSettings?.customTexts?.landing_footer_access_desc || DEFAULT_CUSTOM_TEXTS.landing_footer_access_desc}
             </p>
-            <button
-              type="button"
-              onClick={isLoggedIn ? (onBackToInternal || onGoToLogin) : onGoToLogin}
-              className="btn btn-primary"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 700 }}
-            >
-              {isLoggedIn ? (
-                <>
-                  <LayoutDashboard size={15} />
-                  <span>Buka Panel Internal</span>
-                </>
-              ) : (
-                <>
-                  <LogIn size={15} />
-                  <span>Login Internal Pegawai</span>
-                </>
-              )}
-            </button>
           </div>
         </div>
 
@@ -1075,61 +1271,6 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
           {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'} • Hak Cipta © {activeYear} {systemSettings?.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak'}.
         </div>
       </footer>
-
-      {/* MODAL PREVIEW GALERI FOTO */}
-      {activeGalleryModal && (
-        <div className="modal-overlay" onClick={() => setActiveGalleryModal(null)} style={{ zIndex: 100 }}>
-          <div className="modal-dialog" style={{ maxWidth: 720, padding: 0, overflow: 'hidden' }} onClick={(e) => e.stopPropagation()}>
-            <div style={{ position: 'relative', maxHeight: '60vh', overflow: 'hidden', background: '#000' }}>
-              <img
-                src={activeGalleryModal.url}
-                alt={activeGalleryModal.judul}
-                style={{ width: '100%', height: '100%', maxHeight: '60vh', objectFit: 'contain' }}
-              />
-              <button
-                className="btn-icon"
-                onClick={() => setActiveGalleryModal(null)}
-                style={{
-                  position: 'absolute',
-                  top: 12,
-                  right: 12,
-                  background: 'rgba(0,0,0,0.6)',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '50%'
-                }}
-              >
-                <X size={18} />
-              </button>
-            </div>
-            <div style={{ padding: '20px 24px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
-                <span style={{ padding: '2px 8px', borderRadius: 4, background: '#eff6ff', color: '#1d4ed8', fontSize: 11, fontWeight: 800 }}>
-                  {activeGalleryModal.kategori}
-                </span>
-                <span style={{ fontSize: 12, color: '#64748b' }}>
-                  Tahun Anggaran {activeGalleryModal.tahun || activeYear}
-                </span>
-              </div>
-              <h3 style={{ fontSize: 18, fontWeight: 900, color: '#0f2c59', marginBottom: 8 }}>
-                {activeGalleryModal.judul}
-              </h3>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: '#0284c7', marginBottom: 12, fontWeight: 600 }}>
-                <MapPin size={14} />
-                <span>{activeGalleryModal.lokasi || 'Kabupaten Demak'}</span>
-              </div>
-              <p style={{ fontSize: 13.5, color: '#475569', lineHeight: 1.6, margin: 0 }}>
-                {activeGalleryModal.deskripsi}
-              </p>
-              <div style={{ marginTop: 18, display: 'flex', justifyContent: 'flex-end' }}>
-                <button className="btn btn-outline" onClick={() => setActiveGalleryModal(null)}>
-                  Tutup Galeri
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* 7. PUBLIC PROJECT DETAIL MODAL (NO FINANCIAL DATA!) */}
       {activeProjectDetail && (

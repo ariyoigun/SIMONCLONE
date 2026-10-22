@@ -719,7 +719,7 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                   </div>
 
                   <p style={{ fontSize: 12, color: '#0369a1', marginBottom: 12 }}>
-                    Masukkan koordinat lintang (latitude) dan bujur (longitude) untuk memudahkan pemetaan lokasi proyek di sistem dan peta masyarakat.
+                    Masukkan koordinat lintang (latitude) dan bujur (longitude) untuk memudahkan pemetaan lokasi pekerjaan di sistem dan peta masyarakat.
                   </p>
 
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>

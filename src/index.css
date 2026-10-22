@@ -1106,4 +1106,98 @@ textarea.form-control {
   .sidebar.open {
     transform: translateX(0);
   }
+  .bottom-left-timestamp-pill {
+    left: 20px !important;
+  }
 }
+
+/* Bottom-Left Floating Timestamp Pill (Pojok Kiri Bawah) */
+.bottom-left-timestamp-pill {
+  position: fixed;
+  bottom: 20px;
+  left: calc(var(--sidebar-width) + 24px);
+  z-index: 45;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(15, 44, 89, 0.94);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(15, 44, 89, 0.25), 0 1px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: auto;
+  user-select: none;
+}
+
+.bottom-left-timestamp-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 44, 89, 0.35);
+  background: #0f2c59;
+}
+
+.bottom-left-timestamp-pill .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Bidang Accordion Dropdown Grouping in Dashboard */
+.bidang-accordion-item {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.bidang-accordion-item.is-expanded {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.bidang-accordion-header {
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #f8fafc;
+  transition: background 0.18s ease;
+  user-select: none;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bidang-accordion-header:hover {
+  background: #f1f5f9;
+}
+
+.bidang-accordion-item.is-expanded .bidang-accordion-header {
+  background: #ffffff;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+

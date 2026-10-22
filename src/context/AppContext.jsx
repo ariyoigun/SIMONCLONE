@@ -8,6 +8,8 @@ import {
   STATUS_SPJ_KEUANGAN,
   TAHAPAN_PRA_KONTRAK,
   DEFAULT_SYSTEM_SETTINGS,
+  DEFAULT_CUSTOM_TEXTS,
+  DEFAULT_BIDANG_DESCRIPTIONS,
   DEFAULT_KATEGORI_PEKERJAAN,
   SUMBER_DANA
 } from '../data/constants';
@@ -51,7 +53,15 @@ export const AppProvider = ({ children }) => {
             nipSekretaris: parsed.nipSekretaris || DEFAULT_SYSTEM_SETTINGS.nipSekretaris,
             pangkatSekretaris: parsed.pangkatSekretaris || DEFAULT_SYSTEM_SETTINGS.pangkatSekretaris,
             jabatanSekretaris: (parsed.jabatanSekretaris || DEFAULT_SYSTEM_SETTINGS.jabatanSekretaris).replace(/PUPR/g, 'DINPUTARU'),
-            galeri: Array.isArray(parsed.galeri) && parsed.galeri.length > 0 ? parsed.galeri : DEFAULT_SYSTEM_SETTINGS.galeri
+            galeri: Array.isArray(parsed.galeri) && parsed.galeri.length > 0 ? parsed.galeri : DEFAULT_SYSTEM_SETTINGS.galeri,
+            customTexts: {
+              ...DEFAULT_CUSTOM_TEXTS,
+              ...(parsed.customTexts || {})
+            },
+            bidangDescriptions: {
+              ...DEFAULT_BIDANG_DESCRIPTIONS,
+              ...(parsed.bidangDescriptions || {})
+            }
           };
         }
       } catch (e) {}

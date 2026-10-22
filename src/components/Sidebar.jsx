@@ -19,6 +19,7 @@ import {
   Globe,
   Database
 } from 'lucide-react';
+import { getLatestProjectUpdateFormatted } from '../utils/dateUtils';
 
 const Sidebar = ({
   onOpenYearModal,
@@ -51,6 +52,8 @@ const Sidebar = ({
   const countSpjActive = accessibleProjects.filter(
     (p) => p.administrasiSPJ?.status && p.administrasiSPJ?.status !== 'Belum Mengajukan SPJ'
   ).length;
+
+  const latestUpdateFormatted = getLatestProjectUpdateFormatted(accessibleProjects, activeYear);
 
   return (
     <aside className="sidebar">
@@ -252,6 +255,26 @@ const Sidebar = ({
 
       {/* Sidebar Footer Role & Scope Indicator */}
       <div className="sidebar-footer">
+        {/* Info Terakhir Diupdate di Pojok Kiri Bawah Sidebar */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 7,
+            padding: '6px 10px',
+            marginBottom: 10,
+            background: 'rgba(255,255,255,0.06)',
+            borderRadius: 8,
+            border: '1px solid rgba(255,255,255,0.1)',
+            fontSize: 11,
+            color: '#cbd5e1'
+          }}
+          title={`Pembaruan data terakhir: ${latestUpdateFormatted}`}
+        >
+          <Clock size={12} color="#38bdf8" />
+          <span>Update: <strong style={{ color: '#ffffff' }}>{latestUpdateFormatted}</strong></span>
+        </div>
+
         <div className="sidebar-role-indicator">
           <div className="role-title">
             <span>{roleDef.nama}</span>

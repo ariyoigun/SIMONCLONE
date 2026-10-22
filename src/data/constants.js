@@ -731,6 +731,63 @@ export const DESA_DEMAK_BY_KECAMATAN = {
   ]
 };
 
+export const DEFAULT_BIDANG_DESCRIPTIONS = {
+  bina_marga:
+    'Pembangunan jalan kabupaten, rekonstruksi ruas poros, pemeliharaan jembatan, dan konektivitas transportasi antar wilayah.',
+  cipta_karya:
+    'Pembangunan gedung workshop & kantor pelayanan, sanitasi masyarakat, serta penyediaan sarana air minum pedesaan.',
+  sda_bk:
+    'Normalisasi sungai, rehabilitasi jaringan irigasi bendung, pencegahan banjir, dan pembinaan tenaga konstruksi daerah.',
+  tata_ruang:
+    'Perencanaan tata ruang wilayah (RTRW/RDTR), kesesuaian kegiatan pemanfaatan ruang, dan tertib administrasi pertanahan.'
+};
+
+export const DEFAULT_CUSTOM_TEXTS = {
+  // 1. Landing Page: Hero & Header
+  landing_hero_tagline: 'Transparansi Pembangunan Infrastruktur Daerah',
+  landing_hero_title: 'Portal Pemantauan Progres Pekerjaan',
+  landing_hero_desc:
+    'Sistem resmi keterbukaan informasi publik untuk memantau kemajuan fisik, lokasi koordinat, dan tahapan pekerjaan infrastruktur jalan, jembatan, gedung, irigasi, dan penataan ruang secara akuntabel.',
+  landing_hero_btn_explore: 'Jelajahi Pekerjaan Sorotan',
+  landing_hero_btn_slideshow: 'Lihat Slideshow Foto',
+
+  // 2. Landing Page: Seksi 4 Bidang Layanan
+  landing_bidang_badge: 'BIDANG PELAYANAN INFRASTRUKTUR',
+  landing_bidang_title: 'Pembangunan Berkelanjutan di 4 Bidang Teknis',
+  landing_bidang_desc:
+    'Setiap bidang di Dinas Pekerjaan Umum dan Penataan Ruang bertanggung jawab dalam memastikan kualitas dan ketepatan waktu pekerjaan strategis daerah.',
+
+  // 3. Landing Page: Seksi Pekerjaan Sorotan
+  landing_sorotan_badge: 'SOROTAN PUBLIK DINPUTARU',
+  landing_sorotan_title: 'Pekerjaan Unggulan & Progres Terkini',
+  landing_sorotan_desc:
+    'Daftar pekerjaan yang dipublikasikan secara terbuka untuk pengawasan partisipatif masyarakat.',
+
+  // 4. Landing Page: Seksi Geografis & Peta
+  landing_peta_badge: 'GEOGRAFIS & PEMETAAN',
+  landing_peta_title: 'Peta Titik Koordinat Pekerjaan',
+  landing_peta_desc:
+    'Masyarakat dapat memverifikasi langsung lokasi fisik pekerjaan di lapangan melalui integrasi koordinat latitude dan longitude.',
+
+  // 5. Landing Page: Footer & Kedinasan
+  landing_footer_desc:
+    'Sistem Informasi Monitoring Pekerjaan Dinas Pekerjaan Umum dan Penataan Ruang. Menyajikan data progres fisik dan status pengadaan infrastruktur daerah secara terbuka dan bertanggung jawab.',
+  landing_footer_access_desc:
+    'Panel khusus bagi ASN, Pejabat Pembuat Komitmen (PPK), PPTK, dan Tim Verifikator Keuangan DINPUTARU Kabupaten Demak. Gunakan tombol Login pada sudut kanan atas untuk masuk ke dashboard internal.',
+
+  // 6. Panel Internal: Modul Dashboard & Monitoring
+  internal_dashboard_desc:
+    'Pemantauan indikator kinerja utama (IKU), deviasi fisik, serapan anggaran, dan distribusi paket pekerjaan dinas.',
+  internal_prakontrak_desc:
+    'Monitoring alur tahapan persiapan dan pemilihan penyedia jasa konstruksi dari SiRUP, HPS, hingga kontrak kerja resmi.',
+  internal_fisik_desc:
+    'Pemantauan berkala realisasi fisik lapangan, kurva S, deviasi rencana vs aktual, dan dokumentasi foto 0%, 50%, 100%.',
+  internal_keuangan_desc:
+    'Pengendalian pencairan dana uang muka, termin, PHO, serta tracking kelengkapan berkas SPJ keuangan dinas.',
+  internal_spj_desc:
+    'Alur validasi dan verifikasi kelengkapan berkas tagihan rekanan oleh tim verifikator sebelum penerbitan SPM/SP2D.'
+};
+
 export const DEFAULT_SYSTEM_SETTINGS = {
   namaSistem: 'SIMON - SATUPUTARU',
   subNama: 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
@@ -740,9 +797,11 @@ export const DEFAULT_SYSTEM_SETTINGS = {
     'Platform terpadu pemantauan dan pengendalian paket pekerjaan konstruksi, preservasi jalan, pengelolaan sumber daya air, cipta karya, dan penataan ruang di Kabupaten Demak dari perencanaan pra-kontrak hingga serah terima akhir.',
   logoUrl: '', // Kosong = gunakan logo dinas PU default beraksen emas
   maxPublicHighlights: 10, // Maksimal jumlah paket sorotan yang tampil di landing page publik
-  alamat: 'Jl. Kyai Singkil No. 7, Bintoro, Kec. Demak, Kabupaten Demak, Jawa Tengah 59511',
+  alamat: 'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak',
   telepon: '(0291) 685123',
   email: 'dinputaru@demakkab.go.id',
+  customTexts: DEFAULT_CUSTOM_TEXTS,
+  bidangDescriptions: DEFAULT_BIDANG_DESCRIPTIONS,
   website: 'https://dinputaru.demakkab.go.id',
   // Pejabat Pimpinan Penandatangan Resmi (Dapat diubah Superadmin)
   namaKepalaDinas: 'Ir. H. Achmad Syafii, CES, MT',
@@ -758,7 +817,7 @@ export const DEFAULT_SYSTEM_SETTINGS = {
       id: 'gal-1',
       judul: 'Gedung Kantor DINPUTARU Kabupaten Demak',
       kategori: 'Gedung Kantor',
-      lokasi: 'Jl. Kyai Singkil No. 7, Kec. Demak',
+      lokasi: 'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak',
       tahun: 2024,
       deskripsi: 'Gedung induk pelayanan administrasi teknis dan penataan ruang DINPUTARU Kab. Demak.',
       url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80'

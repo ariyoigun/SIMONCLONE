@@ -390,7 +390,7 @@ export const generateDemakProjects = () => {
             catatanVerifikator: spjStatus === 'dikembalikan' ? 'Lampiran faktur pajak PPN 11% dan bukti uji kuat tekan beton belum lengkap.' : 'Berkas verifikasi SPJ lengkap dan memenuhi syarat pencairan.',
             petugasVerifikator: 'Sri Wahyuni, SE, M.Si'
           },
-          updatedAt: `${year}-06-15 10:00`,
+          updatedAt: `${year}-11-18 08:30`,
           updatedBy: 'Koordinator Bidang'
         });
       }

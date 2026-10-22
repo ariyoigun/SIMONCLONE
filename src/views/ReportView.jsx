@@ -591,7 +591,7 @@ const ReportView = ({ onOpenSettingsModal }) => {
               {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}
             </div>
             <div style={{ fontSize: 11.5, color: '#334155', marginTop: 4, lineHeight: 1.4 }}>
-              {systemSettings?.alamat || 'Jl. Kyai Singkil No. 7, Bintoro, Kec. Demak, Kab. Demak, Jawa Tengah 59511'} • Telp: {systemSettings?.telepon || '(0291) 685123'} • Email: {systemSettings?.email || 'dinputaru@demakkab.go.id'}
+              {systemSettings?.alamat || 'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak'} • Telp: {systemSettings?.telepon || '(0291) 685123'} • Email: {systemSettings?.email || 'dinputaru@demakkab.go.id'}
             </div>
           </div>
         </div>

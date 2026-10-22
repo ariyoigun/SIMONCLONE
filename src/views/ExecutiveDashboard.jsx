@@ -17,14 +17,23 @@ import {
   Database,
   Filter,
   Layers,
-  Sparkles
+  Sparkles,
+  ChevronDown,
+  ChevronUp,
+  FolderOpen
 } from 'lucide-react';
+import { getLatestProjectUpdateFormatted } from '../utils/dateUtils';
 
 const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }) => {
-  const { accessibleProjects, activeYear, canCreateProject, canEditProject, currentUser, setActiveTab } = useApp();
+  const { accessibleProjects, activeYear, canCreateProject, canEditProject, currentUser, setActiveTab, systemSettings } = useApp();
 
   // State filter pemilah per bidang (Eksekutif Kadin & Sekretaris)
   const [selectedBidang, setSelectedBidang] = useState('all');
+
+  // State dropdown list pekerjaan per bidang di tabel komparasi bidang
+  const [expandedKomparasiBidang, setExpandedKomparasiBidang] = useState(null);
+
+  const latestUpdateFormatted = getLatestProjectUpdateFormatted(accessibleProjects, activeYear);
 
   // Filtered projects based on selected bidang
   const displayProjects =
@@ -107,7 +116,7 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
         <div className="page-header-title">
           <h1>Dashboard Eksekutif Monitoring Pekerjaan</h1>
           <p>
-            Ringkasan capaian pekerjaan pra-kontrak, fisik, dan keuangan Dinas Pekerjaan Umum dan Penataan Ruang TA {activeYear}
+            {systemSettings?.customTexts?.internal_dashboard_desc || `Ringkasan capaian pekerjaan pra-kontrak, fisik, dan keuangan ${systemSettings?.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang'} TA ${activeYear}`}
           </p>
         </div>
         <div className="page-header-actions">
@@ -440,7 +449,7 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
       {/* Visualisasi Diagram Lingkaran Dashboard */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16, marginBottom: 24 }}>
         <DonutPieChart
-          title="Distribusi Tahapan Siklus Proyek"
+          title="Distribusi Tahapan Siklus Pekerjaan"
           subtitle="Sebaran pekerjaan di seluruh tahapan dinas (SiRUP s/d PHO 100%)"
           data={stageChartData}
           centerLabel="Total Paket"
@@ -526,107 +535,268 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
                     (p) => p.dataFisik?.statusDeviasi === 'Kritis'
                   );
 
+                  const isExpanded = expandedKomparasiBidang === bidang.id;
+
                   return (
-                    <tr
-                      key={bidang.id}
-                      style={{
-                        background: isCurrentFilter ? 'rgba(37, 99, 235, 0.07)' : 'transparent',
-                        cursor: 'pointer',
-                        transition: 'background 0.15s ease'
-                      }}
-                      onClick={() => setSelectedBidang(isCurrentFilter ? 'all' : bidang.id)}
-                    >
-                      <td>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                          <span
-                            style={{
-                              width: 10,
-                              height: 10,
-                              borderRadius: '50%',
-                              background: bidang.warna
-                            }}
-                          />
-                          <div>
-                            <div style={{ fontWeight: 700, color: '#0f2c59' }}>
-                              {bidang.nama} {isCurrentFilter && <span style={{ color: '#2563eb', fontSize: 11 }}>● Aktif</span>}
+                    <React.Fragment key={bidang.id}>
+                      <tr
+                        style={{
+                          background: isExpanded ? 'rgba(37, 99, 235, 0.08)' : isCurrentFilter ? 'rgba(37, 99, 235, 0.04)' : 'transparent',
+                          cursor: 'pointer',
+                          transition: 'background 0.15s ease'
+                        }}
+                        onClick={() => setExpandedKomparasiBidang(isExpanded ? null : bidang.id)}
+                      >
+                        <td>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                            <span
+                              style={{
+                                width: 10,
+                                height: 10,
+                                borderRadius: '50%',
+                                background: bidang.warna
+                              }}
+                            />
+                            <div>
+                              <div style={{ fontWeight: 700, color: '#0f2c59' }}>
+                                {bidang.nama} {isCurrentFilter && <span style={{ color: '#2563eb', fontSize: 11 }}>● Aktif</span>}
+                              </div>
+                              <div style={{ fontSize: 11, color: '#64748b' }}>{bidang.singkatan}</div>
                             </div>
-                            <div style={{ fontSize: 11, color: '#64748b' }}>{bidang.singkatan}</div>
                           </div>
-                        </div>
-                      </td>
-                      <td>
-                        <span style={{ fontWeight: 700 }}>
-                          {bidangProjects.length} Paket
-                        </span>{' '}
-                        <span style={{ fontSize: 11, color: '#64748b' }}>
-                          ({bTerkontrak.length} Terkontrak)
-                        </span>
-                      </td>
-                      <td style={{ fontWeight: 600 }}>Rp {bPagu.toLocaleString('id-ID')}</td>
-                      <td style={{ fontWeight: 600, color: '#0284c7' }}>
-                        Rp {bKontrak.toLocaleString('id-ID')}
-                      </td>
-                      <td>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                          <div style={{ width: 80, height: 7, background: '#e2e8f0', borderRadius: 9999, overflow: 'hidden' }}>
+                        </td>
+                        <td>
+                          <span style={{ fontWeight: 700 }}>
+                            {bidangProjects.length} Paket
+                          </span>{' '}
+                          <span style={{ fontSize: 11, color: '#64748b' }}>
+                            ({bTerkontrak.length} Terkontrak)
+                          </span>
+                        </td>
+                        <td style={{ fontWeight: 600 }}>Rp {bPagu.toLocaleString('id-ID')}</td>
+                        <td style={{ fontWeight: 600, color: '#0284c7' }}>
+                          Rp {bKontrak.toLocaleString('id-ID')}
+                        </td>
+                        <td>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                            <div style={{ width: 80, height: 7, background: '#e2e8f0', borderRadius: 9999, overflow: 'hidden' }}>
+                              <div
+                                style={{
+                                  width: `${Math.min(100, bFisik)}%`,
+                                  height: '100%',
+                                  background: '#10b981',
+                                  borderRadius: 9999
+                                }}
+                              />
+                            </div>
+                            <span style={{ fontWeight: 700, fontSize: 12.5 }}>{bFisik}%</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                            <div style={{ width: 80, height: 7, background: '#e2e8f0', borderRadius: 9999, overflow: 'hidden' }}>
+                              <div
+                                style={{
+                                  width: `${Math.min(100, bKeuangan)}%`,
+                                  height: '100%',
+                                  background: '#f59e0b',
+                                  borderRadius: 9999
+                                }}
+                              />
+                            </div>
+                            <span style={{ fontWeight: 700, fontSize: 12.5 }}>{bKeuangan}%</span>
+                          </div>
+                        </td>
+                        <td>
+                          {hasCritical ? (
+                            <span className="badge badge-kritis">Ada Kritis (SCM)</span>
+                          ) : (
+                            <span className="badge badge-aman">Aman Terkendali</span>
+                          )}
+                        </td>
+                        <td style={{ textAlign: 'center' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+                            <button
+                              type="button"
+                              className="btn btn-outline btn-sm"
+                              style={{
+                                fontSize: 11,
+                                padding: '4px 9px',
+                                background: isExpanded ? bidang.warna : '#fff',
+                                color: isExpanded ? '#fff' : '#0f2c59',
+                                borderColor: isExpanded ? bidang.warna : '#cbd5e1',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: 4
+                              }}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setExpandedKomparasiBidang(isExpanded ? null : bidang.id);
+                              }}
+                              title="Buka dropdown daftar paket pekerjaan bidang ini"
+                            >
+                              <span>{isExpanded ? 'Tutup' : 'Lihat Paket'}</span>
+                              {isExpanded ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+                            </button>
+                            <button
+                              type="button"
+                              className="btn btn-outline btn-sm"
+                              style={{
+                                fontSize: 11,
+                                padding: '4px 8px',
+                                background: isCurrentFilter ? '#2563eb' : '#fff',
+                                color: isCurrentFilter ? '#fff' : '#0f2c59',
+                                borderColor: isCurrentFilter ? '#2563eb' : '#cbd5e1'
+                              }}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setSelectedBidang(isCurrentFilter ? 'all' : bidang.id);
+                              }}
+                              title="Filter seluruh dashboard ke bidang ini"
+                            >
+                              {isCurrentFilter ? 'Reset' : 'Filter'}
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+
+                      {/* Dropdown Baris Daftar Paket Pekerjaan Per Bidang */}
+                      {isExpanded && (
+                        <tr style={{ background: '#f8fafc' }}>
+                          <td colSpan="8" style={{ padding: '16px 20px', borderTop: 'none' }}>
                             <div
                               style={{
-                                width: `${Math.min(100, bFisik)}%`,
-                                height: '100%',
-                                background: '#10b981',
-                                borderRadius: 9999
+                                background: '#ffffff',
+                                border: `1.5px solid ${bidang.warna}30`,
+                                borderRadius: 10,
+                                padding: 14,
+                                boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
                               }}
-                            />
-                          </div>
-                          <span style={{ fontWeight: 700, fontSize: 12.5 }}>{bFisik}%</span>
-                        </div>
-                      </td>
-                      <td>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                          <div style={{ width: 80, height: 7, background: '#e2e8f0', borderRadius: 9999, overflow: 'hidden' }}>
-                            <div
-                              style={{
-                                width: `${Math.min(100, bKeuangan)}%`,
-                                height: '100%',
-                                background: '#f59e0b',
-                                borderRadius: 9999
-                              }}
-                            />
-                          </div>
-                          <span style={{ fontWeight: 700, fontSize: 12.5 }}>{bKeuangan}%</span>
-                        </div>
-                      </td>
-                      <td>
-                        {hasCritical ? (
-                          <span className="badge badge-kritis">Ada Kritis (SCM)</span>
-                        ) : (
-                          <span className="badge badge-aman">Aman Terkendali</span>
-                        )}
-                      </td>
-                      <td style={{ textAlign: 'center' }}>
-                        <button
-                          type="button"
-                          className="btn btn-outline btn-sm"
-                          style={{
-                            fontSize: 11,
-                            padding: '3px 8px',
-                            background: isCurrentFilter ? '#2563eb' : '#fff',
-                            color: isCurrentFilter ? '#fff' : '#0f2c59',
-                            borderColor: isCurrentFilter ? '#2563eb' : '#cbd5e1'
-                          }}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedBidang(isCurrentFilter ? 'all' : bidang.id);
-                          }}
-                        >
-                          {isCurrentFilter ? 'Reset Filter' : 'Pilah Bidang'}
-                        </button>
-                      </td>
-                    </tr>
+                            >
+                              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                                  <FolderOpen size={16} color={bidang.warna} />
+                                  <span style={{ fontWeight: 800, fontSize: 13, color: '#0f2c59' }}>
+                                    Dropdown Daftar Paket Pekerjaan: {bidang.nama} ({bidangProjects.length} Paket)
+                                  </span>
+                                </div>
+                                <span style={{ fontSize: 11.5, color: '#64748b' }}>
+                                  Menampilkan paket pekerjaan {bidang.singkatan} TA {activeYear}
+                                </span>
+                              </div>
+
+                              <div className="table-container" style={{ margin: 0, border: '1px solid #e2e8f0' }}>
+                                <table className="data-table" style={{ fontSize: 12 }}>
+                                  <thead>
+                                    <tr style={{ background: '#f8fafc' }}>
+                                      <th style={{ width: 36, textAlign: 'center' }}>No</th>
+                                      <th>Nama Paket & Lokasi</th>
+                                      <th>Penyedia Jasa</th>
+                                      <th>Pagu / Nilai Kontrak</th>
+                                      <th>Realisasi Fisik</th>
+                                      <th>Status Deviasi</th>
+                                      <th style={{ textAlign: 'center' }}>Aksi</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {bidangProjects.map((bp, bidx) => (
+                                      <tr key={bp.id}>
+                                        <td style={{ textAlign: 'center', color: '#64748b' }}>{bidx + 1}</td>
+                                        <td>
+                                          <div style={{ fontWeight: 700, color: '#0f2c59' }}>{bp.namaPaket}</div>
+                                          <div style={{ fontSize: 11, color: '#64748b', marginTop: 2 }}>
+                                            {bp.desa ? `${bp.desa}, ` : ''}Kec. {bp.kecamatan || '-'}
+                                          </div>
+                                        </td>
+                                        <td>{bp.dataKontrak?.namaPenyedia || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>Belum ada</span>}</td>
+                                        <td>
+                                          <div>Pagu: Rp {parseFloat(bp.paguAnggaran || 0).toLocaleString('id-ID')}</div>
+                                          {bp.isKontrak && (
+                                            <div style={{ color: '#0284c7', fontWeight: 600, fontSize: 11.5 }}>
+                                              Kontrak: Rp {parseFloat(bp.dataKontrak?.nilaiKontrak || 0).toLocaleString('id-ID')}
+                                            </div>
+                                          )}
+                                        </td>
+                                        <td>
+                                          {bp.isKontrak ? (
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                                              <span style={{ fontWeight: 700, color: (bp.dataFisik?.progresRealisasi || 0) >= 100 ? '#0284c7' : '#15803d' }}>
+                                                {bp.dataFisik?.progresRealisasi || 0}%
+                                              </span>
+                                            </div>
+                                          ) : (
+                                            <span style={{ fontSize: 11, color: '#d97706', fontWeight: 700 }}>Pra-Kontrak</span>
+                                          )}
+                                        </td>
+                                        <td>
+                                          <span className={`badge badge-${(bp.dataFisik?.statusDeviasi || 'aman').toLowerCase()}`}>
+                                            {bp.dataFisik?.statusDeviasi || 'Aman'}
+                                          </span>
+                                        </td>
+                                        <td style={{ textAlign: 'center' }}>
+                                          <button
+                                            type="button"
+                                            className="btn btn-outline btn-sm"
+                                            style={{ padding: '3px 8px', fontSize: 11 }}
+                                            onClick={(e) => {
+                                              e.stopPropagation();
+                                              onViewProject(bp);
+                                            }}
+                                            title="Buka rincian lengkap pekerjaan"
+                                          >
+                                            <Eye size={12} />
+                                            Detail
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      )}
+                    </React.Fragment>
                   );
                 })}
               </tbody>
             </table>
+          </div>
+        </div>
+
+        {/* Footer Card Komparasi Bidang dengan Time Stamp di Pojok Kiri Bawah */}
+        <div
+          style={{
+            padding: '14px 20px',
+            background: '#f8fafc',
+            borderTop: '1px solid #e2e8f0',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            fontSize: 12.5,
+            flexWrap: 'wrap',
+            gap: 10
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#334155', fontWeight: 600 }}>
+            <Clock size={16} color="#0284c7" />
+            <span>Terakhir diupdate: <strong style={{ color: '#0f2c59' }}>{latestUpdateFormatted}</strong></span>
+            <span
+              style={{
+                fontSize: 10.5,
+                padding: '2px 8px',
+                borderRadius: 9999,
+                background: '#e0f2fe',
+                color: '#0369a1',
+                fontWeight: 700
+              }}
+            >
+              TA {activeYear}
+            </span>
+          </div>
+          <div style={{ color: '#64748b', fontSize: 12 }}>
+            Data komparasi capaian dinas terintegrasi DINPUTARU Kabupaten Demak
           </div>
         </div>
       </div>

@@ -21,10 +21,11 @@ import ProjectModal from './components/ProjectModal';
 import ProjectDetailModal from './components/ProjectDetailModal';
 import QuickProgressModal from './components/QuickProgressModal';
 
-import { CheckCircle2, AlertCircle, Info } from 'lucide-react';
+import { CheckCircle2, AlertCircle, Info, Clock } from 'lucide-react';
+import { getLatestProjectUpdateFormatted } from './utils/dateUtils';
 
 const MainAppContent = () => {
-  const { activeTab, toast, isLoggedIn } = useApp();
+  const { activeTab, toast, isLoggedIn, accessibleProjects = [], activeYear = 2026 } = useApp();
 
   // Guest & Public Portal Navigation State
   const [guestScreen, setGuestScreen] = useState('landing'); // 'landing' | 'login'
@@ -205,6 +206,18 @@ const MainAppContent = () => {
 
           {activeTab === 'laporan' && (
             <ReportView onOpenSettingsModal={() => setIsSettingsModalOpen(true)} />
+          )}
+
+          {/* Floating Time Stamp di Pojok Kiri Bawah untuk Modul Monitoring */}
+          {['dashboard', 'prakontrak', 'fisik', 'keuangan', 'spj_keuangan', 'master_pekerjaan'].includes(activeTab) && (
+            <div
+              className="bottom-left-timestamp-pill"
+              title="Waktu sinkronisasi dan update data monitoring dinas terakhir"
+            >
+              <span className="pulse-dot" />
+              <Clock size={13} color="#38bdf8" />
+              <span>Terakhir diupdate: <strong>{getLatestProjectUpdateFormatted(accessibleProjects, activeYear)}</strong></span>
+            </div>
           )}
         </main>
       </div>

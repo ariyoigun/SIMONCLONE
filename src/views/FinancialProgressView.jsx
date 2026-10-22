@@ -16,8 +16,10 @@ import {
   Edit3,
   Trash2,
   PieChart as PieChartIcon,
-  Database
+  Database,
+  Clock
 } from 'lucide-react';
+import { getLatestProjectUpdateFormatted } from '../utils/dateUtils';
 
 const FinancialProgressView = ({ onViewProject, onQuickUpdate, onOpenProjectModal }) => {
   const {
@@ -27,8 +29,11 @@ const FinancialProgressView = ({ onViewProject, onQuickUpdate, onOpenProjectModa
     canCreateProject,
     currentUser,
     deleteProject,
-    setActiveTab
+    setActiveTab,
+    systemSettings
   } = useApp();
+
+  const latestUpdateFormatted = getLatestProjectUpdateFormatted(accessibleProjects, activeYear);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBidang, setSelectedBidang] = useState('ALL');
@@ -113,7 +118,7 @@ const FinancialProgressView = ({ onViewProject, onQuickUpdate, onOpenProjectModa
         <div className="page-header-title">
           <h1>Menu 3: Monitoring Progres Keuangan & Pencairan SP2D</h1>
           <p>
-            Monitor realisasi pencairan anggaran, pagu, nilai kontrak, nama rekanan (CV/PT), termin SP2D tim keuangan, dan sisa pagu TA {activeYear}
+            {systemSettings?.customTexts?.internal_keuangan_desc || `Monitor realisasi pencairan anggaran, pagu, nilai kontrak, nama rekanan (CV/PT), termin SP2D tim keuangan, dan sisa pagu TA ${activeYear}`}
           </p>
         </div>
         <div className="page-header-actions">
@@ -470,6 +475,41 @@ const FinancialProgressView = ({ onViewProject, onQuickUpdate, onOpenProjectModa
                 )}
               </tbody>
             </table>
+          </div>
+        </div>
+
+        {/* Footer Card Monitoring Keuangan dengan Time Stamp di Pojok Kiri Bawah */}
+        <div
+          style={{
+            padding: '14px 20px',
+            background: '#f8fafc',
+            borderTop: '1px solid #e2e8f0',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            fontSize: 12.5,
+            flexWrap: 'wrap',
+            gap: 10
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#334155', fontWeight: 600 }}>
+            <Clock size={16} color="#0284c7" />
+            <span>Terakhir diupdate: <strong style={{ color: '#0f2c59' }}>{latestUpdateFormatted}</strong></span>
+            <span
+              style={{
+                fontSize: 10.5,
+                padding: '2px 8px',
+                borderRadius: 9999,
+                background: '#fef3c7',
+                color: '#d97706',
+                fontWeight: 700
+              }}
+            >
+              ● SP2D Terintegrasi
+            </span>
+          </div>
+          <div style={{ color: '#64748b', fontSize: 12 }}>
+            Menampilkan <strong>{filteredProjects.length}</strong> dari <strong>{contractProjects.length}</strong> paket SP2D keuangan terkontrak TA {activeYear}
           </div>
         </div>
       </div>

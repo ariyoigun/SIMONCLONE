@@ -50,7 +50,7 @@ VALUES (
   'SIMON - SATUPUTARU',
   'Dinas Pekerjaan Umum dan Penataan Ruang',
   'Pemerintah Kabupaten Demak',
-  'Jl. Kyai Singkil No. 45, Bintoro, Demak, Jawa Tengah 59511',
+  'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak',
   '(0291) 685123',
   'dinputaru@demakkab.go.id',
   'https://dinputaru.demakkab.go.id',
