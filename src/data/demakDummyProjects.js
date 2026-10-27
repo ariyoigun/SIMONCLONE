@@ -1,3 +1,5 @@
+import { INITIAL_SIPD_SUB_KEGIATAN, matchProjectToSubKegiatan } from './sipdData';
+
 /**
  * Data Dummy 80 Pekerjaan Kabupaten Demak (2024 - 2027)
  * 4 Bidang x 5 Pekerjaan per Tahun = 80 Paket Lengkap
@@ -313,10 +315,20 @@ export const generateDemakProjects = () => {
         const totalPencairan = terminHistory.reduce((sum, t) => sum + t.jumlah, 0);
         const persenKeuangan = nilaiKontrak > 0 ? parseFloat(((totalPencairan / nilaiKontrak) * 100).toFixed(1)) : 0;
 
+        const matchedSub = matchProjectToSubKegiatan(
+          { namaPaket, bidangId: group.bidangId, kategoriPekerjaan: group.kategoriPekerjaan },
+          INITIAL_SIPD_SUB_KEGIATAN
+        );
+
         projects.push({
           id: projectId,
           tahunAnggaran: year,
           bidangId: group.bidangId,
+          programId: matchedSub?.programId || '',
+          kegiatanId: matchedSub?.kegiatanId || '',
+          subKegiatanId: matchedSub?.id || '',
+          kodeSubKegiatan: matchedSub?.kodeSubKegiatan || '',
+          namaSubKegiatan: matchedSub?.namaSubKegiatan || '',
           kategoriPekerjaan: group.kategoriPekerjaan || 'Fisik',
           subBagian: group.bidangId === 'sekretariat' ? (group.subBagians ? group.subBagians[i] : 'Sub Bagian Umum & Kepegawaian') : '',
           namaPaket,

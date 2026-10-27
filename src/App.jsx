@@ -8,6 +8,7 @@ import PreContractView from './views/PreContractView';
 import PhysicalProgressView from './views/PhysicalProgressView';
 import FinancialProgressView from './views/FinancialProgressView';
 import SpjAdministrationView from './views/SpjAdministrationView';
+import SipdSummaryView from './views/SipdSummaryView';
 import ReportView from './views/ReportView';
 import LoginView from './views/LoginView';
 import LandingView from './views/LandingView';
@@ -20,6 +21,7 @@ import SystemSettingsModal from './components/SystemSettingsModal';
 import ProjectModal from './components/ProjectModal';
 import ProjectDetailModal from './components/ProjectDetailModal';
 import QuickProgressModal from './components/QuickProgressModal';
+import ImportExportModal from './components/ImportExportModal';
 
 import { CheckCircle2, AlertCircle, Info, Clock } from 'lucide-react';
 import { getLatestProjectUpdateFormatted } from './utils/dateUtils';
@@ -52,6 +54,25 @@ const MainAppContent = () => {
     isOpen: false,
     project: null
   });
+
+  const [importExportModalState, setImportExportModalState] = useState({
+    isOpen: false,
+    tab: 'import'
+  });
+
+  const handleOpenImportExportModal = (tab = 'import') => {
+    setImportExportModalState({
+      isOpen: true,
+      tab
+    });
+  };
+
+  const handleCloseImportExportModal = () => {
+    setImportExportModalState({
+      isOpen: false,
+      tab: 'import'
+    });
+  };
 
   const handleOpenProjectModal = (project = null) => {
     setProjectModalState({
@@ -149,6 +170,7 @@ const MainAppContent = () => {
         onOpenRoleModal={() => setIsRoleModalOpen(true)}
         onOpenSettingsModal={() => setIsSettingsModalOpen(true)}
         onOpenPublicPortal={() => setShowPublicPortal(true)}
+        onOpenImportExportModal={handleOpenImportExportModal}
       />
 
       {/* Main Content Area */}
@@ -172,6 +194,7 @@ const MainAppContent = () => {
             <MasterPekerjaanView
               onOpenProjectModal={handleOpenProjectModal}
               onViewProject={handleViewProject}
+              onOpenImportExportModal={handleOpenImportExportModal}
             />
           )}
 
@@ -204,12 +227,19 @@ const MainAppContent = () => {
             />
           )}
 
+          {activeTab === 'sipd_summary' && (
+            <SipdSummaryView
+              onOpenProjectModal={handleOpenProjectModal}
+              onViewProject={handleViewProject}
+            />
+          )}
+
           {activeTab === 'laporan' && (
             <ReportView onOpenSettingsModal={() => setIsSettingsModalOpen(true)} />
           )}
 
           {/* Floating Time Stamp di Pojok Kiri Bawah untuk Modul Monitoring */}
-          {['dashboard', 'prakontrak', 'fisik', 'keuangan', 'spj_keuangan', 'master_pekerjaan'].includes(activeTab) && (
+          {['dashboard', 'prakontrak', 'fisik', 'keuangan', 'spj_keuangan', 'master_pekerjaan', 'sipd_summary'].includes(activeTab) && (
             <div
               className="bottom-left-timestamp-pill"
               title="Waktu sinkronisasi dan update data monitoring dinas terakhir"
@@ -270,6 +300,14 @@ const MainAppContent = () => {
         isOpen={quickUpdateState.isOpen}
         project={quickUpdateState.project}
         onClose={handleCloseQuickUpdate}
+      />
+
+      {/* Import & Export Excel/CSV Modal */}
+      <ImportExportModal
+        isOpen={importExportModalState.isOpen}
+        initialTab={importExportModalState.tab}
+        onClose={handleCloseImportExportModal}
+        filteredProjects={accessibleProjects}
       />
 
       {/* Global Toast Alert */}

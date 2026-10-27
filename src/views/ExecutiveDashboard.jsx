@@ -114,7 +114,7 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
       {/* Page Header */}
       <div className="page-header">
         <div className="page-header-title">
-          <h1>Dashboard Eksekutif Monitoring Pekerjaan</h1>
+          <h1>{systemSettings?.customTexts?.internal_dashboard_title || 'Dashboard Eksekutif Monitoring Pekerjaan'}</h1>
           <p>
             {systemSettings?.customTexts?.internal_dashboard_desc || `Ringkasan capaian pekerjaan pra-kontrak, fisik, dan keuangan ${systemSettings?.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang'} TA ${activeYear}`}
           </p>

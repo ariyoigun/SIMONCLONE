@@ -17,8 +17,11 @@ import {
   Settings,
   Building2,
   Award,
-  ChevronDown
+  ChevronDown,
+  FileSpreadsheet
 } from 'lucide-react';
+import { exportProjectsToExcel } from '../utils/excelUtils';
+import AppLogo from '../components/AppLogo';
 
 const REPORT_TYPES = [
   {
@@ -288,6 +291,14 @@ const ReportView = ({ onOpenSettingsModal }) => {
     document.body.removeChild(link);
   };
 
+  const handleExportExcel = () => {
+    exportProjectsToExcel(
+      filteredProjects,
+      activeYear,
+      `Laporan_${selectedReportType}_TA_${activeYear}_${new Date().toISOString().slice(0, 10)}.xlsx`
+    );
+  };
+
   const activeReport = REPORT_TYPES.find((r) => r.id === selectedReportType) || REPORT_TYPES[0];
 
   return (
@@ -312,9 +323,11 @@ const ReportView = ({ onOpenSettingsModal }) => {
               <Printer size={22} />
             </div>
             <div>
-              <h1 style={{ fontSize: 22, margin: 0 }}>Cetak & Rekapitulasi Laporan Kedinasan</h1>
+              <h1 style={{ fontSize: 22, margin: 0 }}>
+                {systemSettings?.customTexts?.internal_report_title || 'Cetak & Rekapitulasi Laporan Kedinasan'}
+              </h1>
               <p style={{ margin: '3px 0 0', fontSize: 13, color: '#64748b' }}>
-                Format laporan resmi kedinasan siap cetak/PDF dan ekspor spreadsheet untuk TA {activeYear}
+                {systemSettings?.customTexts?.internal_report_desc || `Format laporan resmi kedinasan siap cetak/PDF dan ekspor spreadsheet untuk TA ${activeYear}`}
               </p>
             </div>
           </div>
@@ -334,9 +347,32 @@ const ReportView = ({ onOpenSettingsModal }) => {
             </button>
           )}
 
-          <button className="btn btn-outline" onClick={handleExportCSV} style={{ display: 'inline-flex', gap: 6, alignItems: 'center', fontSize: 13 }}>
+          <button
+            className="btn btn-outline"
+            onClick={handleExportExcel}
+            style={{
+              display: 'inline-flex',
+              gap: 6,
+              alignItems: 'center',
+              fontSize: 13,
+              borderColor: '#059669',
+              color: '#059669',
+              background: '#ffffff'
+            }}
+            title="Download laporan dalam format Microsoft Excel (.xlsx)"
+          >
+            <FileSpreadsheet size={15} color="#059669" />
+            <span>Export Excel (.xlsx)</span>
+          </button>
+
+          <button
+            className="btn btn-outline"
+            onClick={handleExportCSV}
+            style={{ display: 'inline-flex', gap: 6, alignItems: 'center', fontSize: 13 }}
+            title="Download laporan dalam format teks CSV (.csv)"
+          >
             <Download size={15} />
-            <span>Export CSV / Excel</span>
+            <span>Export CSV</span>
           </button>
 
           <button
@@ -549,34 +585,14 @@ const ReportView = ({ onOpenSettingsModal }) => {
         >
           {/* Logo Instansi */}
           <div style={{ width: 80, height: 80, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            {systemSettings?.logoUrl ? (
-              <img
-                src={systemSettings.logoUrl}
-                alt="Logo Dinas"
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-            ) : (
-              <div
-                style={{
-                  width: 72,
-                  height: 72,
-                  borderRadius: 14,
-                  background: 'linear-gradient(135deg, #f59e0b, #d97706)',
-                  color: '#071527',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 900,
-                  fontSize: 24,
-                  border: '2px solid #000'
-                }}
-              >
-                PU
-              </div>
-            )}
+            <AppLogo
+              logoUrl={systemSettings?.logoUrl}
+              size={76}
+              shape="rounded"
+              bordered={false}
+              background="transparent"
+              alt={systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}
+            />
           </div>
 
           {/* Text Kop */}

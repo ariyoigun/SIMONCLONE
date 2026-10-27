@@ -168,7 +168,7 @@ const SpjAdministrationView = ({ onViewProject }) => {
       {/* Page Header */}
       <div className="page-header">
         <div className="page-header-title">
-          <h1>Menu 4: Administrasi Verifikasi Berkas SPJ & SPM Keuangan</h1>
+          <h1>{systemSettings?.customTexts?.internal_spj_title || 'Administrasi Verifikasi Berkas SPJ & SPM Keuangan'}</h1>
           <p>
             {systemSettings?.customTexts?.internal_spj_desc || `Khusus Tim Sub Bagian Program & Keuangan untuk memantau kelengkapan berkas SPJ, koreksi teknis, pengembalian berkas, dan penerbitan SPM TA ${activeYear} (${systemSettings?.singkatanInstansi || 'DINPUTARU Kabupaten Demak'})`}
           </p>

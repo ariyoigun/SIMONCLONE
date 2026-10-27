@@ -16,6 +16,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
+import AppLogo from '../components/AppLogo';
 
 const LandingView = ({ onGoToLogin, onBackToInternal }) => {
   const { projects = [], activeYear, isLoggedIn, currentUser, systemSettings } = useApp();
@@ -132,42 +133,11 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         >
           {/* Logo Brand */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            {systemSettings?.logoUrl ? (
-              <img
-                src={systemSettings.logoUrl}
-                alt="Logo Dinas"
-                style={{
-                  width: 44,
-                  height: 44,
-                  borderRadius: 12,
-                  objectFit: 'contain',
-                  background: '#ffffff',
-                  border: '1px solid #cbd5e1',
-                  boxShadow: '0 2px 6px rgba(0,0,0,0.06)'
-                }}
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-            ) : (
-              <div
-                style={{
-                  width: 44,
-                  height: 44,
-                  borderRadius: 12,
-                  background: 'linear-gradient(135deg, #f59e0b, #d97706)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: 18,
-                  fontWeight: 900,
-                  color: '#071527',
-                  boxShadow: '0 4px 10px rgba(245, 158, 11, 0.35)'
-                }}
-              >
-                PU
-              </div>
-            )}
+            <AppLogo
+              logoUrl={systemSettings?.logoUrl}
+              size={44}
+              alt={systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}
+            />
             <div>
               <div style={{ fontSize: 16, fontWeight: 900, color: '#0f2c59', letterSpacing: -0.3, display: 'flex', alignItems: 'center', gap: 6 }}>
                 <span>{systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}</span>
@@ -1214,31 +1184,11 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32, marginBottom: 36 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-              {systemSettings?.logoUrl ? (
-                <img
-                  src={systemSettings.logoUrl}
-                  alt="Logo Dinas"
-                  style={{ width: 38, height: 38, borderRadius: 10, objectFit: 'contain', background: '#fff' }}
-                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                />
-              ) : (
-                <div
-                  style={{
-                    width: 38,
-                    height: 38,
-                    borderRadius: 10,
-                    background: 'linear-gradient(135deg, #f59e0b, #d97706)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: 16,
-                    fontWeight: 900,
-                    color: '#071527'
-                  }}
-                >
-                  PU
-                </div>
-              )}
+              <AppLogo
+                logoUrl={systemSettings?.logoUrl}
+                size={38}
+                alt={systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}
+              />
               <span style={{ fontSize: 18, fontWeight: 900, color: '#ffffff' }}>
                 {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}
               </span>

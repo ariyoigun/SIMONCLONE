@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import {
   BIDANG_LIST,
@@ -22,8 +22,12 @@ import {
   MapPin,
   Navigation,
   ExternalLink,
-  Sparkles
+  Sparkles,
+  FolderTree,
+  Layers
 } from 'lucide-react';
+import { matchProjectToSubKegiatan } from '../data/sipdData';
+import SipdMasterModal from './SipdMasterModal';
 
 const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
   const {
@@ -36,8 +40,14 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
     praKontrakStages = [],
     spjStatuses = [],
     kategoriPekerjaanList = [],
-    sumberDanaList = []
+    sumberDanaList = [],
+    sipdPrograms = [],
+    sipdKegiatans = [],
+    sipdSubKegiatans = [],
+    canManageSipd
   } = useApp();
+
+  const [isSipdMasterModalOpen, setIsSipdMasterModalOpen] = useState(false);
 
   const isEdit = !!initialData;
 
@@ -50,6 +60,11 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
   const [formData, setFormData] = useState({
     namaPaket: '',
     bidangId: defaultBidangId,
+    programId: '',
+    kegiatanId: '',
+    subKegiatanId: '',
+    kodeSubKegiatan: '',
+    namaSubKegiatan: '',
     kategoriPekerjaan: 'Fisik',
     subBagian: '',
     tipePengadaan: 'Tender',
@@ -110,8 +125,24 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
   // Load initialData when editing
   useEffect(() => {
     if (initialData) {
+      let subKeg = null;
+      if (initialData.subKegiatanId) {
+        subKeg = sipdSubKegiatans.find((s) => s.id === initialData.subKegiatanId);
+      }
+      if (!subKeg && initialData.kodeSubKegiatan) {
+        subKeg = sipdSubKegiatans.find((s) => s.kodeSubKegiatan === initialData.kodeSubKegiatan);
+      }
+      if (!subKeg) {
+        subKeg = matchProjectToSubKegiatan(initialData, sipdSubKegiatans);
+      }
+
       setFormData({
         ...initialData,
+        programId: initialData.programId || subKeg?.programId || '',
+        kegiatanId: initialData.kegiatanId || subKeg?.kegiatanId || '',
+        subKegiatanId: initialData.subKegiatanId || subKeg?.id || '',
+        kodeSubKegiatan: initialData.kodeSubKegiatan || subKeg?.kodeSubKegiatan || '',
+        namaSubKegiatan: initialData.namaSubKegiatan || subKeg?.namaSubKegiatan || '',
         kategoriPekerjaan: initialData.kategoriPekerjaan || (initialData.bidangId === 'tata_ruang' ? 'Jakon' : 'Fisik'),
         tipePengadaan: initialData.tipePengadaan || 'Tender',
         jenisAnggaran: initialData.jenisAnggaran || 'Murni',
@@ -151,9 +182,21 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
       });
     } else {
       const defaultKategori = defaultBidangId === 'tata_ruang' ? 'Jakon' : 'Fisik';
+      const progForBidang = sipdPrograms.filter((p) => p.bidangId === defaultBidangId);
+      const defaultProg = progForBidang.length > 0 ? progForBidang[0] : null;
+      const kegForProg = defaultProg ? sipdKegiatans.filter((k) => k.programId === defaultProg.id) : [];
+      const defaultKeg = kegForProg.length > 0 ? kegForProg[0] : null;
+      const subForKeg = defaultKeg ? sipdSubKegiatans.filter((s) => s.kegiatanId === defaultKeg.id) : [];
+      const defaultSub = subForKeg.length > 0 ? subForKeg[0] : null;
+
       setFormData({
         namaPaket: '',
         bidangId: defaultBidangId,
+        programId: defaultProg?.id || '',
+        kegiatanId: defaultKeg?.id || '',
+        subKegiatanId: defaultSub?.id || '',
+        kodeSubKegiatan: defaultSub?.kodeSubKegiatan || '',
+        namaSubKegiatan: defaultSub?.namaSubKegiatan || '',
         kategoriPekerjaan: defaultKategori,
         subBagian: '',
         tipePengadaan: defaultKategori === 'Jakon' ? 'Seleksi' : 'Tender',
@@ -213,7 +256,57 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
     }
     setActiveTab('umum');
     setNewTagInput('');
-  }, [initialData, isOpen, defaultBidangId]);
+  }, [initialData, isOpen, defaultBidangId, sipdPrograms, sipdKegiatans, sipdSubKegiatans]);
+
+  // Filter Program, Kegiatan, Sub Kegiatan berdasarkan Bidang & Pilihan Hierarki
+  const filteredPrograms = useMemo(() => {
+    if (!formData.bidangId) return sipdPrograms;
+    const progInBidang = sipdPrograms.filter((p) => p.bidangId === formData.bidangId);
+    return progInBidang.length > 0 ? progInBidang : sipdPrograms;
+  }, [sipdPrograms, formData.bidangId]);
+
+  const filteredKegiatans = useMemo(() => {
+    if (formData.programId) {
+      return sipdKegiatans.filter((k) => k.programId === formData.programId);
+    }
+    if (formData.bidangId) {
+      return sipdKegiatans.filter((k) => k.bidangId === formData.bidangId);
+    }
+    return sipdKegiatans;
+  }, [sipdKegiatans, formData.programId, formData.bidangId]);
+
+  const filteredSubKegiatans = useMemo(() => {
+    if (formData.kegiatanId) {
+      return sipdSubKegiatans.filter((s) => s.kegiatanId === formData.kegiatanId);
+    }
+    if (formData.programId) {
+      return sipdSubKegiatans.filter((s) => s.programId === formData.programId);
+    }
+    if (formData.bidangId) {
+      return sipdSubKegiatans.filter((s) => s.bidangId === formData.bidangId);
+    }
+    return sipdSubKegiatans;
+  }, [sipdSubKegiatans, formData.kegiatanId, formData.programId, formData.bidangId]);
+
+  const handleBidangChange = (newBidangId) => {
+    const progForBidang = sipdPrograms.filter((p) => p.bidangId === newBidangId);
+    const newProg = progForBidang.length > 0 ? progForBidang[0] : null;
+    const kegForProg = newProg ? sipdKegiatans.filter((k) => k.programId === newProg.id) : [];
+    const newKeg = kegForProg.length > 0 ? kegForProg[0] : null;
+    const subForKeg = newKeg ? sipdSubKegiatans.filter((s) => s.kegiatanId === newKeg.id) : [];
+    const newSub = subForKeg.length > 0 ? subForKeg[0] : null;
+
+    setFormData((prev) => ({
+      ...prev,
+      bidangId: newBidangId,
+      subBagian: '',
+      programId: newProg?.id || '',
+      kegiatanId: newKeg?.id || '',
+      subKegiatanId: newSub?.id || '',
+      kodeSubKegiatan: newSub?.kodeSubKegiatan || '',
+      namaSubKegiatan: newSub?.namaSubKegiatan || ''
+    }));
+  };
 
   if (!isOpen) return null;
 
@@ -285,8 +378,24 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
       }
     }
 
+    let subKeg = null;
+    if (formData.subKegiatanId) {
+      subKeg = sipdSubKegiatans.find((s) => s.id === formData.subKegiatanId);
+    }
+    if (!subKeg && formData.kodeSubKegiatan) {
+      subKeg = sipdSubKegiatans.find((s) => s.kodeSubKegiatan === formData.kodeSubKegiatan);
+    }
+    if (!subKeg) {
+      subKeg = matchProjectToSubKegiatan(formData, sipdSubKegiatans);
+    }
+
     const payload = {
       ...formData,
+      programId: formData.programId || subKeg?.programId || '',
+      kegiatanId: formData.kegiatanId || subKeg?.kegiatanId || '',
+      subKegiatanId: formData.subKegiatanId || subKeg?.id || '',
+      kodeSubKegiatan: formData.kodeSubKegiatan || subKeg?.kodeSubKegiatan || '',
+      namaSubKegiatan: formData.namaSubKegiatan || subKeg?.namaSubKegiatan || '',
       isKontrak,
       tahapPraKontrak: {
         ...formData.tahapPraKontrak,
@@ -381,9 +490,7 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                     className="form-control"
                     value={formData.bidangId}
                     disabled={currentUser.role === 'koordinator'}
-                    onChange={(e) =>
-                      setFormData({ ...formData, bidangId: e.target.value, subBagian: '' })
-                    }
+                    onChange={(e) => handleBidangChange(e.target.value)}
                   >
                     {BIDANG_LIST.map((b) => (
                       <option key={b.id} value={b.id}>
@@ -484,6 +591,202 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                       ? 'Kategori Swakelola tidak memerlukan pemilihan jenis pengadaan'
                       : `Metode pengadaan yang tersedia untuk kategori ${formData.kategoriPekerjaan}`}
                   </span>
+                </div>
+
+                {/* KLASIFIKASI NOMENKLATUR SIPD (PROGRAM, KEGIATAN, SUB KEGIATAN) */}
+                <div
+                  className="form-group form-grid-full"
+                  style={{
+                    background: '#f8fafc',
+                    border: '1.5px solid #cbd5e1',
+                    borderRadius: 10,
+                    padding: '16px 18px',
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.03)'
+                  }}
+                >
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      marginBottom: 12,
+                      flexWrap: 'wrap',
+                      gap: 8
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <FolderTree size={18} style={{ color: '#0284c7' }} />
+                      <span style={{ fontSize: 13.5, fontWeight: 800, color: '#0f172a' }}>
+                        Klasifikasi Nomenklatur SIPD (Kemendagri RI)
+                      </span>
+                      <span
+                        style={{
+                          fontSize: 11,
+                          background: '#e0f2fe',
+                          color: '#0369a1',
+                          padding: '2px 8px',
+                          borderRadius: 12,
+                          fontWeight: 700
+                        }}
+                      >
+                        Hierarki SIPD
+                      </span>
+                    </div>
+
+                    {canManageSipd && (
+                      <button
+                        type="button"
+                        onClick={() => setIsSipdMasterModalOpen(true)}
+                        style={{
+                          fontSize: 11.5,
+                          color: '#0284c7',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: 5,
+                          cursor: 'pointer',
+                          background: '#ffffff',
+                          border: '1px solid #bae6fd',
+                          padding: '4px 10px',
+                          borderRadius: 6,
+                          fontWeight: 700
+                        }}
+                        title="Buka Pengaturan Master Program, Kegiatan, dan Sub Kegiatan SIPD"
+                      >
+                        <Layers size={13} />
+                        <span>Kelola Master SIPD</span>
+                      </button>
+                    )}
+                  </div>
+
+                  <p style={{ fontSize: 11.5, color: '#64748b', margin: '0 0 12px 0', lineHeight: 1.5 }}>
+                    Setiap paket pekerjaan bernaung di bawah <strong>Sub Kegiatan</strong>, yang berada di dalam <strong>Kegiatan</strong>, dan bermuara pada <strong>Program</strong> sesuai SIPD Pusat.
+                  </p>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px' }}>
+                    {/* 1. PROGRAM */}
+                    <div>
+                      <label className="form-label" style={{ fontSize: 12 }}>
+                        1. Program SIPD <span className="required">*</span>
+                      </label>
+                      <select
+                        className="form-control"
+                        value={formData.programId || ''}
+                        onChange={(e) => {
+                          const progId = e.target.value;
+                          setFormData({
+                            ...formData,
+                            programId: progId,
+                            kegiatanId: '',
+                            subKegiatanId: '',
+                            kodeSubKegiatan: '',
+                            namaSubKegiatan: ''
+                          });
+                        }}
+                        required
+                      >
+                        <option value="">-- Pilih Program SIPD --</option>
+                        {filteredPrograms.map((prog) => (
+                          <option key={prog.id} value={prog.id}>
+                            [{prog.kodeProgram}] {prog.namaProgram}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    {/* 2. KEGIATAN */}
+                    <div>
+                      <label className="form-label" style={{ fontSize: 12 }}>
+                        2. Kegiatan SIPD <span className="required">*</span>
+                      </label>
+                      <select
+                        className="form-control"
+                        value={formData.kegiatanId || ''}
+                        onChange={(e) => {
+                          const kegId = e.target.value;
+                          const foundKeg = sipdKegiatans.find((k) => k.id === kegId);
+                          setFormData({
+                            ...formData,
+                            programId: foundKeg ? foundKeg.programId : formData.programId,
+                            kegiatanId: kegId,
+                            subKegiatanId: '',
+                            kodeSubKegiatan: '',
+                            namaSubKegiatan: ''
+                          });
+                        }}
+                        disabled={!formData.programId && filteredKegiatans.length === 0}
+                        required
+                      >
+                        <option value="">-- Pilih Kegiatan SIPD --</option>
+                        {filteredKegiatans.map((keg) => (
+                          <option key={keg.id} value={keg.id}>
+                            [{keg.kodeKegiatan}] {keg.namaKegiatan}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    {/* 3. SUB KEGIATAN */}
+                    <div style={{ gridColumn: 'span 2' }}>
+                      <label className="form-label" style={{ fontSize: 12 }}>
+                        3. Sub Kegiatan SIPD (Pekerjaan ini masuk ke Sub Kegiatan apa) <span className="required">*</span>
+                      </label>
+                      <select
+                        className="form-control"
+                        value={formData.subKegiatanId || ''}
+                        onChange={(e) => {
+                          const subId = e.target.value;
+                          const foundSub = sipdSubKegiatans.find((s) => s.id === subId);
+                          if (foundSub) {
+                            setFormData({
+                              ...formData,
+                              programId: foundSub.programId || formData.programId,
+                              kegiatanId: foundSub.kegiatanId || formData.kegiatanId,
+                              subKegiatanId: foundSub.id,
+                              kodeSubKegiatan: foundSub.kodeSubKegiatan,
+                              namaSubKegiatan: foundSub.namaSubKegiatan
+                            });
+                          } else {
+                            setFormData({
+                              ...formData,
+                              subKegiatanId: '',
+                              kodeSubKegiatan: '',
+                              namaSubKegiatan: ''
+                            });
+                          }
+                        }}
+                        disabled={!formData.kegiatanId && filteredSubKegiatans.length === 0}
+                        required
+                      >
+                        <option value="">-- Pilih Sub Kegiatan SIPD --</option>
+                        {filteredSubKegiatans.map((sub) => (
+                          <option key={sub.id} value={sub.id}>
+                            [{sub.kodeSubKegiatan}] {sub.namaSubKegiatan}
+                          </option>
+                        ))}
+                      </select>
+                      {formData.kodeSubKegiatan && (
+                        <div
+                          style={{
+                            marginTop: 8,
+                            padding: '6px 12px',
+                            background: '#eff6ff',
+                            border: '1px solid #bfdbfe',
+                            borderRadius: 6,
+                            fontSize: 12,
+                            color: '#1d4ed8',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 6
+                          }}
+                        >
+                          <Sparkles size={13} />
+                          <span>
+                            Klasifikasi SIPD Terpilih: <strong>{formData.kodeSubKegiatan}</strong> — {formData.namaSubKegiatan}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
 
                 <div className="form-group">
@@ -1478,6 +1781,14 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
           </div>
         </form>
       </div>
+
+      {/* Modal Pengaturan Master Program, Kegiatan, Sub Kegiatan SIPD */}
+      {isSipdMasterModalOpen && (
+        <SipdMasterModal
+          isOpen={isSipdMasterModalOpen}
+          onClose={() => setIsSipdMasterModalOpen(false)}
+        />
+      )}
     </div>
   );
 };

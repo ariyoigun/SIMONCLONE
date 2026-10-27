@@ -13,6 +13,12 @@ import {
   DEFAULT_KATEGORI_PEKERJAAN,
   SUMBER_DANA
 } from '../data/constants';
+import {
+  INITIAL_SIPD_PROGRAMS,
+  INITIAL_SIPD_KEGIATAN,
+  INITIAL_SIPD_SUB_KEGIATAN,
+  matchProjectToSubKegiatan
+} from '../data/sipdData';
 
 const AppContext = createContext();
 
@@ -166,7 +172,41 @@ export const AppProvider = ({ children }) => {
     return SUMBER_DANA;
   });
 
-  // Projects State (Master Data Terpadu untuk 4 Menu)
+  // Master Nomenklatur SIPD Kemendagri State (Superadmin & Koordinator Bidang)
+  const [sipdPrograms, setSipdPrograms] = useState(() => {
+    const saved = localStorage.getItem('simon_sipd_programs');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      } catch (e) {}
+    }
+    return INITIAL_SIPD_PROGRAMS;
+  });
+
+  const [sipdKegiatans, setSipdKegiatans] = useState(() => {
+    const saved = localStorage.getItem('simon_sipd_kegiatans');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      } catch (e) {}
+    }
+    return INITIAL_SIPD_KEGIATAN;
+  });
+
+  const [sipdSubKegiatans, setSipdSubKegiatans] = useState(() => {
+    const saved = localStorage.getItem('simon_sipd_sub_kegiatans');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      } catch (e) {}
+    }
+    return INITIAL_SIPD_SUB_KEGIATAN;
+  });
+
+  // Projects State (Master Data Terpadu untuk 4 Menu + Menu 5 SIPD)
   const [projects, setProjects] = useState(() => {
     const mapProjectClean = (p) => {
       // Clean kategori pekerjaan
@@ -199,8 +239,25 @@ export const AppProvider = ({ children }) => {
       const isBatal = statusTahap === 'batal';
       const isKontrak = !isBatal && (statusTahap === 'kontrak' || p.isKontrak);
 
+      // SIPD Mapping
+      let matchedSub = null;
+      if (p.subKegiatanId) {
+        matchedSub = INITIAL_SIPD_SUB_KEGIATAN.find((s) => s.id === p.subKegiatanId);
+      }
+      if (!matchedSub && p.kodeSubKegiatan) {
+        matchedSub = INITIAL_SIPD_SUB_KEGIATAN.find((s) => s.kodeSubKegiatan === p.kodeSubKegiatan);
+      }
+      if (!matchedSub) {
+        matchedSub = matchProjectToSubKegiatan(p, INITIAL_SIPD_SUB_KEGIATAN);
+      }
+
       return {
         ...p,
+        programId: p.programId || matchedSub?.programId || '',
+        kegiatanId: p.kegiatanId || matchedSub?.kegiatanId || '',
+        subKegiatanId: p.subKegiatanId || matchedSub?.id || '',
+        kodeSubKegiatan: p.kodeSubKegiatan || matchedSub?.kodeSubKegiatan || '',
+        namaSubKegiatan: p.namaSubKegiatan || matchedSub?.namaSubKegiatan || '',
         kategoriPekerjaan,
         tipePengadaan,
         isKontrak,
@@ -308,6 +365,18 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('simon_projects_v2', JSON.stringify(projects));
   }, [projects]);
+
+  useEffect(() => {
+    localStorage.setItem('simon_sipd_programs', JSON.stringify(sipdPrograms));
+  }, [sipdPrograms]);
+
+  useEffect(() => {
+    localStorage.setItem('simon_sipd_kegiatans', JSON.stringify(sipdKegiatans));
+  }, [sipdKegiatans]);
+
+  useEffect(() => {
+    localStorage.setItem('simon_sipd_sub_kegiatans', JSON.stringify(sipdSubKegiatans));
+  }, [sipdSubKegiatans]);
 
   // Remote Database Sync (Hostinger MySQL API Bridge)
   useEffect(() => {
@@ -842,6 +911,119 @@ export const AppProvider = ({ children }) => {
   const canManageUsers = currentUser?.role === 'superadmin';
   const canManageYears = currentUser?.role === 'superadmin';
   const canManageSettings = currentUser?.role === 'superadmin';
+  const canManageSipd = [
+    'superadmin',
+    'koordinator',
+    'koordinator_umpeg',
+    'koordinator_program_keuangan',
+    'kasubag_program_keuangan'
+  ].includes(currentUser?.role);
+
+  // --- SIPD PROGRAM CRUD ---
+  const addSipdProgram = (programData) => {
+    const id = programData.id || `prog_${Date.now()}`;
+    const newProg = { ...programData, id };
+    setSipdPrograms((prev) => [...prev, newProg]);
+    showToast(`Program SIPD "${newProg.namaProgram}" berhasil ditambahkan!`, 'success');
+    return newProg;
+  };
+
+  const updateSipdProgram = (id, programData) => {
+    setSipdPrograms((prev) =>
+      prev.map((p) => (p.id === id ? { ...p, ...programData } : p))
+    );
+    showToast('Program SIPD berhasil diperbarui!', 'success');
+    return true;
+  };
+
+  const deleteSipdProgram = (id) => {
+    const hasKegiatan = sipdKegiatans.some((k) => k.programId === id);
+    if (hasKegiatan) {
+      showToast('Program tidak dapat dihapus karena memiliki kegiatan di bawahnya!', 'error');
+      return false;
+    }
+    setSipdPrograms((prev) => prev.filter((p) => p.id !== id));
+    showToast('Program SIPD berhasil dihapus.', 'info');
+    return true;
+  };
+
+  // --- SIPD KEGIATAN CRUD ---
+  const addSipdKegiatan = (kegiatanData) => {
+    const id = kegiatanData.id || `keg_${Date.now()}`;
+    const newKeg = { ...kegiatanData, id };
+    setSipdKegiatans((prev) => [...prev, newKeg]);
+    showToast(`Kegiatan SIPD "${newKeg.namaKegiatan}" berhasil ditambahkan!`, 'success');
+    return newKeg;
+  };
+
+  const updateSipdKegiatan = (id, kegiatanData) => {
+    setSipdKegiatans((prev) =>
+      prev.map((k) => (k.id === id ? { ...k, ...kegiatanData } : k))
+    );
+    showToast('Kegiatan SIPD berhasil diperbarui!', 'success');
+    return true;
+  };
+
+  const deleteSipdKegiatan = (id) => {
+    const hasSub = sipdSubKegiatans.some((s) => s.kegiatanId === id);
+    if (hasSub) {
+      showToast('Kegiatan tidak dapat dihapus karena memiliki sub kegiatan di bawahnya!', 'error');
+      return false;
+    }
+    setSipdKegiatans((prev) => prev.filter((k) => k.id !== id));
+    showToast('Kegiatan SIPD berhasil dihapus.', 'info');
+    return true;
+  };
+
+  // --- SIPD SUB KEGIATAN CRUD ---
+  const addSipdSubKegiatan = (subData) => {
+    const id = subData.id || `sub_${Date.now()}`;
+    const newSub = { ...subData, id };
+    setSipdSubKegiatans((prev) => [...prev, newSub]);
+    showToast(`Sub Kegiatan SIPD "${newSub.namaSubKegiatan}" berhasil ditambahkan!`, 'success');
+    return newSub;
+  };
+
+  const updateSipdSubKegiatan = (id, subData) => {
+    setSipdSubKegiatans((prev) =>
+      prev.map((s) => (s.id === id ? { ...s, ...subData } : s))
+    );
+    setProjects((prev) =>
+      prev.map((p) => {
+        if (p.subKegiatanId === id) {
+          return {
+            ...p,
+            kodeSubKegiatan: subData.kodeSubKegiatan || p.kodeSubKegiatan,
+            namaSubKegiatan: subData.namaSubKegiatan || p.namaSubKegiatan
+          };
+        }
+        return p;
+      })
+    );
+    showToast('Sub Kegiatan SIPD berhasil diperbarui!', 'success');
+    return true;
+  };
+
+  const deleteSipdSubKegiatan = (id) => {
+    const isUsed = projects.some((p) => p.subKegiatanId === id);
+    if (isUsed) {
+      showToast('Sub Kegiatan tidak dapat dihapus karena sedang digunakan oleh paket pekerjaan!', 'error');
+      return false;
+    }
+    setSipdSubKegiatans((prev) => prev.filter((s) => s.id !== id));
+    showToast('Sub Kegiatan SIPD berhasil dihapus.', 'info');
+    return true;
+  };
+
+  const resetSipdToDefault = () => {
+    setSipdPrograms(INITIAL_SIPD_PROGRAMS);
+    setSipdKegiatans(INITIAL_SIPD_KEGIATAN);
+    setSipdSubKegiatans(INITIAL_SIPD_SUB_KEGIATAN);
+    localStorage.removeItem('simon_sipd_programs');
+    localStorage.removeItem('simon_sipd_kegiatans');
+    localStorage.removeItem('simon_sipd_sub_kegiatans');
+    showToast('Nomenklatur SIPD berhasil direset ke standar Kepmendagri DINPUTARU!', 'info');
+  };
 
   // Helper to re-calculate deviation status
   const calculateDeviation = (rencana, realisasi) => {
@@ -873,10 +1055,33 @@ export const AppProvider = ({ children }) => {
     const totalPencairan = terminList.reduce((sum, item) => sum + (parseFloat(item.jumlah) || 0), 0);
     const persenKeuangan = nilaiKontrak > 0 ? parseFloat(((totalPencairan / nilaiKontrak) * 100).toFixed(2)) : 0;
 
+    // Resolve SIPD
+    let subKeg = null;
+    if (projectData.subKegiatanId) {
+      subKeg = sipdSubKegiatans.find((s) => s.id === projectData.subKegiatanId);
+    }
+    if (!subKeg && projectData.kodeSubKegiatan) {
+      subKeg = sipdSubKegiatans.find((s) => s.kodeSubKegiatan === projectData.kodeSubKegiatan);
+    }
+    if (!subKeg) {
+      subKeg = matchProjectToSubKegiatan(projectData, sipdSubKegiatans);
+    }
+
+    const subKegiatanId = projectData.subKegiatanId || subKeg?.id || '';
+    const kegiatanId = projectData.kegiatanId || subKeg?.kegiatanId || '';
+    const programId = projectData.programId || subKeg?.programId || '';
+    const kodeSubKegiatan = projectData.kodeSubKegiatan || subKeg?.kodeSubKegiatan || '';
+    const namaSubKegiatan = projectData.namaSubKegiatan || subKeg?.namaSubKegiatan || '';
+
     const newProject = {
       ...projectData,
       id: projectData.id || `PRJ-${activeYear}-${projectData.bidangId?.toUpperCase() || 'DINPUTARU'}-${Date.now().toString().slice(-4)}`,
       tahunAnggaran: activeYear,
+      programId,
+      kegiatanId,
+      subKegiatanId,
+      kodeSubKegiatan,
+      namaSubKegiatan,
       kategoriPekerjaan: projectData.kategoriPekerjaan || (projectData.bidangId === 'tata_ruang' ? 'Jakon' : 'Fisik'),
       tipePengadaan: projectData.tipePengadaan || 'Tender',
       isKontrak,
@@ -951,9 +1156,34 @@ export const AppProvider = ({ children }) => {
         const totalPencairan = terminList.reduce((sum, item) => sum + (parseFloat(item.jumlah) || 0), 0);
         const persenKeuangan = nilaiKontrak > 0 ? parseFloat(((totalPencairan / nilaiKontrak) * 100).toFixed(2)) : 0;
 
+        let subKeg = null;
+        if (updatedData.subKegiatanId) {
+          subKeg = sipdSubKegiatans.find((s) => s.id === updatedData.subKegiatanId);
+        } else if (p.subKegiatanId) {
+          subKeg = sipdSubKegiatans.find((s) => s.id === p.subKegiatanId);
+        }
+        if (!subKeg && (updatedData.kodeSubKegiatan || p.kodeSubKegiatan)) {
+          const code = updatedData.kodeSubKegiatan || p.kodeSubKegiatan;
+          subKeg = sipdSubKegiatans.find((s) => s.kodeSubKegiatan === code);
+        }
+        if (!subKeg) {
+          subKeg = matchProjectToSubKegiatan({ ...p, ...updatedData }, sipdSubKegiatans);
+        }
+
+        const subKegiatanId = updatedData.subKegiatanId || p.subKegiatanId || subKeg?.id || '';
+        const kegiatanId = updatedData.kegiatanId || p.kegiatanId || subKeg?.kegiatanId || '';
+        const programId = updatedData.programId || p.programId || subKeg?.programId || '';
+        const kodeSubKegiatan = updatedData.kodeSubKegiatan || p.kodeSubKegiatan || subKeg?.kodeSubKegiatan || '';
+        const namaSubKegiatan = updatedData.namaSubKegiatan || p.namaSubKegiatan || subKeg?.namaSubKegiatan || '';
+
         const merged = {
           ...p,
           ...updatedData,
+          programId,
+          kegiatanId,
+          subKegiatanId,
+          kodeSubKegiatan,
+          namaSubKegiatan,
           kategoriPekerjaan: updatedData.kategoriPekerjaan || p.kategoriPekerjaan || (p.bidangId === 'tata_ruang' ? 'Jakon' : 'Fisik'),
           tipePengadaan: updatedData.tipePengadaan || p.tipePengadaan || 'Tender',
           isKontrak,
@@ -1043,6 +1273,55 @@ export const AppProvider = ({ children }) => {
     return true;
   };
 
+  // Bulk Import Projects (Excel/CSV Mass Import)
+  const bulkImportProjects = (importedList, mode = 'append') => {
+    if (!Array.isArray(importedList) || importedList.length === 0) {
+      showToast('Tidak ada data paket untuk diimpor.', 'error');
+      return false;
+    }
+
+    setProjects((prev) => {
+      let nextProjects = [...prev];
+
+      if (mode === 'replace_year') {
+        const targetYears = [...new Set(importedList.map((p) => p.tahunAnggaran || activeYear))];
+        nextProjects = nextProjects.filter((p) => !targetYears.includes(p.tahunAnggaran));
+        nextProjects = [...importedList, ...nextProjects];
+      } else {
+        const importedMap = new Map();
+        importedList.forEach((p) => {
+          importedMap.set(p.id, p);
+        });
+
+        const updatedExisting = nextProjects.map((p) => {
+          if (importedMap.has(p.id)) {
+            const fresh = importedMap.get(p.id);
+            importedMap.delete(p.id);
+            return fresh;
+          }
+          return p;
+        });
+
+        const brandNew = Array.from(importedMap.values());
+        nextProjects = [...brandNew, ...updatedExisting];
+      }
+
+      localStorage.setItem('simon_projects_v2', JSON.stringify(nextProjects));
+      return nextProjects;
+    });
+
+    showToast(`Berhasil mengimpor ${importedList.length} paket pekerjaan ke Master Data!`, 'success');
+
+    // Asynchronously sync to remote MySQL backend if available
+    setTimeout(() => {
+      importedList.forEach((proj) => {
+        syncProjectToRemote(proj);
+      });
+    }, 100);
+
+    return true;
+  };
+
   // Add Termin Pencairan
   const addTermin = (projectId, terminData) => {
     const target = projects.find((p) => p.id === projectId);
@@ -1087,6 +1366,9 @@ export const AppProvider = ({ children }) => {
     localStorage.removeItem('simon_prakontrak_stages');
     localStorage.removeItem('simon_spj_statuses');
     localStorage.removeItem('simon_sumber_dana');
+    localStorage.removeItem('simon_sipd_programs');
+    localStorage.removeItem('simon_sipd_kegiatans');
+    localStorage.removeItem('simon_sipd_sub_kegiatans');
     setProjects(INITIAL_PROJECTS);
     setSystemSettings(DEFAULT_SYSTEM_SETTINGS);
     setUsers(INITIAL_USERS);
@@ -1096,6 +1378,9 @@ export const AppProvider = ({ children }) => {
     setPraKontrakStages(TAHAPAN_PRA_KONTRAK);
     setSpjStatuses(STATUS_SPJ_KEUANGAN);
     setSumberDanaList(SUMBER_DANA);
+    setSipdPrograms(INITIAL_SIPD_PROGRAMS);
+    setSipdKegiatans(INITIAL_SIPD_KEGIATAN);
+    setSipdSubKegiatans(INITIAL_SIPD_SUB_KEGIATAN);
     setActiveYear(2026);
     setCurrentUser(INITIAL_USERS[0]);
     showToast('Data sistem telah direset ke data sampel DINPUTARU Kabupaten Demak!', 'info');
@@ -1141,6 +1426,22 @@ export const AppProvider = ({ children }) => {
     addSpjStatus,
     deleteSpjStatus,
     updateSPJStatus,
+    // SIPD Nomenklatur Kemendagri
+    sipdPrograms,
+    sipdKegiatans,
+    sipdSubKegiatans,
+    addSipdProgram,
+    updateSipdProgram,
+    deleteSipdProgram,
+    addSipdKegiatan,
+    updateSipdKegiatan,
+    deleteSipdKegiatan,
+    addSipdSubKegiatan,
+    updateSipdSubKegiatan,
+    deleteSipdSubKegiatan,
+    resetSipdToDefault,
+    canManageSipd,
+    // Projects
     projects,
     activeYearProjects,
     accessibleProjects,
@@ -1152,6 +1453,7 @@ export const AppProvider = ({ children }) => {
     canManageYears,
     canManageSettings,
     addProject,
+    bulkImportProjects,
     updateProject,
     deleteProject,
     togglePublicHighlight,

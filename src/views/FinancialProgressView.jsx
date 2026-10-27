@@ -116,7 +116,7 @@ const FinancialProgressView = ({ onViewProject, onQuickUpdate, onOpenProjectModa
       {/* Page Header */}
       <div className="page-header">
         <div className="page-header-title">
-          <h1>Menu 3: Monitoring Progres Keuangan & Pencairan SP2D</h1>
+          <h1>{systemSettings?.customTexts?.internal_keuangan_title || 'Monitoring Progres Keuangan & Pencairan SP2D'}</h1>
           <p>
             {systemSettings?.customTexts?.internal_keuangan_desc || `Monitor realisasi pencairan anggaran, pagu, nilai kontrak, nama rekanan (CV/PT), termin SP2D tim keuangan, dan sisa pagu TA ${activeYear}`}
           </p>

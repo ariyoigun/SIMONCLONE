@@ -5,22 +5,15 @@ import DonutPieChart from '../components/DonutPieChart';
 import {
   Clock,
   Search,
-  Filter,
-  Plus,
   Eye,
   Edit,
   CheckCircle,
-  FileCheck,
-  Building,
-  ArrowRight,
   MapPin,
   ExternalLink,
   Sparkles,
   Trash2,
-  PieChart as PieChartIcon,
   Database,
-  XCircle,
-  Briefcase
+  XCircle
 } from 'lucide-react';
 import { getLatestProjectUpdateFormatted } from '../utils/dateUtils';
 
@@ -43,10 +36,8 @@ const PreContractView = ({ onOpenProjectModal, onViewProject }) => {
   const {
     accessibleProjects,
     activeYear,
-    canCreateProject,
     canEditProject,
     currentUser,
-    updateProject,
     deleteProject,
     togglePublicHighlight,
     setActiveTab,
@@ -152,8 +143,9 @@ const PreContractView = ({ onOpenProjectModal, onViewProject }) => {
     { label: '(APBD-P) Perubahan', value: countPerubahan, color: '#d97706', filterKey: 'APBD-P' }
   ];
 
-  // Pre-contract counts
-  const countPre = accessibleProjects.filter((p) => !p.isKontrak).length;
+  // Pre-contract projects list
+  const preContractProjects = accessibleProjects.filter((p) => !p.isKontrak);
+  const countPre = preContractProjects.length;
   const countTender = accessibleProjects.filter((p) => !p.isKontrak && p.tipePengadaan?.includes('Tender')).length;
   const countPL = accessibleProjects.filter((p) => !p.isKontrak && p.tipePengadaan?.includes('Pengadaan Langsung')).length;
   const countEkat = accessibleProjects.filter((p) => !p.isKontrak && p.tipePengadaan?.includes('Katalog')).length;
@@ -163,10 +155,24 @@ const PreContractView = ({ onOpenProjectModal, onViewProject }) => {
       {/* Page Header */}
       <div className="page-header">
         <div className="page-header-title">
-          <h1>Menu 1: Monitoring Pekerjaan Sebelum Kontrak (Pra-Kontrak)</h1>
+          <h1>{systemSettings?.customTexts?.internal_prakontrak_title || 'Monitoring Pekerjaan Sebelum Kontrak (Pra-Kontrak)'}</h1>
           <p>
             {systemSettings?.customTexts?.internal_prakontrak_desc || `Pantau seluruh paket pekerjaan dari perencanaan SiRUP, penyusunan HPS, proses tender/seleksi, Pengadaan Langsung (PL), hingga Minikompetisi E-Katalog TA ${activeYear}`}
           </p>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 10 }}>
+            <span style={{ fontSize: 11.5, background: '#e0f2fe', color: '#0369a1', border: '1px solid #bae6fd', padding: '3px 10px', borderRadius: 9999, fontWeight: 700 }}>
+              📋 Belum Terbit Kontrak: <strong>{countPre} Paket</strong>
+            </span>
+            <span style={{ fontSize: 11.5, background: '#fef3c7', color: '#b45309', border: '1px solid #fde68a', padding: '3px 10px', borderRadius: 9999, fontWeight: 700 }}>
+              🏛️ Jalur Tender: <strong>{countTender} Paket</strong>
+            </span>
+            <span style={{ fontSize: 11.5, background: '#f0fdf4', color: '#15803d', border: '1px solid #bbf7d0', padding: '3px 10px', borderRadius: 9999, fontWeight: 700 }}>
+              ⚡ Pengadaan Langsung: <strong>{countPL} Paket</strong>
+            </span>
+            <span style={{ fontSize: 11.5, background: '#fdf2f8', color: '#be185d', border: '1px solid #fbcfe8', padding: '3px 10px', borderRadius: 9999, fontWeight: 700 }}>
+              🛒 E-Katalog: <strong>{countEkat} Paket</strong>
+            </span>
+          </div>
         </div>
         <div className="page-header-actions">
           <button

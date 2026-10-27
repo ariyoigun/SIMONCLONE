@@ -776,16 +776,39 @@ export const DEFAULT_CUSTOM_TEXTS = {
     'Panel khusus bagi ASN, Pejabat Pembuat Komitmen (PPK), PPTK, dan Tim Verifikator Keuangan DINPUTARU Kabupaten Demak. Gunakan tombol Login pada sudut kanan atas untuk masuk ke dashboard internal.',
 
   // 6. Panel Internal: Modul Dashboard & Monitoring
+  internal_dashboard_title: 'Dashboard Eksekutif Monitoring Pekerjaan',
   internal_dashboard_desc:
     'Pemantauan indikator kinerja utama (IKU), deviasi fisik, serapan anggaran, dan distribusi paket pekerjaan dinas.',
+  internal_prakontrak_title: 'Monitoring Pekerjaan Sebelum Kontrak (Pra-Kontrak)',
   internal_prakontrak_desc:
     'Monitoring alur tahapan persiapan dan pemilihan penyedia jasa konstruksi dari SiRUP, HPS, hingga kontrak kerja resmi.',
+  internal_fisik_title: 'Monitoring Progres Fisik Pekerjaan (0% - 100%)',
   internal_fisik_desc:
     'Pemantauan berkala realisasi fisik lapangan, kurva S, deviasi rencana vs aktual, dan dokumentasi foto 0%, 50%, 100%.',
+  internal_keuangan_title: 'Monitoring Progres Keuangan & Pencairan SP2D',
   internal_keuangan_desc:
     'Pengendalian pencairan dana uang muka, termin, PHO, serta tracking kelengkapan berkas SPJ keuangan dinas.',
+  internal_spj_title: 'Administrasi Verifikasi Berkas SPJ & SPM Keuangan',
   internal_spj_desc:
-    'Alur validasi dan verifikasi kelengkapan berkas tagihan rekanan oleh tim verifikator sebelum penerbitan SPM/SP2D.'
+    'Alur validasi dan verifikasi kelengkapan berkas tagihan rekanan oleh tim verifikator sebelum penerbitan SPM/SP2D.',
+  internal_master_title: 'Master Data Pekerjaan (Basis Data Induk)',
+  internal_master_desc:
+    'Pusat registrasi dan manajemen data dasar seluruh paket pekerjaan dinas terintegrasi ke modul monitoring.',
+  internal_report_title: 'Cetak & Rekapitulasi Laporan Kedinasan',
+  internal_report_desc:
+    'Format laporan resmi kedinasan siap cetak/PDF dan ekspor spreadsheet untuk pelaporan berkala pimpinan.',
+
+  // 7. Panel Internal: Nomenklatur & Analitik SIPD
+  internal_sipd_title: 'Ringkasan Nomenklatur SIPD',
+  internal_sipd_badge: 'SIPD RI',
+  internal_sipd_desc:
+    'Pohon Hierarki Kinerja: Program → Kegiatan → Sub Kegiatan → Daftar Paket Pekerjaan dinas terintegrasi nomenklatur SIPD RI.',
+  internal_sipd_box_title: 'Diagram Kotak: Komparasi Realisasi & Sebaran Anggaran Program',
+  internal_sipd_box_desc:
+    'Perbandingan langsung pagu, nilai kontrak, serapan SP2D, realisasi fisik, dan deviasi kinerja antar Program SIPD DINPUTARU.',
+  internal_sipd_analytics_title: 'Visual Analytics: Realisasi & Sebaran Anggaran SIPD',
+  internal_sipd_analytics_desc:
+    'Komparasi Progres Fisik vs Keuangan dan Distribusi Pagu per Program, Kegiatan, dan Sub Kegiatan.'
 };
 
 export const DEFAULT_SYSTEM_SETTINGS = {

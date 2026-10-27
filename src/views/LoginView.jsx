@@ -15,6 +15,7 @@ import {
   ArrowRight,
   ArrowLeft
 } from 'lucide-react';
+import AppLogo from '../components/AppLogo';
 
 const LoginView = ({ onBackToLanding }) => {
   const { login, users, systemSettings } = useApp();
@@ -219,46 +220,16 @@ const LoginView = ({ onBackToLanding }) => {
           }}
         >
           {/* Brand Badge Icon / Logo */}
-          {systemSettings?.logoUrl ? (
-            <img
-              src={systemSettings.logoUrl}
-              alt="Logo Dinas"
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 14 }}>
+            <AppLogo
+              logoUrl={systemSettings?.logoUrl}
+              size={64}
+              alt={systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}
               style={{
-                width: 62,
-                height: 62,
-                borderRadius: 18,
-                objectFit: 'contain',
-                margin: '0 auto 14px',
-                display: 'block',
-                background: '#ffffff',
-                border: '2px solid rgba(255,255,255,0.6)',
-                padding: 4
-              }}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
+                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(255,255,255,0.4)'
               }}
             />
-          ) : (
-            <div
-              style={{
-                width: 62,
-                height: 62,
-                borderRadius: 18,
-                background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
-                margin: '0 auto 14px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: 24,
-                fontWeight: 900,
-                color: '#071527',
-                boxShadow: '0 10px 24px rgba(245, 158, 11, 0.4), inset 0 2px 4px rgba(255,255,255,0.4)',
-                border: '2px solid rgba(255,255,255,0.6)'
-              }}
-            >
-              PU
-            </div>
-          )}
+          </div>
 
           <h2 style={{ fontSize: 22, fontWeight: 800, margin: 0, letterSpacing: -0.5 }}>
             {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}

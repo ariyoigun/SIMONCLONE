@@ -21,11 +21,17 @@ import {
   FileSpreadsheet,
   AlertCircle,
   Building2,
-  Layers
+  Layers,
+  Upload,
+  Download,
+  HelpCircle,
+  FileDown
 } from 'lucide-react';
 import { getLatestProjectUpdateFormatted } from '../utils/dateUtils';
+import ImportExportModal from '../components/ImportExportModal';
+import { downloadExcelTemplate, downloadCsvTemplate } from '../utils/excelUtils';
 
-const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject }) => {
+const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject, onOpenImportExportModal }) => {
   const {
     accessibleProjects,
     activeYear,
@@ -35,10 +41,17 @@ const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject }) => {
     deleteProject,
     togglePublicHighlight,
     tags: masterTags = [],
-    kategoriPekerjaanList = []
+    kategoriPekerjaanList = [],
+    systemSettings
   } = useApp();
 
   const latestUpdateFormatted = getLatestProjectUpdateFormatted(accessibleProjects, activeYear);
+
+  // Import & Export Modal State
+  const [importExportModalState, setImportExportModalState] = useState({
+    isOpen: false,
+    tab: 'import'
+  });
 
   // Filters State
   const [searchQuery, setSearchQuery] = useState('');
@@ -156,15 +169,85 @@ const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject }) => {
               <Database size={22} />
             </div>
             <div>
-              <h1 style={{ fontSize: 22, margin: 0 }}>Master Data Pekerjaan (Basis Data Induk)</h1>
+              <h1 style={{ fontSize: 22, margin: 0 }}>
+                {systemSettings?.customTexts?.internal_master_title || 'Master Data Pekerjaan (Basis Data Induk)'}
+              </h1>
               <p style={{ margin: '3px 0 0', fontSize: 13, color: '#64748b' }}>
-                Pusat registrasi dan manajemen data dasar seluruh paket pekerjaan DINPUTARU TA {activeYear} (Terintegrasi ke 4 Menu Monitoring)
+                {systemSettings?.customTexts?.internal_master_desc || `Pusat registrasi dan manajemen data dasar seluruh paket pekerjaan DINPUTARU TA ${activeYear} (Terintegrasi ke modul monitoring)`}
               </p>
             </div>
           </div>
         </div>
 
-        <div className="page-header-actions">
+        <div className="page-header-actions" style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+          {/* Download Template Example */}
+          <button
+            type="button"
+            className="btn btn-outline"
+            onClick={() => setImportExportModalState({ isOpen: true, tab: 'template' })}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 6,
+              padding: '9px 14px',
+              fontWeight: 700,
+              fontSize: 13,
+              borderColor: '#0284c7',
+              color: '#0284c7',
+              background: '#ffffff'
+            }}
+            title="Unduh contoh template Excel (.xlsx) atau CSV (.csv)"
+          >
+            <FileDown size={16} color="#0284c7" />
+            <span>Unduh Template</span>
+          </button>
+
+          {/* Export Button */}
+          <button
+            type="button"
+            className="btn btn-outline"
+            onClick={() => setImportExportModalState({ isOpen: true, tab: 'export' })}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 6,
+              padding: '9px 14px',
+              fontWeight: 700,
+              fontSize: 13,
+              borderColor: '#059669',
+              color: '#059669',
+              background: '#ffffff'
+            }}
+            title="Export data paket pekerjaan ke format Excel (.xlsx) atau CSV (.csv)"
+          >
+            <Download size={16} color="#059669" />
+            <span>Export Data</span>
+          </button>
+
+          {/* Import Button */}
+          {canCreateProject() && (
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => setImportExportModalState({ isOpen: true, tab: 'import' })}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 8,
+                padding: '9px 16px',
+                fontWeight: 700,
+                fontSize: 13,
+                background: '#059669',
+                borderColor: '#059669',
+                boxShadow: '0 4px 12px rgba(5, 150, 105, 0.25)'
+              }}
+              title="Import data pekerjaan massal dari file Excel atau CSV"
+            >
+              <Upload size={16} />
+              <span>Import Excel / CSV</span>
+            </button>
+          )}
+
           {canCreateProject() && (
             <button
               className="btn btn-primary"
@@ -173,13 +256,14 @@ const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject }) => {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 8,
-                padding: '10px 18px',
+                padding: '9px 16px',
                 fontWeight: 700,
+                fontSize: 13,
                 boxShadow: '0 4px 12px rgba(15, 44, 89, 0.25)'
               }}
             >
               <Plus size={16} />
-              <span>Registrasi Paket Pekerjaan Baru</span>
+              <span>Input Manual Satu-Satu</span>
             </button>
           )}
         </div>
@@ -194,41 +278,105 @@ const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject }) => {
           padding: '16px 20px',
           marginBottom: 20,
           display: 'flex',
-          alignItems: 'flex-start',
-          gap: 14
+          flexDirection: 'column',
+          gap: 12
         }}
       >
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
+          <div
+            style={{
+              width: 36,
+              height: 36,
+              borderRadius: 10,
+              background: '#2563eb',
+              color: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}
+          >
+            <Layers size={18} />
+          </div>
+          <div style={{ flex: 1, fontSize: 13, color: '#1e3a8a', lineHeight: 1.55 }}>
+            <strong>Arsitektur Single Source of Truth (Data Induk Tunggal):</strong> Setiap bidang cukup menginput data pekerjaan <strong>satu kali</strong> di menu Master Data ini. Data otomatis terdistribusi ke:
+            <span style={{ display: 'inline-flex', gap: 6, flexWrap: 'wrap', marginTop: 4, marginLeft: 6 }}>
+              <span style={{ background: '#dbeafe', color: '#1d4ed8', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
+                1. Pra-Kontrak
+              </span>
+              <span style={{ background: '#dcfce7', color: '#15803d', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
+                2. Progres Fisik
+              </span>
+              <span style={{ background: '#fef3c7', color: '#b45309', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
+                3. Progres Keuangan
+              </span>
+              <span style={{ background: '#ede9fe', color: '#7c3aed', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
+                4. Administrasi SPJ
+              </span>
+            </span>
+          </div>
+        </div>
+
+        {/* Quick Bulk Import Callout Banner */}
         <div
           style={{
-            width: 36,
-            height: 36,
+            background: 'rgba(255, 255, 255, 0.75)',
+            border: '1px solid #bfdbfe',
             borderRadius: 10,
-            background: '#2563eb',
-            color: '#fff',
+            padding: '10px 14px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            flexShrink: 0
+            justifyContent: 'space-between',
+            gap: 10,
+            flexWrap: 'wrap'
           }}
         >
-          <Layers size={18} />
-        </div>
-        <div style={{ flex: 1, fontSize: 13, color: '#1e3a8a', lineHeight: 1.55 }}>
-          <strong>Arsitektur Single Source of Truth (Data Induk Tunggal):</strong> Setiap bidang cukup menginput data pekerjaan <strong>satu kali</strong> di menu Master Data ini. Data otomatis terdistribusi ke:
-          <span style={{ display: 'inline-flex', gap: 6, flexWrap: 'wrap', marginTop: 4, marginLeft: 6 }}>
-            <span style={{ background: '#dbeafe', color: '#1d4ed8', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
-              1. Pra-Kontrak
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 12.5, color: '#1e40af' }}>
+            <FileSpreadsheet size={16} color="#059669" />
+            <span>
+              <strong>Punya banyak data paket pekerjaan?</strong> Tidak perlu menginput satu per satu. Cukup gunakan fitur <strong>Import Excel / CSV</strong> untuk memasukkan ratusan paket pekerjaan sekaligus dalam hitungan detik.
             </span>
-            <span style={{ background: '#dcfce7', color: '#15803d', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
-              2. Progres Fisik
-            </span>
-            <span style={{ background: '#fef3c7', color: '#b45309', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
-              3. Progres Keuangan
-            </span>
-            <span style={{ background: '#ede9fe', color: '#7c3aed', padding: '1px 8px', borderRadius: 4, fontWeight: 700, fontSize: 11.5 }}>
-              4. Administrasi SPJ
-            </span>
-          </span>
+          </div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button
+              type="button"
+              onClick={() => setImportExportModalState({ isOpen: true, tab: 'template' })}
+              style={{
+                background: '#ffffff',
+                border: '1px solid #93c5fd',
+                borderRadius: 6,
+                padding: '4px 10px',
+                fontSize: 11.5,
+                fontWeight: 700,
+                color: '#1d4ed8',
+                cursor: 'pointer'
+              }}
+            >
+              Unduh Template Contoh
+            </button>
+            {canCreateProject() && (
+              <button
+                type="button"
+                onClick={() => setImportExportModalState({ isOpen: true, tab: 'import' })}
+                style={{
+                  background: '#059669',
+                  border: 'none',
+                  borderRadius: 6,
+                  padding: '4px 12px',
+                  fontSize: 11.5,
+                  fontWeight: 700,
+                  color: '#ffffff',
+                  cursor: 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 5
+                }}
+              >
+                <Upload size={12} />
+                <span>Import File Sekarang</span>
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
@@ -753,6 +901,14 @@ const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject }) => {
           </div>
         </div>
       </div>
+
+      {/* Import & Export Modal Dialog */}
+      <ImportExportModal
+        isOpen={importExportModalState.isOpen}
+        initialTab={importExportModalState.tab}
+        onClose={() => setImportExportModalState({ isOpen: false, tab: 'import' })}
+        filteredProjects={filteredProjects}
+      />
     </div>
   );
 };

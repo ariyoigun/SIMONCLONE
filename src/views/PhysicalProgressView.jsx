@@ -112,7 +112,7 @@ const PhysicalProgressView = ({ onViewProject, onQuickUpdate, onOpenProjectModal
       {/* Page Header */}
       <div className="page-header">
         <div className="page-header-title">
-          <h1>Menu 2: Monitoring Progres Fisik Pekerjaan (0% - 100%)</h1>
+          <h1>{systemSettings?.customTexts?.internal_fisik_title || 'Monitoring Progres Fisik Pekerjaan (0% - 100%)'}</h1>
           <p>
             {systemSettings?.customTexts?.internal_fisik_desc || `Pantau realisasi fisik lapangan vs target rencana, deviasi pekerjaan (Aman, Perhatian, Kritis), Kurva S, dan foto dokumentasi TA ${activeYear}`}
           </p>

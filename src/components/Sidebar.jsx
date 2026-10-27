@@ -17,16 +17,20 @@ import {
   Building2,
   LogOut,
   Globe,
-  Database
+  Database,
+  FileSpreadsheet,
+  FolderTree
 } from 'lucide-react';
 import { getLatestProjectUpdateFormatted } from '../utils/dateUtils';
+import AppLogo from './AppLogo';
 
 const Sidebar = ({
   onOpenYearModal,
   onOpenUserModal,
   onOpenRoleModal,
   onOpenSettingsModal,
-  onOpenPublicPortal
+  onOpenPublicPortal,
+  onOpenImportExportModal
 }) => {
   const {
     activeTab,
@@ -59,16 +63,11 @@ const Sidebar = ({
     <aside className="sidebar">
       {/* Brand Header */}
       <div className="sidebar-brand">
-        {systemSettings?.logoUrl ? (
-          <img
-            src={systemSettings.logoUrl}
-            alt="Logo"
-            style={{ width: 36, height: 36, borderRadius: 8, objectFit: 'contain', background: '#fff', border: '1px solid #cbd5e1' }}
-            onError={(e) => { e.currentTarget.style.display = 'none'; }}
-          />
-        ) : (
-          <div className="sidebar-logo-icon">PU</div>
-        )}
+        <AppLogo
+          logoUrl={systemSettings?.logoUrl}
+          size={36}
+          alt={systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}
+        />
         <div className="sidebar-brand-text">
           <h2>{systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}</h2>
           <p>{systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}</p>
@@ -113,6 +112,31 @@ const Sidebar = ({
           </span>
         </a>
 
+        {onOpenImportExportModal && (
+          <button
+            type="button"
+            className="nav-item"
+            onClick={(e) => {
+              e.preventDefault();
+              onOpenImportExportModal('import');
+            }}
+            style={{
+              paddingLeft: 36,
+              fontSize: 12,
+              color: '#94a3b8',
+              border: 'none',
+              background: 'none',
+              width: '100%',
+              textAlign: 'left',
+              cursor: 'pointer'
+            }}
+            title="Import data dari file Excel / CSV atau Export data paket"
+          >
+            <FileSpreadsheet className="icon" size={14} style={{ color: '#10b981' }} />
+            <span>Import / Export Excel</span>
+          </button>
+        )}
+
         <div className="nav-section-title">Modul Monitoring Progres</div>
 
         <a
@@ -124,7 +148,7 @@ const Sidebar = ({
           }}
         >
           <Clock className="icon" />
-          <span>1. Pekerjaan Pra-Kontrak</span>
+          <span>Pekerjaan Pra-Kontrak</span>
           {countPreContract > 0 && (
             <span
               className="nav-badge-count"
@@ -144,7 +168,7 @@ const Sidebar = ({
           }}
         >
           <TrendingUp className="icon" />
-          <span>2. Progres Fisik (0-100%)</span>
+          <span>Progres Fisik</span>
           <span className="nav-badge-count">{countFisik}</span>
         </a>
 
@@ -157,7 +181,7 @@ const Sidebar = ({
           }}
         >
           <DollarSign className="icon" />
-          <span>3. Progres Keuangan (SP2D)</span>
+          <span>Progres Keuangan</span>
           <span className="nav-badge-count">{countFisik}</span>
         </a>
 
@@ -171,7 +195,7 @@ const Sidebar = ({
             }}
           >
             <ReceiptText className="icon" />
-            <span>4. Administrasi SPJ Keuangan</span>
+            <span>Administrasi SPJ Keuangan</span>
             <span
               className="nav-badge-count"
               style={{ background: 'rgba(168, 85, 247, 0.25)', color: '#c084fc' }}
@@ -180,6 +204,28 @@ const Sidebar = ({
             </span>
           </a>
         )}
+
+        <a
+          href="#sipd_summary"
+          className={`nav-item ${activeTab === 'sipd_summary' ? 'active' : ''}`}
+          onClick={(e) => {
+            e.preventDefault();
+            setActiveTab('sipd_summary');
+          }}
+          title="Ringkasan Hierarki SIPD: Program, Kegiatan, Sub Kegiatan, dan Paket Pekerjaan"
+        >
+          <FolderTree className="icon" style={{ color: '#0284c7' }} />
+          <span>Ringkasan SIPD</span>
+          <span
+            className="nav-badge-count"
+            style={{
+              background: activeTab === 'sipd_summary' ? '#0284c7' : 'rgba(2, 132, 199, 0.15)',
+              color: activeTab === 'sipd_summary' ? '#ffffff' : '#0284c7'
+            }}
+          >
+            Tree
+          </span>
+        </a>
 
         <div className="nav-section-title">Laporan & Evaluasi</div>
 

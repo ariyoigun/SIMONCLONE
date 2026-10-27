@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useApp } from '../context/AppContext';
 import {
   Settings,
@@ -8,16 +8,11 @@ import {
   Plus,
   Trash2,
   X,
-  CheckCircle,
-  AlertCircle,
-  Building2,
   Image as ImageIcon,
   Globe,
   Save,
   MapPin,
-  ExternalLink,
   Award,
-  UserCheck,
   Briefcase,
   Layers,
   RotateCcw,
@@ -30,11 +25,16 @@ import {
   Sparkles,
   AlignLeft,
   Check,
-  Monitor,
-  Layout,
-  Eye
+  Eye,
+  Upload,
+  FolderTree,
+  Database,
+  Printer
 } from 'lucide-react';
 import { DEFAULT_CUSTOM_TEXTS, DEFAULT_BIDANG_DESCRIPTIONS, BIDANG_LIST } from '../data/constants';
+import { LOGO_PRESETS } from '../data/logoPresets';
+import AppLogo from './AppLogo';
+import SipdMasterModal from './SipdMasterModal';
 
 const SystemSettingsModal = ({ isOpen, onClose }) => {
   const {
@@ -61,10 +61,15 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     updateSystemSettings,
     addGalleryItem,
     deleteGalleryItem,
-    canManageSettings
+    canManageSettings,
+    sipdPrograms = [],
+    sipdKegiatans = [],
+    sipdSubKegiatans = []
   } = useApp();
 
-  const [activeTab, setActiveTab] = useState('identitas'); // 'identitas' | 'pimpinan' | 'galeri' | 'kategori' | 'sumberdana' | 'prakontrak' | 'tagging' | 'spj'
+  const [activeTab, setActiveTab] = useState('identitas'); // 'identitas' | 'pimpinan' | 'galeri' | 'kategori' | 'sumberdana' | 'prakontrak' | 'tagging' | 'spj' | 'sipd_master'
+  const [isSipdModalOpen, setIsSipdModalOpen] = useState(false);
+  const logoFileInputRef = useRef(null);
 
   // Input states
   const [newTagInput, setNewTagInput] = useState('');
@@ -233,6 +238,33 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     setNewSpjInput({ label: '', deskripsi: '', warna: '#0284c7' });
   };
 
+  const handleLogoFileUpload = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (file.size > 2.5 * 1024 * 1024) {
+      alert('Ukuran berkas logo terlalu besar (maksimal 2.5 MB). Silakan pilih gambar yang lebih ringan.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (uploadEvent) => {
+      const base64Data = uploadEvent.target?.result;
+      if (base64Data) {
+        setIdentityForm((prev) => ({ ...prev, logoUrl: base64Data }));
+      }
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleApplyPresetLogo = (preset) => {
+    setIdentityForm((prev) => ({ ...prev, logoUrl: preset.svgDataUri }));
+  };
+
+  const handleResetLogo = () => {
+    setIdentityForm((prev) => ({ ...prev, logoUrl: '' }));
+  };
+
   const handleSaveIdentity = (e) => {
     e.preventDefault();
     updateSystemSettings(identityForm);
@@ -316,8 +348,16 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
       ]
     },
     {
-      groupTitle: 'MASTER PENGADAAN',
+      groupTitle: 'MASTER PENGADAAN & SIPD',
       items: [
+        {
+          id: 'sipd_master',
+          label: 'Master Nomenklatur SIPD',
+          sub: 'Program, Kegiatan & Sub',
+          desc: 'Kelola kode dan nomenklatur Program, Kegiatan, dan Sub Kegiatan SIPD RI Kemendagri yang terikat pada paket pekerjaan.',
+          icon: FolderTree,
+          badge: `${sipdPrograms.length} Prog`
+        },
         {
           id: 'kategori',
           label: 'Tipe Pekerjaan',
@@ -725,48 +765,270 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                     </div>
                   </div>
 
-                  {/* Logo URL */}
-                  <div className="form-group" style={{ gridColumn: '1 / -1' }}>
-                    <label className="form-label">Logo Sistem (URL Gambar / Foto Lambang Dinas)</label>
-                    <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-                      <input
-                        type="url"
-                        className="form-control"
-                        placeholder="Contoh: https://dinputaru.demakkab.go.id/logo.png (Kosongkan untuk lambang PU default)"
-                        value={identityForm.logoUrl}
-                        onChange={(e) => setIdentityForm({ ...identityForm, logoUrl: e.target.value })}
-                        style={{ flex: 1 }}
-                      />
-                      <div
-                        style={{
-                          width: 44,
-                          height: 44,
-                          borderRadius: 10,
-                          border: '1.5px solid #cbd5e1',
-                          overflow: 'hidden',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          background: identityForm.logoUrl ? '#ffffff' : 'linear-gradient(135deg, #f59e0b, #d97706)',
-                          color: '#fff',
-                          fontWeight: 900
-                        }}
-                      >
-                        {identityForm.logoUrl ? (
-                          <img
-                            src={identityForm.logoUrl}
-                            alt="Logo Preview"
-                            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                            onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                          />
-                        ) : (
-                          'PU'
+                  {/* Modul Pengaturan Logo & Lambang Resmi Sistem */}
+                  <div
+                    className="form-group"
+                    style={{
+                      gridColumn: '1 / -1',
+                      background: '#f8fafc',
+                      border: '1.5px solid #cbd5e1',
+                      borderRadius: 14,
+                      padding: '20px 22px',
+                      marginTop: 6
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14, flexWrap: 'wrap', gap: 10 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                        <div
+                          style={{
+                            width: 36,
+                            height: 36,
+                            borderRadius: 10,
+                            background: 'linear-gradient(135deg, #0284c7, #0f2c59)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: '#fff'
+                          }}
+                        >
+                          <ImageIcon size={18} />
+                        </div>
+                        <div>
+                          <div style={{ fontSize: 15, fontWeight: 800, color: '#0f2c59' }}>
+                            Logo & Lambang Resmi Sistem
+                          </div>
+                          <div style={{ fontSize: 12, color: '#64748b' }}>
+                            Kustomisasi logo aplikasi untuk Sidebar, Navbar, Halaman Login, Landing Page, dan Kop Laporan.
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Tombol Aksi Cepat Upload & Reset */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <input
+                          type="file"
+                          ref={logoFileInputRef}
+                          onChange={handleLogoFileUpload}
+                          accept="image/png,image/jpeg,image/webp,image/svg+xml"
+                          style={{ display: 'none' }}
+                        />
+                        <button
+                          type="button"
+                          className="btn btn-primary"
+                          onClick={() => logoFileInputRef.current?.click()}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: 6,
+                            padding: '8px 14px',
+                            fontSize: 12.5,
+                            fontWeight: 700,
+                            background: '#0284c7',
+                            borderColor: '#0284c7'
+                          }}
+                          title="Unggah berkas gambar logo (PNG, JPG, SVG, WebP) dari perangkat Anda"
+                        >
+                          <Upload size={14} />
+                          <span>Unggah dari Komputer</span>
+                        </button>
+
+                        {identityForm.logoUrl && (
+                          <button
+                            type="button"
+                            className="btn btn-outline"
+                            onClick={handleResetLogo}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: 6,
+                              padding: '8px 12px',
+                              fontSize: 12.5,
+                              color: '#64748b',
+                              borderColor: '#cbd5e1'
+                            }}
+                            title="Kembalikan logo ke lambang dinas bawaan (Official PUPR Emblem)"
+                          >
+                            <RotateCcw size={13} />
+                            <span>Reset Default</span>
+                          </button>
                         )}
                       </div>
                     </div>
-                    <span style={{ fontSize: 11.5, color: '#64748b', marginTop: 4, display: 'block' }}>
-                      Logo ini akan tampil pada Navbar Landing Page, Header Panel Internal, dan Kop Cetakan Laporan.
-                    </span>
+
+                    {/* Pilihan Galeri Preset Logo Resmi */}
+                    <div style={{ marginBottom: 16 }}>
+                      <label style={{ fontSize: 12, fontWeight: 700, color: '#475569', display: 'block', marginBottom: 8 }}>
+                        Pilih Preset Lambang Resmi (Klik 1-Kali untuk Menerapkan):
+                      </label>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 10 }}>
+                        {LOGO_PRESETS.map((preset) => {
+                          const isSelected = identityForm.logoUrl === preset.svgDataUri;
+                          return (
+                            <button
+                              key={preset.id}
+                              type="button"
+                              onClick={() => handleApplyPresetLogo(preset)}
+                              style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: 12,
+                                padding: '10px 14px',
+                                borderRadius: 10,
+                                border: isSelected ? '2px solid #0284c7' : '1px solid #cbd5e1',
+                                background: isSelected ? '#eff6ff' : '#ffffff',
+                                textAlign: 'left',
+                                cursor: 'pointer',
+                                transition: 'all 0.15s ease'
+                              }}
+                            >
+                              <AppLogo logoUrl={preset.svgDataUri} size={38} shape="rounded" />
+                              <div style={{ flex: 1, minWidth: 0 }}>
+                                <div style={{ fontSize: 12.5, fontWeight: 800, color: isSelected ? '#0369a1' : '#1e293b' }}>
+                                  {preset.name}
+                                </div>
+                                <div style={{ fontSize: 11, color: '#64748b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                                  {preset.description}
+                                </div>
+                              </div>
+                              {isSelected && (
+                                <div style={{ width: 20, height: 20, borderRadius: '50%', background: '#0284c7', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                  <Check size={12} />
+                                </div>
+                              )}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {/* Input Tautan URL Alternatif */}
+                    <div style={{ marginBottom: 18 }}>
+                      <label style={{ fontSize: 12, fontWeight: 700, color: '#475569', display: 'block', marginBottom: 6 }}>
+                        Atau Masukkan Tautan / URL Gambar Eksternal:
+                      </label>
+                      <div style={{ display: 'flex', gap: 10 }}>
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="https://... atau data:image/... (Kosongkan untuk menggunakan lambang bawaan)"
+                          value={identityForm.logoUrl?.startsWith('data:image/') ? `[Gambar Tersimpan Lokal (${(identityForm.logoUrl.length / 1024).toFixed(0)} KB)]` : identityForm.logoUrl}
+                          onChange={(e) => {
+                            if (!e.target.value.startsWith('[Gambar Tersimpan')) {
+                              setIdentityForm({ ...identityForm, logoUrl: e.target.value });
+                            }
+                          }}
+                          style={{ flex: 1, fontSize: 12.5 }}
+                        />
+                        {identityForm.logoUrl && (
+                          <button
+                            type="button"
+                            className="btn btn-outline"
+                            onClick={handleResetLogo}
+                            style={{ fontSize: 12, padding: '6px 12px' }}
+                          >
+                            Hapus
+                          </button>
+                        )}
+                      </div>
+                      <span style={{ fontSize: 11.5, color: '#64748b', marginTop: 4, display: 'block' }}>
+                        Mendukung gambar lokal (Base64) yang diunggah langsung dari komputer, tautan HTTPS, maupun vektor SVG.
+                      </span>
+                    </div>
+
+                    {/* Live Preview Multi-Konteks (Sidebar, Navbar, Login, Kop Laporan) */}
+                    <div>
+                      <div style={{ fontSize: 12, fontWeight: 800, color: '#334155', marginBottom: 8, textTransform: 'uppercase', letterSpacing: 0.5 }}>
+                        Pratinjau Langsung Tampilan Logo di Berbagai Halaman:
+                      </div>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: 12 }}>
+                        {/* 1. Preview di Sidebar Gelap */}
+                        <div
+                          style={{
+                            background: '#071527',
+                            borderRadius: 10,
+                            padding: '12px 14px',
+                            color: '#ffffff',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            border: '1px solid #1e293b'
+                          }}
+                        >
+                          <AppLogo logoUrl={identityForm.logoUrl} size={36} shape="rounded" />
+                          <div style={{ minWidth: 0 }}>
+                            <div style={{ fontSize: 11.5, fontWeight: 800, color: '#f8fafc', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                              {identityForm.namaSistem || 'SIMON - SATUPUTARU'}
+                            </div>
+                            <div style={{ fontSize: 10, color: '#94a3b8' }}>Sidebar Panel</div>
+                          </div>
+                        </div>
+
+                        {/* 2. Preview di Top Navbar */}
+                        <div
+                          style={{
+                            background: '#ffffff',
+                            borderRadius: 10,
+                            padding: '12px 14px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            border: '1px solid #cbd5e1',
+                            boxShadow: '0 2px 4px rgba(0,0,0,0.03)'
+                          }}
+                        >
+                          <AppLogo logoUrl={identityForm.logoUrl} size={34} shape="rounded" />
+                          <div style={{ minWidth: 0 }}>
+                            <div style={{ fontSize: 11.5, fontWeight: 800, color: '#0f2c59' }}>
+                              {identityForm.singkatanInstansi || 'DINPUTARU Demak'}
+                            </div>
+                            <div style={{ fontSize: 10, color: '#64748b' }}>Top Navbar</div>
+                          </div>
+                        </div>
+
+                        {/* 3. Preview di Halaman Login & Landing */}
+                        <div
+                          style={{
+                            background: 'linear-gradient(135deg, #0f2c59 0%, #1e3a8a 100%)',
+                            borderRadius: 10,
+                            padding: '12px 14px',
+                            color: '#ffffff',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            border: '1px solid #1e40af'
+                          }}
+                        >
+                          <AppLogo logoUrl={identityForm.logoUrl} size={38} shape="rounded" />
+                          <div style={{ minWidth: 0 }}>
+                            <div style={{ fontSize: 11.5, fontWeight: 800, color: '#fbbf24' }}>
+                              Portal Masuk
+                            </div>
+                            <div style={{ fontSize: 10, color: '#cbd5e1' }}>Halaman Login & Publik</div>
+                          </div>
+                        </div>
+
+                        {/* 4. Preview di Kop Surat Laporan */}
+                        <div
+                          style={{
+                            background: '#ffffff',
+                            borderRadius: 10,
+                            padding: '10px 14px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            border: '1.5px dashed #94a3b8'
+                          }}
+                        >
+                          <AppLogo logoUrl={identityForm.logoUrl} size={36} shape="square" bordered={false} />
+                          <div style={{ minWidth: 0 }}>
+                            <div style={{ fontSize: 10.5, fontWeight: 900, color: '#000000', lineHeight: 1.2 }}>
+                              PEMKAB DEMAK
+                            </div>
+                            <div style={{ fontSize: 9.5, color: '#475569' }}>Kop Dokumen Resmi</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   {/* Deskripsi Sistem */}
@@ -1826,6 +2088,267 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
             </div>
           )}
 
+          {/* TAB: MASTER NOMENKLATUR SIPD */}
+          {activeTab === 'sipd_master' && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+              {/* Header Card */}
+              <div
+                style={{
+                  padding: '20px',
+                  background: 'linear-gradient(135deg, #071527 0%, #0f2c59 60%, #1e3a8a 100%)',
+                  borderRadius: 14,
+                  color: '#ffffff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: 16,
+                  boxShadow: '0 4px 14px rgba(15, 44, 89, 0.15)'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                  <div
+                    style={{
+                      width: 44,
+                      height: 44,
+                      borderRadius: 12,
+                      background: 'rgba(56, 189, 248, 0.2)',
+                      border: '1px solid rgba(56, 189, 248, 0.4)',
+                      color: '#38bdf8',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      flexShrink: 0
+                    }}
+                  >
+                    <FolderTree size={24} />
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <h4 style={{ margin: 0, fontSize: 16, fontWeight: 900, color: '#f8fafc' }}>
+                        Pusat Kendali Master Nomenklatur SIPD RI
+                      </h4>
+                      <span
+                        style={{
+                          background: 'linear-gradient(135deg, #0284c7, #2563eb)',
+                          color: '#ffffff',
+                          fontSize: 10.5,
+                          fontWeight: 800,
+                          padding: '2px 8px',
+                          borderRadius: 9999
+                        }}
+                      >
+                        Kemendagri
+                      </span>
+                    </div>
+                    <p style={{ margin: '4px 0 0', fontSize: 12.5, color: '#cbd5e1' }}>
+                      Kelola daftar induk Program, Kegiatan, dan Sub Kegiatan dinas untuk klasifikasi seluruh paket pekerjaan di Menu 5 & Menu Monitoring.
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setIsSipdModalOpen(true)}
+                  style={{
+                    background: 'linear-gradient(135deg, #0284c7, #2563eb)',
+                    color: '#ffffff',
+                    border: 'none',
+                    fontWeight: 800,
+                    fontSize: 13,
+                    padding: '10px 18px',
+                    borderRadius: 10,
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    boxShadow: '0 4px 12px rgba(2, 132, 199, 0.35)'
+                  }}
+                >
+                  <Plus size={16} />
+                  <span>Buka Editor Lengkap Master SIPD</span>
+                </button>
+              </div>
+
+              {/* 3 Metric Cards */}
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                  gap: 14
+                }}
+              >
+                <div
+                  style={{
+                    background: '#ffffff',
+                    borderRadius: 12,
+                    padding: '16px 18px',
+                    border: '1.5px solid #cbd5e1',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 12
+                  }}
+                >
+                  <div style={{ width: 40, height: 40, borderRadius: 10, background: '#e0f2fe', color: '#0284c7', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <FolderTree size={20} />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase' }}>PROGRAM TERDAFTAR</div>
+                    <div style={{ fontSize: 20, fontWeight: 900, color: '#0f2c59' }}>{sipdPrograms.length} Program</div>
+                  </div>
+                </div>
+
+                <div
+                  style={{
+                    background: '#ffffff',
+                    borderRadius: 12,
+                    padding: '16px 18px',
+                    border: '1.5px solid #cbd5e1',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 12
+                  }}
+                >
+                  <div style={{ width: 40, height: 40, borderRadius: 10, background: '#f3e8ff', color: '#7c3aed', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Layers size={20} />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase' }}>TOTAL KEGIATAN</div>
+                    <div style={{ fontSize: 20, fontWeight: 900, color: '#0f2c59' }}>{sipdKegiatans.length} Kegiatan</div>
+                  </div>
+                </div>
+
+                <div
+                  style={{
+                    background: '#ffffff',
+                    borderRadius: 12,
+                    padding: '16px 18px',
+                    border: '1.5px solid #cbd5e1',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 12
+                  }}
+                >
+                  <div style={{ width: 40, height: 40, borderRadius: 10, background: '#dcfce7', color: '#16a34a', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <FileText size={20} />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase' }}>TOTAL SUB KEGIATAN</div>
+                    <div style={{ fontSize: 20, fontWeight: 900, color: '#166534' }}>{sipdSubKegiatans.length} Sub Kegiatan</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Programs Quick List Table */}
+              <div
+                style={{
+                  background: '#ffffff',
+                  borderRadius: 14,
+                  border: '1px solid #e2e8f0',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                  overflow: 'hidden'
+                }}
+              >
+                <div style={{ padding: '16px 20px', borderBottom: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <div>
+                    <h5 style={{ margin: 0, fontSize: 14, fontWeight: 800, color: '#0f2c59' }}>
+                      Ringkasan Program SIPD Terdaftar
+                    </h5>
+                    <p style={{ margin: '2px 0 0', fontSize: 12, color: '#64748b' }}>
+                      Daftar Program induk dan sebaran kegiatan serta sub kegiatan per bidang teknis dinas.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setIsSipdModalOpen(true)}
+                    className="btn btn-outline"
+                    style={{ fontSize: 12, padding: '5px 12px' }}
+                  >
+                    Kelola Nomenklatur
+                  </button>
+                </div>
+
+                <div className="table-responsive">
+                  <table className="table" style={{ margin: 0 }}>
+                    <thead>
+                      <tr>
+                        <th style={{ width: 120 }}>Kode Program</th>
+                        <th>Nama Program SIPD</th>
+                        <th style={{ width: 140 }}>Bidang Dinas</th>
+                        <th style={{ width: 120, textAlign: 'center' }}>Kegiatan</th>
+                        <th style={{ width: 120, textAlign: 'center' }}>Sub Kegiatan</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {sipdPrograms.map((prog) => {
+                        const bidang = BIDANG_LIST.find((b) => b.id === prog.bidangId);
+                        const kegCount = sipdKegiatans.filter((k) => k.programId === prog.id).length;
+                        const progKegIds = sipdKegiatans.filter((k) => k.programId === prog.id).map((k) => k.id);
+                        const subCount = sipdSubKegiatans.filter((s) => progKegIds.includes(s.kegiatanId)).length;
+
+                        return (
+                          <tr key={prog.id}>
+                            <td>
+                              <span
+                                style={{
+                                  background: '#f1f5f9',
+                                  color: '#0f172a',
+                                  padding: '2px 8px',
+                                  borderRadius: 6,
+                                  fontFamily: 'monospace',
+                                  fontSize: 12,
+                                  fontWeight: 800
+                                }}
+                              >
+                                {prog.kodeProgram}
+                              </span>
+                            </td>
+                            <td>
+                              <div style={{ fontWeight: 700, color: '#0f2c59', fontSize: 13 }}>
+                                {prog.namaProgram}
+                              </div>
+                              {prog.deskripsi && (
+                                <div style={{ fontSize: 11, color: '#64748b', marginTop: 2 }}>
+                                  {prog.deskripsi}
+                                </div>
+                              )}
+                            </td>
+                            <td>
+                              <span
+                                style={{
+                                  background: bidang?.bgLight || '#f1f5f9',
+                                  color: bidang?.warna || '#334155',
+                                  border: `1px solid ${bidang?.warna || '#cbd5e1'}40`,
+                                  fontSize: 11,
+                                  fontWeight: 800,
+                                  padding: '2px 8px',
+                                  borderRadius: 6
+                                }}
+                              >
+                                {bidang?.singkatan || prog.bidangId}
+                              </span>
+                            </td>
+                            <td style={{ textAlign: 'center' }}>
+                              <span style={{ fontWeight: 800, color: '#0284c7' }}>{kegCount}</span>
+                            </td>
+                            <td style={{ textAlign: 'center' }}>
+                              <span style={{ fontWeight: 800, color: '#059669' }}>{subCount}</span>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Embedded SipdMasterModal */}
+              {isSipdModalOpen && (
+                <SipdMasterModal isOpen={isSipdModalOpen} onClose={() => setIsSipdModalOpen(false)} />
+              )}
+            </div>
+          )}
+
           {/* TAB: MANAJEMEN TEKS & NARASI (LANDING & INTERNAL PANEL) */}
           {activeTab === 'teks_narasi' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -1949,9 +2472,15 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                   },
                   {
                     id: 'panel_internal',
-                    label: '📊 Panel Internal: Dashboard & Modul',
-                    count: 5,
-                    hint: 'Narasi Executive Dashboard, Pra-Kontrak, Fisik, Keuangan, SPJ'
+                    label: '📊 Panel Internal: Modul Monitoring',
+                    count: 14,
+                    hint: 'Judul dan Narasi Dashboard, Pra-Kontrak, Fisik, Keuangan, SPJ, Master Data, Laporan'
+                  },
+                  {
+                    id: 'sipd_menu',
+                    label: '🌳 Menu 5: Nomenklatur & Analitik SIPD',
+                    count: 7,
+                    hint: 'Judul, Badge, Subtitle Pohon Hierarki, Diagram Kotak & Visual Analytics'
                   }
                 ].map((cat) => {
                   const isCatActive = activeTextCategory === cat.id;
@@ -2641,56 +3170,79 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                   <div style={{ marginBottom: 4 }}>
                     <h5 style={{ margin: 0, fontSize: 14, fontWeight: 900, color: '#0f2c59' }}>
-                      Narasi Subtitle Halaman Modul Internal
+                      Judul & Narasi Subtitle Halaman Modul Monitoring
                     </h5>
                     <p style={{ margin: '2px 0 0', fontSize: 12, color: '#64748b' }}>
-                      Teks penjelasan/panduan yang tampil di bawah judul header masing-masing halaman modul internal.
+                      Sesuaikan judul utama dan teks panduan/narasi yang tampil di header masing-masing modul internal dinas.
                     </p>
                   </div>
 
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: 16 }}>
                     {[
                       {
-                        key: 'internal_dashboard_desc',
+                        titleKey: 'internal_dashboard_title',
+                        descKey: 'internal_dashboard_desc',
                         moduleName: 'Dashboard Eksekutif',
                         badge: 'Utama',
                         color: '#0284c7',
                         icon: Sparkles
                       },
                       {
-                        key: 'internal_prakontrak_desc',
-                        moduleName: 'Menu 1: Monitoring Pra-Kontrak',
-                        badge: 'Menu 1',
+                        titleKey: 'internal_prakontrak_title',
+                        descKey: 'internal_prakontrak_desc',
+                        moduleName: 'Monitoring Pra-Kontrak',
+                        badge: 'Pra-Kontrak',
                         color: '#6366f1',
                         icon: Clock
                       },
                       {
-                        key: 'internal_fisik_desc',
-                        moduleName: 'Menu 2: Monitoring Progres Fisik',
-                        badge: 'Menu 2',
+                        titleKey: 'internal_fisik_title',
+                        descKey: 'internal_fisik_desc',
+                        moduleName: 'Monitoring Progres Fisik',
+                        badge: 'Fisik',
                         color: '#059669',
                         icon: Layers
                       },
                       {
-                        key: 'internal_keuangan_desc',
-                        moduleName: 'Menu 3: Monitoring Progres Keuangan',
-                        badge: 'Menu 3',
+                        titleKey: 'internal_keuangan_title',
+                        descKey: 'internal_keuangan_desc',
+                        moduleName: 'Monitoring Progres Keuangan',
+                        badge: 'Keuangan',
                         color: '#d97706',
                         icon: DollarSign
                       },
                       {
-                        key: 'internal_spj_desc',
-                        moduleName: 'Menu 4: Administrasi SPJ Keuangan',
-                        badge: 'Menu 4',
+                        titleKey: 'internal_spj_title',
+                        descKey: 'internal_spj_desc',
+                        moduleName: 'Administrasi SPJ Keuangan',
+                        badge: 'SPJ',
                         color: '#e11d48',
                         icon: Receipt
+                      },
+                      {
+                        titleKey: 'internal_master_title',
+                        descKey: 'internal_master_desc',
+                        moduleName: 'Master Data Pekerjaan',
+                        badge: 'Basis Data',
+                        color: '#059669',
+                        icon: Database
+                      },
+                      {
+                        titleKey: 'internal_report_title',
+                        descKey: 'internal_report_desc',
+                        moduleName: 'Cetak & Rekapitulasi Laporan',
+                        badge: 'Eksekutif',
+                        color: '#0f2c59',
+                        icon: Printer
                       }
                     ].map((mod) => {
                       const Icon = mod.icon;
-                      const val = customTextsForm[mod.key] || '';
+                      const titleVal = customTextsForm[mod.titleKey] || '';
+                      const descVal = customTextsForm[mod.descKey] || '';
+
                       return (
                         <div
-                          key={mod.key}
+                          key={mod.titleKey}
                           style={{
                             background: '#ffffff',
                             borderRadius: 14,
@@ -2730,7 +3282,10 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
 
                             <button
                               type="button"
-                              onClick={() => handleResetSingleText(mod.key)}
+                              onClick={() => {
+                                handleResetSingleText(mod.titleKey);
+                                handleResetSingleText(mod.descKey);
+                              }}
                               style={{
                                 background: 'none',
                                 border: 'none',
@@ -2741,33 +3296,414 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                                 alignItems: 'center',
                                 gap: 4
                               }}
+                              title="Reset judul dan narasi modul ini ke bawaan"
                             >
                               <RotateCcw size={11} />
                               <span>Reset Bawaan</span>
                             </button>
                           </div>
 
+                          {/* Judul Halaman Input */}
                           <div className="form-group" style={{ marginBottom: 0 }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
-                              <label className="form-label" style={{ margin: 0, fontSize: 11.5, color: '#64748b' }}>
-                                Narasi Subtitle Halaman:
+                              <label className="form-label" style={{ margin: 0, fontSize: 11.5, color: '#334155', fontWeight: 700 }}>
+                                Judul Halaman:
                               </label>
-                              <span style={{ fontSize: 11, color: '#94a3b8' }}>
-                                {val.length} Karakter
-                              </span>
+                              <button
+                                type="button"
+                                onClick={() => handleResetSingleText(mod.titleKey)}
+                                style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 10.5, cursor: 'pointer' }}
+                              >
+                                Reset Judul
+                              </button>
+                            </div>
+                            <input
+                              type="text"
+                              className="form-control"
+                              value={titleVal}
+                              onChange={(e) => setCustomTextsForm({ ...customTextsForm, [mod.titleKey]: e.target.value })}
+                              style={{ fontSize: 12.5 }}
+                              placeholder={DEFAULT_CUSTOM_TEXTS[mod.titleKey] || `Judul ${mod.moduleName}...`}
+                            />
+                          </div>
+
+                          {/* Narasi Subtitle Input */}
+                          <div className="form-group" style={{ marginBottom: 0 }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                              <label className="form-label" style={{ margin: 0, fontSize: 11.5, color: '#64748b', fontWeight: 600 }}>
+                                Narasi Subtitle / Panduan:
+                              </label>
+                              <button
+                                type="button"
+                                onClick={() => handleResetSingleText(mod.descKey)}
+                                style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 10.5, cursor: 'pointer' }}
+                              >
+                                Reset Narasi
+                              </button>
                             </div>
                             <textarea
-                              rows={3}
+                              rows={2}
                               className="form-control"
-                              value={val}
-                              onChange={(e) => setCustomTextsForm({ ...customTextsForm, [mod.key]: e.target.value })}
-                              style={{ fontSize: 12.5, lineHeight: 1.5 }}
-                              placeholder={`Tuliskan subtitle penjelasan untuk ${mod.moduleName}...`}
+                              value={descVal}
+                              onChange={(e) => setCustomTextsForm({ ...customTextsForm, [mod.descKey]: e.target.value })}
+                              style={{ fontSize: 12, lineHeight: 1.45 }}
+                              placeholder={DEFAULT_CUSTOM_TEXTS[mod.descKey] || `Tuliskan subtitle penjelasan untuk ${mod.moduleName}...`}
                             />
                           </div>
                         </div>
                       );
                     })}
+                  </div>
+
+                  {/* Informative Link to Menu 5 Tab */}
+                  <div
+                    style={{
+                      background: '#f0fdf4',
+                      border: '1px solid #bbf7d0',
+                      borderRadius: 12,
+                      padding: '14px 18px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      flexWrap: 'wrap',
+                      gap: 12
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                      <FolderTree size={20} color="#059669" />
+                      <div>
+                        <div style={{ fontSize: 13, fontWeight: 800, color: '#166534' }}>
+                          Mencari Pengaturan Teks Menu 5 (Ringkasan SIPD)?
+                        </div>
+                        <div style={{ fontSize: 12, color: '#15803d', marginTop: 2 }}>
+                          Menu 5 memiliki 7 pengaturan teks khusus (Judul, Badge, Subtitle Pohon, Diagram Kotak & Visual Analytics) pada tab sub-kategori tersendiri.
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setActiveTextCategory('sipd_menu')}
+                      className="btn btn-outline"
+                      style={{ fontSize: 12, padding: '6px 14px', borderColor: '#059669', color: '#059669', background: '#ffffff', cursor: 'pointer' }}
+                    >
+                      Buka Teks Menu 5 SIPD →
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* KATEGORI 6: 🌳 MENU 5: NOMENKLATUR & ANALITIK SIPD */}
+              {activeTextCategory === 'sipd_menu' && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+                  <div
+                    style={{
+                      background: 'linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%)',
+                      borderRadius: 14,
+                      padding: '16px 20px',
+                      border: '1px solid #a7f3d0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 12
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: 10,
+                        background: 'linear-gradient(135deg, #0284c7, #0f2c59)',
+                        color: '#fff',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0
+                      }}
+                    >
+                      <FolderTree size={20} />
+                    </div>
+                    <div>
+                      <h5 style={{ margin: 0, fontSize: 14.5, fontWeight: 800, color: '#065f46' }}>
+                        Pengaturan Teks & Narasi Menu 5: Ringkasan Nomenklatur SIPD
+                      </h5>
+                      <p style={{ margin: '3px 0 0', fontSize: 12.5, color: '#047857' }}>
+                        Sesuaikan seluruh tulisan judul, badge, deskripsi pohon hierarki, diagram kotak perbandingan program, serta modul analitik.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 16 }}>
+                    {/* 1. Judul Menu 5 */}
+                    <div
+                      style={{
+                        background: '#ffffff',
+                        borderRadius: 12,
+                        padding: '16px 18px',
+                        border: '1px solid #e2e8f0',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 12.5, fontWeight: 700 }}>
+                          Judul Utama Halaman Menu 5
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('internal_sipd_title')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.internal_sipd_title || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, internal_sipd_title: e.target.value })}
+                        placeholder="Menu 5: Ringkasan Nomenklatur SIPD"
+                      />
+                    </div>
+
+                    {/* 2. Badge SIPD RI */}
+                    <div
+                      style={{
+                        background: '#ffffff',
+                        borderRadius: 12,
+                        padding: '16px 18px',
+                        border: '1px solid #e2e8f0',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 12.5, fontWeight: 700 }}>
+                          Label Badge Header
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('internal_sipd_badge')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.internal_sipd_badge || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, internal_sipd_badge: e.target.value })}
+                        placeholder="SIPD RI"
+                      />
+                    </div>
+
+                    {/* 3. Subtitle Pohon Hierarki */}
+                    <div
+                      style={{
+                        background: '#ffffff',
+                        borderRadius: 12,
+                        padding: '16px 18px',
+                        border: '1px solid #e2e8f0',
+                        gridColumn: '1 / -1',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 12.5, fontWeight: 700 }}>
+                          Deskripsi Subtitle Pohon Hierarki Kinerja
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('internal_sipd_desc')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <textarea
+                        rows={2}
+                        className="form-control"
+                        value={customTextsForm.internal_sipd_desc || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, internal_sipd_desc: e.target.value })}
+                        placeholder="Pohon Hierarki Kinerja: Program → Kegiatan → Sub Kegiatan → Daftar Paket Pekerjaan..."
+                      />
+                    </div>
+
+                    {/* 4. Judul Diagram Kotak Program */}
+                    <div
+                      style={{
+                        background: '#ffffff',
+                        borderRadius: 12,
+                        padding: '16px 18px',
+                        border: '1px solid #e2e8f0',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 12.5, fontWeight: 700 }}>
+                          Judul Diagram Kotak Komparasi Program
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('internal_sipd_box_title')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.internal_sipd_box_title || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, internal_sipd_box_title: e.target.value })}
+                        placeholder="Diagram Kotak: Komparasi Realisasi & Sebaran Anggaran Program"
+                      />
+                    </div>
+
+                    {/* 5. Deskripsi Diagram Kotak Program */}
+                    <div
+                      style={{
+                        background: '#ffffff',
+                        borderRadius: 12,
+                        padding: '16px 18px',
+                        border: '1px solid #e2e8f0',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 12.5, fontWeight: 700 }}>
+                          Deskripsi Diagram Kotak Komparasi Program
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('internal_sipd_box_desc')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.internal_sipd_box_desc || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, internal_sipd_box_desc: e.target.value })}
+                        placeholder="Perbandingan langsung pagu, nilai kontrak, serapan SP2D, realisasi fisik, dan deviasi kinerja antar Program..."
+                      />
+                    </div>
+
+                    {/* 6. Judul Visual Analytics SIPD */}
+                    <div
+                      style={{
+                        background: '#ffffff',
+                        borderRadius: 12,
+                        padding: '16px 18px',
+                        border: '1px solid #e2e8f0',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 12.5, fontWeight: 700 }}>
+                          Judul Modul Visual Analytics SIPD
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('internal_sipd_analytics_title')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.internal_sipd_analytics_title || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, internal_sipd_analytics_title: e.target.value })}
+                        placeholder="Visual Analytics: Realisasi & Sebaran Anggaran SIPD"
+                      />
+                    </div>
+
+                    {/* 7. Deskripsi Visual Analytics SIPD */}
+                    <div
+                      style={{
+                        background: '#ffffff',
+                        borderRadius: 12,
+                        padding: '16px 18px',
+                        border: '1px solid #e2e8f0',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                        <label className="form-label" style={{ margin: 0, fontSize: 12.5, fontWeight: 700 }}>
+                          Deskripsi Subtitle Modul Visual Analytics
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => handleResetSingleText('internal_sipd_analytics_desc')}
+                          style={{ background: 'none', border: 'none', color: '#0284c7', fontSize: 11, cursor: 'pointer' }}
+                        >
+                          Reset Bawaan
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={customTextsForm.internal_sipd_analytics_desc || ''}
+                        onChange={(e) => setCustomTextsForm({ ...customTextsForm, internal_sipd_analytics_desc: e.target.value })}
+                        placeholder="Komparasi Progres Fisik vs Keuangan dan Distribusi Pagu per Program, Kegiatan, dan Sub Kegiatan."
+                      />
+                    </div>
+                  </div>
+
+                  {/* Live Preview Header Menu 5 */}
+                  <div
+                    style={{
+                      background: '#ffffff',
+                      borderRadius: 14,
+                      padding: '20px',
+                      border: '1px solid #cbd5e1',
+                      boxShadow: '0 4px 14px rgba(0,0,0,0.04)'
+                    }}
+                  >
+                    <div style={{ fontSize: 11, fontWeight: 800, color: '#0284c7', textTransform: 'uppercase', marginBottom: 10, display: 'flex', alignItems: 'center', gap: 6 }}>
+                      <Eye size={13} />
+                      <span>Pratinjau Langsung Tampilan Header Menu 5</span>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                      <div
+                        style={{
+                          width: 44,
+                          height: 44,
+                          borderRadius: 12,
+                          background: 'linear-gradient(135deg, #0369a1 0%, #0f172a 100%)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: '#fff'
+                        }}
+                      >
+                        <FolderTree size={24} />
+                      </div>
+                      <div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                          <h4 style={{ fontSize: 18, margin: 0, fontWeight: 800, color: '#0f2c59' }}>
+                            {customTextsForm.internal_sipd_title || 'Menu 5: Ringkasan Nomenklatur SIPD'}
+                          </h4>
+                          <span
+                            style={{
+                              background: 'linear-gradient(135deg, #0284c7, #2563eb)',
+                              color: '#ffffff',
+                              fontSize: 10.5,
+                              fontWeight: 800,
+                              padding: '2px 8px',
+                              borderRadius: 9999
+                            }}
+                          >
+                            {customTextsForm.internal_sipd_badge || 'SIPD RI'}
+                          </span>
+                        </div>
+                        <p style={{ margin: '4px 0 0', fontSize: 12.5, color: '#64748b' }}>
+                          {customTextsForm.internal_sipd_desc || 'Pohon Hierarki Kinerja: Program → Kegiatan → Sub Kegiatan → Daftar Paket Pekerjaan'}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
