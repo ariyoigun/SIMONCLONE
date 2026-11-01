@@ -180,6 +180,20 @@ export const INITIAL_USERS = [
     bidangId: 'sekretariat',
     email: 'koord.umpeg@kabupaten.go.id',
     avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 'usr_koord_pendapatan',
+    username: 'pendapatan',
+    password: 'pupr2025',
+    nama: 'Tri Wahyudi, SE',
+    nip: '19850620 201001 1 012',
+    jabatan: 'Koordinator Pengelola Pendapatan Daerah & Retribusi',
+    role: 'koordinator_pendapatan',
+    bidangId: 'sekretariat',
+    email: 'pendapatan.dinputaru@demakkab.go.id',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80',
+    allowedMenus: ['dashboard', 'pendapatan', 'laporan'],
+    canInputPendapatan: true
   }
 ];
 

@@ -19,7 +19,8 @@ import {
   Globe,
   Database,
   FileSpreadsheet,
-  FolderTree
+  FolderTree,
+  Coins
 } from 'lucide-react';
 import { getLatestProjectUpdateFormatted } from '../utils/dateUtils';
 import AppLogo from './AppLogo';
@@ -43,6 +44,8 @@ const Sidebar = ({
     canManageYears,
     canManageSettings,
     canAccessSPJMenu,
+    hasMenuAccess,
+    pendapatanTransactions = [],
     logout
   } = useApp();
 
@@ -76,116 +79,136 @@ const Sidebar = ({
 
       {/* Navigation List */}
       <nav className="sidebar-nav">
-        <div className="nav-section-title">Ringkasan Eksekutif</div>
-
-        <a
-          href="#dashboard"
-          className={`nav-item ${activeTab === 'dashboard' ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab('dashboard');
-          }}
-        >
-          <LayoutDashboard className="icon" />
-          <span>Dashboard Eksekutif</span>
-        </a>
-
-        {/* Master Data Section */}
-        <div className="nav-section-title">Data Pokok & Master</div>
-
-        <a
-          href="#master_pekerjaan"
-          className={`nav-item ${activeTab === 'master_pekerjaan' ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab('master_pekerjaan');
-          }}
-          style={{
-            background: activeTab === 'master_pekerjaan' ? 'rgba(37, 99, 235, 0.15)' : undefined,
-            fontWeight: activeTab === 'master_pekerjaan' ? 800 : undefined
-          }}
-        >
-          <Database className="icon" style={{ color: '#0284c7' }} />
-          <span>Master Data Pekerjaan</span>
-          <span className="nav-badge-count" style={{ background: '#0284c7', color: '#fff' }}>
-            {countTotal}
-          </span>
-        </a>
-
-        {onOpenImportExportModal && (
-          <button
-            type="button"
-            className="nav-item"
-            onClick={(e) => {
-              e.preventDefault();
-              onOpenImportExportModal('import');
-            }}
-            style={{
-              paddingLeft: 36,
-              fontSize: 12,
-              color: '#94a3b8',
-              border: 'none',
-              background: 'none',
-              width: '100%',
-              textAlign: 'left',
-              cursor: 'pointer'
-            }}
-            title="Import data dari file Excel / CSV atau Export data paket"
-          >
-            <FileSpreadsheet className="icon" size={14} style={{ color: '#10b981' }} />
-            <span>Import / Export Excel</span>
-          </button>
+        {hasMenuAccess('dashboard') && (
+          <>
+            <div className="nav-section-title">Ringkasan Eksekutif</div>
+            <a
+              href="#dashboard"
+              className={`nav-item ${activeTab === 'dashboard' ? 'active' : ''}`}
+              onClick={(e) => {
+                e.preventDefault();
+                setActiveTab('dashboard');
+              }}
+            >
+              <LayoutDashboard className="icon" />
+              <span>Dashboard Eksekutif</span>
+            </a>
+          </>
         )}
 
-        <div className="nav-section-title">Modul Monitoring Progres</div>
+        {/* Master Data Section */}
+        {hasMenuAccess('master_pekerjaan') && (
+          <>
+            <div className="nav-section-title">Data Pokok & Master</div>
 
-        <a
-          href="#prakontrak"
-          className={`nav-item ${activeTab === 'prakontrak' ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab('prakontrak');
-          }}
-        >
-          <Clock className="icon" />
-          <span>Pekerjaan Pra-Kontrak</span>
-          {countPreContract > 0 && (
-            <span
-              className="nav-badge-count"
-              style={{ background: 'rgba(245, 158, 11, 0.3)', color: '#f59e0b' }}
+            <a
+              href="#master_pekerjaan"
+              className={`nav-item ${activeTab === 'master_pekerjaan' ? 'active' : ''}`}
+              onClick={(e) => {
+                e.preventDefault();
+                setActiveTab('master_pekerjaan');
+              }}
+              style={{
+                background: activeTab === 'master_pekerjaan' ? 'rgba(37, 99, 235, 0.15)' : undefined,
+                fontWeight: activeTab === 'master_pekerjaan' ? 800 : undefined
+              }}
             >
-              {countPreContract}
-            </span>
-          )}
-        </a>
+              <Database className="icon" style={{ color: '#0284c7' }} />
+              <span>Master Data Pekerjaan</span>
+              <span className="nav-badge-count" style={{ background: '#0284c7', color: '#fff' }}>
+                {countTotal}
+              </span>
+            </a>
 
-        <a
-          href="#fisik"
-          className={`nav-item ${activeTab === 'fisik' ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab('fisik');
-          }}
-        >
-          <TrendingUp className="icon" />
-          <span>Progres Fisik</span>
-          <span className="nav-badge-count">{countFisik}</span>
-        </a>
+            {onOpenImportExportModal && (
+              <button
+                type="button"
+                className="nav-item"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onOpenImportExportModal('import');
+                }}
+                style={{
+                  paddingLeft: 36,
+                  fontSize: 12,
+                  color: '#94a3b8',
+                  border: 'none',
+                  background: 'none',
+                  width: '100%',
+                  textAlign: 'left',
+                  cursor: 'pointer'
+                }}
+                title="Import data dari file Excel / CSV atau Export data paket"
+              >
+                <FileSpreadsheet className="icon" size={14} style={{ color: '#10b981' }} />
+                <span>Import / Export Excel</span>
+              </button>
+            )}
+          </>
+        )}
 
-        <a
-          href="#keuangan"
-          className={`nav-item ${activeTab === 'keuangan' ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab('keuangan');
-          }}
-        >
-          <DollarSign className="icon" />
-          <span>Progres Keuangan</span>
-          <span className="nav-badge-count">{countFisik}</span>
-        </a>
+        {(hasMenuAccess('prakontrak') ||
+          hasMenuAccess('fisik') ||
+          hasMenuAccess('keuangan') ||
+          hasMenuAccess('spj_keuangan') ||
+          hasMenuAccess('sipd_summary') ||
+          hasMenuAccess('pendapatan')) && (
+          <div className="nav-section-title">Modul Monitoring Progres</div>
+        )}
 
-        {canAccessSPJMenu && (
+        {hasMenuAccess('prakontrak') && (
+          <a
+            href="#prakontrak"
+            className={`nav-item ${activeTab === 'prakontrak' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveTab('prakontrak');
+            }}
+          >
+            <Clock className="icon" />
+            <span>Pekerjaan Pra-Kontrak</span>
+            {countPreContract > 0 && (
+              <span
+                className="nav-badge-count"
+                style={{ background: 'rgba(245, 158, 11, 0.3)', color: '#f59e0b' }}
+              >
+                {countPreContract}
+              </span>
+            )}
+          </a>
+        )}
+
+        {hasMenuAccess('fisik') && (
+          <a
+            href="#fisik"
+            className={`nav-item ${activeTab === 'fisik' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveTab('fisik');
+            }}
+          >
+            <TrendingUp className="icon" />
+            <span>Progres Fisik</span>
+            <span className="nav-badge-count">{countFisik}</span>
+          </a>
+        )}
+
+        {hasMenuAccess('keuangan') && (
+          <a
+            href="#keuangan"
+            className={`nav-item ${activeTab === 'keuangan' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveTab('keuangan');
+            }}
+          >
+            <DollarSign className="icon" />
+            <span>Progres Keuangan</span>
+            <span className="nav-badge-count">{countFisik}</span>
+          </a>
+        )}
+
+        {hasMenuAccess('spj_keuangan') && canAccessSPJMenu && (
           <a
             href="#spj_keuangan"
             className={`nav-item ${activeTab === 'spj_keuangan' ? 'active' : ''}`}
@@ -205,41 +228,75 @@ const Sidebar = ({
           </a>
         )}
 
-        <a
-          href="#sipd_summary"
-          className={`nav-item ${activeTab === 'sipd_summary' ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab('sipd_summary');
-          }}
-          title="Ringkasan Hierarki SIPD: Program, Kegiatan, Sub Kegiatan, dan Paket Pekerjaan"
-        >
-          <FolderTree className="icon" style={{ color: '#0284c7' }} />
-          <span>Ringkasan SIPD</span>
-          <span
-            className="nav-badge-count"
+        {hasMenuAccess('sipd_summary') && (
+          <a
+            href="#sipd_summary"
+            className={`nav-item ${activeTab === 'sipd_summary' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveTab('sipd_summary');
+            }}
+            title="Ringkasan Hierarki SIPD: Program, Kegiatan, Sub Kegiatan, dan Paket Pekerjaan"
+          >
+            <FolderTree className="icon" style={{ color: '#0284c7' }} />
+            <span>Ringkasan SIPD</span>
+            <span
+              className="nav-badge-count"
+              style={{
+                background: activeTab === 'sipd_summary' ? '#0284c7' : 'rgba(2, 132, 199, 0.15)',
+                color: activeTab === 'sipd_summary' ? '#ffffff' : '#0284c7'
+              }}
+            >
+              Tree
+            </span>
+          </a>
+        )}
+
+        {/* Menu ke-6: Monitoring Pendapatan Daerah */}
+        {hasMenuAccess('pendapatan') && (
+          <a
+            href="#pendapatan"
+            className={`nav-item ${activeTab === 'pendapatan' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveTab('pendapatan');
+            }}
+            title="Monitoring Target & Realisasi Penerimaan Retribusi Daerah DINPUTARU (Setor Tinja, PBG, SLF, Sewa Alat Berat, Sewa Cor Drill)"
             style={{
-              background: activeTab === 'sipd_summary' ? '#0284c7' : 'rgba(2, 132, 199, 0.15)',
-              color: activeTab === 'sipd_summary' ? '#ffffff' : '#0284c7'
+              background: activeTab === 'pendapatan' ? 'rgba(13, 148, 136, 0.18)' : undefined,
+              fontWeight: activeTab === 'pendapatan' ? 800 : undefined
             }}
           >
-            Tree
-          </span>
-        </a>
+            <Coins className="icon" style={{ color: '#0d9488' }} />
+            <span>Monitoring Pendapatan</span>
+            <span
+              className="nav-badge-count"
+              style={{
+                background: activeTab === 'pendapatan' ? '#0d9488' : 'rgba(13, 148, 136, 0.2)',
+                color: activeTab === 'pendapatan' ? '#ffffff' : '#0d9488'
+              }}
+            >
+              {pendapatanTransactions.length}
+            </span>
+          </a>
+        )}
 
-        <div className="nav-section-title">Laporan & Evaluasi</div>
-
-        <a
-          href="#laporan"
-          className={`nav-item ${activeTab === 'laporan' ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab('laporan');
-          }}
-        >
-          <Printer className="icon" />
-          <span>Rekapitulasi & Cetak</span>
-        </a>
+        {hasMenuAccess('laporan') && (
+          <>
+            <div className="nav-section-title">Laporan & Evaluasi</div>
+            <a
+              href="#laporan"
+              className={`nav-item ${activeTab === 'laporan' ? 'active' : ''}`}
+              onClick={(e) => {
+                e.preventDefault();
+                setActiveTab('laporan');
+              }}
+            >
+              <Printer className="icon" />
+              <span>Rekapitulasi & Cetak</span>
+            </a>
+          </>
+        )}
 
         {/* Public Portal Quick Access */}
         {onOpenPublicPortal && (

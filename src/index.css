@@ -575,11 +575,13 @@ body {
 }
 
 .kpi-value {
-  font-size: 28px;
+  font-size: clamp(17px, 1.4vw, 22px);
   font-weight: 800;
   color: var(--pupr-navy-900);
-  letter-spacing: -0.8px;
-  line-height: 1.1;
+  letter-spacing: -0.4px;
+  line-height: 1.15;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .kpi-subtext {

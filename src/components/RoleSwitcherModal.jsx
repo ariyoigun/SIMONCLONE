@@ -42,6 +42,7 @@ const RoleSwitcherModal = ({ isOpen, onClose }) => {
               <strong>Aturan Hak Akses DINPUTARU (Struktur Baru):</strong>
               <div style={{ color: '#475569', marginTop: 4, lineHeight: 1.5 }}>
                 • <strong>Sub Bagian Program & Keuangan:</strong> Kasubag & Koordinator memiliki wewenang khusus mengakses <em>Menu 4 (Administrasi SPJ Keuangan)</em> untuk verifikasi berkas akhir tahun, koreksi, pengembalian, SPM, dan SP2D.<br />
+                • <strong>Koordinator Pendapatan:</strong> Memiliki wewenang menginput dan mengelola <em>Menu 6 (Monitoring Pendapatan & Retribusi PAD)</em> seperti Sewa Alat Berat, PBG, SLF, Tinja, dan Cor Drill.<br />
                 • <strong>Sub Bagian Umum & Kepegawaian (Umpeg):</strong> Kasubag & Koordinator mengelola paket pengadaan operasional kantor & kepegawaian.<br />
                 • <strong>Bidang Teknis (CK, SDA, BM, TRP):</strong> Koordinator menginput/mengubah paket bidangnya, Kasie/Kabid memantau progres.<br />
                 • <strong>Sekretaris & Kepala Dinas:</strong> Dapat memantau pekerjaan & administrasi SPJ <em>seluruh bidang</em> (Read-Only).<br />
@@ -64,6 +65,7 @@ const RoleSwitcherModal = ({ isOpen, onClose }) => {
 
               const isProgKeu = u.role.includes('program_keuangan');
               const isUmpeg = u.role.includes('umpeg');
+              const isPendapatan = u.role === 'koordinator_pendapatan';
 
               return (
                 <div
@@ -143,6 +145,8 @@ const RoleSwitcherModal = ({ isOpen, onClose }) => {
                         background:
                           u.role === 'superadmin'
                             ? '#fee2e2'
+                            : isPendapatan
+                            ? '#ccfbf1'
                             : isProgKeu
                             ? '#f3e8ff'
                             : isUmpeg
@@ -155,6 +159,8 @@ const RoleSwitcherModal = ({ isOpen, onClose }) => {
                         color:
                           u.role === 'superadmin'
                             ? '#991b1b'
+                            : isPendapatan
+                            ? '#0f766e'
                             : isProgKeu
                             ? '#7e22ce'
                             : isUmpeg
@@ -169,7 +175,7 @@ const RoleSwitcherModal = ({ isOpen, onClose }) => {
                     >
                       {u.role === 'superadmin' ? (
                         <Shield size={12} />
-                      ) : u.role === 'koordinator' || u.role === 'koordinator_program_keuangan' || u.role === 'koordinator_umpeg' ? (
+                      ) : u.role === 'koordinator' || u.role === 'koordinator_program_keuangan' || u.role === 'koordinator_umpeg' || isPendapatan ? (
                         <UserCheck size={12} />
                       ) : (
                         <Eye size={12} />

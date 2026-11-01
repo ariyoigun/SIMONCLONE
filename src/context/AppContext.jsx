@@ -19,6 +19,11 @@ import {
   INITIAL_SIPD_SUB_KEGIATAN,
   matchProjectToSubKegiatan
 } from '../data/sipdData';
+import {
+  KATEGORI_PENDAPATAN,
+  DEFAULT_TARGET_CONFIG,
+  generateDummyPendapatanTransactions
+} from '../data/pendapatanData';
 
 const AppContext = createContext();
 
@@ -82,11 +87,14 @@ export const AppProvider = ({ children }) => {
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          return parsed.map((u) => ({
+          const loaded = parsed.map((u) => ({
             ...u,
             username: u.username || u.email?.split('@')[0] || u.id,
             password: u.password || 'pupr2025'
           }));
+          const existingIds = new Set(loaded.map((u) => u.id));
+          const missing = INITIAL_USERS.filter((iu) => !existingIds.has(iu.id));
+          return [...loaded, ...missing];
         }
       } catch (e) {}
     }
@@ -204,6 +212,29 @@ export const AppProvider = ({ children }) => {
       } catch (e) {}
     }
     return INITIAL_SIPD_SUB_KEGIATAN;
+  });
+
+  // Monitoring Pendapatan Retribusi State (Menu ke-6 DINPUTARU)
+  const [pendapatanTransactions, setPendapatanTransactions] = useState(() => {
+    const saved = localStorage.getItem('simon_pendapatan_trx');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      } catch (e) {}
+    }
+    return generateDummyPendapatanTransactions(2026);
+  });
+
+  const [pendapatanTargetConfig, setPendapatanTargetConfig] = useState(() => {
+    const saved = localStorage.getItem('simon_pendapatan_target');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.targetTahunanTotal) return parsed;
+      } catch (e) {}
+    }
+    return DEFAULT_TARGET_CONFIG;
   });
 
   // Projects State (Master Data Terpadu untuk 4 Menu + Menu 5 SIPD)
@@ -377,6 +408,14 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('simon_sipd_sub_kegiatans', JSON.stringify(sipdSubKegiatans));
   }, [sipdSubKegiatans]);
+
+  useEffect(() => {
+    localStorage.setItem('simon_pendapatan_trx', JSON.stringify(pendapatanTransactions));
+  }, [pendapatanTransactions]);
+
+  useEffect(() => {
+    localStorage.setItem('simon_pendapatan_target', JSON.stringify(pendapatanTargetConfig));
+  }, [pendapatanTargetConfig]);
 
   // Remote Database Sync (Hostinger MySQL API Bridge)
   useEffect(() => {
@@ -919,6 +958,39 @@ export const AppProvider = ({ children }) => {
     'kasubag_program_keuangan'
   ].includes(currentUser?.role);
 
+  // Wewenang Khusus Monitoring Pendapatan Retribusi
+  const canInputPendapatan = Boolean(
+    currentUser?.role === 'superadmin' ||
+    currentUser?.role === 'koordinator_pendapatan' ||
+    currentUser?.canInputPendapatan === true
+  );
+
+  // Granular Menu Access Control
+  const hasMenuAccess = (menuId) => {
+    if (!currentUser) return false;
+    if (currentUser.role === 'superadmin') return true;
+
+    // Jika admin mengatur custom allowedMenus pada user ini
+    if (Array.isArray(currentUser.allowedMenus) && currentUser.allowedMenus.length > 0) {
+      return currentUser.allowedMenus.includes(menuId);
+    }
+
+    // Default wewenang berdasarkan Peran Sistem (Role)
+    if (menuId === 'spj_keuangan') {
+      return canAccessSPJMenu;
+    }
+    if (currentUser.role === 'koordinator_pendapatan') {
+      return ['dashboard', 'pendapatan', 'laporan'].includes(menuId);
+    }
+    return true;
+  };
+
+  // Helper format rupiah sampai digit satuan (lengkap dan presisi)
+  const formatCurrency = (val) => {
+    const num = Math.round(Number(val) || 0);
+    return `Rp ${num.toLocaleString('id-ID')}`;
+  };
+
   // --- SIPD PROGRAM CRUD ---
   const addSipdProgram = (programData) => {
     const id = programData.id || `prog_${Date.now()}`;
@@ -1039,6 +1111,94 @@ export const AppProvider = ({ children }) => {
       statusDeviasi = 'Aman';
     }
     return { deviasi, statusDeviasi };
+  };
+
+  // --- MONITORING PENDAPATAN RETRIBUSI CRUD ---
+  const addPendapatanTransaction = (trxData) => {
+    if (!canInputPendapatan) {
+      showToast('Wewenang ditolak! Hanya Koordinator Pendapatan dan Superadmin yang dapat menginput penerimaan.', 'error');
+      return false;
+    }
+    const nominal = parseFloat(trxData.nominal) || 0;
+    if (nominal <= 0) {
+      showToast('Nominal penerimaan harus lebih besar dari 0!', 'error');
+      return false;
+    }
+    const tgl = trxData.tanggal || new Date().toISOString().split('T')[0];
+    const bulan = parseInt(tgl.split('-')[1], 10) || (new Date().getMonth() + 1);
+    const newTrx = {
+      ...trxData,
+      id: trxData.id || `TRX-${activeYear}-${Date.now().toString().slice(-4)}`,
+      nominal,
+      tanggal: tgl,
+      bulan,
+      tahun: activeYear,
+      status: trxData.status || 'Terverifikasi Kasda',
+      createdAt: new Date().toLocaleString('id-ID'),
+      updatedBy: currentUser.nama
+    };
+    setPendapatanTransactions((prev) => [newTrx, ...prev]);
+    showToast(`Penerimaan retribusi "${newTrx.namaPenyewa}" (Rp ${nominal.toLocaleString('id-ID')}) berhasil dicatat!`, 'success');
+    return newTrx;
+  };
+
+  const updatePendapatanTransaction = (id, updatedData) => {
+    if (!canInputPendapatan) {
+      showToast('Wewenang ditolak untuk mengubah transaksi pendapatan!', 'error');
+      return false;
+    }
+    setPendapatanTransactions((prev) =>
+      prev.map((t) => {
+        if (t.id !== id) return t;
+        const nominal = updatedData.nominal !== undefined ? (parseFloat(updatedData.nominal) || 0) : t.nominal;
+        const tgl = updatedData.tanggal || t.tanggal;
+        const bulan = parseInt(tgl.split('-')[1], 10) || t.bulan;
+        return {
+          ...t,
+          ...updatedData,
+          nominal,
+          tanggal: tgl,
+          bulan,
+          updatedAt: new Date().toLocaleString('id-ID'),
+          updatedBy: currentUser.nama
+        };
+      })
+    );
+    showToast('Data penerimaan retribusi berhasil diperbarui!', 'success');
+    return true;
+  };
+
+  const deletePendapatanTransaction = (id) => {
+    if (!canInputPendapatan) {
+      showToast('Wewenang ditolak untuk menghapus transaksi pendapatan!', 'error');
+      return false;
+    }
+    setPendapatanTransactions((prev) => prev.filter((t) => t.id !== id));
+    showToast('Data transaksi penerimaan berhasil dihapus.', 'info');
+    return true;
+  };
+
+  const updatePendapatanTarget = (newTargetConfig) => {
+    if (!canInputPendapatan) {
+      showToast('Wewenang ditolak untuk mengubah target pendapatan!', 'error');
+      return false;
+    }
+    setPendapatanTargetConfig((prev) => ({
+      ...prev,
+      ...newTargetConfig,
+      tahunAnggaran: activeYear
+    }));
+    showToast(`Target pendapatan daerah TA ${activeYear} berhasil diperbarui!`, 'success');
+    return true;
+  };
+
+  const resetPendapatanToDemo = () => {
+    const dummy = generateDummyPendapatanTransactions(activeYear || 2026);
+    setPendapatanTransactions(dummy);
+    setPendapatanTargetConfig(DEFAULT_TARGET_CONFIG);
+    localStorage.setItem('simon_pendapatan_trx', JSON.stringify(dummy));
+    localStorage.setItem('simon_pendapatan_target', JSON.stringify(DEFAULT_TARGET_CONFIG));
+    showToast('Data monitoring pendapatan berhasil direset ke data awal!', 'info');
   };
 
   // Unified Project CRUD
@@ -1369,6 +1529,8 @@ export const AppProvider = ({ children }) => {
     localStorage.removeItem('simon_sipd_programs');
     localStorage.removeItem('simon_sipd_kegiatans');
     localStorage.removeItem('simon_sipd_sub_kegiatans');
+    localStorage.removeItem('simon_pendapatan_trx');
+    localStorage.removeItem('simon_pendapatan_target');
     setProjects(INITIAL_PROJECTS);
     setSystemSettings(DEFAULT_SYSTEM_SETTINGS);
     setUsers(INITIAL_USERS);
@@ -1381,6 +1543,8 @@ export const AppProvider = ({ children }) => {
     setSipdPrograms(INITIAL_SIPD_PROGRAMS);
     setSipdKegiatans(INITIAL_SIPD_KEGIATAN);
     setSipdSubKegiatans(INITIAL_SIPD_SUB_KEGIATAN);
+    setPendapatanTransactions(generateDummyPendapatanTransactions(2026));
+    setPendapatanTargetConfig(DEFAULT_TARGET_CONFIG);
     setActiveYear(2026);
     setCurrentUser(INITIAL_USERS[0]);
     showToast('Data sistem telah direset ke data sampel DINPUTARU Kabupaten Demak!', 'info');
@@ -1463,7 +1627,19 @@ export const AppProvider = ({ children }) => {
     toast,
     showToast,
     resetToDemoData,
-    userRoleDef
+    userRoleDef,
+    // Monitoring Pendapatan Retribusi (Fitur Menu ke-6)
+    pendapatanTransactions,
+    pendapatanTargetConfig,
+    kategoriPendapatanList: KATEGORI_PENDAPATAN,
+    addPendapatanTransaction,
+    updatePendapatanTransaction,
+    deletePendapatanTransaction,
+    updatePendapatanTarget,
+    resetPendapatanToDemo,
+    canInputPendapatan,
+    hasMenuAccess,
+    formatCurrency
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

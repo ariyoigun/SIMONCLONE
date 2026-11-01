@@ -190,8 +190,38 @@ export const ROLE_DEFINITIONS = {
     canEditSPJ: false,
     readOnly: false,
     keterangan: 'Menginput dan mengelola paket pengadaan barang/jasa penunjang kantor di Sub Bagian Umpeg.'
+  },
+  koordinator_pendapatan: {
+    id: 'koordinator_pendapatan',
+    nama: 'Koordinator Pendapatan',
+    badge: 'Inputor Pendapatan PAD',
+    canSeeAllBidang: true,
+    canCreate: false,
+    canEdit: false,
+    canDelete: false,
+    canManageUsers: false,
+    canManageYears: false,
+    canManageSettings: false,
+    canAccessSPJ: false,
+    canEditSPJ: false,
+    canAccessPendapatan: true,
+    canInputPendapatan: true,
+    readOnly: false,
+    keterangan: 'Memiliki wewenang menginput dan mengelola realisasi penerimaan retribusi PAD (Setor Tinja, PBG, SLF, Sewa Alat Berat, Sewa Cor Drill).'
   }
 };
+
+export const SYSTEM_MENUS = [
+  { id: 'dashboard', label: 'Dashboard Eksekutif', section: 'Ringkasan Eksekutif' },
+  { id: 'master_pekerjaan', label: 'Master Data Pekerjaan', section: 'Data Pokok & Master' },
+  { id: 'prakontrak', label: 'Pekerjaan Pra-Kontrak', section: 'Modul Monitoring Progres' },
+  { id: 'fisik', label: 'Progres Fisik', section: 'Modul Monitoring Progres' },
+  { id: 'keuangan', label: 'Progres Keuangan', section: 'Modul Monitoring Progres' },
+  { id: 'spj_keuangan', label: 'Administrasi SPJ Keuangan', section: 'Modul Monitoring Progres' },
+  { id: 'sipd_summary', label: 'Ringkasan SIPD', section: 'Modul Monitoring Progres' },
+  { id: 'pendapatan', label: 'Monitoring Pendapatan Daerah', section: 'Modul Monitoring Progres' },
+  { id: 'laporan', label: 'Rekapitulasi & Cetak Laporan', section: 'Laporan & Evaluasi' }
+];
 
 export const DEFAULT_TAGS = [
   'Program Prioritas Bupati',
@@ -794,6 +824,9 @@ export const DEFAULT_CUSTOM_TEXTS = {
   internal_master_title: 'Master Data Pekerjaan (Basis Data Induk)',
   internal_master_desc:
     'Pusat registrasi dan manajemen data dasar seluruh paket pekerjaan dinas terintegrasi ke modul monitoring.',
+  internal_pendapatan_title: 'Monitoring Target & Realisasi Pendapatan Retribusi Daerah',
+  internal_pendapatan_desc:
+    'Pengendalian target tahun berjalan (6 Miliar) dan realisasi penerimaan retribusi Setor Tinja, PBG, SLF, Sewa Alat Berat, dan Sewa Cor Drill.',
   internal_report_title: 'Cetak & Rekapitulasi Laporan Kedinasan',
   internal_report_desc:
     'Format laporan resmi kedinasan siap cetak/PDF dan ekspor spreadsheet untuk pelaporan berkala pimpinan.',

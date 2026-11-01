@@ -10,6 +10,7 @@ import FinancialProgressView from './views/FinancialProgressView';
 import SpjAdministrationView from './views/SpjAdministrationView';
 import SipdSummaryView from './views/SipdSummaryView';
 import ReportView from './views/ReportView';
+import PendapatanView from './views/PendapatanView';
 import LoginView from './views/LoginView';
 import LandingView from './views/LandingView';
 
@@ -234,12 +235,16 @@ const MainAppContent = () => {
             />
           )}
 
+          {activeTab === 'pendapatan' && (
+            <PendapatanView />
+          )}
+
           {activeTab === 'laporan' && (
             <ReportView onOpenSettingsModal={() => setIsSettingsModalOpen(true)} />
           )}
 
           {/* Floating Time Stamp di Pojok Kiri Bawah untuk Modul Monitoring */}
-          {['dashboard', 'prakontrak', 'fisik', 'keuangan', 'spj_keuangan', 'master_pekerjaan', 'sipd_summary'].includes(activeTab) && (
+          {['dashboard', 'prakontrak', 'fisik', 'keuangan', 'spj_keuangan', 'master_pekerjaan', 'sipd_summary', 'pendapatan'].includes(activeTab) && (
             <div
               className="bottom-left-timestamp-pill"
               title="Waktu sinkronisasi dan update data monitoring dinas terakhir"

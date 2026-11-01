@@ -349,7 +349,7 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
               </div>
             </div>
             <div style={{ fontSize: 12, fontWeight: 700, color: activeBidangInfo.warna }}>
-              {displayProjects.length} Pekerjaan Terfilter • Rp {(totalPagu / 1000000000).toFixed(2)} M Pagu
+              {displayProjects.length} Pekerjaan Terfilter • Rp {totalPagu.toLocaleString('id-ID')} Pagu
             </div>
           </div>
         )}
@@ -365,11 +365,11 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
               <Briefcase size={22} />
             </div>
           </div>
-          <div className="kpi-value">
-            Rp {(totalPagu / 1000000000).toFixed(2)} M
+          <div className="kpi-value" style={{ fontSize: 'clamp(17px, 1.35vw, 22px)' }}>
+            Rp {totalPagu.toLocaleString('id-ID')}
           </div>
           <div className="kpi-subtext">
-            <span>Rp {totalPagu.toLocaleString('id-ID')}</span>
+            <span>Pagu Anggaran Tahun Berjalan</span>
           </div>
           <div className="kpi-progress-bar">
             <div className="kpi-progress-bar-fill" style={{ width: '100%', background: '#0284c7' }} />
@@ -410,7 +410,7 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
             {persenKeuanganGlobal}%
           </div>
           <div className="kpi-subtext">
-            <span>Cair: Rp {(totalPencairan / 1000000000).toFixed(2)} M dari Rp {(totalKontrak / 1000000000).toFixed(2)} M Kontrak</span>
+            <span>Cair: Rp {totalPencairan.toLocaleString('id-ID')} dari Rp {totalKontrak.toLocaleString('id-ID')} Kontrak</span>
           </div>
           <div className="kpi-progress-bar">
             <div
@@ -461,7 +461,7 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
           data={anggaranChartData}
           isCurrency={true}
           centerLabel="Total Pagu"
-          centerValue={`Rp ${(totalPagu / 1000000000).toFixed(1)}M`}
+          centerValue={`Rp ${totalPagu.toLocaleString('id-ID')}`}
         />
       </div>
 

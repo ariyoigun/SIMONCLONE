@@ -32,14 +32,9 @@ const DonutPieChart = ({
   // Format value helper
   const formatVal = (val) => {
     if (isCurrency) {
-      if (val >= 1000000000) {
-        return `Rp ${(val / 1000000000).toFixed(2)} M`;
-      } else if (val >= 1000000) {
-        return `Rp ${(val / 1000000).toFixed(1)} Jt`;
-      }
-      return `Rp ${val.toLocaleString('id-ID')}`;
+      return `Rp ${Math.round(parseFloat(val) || 0).toLocaleString('id-ID')}`;
     }
-    return val.toLocaleString('id-ID');
+    return (parseFloat(val) || 0).toLocaleString('id-ID');
   };
 
   // Calculate SVG arc paths

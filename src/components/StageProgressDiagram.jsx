@@ -367,10 +367,10 @@ const StageProgressDiagram = ({
                 </div>
 
                 {/* Rupiah Value */}
-                <div style={{ fontSize: 12, fontWeight: 700, color: st.warna }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: st.warna, wordBreak: 'break-all' }}>
                   {st.id === 'fisik' || st.id === 'selesai'
-                    ? `Rp ${(st.kontrakTotal / 1000000000).toFixed(2)} M Kontrak`
-                    : `Rp ${(st.paguTotal / 1000000000).toFixed(2)} M Pagu`}
+                    ? `Rp ${Math.round(st.kontrakTotal).toLocaleString('id-ID')} Kontrak`
+                    : `Rp ${Math.round(st.paguTotal).toLocaleString('id-ID')} Pagu`}
                 </div>
 
                 {/* Description */}
@@ -718,7 +718,7 @@ const StageProgressDiagram = ({
 
                             <span
                               style={{
-                                fontSize: 12,
+                                fontSize: 11.5,
                                 fontWeight: 700,
                                 padding: '4px 10px',
                                 borderRadius: 6,
@@ -726,7 +726,7 @@ const StageProgressDiagram = ({
                                 color: '#0369a1'
                               }}
                             >
-                              Pagu: Rp {(group.totalPagu / 1000000000).toFixed(2)} M
+                              Pagu: Rp {Math.round(group.totalPagu).toLocaleString('id-ID')}
                             </span>
 
                             {group.terkontrakCount > 0 && (

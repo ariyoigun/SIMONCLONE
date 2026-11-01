@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
-import { BIDANG_LIST, ROLE_DEFINITIONS } from '../data/constants';
+import { BIDANG_LIST, ROLE_DEFINITIONS, SYSTEM_MENUS } from '../data/constants';
 import {
   Users,
   UserPlus,
@@ -16,7 +16,8 @@ import {
   Lock,
   UserCheck,
   Camera,
-  Upload
+  Upload,
+  Coins
 } from 'lucide-react';
 
 const emptyForm = {
@@ -28,7 +29,9 @@ const emptyForm = {
   bidangId: 'cipta_karya',
   email: '',
   password: '',
-  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80'
+  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80',
+  allowedMenus: ['dashboard', 'master_pekerjaan', 'prakontrak', 'fisik', 'keuangan', 'pendapatan', 'laporan'],
+  canInputPendapatan: false
 };
 
 const UserManagementModal = ({ isOpen, onClose }) => {
@@ -48,7 +51,9 @@ const UserManagementModal = ({ isOpen, onClose }) => {
     setEditingUserId(null);
     setFormData({
       ...emptyForm,
-      password: 'pupr' + Math.floor(100 + Math.random() * 900) // Suggested strong default password
+      password: 'pupr' + Math.floor(100 + Math.random() * 900), // Suggested strong default password
+      allowedMenus: ['dashboard', 'master_pekerjaan', 'prakontrak', 'fisik', 'keuangan', 'pendapatan', 'laporan'],
+      canInputPendapatan: false
     });
     setShowPassword(true);
   };
@@ -56,6 +61,10 @@ const UserManagementModal = ({ isOpen, onClose }) => {
   const handleStartEdit = (user) => {
     setFormMode('edit');
     setEditingUserId(user.id);
+    const defaultAllowed = user.role === 'koordinator_pendapatan'
+      ? ['dashboard', 'pendapatan', 'laporan']
+      : SYSTEM_MENUS.map((m) => m.id);
+
     setFormData({
       nama: user.nama || '',
       nip: user.nip || '',
@@ -65,7 +74,11 @@ const UserManagementModal = ({ isOpen, onClose }) => {
       bidangId: user.bidangId || 'cipta_karya',
       email: user.email || '',
       password: user.password || 'pupr2025',
-      avatar: user.avatar || emptyForm.avatar
+      avatar: user.avatar || emptyForm.avatar,
+      allowedMenus: Array.isArray(user.allowedMenus) && user.allowedMenus.length > 0 ? user.allowedMenus : defaultAllowed,
+      canInputPendapatan: user.canInputPendapatan !== undefined
+        ? user.canInputPendapatan
+        : (user.role === 'koordinator_pendapatan' || user.role === 'superadmin')
     });
     setShowPassword(true);
   };
@@ -90,8 +103,8 @@ const UserManagementModal = ({ isOpen, onClose }) => {
 
     // Determine bidang assignment based on role
     let bidangId = formData.bidangId;
-    if (['superadmin', 'kadin', 'sekretaris'].includes(formData.role)) {
-      bidangId = null;
+    if (['superadmin', 'kadin', 'sekretaris', 'koordinator_pendapatan'].includes(formData.role)) {
+      bidangId = formData.role === 'koordinator_pendapatan' ? 'sekretariat' : null;
     } else if (['kasubag_program_keuangan', 'koordinator_program_keuangan', 'kasubag_umpeg', 'koordinator_umpeg'].includes(formData.role)) {
       bidangId = 'sekretariat';
     }
@@ -99,7 +112,11 @@ const UserManagementModal = ({ isOpen, onClose }) => {
     const payload = {
       ...formData,
       username: formData.username.trim() || formData.email.split('@')[0] || `user_${Date.now().toString().slice(-4)}`,
-      bidangId
+      bidangId,
+      allowedMenus: Array.isArray(formData.allowedMenus) && formData.allowedMenus.length > 0
+        ? formData.allowedMenus
+        : ['dashboard', 'pendapatan', 'laporan'],
+      canInputPendapatan: Boolean(formData.canInputPendapatan || formData.role === 'koordinator_pendapatan' || formData.role === 'superadmin')
     };
 
     if (formMode === 'edit') {
@@ -257,10 +274,28 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                   <select
                     className="form-control"
                     value={formData.role}
-                    onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                    onChange={(e) => {
+                      const newRole = e.target.value;
+                      let nextAllowed = formData.allowedMenus || SYSTEM_MENUS.map((m) => m.id);
+                      let nextCanInput = formData.canInputPendapatan;
+                      if (newRole === 'koordinator_pendapatan') {
+                        nextAllowed = ['dashboard', 'pendapatan', 'laporan'];
+                        nextCanInput = true;
+                      } else if (newRole === 'superadmin') {
+                        nextAllowed = SYSTEM_MENUS.map((m) => m.id);
+                        nextCanInput = true;
+                      }
+                      setFormData({
+                        ...formData,
+                        role: newRole,
+                        allowedMenus: nextAllowed,
+                        canInputPendapatan: nextCanInput
+                      });
+                    }}
                   >
                     <option value="koordinator">Koordinator Bidang Teknis (Input & Edit Bidang Terkait)</option>
                     <option value="kabid">Kepala Bidang Teknis (Viewer Bidang Terkait)</option>
+                    <option value="koordinator_pendapatan">Koordinator Pendapatan (Pengelola & Input Retribusi PAD)</option>
                     <option value="kasubag_program_keuangan">Kepala Sub Bagian Program & Keuangan (Akses Menu SPJ)</option>
                     <option value="koordinator_program_keuangan">Koordinator / Verifikator Program & Keuangan (Edit SPJ)</option>
                     <option value="kasubag_umpeg">Kepala Sub Bagian Umum & Kepegawaian (Umpeg)</option>
@@ -440,6 +475,126 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
+                {/* Hak Akses Menu & Izin Input Sistem (Permintaan Khusus Admin) */}
+                <div
+                  className="form-group form-grid-full"
+                  style={{
+                    background: '#f8fafc',
+                    padding: '16px 18px',
+                    borderRadius: 12,
+                    border: '1.5px solid #cbd5e1',
+                    marginTop: 6
+                  }}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
+                    <div>
+                      <label className="form-label" style={{ fontWeight: 800, color: '#0f2c59', margin: 0, fontSize: 13.5, display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <span>🎯 Pengaturan Akses Menu Sistem</span>
+                        <span style={{ fontSize: 11, background: '#e0f2fe', color: '#0284c7', padding: '2px 7px', borderRadius: 4, fontWeight: 700 }}>
+                          {(formData.allowedMenus || []).length} Menu Terpilih
+                        </span>
+                      </label>
+                      <span style={{ fontSize: 11.5, color: '#64748b' }}>
+                        Admin dapat memilih menu apa saja yang dapat dilihat & diakses oleh user ini saat login
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', gap: 6 }}>
+                      <button
+                        type="button"
+                        className="btn btn-outline btn-sm"
+                        style={{ fontSize: 11, padding: '4px 8px', background: '#fff' }}
+                        onClick={() => setFormData({ ...formData, allowedMenus: SYSTEM_MENUS.map((m) => m.id) })}
+                      >
+                        Pilih Semua Menu
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-outline btn-sm"
+                        style={{ fontSize: 11, padding: '4px 8px', color: '#0d9488', borderColor: '#5eead4', background: '#fff' }}
+                        onClick={() => setFormData({ ...formData, allowedMenus: ['dashboard', 'pendapatan', 'laporan'], canInputPendapatan: true })}
+                      >
+                        Khusus Pendapatan
+                      </button>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: 8 }}>
+                    {SYSTEM_MENUS.map((menu) => {
+                      const isChecked = (formData.allowedMenus || []).includes(menu.id);
+                      return (
+                        <label
+                          key={menu.id}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 8,
+                            padding: '8px 12px',
+                            borderRadius: 8,
+                            border: isChecked ? '1.5px solid #0284c7' : '1px solid #e2e8f0',
+                            background: isChecked ? '#eff6ff' : '#ffffff',
+                            cursor: 'pointer',
+                            fontSize: 12,
+                            fontWeight: isChecked ? 700 : 500,
+                            color: isChecked ? '#0369a1' : '#475569',
+                            transition: 'all 0.15s ease'
+                          }}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={isChecked}
+                            onChange={(e) => {
+                              const current = formData.allowedMenus || [];
+                              const updated = e.target.checked
+                                ? [...current, menu.id]
+                                : current.filter((m) => m !== menu.id);
+                              setFormData({ ...formData, allowedMenus: updated });
+                            }}
+                          />
+                          <span>{menu.label}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
+
+                  {/* Izin Khusus Input Monitoring Pendapatan */}
+                  <div style={{ marginTop: 14, paddingTop: 12, borderTop: '1px solid #e2e8f0' }}>
+                    <label
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 12,
+                        padding: '12px 14px',
+                        borderRadius: 10,
+                        background: formData.canInputPendapatan ? '#ecfdf5' : '#ffffff',
+                        border: formData.canInputPendapatan ? '1.5px solid #10b981' : '1px solid #cbd5e1',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s'
+                      }}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={Boolean(formData.canInputPendapatan)}
+                        onChange={(e) => setFormData({ ...formData, canInputPendapatan: e.target.checked })}
+                        style={{ width: 17, height: 17, accentColor: '#10b981' }}
+                      />
+                      <div style={{ flex: 1 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 800, color: formData.canInputPendapatan ? '#065f46' : '#1e293b' }}>
+                          <Coins size={16} color={formData.canInputPendapatan ? '#059669' : '#64748b'} />
+                          <span>Izin Input & Kelola Transaksi Pendapatan Daerah (Fitur Menu ke-6)</span>
+                          {formData.canInputPendapatan && (
+                            <span style={{ fontSize: 10.5, background: '#10b981', color: '#fff', padding: '2px 6px', borderRadius: 4, fontWeight: 700 }}>
+                              DIIZINKAN INPUT
+                            </span>
+                          )}
+                        </div>
+                        <div style={{ fontSize: 11.5, color: '#64748b', marginTop: 2 }}>
+                          Centang opsi ini agar user dapat menginput data sewa alat berat, PBG, SLF, retribusi tinja, sewa cor drill, serta mengedit target tahunan.
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
                 <div
                   className="form-grid-full"
                   style={{ display: 'flex', justifyContent: 'flex-end', gap: 10, marginTop: 10, paddingTop: 10, borderTop: '1px solid #e2e8f0' }}
@@ -523,6 +678,8 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                             background:
                               u.role === 'superadmin'
                                 ? '#fee2e2'
+                                : u.role === 'koordinator_pendapatan'
+                                ? '#ccfbf1'
                                 : isProgKeu
                                 ? '#f3e8ff'
                                 : isUmpeg
@@ -533,6 +690,8 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                             color:
                               u.role === 'superadmin'
                                 ? '#991b1b'
+                                : u.role === 'koordinator_pendapatan'
+                                ? '#0f766e'
                                 : isProgKeu
                                 ? '#7e22ce'
                                 : isUmpeg
@@ -544,6 +703,34 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                         >
                           {roleDef.nama || u.role}
                         </span>
+
+                        {(u.canInputPendapatan || u.role === 'koordinator_pendapatan') && (
+                          <div style={{ marginTop: 4 }}>
+                            <span
+                              style={{
+                                fontSize: 10,
+                                background: '#ecfdf5',
+                                color: '#047857',
+                                border: '1px solid #a7f3d0',
+                                padding: '1px 6px',
+                                borderRadius: 4,
+                                fontWeight: 700,
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: 3
+                              }}
+                            >
+                              <Coins size={10} />
+                              Input PAD
+                            </span>
+                          </div>
+                        )}
+
+                        {Array.isArray(u.allowedMenus) && (
+                          <div style={{ marginTop: 2, fontSize: 10.5, color: '#64748b' }}>
+                            {u.allowedMenus.length} Menu Diizinkan
+                          </div>
+                        )}
                       </td>
 
                       <td>
