@@ -1,172 +1,82 @@
-# 🚀 PANDUAN LENGKAP DEPLOYMENT KE GITHUB & HOSTING (HOSTINGER / cPANEL)
-## Sistem Informasi Monitoring Pekerjaan (SIMON - SATUPUTARU)
+# 🚀 PANDUAN LENGKAP DEPLOYMENT & KONEKSI DATABASE HOSTINGER
+## Sistem Informasi Monitoring Pekerjaan (SIMON - SATUPUTARU 2026)
 **Dinas Pekerjaan Umum dan Penataan Ruang (DINPUTARU) Kabupaten Demak**
+Alamat Web App: **`https://simon.satuputarudemak.id`**
 
-Dokumen ini memuat panduan komprehensif bagi Administrator Sistem / Tim IT Dinas untuk mempublikasikan kode ke **GitHub**, mendeploy aplikasi ke **Web Hosting (Hostinger / cPanel)**, mengimpor database MySQL, serta melakukan **pengujian koneksi database secara visual dan otomatis**.
+Dokumen ini memuat panduan komprehensif bagi Administrator Sistem (Superadmin) dan Tim IT Dinas untuk mendeploy aplikasi ke **Web Hosting Hostinger**, menghubungkan basis data MySQL, menguji koneksi langsung, serta referensi data akun pengguna dan nomenklatur paket pekerjaan 2026.
 
 ---
 
 ## 📋 DAFTAR ISI
-1. [Ringkasan Perbaikan & Update Sistem](#1-ringkasan-perbaikan--update-sistem)
-2. [Langkah 1: Deploy & Push Kode ke GitHub](#langkah-1-deploy--push-kode-ke-github)
-3. [Langkah 2: Paket Siap Upload (deploy_simon_satuputaru.zip)](#langkah-2-paket-siap-upload-deploysimonsatuputaruzip)
-4. [Langkah 3: Membuat Database MySQL di Hosting (Hostinger / cPanel)](#langkah-3-membuat-database-mysql-di-hosting-hostinger--cpanel)
-5. [Langkah 4: Import Database via phpMyAdmin](#langkah-4-import-database-via-phpmyadmin)
-6. [Langkah 5: Konfigurasi Kredensial Database (`api/config.php`)](#langkah-5-konfigurasi-kredensial-database-apiconfigphp)
-7. [Langkah 6: Upload Berkas ke Folder `public_html`](#langkah-6-upload-berkas-ke-folder-public_html)
-8. [Langkah 7: Testing Koneksi Database Interaktif (`/api/test_db.php`)](#langkah-7-testing-koneksi-database-interaktif-apitest_dbphp)
-9. [Langkah 8: Akun Akses Awal & Kredensial Bawaan](#langkah-8-akun-akses-awal--kredensial-bawaan)
-10. [Troubleshooting & Solusi Kendala](#troubleshooting--solusi-kendala)
+1. [Spesifikasi & Kredensial Database Hostinger](#1-spesifikasi--kredensial-database-hostinger)
+2. [Fitur Pengaturan Database di Panel Superadmin](#2-fitur-pengaturan-database-di-panel-superadmin)
+3. [Panduan Langkah demi Langkah Menghubungkan Web App & Database](#3-panduan-langkah-demi-langkah-menghubungkan-web-app--database)
+4. [Daftar Akun Pengguna Resmi Sistem (15 Akun)](#4-daftar-akun-pengguna-resmi-sistem-15-akun)
+5. [Struktur Nomenklatur SIPD & Paket Pekerjaan 2026](#5-struktur-nomenklatur-sipd--paket-pekerjaan-2026)
+6. [Troubleshooting & Solusi Kendala](#6-troubleshooting--solusi-kendala)
 
 ---
 
-## 1. Ringkasan Perbaikan & Update Sistem
+## 1. Spesifikasi & Kredensial Database Hostinger
 
-Pembaruan terbaru yang telah diterapkan:
-- **Perbaikan Menu Pra-Kontrak (Fixed Blank Screen)**:
-  - Mengatasi error referensi variabel `preContractProjects` yang sebelumnya menyebabkan halaman Pra-Kontrak menjadi layar putih polos (*blank white*).
-  - Menambahkan *status pills* informatif (Total Paket Belum Kontrak, Tender/Seleksi, Pengadaan Langsung/PL, dan E-Katalog).
-- **Penghapusan Penomoran Urut Menu**:
-  - Seluruh label navigasi di sidebar dan judul modul telah dibersihkan dari angka urut:
-    - `Pekerjaan Pra-Kontrak` (sebelumnya *1. Pekerjaan Pra-Kontrak*)
-    - `Progres Fisik` (sebelumnya *2. Progres Fisik*)
-    - `Progres Keuangan` (sebelumnya *3. Progres Keuangan*)
-    - `Administrasi SPJ Keuangan` (sebelumnya *4. Administrasi SPJ Keuangan*)
-    - `Ringkasan SIPD` (sebelumnya *5. Ringkasan SIPD*)
-- **Penambahan Skrip Diagnostik Database (`test_db.php`)**:
-  - Skrip pengujian koneksi MySQL otomatis dan visual untuk memverifikasi host, user, database, dan tabel data secara real-time.
+Aplikasi web SIMON telah dikonfigurasikan secara terpadu untuk berjalan di infrastruktur hosting Hostinger dengan kredensial berikut:
 
----
-
-## Langkah 1: Deploy & Push Kode ke GitHub
-
-Kode program terhubung ke repositori GitHub:
-🔗 **`https://github.com/ariyoigun/Monitoring-Pekerjaan.git`** (Branch: `main`)
-
-Jalankan perintah berikut di terminal (PowerShell atau Git Bash) di direktori proyek:
-
-```bash
-# 1. Pastikan seluruh perubahan file telah ditandai
-git add .
-
-# 2. Buat commit perubahan terbaru
-git commit -m "Fix: Menu Pra-Kontrak blank screen, hilangkan penomoran menu, tambah test_db.php, dan update panduan deployment"
-
-# 3. Kirim ke repositori GitHub
-git push origin main
-```
-
-> [!NOTE]
-> Jika sistem meminta kredensial GitHub, masukkan Personal Access Token (PAT) atau otorisasi via browser.
+| Parameter | Nilai Konfigurasi Resmi | Keterangan |
+| :--- | :--- | :--- |
+| **Domain Web App** | `simon.satuputarudemak.id` | URL Resmi Sistem Monitoring DINPUTARU Demak |
+| **MySQL Host** | `localhost` | Standar server Hostinger (atau `127.0.0.1`) |
+| **MySQL Port** | `3306` | Port default MySQL/MariaDB |
+| **MySQL Database**| `u490770675_simona` | Nama Database di hPanel Hostinger |
+| **MySQL Username**| `u490770675_adminsimon` | Nama Pengguna Database MySQL |
+| **MySQL Password**| `*Demak2026` | Kata Sandi User Database MySQL |
+| **File Skema SQL**| `database/simon_satuputaru.sql` | Berkas impor struktur tabel & data awal |
+| **File Config API**| `public/api/config.php` | Konfigurasi koneksi PDO PHP |
 
 ---
 
-## Langkah 2: Paket Siap Upload (`deploy_simon_satuputaru.zip`)
+## 2. Fitur Pengaturan Database di Panel Superadmin
 
-Untuk mempermudah dan mempercepat proses tanpa perlu build manual di hosting, berkas ZIP siap pakai telah otomatis dibuat di root proyek:
-📦 **`deploy_simon_satuputaru.zip`** (Ukuran ~365 KB)
-
-Jika sewaktu-waktu Anda mengedit kode di komputer lokal dan ingin membuat ulang paket deployment:
-```bash
-# Jalankan kompilasi produksi
-npm run build
-
-# Kompres isi folder dist ke file ZIP (PowerShell)
-Compress-Archive -Path "dist/*" -DestinationPath "deploy_simon_satuputaru.zip" -Force
-```
-
-Isi di dalam paket `deploy_simon_satuputaru.zip`:
-```text
-├── index.html                <- Titik masuk aplikasi React SPA
-├── .htaccess                 <- Konfigurasi URL rewrite Apache Hostinger/cPanel
-├── favicon.svg               <- Favicon resmi aplikasi
-├── icons.svg                 <- Ikon vektor
-├── assets/                   <- Bundle JavaScript & CSS teroptimasi
-└── api/
-    ├── config.php            <- Pengaturan koneksi MySQL
-    ├── api.php               <- REST API simon
-    └── test_db.php           <- Tools visual penguji koneksi database
-```
+Menu **Pengaturan Database** kini tersedia secara resmi di Panel Superadmin:
+1. Login sebagai Superadmin (Username: `superadmin` / Password: `*Dinput4ru_07`).
+2. Klik tombol **Pengaturan Sistem (Superadmin)** pada sidebar atau icon gear.
+3. Pilih menu tab **Pengaturan Database** (Kategori: *INFRASTRUKTUR & DATABASE*).
+4. Di panel ini Anda dapat:
+   - **Melihat Status Koneksi Real-time**: Memantau apakah database MySQL Hostinger sedang terhubung (*Online*) atau menggunakan *LocalStorage Fallback*.
+   - **Mengubah Kredensial Database**: Mengisi Host, Port, Nama Database, Username, dan Password dengan proteksi show/hide.
+   - **Tes Koneksi Database**: Menguji koneksi langsung ke MySQL dengan mengukur latensi (ms), versi server MariaDB/MySQL, dan memverifikasi ketersediaan tabel (`system_settings`, `bidang`, `users`, `projects`, `master_tags`).
+   - **Simpan Konfigurasi**: Menyimpan pengaturan ke file server `config.local.php` secara otomatis tanpa perlu membuka file manager.
+   - **Buka Diagnostik Web**: Membuka tool diagnostik interaktif di URL `https://simon.satuputarudemak.id/api/test_db.php`.
 
 ---
 
-## Langkah 3: Membuat Database MySQL di Hosting (Hostinger / cPanel)
+## 3. Panduan Langkah demi Langkah Menghubungkan Web App & Database
 
-### A. Jika Menggunakan Hostinger hPanel:
-1. Buka [https://hpanel.hostinger.com](https://hpanel.hostinger.com) dan pilih paket hosting Anda.
-2. Masuk ke menu **Databases** -> **Kelola Database** / **MySQL Databases**.
-3. Di bagian **Buat Database & Pengguna MySQL Baru**:
-   - **Nama Database**: masukkan misalnya `simon` (nama akhir akan menjadi `uXXXXX_simon`).
-   - **Nama Pengguna**: masukkan misalnya `simon_admin` (nama akhir akan menjadi `uXXXXX_simon_admin`).
-   - **Kata Sandi**: buat kata sandi yang kuat dan aman.
-4. Klik tombol **Buat**.
-5. **Catat 3 data penting**:
-   - Nama Database lengkap: `uXXXXX_simon`
-   - User Database lengkap: `uXXXXX_simon_admin`
-   - Kata Sandi Database.
+### Langkah 1: Buat Database MySQL di hPanel Hostinger
+1. Masuk ke panel kendali Hostinger di [https://hpanel.hostinger.com](https://hpanel.hostinger.com).
+2. Pilih hosting untuk domain `simon.satuputarudemak.id`.
+3. Buka menu **Databases** &gt; **Kelola Database** (atau **MySQL Databases**).
+4. Di formulir **Buat Database & Pengguna MySQL Baru**, masukkan:
+   - **Nama Database**: `simona` (Hostinger akan menambahkan prefix menjadi `u490770675_simona`)
+   - **Nama Pengguna**: `adminsimon` (Nama lengkap menjadi `u490770675_adminsimon`)
+   - **Kata Sandi**: `*Demak2026`
+5. Klik tombol **Buat**. Pastikan user telah terhubung dengan database tersebut dengan hak akses penuh (*All Privileges*).
 
-### B. Jika Menggunakan cPanel:
-1. Buka cPanel hosting Anda -> menu **MySQL Database Wizard**.
-2. Masukkan nama database (misal `namadomain_simon`) -> Next Step.
-3. Masukkan username database & password -> Create User.
-4. Centang **ALL PRIVILEGES** (Semua Hak Akses) -> Make Changes.
+### Langkah 2: Impor Skema Database via phpMyAdmin
+1. Pada tabel daftar database di hPanel Hostinger, temukan database `u490770675_simona`.
+2. Klik tombol **phpMyAdmin** (atau tombol *Masuk ke phpMyAdmin*).
+3. Setelah phpMyAdmin terbuka, pastikan nama database `u490770675_simona` terpilih di panel kiri.
+4. Klik tab **Import** (Impor) di menu atas.
+5. Klik **Choose File** (Pilih File) dan arahkan ke file:
+   📂 `database/simon_satuputaru.sql`
+6. Biarkan format tetap **SQL** dan klik tombol **Go** / **Kirim** di bagian bawah.
+7. Tunggu hingga muncul notifikasi hijau bertuliskan *"Import has been successfully finished"*.
 
----
-
-## Langkah 4: Import Database via phpMyAdmin
-
-Skrip SQL lengkap beserta struktur tabel dan data awal master telah disediakan di direktori:
-👉 `database/simon_satuputaru.sql`
-
-Langkah-langkah import:
-1. Di hPanel Hostinger / cPanel, klik tombol **Enter phpMyAdmin** di sebelah database yang baru dibuat.
-2. Pilih nama database Anda di panel sebelah kiri.
-3. Klik tab **Import** pada menu navigasi atas.
-4. Klik tombol **Choose File** / **Browse**, lalu pilih berkas `database/simon_satuputaru.sql`.
-5. Pastikan format adalah **SQL** dan encoding **utf-8**.
-6. Gulir ke bawah lalu klik tombol **Import** / **Kirim**.
-7. Tunggu beberapa detik sampai muncul notifikasi hijau:
-   *`Import has been successfully finished, queries executed.`*
-
-Tabel-tabel yang otomatis dibuat:
-- `system_settings`: Identitas DINPUTARU, pimpinan dinas (Kadin & Sekdin), kuota sorotan.
-- `bidang`: 4 Bidang teknis (Bina Marga, Cipta Karya, SDA-BK, Tata Ruang) + Sekretariat.
-- `users`: Data login Superadmin, Kadin, Sekdin, Kabid, dan Koordinator/PPK.
-- `projects`: Master Data Pekerjaan (paket kegiatan, anggaran, progres fisik, termin SP2D, administrasi SPJ).
-- `sipd_programs`, `sipd_kegiatan`, `sipd_sub_kegiatan`: Nomenklatur hierarki SIPD.
-- `years`: Master tahun anggaran (2024, 2025, 2026).
-
----
-
-## Langkah 5: Konfigurasi Kredensial Database (`api/config.php`)
-
-Agar sistem terhubung ke database hosting:
-
-1. Buka file **`api/config.php`** (dapat diedit langsung lewat File Manager Hosting).
-2. Ubah baris konfigurasi sesuai data database yang Anda buat di Langkah 3:
-   ```php
-   // Konfigurasi Kredensial Database Hosting
-   $db_host = 'localhost';               // Default hosting biasanya 'localhost' atau '127.0.0.1'
-   $db_name = 'uXXXXX_simon';            // Ganti dengan Nama Database hosting Anda
-   $db_user = 'uXXXXX_simon_admin';      // Ganti dengan Nama Pengguna Database Anda
-   $db_pass = 'KataSandiAnda123!';       // Ganti dengan Kata Sandi Database Anda
-   $db_port = '3306';
-   ```
-
-> [!TIP]
-> **Metode Alternatif `config.local.php`**:
-> Anda juga dapat membuat file baru bernama **`config.local.php`** di dalam folder `api/` yang berisi variabel di atas. File ini telah dimasukkan ke dalam `.gitignore` sehingga aman dan tidak akan tertimpa saat melakukan update Git.
-
----
-
-## Langkah 6: Upload Berkas ke Folder `public_html`
-
-1. Buka **File Manager** di hPanel / cPanel -> masuk ke direktori **`public_html`**.
-2. Jika ada berkas bawaan hosting (seperti `default.php`), silakan hapus atau pindahkan.
-3. Klik tombol **Upload**, lalu pilih berkas:
-   📦 **`deploy_simon_satuputaru.zip`**
-4. Setelah terupload, klik kanan pada file `deploy_simon_satuputaru.zip` -> pilih **Extract**.
-5. Pastikan susunan folder di `public_html/` adalah sebagai berikut:
+### Langkah 3: Deploy Berkas Web App ke `public_html`
+1. Buka **File Manager** Hostinger &gt; masuk ke folder `public_html` domain `simon.satuputarudemak.id`.
+2. Unggah berkas arsip:
+   📦 `deploy_simon_satuputaru.zip`
+3. Ekstrak (Extract) file zip tersebut di `public_html`.
+4. Pastikan struktur berkas tersusun rapi:
    ```text
    public_html/
    ├── index.html
@@ -182,60 +92,83 @@ Agar sistem terhubung ke database hosting:
    │   └── index-xxxx.js
    └── templates/
    ```
-6. Hapus file `deploy_simon_satuputaru.zip` dari server untuk menghemat ruang penyimpanan.
+5. Berkas `config.php` telah berisi konfigurasi default `u490770675_simona` dan kata sandi `*Demak2026`.
+
+### Langkah 4: Uji Koneksi Database
+Buka browser dan akses halaman diagnostik:
+🔗 **`https://simon.satuputarudemak.id/api/test_db.php`**
+
+Jika berhasil, halaman akan menampilkan kartu hijau:
+`✅ Koneksi ke database MySQL berhasil! (MySQL/MariaDB X.X.X)`
+beserta status seluruh tabel data siap digunakan.
 
 ---
 
-## Langkah 7: Testing Koneksi Database Interaktif (`/api/test_db.php`)
+## 4. Daftar Akun Pengguna Resmi Sistem (15 Akun)
 
-Kami telah menyediakan skrip pengujian visual khusus. Anda cukup membuka peramban web:
+Menu pengisian cepat akun demo di bawah form login telah dihapus demi keamanan sistem. Berikut adalah 15 akun resmi yang tersimpan di dalam sistem (juga tersedia di file `AKUN_SISTEM_SIMON_2026.txt`):
 
-🌐 **`https://domain-anda.com/api/test_db.php`**
+| No | Nama Lengkap | NIP | Username | Password | Role Sistem | Jabatan / Bidang |
+| :-: | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Ir. NANANG TASUNAR DAVID NARUTOMO, MM | 196702101993031009 | `kadin.dinputaru` | `*Dinput4ru_01` | Kepala Dinas | Kepala Dinas DINPUTARU |
+| 2 | NANING PRIH HATININGRUM, S.IP,M.Si | 197801082010012019 | `sekdin.dinputaru` | `*Dinput4ru_02` | Sekretaris Dinas | Sekretaris DINPUTARU |
+| 3 | BAGAS SATRIA ANGGRIAWAN, S.T., M.M. | 199106122015021002 | `prokeu.dinputaru` | `*Dinput4ru_03` | Kasubag Progkeu | Kasubag Program & Keuangan |
+| 4 | BAGAS SATRIA ANGGRIAWAN, S.T., M.M. | 199106122015021002 | `umpeg.dinputaru` | `*Dinput4ru_04` | Kasubag Umpeg | Kasubag Umum & Kepegawaian |
+| 5 | RIZKY PRAHARDINI, S.E. | 198607282025212082 | `koor.sekre1` | `*Dinput4ru_05` | Koordinator Sekre | Koordinator / Verifikator SPJ Progkeu |
+| 6 | RANI NURHAYATI, S.Sos | 199707102025212091 | `koor.sekre2` | `*Dinput4ru_06` | Koordinator Sekre | Koordinator Umpeg & SPJ |
+| 7 | GUNARIYO, S.Kom. | 198909212025041001 | `superadmin` | `*Dinput4ru_07` | Superadmin | Pranata Komputer / Superadmin Sistem |
+| 8 | S. EKO WIDIANTORO, ST | 197506012010011012 | `kabid.bm` | `*Dinput4ru_08` | Kabid Bina Marga | Kepala Bidang Bina Marga |
+| 9 | TIA ARYUNINGRUM, ST | 199406262020122025 | `koor.bm` | `*Dinput4ru_09` | Koordinator BM | Koordinator Bidang Bina Marga |
+| 10 | NANING PRIH HATININGRUM, S.IP,M.Si | 197801082010012019 | `kabid.sdabk` | `*Dinput4ru_10` | Kabid SDABK | Plt. Kepala Bidang SDA & Bina Konstruksi |
+| 11 | RESI DIANSISMITA, S.T. | 199805242024212018 | `koor.sdabk` | `*Dinput4ru_11` | Koordinator SDABK | Koordinator Bidang SDA & Bina Konstruksi |
+| 12 | S. EKO WIDIANTORO, ST | 197506012010011012 | `kabid.trp` | `*Dinput4ru_12` | Kabid TRP | Plt. Kepala Bidang Tata Ruang & Pertanahan |
+| 13 | INSANIA MULIA JUNAEDI, S.T. | 200111212025042001 | `koor.trp` | `*Dinput4ru_13` | Koordinator TRP | Koordinator Bidang Tata Ruang & Pertanahan |
+| 14 | ANDI ERWIN PRASETYO, ST. | 19720914 2003121002 | `kabid.ck` | `*Dinput4ru_14` | Kabid Cipta Karya | Kepala Bidang Cipta Karya |
+| 15 | CHINTYA CAHYANINGRUM, S.T. | 200207052025042001 | `koor.ck` | `*Dinput4ru_15` | Koordinator CK | Koordinator Bidang Cipta Karya |
 
-### Indikator Keberhasilan Pengujian:
-1. **Status Banner**: Berwarna hijau bertuliskan:
-   `✅ Koneksi ke database MySQL berhasil! (MySQL/MariaDB X.X.X)`
-2. **Parameter Koneksi**: Menampilkan host, nama database, user, dan versi PHP hosting yang aktif.
-3. **Status Tabel Database**:
-   - `system_settings` -> Ready / Ada
-   - `bidang` -> Ready / Ada
-   - `users` -> Ready / Ada
-   - `projects` -> Ready / Ada
-   - `sipd_programs` -> Ready / Ada
-   - `sipd_kegiatan` -> Ready / Ada
-   - `sipd_sub_kegiatan` -> Ready / Ada
-   - `years` -> Ready / Ada
-
-> Jika terdapat kendala, halaman ini akan otomatis menampilkan kotak merah berisi rincian penyebab error beserta langkah perbaikannya secara jelas.
-
----
-
-## Langkah 8: Akun Akses Awal & Kredensial Bawaan
-
-Setelah koneksi database terverifikasi sukses, buka halaman utama:
-🌐 **`https://domain-anda.com`**
-
-Gunakan akun resmi berikut untuk masuk:
-
-| Peran (Role) | Username | Password Default | Keterangan & Pejabat |
-| :--- | :--- | :--- | :--- |
-| **Super Admin** | `admin` | `pupr2025` | Administrator Sistem Dinas (Akses Penuh Master & Konfigurasi) |
-| **Kepala Dinas** | `kadin` | `pupr2025` | Ir. H. Achmad Syafii, CES, MT (Dashboard & Pengambilan Kebijakan) |
-| **Sekretaris Dinas** | `sekretaris` | `pupr2025` | Dra. Hj. Siti Nurhasanah, MM (Monitoring Terpadu & SPJ) |
-| **Kabid Bina Marga** | `kabid.bm` | `pupr2025` | Ir. Dwi Prasetyo, MT (Pengendalian Bidang Bina Marga) |
-| **Koordinator / PPK BM**| `koord.bm` | `pupr2025` | Agus Suryanto, ST (Input Progres & Kontrak) |
-| **Tim SPJ Keuangan** | `kasubag.keu` | `pupr2025` | Kasubag Program & Keuangan (Verifikasi Berkas SPJ & SPM) |
-
-*Catatan: Saat login, selesaikan tantangan matematika sederhana yang tertera di form login (captcha keamanan).*
+*Catatan: Login dapat dilakukan menggunakan **Username** atau **Nomor Induk Pegawai (NIP)**.*
 
 ---
 
-## Troubleshooting & Solusi Kendala
+## 5. Struktur Nomenklatur SIPD & Paket Pekerjaan 2026
 
-| Gejala Masalah | Penyebab Utama | Solusi Penanganan |
+Data master telah diekstrak langsung dari berkas resmi:
+📁 `Program Kegiatan Sub kegaitan Pekerjaan 2026.xlsx`
+
+### Rekapitulasi Dataset:
+- **Total Program**: 11 Program Urusan Pekerjaan Umum dan Penataan Ruang serta Pertanahan
+- **Total Kegiatan**: 22 Kegiatan
+- **Total Sub Kegiatan**: 88 Sub Kegiatan
+- **Total Paket Pekerjaan Terdaftar**: **558 Paket Pekerjaan** (Tahun Anggaran 2026)
+
+### Pembagian Pekerjaan per Bidang:
+1. **Sekretariat (29 Paket)**: Seluruh Sub Kegiatan Program Penunjang dijadikan paket pekerjaan sesuai instruksi kedinasan.
+2. **Bidang Bina Marga (240 Paket)**: Pembangunan, rekonstruksi, pelebaran jalan poros antar kecamatan dan jembatan.
+3. **Bidang Cipta Karya (142 Paket)**: Pembangunan gedung kantor, SPAM perdesaan, sanitasi/air limbah, dan drainase perkotaan.
+4. **Bidang SDA & Bina Konstruksi (125 Paket)**: Rumah pompa terpadu banjir, rehabilitasi pintu air/bendung, tanggul sungai, dan pelatihan jasa konstruksi.
+5. **Bidang Tata Ruang & Pertanahan (22 Paket)**: Persetujuan substansi RTRW/RDTR, forum penataan ruang, dan Reforma Agraria (GTRA).
+
+### Kodefikasi Baku SIPD RI Kemendagri:
+- `1.03.01` : Program Penunjang Urusan Pemerintahan Daerah
+- `1.03.02` : Program Pengelolaan Sumber Daya Air (SDA)
+- `1.03.03` : Program Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM)
+- `1.03.05` : Program Pengelolaan dan Pengembangan Sistem Air Limbah
+- `1.03.06` : Program Pengelolaan dan Pengembangan Sistem Drainase
+- `1.03.08` : Program Penataan Bangunan Gedung
+- `1.03.10` : Program Penyelenggaraan Jalan
+- `1.03.11` : Program Pengembangan Jasa Konstruksi
+- `1.03.12` : Program Penyelenggaraan Penataan Ruang
+- `2.10.01` : Program Redistribusi Tanah dan Ganti Kerugian Tanah
+- `2.10.02` : Program Penatagunaan Tanah
+
+---
+
+## 6. Troubleshooting & Solusi Kendala
+
+| Gejala | Penyebab Umum | Solusi |
 | :--- | :--- | :--- |
-| **Error 404 saat refresh halaman (F5)** | File `.htaccess` belum terunggah atau tersembunyi | Pastikan file `.htaccess` ada di `public_html/`. Aktifkan opsi *Show Hidden Files* di File Manager hosting. |
-| **Koneksi Database Gagal (Access Denied)** | User atau password MySQL keliru | Buka `api/config.php` dan pastikan prefix username dan database (misal `uXXXXX_`) tertulis lengkap. |
-| **Tabel belum ada saat test_db.php dibuka** | File SQL belum diimport | Buka phpMyAdmin di hosting dan lakukan import file `database/simon_satuputaru.sql`. |
-| **Halaman blank putih saat dibuka** | File aset javascript belum terunggah sempurna | Pastikan folder `assets/` terunggah lengkap dari file zip. |
-| **Peringatan Koneksi Tidak Aman (Not Secure)** | SSL HTTPS belum aktif | Masuk ke menu **Keamanan** -> **SSL** di hPanel / cPanel dan aktifkan **Force HTTPS**. |
+| **Pesan "Access Denied for user..."** | Kata sandi atau nama user database salah | Buka menu *Pengaturan Database* di Superadmin, pastikan user adalah `u490770675_adminsimon` dan password `*Demak2026`. |
+| **Pesan "Unknown database..."** | Nama database belum dibuat di hPanel | Buat database `u490770675_simona` di menu Databases Hostinger hPanel. |
+| **Tabel belum ada / Data kosong** | Berkas SQL belum diimpor | Buka phpMyAdmin, pilih database `u490770675_simona`, klik tab *Import* dan pilih file `database/simon_satuputaru.sql`. |
+| **Error 404 saat akses halaman internal** | Modul rewrite `.htaccess` belum aktif | Pastikan file `.htaccess` berada di direktori `public_html/`. |
+| **Aplikasi berjalan dalam mode Offline** | Database hosting sedang tidak aktif | SIMON otomatis menyimpan data di LocalStorage agar sistem tetap dapat digunakan tanpa gangguan. Begitu database online, koneksi tersambung otomatis. |

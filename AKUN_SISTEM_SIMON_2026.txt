@@ -1,0 +1,187 @@
+====================================================================================================
+DAFTAR LENGKAP AKUN PENGGUNA RESMI SISTEM SIMON - SATUPUTARU 2026
+DINAS PEKERJAAN UMUM DAN PENATAAN RUANG (DINPUTARU) KABUPATEN DEMAK
+Alamat Aplikasi: https://simon.satuputarudemak.id
+====================================================================================================
+PERHATIAN / RAHASIA:
+Dokumen ini berisi informasi kredensial akun pengguna sistem SIMON. Simpan file ini di lokasi yang aman
+dan jangan sebarkan kata sandi kepada pihak yang tidak berkepentingan.
+====================================================================================================
+
+NO. 1
+Nama Lengkap : Ir. NANANG TASUNAR DAVID NARUTOMO, MM
+NIP          : 196702101993031009
+Username     : kadin.dinputaru
+Password     : *Dinput4ru_01
+Role Sistem  : Kepala Dinas (kadin)
+Jabatan      : Kepala Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
+Hak Akses    : Pemantauan Eksekutif seluruh bidang dan administrasi SPJ seluruh dinas (Read-Only)
+
+----------------------------------------------------------------------------------------------------
+NO. 2
+Nama Lengkap : NANING PRIH HATININGRUM, S.IP,M.Si
+NIP          : 197801082010012019
+Username     : sekdin.dinputaru
+Password     : *Dinput4ru_02
+Role Sistem  : Sekretaris Dinas (sekretaris)
+Jabatan      : Sekretaris Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
+Hak Akses    : Pengawasan eksekutif pimpinan seluruh bidang teknis & administrasi kesekretariatan
+
+----------------------------------------------------------------------------------------------------
+NO. 3
+Nama Lengkap : BAGAS SATRIA ANGGRIAWAN, S.T., M.M.
+NIP          : 199106122015021002
+Username     : prokeu.dinputaru
+Password     : *Dinput4ru_03
+Role Sistem  : Kasubag Program Keuangan (kasubag_program_keuangan)
+Jabatan      : Kepala Sub Bagian Program & Keuangan
+Bidang       : Sekretariat
+Hak Akses    : Verifikasi berkas SPJ, status koreksi, penerbitan SPM, dan monitoring keuangan dinas
+
+----------------------------------------------------------------------------------------------------
+NO. 4
+Nama Lengkap : BAGAS SATRIA ANGGRIAWAN, S.T., M.M.
+NIP          : 199106122015021002
+Username     : umpeg.dinputaru
+Password     : *Dinput4ru_04
+Role Sistem  : Kasubag Umum Kepegawaian (kasubag_umpeg)
+Jabatan      : Kepala Sub Bagian Umum & Kepegawaian
+Bidang       : Sekretariat
+Hak Akses    : Pemantauan pengadaan barang/jasa kantor, fasilitas, dan kepegawaian dinas
+
+----------------------------------------------------------------------------------------------------
+NO. 5
+Nama Lengkap : RIZKY PRAHARDINI, S.E.
+NIP          : 198607282025212082
+Username     : koor.sekre1
+Password     : *Dinput4ru_05
+Role Sistem  : Koordinator Sekretariat (koordinator_sekretariat)
+Jabatan      : Koordinator Sekretariat / Verifikator SPJ Program & Keuangan
+Bidang       : Sekretariat
+Hak Akses    : Penerimaan berkas SPJ, checklist validasi berkas fisik & keuangan, penerbitan SP2D
+
+----------------------------------------------------------------------------------------------------
+NO. 6
+Nama Lengkap : RANI NURHAYATI, S.Sos
+NIP          : 199707102025212091
+Username     : koor.sekre2 (Dapat juga login dengan NIP atau koor.sekre1)
+Password     : *Dinput4ru_06
+Role Sistem  : Koordinator Sekretariat (koordinator_sekretariat)
+Jabatan      : Koordinator Sekretariat / Pelaksana Administrasi Umum & Kepegawaian
+Bidang       : Sekretariat
+Hak Akses    : Input & pengelolaan pengadaan barang/jasa penunjang kantor serta administrasi SPJ
+
+----------------------------------------------------------------------------------------------------
+NO. 7
+Nama Lengkap : GUNARIYO, S.Kom.
+NIP          : 198909212025041001
+Username     : superadmin
+Password     : *Dinput4ru_07
+Role Sistem  : Superadmin (superadmin)
+Jabatan      : Pranata Komputer / Superadmin Sistem
+Hak Akses    : Akses penuh 100% (Kelola database MySQL, akun user, tahun anggaran, SIPD, pengaturan)
+
+----------------------------------------------------------------------------------------------------
+NO. 8
+Nama Lengkap : S. EKO WIDIANTORO, ST
+NIP          : 197506012010011012
+Username     : kabid.bm
+Password     : *Dinput4ru_08
+Role Sistem  : Kepala Bidang (kabid)
+Jabatan      : Kepala Bidang Bina Marga
+Bidang       : Bidang Bina Marga (Jalan dan Jembatan)
+Hak Akses    : Monitoring dan evaluasi progres fisik dan keuangan khusus Bidang Bina Marga
+
+----------------------------------------------------------------------------------------------------
+NO. 9
+Nama Lengkap : TIA ARYUNINGRUM, ST
+NIP          : 199406262020122025
+Username     : koor.bm
+Password     : *Dinput4ru_09
+Role Sistem  : Koordinator Bidang (koordinator)
+Jabatan      : Koordinator / PPK Bidang Bina Marga
+Bidang       : Bidang Bina Marga (Jalan dan Jembatan)
+Hak Akses    : Input, edit, hapus paket pekerjaan jalan & jembatan, kurva S fisik, dan termin kontrak
+
+----------------------------------------------------------------------------------------------------
+NO. 10
+Nama Lengkap : NANING PRIH HATININGRUM, S.IP,M.Si
+NIP          : 197801082010012019
+Username     : kabid.sdabk
+Password     : *Dinput4ru_10
+Role Sistem  : Kepala Bidang (kabid)
+Jabatan      : Sekretaris Dinas / Plt. Kepala Bidang SDA & Bina Konstruksi
+Bidang       : Bidang Sumber Daya Air & Bina Konstruksi (SDA-BK)
+Hak Akses    : Monitoring dan evaluasi pekerjaan irigasi, sungai, embung, pompa banjir, & jasa konstruksi
+
+----------------------------------------------------------------------------------------------------
+NO. 11
+Nama Lengkap : RESI DIANSISMITA, S.T.
+NIP          : 199805242024212018
+Username     : koor.sdabk
+Password     : *Dinput4ru_11
+Role Sistem  : Koordinator Bidang (koordinator)
+Jabatan      : Koordinator / PPK Bidang SDA & Bina Konstruksi
+Bidang       : Bidang Sumber Daya Air & Bina Konstruksi (SDA-BK)
+Hak Akses    : Input dan update paket SDA, pompa air, pintu air, normalisasi sungai, dan pelatihan jakon
+
+----------------------------------------------------------------------------------------------------
+NO. 12
+Nama Lengkap : S. EKO WIDIANTORO, ST
+NIP          : 197506012010011012
+Username     : kabid.trp
+Password     : *Dinput4ru_12
+Role Sistem  : Kepala Bidang (kabid)
+Jabatan      : Plt. Kepala Bidang Tata Ruang & Pertanahan
+Bidang       : Bidang Tata Ruang & Pertanahan (TRP)
+Hak Akses    : Monitoring pekerjaan RTRW, RDTR, KKPR, pemetaan GIS, dan fasilitas pertanahan
+
+----------------------------------------------------------------------------------------------------
+NO. 13
+Nama Lengkap : INSANIA MULIA JUNAEDI, S.T.
+NIP          : 200111212025042001
+Username     : koor.trp
+Password     : *Dinput4ru_13
+Role Sistem  : Koordinator Bidang (koordinator)
+Jabatan      : Koordinator / PPTK Bidang Tata Ruang & Pertanahan
+Bidang       : Bidang Tata Ruang & Pertanahan (TRP)
+Hak Akses    : Input dan update dokumen perencanaan ruang, KKPR, dan program redistribusi tanah
+
+----------------------------------------------------------------------------------------------------
+NO. 14
+Nama Lengkap : ANDI ERWIN PRASETYO, ST.
+NIP          : 19720914 2003121002
+Username     : kabid.ck
+Password     : *Dinput4ru_14
+Role Sistem  : Kepala Bidang (kabid)
+Jabatan      : Kepala Bidang Cipta Karya
+Bidang       : Bidang Cipta Karya (Bangunan Gedung, SPAM, Sanitasi/Limbah, Drainase Perkotaan)
+Hak Akses    : Monitoring rekapitulasi pekerjaan gedung dinas, SPAM perdesaan, dan drainase
+
+----------------------------------------------------------------------------------------------------
+NO. 15
+Nama Lengkap : CHINTYA CAHYANINGRUM, S.T.
+NIP          : 200207052025042001
+Username     : koor.ck
+Password     : *Dinput4ru_15
+Role Sistem  : Koordinator Bidang (koordinator)
+Jabatan      : Koordinator / PPK Bidang Cipta Karya
+Bidang       : Bidang Cipta Karya
+Hak Akses    : Input dan update pekerjaan gedung, pemeliharaan bangunan, SPAM, sanitasi, dan drainase
+
+====================================================================================================
+AKUN TAMBAHAN (OPERASIONAL RETRIBUSI PAD):
+----------------------------------------------------------------------------------------------------
+Nama Lengkap : Tri Wahyudi, SE
+NIP          : 19850620 201001 1 012
+Username     : pendapatan
+Password     : *Dinput4ru_pad
+Role Sistem  : Koordinator Pendapatan (koordinator_pendapatan)
+Jabatan      : Koordinator Pengelola Pendapatan Daerah & Retribusi
+Hak Akses    : Input dan pengelolaan data penerimaan retribusi PAD (Sewa Alat Berat, PBG, SLF, Tinja, Cor Drill)
+
+====================================================================================================
+Catatan Login:
+Setiap pengguna dapat login menggunakan Username ATAU Nomor Induk Pegawai (NIP).
+====================================================================================================
+

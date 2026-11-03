@@ -30,6 +30,132 @@ if ($action === 'health') {
     exit;
 }
 
+// 1.1 Ambil Konfigurasi Database Saat Ini (Superadmin)
+if ($action === 'get_db_config') {
+    echo json_encode([
+        'status' => 'success',
+        'config' => [
+            'db_host' => $db_host ?? 'localhost',
+            'db_port' => $db_port ?? '3306',
+            'db_name' => $db_name ?? 'u490770675_simona',
+            'db_user' => $db_user ?? 'u490770675_adminsimon',
+            'db_pass' => $db_pass ?? '*Demak2026',
+            'domain' => 'simon.satuputarudemak.id',
+            'url' => 'https://simon.satuputarudemak.id'
+        ],
+        'connected' => $pdo !== null,
+        'message' => $pdo ? 'Terhubung ke database MySQL Hostinger' : 'Database belum terhubung',
+        'error_detail' => $db_connection_error ?? null
+    ]);
+    exit;
+}
+
+// 1.2 Tes Koneksi Database Langsung (Superadmin Test Connection)
+if ($action === 'test_db' || $action === 'test_connection') {
+    $input = json_decode(file_get_contents('php://input'), true) ?? [];
+    $t_host = !empty($input['db_host']) ? trim($input['db_host']) : ($db_host ?? 'localhost');
+    $t_port = !empty($input['db_port']) ? trim($input['db_port']) : ($db_port ?? '3306');
+    $t_name = !empty($input['db_name']) ? trim($input['db_name']) : ($db_name ?? 'u490770675_simona');
+    $t_user = !empty($input['db_user']) ? trim($input['db_user']) : ($db_user ?? 'u490770675_adminsimon');
+    $t_pass = isset($input['db_pass']) && $input['db_pass'] !== '' ? trim($input['db_pass']) : ($db_pass ?? '*Demak2026');
+
+    $startTime = microtime(true);
+    try {
+        $t_dsn = "mysql:host={$t_host};port={$t_port};dbname={$t_name};charset=utf8mb4";
+        $t_pdo = new PDO($t_dsn, $t_user, $t_pass, [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_TIMEOUT => 5
+        ]);
+        $latency = round((microtime(true) - $startTime) * 1000, 2);
+        $serverVersion = $t_pdo->query("SELECT VERSION()")->fetchColumn();
+
+        // Cek tabel penting
+        $expected = ['system_settings', 'bidang', 'users', 'projects', 'master_tags'];
+        $tblResults = [];
+        foreach ($expected as $tbl) {
+            try {
+                $c = $t_pdo->query("SELECT COUNT(*) FROM `{$tbl}`")->fetchColumn();
+                $tblResults[$tbl] = ['exists' => true, 'rows' => (int)$c];
+            } catch (Exception $e) {
+                $tblResults[$tbl] = ['exists' => false, 'rows' => 0];
+            }
+        }
+
+        echo json_encode([
+            'status' => 'success',
+            'connected' => true,
+            'message' => "Koneksi ke database MySQL Hostinger ({$t_name}) Berhasil!",
+            'latency_ms' => $latency,
+            'server_version' => $serverVersion,
+            'database' => $t_name,
+            'user' => $t_user,
+            'host' => $t_host,
+            'tables' => $tblResults
+        ]);
+    } catch (PDOException $e) {
+        echo json_encode([
+            'status' => 'error',
+            'connected' => false,
+            'message' => 'Gagal terhubung ke MySQL Hostinger: ' . $e->getMessage(),
+            'database' => $t_name,
+            'user' => $t_user,
+            'host' => $t_host,
+            'troubleshooting' => [
+                '1. Pastikan nama database, user, dan password di hPanel Hostinger sudah sesuai.',
+                '2. Pastikan user MySQL sudah diberikan semua hak akses (All Privileges) pada database.',
+                '3. Pastikan host adalah "localhost" (standar Hostinger).',
+                '4. Jika tabel belum ada, silakan impor database/simon_satuputaru.sql melalui phpMyAdmin di Hostinger.'
+            ]
+        ]);
+    }
+    exit;
+}
+
+// 1.3 Simpan Konfigurasi Database ke config.local.php (Superadmin Save DB)
+if ($action === 'save_db_config' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    $input = json_decode(file_get_contents('php://input'), true);
+    if (!$input || empty($input['db_name']) || empty($input['db_user'])) {
+        http_response_code(400);
+        echo json_encode(['status' => 'error', 'message' => 'Nama database dan username MySQL wajib diisi!']);
+        exit;
+    }
+
+    $s_host = addslashes(trim($input['db_host'] ?? 'localhost'));
+    $s_port = addslashes(trim($input['db_port'] ?? '3306'));
+    $s_name = addslashes(trim($input['db_name'] ?? 'u490770675_simona'));
+    $s_user = addslashes(trim($input['db_user'] ?? 'u490770675_adminsimon'));
+    $s_pass = addslashes(trim($input['db_pass'] ?? '*Demak2026'));
+
+    $configFile = __DIR__ . '/config.local.php';
+    $phpCode = "<?php\n"
+        . "/**\n"
+        . " * Konfigurasi Database Lokal Hostinger SIMON - SATUPUTARU\n"
+        . " * Domain: https://simon.satuputarudemak.id\n"
+        . " * Disimpan oleh Superadmin: " . date('Y-m-d H:i:s') . "\n"
+        . " */\n"
+        . "\$db_host = '{$s_host}';\n"
+        . "\$db_port = '{$s_port}';\n"
+        . "\$db_name = '{$s_name}';\n"
+        . "\$db_user = '{$s_user}';\n"
+        . "\$db_pass = '{$s_pass}';\n";
+
+    $res = @file_put_contents($configFile, $phpCode);
+    if ($res !== false) {
+        echo json_encode([
+            'status' => 'success',
+            'message' => 'Konfigurasi database MySQL Hostinger berhasil disimpan ke config.local.php!'
+        ]);
+    } else {
+        http_response_code(500);
+        echo json_encode([
+            'status' => 'error',
+            'message' => 'Gagal menulis file config.local.php. Periksa izin akses (permission 755/644) folder public/api di hosting.'
+        ]);
+    }
+    exit;
+}
+
 // Jika koneksi belum tersedia, kembalikan response informatif
 if (!$pdo) {
     echo json_encode([

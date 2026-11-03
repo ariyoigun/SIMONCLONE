@@ -3765,6 +3765,464 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
               </div>
             </div>
           )}
+
+          {/* TAB: PENGATURAN DATABASE MYSQL HOSTINGER */}
+          {activeTab === 'database' && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+              {/* Header Card */}
+              <div
+                style={{
+                  padding: '20px 24px',
+                  background: 'linear-gradient(135deg, #0a1f3d 0%, #0f2c59 50%, #0284c7 100%)',
+                  borderRadius: 14,
+                  color: '#ffffff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: 16,
+                  boxShadow: '0 4px 16px rgba(15, 44, 89, 0.25)'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                  <div
+                    style={{
+                      width: 48,
+                      height: 48,
+                      borderRadius: 12,
+                      background: 'rgba(255, 255, 255, 0.15)',
+                      backdropFilter: 'blur(8px)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      border: '1px solid rgba(255, 255, 255, 0.25)'
+                    }}
+                  >
+                    <Database size={24} color="#38bdf8" />
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <h3 style={{ margin: 0, fontSize: 17, fontWeight: 800, color: '#ffffff' }}>
+                        Pengaturan Database MySQL Hostinger
+                      </h3>
+                      <span
+                        style={{
+                          background: 'rgba(56, 189, 248, 0.2)',
+                          color: '#38bdf8',
+                          border: '1px solid rgba(56, 189, 248, 0.4)',
+                          borderRadius: 20,
+                          padding: '2px 10px',
+                          fontSize: 11,
+                          fontWeight: 700
+                        }}
+                      >
+                        simon.satuputarudemak.id
+                      </span>
+                    </div>
+                    <p style={{ margin: '4px 0 0', fontSize: 12.5, color: '#93c5fd', lineHeight: 1.4 }}>
+                      Kelola koneksi basis data MySQL server production Hostinger, uji koneksi PDO secara instan, dan panduan integrasi.
+                    </p>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <div
+                    style={{
+                      padding: '8px 14px',
+                      borderRadius: 10,
+                      background: dbTestResult?.connected ? 'rgba(16, 185, 129, 0.2)' : 'rgba(245, 158, 11, 0.2)',
+                      border: `1px solid ${dbTestResult?.connected ? 'rgba(16, 185, 129, 0.4)' : 'rgba(245, 158, 11, 0.4)'}`,
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      fontSize: 12,
+                      fontWeight: 700,
+                      color: dbTestResult?.connected ? '#6ee7b7' : '#fcd34d'
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 8,
+                        height: 8,
+                        borderRadius: '50%',
+                        background: dbTestResult?.connected ? '#10b981' : '#f59e0b',
+                        boxShadow: `0 0 8px ${dbTestResult?.connected ? '#10b981' : '#f59e0b'}`
+                      }}
+                    />
+                    <span>{dbTestResult?.connected ? 'MySQL Terhubung' : 'Standby / Local Fallback'}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Form Input Kredensial Database */}
+              <div
+                style={{
+                  background: '#ffffff',
+                  borderRadius: 14,
+                  border: '1px solid #e2e8f0',
+                  padding: '22px 24px',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.04)'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18, borderBottom: '1px solid #f1f5f9', paddingBottom: 12 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <Server size={18} color="#0284c7" />
+                    <h4 style={{ margin: 0, fontSize: 14.5, fontWeight: 800, color: '#0f2c59' }}>
+                      Kredensial Server Database MySQL
+                    </h4>
+                  </div>
+                  <span style={{ fontSize: 11.5, color: '#64748b' }}>
+                    Tersinkronisasi otomatis dengan file <code style={{ background: '#f1f5f9', padding: '2px 6px', borderRadius: 4, color: '#0284c7' }}>public/api/config.php</code>
+                  </span>
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+                  {/* Host */}
+                  <div className="form-group" style={{ margin: 0 }}>
+                    <label className="form-label" style={{ fontSize: 12.5, fontWeight: 700, color: '#334155' }}>
+                      Host Database MySQL <span style={{ color: '#ef4444' }}>*</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={dbConfig.host}
+                      onChange={(e) => setDbConfig({ ...dbConfig, host: e.target.value })}
+                      placeholder="localhost"
+                      style={{ fontSize: 13 }}
+                    />
+                    <small style={{ fontSize: 11, color: '#64748b', marginTop: 4, display: 'block' }}>
+                      Standar di Hostinger gunakan <code style={{ fontWeight: 700 }}>localhost</code> atau <code style={{ fontWeight: 700 }}>127.0.0.1</code>
+                    </small>
+                  </div>
+
+                  {/* Port */}
+                  <div className="form-group" style={{ margin: 0 }}>
+                    <label className="form-label" style={{ fontSize: 12.5, fontWeight: 700, color: '#334155' }}>
+                      Port MySQL
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={dbConfig.port}
+                      onChange={(e) => setDbConfig({ ...dbConfig, port: e.target.value })}
+                      placeholder="3306"
+                      style={{ fontSize: 13 }}
+                    />
+                    <small style={{ fontSize: 11, color: '#64748b', marginTop: 4, display: 'block' }}>
+                      Port default MySQL Hostinger adalah 3306
+                    </small>
+                  </div>
+
+                  {/* Nama Database */}
+                  <div className="form-group" style={{ margin: 0 }}>
+                    <label className="form-label" style={{ fontSize: 12.5, fontWeight: 700, color: '#334155' }}>
+                      Nama Database MySQL <span style={{ color: '#ef4444' }}>*</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={dbConfig.database}
+                      onChange={(e) => setDbConfig({ ...dbConfig, database: e.target.value })}
+                      placeholder="u490770675_simona"
+                      style={{ fontSize: 13, fontWeight: 700, color: '#0f2c59' }}
+                    />
+                    <small style={{ fontSize: 11, color: '#64748b', marginTop: 4, display: 'block' }}>
+                      Sesuai database di hPanel Hostinger: <code style={{ fontWeight: 700 }}>u490770675_simona</code>
+                    </small>
+                  </div>
+
+                  {/* Username MySQL */}
+                  <div className="form-group" style={{ margin: 0 }}>
+                    <label className="form-label" style={{ fontSize: 12.5, fontWeight: 700, color: '#334155' }}>
+                      Username Pengguna MySQL <span style={{ color: '#ef4444' }}>*</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={dbConfig.user}
+                      onChange={(e) => setDbConfig({ ...dbConfig, user: e.target.value })}
+                      placeholder="u490770675_adminsimon"
+                      style={{ fontSize: 13, fontWeight: 700, color: '#0f2c59' }}
+                    />
+                    <small style={{ fontSize: 11, color: '#64748b', marginTop: 4, display: 'block' }}>
+                      User berwenang Hostinger: <code style={{ fontWeight: 700 }}>u490770675_adminsimon</code>
+                    </small>
+                  </div>
+
+                  {/* Password MySQL */}
+                  <div className="form-group" style={{ margin: 0, gridColumn: '1 / -1' }}>
+                    <label className="form-label" style={{ fontSize: 12.5, fontWeight: 700, color: '#334155' }}>
+                      Kata Sandi (Password) Database MySQL <span style={{ color: '#ef4444' }}>*</span>
+                    </label>
+                    <div style={{ position: 'relative' }}>
+                      <input
+                        type={showDbPass ? 'text' : 'password'}
+                        className="form-control"
+                        value={dbConfig.password}
+                        onChange={(e) => setDbConfig({ ...dbConfig, password: e.target.value })}
+                        placeholder="*Demak2026"
+                        style={{ fontSize: 13, paddingRight: 42, letterSpacing: showDbPass ? 'normal' : '2px', fontWeight: 700 }}
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowDbPass(!showDbPass)}
+                        style={{
+                          position: 'absolute',
+                          right: 10,
+                          top: '50%',
+                          transform: 'translateY(-50%)',
+                          background: 'none',
+                          border: 'none',
+                          color: '#64748b',
+                          cursor: 'pointer',
+                          padding: 4
+                        }}
+                      >
+                        {showDbPass ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </button>
+                    </div>
+                    <small style={{ fontSize: 11, color: '#64748b', marginTop: 4, display: 'block' }}>
+                      Kata sandi database Hostinger: <code style={{ fontWeight: 700 }}>*Demak2026</code>
+                    </small>
+                  </div>
+                </div>
+
+                {/* Tombol Aksi */}
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    marginTop: 22,
+                    paddingTop: 16,
+                    borderTop: '1px solid #f1f5f9',
+                    flexWrap: 'wrap',
+                    gap: 12
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <button
+                      type="button"
+                      onClick={handleTestDbConnection}
+                      disabled={isTestingDb}
+                      className="btn"
+                      style={{
+                        background: 'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)',
+                        color: '#ffffff',
+                        border: 'none',
+                        padding: '9px 18px',
+                        borderRadius: 8,
+                        fontSize: 13,
+                        fontWeight: 700,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        cursor: isTestingDb ? 'not-allowed' : 'pointer',
+                        boxShadow: '0 2px 8px rgba(2, 132, 199, 0.3)'
+                      }}
+                    >
+                      <RefreshCw size={15} className={isTestingDb ? 'spin' : ''} />
+                      <span>{isTestingDb ? 'Menguji Koneksi...' : 'Tes Koneksi Database'}</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={handleSaveDbConfig}
+                      disabled={isSavingDb}
+                      className="btn"
+                      style={{
+                        background: '#059669',
+                        color: '#ffffff',
+                        border: 'none',
+                        padding: '9px 18px',
+                        borderRadius: 8,
+                        fontSize: 13,
+                        fontWeight: 700,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        cursor: isSavingDb ? 'not-allowed' : 'pointer',
+                        boxShadow: '0 2px 8px rgba(5, 150, 105, 0.25)'
+                      }}
+                    >
+                      <Save size={15} />
+                      <span>{isSavingDb ? 'Menyimpan...' : 'Simpan Konfigurasi'}</span>
+                    </button>
+                  </div>
+
+                  <a
+                    href="/api/test_db.php"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      fontSize: 12.5,
+                      color: '#0284c7',
+                      textDecoration: 'none',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      fontWeight: 600
+                    }}
+                  >
+                    <span>Buka Halaman Diagnostik Web (test_db.php)</span>
+                    <ExternalLink size={13} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Hasil Tes Koneksi (Banner Diagnostik) */}
+              {dbTestResult && (
+                <div
+                  style={{
+                    padding: '16px 20px',
+                    borderRadius: 12,
+                    background: dbTestResult.connected ? '#ecfdf5' : '#fef2f2',
+                    border: `1.5px solid ${dbTestResult.connected ? '#10b981' : '#f87171'}`,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 10
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                      {dbTestResult.connected ? (
+                        <CheckCircle2 size={20} color="#059669" />
+                      ) : (
+                        <AlertCircle size={20} color="#dc2626" />
+                      )}
+                      <div>
+                        <strong style={{ fontSize: 13.5, color: dbTestResult.connected ? '#065f46' : '#991b1b' }}>
+                          {dbTestResult.message}
+                        </strong>
+                        {dbTestResult.latency_ms !== undefined && (
+                          <span style={{ marginLeft: 8, fontSize: 11.5, color: '#059669' }}>
+                            (Latensi: {dbTestResult.latency_ms} ms • Versi MySQL: {dbTestResult.server_version || 'MariaDB/MySQL'})
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  {dbTestResult.tables && (
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 4 }}>
+                      {Object.entries(dbTestResult.tables).map(([tbl, info]) => (
+                        <span
+                          key={tbl}
+                          style={{
+                            fontSize: 11.5,
+                            padding: '4px 8px',
+                            borderRadius: 6,
+                            background: info.exists ? '#d1fae5' : '#fee2e2',
+                            color: info.exists ? '#065f46' : '#991b1b',
+                            border: `1px solid ${info.exists ? '#a7f3d0' : '#fca5a5'}`
+                          }}
+                        >
+                          {tbl}: {info.exists ? `${info.rows} baris` : 'Belum Ada'}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {Array.isArray(dbTestResult.troubleshooting) && dbTestResult.troubleshooting.length > 0 && (
+                    <div style={{ marginTop: 8, padding: '10px 14px', background: '#ffffff', borderRadius: 8, border: '1px solid #fca5a5' }}>
+                      <div style={{ fontSize: 12, fontWeight: 700, color: '#991b1b', marginBottom: 4 }}>
+                        Langkah Penyelesaian / Troubleshooting:
+                      </div>
+                      <ul style={{ margin: 0, paddingLeft: 18, fontSize: 11.5, color: '#7f1d1d', lineHeight: 1.5 }}>
+                        {dbTestResult.troubleshooting.map((tip, idx) => (
+                          <li key={idx}>{tip}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* PANDUAN LENGKAP MENGHUBUNGKAN WEB APP DAN DATABASE HOSTINGER */}
+              <div
+                style={{
+                  background: '#f8fafc',
+                  borderRadius: 14,
+                  border: '1px solid #e2e8f0',
+                  padding: '22px 24px'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
+                  <Award size={20} color="#0284c7" />
+                  <h4 style={{ margin: 0, fontSize: 15, fontWeight: 800, color: '#0f2c59' }}>
+                    Panduan Menghubungkan Web App & Database di Hosting Hostinger
+                  </h4>
+                </div>
+                <p style={{ fontSize: 12.5, color: '#475569', lineHeight: 1.6, marginTop: 0 }}>
+                  Aplikasi SIMON SATUPUTARU berjalan secara penuh di domain <strong>https://simon.satuputarudemak.id</strong>. Ikuti 5 tahapan praktis berikut untuk memastikan database terhubung 100%:
+                </p>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', gap: 14, marginTop: 14 }}>
+                  {/* Step 1 */}
+                  <div style={{ background: '#ffffff', padding: '14px 16px', borderRadius: 10, border: '1px solid #e2e8f0' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                      <span style={{ width: 24, height: 24, borderRadius: '50%', background: '#0284c7', color: '#fff', fontSize: 12, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>1</span>
+                      <strong style={{ fontSize: 13, color: '#0f2c59' }}>Buat Database di hPanel</strong>
+                    </div>
+                    <div style={{ fontSize: 12, color: '#64748b', lineHeight: 1.5 }}>
+                      Buka <strong>hPanel Hostinger</strong> &gt; Masuk ke menu <strong>Databases</strong> &gt; <strong>Kelola Database</strong>. Buat database:
+                      <div style={{ background: '#f1f5f9', padding: '6px 8px', borderRadius: 6, marginTop: 6, fontSize: 11.5, fontFamily: 'monospace' }}>
+                        Database: u490770675_simona<br />
+                        Username: u490770675_adminsimon<br />
+                        Password: *Demak2026
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Step 2 */}
+                  <div style={{ background: '#ffffff', padding: '14px 16px', borderRadius: 10, border: '1px solid #e2e8f0' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                      <span style={{ width: 24, height: 24, borderRadius: '50%', background: '#0284c7', color: '#fff', fontSize: 12, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>2</span>
+                      <strong style={{ fontSize: 13, color: '#0f2c59' }}>Impor File SQL via phpMyAdmin</strong>
+                    </div>
+                    <div style={{ fontSize: 12, color: '#64748b', lineHeight: 1.5 }}>
+                      Di baris database <code style={{ color: '#0284c7' }}>u490770675_simona</code> pada hPanel, klik tombol <strong>phpMyAdmin</strong>.
+                      Pilih tab <strong>Import</strong> (Impor), klik <em>Choose File</em> dan upload file:
+                      <div style={{ background: '#f1f5f9', padding: '6px 8px', borderRadius: 6, marginTop: 6, fontSize: 11.5, fontFamily: 'monospace' }}>
+                        database/simon_satuputaru.sql
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Step 3 */}
+                  <div style={{ background: '#ffffff', padding: '14px 16px', borderRadius: 10, border: '1px solid #e2e8f0' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                      <span style={{ width: 24, height: 24, borderRadius: '50%', background: '#0284c7', color: '#fff', fontSize: 12, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>3</span>
+                      <strong style={{ fontSize: 13, color: '#0f2c59' }}>Deploy File ke public_html</strong>
+                    </div>
+                    <div style={{ fontSize: 12, color: '#64748b', lineHeight: 1.5 }}>
+                      Pastikan build frontend (folder <code style={{ color: '#0284c7' }}>dist</code>) dan folder <code style={{ color: '#0284c7' }}>api</code> berada di direktori root domain:
+                      <div style={{ background: '#f1f5f9', padding: '6px 8px', borderRadius: 6, marginTop: 6, fontSize: 11.5, fontFamily: 'monospace' }}>
+                        public_html/api/config.php<br />
+                        public_html/api/api.php<br />
+                        public_html/index.html
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Step 4 */}
+                  <div style={{ background: '#ffffff', padding: '14px 16px', borderRadius: 10, border: '1px solid #e2e8f0' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                      <span style={{ width: 24, height: 24, borderRadius: '50%', background: '#0284c7', color: '#fff', fontSize: 12, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>4</span>
+                      <strong style={{ fontSize: 13, color: '#0f2c59' }}>Uji Koneksi Langsung</strong>
+                    </div>
+                    <div style={{ fontSize: 12, color: '#64748b', lineHeight: 1.5 }}>
+                      Klik tombol <strong>"Tes Koneksi Database"</strong> di panel ini, atau akses langsung di peramban:
+                      <div style={{ background: '#f1f5f9', padding: '6px 8px', borderRadius: 6, marginTop: 6, fontSize: 11.5, fontFamily: 'monospace' }}>
+                        https://simon.satuputarudemak.id/api/test_db.php
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           </main>
         </div>
 

@@ -29,12 +29,12 @@ CREATE TABLE IF NOT EXISTS `system_settings` (
   `telepon` varchar(50) DEFAULT '(0291) 685123',
   `email` varchar(100) DEFAULT 'dinputaru@demakkab.go.id',
   `website` varchar(100) DEFAULT 'https://dinputaru.demakkab.go.id',
-  `nama_kepala_dinas` varchar(150) NOT NULL DEFAULT 'Ir. H. Achmad Syafii, CES, MT',
-  `nip_kepala_dinas` varchar(50) NOT NULL DEFAULT '19680514 199303 1 002',
+  `nama_kepala_dinas` varchar(150) NOT NULL DEFAULT 'Ir. NANANG TASUNAR DAVID NARUTOMO, MM',
+  `nip_kepala_dinas` varchar(50) NOT NULL DEFAULT '196702101993031009',
   `pangkat_kepala_dinas` varchar(100) NOT NULL DEFAULT 'Pembina Utama Madya (IV/d)',
   `jabatan_kepala_dinas` varchar(150) NOT NULL DEFAULT 'Kepala Dinas Pekerjaan Umum dan Penataan Ruang',
-  `nama_sekretaris` varchar(150) NOT NULL DEFAULT 'Dra. Hj. Siti Nurhasanah, MM',
-  `nip_sekretaris` varchar(50) NOT NULL DEFAULT '19720819 199803 2 003',
+  `nama_sekretaris` varchar(150) NOT NULL DEFAULT 'NANING PRIH HATININGRUM, S.IP,M.Si',
+  `nip_sekretaris` varchar(50) NOT NULL DEFAULT '197801082010012019',
   `pangkat_sekretaris` varchar(100) NOT NULL DEFAULT 'Pembina Tingkat I (IV/b)',
   `jabatan_sekretaris` varchar(150) NOT NULL DEFAULT 'Sekretaris DINPUTARU',
   `max_public_highlights` int(11) NOT NULL DEFAULT 10,
@@ -56,12 +56,12 @@ VALUES (
   '(0291) 685123',
   'dinputaru@demakkab.go.id',
   'https://dinputaru.demakkab.go.id',
-  'Ir. H. Achmad Syafii, CES, MT',
-  '19680514 199303 1 002',
+  'Ir. NANANG TASUNAR DAVID NARUTOMO, MM',
+  '196702101993031009',
   'Pembina Utama Madya (IV/d)',
   'Kepala Dinas Pekerjaan Umum dan Penataan Ruang',
-  'Dra. Hj. Siti Nurhasanah, MM',
-  '19720819 199803 2 003',
+  'NANING PRIH HATININGRUM, S.IP,M.Si',
+  '197801082010012019',
   'Pembina Tingkat I (IV/b)',
   'Sekretaris DINPUTARU',
   10
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `nama` varchar(150) NOT NULL,
   `nip` varchar(50) NOT NULL,
   `jabatan` varchar(150) NOT NULL,
-  `role` enum('superadmin','kadin','sekretaris','kabid','koordinator') NOT NULL,
+  `role` varchar(50) NOT NULL DEFAULT 'koordinator',
   `bidang_id` varchar(50) DEFAULT NULL,
   `email` varchar(100) NOT NULL,
   `avatar` text DEFAULT NULL,
@@ -113,18 +113,24 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `users` (`id`, `username`, `password`, `nama`, `nip`, `jabatan`, `role`, `bidang_id`, `email`, `avatar`) VALUES
-('usr_superadmin', 'superadmin', 'admin123', 'Budi Santoso, ST, M.Eng', '19790312 200501 1 004', 'Pranata Komputer Madya / Administrator Sistem', 'superadmin', NULL, 'admin.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&auto=format&fit=crop&q=80'),
-('usr_kadin', 'kadin', 'pupr2025', 'Ir. H. Achmad Syafii, CES, MT', '19680514 199303 1 002', 'Kepala Dinas Pekerjaan Umum dan Penataan Ruang', 'kadin', NULL, 'kadin.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80'),
-('usr_sekretaris', 'sekretaris', 'pupr2025', 'Dra. Hj. Siti Nurhasanah, MM', '19720819 199803 2 003', 'Sekretaris DINPUTARU', 'sekretaris', NULL, 'sekretaris.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80'),
-('usr_kabid_bm', 'kabid.bm', 'pupr2025', 'Ir. Dwi Prasetyo, MT', '19750422 200212 1 003', 'Kepala Bidang Bina Marga', 'kabid', 'bina_marga', 'kabid.bm@demakkab.go.id', 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80'),
-('usr_koord_bm', 'koord.bm', 'pupr2025', 'Agus Suryanto, ST', '19840215 200902 1 005', 'Koordinator / PPK Bidang Bina Marga', 'koordinator', 'bina_marga', 'koord.bm@demakkab.go.id', 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&auto=format&fit=crop&q=80'),
-('usr_kabid_ck', 'kabid.ck', 'pupr2025', 'Ir. Bambang Hermanto, MT', '19740118 200112 1 001', 'Kepala Bidang Cipta Karya', 'kabid', 'cipta_karya', 'kabid.ck@demakkab.go.id', 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=120&auto=format&fit=crop&q=80'),
-('usr_koord_ck', 'koord.ck', 'pupr2025', 'Ir. Hendra Wijaya, MT', '19820611 200801 1 007', 'Koordinator / PPK Bidang Cipta Karya', 'koordinator', 'cipta_karya', 'koord.ck@demakkab.go.id', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80'),
-('usr_kabid_sda', 'kabid.sda', 'pupr2025', 'Ir. Slamet Riyadi, MT', '19760709 200312 1 006', 'Kepala Bidang SDA & Bina Konstruksi', 'kabid', 'sda_bk', 'kabid.sda@demakkab.go.id', 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=120&auto=format&fit=crop&q=80'),
-('usr_koord_sda', 'koord.sda', 'pupr2025', 'Tri Wahyudi, ST', '19860403 201001 1 012', 'Koordinator / PPK Bidang SDA & Bina Konstruksi', 'koordinator', 'sda_bk', 'koord.sda@demakkab.go.id', 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&auto=format&fit=crop&q=80'),
-('usr_kabid_tr', 'kabid.tr', 'pupr2025', 'Rina Kusuma Dewi, ST, M.Sc', '19801125 200604 2 018', 'Kepala Bidang Tata Ruang & Pertanahan', 'kabid', 'tata_ruang', 'kabid.tr@demakkab.go.id', 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=80'),
-('usr_koord_tr', 'koord.tr', 'pupr2025', 'Aditya Nugraha, ST', '19890814 201402 1 003', 'Koordinator / PPK Bidang Tata Ruang & Pertanahan', 'koordinator', 'tata_ruang', 'koord.tr@demakkab.go.id', 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=120&auto=format&fit=crop&q=80')
-ON DUPLICATE KEY UPDATE `nama` = VALUES(`nama`);
+('usr_superadmin', 'superadmin', '*Dinput4ru_07', 'GUNARIYO, S.Kom.', '198909212025041001', 'Pranata Komputer / Superadmin Sistem', 'superadmin', NULL, 'gunariyo@demakkab.go.id', 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&auto=format&fit=crop&q=80'),
+('usr_kadin', 'kadin.dinputaru', '*Dinput4ru_01', 'Ir. NANANG TASUNAR DAVID NARUTOMO, MM', '196702101993031009', 'Kepala Dinas Pekerjaan Umum dan Penataan Ruang', 'kadin', NULL, 'kadin.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80'),
+('usr_sekretaris', 'sekdin.dinputaru', '*Dinput4ru_02', 'NANING PRIH HATININGRUM, S.IP,M.Si', '197801082010012019', 'Sekretaris Dinas Pekerjaan Umum dan Penataan Ruang', 'sekretaris', NULL, 'sekdin.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80'),
+('usr_prokeu', 'prokeu.dinputaru', '*Dinput4ru_03', 'BAGAS SATRIA ANGGRIAWAN, S.T., M.M.', '199106122015021002', 'Kasubag Program & Keuangan', 'kasubag_program_keuangan', 'sekretariat', 'prokeu.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80'),
+('usr_umpeg', 'umpeg.dinputaru', '*Dinput4ru_04', 'BAGAS SATRIA ANGGRIAWAN, S.T., M.M.', '199106122015021002', 'Kasubag Umum & Kepegawaian', 'kasubag_umpeg', 'sekretariat', 'umpeg.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80'),
+('usr_koor_sekre1', 'koor.sekre1', '*Dinput4ru_05', 'RIZKY PRAHARDINI, S.E.', '198607282025212082', 'Koordinator Sekretariat (Program & Keuangan)', 'koordinator_sekretariat', 'sekretariat', 'koor.sekre1@demakkab.go.id', 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&auto=format&fit=crop&q=80'),
+('usr_koor_sekre2', 'koor.sekre2', '*Dinput4ru_06', 'RANI NURHAYATI, S.Sos', '199707102025212091', 'Koordinator Sekretariat (Umum & Kepegawaian)', 'koordinator_sekretariat', 'sekretariat', 'koor.sekre2@demakkab.go.id', 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=80'),
+('usr_kabid_bm', 'kabid.bm', '*Dinput4ru_08', 'S. EKO WIDIANTORO, ST', '197506012010011012', 'Kepala Bidang Bina Marga', 'kabid', 'bina_marga', 'kabid.bm@demakkab.go.id', 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&auto=format&fit=crop&q=80'),
+('usr_koor_bm', 'koor.bm', '*Dinput4ru_09', 'TIA ARYUNINGRUM, ST', '199406262020122025', 'Koordinator Bidang Bina Marga', 'koordinator', 'bina_marga', 'koor.bm@demakkab.go.id', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80'),
+('usr_kabid_sdabk', 'kabid.sdabk', '*Dinput4ru_10', 'NANING PRIH HATININGRUM, S.IP,M.Si', '197801082010012019', 'Sekretaris Dinas / Plt. Kepala Bidang SDA & Bina Konstruksi', 'kabid', 'sda_bk', 'kabid.sdabk@demakkab.go.id', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80'),
+('usr_koor_sdabk', 'koor.sdabk', '*Dinput4ru_11', 'RESI DIANSISMITA, S.T.', '199805242024212018', 'Koordinator Bidang SDA & Bina Konstruksi', 'koordinator', 'sda_bk', 'koor.sdabk@demakkab.go.id', 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=80'),
+('usr_kabid_trp', 'kabid.trp', '*Dinput4ru_12', 'S. EKO WIDIANTORO, ST', '197506012010011012', 'Plt. Kepala Bidang Tata Ruang & Pertanahan', 'kabid', 'tata_ruang', 'kabid.trp@demakkab.go.id', 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&auto=format&fit=crop&q=80'),
+('usr_koor_trp', 'koor.trp', '*Dinput4ru_13', 'INSANIA MULIA JUNAEDI, S.T.', '200111212025042001', 'Koordinator Bidang Tata Ruang & Pertanahan', 'koordinator', 'tata_ruang', 'koor.trp@demakkab.go.id', 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&auto=format&fit=crop&q=80'),
+('usr_kabid_ck', 'kabid.ck', '*Dinput4ru_14', 'ANDI ERWIN PRASETYO, ST.', '19720914 2003121002', 'Kepala Bidang Cipta Karya', 'kabid', 'cipta_karya', 'kabid.ck@demakkab.go.id', 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=120&auto=format&fit=crop&q=80'),
+('usr_koor_ck', 'koor.ck', '*Dinput4ru_15', 'CHINTYA CAHYANINGRUM, S.T.', '200207052025042001', 'Koordinator Bidang Cipta Karya', 'koordinator', 'cipta_karya', 'koor.ck@demakkab.go.id', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80'),
+('usr_koord_pendapatan', 'pendapatan', '*Dinput4ru_pad', 'Tri Wahyudi, SE', '19850620 201001 1 012', 'Koordinator Pengelola Pendapatan Daerah & Retribusi', 'koordinator_pendapatan', 'sekretariat', 'pendapatan.dinputaru@demakkab.go.id', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80')
+ON DUPLICATE KEY UPDATE `nama` = VALUES(`nama`), `password` = VALUES(`password`), `role` = VALUES(`role`), `nip` = VALUES(`nip`), `jabatan` = VALUES(`jabatan`);
+
 
 -- --------------------------------------------------------
 -- 4. TABEL: master_tags

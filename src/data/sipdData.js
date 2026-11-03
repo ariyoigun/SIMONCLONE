@@ -1,482 +1,966 @@
 /**
  * MASTER DATA NOMENKLATUR SIPD KEMENDAGRI (DINPUTARU KABUPATEN DEMAK)
- * Berisi struktur hierarki baku:
- * 1. Program
- * 2. Kegiatan (di bawah Program)
- * 3. Sub Kegiatan (di bawah Kegiatan)
- * 4. Paket Pekerjaan (di bawah Sub Kegiatan)
+ * Berdasarkan Klasifikasi/Kodefikasi Standar SIPD RI Kemendagri & Excel Rencana Kerja 2026
+ * Total Program: 11
+ * Total Kegiatan: 22
+ * Total Sub Kegiatan: 88
  */
 
 export const INITIAL_SIPD_PROGRAMS = [
-  // --- BINA MARGA ---
   {
-    id: 'prog_bm_jalan',
-    kodeProgram: '1.03.02',
-    namaProgram: 'PROGRAM PENYELENGGARAAN JALAN',
-    bidangId: 'bina_marga',
-    deskripsi: 'Penyelenggaraan jalan kabupaten, jembatan, dan sarana prasarana konektivitas wilayah'
-  },
-
-  // --- SUMBER DAYA AIR & BINA KONSTRUKSI ---
-  {
-    id: 'prog_sda_air',
-    kodeProgram: '1.03.03',
-    namaProgram: 'PROGRAM PENGELOLAAN SUMBER DAYA AIR (SDA)',
-    bidangId: 'sda_bk',
-    deskripsi: 'Pengelolaan sungai, waduk/embung, drainase utama, dan jaringan irigasi pertanian'
+    "id": "prog_sekretariat_1_03_01",
+    "kodeProgram": "1.03.01",
+    "namaProgram": "PROGRAM PENUNJANG URUSAN PEMERINTAHAN DAERAH KABUPATEN/KOTA",
+    "bidangId": "sekretariat",
+    "deskripsi": "Perencanaan, penganggaran, administrasi keuangan, kepegawaian, pengadaan sarana dan pemeliharaan BMD DINPUTARU"
   },
   {
-    id: 'prog_sda_jakon',
-    kodeProgram: '1.03.07',
-    namaProgram: 'PROGRAM PENYELENGGARAAN BINA KONSTRUKSI',
-    bidangId: 'sda_bk',
-    deskripsi: 'Pembinaan, pengawasan tertib konstruksi, dan sertifikasi tenaga kerja konstruksi'
-  },
-
-  // --- CIPTA KARYA ---
-  {
-    id: 'prog_ck_gedung',
-    kodeProgram: '1.03.04',
-    namaProgram: 'PROGRAM PENATAAN BANGUNAN GEDUNG',
-    bidangId: 'cipta_karya',
-    deskripsi: 'Pembangunan, rehabilitasi gedung pelayanan publik, dan penataan kawasan permukiman'
+    "id": "prog_sda_bk_1_03_02",
+    "kodeProgram": "1.03.02",
+    "namaProgram": "PROGRAM PENGELOLAAN SUMBER DAYA AIR (SDA)",
+    "bidangId": "sda_bk",
+    "deskripsi": "Pengelolaan sungai, waduk/embung, pintu air, stasiun pompa banjir, dan jaringan irigasi pertanian"
   },
   {
-    id: 'prog_ck_spam',
-    kodeProgram: '1.03.05',
-    namaProgram: 'PROGRAM PENGELOLAAN DAN PENGEMBANGAN SISTEM PENYEDIAAN AIR MINUM (SPAM)',
-    bidangId: 'cipta_karya',
-    deskripsi: 'Penyediaan dan pengembangan jaringan distribusi air minum perpipaan perkotaan dan perdesaan'
+    "id": "prog_cipta_karya_1_03_03",
+    "kodeProgram": "1.03.03",
+    "namaProgram": "PROGRAM PENGELOLAAN DAN PENGEMBANGAN SISTEM PENYEDIAAN AIR MINUM",
+    "bidangId": "cipta_karya",
+    "deskripsi": "Pembangunan dan peningkatan SPAM jaringan perpipaan serta sambungan rumah bagi masyarakat"
   },
   {
-    id: 'prog_ck_sanitasi',
-    kodeProgram: '1.03.06',
-    namaProgram: 'PROGRAM PENGEMBANGAN SISTEM DAN PENGELOLAAN PERSAMPAHAN & AIR LIMBAH DOMESTIK',
-    bidangId: 'cipta_karya',
-    deskripsi: 'Pembangunan SPALD terpusat dan fasilitas pengolahan sampah sirkular TPS3R'
-  },
-
-  // --- TATA RUANG & PERTANAHAN ---
-  {
-    id: 'prog_trp_tataruang',
-    kodeProgram: '1.03.08',
-    namaProgram: 'PROGRAM PENYELENGGARAAN PENATAAN RUANG',
-    bidangId: 'tata_ruang',
-    deskripsi: 'Penyusunan RTRW, RDTR, KKPR, pemetaan GIS dan pengendalian pemanfaatan ruang'
+    "id": "prog_cipta_karya_1_03_05",
+    "kodeProgram": "1.03.05",
+    "namaProgram": "PROGRAM PENGELOLAAN DAN PENGEMBANGAN SISTEM AIR LIMBAH",
+    "bidangId": "cipta_karya",
+    "deskripsi": "Pembangunan tangki septik individu/komunal, TPS3R, dan instalasi pengolahan limbah domestik"
   },
   {
-    id: 'prog_trp_tanah',
-    kodeProgram: '1.03.09',
-    namaProgram: 'PROGRAM PENGELOLAAN PERTANAHAN',
-    bidangId: 'tata_ruang',
-    deskripsi: 'Fasilitasi pengadaan tanah dan pengukuran teknis tanah untuk infrastruktur publik'
+    "id": "prog_cipta_karya_1_03_06",
+    "kodeProgram": "1.03.06",
+    "namaProgram": "PROGRAM PENGELOLAAN DAN PENGEMBANGAN SISTEM DRAINASE",
+    "bidangId": "cipta_karya",
+    "deskripsi": "Pembangunan, rehabilitasi sistem drainase perkotaan dan saluran pembuang primer/sekunder"
   },
-
-  // --- SEKRETARIAT ---
   {
-    id: 'prog_sek_penunjang',
-    kodeProgram: '1.03.01',
-    namaProgram: 'PROGRAM PENUNJANG URUSAN PEMERINTAHAN DAERAH KABUPATEN/KOTA',
-    bidangId: 'sekretariat',
-    deskripsi: 'Perencanaan, administrasi keuangan, kepegawaian, pengadaan sarana IT dan aset kantor'
+    "id": "prog_cipta_karya_1_03_08",
+    "kodeProgram": "1.03.08",
+    "namaProgram": "PROGRAM PENATAAN BANGUNAN GEDUNG",
+    "bidangId": "cipta_karya",
+    "deskripsi": "Pembangunan dan rehabilitasi gedung kantor, fasilitas umum, dan kawasan permukiman"
+  },
+  {
+    "id": "prog_bina_marga_1_03_10",
+    "kodeProgram": "1.03.10",
+    "namaProgram": "PROGRAM PENYELENGGARAAN JALAN",
+    "bidangId": "bina_marga",
+    "deskripsi": "Pembangunan, rekonstruksi, pelebaran jalan kabupaten dan pemeliharaan jembatan"
+  },
+  {
+    "id": "prog_sda_bk_1_03_11",
+    "kodeProgram": "1.03.11",
+    "namaProgram": "PROGRAM PENGEMBANGAN JASA KONSTRUKSI",
+    "bidangId": "sda_bk",
+    "deskripsi": "Pelatihan tenaga kerja terampil konstruksi, pembinaan kelembagaan dan sertifikasi kompetensi"
+  },
+  {
+    "id": "prog_tata_ruang_1_03_12",
+    "kodeProgram": "1.03.12",
+    "namaProgram": "PROGRAM PENYELENGGARAAN PENATAAN RUANG",
+    "bidangId": "tata_ruang",
+    "deskripsi": "Persetujuan substansi RTRW/RDTR, KKPR, sinkronisasi pemanfaatan ruang, dan forum penataan ruang"
+  },
+  {
+    "id": "prog_tata_ruang_2_10_01",
+    "kodeProgram": "2.10.01",
+    "namaProgram": "PROGRAM REDISTRIBUSI TANAH, DAN GANTI KERUGIAN PROGRAM TANAH KELEBIHAN MAKSIMUM DAN TANAH ABSENTEE",
+    "bidangId": "tata_ruang",
+    "deskripsi": "Gugus Tugas Reforma Agraria (GTRA) dan redistribusi tanah di Kabupaten Demak"
+  },
+  {
+    "id": "prog_tata_ruang_2_10_02",
+    "kodeProgram": "2.10.02",
+    "namaProgram": "PROGRAM PENATAGUNAAN TANAH",
+    "bidangId": "tata_ruang",
+    "deskripsi": "Koordinasi konsolidasi tanah dan penataan penguasaan tanah daerah"
   }
 ];
 
 export const INITIAL_SIPD_KEGIATAN = [
-  // --- BINA MARGA ---
   {
-    id: 'keg_bm_penyelenggaraan_jalan',
-    programId: 'prog_bm_jalan',
-    kodeKegiatan: '1.03.02.2.01',
-    namaKegiatan: 'Penyelenggaraan Jalan Kabupaten/Kota',
-    bidangId: 'bina_marga'
-  },
-
-  // --- SUMBER DAYA AIR & BINA KONSTRUKSI ---
-  {
-    id: 'keg_sda_sungai_pantai',
-    programId: 'prog_sda_air',
-    kodeKegiatan: '1.03.03.2.01',
-    namaKegiatan: 'Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai',
-    bidangId: 'sda_bk'
+    "id": "keg_sekretariat_1",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.01",
+    "namaKegiatan": "Perencanaan, Penganggaran, dan Evaluasi Kinerja Perangkat Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_sda_irigasi',
-    programId: 'prog_sda_air',
-    kodeKegiatan: '1.03.03.2.02',
-    namaKegiatan: 'Pengembangan dan Pengelolaan Sistem Irigasi',
-    bidangId: 'sda_bk'
+    "id": "keg_sekretariat_2",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.02",
+    "namaKegiatan": "Administrasi Keuangan Perangkat Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_sda_bina_konstruksi',
-    programId: 'prog_sda_jakon',
-    kodeKegiatan: '1.03.07.2.01',
-    namaKegiatan: 'Penyelenggaraan Pelatihan dan Tertib Jasa Konstruksi',
-    bidangId: 'sda_bk'
-  },
-
-  // --- CIPTA KARYA ---
-  {
-    id: 'keg_ck_penyelenggaraan_gedung',
-    programId: 'prog_ck_gedung',
-    kodeKegiatan: '1.03.04.2.01',
-    namaKegiatan: 'Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota',
-    bidangId: 'cipta_karya'
+    "id": "keg_sekretariat_3",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.03",
+    "namaKegiatan": "Administrasi Barang Milik Daerah pada Perangkat Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_ck_pengembangan_spam',
-    programId: 'prog_ck_spam',
-    kodeKegiatan: '1.03.05.2.01',
-    namaKegiatan: 'Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM)',
-    bidangId: 'cipta_karya'
+    "id": "keg_sekretariat_4",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.04",
+    "namaKegiatan": "Administrasi Kepegawaian Perangkat Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_ck_air_limbah_persampahan',
-    programId: 'prog_ck_sanitasi',
-    kodeKegiatan: '1.03.06.2.01',
-    namaKegiatan: 'Pengembangan Sistem Pengolahan Air Limbah Domestik & Persampahan',
-    bidangId: 'cipta_karya'
-  },
-
-  // --- TATA RUANG & PERTANAHAN ---
-  {
-    id: 'keg_trp_perencanaan_ruang',
-    programId: 'prog_trp_tataruang',
-    kodeKegiatan: '1.03.08.2.01',
-    namaKegiatan: 'Perencanaan Tata Ruang Wilayah dan Rencana Rinci Tata Ruang',
-    bidangId: 'tata_ruang'
+    "id": "keg_sekretariat_5",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.06",
+    "namaKegiatan": "Administrasi Umum Perangkat Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_trp_pengendalian_ruang',
-    programId: 'prog_trp_tataruang',
-    kodeKegiatan: '1.03.08.2.02',
-    namaKegiatan: 'Pemanfaatan dan Pengendalian Ruang Wilayah Daerah',
-    bidangId: 'tata_ruang'
+    "id": "keg_sekretariat_6",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.07",
+    "namaKegiatan": "Pengadaan Barang Milik Daerah Penunjang Urusan Pemerintah Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_trp_pengadaan_tanah',
-    programId: 'prog_trp_tanah',
-    kodeKegiatan: '1.03.09.2.01',
-    namaKegiatan: 'Fasilitasi Pengadaan dan Pengukuran Tanah Kepentingan Umum',
-    bidangId: 'tata_ruang'
-  },
-
-  // --- SEKRETARIAT ---
-  {
-    id: 'keg_sek_perencanaan_keuangan',
-    programId: 'prog_sek_penunjang',
-    kodeKegiatan: '1.03.01.2.01',
-    namaKegiatan: 'Perencanaan, Penganggaran, dan Evaluasi Kinerja Perangkat Daerah',
-    bidangId: 'sekretariat'
+    "id": "keg_sekretariat_7",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.08",
+    "namaKegiatan": "Penyediaan Jasa Penunjang Urusan Pemerintahan Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_sek_administrasi_umum',
-    programId: 'prog_sek_penunjang',
-    kodeKegiatan: '1.03.01.2.06',
-    namaKegiatan: 'Administrasi Umum dan Perlengkapan Perangkat Daerah',
-    bidangId: 'sekretariat'
+    "id": "keg_sekretariat_8",
+    "programId": "prog_sekretariat_1_03_01",
+    "kodeKegiatan": "1.03.01.2.09",
+    "namaKegiatan": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'keg_sek_pengadaan_bmd',
-    programId: 'prog_sek_penunjang',
-    kodeKegiatan: '1.03.01.2.07',
-    namaKegiatan: 'Pengadaan Barang Milik Daerah Penunjang Urusan Pemerintah Daerah',
-    bidangId: 'sekretariat'
+    "id": "keg_sda_bk_9",
+    "programId": "prog_sda_bk_1_03_02",
+    "kodeKegiatan": "1.03.02.2.01",
+    "namaKegiatan": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
+    "bidangId": "sda_bk"
   },
   {
-    id: 'keg_sek_pemeliharaan_bmd',
-    programId: 'prog_sek_penunjang',
-    kodeKegiatan: '1.03.01.2.08',
-    namaKegiatan: 'Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintah Daerah',
-    bidangId: 'sekretariat'
+    "id": "keg_sda_bk_10",
+    "programId": "prog_sda_bk_1_03_02",
+    "kodeKegiatan": "1.03.02.2.02",
+    "namaKegiatan": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "keg_cipta_karya_11",
+    "programId": "prog_cipta_karya_1_03_03",
+    "kodeKegiatan": "1.03.03.2.01",
+    "namaKegiatan": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "keg_cipta_karya_12",
+    "programId": "prog_cipta_karya_1_03_05",
+    "kodeKegiatan": "1.03.05.2.01",
+    "namaKegiatan": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "keg_cipta_karya_13",
+    "programId": "prog_cipta_karya_1_03_06",
+    "kodeKegiatan": "1.03.06.2.01",
+    "namaKegiatan": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "keg_cipta_karya_14",
+    "programId": "prog_cipta_karya_1_03_08",
+    "kodeKegiatan": "1.03.08.2.01",
+    "namaKegiatan": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "keg_bina_marga_15",
+    "programId": "prog_bina_marga_1_03_10",
+    "kodeKegiatan": "1.03.10.2.01",
+    "namaKegiatan": "Penyelenggaraan Jalan Kabupaten/Kota",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "keg_sda_bk_16",
+    "programId": "prog_sda_bk_1_03_11",
+    "kodeKegiatan": "1.03.11.2.01",
+    "namaKegiatan": "Penyelenggaraan Pelatihan Tenaga Terampil Konstruksi",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "keg_tata_ruang_17",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kodeKegiatan": "1.03.12.2.01",
+    "namaKegiatan": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "keg_tata_ruang_18",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kodeKegiatan": "1.03.12.2.02",
+    "namaKegiatan": "Koordinasi dan Sinkronisasi Perencanaan Tata Ruang Daerah Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "keg_tata_ruang_19",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kodeKegiatan": "1.03.12.2.03",
+    "namaKegiatan": "Koordinasi dan Sinkronisasi Pemanfaatan Ruang Daerah Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "keg_tata_ruang_20",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kodeKegiatan": "1.03.12.2.04",
+    "namaKegiatan": "Koordinasi dan Sinkronisasi Pengendalian Pemanfaatan Ruang Daerah Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "keg_tata_ruang_21",
+    "programId": "prog_tata_ruang_2_10_01",
+    "kodeKegiatan": "2.10.01.2.01",
+    "namaKegiatan": "Penetapan Subjek dan Objek Redistribusi Tanah serta Ganti Kerugian Tanah Kelebihan Maksimum dan Tanah Absentee dalam 1 (Satu)",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "keg_tata_ruang_22",
+    "programId": "prog_tata_ruang_2_10_02",
+    "kodeKegiatan": "2.10.02.2.01",
+    "namaKegiatan": "Penggunaan Tanah yang Hamparannya dalam satu Daerah Kabupaten/Kota",
+    "bidangId": "tata_ruang"
   }
 ];
 
 export const INITIAL_SIPD_SUB_KEGIATAN = [
-  // --- BINA MARGA (Penyelenggaraan Jalan) ---
   {
-    id: 'subkeg_bm_pembangunan_jalan',
-    kegiatanId: 'keg_bm_penyelenggaraan_jalan',
-    programId: 'prog_bm_jalan',
-    kodeSubKegiatan: '1.03.02.2.01.0001',
-    namaSubKegiatan: 'Pembangunan Jalan',
-    kinerjaIndikator: 'Panjang jalan baru yang dibangun',
-    satuanTarget: 'Km',
-    bidangId: 'bina_marga'
+    "id": "sub_sekretariat_1",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_1",
+    "kodeSubKegiatan": "1.03.01.2.01.01",
+    "namaSubKegiatan": "Penyusunan Dokumen Perencanaan Perangkat Daerah",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_bm_rekonstruksi_jalan',
-    kegiatanId: 'keg_bm_penyelenggaraan_jalan',
-    programId: 'prog_bm_jalan',
-    kodeSubKegiatan: '1.03.02.2.01.0003',
-    namaSubKegiatan: 'Rekonstruksi Jalan (Peningkatan / Rigid Pavement)',
-    kinerjaIndikator: 'Panjang jalan kabupaten yang direkonstruksi',
-    satuanTarget: 'Km',
-    bidangId: 'bina_marga'
+    "id": "sub_sekretariat_2",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_1",
+    "kodeSubKegiatan": "1.03.01.2.01.02",
+    "namaSubKegiatan": "Koordinasi dan Penyusunan Dokumen RKA-SKPD",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_bm_pelebaran_jalan',
-    kegiatanId: 'keg_bm_penyelenggaraan_jalan',
-    programId: 'prog_bm_jalan',
-    kodeSubKegiatan: '1.03.02.2.01.0004',
-    namaSubKegiatan: 'Pelebaran Jalan Menuju Standar',
-    kinerjaIndikator: 'Panjang jalan yang diperlebar bahu dan perkerasan',
-    satuanTarget: 'Km',
-    bidangId: 'bina_marga'
+    "id": "sub_sekretariat_3",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_1",
+    "kodeSubKegiatan": "1.03.01.2.01.03",
+    "namaSubKegiatan": "Koordinasi dan Penyusunan DPA-SKPD",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_bm_pembangunan_jembatan',
-    kegiatanId: 'keg_bm_penyelenggaraan_jalan',
-    programId: 'prog_bm_jalan',
-    kodeSubKegiatan: '1.03.02.2.01.0009',
-    namaSubKegiatan: 'Pembangunan Jembatan',
-    kinerjaIndikator: 'Jumlah jembatan penghubung yang dibangun',
-    satuanTarget: 'Unit / Meter',
-    bidangId: 'bina_marga'
+    "id": "sub_sekretariat_4",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_1",
+    "kodeSubKegiatan": "1.03.01.2.01.06",
+    "namaSubKegiatan": "Koordinasi dan   Penyusunan Laporan Capaian Kinerja dan Ikhtisar Realisasi Kinerja SKPD",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_bm_pemeliharaan_berkala',
-    kegiatanId: 'keg_bm_penyelenggaraan_jalan',
-    programId: 'prog_bm_jalan',
-    kodeSubKegiatan: '1.03.02.2.01.0013',
-    namaSubKegiatan: 'Pemeliharaan Berkala Jalan',
-    kinerjaIndikator: 'Panjang jalan yang dipelihara berkala / overlay aspal',
-    satuanTarget: 'Km',
-    bidangId: 'bina_marga'
-  },
-
-  // --- SUMBER DAYA AIR & BINA KONSTRUKSI ---
-  {
-    id: 'subkeg_sda_normalisasi_sungai',
-    kegiatanId: 'keg_sda_sungai_pantai',
-    programId: 'prog_sda_air',
-    kodeSubKegiatan: '1.03.03.2.01.0001',
-    namaSubKegiatan: 'Normalisasi Saluran Sungai dan Pengendalian Banjir',
-    kinerjaIndikator: 'Panjang sungai yang dinormalisasi dan tanggul kritis diperkuat',
-    satuanTarget: 'Km / Titik',
-    bidangId: 'sda_bk'
+    "id": "sub_sekretariat_5",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_2",
+    "kodeSubKegiatan": "1.03.01.2.02.01",
+    "namaSubKegiatan": "Penyediaan Gaji dan Tunjangan ASN",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sda_pembangunan_embung',
-    kegiatanId: 'keg_sda_sungai_pantai',
-    programId: 'prog_sda_air',
-    kodeSubKegiatan: '1.03.03.2.01.0006',
-    namaSubKegiatan: 'Pembangunan Embung dan Penampung Air Lainnya',
-    kinerjaIndikator: 'Kapasitas tampung air tawar konservasi pesisir',
-    satuanTarget: 'Unit / M3',
-    bidangId: 'sda_bk'
+    "id": "sub_sekretariat_6",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_2",
+    "kodeSubKegiatan": "1.03.01.2.02.02",
+    "namaSubKegiatan": "Penyediaan Administrasi Pelaksanaan Tugas ASN",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sda_rehabilitasi_irigasi',
-    kegiatanId: 'keg_sda_irigasi',
-    programId: 'prog_sda_air',
-    kodeSubKegiatan: '1.03.03.2.02.0001',
-    namaSubKegiatan: 'Rehabilitasi Jaringan Irigasi Permukaan (D.I.)',
-    kinerjaIndikator: 'Luas baku sawah irigasi yang terairi optimal',
-    satuanTarget: 'Hektar / Meter',
-    bidangId: 'sda_bk'
+    "id": "sub_sekretariat_7",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_3",
+    "kodeSubKegiatan": "1.03.01.2.03.01",
+    "namaSubKegiatan": "Penyusunan Perencanaan Kebutuhan Barang Milik Daerah SKPD",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sda_tanggul_banjir',
-    kegiatanId: 'keg_sda_sungai_pantai',
-    programId: 'prog_sda_air',
-    kodeSubKegiatan: '1.03.03.2.01.0003',
-    namaSubKegiatan: 'Pembangunan Tanggul & Pengendalian Banjir Sungai',
-    kinerjaIndikator: 'Panjang tanggul sungai penahan luapan banjir',
-    satuanTarget: 'Meter',
-    bidangId: 'sda_bk'
+    "id": "sub_sekretariat_8",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_4",
+    "kodeSubKegiatan": "1.03.01.2.04.01",
+    "namaSubKegiatan": "Pengadaan Pakaian Dinas Beserta Atribut Kelengkapannya",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sda_drainase_perkotaan',
-    kegiatanId: 'keg_sda_irigasi',
-    programId: 'prog_sda_air',
-    kodeSubKegiatan: '1.03.03.2.02.0003',
-    namaSubKegiatan: 'Peningkatan Saluran Drainase Perkotaan & Kolam Retensi',
-    kinerjaIndikator: 'Panjang drainase dan kapasitas kolam retensi perkotaan',
-    satuanTarget: 'Meter / Unit',
-    bidangId: 'sda_bk'
+    "id": "sub_sekretariat_9",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_4",
+    "kodeSubKegiatan": "1.03.01.2.04.02",
+    "namaSubKegiatan": "Pendidikan dan Pelatihan Pegawai Berdasarkan Tugas dan Fungsi",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sda_pelatihan_jakon',
-    kegiatanId: 'keg_sda_bina_konstruksi',
-    programId: 'prog_sda_jakon',
-    kodeSubKegiatan: '1.03.07.2.01.0001',
-    namaSubKegiatan: 'Fasilitasi Sertifikasi dan Pembinaan Jasa Konstruksi',
-    kinerjaIndikator: 'Jumlah tenaga kerja konstruksi tersertifikasi',
-    satuanTarget: 'Orang',
-    bidangId: 'sda_bk'
-  },
-
-  // --- CIPTA KARYA ---
-  {
-    id: 'subkeg_ck_penataan_kawasan',
-    kegiatanId: 'keg_ck_penyelenggaraan_gedung',
-    programId: 'prog_ck_gedung',
-    kodeSubKegiatan: '1.03.04.2.01.0007',
-    namaSubKegiatan: 'Penataan Kawasan Permukiman dan Ruang Terbuka Publik (Alun-Alun/Plaza)',
-    kinerjaIndikator: 'Luas kawasan ruang publik yang ditata',
-    satuanTarget: 'Kawasan / M2',
-    bidangId: 'cipta_karya'
+    "id": "sub_sekretariat_10",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_5",
+    "kodeSubKegiatan": "1.03.01.2.06.01",
+    "namaSubKegiatan": "Penyediaan Komponen Instalasi Listrik/Penerangan Bangunan Kantor",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_ck_distribusi_air_minum',
-    kegiatanId: 'keg_ck_pengembangan_spam',
-    programId: 'prog_ck_spam',
-    kodeSubKegiatan: '1.03.05.2.01.0001',
-    namaSubKegiatan: 'Pembangunan Jaringan Distribusi Air Minum SPAM Ibukota Kecamatan',
-    kinerjaIndikator: 'Jumlah sambungan rumah (SR) terlayani air bersih',
-    satuanTarget: 'SR / Meter',
-    bidangId: 'cipta_karya'
+    "id": "sub_sekretariat_11",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_5",
+    "kodeSubKegiatan": "1.03.01.2.06.02",
+    "namaSubKegiatan": "Penyediaan Peralatan dan Perlengkapan Kantor",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_ck_spald_t',
-    kegiatanId: 'keg_ck_air_limbah_persampahan',
-    programId: 'prog_ck_sanitasi',
-    kodeSubKegiatan: '1.03.06.2.01.0001',
-    namaSubKegiatan: 'Pembangunan Sistem Pengolahan Air Limbah Domestik (SPALD-T)',
-    kinerjaIndikator: 'Kapasitas IPAL domestik terpusat permukiman padat',
-    satuanTarget: 'Unit / KK',
-    bidangId: 'cipta_karya'
+    "id": "sub_sekretariat_12",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_5",
+    "kodeSubKegiatan": "1.03.01.2.06.03",
+    "namaSubKegiatan": "Penyediaan Peralatan Rumah Tangga",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_ck_rehab_gedung',
-    kegiatanId: 'keg_ck_penyelenggaraan_gedung',
-    programId: 'prog_ck_gedung',
-    kodeSubKegiatan: '1.03.04.2.01.0006',
-    namaSubKegiatan: 'Rehabilitasi Fasilitas Gedung Kantor & Bangunan Pelayanan Publik',
-    kinerjaIndikator: 'Jumlah fasilitas gedung yang direhabilitasi',
-    satuanTarget: 'Unit Gedung',
-    bidangId: 'cipta_karya'
+    "id": "sub_sekretariat_13",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_5",
+    "kodeSubKegiatan": "1.03.01.2.06.05",
+    "namaSubKegiatan": "Penyediaan Barang Cetakan dan Penggandaan",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_ck_tps3r_sampah',
-    kegiatanId: 'keg_ck_air_limbah_persampahan',
-    programId: 'prog_ck_sanitasi',
-    kodeSubKegiatan: '1.03.06.2.01.0004',
-    namaSubKegiatan: 'Pembangunan Fasilitas TPS3R Sirkular Ekonomi & Pengolahan Sampah Terpadu',
-    kinerjaIndikator: 'Fasilitas TPS3R beroperasi aktif',
-    satuanTarget: 'Unit TPS3R',
-    bidangId: 'cipta_karya'
-  },
-
-  // --- TATA RUANG & PERTANAHAN ---
-  {
-    id: 'subkeg_trp_rdtr_industri',
-    kegiatanId: 'keg_trp_perencanaan_ruang',
-    programId: 'prog_trp_tataruang',
-    kodeSubKegiatan: '1.03.08.2.01.0002',
-    namaSubKegiatan: 'Penyusunan Rencana Detail Tata Ruang (RDTR) Koridor Strategis/Industri',
-    kinerjaIndikator: 'Dokumen Perkada RDTR tersusun dan terintegrasi OSS',
-    satuanTarget: 'Dokumen',
-    bidangId: 'tata_ruang'
+    "id": "sub_sekretariat_14",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_5",
+    "kodeSubKegiatan": "1.03.01.2.06.09",
+    "namaSubKegiatan": "Penyelenggaraan Rapat Koordinasi dan Konsultasi SKPD",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_trp_kajian_tanggul_laut',
-    kegiatanId: 'keg_trp_pengendalian_ruang',
-    programId: 'prog_trp_tataruang',
-    kodeSubKegiatan: '1.03.08.2.02.0003',
-    namaSubKegiatan: 'Kajian Teknis Tata Ruang Tanggul Laut Mitigasi Rob Pesisir',
-    kinerjaIndikator: 'Laporan kajian daya dukung mitigasi rob pesisir',
-    satuanTarget: 'Laporan Kajian',
-    bidangId: 'tata_ruang'
+    "id": "sub_sekretariat_15",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_5",
+    "kodeSubKegiatan": "1.03.01.2.06.10",
+    "namaSubKegiatan": "Penatausahaan Arsip Dinamis pada SKPD",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_trp_kkpr_gis',
-    kegiatanId: 'keg_trp_pengendalian_ruang',
-    programId: 'prog_trp_tataruang',
-    kodeSubKegiatan: '1.03.08.2.02.0001',
-    namaSubKegiatan: 'Penyusunan Dokumen KKPR & Pemetaan GIS Kawasan Pertumbuhan',
-    kinerjaIndikator: 'Basis data peta geospasial tematik KKPR',
-    satuanTarget: 'Peta / Titik',
-    bidangId: 'tata_ruang'
+    "id": "sub_sekretariat_16",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_6",
+    "kodeSubKegiatan": "1.03.01.2.07.01",
+    "namaSubKegiatan": "Pengadaan Kendaraan Dinas Operasional atau lapangan",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_trp_pengukuran_tanah',
-    kegiatanId: 'keg_trp_pengadaan_tanah',
-    programId: 'prog_trp_tanah',
-    kodeSubKegiatan: '1.03.09.2.01.0001',
-    namaSubKegiatan: 'Fasilitasi Pengukuran Teknis Pertanahan Jalan & Saluran Irigasi',
-    kinerjaIndikator: 'Jumlah persil/bidang tanah jalan teridentifikasi',
-    satuanTarget: 'Bidang / Persil',
-    bidangId: 'tata_ruang'
+    "id": "sub_sekretariat_17",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_6",
+    "kodeSubKegiatan": "1.03.01.2.07.05",
+    "namaSubKegiatan": "Pengadaan Mebel",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_trp_rtrw_kabupaten',
-    kegiatanId: 'keg_trp_perencanaan_ruang',
-    programId: 'prog_trp_tataruang',
-    kodeSubKegiatan: '1.03.08.2.01.0001',
-    namaSubKegiatan: 'Kajian Evaluasi Daya Dukung Lingkungan RTRW Kabupaten Demak',
-    kinerjaIndikator: 'Dokumen evaluasi revisi Perda RTRW',
-    satuanTarget: 'Dokumen',
-    bidangId: 'tata_ruang'
-  },
-
-  // --- SEKRETARIAT ---
-  {
-    id: 'subkeg_sek_server_simon',
-    kegiatanId: 'keg_sek_administrasi_umum',
-    programId: 'prog_sek_penunjang',
-    kodeSubKegiatan: '1.03.01.2.06.0001',
-    namaSubKegiatan: 'Pengadaan Server Database & Integrasi Sistem Jaringan SIMON SATUPUTARU',
-    kinerjaIndikator: 'Ketersediaan perangkat server terintegrasi',
-    satuanTarget: 'Unit Perangkat',
-    bidangId: 'sekretariat'
+    "id": "sub_sekretariat_18",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_6",
+    "kodeSubKegiatan": "1.03.01.2.07.06",
+    "namaSubKegiatan": "Pengadaan Peralatan dan Mesin Lainnya",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sek_kendaraan_operasional',
-    kegiatanId: 'keg_sek_pengadaan_bmd',
-    programId: 'prog_sek_penunjang',
-    kodeSubKegiatan: '1.03.01.2.07.0001',
-    namaSubKegiatan: 'Pengadaan Kendaraan Operasional Lapangan Pengawasan Infrastruktur',
-    kinerjaIndikator: 'Jumlah kendaraan dinas lapangan pengawasan',
-    satuanTarget: 'Unit Kendaraan',
-    bidangId: 'sekretariat'
+    "id": "sub_sekretariat_19",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_7",
+    "kodeSubKegiatan": "1.03.01.2.08.01",
+    "namaSubKegiatan": "Penyediaan Jasa Surat Menyurat",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sek_renja_lakip',
-    kegiatanId: 'keg_sek_perencanaan_keuangan',
-    programId: 'prog_sek_penunjang',
-    kodeSubKegiatan: '1.03.01.2.01.0001',
-    namaSubKegiatan: 'Penyusunan Dokumen Renja, RKT & LAKIP Akuntabilitas Kinerja',
-    kinerjaIndikator: 'Dokumen perencanaan & akuntabilitas kinerja SAKIP',
-    satuanTarget: 'Dokumen',
-    bidangId: 'sekretariat'
+    "id": "sub_sekretariat_20",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_7",
+    "kodeSubKegiatan": "1.03.01.2.08.02",
+    "namaSubKegiatan": "Penyediaan Jasa Komunikasi, Sumber Daya Air dan Listrik",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sek_pemeliharaan_gedung',
-    kegiatanId: 'keg_sek_pemeliharaan_bmd',
-    programId: 'prog_sek_penunjang',
-    kodeSubKegiatan: '1.03.01.2.08.0001',
-    namaSubKegiatan: 'Pemeliharaan Rutin Sarana Prasarana Gedung Pelayanan DINPUTARU',
-    kinerjaIndikator: 'Gedung kantor terawat dengan layak',
-    satuanTarget: 'Unit Gedung',
-    bidangId: 'sekretariat'
+    "id": "sub_sekretariat_21",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_7",
+    "kodeSubKegiatan": "1.03.01.2.08.03",
+    "namaSubKegiatan": "Penyediaan Jasa Peralatan dan Perlengkapan Kantor",
+    "bidangId": "sekretariat"
   },
   {
-    id: 'subkeg_sek_atk_kantor',
-    kegiatanId: 'keg_sek_administrasi_umum',
-    programId: 'prog_sek_penunjang',
-    kodeSubKegiatan: '1.03.01.2.06.0002',
-    namaSubKegiatan: 'Pengadaan Perlengkapan Kantor & ATK Pendukung Administrasi Kedinasan',
-    kinerjaIndikator: 'Ketersediaan ATK penunjang seluruh bidang',
-    satuanTarget: 'Paket Kebutuhan',
-    bidangId: 'sekretariat'
+    "id": "sub_sekretariat_22",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.01",
+    "namaSubKegiatan": "Penyediaan Jasa Pemeliharaan, Biaya Pemeliharaan,  dan Pajak Kendaraan Perorangan Dinas atau Kendaraan Dinas Jabatan",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sekretariat_23",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.02",
+    "namaSubKegiatan": "Penyediaan Jasa Pemeliharaan, Biaya Pemeliharaan, Pajak, dan Perizinan Kendaraan Dinas Operasional atau Lapangan",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sekretariat_24",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.03",
+    "namaSubKegiatan": "Penyediaan Jasa Pemeliharaan, Biaya Pemeliharaan dan Perizinan Alat Besar",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sekretariat_25",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.05",
+    "namaSubKegiatan": "Pemeliharaan Mebel",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sekretariat_26",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.05",
+    "namaSubKegiatan": "Pemeliharaan Peralatan dan Mesin Lainnya",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sekretariat_27",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.09",
+    "namaSubKegiatan": "Pemeliharaan/Rehabilitasi Gedung Kantor dan Bangunan Lainnya",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sekretariat_28",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.10",
+    "namaSubKegiatan": "Pemeliharaan/Rehabilitasi Sarana dan Prasarana Gedung Kantor atau Bangunan Lainnya",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sekretariat_29",
+    "programId": "prog_sekretariat_1_03_01",
+    "kegiatanId": "keg_sekretariat_8",
+    "kodeSubKegiatan": "1.03.01.2.09.08",
+    "namaSubKegiatan": "Pemeliharaan/Rehabilitasi Sarana dan Prasarana Pendukung Gedung Kantor atau Bangunan Lainnya",
+    "bidangId": "sekretariat"
+  },
+  {
+    "id": "sub_sda_bk_30",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.01",
+    "namaSubKegiatan": "Pembangunan Stasiun Pompa Banjir",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_31",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.02",
+    "namaSubKegiatan": "Rehabilitasi Pintu Air/Bendung Pengendali Banjir",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_32",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.03",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Sungai",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_33",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.04",
+    "namaSubKegiatan": "Koordinasi dan Sinkronisasi Peningkatan Kapasitas Kelembagaan Pengelolaan SDA Kewenangan Kabupaten/Kota",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_34",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.24",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Check Dam",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_35",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.06",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Stasiun Pompa Banjir",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_36",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.26",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Embung dan Penampung Air lainnya",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_37",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.08",
+    "namaSubKegiatan": "Normalisasi/Restorasi Sungai",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_38",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.09",
+    "namaSubKegiatan": "Penyusunan Rencana Teknis dan Dokumen Lingkungan Hidup untuk Konstruksi Pengendali Banjir, Lahar, dan Pengaman Pantai",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_39",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.10",
+    "namaSubKegiatan": "Pembangunan Embung dan Penampung Air Lainnya",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_40",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.11",
+    "namaSubKegiatan": "Pembangunan Pintu Air/Bendung Pengendali Banjir",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_41",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.63",
+    "namaSubKegiatan": "Rehabilitasi Tanggul Sungai",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_42",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_9",
+    "kodeSubKegiatan": "1.03.02.2.01.13",
+    "namaSubKegiatan": "Rehabilitasi Embung",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_43",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_10",
+    "kodeSubKegiatan": "1.03.02.2.02.01",
+    "namaSubKegiatan": "Rehabilitasi Jaringan Irigasi Permukaan",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_44",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_10",
+    "kodeSubKegiatan": "1.03.02.2.02.02",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Jaringan Irigasi Permukaan",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_45",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_10",
+    "kodeSubKegiatan": "1.03.02.2.02.03",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Jaringan Irigasi Tambak",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_46",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_10",
+    "kodeSubKegiatan": "1.03.02.2.02.04",
+    "namaSubKegiatan": "Penguatan Kapasitas Kelembagaan Pengelola Irigasi Kewenangan Kabupaten/Kota",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_47",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_10",
+    "kodeSubKegiatan": "1.03.02.2.02.05",
+    "namaSubKegiatan": "Penyusunan Dukungan Teknis bidang Irigasi dan Rawa",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_48",
+    "programId": "prog_sda_bk_1_03_02",
+    "kegiatanId": "keg_sda_bk_10",
+    "kodeSubKegiatan": "1.03.02.2.02.06",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Bendung Irigasi",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_cipta_karya_49",
+    "programId": "prog_cipta_karya_1_03_03",
+    "kegiatanId": "keg_cipta_karya_11",
+    "kodeSubKegiatan": "1.03.03.2.01.01",
+    "namaSubKegiatan": "Penyusunan Rencana, Kebijakan, Strategi dan Teknis Sistem Penyediaan Air Minum (SPAM)",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_50",
+    "programId": "prog_cipta_karya_1_03_03",
+    "kegiatanId": "keg_cipta_karya_11",
+    "kodeSubKegiatan": "1.03.03.2.01.04",
+    "namaSubKegiatan": "Peningkatan Sistem Penyediaan Air Minum (SPAM) Jaringan Perpipaan",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_51",
+    "programId": "prog_cipta_karya_1_03_03",
+    "kegiatanId": "keg_cipta_karya_11",
+    "kodeSubKegiatan": "1.03.03.2.01.03",
+    "namaSubKegiatan": "Pembangunan Sistem Penyediaan Air Minum (SPAM) Jaringan Perpipaan",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_52",
+    "programId": "prog_cipta_karya_1_03_05",
+    "kegiatanId": "keg_cipta_karya_12",
+    "kodeSubKegiatan": "1.03.05.2.01.01",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Sistem Pengelolaan Air Limbah Domestik (SPALD)",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_53",
+    "programId": "prog_cipta_karya_1_03_05",
+    "kegiatanId": "keg_cipta_karya_12",
+    "kodeSubKegiatan": "1.03.05.2.01.02",
+    "namaSubKegiatan": "Pembinaan dan Pemberdayaan Masyarakat dalam Pengembangan Sistem Pengelolaan Air Limbah Domestik (SPALD)",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_54",
+    "programId": "prog_cipta_karya_1_03_05",
+    "kegiatanId": "keg_cipta_karya_12",
+    "kodeSubKegiatan": "1.03.05.2.01.06",
+    "namaSubKegiatan": "Penyediaan Unit pengolahan setempat",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_55",
+    "programId": "prog_cipta_karya_1_03_05",
+    "kegiatanId": "keg_cipta_karya_12",
+    "kodeSubKegiatan": "1.03.05.2.01.04",
+    "namaSubKegiatan": "Penyusunan Rencana, Kebijakan, Strategi dan Teknis Sistem Pengelolaan Air Limbah Domestik (SPALD)",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_56",
+    "programId": "prog_cipta_karya_1_03_06",
+    "kegiatanId": "keg_cipta_karya_13",
+    "kodeSubKegiatan": "1.03.06.2.01.01",
+    "namaSubKegiatan": "Rehabilitasi Sistem Drainase Perkotaan",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_57",
+    "programId": "prog_cipta_karya_1_03_06",
+    "kegiatanId": "keg_cipta_karya_13",
+    "kodeSubKegiatan": "1.03.06.2.01.09",
+    "namaSubKegiatan": "Pembangunan Sistem Drainase Perkotaan",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_58",
+    "programId": "prog_cipta_karya_1_03_06",
+    "kegiatanId": "keg_cipta_karya_13",
+    "kodeSubKegiatan": "1.03.06.2.01.03",
+    "namaSubKegiatan": "Operasi dan Pemeliharaan Sistem Drainase Perkotaan",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_59",
+    "programId": "prog_cipta_karya_1_03_08",
+    "kegiatanId": "keg_cipta_karya_14",
+    "kodeSubKegiatan": "1.03.08.2.01.02",
+    "namaSubKegiatan": "Pemeliharaan, Perawatan, dan Pemeriksaan Berkala Bangunan Gedung untuk Kepentingan Strategis Daerah Kabupaten/Kota",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_60",
+    "programId": "prog_cipta_karya_1_03_08",
+    "kegiatanId": "keg_cipta_karya_14",
+    "kodeSubKegiatan": "1.03.08.2.01.02",
+    "namaSubKegiatan": "Pembangunan, Pemanfaatan, Pelestarian dan Pembongkaran Bangunan Gedung untuk Kepentingan Strategis Daerah Kabupaten/Kota",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_cipta_karya_61",
+    "programId": "prog_cipta_karya_1_03_08",
+    "kegiatanId": "keg_cipta_karya_14",
+    "kodeSubKegiatan": "1.03.08.2.01.03",
+    "namaSubKegiatan": "Penyelenggaraan Penerbitan Persetujuan Bangunan Gedung (PBG), Sertifikat Laik Fungsi (SLF), Surat Bukti Kepemilikan Bangunan Gedung (SBKBG), Rencana Teknis Pembongkaran Bangunan Gedung (RTB), Tim Profesi Ahli (TPA), Tim Penilai Teknis (TPT), Penilik, dan Pendataan Bangunan Gedung melalui SIMBG",
+    "bidangId": "cipta_karya"
+  },
+  {
+    "id": "sub_bina_marga_62",
+    "programId": "prog_bina_marga_1_03_10",
+    "kegiatanId": "keg_bina_marga_15",
+    "kodeSubKegiatan": "1.03.10.2.01.01",
+    "namaSubKegiatan": "Penyusunan Rencana, Kebijakan, Strategi dan Teknis Pengembangan Jaringan Jalan serta Perencanaan Teknis Penyelenggaraan Jalan dan Jembatan",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "sub_bina_marga_63",
+    "programId": "prog_bina_marga_1_03_10",
+    "kegiatanId": "keg_bina_marga_15",
+    "kodeSubKegiatan": "1.03.10.2.01.05",
+    "namaSubKegiatan": "Pembangunan Jalan",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "sub_bina_marga_64",
+    "programId": "prog_bina_marga_1_03_10",
+    "kegiatanId": "keg_bina_marga_15",
+    "kodeSubKegiatan": "1.03.10.2.01.03",
+    "namaSubKegiatan": "Rehabilitasi Jalan",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "sub_bina_marga_65",
+    "programId": "prog_bina_marga_1_03_10",
+    "kegiatanId": "keg_bina_marga_15",
+    "kodeSubKegiatan": "1.03.10.2.01.04",
+    "namaSubKegiatan": "Rehabilitasi Jembatan",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "sub_bina_marga_66",
+    "programId": "prog_bina_marga_1_03_10",
+    "kegiatanId": "keg_bina_marga_15",
+    "kodeSubKegiatan": "1.03.10.2.01.05",
+    "namaSubKegiatan": "Pengawasan Penyelenggaraan Jalan Kewenangan Kabupaten/Kota dan Desa",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "sub_bina_marga_67",
+    "programId": "prog_bina_marga_1_03_10",
+    "kegiatanId": "keg_bina_marga_15",
+    "kodeSubKegiatan": "1.03.10.2.01.06",
+    "namaSubKegiatan": "Pelabaran Jalan Menuju Standar",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "sub_bina_marga_68",
+    "programId": "prog_bina_marga_1_03_10",
+    "kegiatanId": "keg_bina_marga_15",
+    "kodeSubKegiatan": "1.03.10.2.01.07",
+    "namaSubKegiatan": "Pembangunan Jembatan",
+    "bidangId": "bina_marga"
+  },
+  {
+    "id": "sub_sda_bk_69",
+    "programId": "prog_sda_bk_1_03_11",
+    "kegiatanId": "keg_sda_bk_16",
+    "kodeSubKegiatan": "1.03.11.2.01.01",
+    "namaSubKegiatan": "Pembinaan dan Peningkatan Kapasitas Kelembagaan Jasa Konstruksi",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_sda_bk_70",
+    "programId": "prog_sda_bk_1_03_11",
+    "kegiatanId": "keg_sda_bk_16",
+    "kodeSubKegiatan": "1.03.11.2.01.02",
+    "namaSubKegiatan": "Pelatihan Tenaga Kerja Konstruksi Kualifikasi Jabatan Operator, Teknisi atau Analis",
+    "bidangId": "sda_bk"
+  },
+  {
+    "id": "sub_tata_ruang_71",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_17",
+    "kodeSubKegiatan": "1.03.12.2.01.01",
+    "namaSubKegiatan": "Pelaksanaan Persetujuan Substansi RTRW Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_72",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_17",
+    "kodeSubKegiatan": "1.03.12.2.01.02",
+    "namaSubKegiatan": "Pelaksanaan Persetujuan Substansi RDTR Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_73",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_17",
+    "kodeSubKegiatan": "1.03.12.2.01.03",
+    "namaSubKegiatan": "Penetapan RDTR Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_74",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_17",
+    "kodeSubKegiatan": "1.03.12.2.01.04",
+    "namaSubKegiatan": "Penetapan RTRW Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_75",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_17",
+    "kodeSubKegiatan": "1.03.12.2.01.05",
+    "namaSubKegiatan": "Sosialisasi Kebijakan dan Peraturan Perundang-Undangan Bidang Penataan Ruang",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_76",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_18",
+    "kodeSubKegiatan": "1.03.12.2.02.01",
+    "namaSubKegiatan": "Penyusunan Peta Dasar",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_77",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_18",
+    "kodeSubKegiatan": "1.03.12.2.02.02",
+    "namaSubKegiatan": "Penyusunan RDTR Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_78",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_18",
+    "kodeSubKegiatan": "1.03.12.2.02.03",
+    "namaSubKegiatan": "Peningkatan kompetensi SDM bidang penataan ruang",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_79",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_18",
+    "kodeSubKegiatan": "1.03.12.2.02.04",
+    "namaSubKegiatan": "Penyusunan RTRW Kabupaten/Kota",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_80",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_19",
+    "kodeSubKegiatan": "1.03.12.2.03.01",
+    "namaSubKegiatan": "Koordinasi Penyelenggaraan Penataan Ruang",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_81",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_19",
+    "kodeSubKegiatan": "1.03.12.2.03.02",
+    "namaSubKegiatan": "Pelaksanaan Persetujuan Kesesuaian Kegiatan Pemanfaatan Ruang",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_82",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_19",
+    "kodeSubKegiatan": "1.03.12.2.03.03",
+    "namaSubKegiatan": "Pelaksanaan Sinkronisasi Program Pemanfaatan Ruang",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_83",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_19",
+    "kodeSubKegiatan": "1.03.12.2.03.04",
+    "namaSubKegiatan": "Sistem informasi dan komunikasi penataan ruang",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_84",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_20",
+    "kodeSubKegiatan": "1.03.12.2.04.01",
+    "namaSubKegiatan": "Penilaian Pelaksanaan Kesesuaian Kegiatan Pemanfaatan Ruang dan/atau pernyataan mandiri pelaku UMK",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_85",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_20",
+    "kodeSubKegiatan": "1.03.12.2.04.02",
+    "namaSubKegiatan": "Operasionalisasi Tugas dan Fungsi Forum Penataan Ruang",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_86",
+    "programId": "prog_tata_ruang_1_03_12",
+    "kegiatanId": "keg_tata_ruang_20",
+    "kodeSubKegiatan": "1.03.12.2.04.03",
+    "namaSubKegiatan": "Pengawasan TURBINLAK dan Pengawasan Fungsi dan Manfaat",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_87",
+    "programId": "prog_tata_ruang_2_10_01",
+    "kegiatanId": "keg_tata_ruang_21",
+    "kodeSubKegiatan": "2.10.01.2.01.03",
+    "namaSubKegiatan": "Koordinasi Pembentukan dan Pelaksanaan Fungsi Gugus Tugas Reforma Agraria Tingkat Kabupaten/Kota.",
+    "bidangId": "tata_ruang"
+  },
+  {
+    "id": "sub_tata_ruang_88",
+    "programId": "prog_tata_ruang_2_10_02",
+    "kegiatanId": "keg_tata_ruang_22",
+    "kodeSubKegiatan": "2.10.02.2.01.01",
+    "namaSubKegiatan": "Koordinasi dan Sinkronisasi Pelaksanaan Konsolidasi Tanah Kabupaten/Kota",
+    "bidangId": "tata_ruang"
   }
 ];
 
 /**
- * Mencari atau mencocokkan sub kegiatan otomatis untuk proyek yang belum memiliki subKegiatanId
+ * Mencocokkan paket pekerjaan dengan sub kegiatan SIPD
  */
-export const matchProjectToSubKegiatan = (project, subKegiatanList = INITIAL_SIPD_SUB_KEGIATAN) => {
-  if (!project) return null;
+export const matchProjectToSubKegiatan = (project, subKegiatanList) => {
+  if (!project || !Array.isArray(subKegiatanList) || subKegiatanList.length === 0) return null;
 
-  // Jika sudah memiliki subKegiatanId yang valid di list
   if (project.subKegiatanId) {
-    const found = subKegiatanList.find((s) => s.id === project.subKegiatanId || s.kodeSubKegiatan === project.subKegiatanId);
+    const found = subKegiatanList.find((s) => s.id === project.subKegiatanId);
     if (found) return found;
   }
 
-  // Jika memiliki kodeSubKegiatan
   if (project.kodeSubKegiatan) {
     const found = subKegiatanList.find((s) => s.kodeSubKegiatan === project.kodeSubKegiatan);
     if (found) return found;
@@ -509,76 +993,43 @@ export const matchProjectToSubKegiatan = (project, subKegiatanList = INITIAL_SIP
     const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('air minum') || s.namaSubKegiatan.toLowerCase().includes('spam'));
     if (match) return match;
   }
-  if (nama.includes('limbah') || nama.includes('spald')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('spald') || s.namaSubKegiatan.toLowerCase().includes('limbah'));
+  if (nama.includes('limbah') || nama.includes('spald') || nama.includes('septik') || nama.includes('sanitasi')) {
+    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('limbah') || s.namaSubKegiatan.toLowerCase().includes('setempat'));
     if (match) return match;
   }
-  if (nama.includes('sampah') || nama.includes('tps3r')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('tps3r') || s.namaSubKegiatan.toLowerCase().includes('sampah'));
+  if (nama.includes('gedung') || nama.includes('bangunan')) {
+    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('gedung') || s.namaSubKegiatan.toLowerCase().includes('bangunan'));
     if (match) return match;
   }
-  if (nama.includes('alun-alun') || nama.includes('kawasan') || nama.includes('plaza')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('alun-alun') || s.namaSubKegiatan.toLowerCase().includes('penataan kawasan'));
-    if (match) return match;
-  }
-  if (nama.includes('gedung') && bId === 'cipta_karya') {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('gedung'));
+  if (nama.includes('pompa') || nama.includes('banjir')) {
+    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pompa') || s.namaSubKegiatan.toLowerCase().includes('sungai'));
     if (match) return match;
   }
   if (nama.includes('sungai') || nama.includes('normalisasi')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('normalisasi'));
+    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('sungai') || s.namaSubKegiatan.toLowerCase().includes('tanggul'));
     if (match) return match;
   }
-  if (nama.includes('embung')) {
+  if (nama.includes('embung') || nama.includes('waduk')) {
     const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('embung'));
     if (match) return match;
   }
-  if (nama.includes('irigasi')) {
+  if (nama.includes('irigasi') || nama.includes('d.i.')) {
     const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('irigasi'));
     if (match) return match;
   }
-  if (nama.includes('tanggul')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('tanggul'));
-    if (match) return match;
-  }
-  if (nama.includes('drainase') || nama.includes('retensi')) {
+  if (nama.includes('drainase') || nama.includes('saluran')) {
     const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('drainase'));
     if (match) return match;
   }
-  if (nama.includes('rdtr')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('rdtr'));
+  if (nama.includes('rtrw') || nama.includes('rdtr') || nama.includes('tata ruang')) {
+    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('rtrw') || s.namaSubKegiatan.toLowerCase().includes('rdtr') || s.namaSubKegiatan.toLowerCase().includes('tata ruang'));
     if (match) return match;
   }
-  if (nama.includes('rtrw')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('rtrw'));
-    if (match) return match;
-  }
-  if (nama.includes('kkpr') || nama.includes('gis')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('kkpr'));
-    if (match) return match;
-  }
-  if (nama.includes('pertanahan') || nama.includes('tanah')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pertanahan') || s.namaSubKegiatan.toLowerCase().includes('tanah'));
-    if (match) return match;
-  }
-  if (nama.includes('server') || nama.includes('jaringan') || nama.includes('simon')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('server'));
-    if (match) return match;
-  }
-  if (nama.includes('kendaraan')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('kendaraan'));
-    if (match) return match;
-  }
-  if (nama.includes('renja') || nama.includes('lakip')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('renja') || s.namaSubKegiatan.toLowerCase().includes('lakip'));
-    if (match) return match;
-  }
-  if (nama.includes('atk') || nama.includes('kantor')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('atk'));
+  if (nama.includes('tanah') || nama.includes('reforma') || nama.includes('gtra')) {
+    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('tanah') || s.namaSubKegiatan.toLowerCase().includes('reforma'));
     if (match) return match;
   }
 
-  // Fallback: kandidat pertama di bidang yang sama
   return candidates.length > 0 ? candidates[0] : subKegiatanList[0];
 };
 
@@ -586,7 +1037,6 @@ export const matchProjectToSubKegiatan = (project, subKegiatanList = INITIAL_SIP
  * Membangun struktur pohon hierarki Program -> Kegiatan -> Sub Kegiatan -> Pekerjaan
  */
 export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
-  // Mapping project ke sub kegiatan
   const projectMapBySubKeg = {};
   projects.forEach((prj) => {
     const subKeg = matchProjectToSubKegiatan(prj, subKegiatans);
@@ -600,7 +1050,6 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
     });
   });
 
-  // Susun Pohon
   return programs.map((prog) => {
     const progKegiatans = kegiatans.filter((k) => k.programId === prog.id);
 
@@ -627,9 +1076,8 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
         const subTotalPencairan = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataKeuangan?.totalPencairan) || 0), 0);
         const subFisikSum = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataFisik?.progresRealisasi) || 0), 0);
         const subAvgFisik = subProjects.length > 0 ? parseFloat((subFisikSum / subProjects.length).toFixed(1)) : 0;
-        const subPersenKeu = subTotalKontrak > 0 ? parseFloat(((subTotalPencairan / subTotalKontrak) * 100).toFixed(1)) : 0;
+        const subPersenKeu = subTotalKontrak > 0 ? parseFloat(((subTotalPencairan / subTotalKontrak) * 100).toFixed(1)) : (subTotalPagu > 0 ? parseFloat(((subTotalPencairan / subTotalPagu) * 100).toFixed(1)) : 0);
 
-        // Akumulasi ke Kegiatan
         kegTotalPagu += subTotalPagu;
         kegTotalKontrak += subTotalKontrak;
         kegTotalPencairan += subTotalPencairan;
@@ -649,9 +1097,8 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
       });
 
       const kegAvgFisik = kegProjectCount > 0 ? parseFloat((kegFisikSum / kegProjectCount).toFixed(1)) : 0;
-      const kegPersenKeu = kegTotalKontrak > 0 ? parseFloat(((kegTotalPencairan / kegTotalKontrak) * 100).toFixed(1)) : 0;
+      const kegPersenKeu = kegTotalKontrak > 0 ? parseFloat(((kegTotalPencairan / kegTotalKontrak) * 100).toFixed(1)) : (kegTotalPagu > 0 ? parseFloat(((kegTotalPencairan / kegTotalPagu) * 100).toFixed(1)) : 0);
 
-      // Akumulasi ke Program
       progTotalPagu += kegTotalPagu;
       progTotalKontrak += kegTotalKontrak;
       progTotalPencairan += kegTotalPencairan;
@@ -671,7 +1118,7 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
     });
 
     const progAvgFisik = progProjectCount > 0 ? parseFloat((progFisikSum / progProjectCount).toFixed(1)) : 0;
-    const progPersenKeu = progTotalKontrak > 0 ? parseFloat(((progTotalPencairan / progTotalKontrak) * 100).toFixed(1)) : 0;
+    const progPersenKeu = progTotalKontrak > 0 ? parseFloat(((progTotalPencairan / progTotalKontrak) * 100).toFixed(1)) : (progTotalPagu > 0 ? parseFloat(((progTotalPencairan / progTotalPagu) * 100).toFixed(1)) : 0);
 
     return {
       ...prog,

@@ -28,6 +28,20 @@ import {
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
+  // Data Versioning & Auto-Migration for Real 2026 Dataset & Users
+  if (typeof window !== 'undefined') {
+    const currentVersion = localStorage.getItem('simon_app_version_2026');
+    if (currentVersion !== '2026_real_v1') {
+      localStorage.removeItem('simon_users');
+      localStorage.removeItem('simon_current_user');
+      localStorage.removeItem('simon_projects_v2');
+      localStorage.removeItem('simon_sipd_programs');
+      localStorage.removeItem('simon_sipd_kegiatans');
+      localStorage.removeItem('simon_sipd_sub_kegiatans');
+      localStorage.setItem('simon_app_version_2026', '2026_real_v1');
+    }
+  }
+
   // Years State
   const [years, setYears] = useState(() => {
     const saved = localStorage.getItem('simon_years');
@@ -512,7 +526,10 @@ export const AppProvider = ({ children }) => {
   // Authentication: Login & Logout
   const login = (identifier, password) => {
     const cleanId = (identifier || '').trim().toLowerCase();
-    const user = users.find((u) => {
+    const cleanPass = (password || '').trim();
+
+    // Match users by username, email, or NIP
+    let matchedUsers = users.filter((u) => {
       const uEmail = (u.email || '').toLowerCase();
       const uUser = (u.username || '').toLowerCase();
       const uNip = (u.nip || '').replace(/\s+/g, '');
@@ -520,12 +537,21 @@ export const AppProvider = ({ children }) => {
       return uEmail === cleanId || uUser === cleanId || (uNip && uNip === cleanNip);
     });
 
-    if (!user) {
+    // Fallback for koor.sekre1 / koor.sekre2
+    if (matchedUsers.length === 0 && cleanId === 'koor.sekre1') {
+      const rani = users.find((u) => u.username === 'koor.sekre2');
+      if (rani) matchedUsers = [rani];
+    }
+
+    if (matchedUsers.length === 0) {
       return { success: false, message: 'Akun dengan email / username / NIP tersebut tidak ditemukan!' };
     }
 
+    // Pick user matching password if multiple matched (e.g. same NIP or dual roles)
+    const user = matchedUsers.find((u) => (u.password || 'pupr2025') === cleanPass) || matchedUsers[0];
+
     const userPassword = user.password || 'pupr2025';
-    if (userPassword !== password) {
+    if (userPassword !== cleanPass) {
       return { success: false, message: 'Kata sandi / Password salah! Silakan periksa kembali.' };
     }
 

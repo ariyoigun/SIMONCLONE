@@ -175,6 +175,22 @@ export const ROLE_DEFINITIONS = {
     readOnly: true,
     keterangan: 'Memantau paket pekerjaan pengadaan dan fasilitas di Sub Bagian Umum & Kepegawaian (Read-Only).'
   },
+  koordinator_sekretariat: {
+    id: 'koordinator_sekretariat',
+    nama: 'Koordinator Sekretariat',
+    badge: 'Koordinator Sekretariat',
+    canSeeAllBidang: true,
+    canCreate: true,
+    canEdit: true,
+    canDelete: false,
+    canManageUsers: false,
+    canManageYears: false,
+    canManageSettings: false,
+    canAccessSPJ: true,
+    canEditSPJ: true,
+    readOnly: false,
+    keterangan: 'Koordinator pengelolaan administrasi, SPJ keuangan, verifikasi berkas, dan pekerjaan kesekretariatan DINPUTARU.'
+  },
   koordinator_umpeg: {
     id: 'koordinator_umpeg',
     nama: 'Koordinator Sub Bagian Umum & Kepegawaian',
@@ -860,12 +876,12 @@ export const DEFAULT_SYSTEM_SETTINGS = {
   bidangDescriptions: DEFAULT_BIDANG_DESCRIPTIONS,
   website: 'https://dinputaru.demakkab.go.id',
   // Pejabat Pimpinan Penandatangan Resmi (Dapat diubah Superadmin)
-  namaKepalaDinas: 'Ir. H. Achmad Syafii, CES, MT',
-  nipKepalaDinas: '19680514 199303 1 002',
+  namaKepalaDinas: 'Ir. NANANG TASUNAR DAVID NARUTOMO, MM',
+  nipKepalaDinas: '196702101993031009',
   pangkatKepalaDinas: 'Pembina Utama Madya (IV/d)',
   jabatanKepalaDinas: 'Kepala Dinas Pekerjaan Umum dan Penataan Ruang',
-  namaSekretaris: 'Dra. Hj. Siti Nurhasanah, MM',
-  nipSekretaris: '19720819 199803 2 003',
+  namaSekretaris: 'NANING PRIH HATININGRUM, S.IP,M.Si',
+  nipSekretaris: '197801082010012019',
   pangkatSekretaris: 'Pembina Tingkat I (IV/b)',
   jabatanSekretaris: 'Sekretaris DINPUTARU',
   galeri: [

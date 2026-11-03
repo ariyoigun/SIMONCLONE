@@ -20,8 +20,8 @@ import AppLogo from '../components/AppLogo';
 const LoginView = ({ onBackToLanding }) => {
   const { login, users, systemSettings } = useApp();
 
-  const [identifier, setIdentifier] = useState('admin');
-  const [password, setPassword] = useState('pupr2025');
+  const [identifier, setIdentifier] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -492,78 +492,7 @@ const LoginView = ({ onBackToLanding }) => {
             </button>
           </form>
 
-          {/* Quick Demo Role Picker for Easy Testing */}
-          <div
-            style={{
-              marginTop: 26,
-              paddingTop: 18,
-              borderTop: '1px solid #f1f5f9'
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 10 }}>
-              <Sparkles size={14} color="#f59e0b" />
-              <span style={{ fontSize: 11.5, fontWeight: 700, color: '#64748b' }}>
-                AKUN UJI COBA INTERNAL (KLIK UNTUK PENGISIAN CEPAT):
-              </span>
-            </div>
-
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                gap: 8
-              }}
-            >
-              {users.slice(0, 6).map((u) => {
-                const isSelected =
-                  identifier === (u.username || u.email?.split('@')[0]);
-
-                return (
-                  <button
-                    key={u.id}
-                    type="button"
-                    onClick={() => handleQuickSelectUser(u)}
-                    style={{
-                      padding: '7px 10px',
-                      borderRadius: 8,
-                      border: isSelected ? '1.5px solid #0284c7' : '1px solid #e2e8f0',
-                      background: isSelected ? '#f0f9ff' : '#ffffff',
-                      textAlign: 'left',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: 8,
-                      transition: 'all 0.15s'
-                    }}
-                  >
-                    <img
-                      src={u.avatar}
-                      alt=""
-                      style={{ width: 24, height: 24, borderRadius: '50%', objectFit: 'cover' }}
-                    />
-                    <div style={{ minWidth: 0, flex: 1 }}>
-                      <div
-                        style={{
-                          fontSize: 11.5,
-                          fontWeight: 700,
-                          color: '#0f2c59',
-                          whiteSpace: 'nowrap',
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis'
-                        }}
-                      >
-                        {u.nama.split(',')[0]}
-                      </div>
-                      <div style={{ fontSize: 10, color: '#64748b' }}>
-                        {u.role}
-                      </div>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
           </div>
-        </div>
 
         {/* Footer */}
         <div

@@ -105,7 +105,7 @@ const UserManagementModal = ({ isOpen, onClose }) => {
     let bidangId = formData.bidangId;
     if (['superadmin', 'kadin', 'sekretaris', 'koordinator_pendapatan'].includes(formData.role)) {
       bidangId = formData.role === 'koordinator_pendapatan' ? 'sekretariat' : null;
-    } else if (['kasubag_program_keuangan', 'koordinator_program_keuangan', 'kasubag_umpeg', 'koordinator_umpeg'].includes(formData.role)) {
+    } else if (['kasubag_program_keuangan', 'koordinator_program_keuangan', 'kasubag_umpeg', 'koordinator_umpeg', 'koordinator_sekretariat'].includes(formData.role)) {
       bidangId = 'sekretariat';
     }
 
@@ -300,6 +300,7 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                     <option value="koordinator_program_keuangan">Koordinator / Verifikator Program & Keuangan (Edit SPJ)</option>
                     <option value="kasubag_umpeg">Kepala Sub Bagian Umum & Kepegawaian (Umpeg)</option>
                     <option value="koordinator_umpeg">Koordinator Sub Bagian Umum & Kepegawaian</option>
+                    <option value="koordinator_sekretariat">Koordinator Sekretariat (Pengelolaan & SPJ Sekretariat)</option>
                     <option value="sekretaris">Sekretaris Dinas (Melihat Semua Bidang Dinas)</option>
                     <option value="kadin">Kepala Dinas (Melihat Semua Bidang Dinas)</option>
                     <option value="superadmin">Super Admin (Akses Penuh Semua Pengaturan)</option>
