@@ -71,7 +71,7 @@ if ($action === 'test_db' || $action === 'test_connection') {
         $serverVersion = $t_pdo->query("SELECT VERSION()")->fetchColumn();
 
         // Cek tabel penting
-        $expected = ['system_settings', 'bidang', 'users', 'projects', 'master_tags'];
+        $expected = ['system_settings', 'bidang', 'users', 'projects', 'sipd_programs', 'sipd_kegiatan', 'sipd_sub_kegiatan', 'years'];
         $tblResults = [];
         foreach ($expected as $tbl) {
             try {
@@ -194,6 +194,35 @@ if ($action === 'load_all') {
         $tagsRows = $stmtTags->fetchAll();
         $tags = array_map(function($r) { return $r['nama_tag']; }, $tagsRows);
 
+        // Ambil SIPD Programs jika ada
+        $sipdPrograms = [];
+        try {
+            $stmtProg = $pdo->query("SELECT id, kode_program AS kodeProgram, nama_program AS namaProgram, bidang_id AS bidangId, deskripsi FROM sipd_programs ORDER BY kode_program ASC");
+            $sipdPrograms = $stmtProg->fetchAll();
+        } catch (Exception $e) {}
+
+        // Ambil SIPD Kegiatan jika ada
+        $sipdKegiatan = [];
+        try {
+            $stmtKeg = $pdo->query("SELECT id, program_id AS programId, kode_kegiatan AS kodeKegiatan, nama_kegiatan AS namaKegiatan, bidang_id AS bidangId FROM sipd_kegiatan ORDER BY kode_kegiatan ASC");
+            $sipdKegiatan = $stmtKeg->fetchAll();
+        } catch (Exception $e) {}
+
+        // Ambil SIPD Sub Kegiatan jika ada
+        $sipdSubKegiatan = [];
+        try {
+            $stmtSub = $pdo->query("SELECT id, program_id AS programId, kegiatan_id AS kegiatanId, kode_sub_kegiatan AS kodeSubKegiatan, nama_sub_kegiatan AS namaSubKegiatan, bidang_id AS bidangId FROM sipd_sub_kegiatan ORDER BY kode_sub_kegiatan ASC");
+            $sipdSubKegiatan = $stmtSub->fetchAll();
+        } catch (Exception $e) {}
+
+        // Ambil Years jika ada
+        $years = [];
+        try {
+            $stmtYears = $pdo->query("SELECT tahun FROM years ORDER BY tahun ASC");
+            $yearsRows = $stmtYears->fetchAll();
+            $years = array_map(function($r) { return (int)$r['tahun']; }, $yearsRows);
+        } catch (Exception $e) {}
+
         // Ambil Projects
         $stmtProjects = $pdo->query("SELECT * FROM projects ORDER BY tahun_anggaran DESC, id ASC");
         $projectsRaw = $stmtProjects->fetchAll();
@@ -204,6 +233,9 @@ if ($action === 'load_all') {
                 'tahunAnggaran' => (int)$p['tahun_anggaran'],
                 'bidangId' => $p['bidang_id'],
                 'subBagian' => $p['sub_bagian'],
+                'subKegiatanId' => $p['sub_kegiatan_id'] ?? null,
+                'kodeSubKegiatan' => $p['kode_sub_kegiatan'] ?? null,
+                'kategoriPekerjaan' => $p['kategori_pekerjaan'] ?? 'Fisik',
                 'namaPaket' => $p['nama_paket'],
                 'jenisAnggaran' => $p['jenis_anggaran'],
                 'sumberDana' => $p['sumber_dana'],
@@ -255,7 +287,11 @@ if ($action === 'load_all') {
                 'systemSettings' => $settings,
                 'users' => $users,
                 'tags' => $tags,
-                'projects' => $projects
+                'projects' => $projects,
+                'sipdPrograms' => $sipdPrograms,
+                'sipdKegiatans' => $sipdKegiatan,
+                'sipdSubKegiatans' => $sipdSubKegiatan,
+                'years' => $years
             ]
         ]);
     } catch (Exception $e) {
@@ -280,8 +316,10 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
         $f = $p['dataFisik'] ?? [];
         $q = $p['dataKeuangan'] ?? [];
 
+        $katPekerjaan = $p['kategoriPekerjaan'] ?? (($p['tipePengadaan'] ?? '') === 'Swakelola' ? 'Swakelola' : ((($p['tipePengadaan'] ?? '') === 'e-Purchasing') ? 'Barang' : 'Fisik'));
+
         $sql = "INSERT INTO projects (
-            id, tahun_anggaran, bidang_id, sub_bagian, nama_paket, jenis_anggaran, sumber_dana,
+            id, tahun_anggaran, bidang_id, sub_bagian, sub_kegiatan_id, kode_sub_kegiatan, nama_paket, kategori_pekerjaan, jenis_anggaran, sumber_dana,
             kode_rup, tipe_pengadaan, pagu_anggaran, hps, nilai_kontrak, nomor_kontrak,
             tanggal_kontrak, tanggal_mulai, tanggal_selesai, pelaksana_nama, pelaksana_bank,
             pelaksana_rekening, pelaksana_npwp, kecamatan, desa, lokasi_lengkap, latitude,
@@ -289,7 +327,7 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             progres_rencana, progres_realisasi, deviasi_fisik, status_deviasi, kurva_s_json,
             total_pencairan, persen_keuangan, sisa_anggaran, termin_json, spj_status, spj_checklist_json
         ) VALUES (
-            :id, :tahun_anggaran, :bidang_id, :sub_bagian, :nama_paket, :jenis_anggaran, :sumber_dana,
+            :id, :tahun_anggaran, :bidang_id, :sub_bagian, :sub_kegiatan_id, :kode_sub_kegiatan, :nama_paket, :kategori_pekerjaan, :jenis_anggaran, :sumber_dana,
             :kode_rup, :tipe_pengadaan, :pagu_anggaran, :hps, :nilai_kontrak, :nomor_kontrak,
             :tanggal_kontrak, :tanggal_mulai, :tanggal_selesai, :pelaksana_nama, :pelaksana_bank,
             :pelaksana_rekening, :pelaksana_npwp, :kecamatan, :desa, :lokasi_lengkap, :latitude,
@@ -300,7 +338,10 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             tahun_anggaran = VALUES(tahun_anggaran),
             bidang_id = VALUES(bidang_id),
             sub_bagian = VALUES(sub_bagian),
+            sub_kegiatan_id = VALUES(sub_kegiatan_id),
+            kode_sub_kegiatan = VALUES(kode_sub_kegiatan),
             nama_paket = VALUES(nama_paket),
+            kategori_pekerjaan = VALUES(kategori_pekerjaan),
             jenis_anggaran = VALUES(jenis_anggaran),
             sumber_dana = VALUES(sumber_dana),
             kode_rup = VALUES(kode_rup),
@@ -343,7 +384,10 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             ':tahun_anggaran' => (int)($p['tahunAnggaran'] ?? 2026),
             ':bidang_id' => $p['bidangId'] ?? 'bina_marga',
             ':sub_bagian' => $p['subBagian'] ?? '',
+            ':sub_kegiatan_id' => $p['subKegiatanId'] ?? null,
+            ':kode_sub_kegiatan' => $p['kodeSubKegiatan'] ?? null,
             ':nama_paket' => $p['namaPaket'] ?? '',
+            ':kategori_pekerjaan' => $katPekerjaan,
             ':jenis_anggaran' => $p['jenisAnggaran'] ?? 'Murni',
             ':sumber_dana' => $p['sumberDana'] ?? 'APBD Murni (DAU)',
             ':kode_rup' => $p['kodeRup'] ?? '',

@@ -452,6 +452,18 @@ export const AppProvider = ({ children }) => {
             if (Array.isArray(json.data.tags) && json.data.tags.length > 0) {
               setTags(json.data.tags);
             }
+            if (Array.isArray(json.data.sipdPrograms) && json.data.sipdPrograms.length > 0) {
+              setSipdPrograms(json.data.sipdPrograms);
+            }
+            if (Array.isArray(json.data.sipdKegiatans) && json.data.sipdKegiatans.length > 0) {
+              setSipdKegiatans(json.data.sipdKegiatans);
+            }
+            if (Array.isArray(json.data.sipdSubKegiatans) && json.data.sipdSubKegiatans.length > 0) {
+              setSipdSubKegiatans(json.data.sipdSubKegiatans);
+            }
+            if (Array.isArray(json.data.years) && json.data.years.length > 0) {
+              setYears(json.data.years);
+            }
           }
         }
       } catch (err) {

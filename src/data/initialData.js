@@ -1,4 +1,4 @@
-import { REAL_PROJECTS_2026 } from './realProjects2026';
+import { REAL_PROJECTS_2026 } from './realProjects2026.js';
 
 export const INITIAL_USERS = [
   {
