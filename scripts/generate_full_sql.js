@@ -389,6 +389,9 @@ CREATE TABLE IF NOT EXISTS \`projects\` (
   \`spj_status\` varchar(50) NOT NULL DEFAULT 'belum_diajukan',
   \`spj_checklist_json\` longtext DEFAULT NULL,
   
+  -- Modul Audit Log Riwayat Perubahan
+  \`logs_json\` longtext DEFAULT NULL,
+  
   \`created_at\` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   \`updated_at\` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (\`id\`),
@@ -418,7 +421,7 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   \`tanggal_selesai\`, \`pelaksana_nama\`, \`pelaksana_bank\`, \`pelaksana_rekening\`, \`pelaksana_npwp\`, \`kecamatan\`, \`desa\`, \`lokasi_lengkap\`, 
   \`latitude\`, \`longitude\`, \`tags_json\`, \`is_public_highlight\`, \`status_tahap_pra_kontrak\`, \`pra_kontrak_json\`,
   \`progres_rencana\`, \`progres_realisasi\`, \`deviasi_fisik\`, \`status_deviasi\`, \`kurva_s_json\`,
-  \`total_pencairan\`, \`persen_keuangan\`, \`sisa_anggaran\`, \`termin_json\`, \`spj_status\`, \`spj_checklist_json\`
+  \`total_pencairan\`, \`persen_keuangan\`, \`sisa_anggaran\`, \`termin_json\`, \`spj_status\`, \`spj_checklist_json\`, \`logs_json\`
 ) VALUES
 `;
 
@@ -471,7 +474,8 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   ${sqlEscape(q.sisaAnggaran || 0)},
   ${sqlEscape(q.terminHistory || [])},
   ${sqlEscape(p.spjStatus || 'belum_diajukan')},
-  ${sqlEscape(p.dataSpj || null)}
+  ${sqlEscape(p.dataSpj || null)},
+  ${sqlEscape(p.logs || [])}
 )`;
   }).join(',\n');
 
@@ -495,3 +499,4 @@ sql += `COMMIT;
 const outputPath = path.resolve('./database/simon_satuputaru.sql');
 fs.writeFileSync(outputPath, sql, 'utf8');
 console.log(`Successfully generated: ${outputPath} (${(sql.length / 1024).toFixed(1)} KB)`);
+

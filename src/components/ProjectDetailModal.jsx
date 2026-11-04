@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { BIDANG_LIST, TAHAPAN_PRA_KONTRAK, STATUS_SPJ_KEUANGAN } from '../data/constants';
 import ScurveChart from './ScurveChart';
+import ConfirmModal from './ConfirmModal';
+import NotificationModal from './NotificationModal';
 import {
   X,
   Building2,
@@ -20,14 +22,124 @@ import {
   Tag,
   Navigation,
   ExternalLink,
-  Sparkles
+  Sparkles,
+  History,
+  PlusCircle,
+  User,
+  Shield,
+  FileCheck
 } from 'lucide-react';
 
 const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
-  const { praKontrakStages = [] } = useApp();
-  const [activeTab, setActiveTab] = useState('fisik'); // 'fisik' | 'keuangan' | 'spj' | 'prakontrak' | 'identitas'
-
   if (!isOpen || !project) return null;
+
+  const { praKontrakStages = [], currentUser, addProjectLog, canEditProject } = useApp();
+  const [activeTab, setActiveTab] = useState('fisik'); // 'fisik' | 'keuangan' | 'spj' | 'prakontrak' | 'identitas' | 'logs'
+  const [showLogInput, setShowLogInput] = useState(false);
+
+  // Form input progres bulanan & log
+  const [logBulan, setLogBulan] = useState('Oktober');
+  const [logSp2d, setLogSp2d] = useState('');
+  const [logFisik, setLogFisik] = useState('');
+  const [logCatatan, setLogCatatan] = useState('');
+
+  // Confirmation & notification popups
+  const [confirmModal, setConfirmModal] = useState({
+    isOpen: false,
+    title: '',
+    message: '',
+    confirmText: 'Ya, Simpan Progres',
+    type: 'primary',
+    onConfirm: () => {}
+  });
+
+  const [notifModal, setNotifModal] = useState({
+    isOpen: false,
+    title: '',
+    message: '',
+    type: 'success',
+    btnText: 'OK, Selesai'
+  });
+
+  const canInputProgress = canEditProject ? canEditProject(project) : (currentUser?.role === 'superadmin' || currentUser?.bidangId === project?.bidangId);
+  const logs = Array.isArray(project?.logs) ? project.logs : [];
+
+  const handleSaveProgressLog = (e) => {
+    e.preventDefault();
+    const sp2dVal = parseFloat(logSp2d) || 0;
+    const fisikVal = logFisik !== '' ? parseFloat(logFisik) : undefined;
+    const catatan = logCatatan.trim();
+
+    if (sp2dVal === 0 && (fisikVal === undefined || isNaN(fisikVal)) && !catatan) {
+      setNotifModal({
+        isOpen: true,
+        title: 'Form Belum Lengkap',
+        message: 'Mohon isi nilai penambahan SP2D (Rp), persentase progres fisik (%), atau catatan progres bulanan.',
+        type: 'error',
+        btnText: 'Tutup'
+      });
+      return;
+    }
+
+    setConfirmModal({
+      isOpen: true,
+      title: 'Konfirmasi Input Progres Bulanan & Log',
+      message: (
+        <div>
+          <div>Apakah Anda yakin ingin menyimpan catatan progres bulan <strong>{logBulan}</strong> untuk paket pekerjaan ini?</div>
+          <div style={{ marginTop: 12, padding: '12px 14px', background: '#f8fafc', borderRadius: 8, fontSize: 13, border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {sp2dVal > 0 && (
+              <div>• Nilai SP2D: <strong style={{ color: '#059669' }}>Rp {Math.round(sp2dVal).toLocaleString('id-ID')}</strong></div>
+            )}
+            {fisikVal !== undefined && !isNaN(fisikVal) && (
+              <div>• Progres Fisik: <strong style={{ color: '#0284c7' }}>{fisikVal}%</strong></div>
+            )}
+            {catatan && <div>• Catatan: <em>{catatan}</em></div>}
+            <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: 6, fontSize: 12, color: '#64748b' }}>
+              Dicatat oleh: <strong>{currentUser?.nama || 'Petugas'}</strong> ({currentUser?.jabatan || currentUser?.role || 'Koordinator'})
+            </div>
+          </div>
+          <div style={{ color: '#0369a1', fontSize: 12, marginTop: 8 }}>
+            ℹ️ Sistem akan memperbarui data keuangan/fisik, mencatat entri log, dan memastikan status pekerjaan menjadi Pelaksanaan Kontrak.
+          </div>
+        </div>
+      ),
+      confirmText: 'Ya, Simpan Progres',
+      type: 'primary',
+      onConfirm: () => {
+        setConfirmModal((prev) => ({ ...prev, isOpen: false }));
+
+        let desc = `Koordinator ${currentUser?.nama || 'Petugas'} menambahkan progres bulan ${logBulan}`;
+        if (sp2dVal > 0) desc += `: realisasi SP2D Rp ${Math.round(sp2dVal).toLocaleString('id-ID')}`;
+        if (fisikVal !== undefined && !isNaN(fisikVal)) desc += `, progres fisik ${fisikVal}%`;
+        if (catatan) desc += `. Catatan: ${catatan}`;
+
+        addProjectLog(project.id, {
+          aksi: `Input Progres ${logBulan}`,
+          keterangan: desc,
+          dataChanged: {
+            bulan: logBulan,
+            sp2d: sp2dVal > 0 ? sp2dVal : undefined,
+            progresFisik: fisikVal,
+            catatan: catatan
+          }
+        });
+
+        setNotifModal({
+          isOpen: true,
+          title: 'Data Progres Berhasil Disimpan!',
+          message: `Catatan progres bulan ${logBulan} berhasil disimpan dan dicatat dalam riwayat log pekerjaan.`,
+          type: 'success',
+          btnText: 'OK, Selesai'
+        });
+
+        setLogSp2d('');
+        setLogFisik('');
+        setLogCatatan('');
+        setShowLogInput(false);
+      }
+    });
+  };
 
   const bidang = BIDANG_LIST.find((b) => b.id === project.bidangId);
   const dataFisik = project.dataFisik || {};
@@ -217,12 +329,33 @@ const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
               <Clock size={16} />
               Tahapan Pra-Kontrak
             </button>
-            <button
+                        <button
               className={`tab-btn ${activeTab === 'identitas' ? 'active' : ''}`}
               onClick={() => setActiveTab('identitas')}
             >
               <Building2 size={16} />
               Rekanan & Kontrak
+            </button>
+            <button
+              className={`tab-btn ${activeTab === 'logs' ? 'active' : ''}`}
+              onClick={() => setActiveTab('logs')}
+              style={{ position: 'relative' }}
+            >
+              <History size={16} />
+              Riwayat Log & Perubahan
+              <span
+                style={{
+                  fontSize: 10.5,
+                  fontWeight: 800,
+                  padding: '1px 6px',
+                  borderRadius: 9999,
+                  background: activeTab === 'logs' ? '#0f2c59' : '#e2e8f0',
+                  color: activeTab === 'logs' ? '#ffffff' : '#475569',
+                  marginLeft: 4
+                }}
+              >
+                {logs.length}
+              </span>
             </button>
           </div>
         </div>
@@ -843,6 +976,27 @@ const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
             Tutup
           </button>
         </div>
+      
+        {/* Pop-up Konfirmasi Aksi */}
+        <ConfirmModal
+          isOpen={confirmModal.isOpen}
+          title={confirmModal.title}
+          message={confirmModal.message}
+          confirmText={confirmModal.confirmText}
+          type={confirmModal.type}
+          onConfirm={confirmModal.onConfirm}
+          onCancel={() => setConfirmModal((prev) => ({ ...prev, isOpen: false }))}
+        />
+
+        {/* Pop-up Notifikasi Hasil */}
+        <NotificationModal
+          isOpen={notifModal.isOpen}
+          title={notifModal.title}
+          message={notifModal.message}
+          type={notifModal.type}
+          btnText={notifModal.btnText}
+          onClose={() => setNotifModal((prev) => ({ ...prev, isOpen: false }))}
+        />
       </div>
     </div>
   );

@@ -757,7 +757,7 @@ const PendapatanView = () => {
                           marginTop: 2
                         }}
                       >
-                        {m.realisasi > 0 ? `Rp ${(m.realisasi / 1000000).toFixed(1)}Jt` : '-'}
+                        {m.realisasi > 0 ? `Rp ${Math.round(m.realisasi).toLocaleString('id-ID')}` : '-'}
                       </div>
                     </div>
                   );

@@ -28,6 +28,8 @@ import {
 } from 'lucide-react';
 import { matchProjectToSubKegiatan } from '../data/sipdData';
 import SipdMasterModal from './SipdMasterModal';
+import ConfirmModal from './ConfirmModal';
+import NotificationModal from './NotificationModal';
 
 const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
   const {
@@ -48,6 +50,24 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
   } = useApp();
 
   const [isSipdMasterModalOpen, setIsSipdMasterModalOpen] = useState(false);
+  // Pop-up Konfirmasi & Notifikasi
+  const [confirmModal, setConfirmModal] = useState({
+    isOpen: false,
+    title: '',
+    message: '',
+    confirmText: 'Ya, Simpan',
+    type: 'primary',
+    onConfirm: () => {}
+  });
+
+  const [notifModal, setNotifModal] = useState({
+    isOpen: false,
+    title: '',
+    message: '',
+    type: 'success',
+    btnText: 'OK, Selesai'
+  });
+
 
   const isEdit = !!initialData;
 
@@ -358,22 +378,34 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.namaPaket.trim()) {
-      alert('Nama Paket Pekerjaan wajib diisi!');
+      setNotifModal({
+        isOpen: true,
+        title: 'Form Belum Lengkap',
+        message: 'Nama Paket Pekerjaan wajib diisi!',
+        type: 'error',
+        btnText: 'Tutup'
+      });
       setActiveTab('umum');
       return;
     }
 
     const statusTahap = formData.tahapPraKontrak?.status;
     const isBatal = statusTahap === 'batal';
-    // Auto-sync isKontrak if status pra-kontrak is 'kontrak'
     const isKontrak = !isBatal && (formData.isKontrak || statusTahap === 'kontrak');
 
     if (isKontrak) {
       if (!formData.dataKontrak?.tanggalMulai || !formData.dataKontrak?.tanggalSelesai) {
-        alert('Untuk paket berstatus Kontrak, isian Tanggal Mulai Kontrak dan Tanggal Akhir Kontrak wajib diisi!');
+        setNotifModal({
+          isOpen: true,
+          title: 'Periode Kontrak Wajib Diisi',
+          message: 'Untuk paket berstatus Kontrak, isian Tanggal Mulai Kontrak dan Tanggal Akhir Kontrak wajib diisi!',
+          type: 'error',
+          btnText: 'Tutup'
+        });
+        setActiveTab('kontrak');
         return;
       }
     }
@@ -403,13 +435,78 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
       }
     };
 
-    if (isEdit) {
-      updateProject(initialData.id, payload);
-    } else {
-      addProject(payload);
-    }
+    setConfirmModal({
+      isOpen: true,
+      title: isEdit ? 'Konfirmasi Simpan Perubahan Paket' : 'Konfirmasi Tambah Paket Baru',
+      message: (
+        <div>
+          <div>Apakah Anda yakin ingin {isEdit ? 'menyimpan perubahan pada' : 'mendaftarkan'} paket pekerjaan:</div>
+          <div style={{ marginTop: 10, padding: 12, background: '#f8fafc', borderRadius: 8, fontSize: 13, border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: 4 }}>
+            <div>• Paket: <strong>{payload.namaPaket}</strong></div>
+            <div>• Pagu: <strong>Rp {Math.round(parseFloat(payload.paguAnggaran) || 0).toLocaleString('id-ID')}</strong></div>
+            {isKontrak && (
+              <div>• Nilai Kontrak: <strong style={{ color: '#059669' }}>Rp {Math.round(parseFloat(payload.dataKontrak?.nilaiKontrak) || 0).toLocaleString('id-ID')}</strong> ({payload.dataKontrak?.namaPenyedia || 'Penyedia'})</div>
+            )}
+            <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: 6, fontSize: 12, color: '#64748b' }}>
+              Pencatat: <strong>{currentUser?.nama || 'Petugas'}</strong>
+            </div>
+          </div>
+        </div>
+      ),
+      confirmText: isEdit ? 'Ya, Simpan Perubahan' : 'Ya, Tambahkan Paket',
+      type: 'primary',
+      onConfirm: () => {
+        setConfirmModal((prev) => ({ ...prev, isOpen: false }));
 
-    onClose();
+        const now = new Date();
+        const waktuStr = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) + ' ' + now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+
+        if (isEdit) {
+          const existingLogs = Array.isArray(initialData?.logs) ? initialData.logs : [];
+          const editLog = {
+            id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+            timestamp: now.toISOString(),
+            waktu: waktuStr,
+            userName: currentUser?.nama || 'Petugas',
+            userRole: currentUser?.role || 'koordinator',
+            userJabatan: currentUser?.jabatan || '',
+            aksi: 'Ubah Data Paket',
+            keterangan: `Koordinator ${currentUser?.nama || 'Petugas'} memperbarui data pekerjaan via Form Edit Paket`
+          };
+          payload.logs = [editLog, ...existingLogs];
+          updateProject(initialData.id, payload);
+
+          setNotifModal({
+            isOpen: true,
+            title: 'Perubahan Berhasil Disimpan!',
+            message: `Data pekerjaan "${payload.namaPaket}" berhasil diperbarui dan dicatat dalam riwayat log.`,
+            type: 'success',
+            btnText: 'OK, Selesai'
+          });
+        } else {
+          const initLog = {
+            id: `log_${Date.now()}_init`,
+            timestamp: now.toISOString(),
+            waktu: waktuStr,
+            userName: currentUser?.nama || 'Petugas',
+            userRole: currentUser?.role || 'koordinator',
+            userJabatan: currentUser?.jabatan || '',
+            aksi: 'Input Paket Baru',
+            keterangan: `Paket pekerjaan didaftarkan pertama kali oleh ${currentUser?.nama || 'Petugas'}`
+          };
+          payload.logs = [initLog];
+          addProject(payload);
+
+          setNotifModal({
+            isOpen: true,
+            title: 'Paket Berhasil Ditambahkan!',
+            message: `Paket pekerjaan baru "${payload.namaPaket}" berhasil didaftarkan ke sistem.`,
+            type: 'success',
+            btnText: 'OK, Selesai'
+          });
+        }
+      }
+    });
   };
 
   // Calculations for preview
@@ -1789,6 +1886,30 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
           onClose={() => setIsSipdMasterModalOpen(false)}
         />
       )}
+    
+      {/* Pop Up Konfirmasi */}
+      <ConfirmModal
+        isOpen={confirmModal.isOpen}
+        title={confirmModal.title}
+        message={confirmModal.message}
+        confirmText={confirmModal.confirmText}
+        type={confirmModal.type}
+        onConfirm={confirmModal.onConfirm}
+        onCancel={() => setConfirmModal((prev) => ({ ...prev, isOpen: false }))}
+      />
+
+      {/* Pop Up Notifikasi */}
+      <NotificationModal
+        isOpen={notifModal.isOpen}
+        title={notifModal.title}
+        message={notifModal.message}
+        type={notifModal.type}
+        btnText={notifModal.btnText}
+        onClose={() => {
+          setNotifModal((prev) => ({ ...prev, isOpen: false }));
+          onClose();
+        }}
+      />
     </div>
   );
 };

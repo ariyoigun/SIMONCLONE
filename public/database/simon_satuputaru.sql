@@ -431,6 +431,9 @@ CREATE TABLE IF NOT EXISTS `projects` (
   `spj_status` varchar(50) NOT NULL DEFAULT 'belum_diajukan',
   `spj_checklist_json` longtext DEFAULT NULL,
   
+  -- Modul Audit Log Riwayat Perubahan
+  `logs_json` longtext DEFAULT NULL,
+  
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -454,7 +457,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_sek_1',
@@ -499,7 +502,8 @@ INSERT INTO `projects` (
   117412864,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_1","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 41.947.136 dan realisasi fisik 26.32% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_2',
@@ -544,7 +548,8 @@ INSERT INTO `projects` (
   5781050,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_2","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 44.218.950 dan realisasi fisik 88.44% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_3',
@@ -589,7 +594,8 @@ INSERT INTO `projects` (
   15710000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_3","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 1.290.000 dan realisasi fisik 7.59% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_4',
@@ -634,7 +640,8 @@ INSERT INTO `projects` (
   5447175,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_4","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 48.452.825 dan realisasi fisik 89.89% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_5',
@@ -669,9 +676,9 @@ INSERT INTO `projects` (
   0,
   'pelaksanaan_kontrak',
   '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-01-02"}}',
-  83,
+  83.33,
   81.47,
-  -1.53,
+  -1.86,
   'Waspada',
   '[]',
   11710298280,
@@ -679,7 +686,8 @@ INSERT INTO `projects` (
   2663125720,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_5","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 11.710.298.280 dan realisasi fisik 81.47% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_6',
@@ -724,7 +732,8 @@ INSERT INTO `projects` (
   331858600,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_6","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 1.287.929.268 dan realisasi fisik 79.51% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_7',
@@ -769,7 +778,8 @@ INSERT INTO `projects` (
   20354750,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_7","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 24.645.250 dan realisasi fisik 54.77% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_8',
@@ -814,7 +824,8 @@ INSERT INTO `projects` (
   100500000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_8","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 17.000.000 dan realisasi fisik 14.47% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_9',
@@ -859,7 +870,8 @@ INSERT INTO `projects` (
   187339100,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_9","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 584.260.900 dan realisasi fisik 75.72% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_10',
@@ -904,7 +916,8 @@ INSERT INTO `projects` (
   1028750,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_10","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 18.971.250 dan realisasi fisik 94.86% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_11',
@@ -949,7 +962,8 @@ INSERT INTO `projects` (
   20770500,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_11","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 39.229.500 dan realisasi fisik 72.69% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_12',
@@ -994,7 +1008,8 @@ INSERT INTO `projects` (
   18219000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_12","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 43.781.000 dan realisasi fisik 88.07% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_13',
@@ -1039,7 +1054,8 @@ INSERT INTO `projects` (
   5130125,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_13","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 39.869.875 dan realisasi fisik 95% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_14',
@@ -1084,7 +1100,8 @@ INSERT INTO `projects` (
   190193744,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_14","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 143.426.256 dan realisasi fisik 50.35% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_15',
@@ -1129,7 +1146,8 @@ INSERT INTO `projects` (
   8713625,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_15","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 41.286.375 dan realisasi fisik 82.57% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_16',
@@ -1162,8 +1180,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Kegiatan Penunjang Perangkat Daerah"]',
   0,
-  'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-01-02"}}',
+  'identifikasi_kebutuhan',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-01-02"}}',
   0,
   0,
   0,
@@ -1174,7 +1192,8 @@ INSERT INTO `projects` (
   262500000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_16","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Pencatatan Sub Kegiatan","keterangan":"Sub kegiatan terdaftar dengan alokasi pagu Rp 262.500.000."}]'
 ),
 (
   'prj_sek_17',
@@ -1219,7 +1238,8 @@ INSERT INTO `projects` (
   50341998,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_17","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 19.880.002 dan realisasi fisik 100% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_18',
@@ -1264,7 +1284,8 @@ INSERT INTO `projects` (
   906623963,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_18","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 194.150.007 dan realisasi fisik 17.64% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_19',
@@ -1309,7 +1330,8 @@ INSERT INTO `projects` (
   3500000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_19","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 1.500.000 dan realisasi fisik 50% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_20',
@@ -1354,7 +1376,8 @@ INSERT INTO `projects` (
   237808213,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_20","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 322.191.787 dan realisasi fisik 58.33% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_21',
@@ -1399,7 +1422,8 @@ INSERT INTO `projects` (
   76899000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_21","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 73.101.000 dan realisasi fisik 58.87% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_22',
@@ -1444,7 +1468,8 @@ INSERT INTO `projects` (
   13217176,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_22","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 35.755.000 dan realisasi fisik 73.01% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_23',
@@ -1489,7 +1514,8 @@ INSERT INTO `projects` (
   206132267,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_23","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 364.213.321 dan realisasi fisik 67.15% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_24',
@@ -1534,7 +1560,8 @@ INSERT INTO `projects` (
   1128000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_24","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 48.872.000 dan realisasi fisik 97.74% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_25',
@@ -1579,7 +1606,8 @@ INSERT INTO `projects` (
   567000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_25","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 9.433.000 dan realisasi fisik 100% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_26',
@@ -1624,7 +1652,8 @@ INSERT INTO `projects` (
   68521500,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_26","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 14.478.500 dan realisasi fisik 47.87% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_27',
@@ -1669,7 +1698,8 @@ INSERT INTO `projects` (
   468292214,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_27","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 193.497.000 dan realisasi fisik 29.24% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_28',
@@ -1714,7 +1744,8 @@ INSERT INTO `projects` (
   350000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_28","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 19.650.000 dan realisasi fisik 100% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sek_29',
@@ -1759,7 +1790,8 @@ INSERT INTO `projects` (
   66492660,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sek_29","timestamp":"2026-10-31 16:00:00","userName":"Rizky Prahardini, S.E.","userRole":"Koordinator Sekretariat","action":"Input SP2D & Realisasi Fisik","keterangan":"Realisasi SP2D sebesar Rp 124.348.500 dan realisasi fisik 76.02% per laporan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_30',
@@ -1779,8 +1811,8 @@ INSERT INTO `projects` (
   2893907000,
   '000.3.3/006/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-12-15',
   'CV. ARGO DAHONO',
   'Bank Jateng',
   NULL,
@@ -1793,7 +1825,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   35,
   35,
   0,
@@ -1804,7 +1836,8 @@ INSERT INTO `projects` (
   2025734900,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_30","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 868.172.100 dan fisik mencapai 35% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_31',
@@ -1814,7 +1847,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_30',
   '1.03.02.2.01.01',
   'Jasa Konsultansi Pengawasan Pembangunan Rumah Pompa Terpadu Kecamatan Bonang',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0031',
@@ -1824,8 +1857,8 @@ INSERT INTO `projects` (
   26057250,
   '000.3.2/006/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-12-15',
   'CV. SALAHUDDIN SELARAS',
   'Bank Jateng',
   NULL,
@@ -1838,7 +1871,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   35,
   35,
   0,
@@ -1849,7 +1882,8 @@ INSERT INTO `projects` (
   26057250,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_31","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 35% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_32',
@@ -1871,7 +1905,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -1882,8 +1916,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   40,
   41.78,
   1.78,
@@ -1894,7 +1928,8 @@ INSERT INTO `projects` (
   13600000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_32","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 9.760.000 dan fisik mencapai 41.78% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_33',
@@ -1904,7 +1939,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_30',
   '1.03.02.2.01.01',
   'Pengadaan Pompa Kelurahan Betokan Kab. Demak',
-  'Fisik',
+  'Barang',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0033',
@@ -1928,7 +1963,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -1939,7 +1974,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_33","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."}]'
 ),
 (
   'prj_sda_bk_34',
@@ -1949,7 +1985,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_30',
   '1.03.02.2.01.01',
   'Pengadaan Pompa Kab. Demak',
-  'Fisik',
+  'Barang',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0034',
@@ -1973,7 +2009,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -1984,7 +2020,8 @@ INSERT INTO `projects` (
   450000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_34","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 450.000.000 (Murni)."}]'
 ),
 (
   'prj_sda_bk_35',
@@ -2004,8 +2041,8 @@ INSERT INTO `projects` (
   298832000,
   '000.3.2/040/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. SHINTA',
   'Bank Jateng',
   NULL,
@@ -2018,7 +2055,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -2029,7 +2066,8 @@ INSERT INTO `projects` (
   298832000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_35","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_36',
@@ -2049,8 +2087,8 @@ INSERT INTO `projects` (
   199010000,
   '000.3.2/041/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. LUMBUNG ARTHA JAYA',
   'Bank Jateng',
   NULL,
@@ -2063,7 +2101,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -2074,7 +2112,8 @@ INSERT INTO `projects` (
   199010000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_36","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_37',
@@ -2108,7 +2147,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -2119,7 +2158,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_37","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan)."}]'
 ),
 (
   'prj_sda_bk_38',
@@ -2129,7 +2169,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_31',
   '1.03.02.2.01.02',
   'Belanja Jasa Konsultansi Pengawasan Rehabilitasi Pintu Air Desa Mutih Wetan Kec. Wedung',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0038',
@@ -2153,7 +2193,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -2164,7 +2204,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_38","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan)."}]'
 ),
 (
   'prj_sda_bk_39',
@@ -2186,7 +2227,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -2197,8 +2238,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   8,
   10.22,
   2.22,
@@ -2209,7 +2250,8 @@ INSERT INTO `projects` (
   74040000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_39","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 6.760.000 dan fisik mencapai 10.22% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_40',
@@ -2231,7 +2273,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -2242,8 +2284,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Proyek Strategis"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   60,
   62.44,
   2.44,
@@ -2254,7 +2296,8 @@ INSERT INTO `projects` (
   782428107,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_40","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 1.197.302.115 dan fisik mencapai 62.44% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_41',
@@ -2276,7 +2319,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -2287,8 +2330,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   55,
   58.11,
   3.11,
@@ -2299,7 +2342,8 @@ INSERT INTO `projects` (
   104730500,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_41","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 145.269.500 dan fisik mencapai 58.11% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_42',
@@ -2321,7 +2365,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -2332,8 +2376,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   95,
   99.58,
   4.58,
@@ -2344,7 +2388,8 @@ INSERT INTO `projects` (
   40064400,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_42","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 109.935.600 dan fisik mencapai 99.58% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_43',
@@ -2366,7 +2411,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -2377,8 +2422,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   15,
   16.73,
   1.73,
@@ -2389,7 +2434,8 @@ INSERT INTO `projects` (
   499650000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_43","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 100.350.000 dan fisik mencapai 16.73% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_44',
@@ -2411,7 +2457,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -2422,8 +2468,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   95,
   99.35,
   4.35,
@@ -2434,7 +2480,8 @@ INSERT INTO `projects` (
   1299300,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_44","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.700.700 dan fisik mencapai 99.35% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_45',
@@ -2454,8 +2501,8 @@ INSERT INTO `projects` (
   953827000,
   '000.3.3/007/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. WIJAYA KUSUMA',
   'Bank Jateng',
   NULL,
@@ -2468,7 +2515,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   80,
   85,
   5,
@@ -2479,7 +2526,8 @@ INSERT INTO `projects` (
   667678900,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_45","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 286.148.100 dan fisik mencapai 85% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_46',
@@ -2489,7 +2537,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawasan Rehabilitasi Saluran A.28 Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0046',
@@ -2499,8 +2547,8 @@ INSERT INTO `projects` (
   25320210,
   '000.3.2/004/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. PRIORITAS',
   'Bank Jateng',
   NULL,
@@ -2513,7 +2561,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   80,
   85,
   5,
@@ -2524,7 +2572,8 @@ INSERT INTO `projects` (
   25320210,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_46","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_47',
@@ -2544,8 +2593,8 @@ INSERT INTO `projects` (
   977183000,
   '000.3.3/003/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. CAHAYA SEMBILAN PURNAMA',
   'Bank Jateng',
   NULL,
@@ -2558,7 +2607,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -2569,7 +2618,8 @@ INSERT INTO `projects` (
   684028100,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_47","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 293.154.900 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_48',
@@ -2589,8 +2639,8 @@ INSERT INTO `projects` (
   463492000,
   '000.3.3/005/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. KIAN AGENG REZEKI',
   'Bank Jateng',
   NULL,
@@ -2603,7 +2653,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -2613,8 +2663,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_48","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 463.492.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_49',
@@ -2624,7 +2675,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawasan Rehabilitasi Saluran Pembuang Desa Singorejo',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0049',
@@ -2634,8 +2685,8 @@ INSERT INTO `projects` (
   25299675,
   '000.3.2/008/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. RAF INOVASI',
   'Bank Jateng',
   NULL,
@@ -2648,7 +2699,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -2659,7 +2710,8 @@ INSERT INTO `projects` (
   25299675,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_49","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_50',
@@ -2679,8 +2731,8 @@ INSERT INTO `projects` (
   1929006000,
   '000.3.3/009/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. REZA JATI TUNGGAL',
   'Bank Jateng',
   NULL,
@@ -2693,7 +2745,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   80,
   85,
   5,
@@ -2704,7 +2756,8 @@ INSERT INTO `projects` (
   1350304200,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_50","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 578.701.800 dan fisik mencapai 85% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -2721,7 +2774,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_sda_bk_51',
@@ -2731,7 +2784,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawasan Rehabilitasi Saluran Pembuang Kali Blorok Kab. Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0051',
@@ -2741,8 +2794,8 @@ INSERT INTO `projects` (
   24961125,
   '000.3.2/002/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. RANCANG JAYA DISAIN',
   'Bank Jateng',
   NULL,
@@ -2755,7 +2808,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   80,
   85,
   5,
@@ -2766,7 +2819,8 @@ INSERT INTO `projects` (
   24961125,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_51","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_52',
@@ -2800,7 +2854,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -2811,7 +2865,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_52","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_53',
@@ -2821,7 +2876,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawasan Rehabilitasi Saluran Pembuang Kali Tuntang Lama - Kali Jajar',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0053',
@@ -2845,7 +2900,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -2856,7 +2911,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_53","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_54',
@@ -2876,8 +2932,8 @@ INSERT INTO `projects` (
   1911946000,
   '000.3.3/008/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. ANUGRAH MEKAR JAYA',
   'Bank Jateng',
   NULL,
@@ -2890,7 +2946,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   50,
   30,
   -20,
@@ -2901,7 +2957,8 @@ INSERT INTO `projects` (
   1338362200,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_54","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 573.583.800 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_55',
@@ -2911,7 +2968,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawas Rehabilitasi Saluran Pembuang Stasiun - Tembiring - Tuntang Lama',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0055',
@@ -2921,8 +2978,8 @@ INSERT INTO `projects` (
   25320210,
   '000.3.2/003/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. PRIORITAS',
   'Bank Jateng',
   NULL,
@@ -2935,7 +2992,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   50,
   30,
   -20,
@@ -2946,7 +3003,8 @@ INSERT INTO `projects` (
   25320210,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_55","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_56',
@@ -2966,8 +3024,8 @@ INSERT INTO `projects` (
   148914000,
   '000.3.2/004/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. SHINTA',
   'Bank Jateng',
   NULL,
@@ -2980,7 +3038,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -2990,8 +3048,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_56","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 148.914.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_57',
@@ -3011,8 +3070,8 @@ INSERT INTO `projects` (
   298936000,
   '000.3.2/005/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. GIRI BANGUN',
   'Bank Jateng',
   NULL,
@@ -3025,7 +3084,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -3035,8 +3094,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_57","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 298.936.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_58',
@@ -3056,8 +3116,8 @@ INSERT INTO `projects` (
   198978000,
   '000.3.2/008/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. HARGOSARI',
   'Bank Jateng',
   NULL,
@@ -3070,7 +3130,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -3081,7 +3141,8 @@ INSERT INTO `projects` (
   198978000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_58","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_59',
@@ -3101,8 +3162,8 @@ INSERT INTO `projects` (
   129642000,
   '000.3.2/009/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. HARGOSARI',
   'Bank Jateng',
   NULL,
@@ -3115,7 +3176,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -3126,7 +3187,8 @@ INSERT INTO `projects` (
   129642000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_59","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_60',
@@ -3146,8 +3208,8 @@ INSERT INTO `projects` (
   198740000,
   '000.3.2/007/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. SHINTA',
   'Bank Jateng',
   NULL,
@@ -3160,7 +3222,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -3170,8 +3232,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_60","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.740.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_61',
@@ -3191,8 +3254,8 @@ INSERT INTO `projects` (
   489472000,
   '000.3.3/004/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. KIAN AGENG REZEKI',
   'Bank Jateng',
   NULL,
@@ -3205,7 +3268,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   90,
   90,
   0,
@@ -3216,7 +3279,8 @@ INSERT INTO `projects` (
   489472000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_61","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_62',
@@ -3236,8 +3300,8 @@ INSERT INTO `projects` (
   954210000,
   '000.3.3/001/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV.SETIAJI',
   'Bank Jateng',
   NULL,
@@ -3250,7 +3314,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -3261,7 +3325,8 @@ INSERT INTO `projects` (
   667947000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_62","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 286.263.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_63',
@@ -3271,7 +3336,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawasan Normalisasi Sungai Daleman Kab. Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0063',
@@ -3281,8 +3346,8 @@ INSERT INTO `projects` (
   25410675,
   '000.3.2/007/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. RAF INOVASI',
   'Bank Jateng',
   NULL,
@@ -3295,7 +3360,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -3306,7 +3371,8 @@ INSERT INTO `projects` (
   25410675,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_63","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_64',
@@ -3326,8 +3392,8 @@ INSERT INTO `projects` (
   968638000,
   '000.3.3/014/SP/TENDER/SDABK/IX/2026',
   '2026-09-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-08',
+  '2026-12-16',
   'CV. URIP KARYA BARU',
   'Bank Jateng',
   NULL,
@@ -3340,7 +3406,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-08"}}',
   70,
   75,
   5,
@@ -3351,7 +3417,8 @@ INSERT INTO `projects` (
   678046600,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_64","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 290.591.400 dan fisik mencapai 75% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_65',
@@ -3361,7 +3428,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawasan Normalisasi Sungai Onggorawe Kab. Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0065',
@@ -3371,8 +3438,8 @@ INSERT INTO `projects` (
   25428990,
   '000.3.2/009/SPK/PGWS/SDABK/IX/2026',
   '2026-09-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-08',
+  '2026-12-16',
   'CV. SALAHUDDIN SELARAS',
   'Bank Jateng',
   NULL,
@@ -3385,7 +3452,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-08"}}',
   70,
   75,
   5,
@@ -3396,7 +3463,8 @@ INSERT INTO `projects` (
   25428990,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_65","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_66',
@@ -3416,8 +3484,8 @@ INSERT INTO `projects` (
   2912739000,
   '000.3.3/002/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. SHINTA',
   'Bank Jateng',
   NULL,
@@ -3430,7 +3498,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   60,
   65,
   5,
@@ -3441,7 +3509,8 @@ INSERT INTO `projects` (
   2912739000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_66","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 65% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_67',
@@ -3451,7 +3520,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Jasa Konsultansi Pengawasan Normalisasi Sungai Tuntang Lama Kab. Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0067',
@@ -3461,8 +3530,8 @@ INSERT INTO `projects` (
   24929490,
   '000.3.2/001/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. UTAMA KARYA',
   'Bank Jateng',
   NULL,
@@ -3475,7 +3544,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   60,
   65,
   5,
@@ -3486,7 +3555,8 @@ INSERT INTO `projects` (
   24929490,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_67","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 65% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_68',
@@ -3508,7 +3578,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -3519,8 +3589,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   35,
   35.1,
   0.1,
@@ -3531,7 +3601,8 @@ INSERT INTO `projects` (
   15160000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_68","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 8.200.000 dan fisik mencapai 35.1% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_69',
@@ -3551,8 +3622,8 @@ INSERT INTO `projects` (
   960738000,
   '000.3.3/023/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. SETIAJI',
   'Bank Jateng',
   NULL,
@@ -3565,7 +3636,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -3576,7 +3647,8 @@ INSERT INTO `projects` (
   960738000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_69","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_70',
@@ -3596,8 +3668,8 @@ INSERT INTO `projects` (
   19513800,
   '000.3.2/010/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. RAF INOVASI',
   'Bank Jateng',
   NULL,
@@ -3610,7 +3682,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -3621,7 +3693,8 @@ INSERT INTO `projects` (
   19513800,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_70","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_71',
@@ -3641,8 +3714,8 @@ INSERT INTO `projects` (
   199628000,
   '000.3.2/014/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'PULUNG MANUNGGAL',
   'Bank Jateng',
   NULL,
@@ -3655,7 +3728,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -3666,7 +3739,8 @@ INSERT INTO `projects` (
   199628000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_71","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_72',
@@ -3686,8 +3760,8 @@ INSERT INTO `projects` (
   940631000,
   '000.3.3/024/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. SHINTA',
   'Bank Jateng',
   NULL,
@@ -3700,7 +3774,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -3711,7 +3785,8 @@ INSERT INTO `projects` (
   940631000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_72","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_73',
@@ -3731,8 +3806,8 @@ INSERT INTO `projects` (
   19839030,
   '000.3.2/011/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. FANA KARYA GUNA JAYA',
   'Bank Jateng',
   NULL,
@@ -3745,7 +3820,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -3756,7 +3831,8 @@ INSERT INTO `projects` (
   19839030,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_73","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_74',
@@ -3790,7 +3866,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -3801,7 +3877,8 @@ INSERT INTO `projects` (
   23360000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_74","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 23.360.000 (Perubahan)."}]'
 ),
 (
   'prj_sda_bk_75',
@@ -3821,8 +3898,8 @@ INSERT INTO `projects` (
   785960000,
   '000.3.3/021/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. SAHALA',
   'Bank Jateng',
   NULL,
@@ -3835,7 +3912,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -3846,7 +3923,8 @@ INSERT INTO `projects` (
   785960000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_75","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_76',
@@ -3866,8 +3944,8 @@ INSERT INTO `projects` (
   398468000,
   '000.3.2/015/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. BANGKIT SENTOSA',
   'Bank Jateng',
   NULL,
@@ -3880,7 +3958,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -3891,7 +3969,8 @@ INSERT INTO `projects` (
   398468000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_76","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_77',
@@ -3911,8 +3990,8 @@ INSERT INTO `projects` (
   490544000,
   '000.3.3/017/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. WIJAYA KUSUMA',
   'Bank Jateng',
   NULL,
@@ -3925,7 +4004,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -3936,7 +4015,8 @@ INSERT INTO `projects` (
   490544000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_77","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_78',
@@ -3956,8 +4036,8 @@ INSERT INTO `projects` (
   297863000,
   '000.3.2/028/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. KEMBAR JAYA',
   'Bank Jateng',
   NULL,
@@ -3970,7 +4050,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -3981,7 +4061,8 @@ INSERT INTO `projects` (
   297863000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_78","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_79',
@@ -4001,8 +4082,8 @@ INSERT INTO `projects` (
   198290000,
   '000.3.2/016/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. KARYA DEWA',
   'Bank Jateng',
   NULL,
@@ -4015,7 +4096,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -4026,7 +4107,8 @@ INSERT INTO `projects` (
   198290000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_79","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_80',
@@ -4046,8 +4128,8 @@ INSERT INTO `projects` (
   133843000,
   '000.3.2/043/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. CAHAYA SEMBILAN PURNAMA',
   'Bank Jateng',
   NULL,
@@ -4060,7 +4142,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4071,7 +4153,8 @@ INSERT INTO `projects` (
   133843000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_80","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_81',
@@ -4091,8 +4174,8 @@ INSERT INTO `projects` (
   199449000,
   '000.3.2/029/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. BANGUN KARYA SEJAHTERA',
   'Bank Jateng',
   NULL,
@@ -4105,7 +4188,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4116,7 +4199,8 @@ INSERT INTO `projects` (
   199449000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_81","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_82',
@@ -4136,8 +4220,8 @@ INSERT INTO `projects` (
   298624000,
   '000.3.2/030/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. BANGUN KARYA SEJAHTERA',
   'Bank Jateng',
   NULL,
@@ -4150,7 +4234,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4161,7 +4245,8 @@ INSERT INTO `projects` (
   298624000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_82","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_83',
@@ -4181,8 +4266,8 @@ INSERT INTO `projects` (
   199498000,
   '000.3.2/017/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. LANCAR JAYA',
   'Bank Jateng',
   NULL,
@@ -4195,7 +4280,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -4206,7 +4291,8 @@ INSERT INTO `projects` (
   199498000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_83","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_84',
@@ -4226,8 +4312,8 @@ INSERT INTO `projects` (
   199080000,
   '000.3.2/031/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. PURNA WIJAYA',
   'Bank Jateng',
   NULL,
@@ -4240,7 +4326,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4251,7 +4337,8 @@ INSERT INTO `projects` (
   199080000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_84","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_85',
@@ -4271,8 +4358,8 @@ INSERT INTO `projects` (
   298912000,
   '000.3.2/032/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. CITRA DELIMA',
   'Bank Jateng',
   NULL,
@@ -4285,7 +4372,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4296,7 +4383,8 @@ INSERT INTO `projects` (
   298912000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_85","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_86',
@@ -4316,8 +4404,8 @@ INSERT INTO `projects` (
   149061000,
   '000.3.2/018/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. PURNA WIJAYA',
   'Bank Jateng',
   NULL,
@@ -4330,7 +4418,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -4341,7 +4429,8 @@ INSERT INTO `projects` (
   149061000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_86","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_87',
@@ -4361,8 +4450,8 @@ INSERT INTO `projects` (
   298732000,
   '000.3.2/033/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. CITRA DELIMA',
   'Bank Jateng',
   NULL,
@@ -4375,7 +4464,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4386,7 +4475,8 @@ INSERT INTO `projects` (
   298732000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_87","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_88',
@@ -4406,8 +4496,8 @@ INSERT INTO `projects` (
   148967000,
   '000.3.2/019/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. BANGUN KARYA SEJAHTERA',
   'Bank Jateng',
   NULL,
@@ -4420,7 +4510,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -4431,7 +4521,8 @@ INSERT INTO `projects` (
   148967000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_88","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_89',
@@ -4451,8 +4542,8 @@ INSERT INTO `projects` (
   588931000,
   '000.3.3/018/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. MITRA JAYA ABADI',
   'Bank Jateng',
   NULL,
@@ -4465,7 +4556,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -4476,7 +4567,8 @@ INSERT INTO `projects` (
   588931000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_89","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_90',
@@ -4496,8 +4588,8 @@ INSERT INTO `projects` (
   298526000,
   '000.3.2/020/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. BANGKIT SENTOSA',
   'Bank Jateng',
   NULL,
@@ -4510,7 +4602,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -4521,7 +4613,8 @@ INSERT INTO `projects` (
   298526000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_90","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_91',
@@ -4541,8 +4634,8 @@ INSERT INTO `projects` (
   199169000,
   '000.3.2/046/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. LANCAR JAYA',
   'Bank Jateng',
   NULL,
@@ -4555,7 +4648,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4566,7 +4659,8 @@ INSERT INTO `projects` (
   199169000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_91","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_92',
@@ -4586,8 +4680,8 @@ INSERT INTO `projects` (
   248778000,
   '000.3.2/034/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. WAHYU ABADI',
   'Bank Jateng',
   NULL,
@@ -4600,7 +4694,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4611,7 +4705,8 @@ INSERT INTO `projects` (
   248778000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_92","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_93',
@@ -4631,8 +4726,8 @@ INSERT INTO `projects` (
   199014000,
   '000.3.2/021/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. AGA KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -4645,7 +4740,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -4656,7 +4751,8 @@ INSERT INTO `projects` (
   199014000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_93","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_94',
@@ -4676,8 +4772,8 @@ INSERT INTO `projects` (
   968000000,
   '000.3.3/025/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. MITRA JAYA ABADI',
   'Bank Jateng',
   NULL,
@@ -4690,7 +4786,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -4701,7 +4797,8 @@ INSERT INTO `projects` (
   968000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_94","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_95',
@@ -4711,7 +4808,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Belanja Jasa Konsultansi Pengawasan Normalisasi Sungai Gemboyo Wonokerto',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0095',
@@ -4721,8 +4818,8 @@ INSERT INTO `projects` (
   19491600,
   '000.3.2/012/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. SALAHUDDIN SELARAS',
   'Bank Jateng',
   NULL,
@@ -4735,7 +4832,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -4746,7 +4843,8 @@ INSERT INTO `projects` (
   19491600,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_95","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_96',
@@ -4766,8 +4864,8 @@ INSERT INTO `projects` (
   491026000,
   '000.3.3/016/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. GARUDA KARYA',
   'Bank Jateng',
   NULL,
@@ -4780,7 +4878,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -4791,7 +4889,8 @@ INSERT INTO `projects` (
   491026000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_96","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_97',
@@ -4811,8 +4910,8 @@ INSERT INTO `projects` (
   491740000,
   '000.3.3/019/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. GARUDA KARYA',
   'Bank Jateng',
   NULL,
@@ -4825,7 +4924,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -4836,7 +4935,8 @@ INSERT INTO `projects` (
   491740000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_97","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_98',
@@ -4856,8 +4956,8 @@ INSERT INTO `projects` (
   299324000,
   '000.3.2/035/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. MERAH PUTIH',
   'Bank Jateng',
   NULL,
@@ -4870,7 +4970,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4881,7 +4981,8 @@ INSERT INTO `projects` (
   299324000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_98","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_99',
@@ -4901,8 +5002,8 @@ INSERT INTO `projects` (
   149077000,
   '000.3.2/044/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. WAQIAH NUR JAYA',
   'Bank Jateng',
   NULL,
@@ -4915,7 +5016,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -4926,7 +5027,8 @@ INSERT INTO `projects` (
   149077000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_99","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_100',
@@ -4946,8 +5048,8 @@ INSERT INTO `projects` (
   1455627000,
   '000.3.3/022/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. SHINTA',
   'Bank Jateng',
   NULL,
@@ -4960,7 +5062,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan","Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -4971,7 +5073,8 @@ INSERT INTO `projects` (
   1455627000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_100","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -4988,7 +5091,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_sda_bk_101',
@@ -4998,7 +5101,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_37',
   '1.03.02.2.01.08',
   'Belanja Jasa Konsultansi Pengawasan Normalisasi Gajah Kanal',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0101',
@@ -5008,8 +5111,8 @@ INSERT INTO `projects` (
   19709160,
   '000.3.2/015/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. UTAMA KARYA',
   'Bank Jateng',
   NULL,
@@ -5022,7 +5125,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -5033,7 +5136,8 @@ INSERT INTO `projects` (
   19709160,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_101","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_102',
@@ -5053,8 +5157,8 @@ INSERT INTO `projects` (
   831212025.157773,
   '000.3.3/026/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. IBRAHIM MAJU JAYA',
   'Bank Jateng',
   NULL,
@@ -5067,7 +5171,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -5078,7 +5182,8 @@ INSERT INTO `projects` (
   831212025.157773,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_102","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_103',
@@ -5088,7 +5193,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_38',
   '1.03.02.2.01.09',
   'Belanja Jasa Konsultansi Perencanaan Paket 1 SDA',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0103',
@@ -5098,8 +5203,8 @@ INSERT INTO `projects` (
   99612510,
   '000.3.2/001/SPK/STD.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. ARWINDO KARYA UTAMA',
   'Bank Jateng',
   NULL,
@@ -5112,7 +5217,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   20,
   20,
   0,
@@ -5123,7 +5228,8 @@ INSERT INTO `projects` (
   99612510,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_103","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_104',
@@ -5143,8 +5249,8 @@ INSERT INTO `projects` (
   99592530,
   '000.3.2/003/SPK/STD.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. INDERA CIPTA KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -5157,7 +5263,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   20,
   20,
   0,
@@ -5168,7 +5274,8 @@ INSERT INTO `projects` (
   99592530,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_104","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_105',
@@ -5188,8 +5295,8 @@ INSERT INTO `projects` (
   464516000,
   '000.3.3/013/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. GIRI BANGUN',
   'Bank Jateng',
   NULL,
@@ -5202,7 +5309,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   70,
   75,
   5,
@@ -5213,7 +5320,8 @@ INSERT INTO `projects` (
   325161200,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_105","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 139.354.800 dan fisik mencapai 75% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_106',
@@ -5223,7 +5331,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_39',
   '1.03.02.2.01.10',
   'Jasa Konsultansi Pengawasan Pembangunan Embung Desa Kedondong Kec. Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0106',
@@ -5233,8 +5341,8 @@ INSERT INTO `projects` (
   24961125,
   '000.3.2/005/SPK/PGWS/SDABK/VII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-25',
   'CV. RANCANG JAYA DISAIN',
   'Bank Jateng',
   NULL,
@@ -5247,7 +5355,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   70,
   75,
   5,
@@ -5258,7 +5366,8 @@ INSERT INTO `projects` (
   24961125,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_106","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_107',
@@ -5292,7 +5401,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5303,7 +5412,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_107","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_108',
@@ -5323,8 +5433,8 @@ INSERT INTO `projects` (
   198760000,
   '027.2/006/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. PULUNG MANUNGGAL',
   'Bank Jateng',
   NULL,
@@ -5337,7 +5447,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -5347,8 +5457,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_108","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.760.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_109',
@@ -5368,8 +5479,8 @@ INSERT INTO `projects` (
   198337000,
   '000.3.2/022/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. SINAR PUTRI UTAMA',
   'Bank Jateng',
   NULL,
@@ -5382,7 +5493,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -5393,7 +5504,8 @@ INSERT INTO `projects` (
   198337000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_109","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_110',
@@ -5413,8 +5525,8 @@ INSERT INTO `projects` (
   149374000,
   '000.3.2/012/SPK/PL/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-31',
   'CV. SETIAJI',
   'Bank Jateng',
   NULL,
@@ -5427,7 +5539,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -5437,8 +5549,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_110","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 149.374.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_111',
@@ -5472,7 +5585,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5483,7 +5596,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_111","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_112',
@@ -5503,8 +5617,8 @@ INSERT INTO `projects` (
   99036000,
   '000.3.2/003/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. MITRAKU',
   'Bank Jateng',
   NULL,
@@ -5517,7 +5631,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -5527,8 +5641,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_112","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.036.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_113',
@@ -5548,8 +5663,8 @@ INSERT INTO `projects` (
   99074000,
   '000.3.2/010/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. SETIAJI',
   'Bank Jateng',
   NULL,
@@ -5562,7 +5677,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -5572,8 +5687,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_113","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.074.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_114',
@@ -5607,7 +5723,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5618,7 +5734,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_114","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_115',
@@ -5638,8 +5755,8 @@ INSERT INTO `projects` (
   248866000,
   '000.3.2/001/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. CITRA DELIMA',
   'Bank Jateng',
   NULL,
@@ -5652,7 +5769,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -5662,8 +5779,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_115","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 248.866.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_116',
@@ -5683,8 +5801,8 @@ INSERT INTO `projects` (
   199177000,
   '000.3.2/013/SPK/PL/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-31',
   'CV. WIDI PRATAMA',
   'Bank Jateng',
   NULL,
@@ -5697,7 +5815,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   80,
   85,
   5,
@@ -5708,7 +5826,8 @@ INSERT INTO `projects` (
   199177000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_116","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_117',
@@ -5742,7 +5861,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5753,7 +5872,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_117","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_118',
@@ -5787,7 +5907,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5798,7 +5918,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_118","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_119',
@@ -5832,7 +5953,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5843,7 +5964,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_119","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_120',
@@ -5877,7 +5999,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5888,7 +6010,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_120","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_121',
@@ -5922,7 +6045,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -5933,7 +6056,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_121","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_122',
@@ -5953,8 +6077,8 @@ INSERT INTO `projects` (
   199048000,
   '000.3.2/011/SPK/PL/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-31',
   'CV. LANCAR JAYA',
   'Bank Jateng',
   NULL,
@@ -5967,7 +6091,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -5978,7 +6102,8 @@ INSERT INTO `projects` (
   199048000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_122","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_123',
@@ -5998,8 +6123,8 @@ INSERT INTO `projects` (
   488270000,
   '000.3.3/011/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-31',
   'CV. GENERASI PUTRA JATAYU',
   'Bank Jateng',
   NULL,
@@ -6012,7 +6137,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -6023,7 +6148,8 @@ INSERT INTO `projects` (
   341789000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_123","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 146.481.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_124',
@@ -6043,8 +6169,8 @@ INSERT INTO `projects` (
   1367856000,
   '000.3.3/010/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-31',
   'CV. PULUNG MANUNGGAL',
   'Bank Jateng',
   NULL,
@@ -6057,7 +6183,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   80,
   80,
   0,
@@ -6068,7 +6194,8 @@ INSERT INTO `projects` (
   957499200,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_124","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 410.356.800 dan fisik mencapai 80% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_125',
@@ -6088,8 +6215,8 @@ INSERT INTO `projects` (
   976848000,
   '000.3.3/012/SP/TENDER/SDABK/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-31',
   'CV. GENERASI PUTRA JATAYU',
   'Bank Jateng',
   NULL,
@@ -6102,7 +6229,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   85,
   90,
   5,
@@ -6113,7 +6240,8 @@ INSERT INTO `projects` (
   683793600,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_125","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 293.054.400 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_126',
@@ -6147,7 +6275,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -6158,7 +6286,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_126","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_sda_bk_127',
@@ -6192,7 +6321,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -6203,7 +6332,8 @@ INSERT INTO `projects` (
   1280000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_127","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni)."}]'
 ),
 (
   'prj_sda_bk_128',
@@ -6237,7 +6367,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -6248,7 +6378,8 @@ INSERT INTO `projects` (
   20000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_128","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."}]'
 ),
 (
   'prj_sda_bk_129',
@@ -6268,8 +6399,8 @@ INSERT INTO `projects` (
   963493000,
   '000.3.3/020/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. CIPTA KARYA DIMYATI',
   'Bank Jateng',
   NULL,
@@ -6282,7 +6413,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -6293,7 +6424,8 @@ INSERT INTO `projects` (
   963493000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_129","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_130',
@@ -6313,8 +6445,8 @@ INSERT INTO `projects` (
   19558200,
   '000.3.2/013/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -6327,7 +6459,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -6338,7 +6470,8 @@ INSERT INTO `projects` (
   19558200,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_130","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_131',
@@ -6358,8 +6491,8 @@ INSERT INTO `projects` (
   148456000,
   '000.3.2/023/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. ATTAQI MULIA ABADI',
   'Bank Jateng',
   NULL,
@@ -6372,7 +6505,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -6383,7 +6516,8 @@ INSERT INTO `projects` (
   148456000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_131","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_132',
@@ -6403,8 +6537,8 @@ INSERT INTO `projects` (
   959159000,
   '000.3.3/015/SP/TENDER.P/SDABK/X/2026',
   NULL,
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. MAZDA',
   'Bank Jateng',
   NULL,
@@ -6417,7 +6551,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"CV. CIPTA KARYA DIMYATI"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -6428,7 +6562,8 @@ INSERT INTO `projects` (
   959159000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_132","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_133',
@@ -6448,8 +6583,8 @@ INSERT INTO `projects` (
   19491600,
   '000.3.2/014/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. SALAHUDDIN SELARAS',
   'Bank Jateng',
   NULL,
@@ -6462,7 +6597,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -6473,7 +6608,8 @@ INSERT INTO `projects` (
   19491600,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_133","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_134',
@@ -6493,8 +6629,8 @@ INSERT INTO `projects` (
   199097000,
   '000.3.2/045/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. SETIAJI',
   'Bank Jateng',
   NULL,
@@ -6507,7 +6643,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -6518,7 +6654,8 @@ INSERT INTO `projects` (
   199097000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_134","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_135',
@@ -6538,8 +6675,8 @@ INSERT INTO `projects` (
   199196000,
   '000.3.2/036/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. URIP KARYA BARU',
   'Bank Jateng',
   NULL,
@@ -6552,7 +6689,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -6563,7 +6700,8 @@ INSERT INTO `projects` (
   199196000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_135","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_136',
@@ -6583,8 +6721,8 @@ INSERT INTO `projects` (
   199010000,
   '000.3.2/024/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. INDAH LESTARI',
   'Bank Jateng',
   NULL,
@@ -6597,7 +6735,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -6608,7 +6746,8 @@ INSERT INTO `projects` (
   199010000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_136","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_137',
@@ -6628,8 +6767,8 @@ INSERT INTO `projects` (
   298721000,
   '000.3.2/037/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. BEJO',
   'Bank Jateng',
   NULL,
@@ -6642,7 +6781,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -6653,7 +6792,8 @@ INSERT INTO `projects` (
   298721000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_137","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_138',
@@ -6673,8 +6813,8 @@ INSERT INTO `projects` (
   298894000,
   '000.3.2/038/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. DUTA KENCANA',
   'Bank Jateng',
   NULL,
@@ -6687,7 +6827,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -6698,7 +6838,8 @@ INSERT INTO `projects` (
   298894000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_138","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_139',
@@ -6718,8 +6859,8 @@ INSERT INTO `projects` (
   199288000,
   '000.3.2/025/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. IBRAHIM MAJU JAYA',
   'Bank Jateng',
   NULL,
@@ -6732,7 +6873,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -6743,7 +6884,8 @@ INSERT INTO `projects` (
   199288000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_139","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_140',
@@ -6763,8 +6905,8 @@ INSERT INTO `projects` (
   99229000,
   '000.3.2/026/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. IBRAHIM MAJU JAYA',
   'Bank Jateng',
   NULL,
@@ -6777,7 +6919,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -6788,7 +6930,8 @@ INSERT INTO `projects` (
   99229000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_140","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_141',
@@ -6808,8 +6951,8 @@ INSERT INTO `projects` (
   173939000,
   '000.3.2/039/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. MAHKOTA JAYA GROUP',
   'Bank Jateng',
   NULL,
@@ -6822,7 +6965,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -6833,7 +6976,8 @@ INSERT INTO `projects` (
   173939000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_141","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_142',
@@ -6853,8 +6997,8 @@ INSERT INTO `projects` (
   199238000,
   '000.3.2/042/SPK/PL.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-20',
   'CV. GENERASI PUTRA JATAYU',
   'Bank Jateng',
   NULL,
@@ -6867,7 +7011,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   10,
   10,
   0,
@@ -6878,7 +7022,8 @@ INSERT INTO `projects` (
   199238000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_142","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_143',
@@ -6898,8 +7043,8 @@ INSERT INTO `projects` (
   198907000,
   '027.2/002/SPK/PL/SDABK/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-10-12',
   'CV. BANGKIT SENTOSA',
   'Bank Jateng',
   NULL,
@@ -6912,7 +7057,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   100,
   100,
   0,
@@ -6922,8 +7067,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_143","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.907.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_144',
@@ -6943,8 +7089,8 @@ INSERT INTO `projects` (
   398090000,
   '000.3.2/027/SPK/PL.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. LANCAR JAYA',
   'Bank Jateng',
   NULL,
@@ -6957,7 +7103,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   15,
   15,
   0,
@@ -6968,7 +7114,8 @@ INSERT INTO `projects` (
   398090000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_144","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_145',
@@ -6988,8 +7135,8 @@ INSERT INTO `projects` (
   957232988.451036,
   '000.3.3/027/SP/TENDER.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. CAHAYA TESCHA',
   'Bank Jateng',
   NULL,
@@ -7002,7 +7149,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -7013,7 +7160,8 @@ INSERT INTO `projects` (
   957232988.451036,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_145","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_146',
@@ -7023,7 +7171,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_43',
   '1.03.02.2.02.01',
   'Belanja Jasa Konsultansi Pengawasan Rehabilitasi Saluran Sekunder Wonokerto (Pelayaran Buyaran)',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0146',
@@ -7033,8 +7181,8 @@ INSERT INTO `projects` (
   19558200,
   '000.3.2/016/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-29',
+  '2026-12-27',
   'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -7047,7 +7195,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"29 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-29"}}',
   5,
   5,
   0,
@@ -7058,7 +7206,8 @@ INSERT INTO `projects` (
   19558200,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_146","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_147',
@@ -7080,7 +7229,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -7091,8 +7240,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Proyek Strategis"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   40,
   40.89,
   0.89,
@@ -7103,7 +7252,8 @@ INSERT INTO `projects` (
   1031000416,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_147","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 713.151.284 dan fisik mencapai 40.89% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_148',
@@ -7125,7 +7275,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -7136,8 +7286,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   100,
   100,
   0,
@@ -7148,7 +7298,8 @@ INSERT INTO `projects` (
   2145800,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_148","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 97.854.200 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_149',
@@ -7170,7 +7321,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -7181,8 +7332,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   75,
   77.04,
   2.04,
@@ -7193,7 +7344,8 @@ INSERT INTO `projects` (
   60977782,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_149","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 204.647.218 dan fisik mencapai 77.04% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_150',
@@ -7203,7 +7355,7 @@ INSERT INTO `projects` (
   'sub_sda_bk_47',
   '1.03.02.2.02.05',
   'Belanja Jasa Konsultansi Pengelolaan Aset dan Kinerja Sistem Irigasi',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-SDA-0150',
@@ -7213,8 +7365,8 @@ INSERT INTO `projects` (
   99684660,
   '000.3.2/002/SPK/STD.P/SDABK/X/2026',
   '2026-10-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-15',
+  '2026-12-13',
   'CV. ARWINDO KARYA UTAMA',
   'Bank Jateng',
   NULL,
@@ -7227,7 +7379,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-15"}}',
   20,
   20,
   0,
@@ -7238,7 +7390,8 @@ INSERT INTO `projects` (
   99684660,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_150","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -7255,7 +7408,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_sda_bk_151',
@@ -7289,7 +7442,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -7300,7 +7453,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_151","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_152',
@@ -7310,7 +7464,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_49',
   '1.03.03.2.01.01',
   'Jasa Konsultansi Perencanaan SPAM Paket 1',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0152',
@@ -7320,8 +7474,8 @@ INSERT INTO `projects` (
   49550000,
   '027/04Pr/SPK/SPAM.PL.CK/III/2026',
   '2026-03-12',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-12',
+  '2026-04-10',
   'CV.PRIORITAS',
   'Bank Jateng',
   NULL,
@@ -7334,7 +7488,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"12 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-12"}}',
   100,
   100,
   0,
@@ -7344,8 +7498,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_152","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 49.550.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_153',
@@ -7355,7 +7510,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_49',
   '1.03.03.2.01.01',
   'Jasa Konsultansi Perencanaan SPAM Paket 2',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0153',
@@ -7365,8 +7520,8 @@ INSERT INTO `projects` (
   49550000,
   '027/05Pr/SPK/SPAM.PL.CK/III/2026',
   '2026-03-12',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-12',
+  '2026-04-10',
   'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -7379,7 +7534,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"12 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-12"}}',
   100,
   100,
   0,
@@ -7389,8 +7544,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_153","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 49.550.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_154',
@@ -7400,7 +7556,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_49',
   '1.03.03.2.01.01',
   'Jasa Konsultansi Pendataan Akses Air Minum Kecamatan Mranggen Paket 1',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0154',
@@ -7410,8 +7566,8 @@ INSERT INTO `projects` (
   99367000,
   '027/06Pr/SPK/SPAM.PL.CK/V/2026',
   '2026-05-11',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-05-11',
+  '2026-06-24',
   'CV.PRIORITAS',
   'Bank Jateng',
   NULL,
@@ -7424,7 +7580,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"11 Mei 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-05-11"}}',
   100,
   100,
   0,
@@ -7434,8 +7590,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_154","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.367.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_155',
@@ -7455,7 +7612,7 @@ INSERT INTO `projects` (
   299100000,
   '000.3.2/SPK.05.AE/SPAM.Reg/PL.CK./VIII/2026',
   '2026-08-24',
-  '2026-03-01',
+  '24 Agustus - 22 Oktober 2026',
   '2026-11-30',
   'CV. PRIMAKARYA',
   'Bank Jateng',
@@ -7469,7 +7626,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus - 22 Oktober 2026"}}',
   100,
   100,
   0,
@@ -7480,7 +7637,8 @@ INSERT INTO `projects` (
   299100000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_155","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_156',
@@ -7514,7 +7672,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -7525,7 +7683,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_156","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_157',
@@ -7545,7 +7704,7 @@ INSERT INTO `projects` (
   0.199,
   '000.3.2/SPK.10.AE/SPAM.Reg/PL.CK./VIII/2026',
   '2026-08-24',
-  '2026-03-01',
+  '24 Agustus - 22 Oktober 2026',
   '2026-11-30',
   'CV BAROKAH JAYA',
   'Bank Jateng',
@@ -7559,7 +7718,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus - 22 Oktober 2026"}}',
   100,
   90,
   -10,
@@ -7570,7 +7729,8 @@ INSERT INTO `projects` (
   0.199,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_157","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_158',
@@ -7590,7 +7750,7 @@ INSERT INTO `projects` (
   199190000,
   '000.3.2/SPK.13.AE/SPAM.Reg/PL.CK./IX/2026',
   '2026-09-14',
-  '2026-03-01',
+  '14 September - 12 November 2026',
   '2026-11-30',
   'CV. IMARA JAYA',
   'Bank Jateng',
@@ -7604,7 +7764,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"14 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"14 September - 12 November 2026"}}',
   50,
   50,
   0,
@@ -7615,7 +7775,8 @@ INSERT INTO `projects` (
   199190000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_158","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 50% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_159',
@@ -7635,7 +7796,7 @@ INSERT INTO `projects` (
   0.199,
   '000.3.2/SPK.09.AE/SPAM.Reg/PL.CK./VIII/2026',
   '2026-08-24',
-  '2026-03-01',
+  '24 Agustus - 22 Oktober 2026',
   '2026-11-30',
   'CV.DUTA KENCANA',
   'Bank Jateng',
@@ -7649,7 +7810,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus - 22 Oktober 2026"}}',
   100,
   100,
   0,
@@ -7660,7 +7821,8 @@ INSERT INTO `projects` (
   0.199,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_159","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_160',
@@ -7680,7 +7842,7 @@ INSERT INTO `projects` (
   0.199,
   '000.3.2/SPK.07.AE/SPAM.Reg/PL.CK./VIII/2026',
   '2026-08-24',
-  '2026-03-01',
+  '24 Agustus - 22 Oktober 2026',
   '2026-11-30',
   'CV BAROKAH JAYA',
   'Bank Jateng',
@@ -7694,7 +7856,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus - 22 Oktober 2026"}}',
   100,
   100,
   0,
@@ -7705,7 +7867,8 @@ INSERT INTO `projects` (
   0.199,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_160","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_161',
@@ -7739,7 +7902,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -7750,7 +7913,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_161","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_162',
@@ -7770,7 +7934,7 @@ INSERT INTO `projects` (
   199380000,
   '000.3.2/SPK.12.AE/SPAM.Reg/PL.CK./IX/2026',
   '2026-09-14',
-  '2026-03-01',
+  '14 September - 12 November 2026',
   '2026-11-30',
   'CV BRYAN JAYA PERKASA',
   'Bank Jateng',
@@ -7784,7 +7948,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"14 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"14 September - 12 November 2026"}}',
   100,
   100,
   0,
@@ -7795,7 +7959,8 @@ INSERT INTO `projects` (
   199380000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_162","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_163',
@@ -7815,7 +7980,7 @@ INSERT INTO `projects` (
   0.199,
   '000.3.2/SPK.08.AE/SPAM.Reg/PL.CK./VIII/2026',
   '2026-08-24',
-  '2026-03-01',
+  '24 Agustus - 22 Oktober 2026',
   '2026-11-30',
   'CV BAROKAH JAYA',
   'Bank Jateng',
@@ -7829,7 +7994,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus - 22 Oktober 2026"}}',
   100,
   100,
   0,
@@ -7840,7 +8005,8 @@ INSERT INTO `projects` (
   0.199,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_163","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_164',
@@ -7850,7 +8016,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_50',
   '1.03.03.2.01.04',
   'Jasa Konsultansi Pengawasan Peningkatan SPAM Paket 1',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0164',
@@ -7860,7 +8026,7 @@ INSERT INTO `projects` (
   0.19,
   '000.3.2/04Pgw/SPK/SPAM.PL.CK.IX/2026',
   '2026-09-15',
-  '2026-03-01',
+  '15 September - 13 November 2026',
   '2026-11-30',
   'CV. PRIORITAS',
   'Bank Jateng',
@@ -7874,7 +8040,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 September - 13 November 2026"}}',
   75,
   75,
   0,
@@ -7885,7 +8051,8 @@ INSERT INTO `projects` (
   0.19,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_164","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_165',
@@ -7895,7 +8062,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_50',
   '1.03.03.2.01.04',
   'Jasa Konsultansi Pengawasan Peningkatan SPAM Paket 2',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0165',
@@ -7919,7 +8086,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -7930,7 +8097,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_165","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_166',
@@ -7952,7 +8120,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -7963,8 +8131,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   69.57,
   69.57,
   0,
@@ -7975,7 +8143,8 @@ INSERT INTO `projects` (
   34417500,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_166","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 55.582.500 dan fisik mencapai 69.57% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_167',
@@ -8009,7 +8178,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8020,7 +8189,8 @@ INSERT INTO `projects` (
   250000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_167","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_168',
@@ -8054,7 +8224,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8065,7 +8235,8 @@ INSERT INTO `projects` (
   250000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_168","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_169',
@@ -8099,7 +8270,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8110,7 +8281,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_169","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_170',
@@ -8144,7 +8316,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8155,7 +8327,8 @@ INSERT INTO `projects` (
   300000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_170","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_171',
@@ -8175,7 +8348,7 @@ INSERT INTO `projects` (
   19955000,
   '000.3.2/SPK.11.AE/SPAM.Reg/PL.CK./IX/2026',
   '2026-09-14',
-  '2026-03-01',
+  '14 September - 12 November 2026',
   '2026-11-30',
   'CV. IMARA JAYA',
   'Bank Jateng',
@@ -8189,7 +8362,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"14 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"14 September - 12 November 2026"}}',
   45,
   63,
   18,
@@ -8200,7 +8373,8 @@ INSERT INTO `projects` (
   19955000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_171","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 63% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_172',
@@ -8220,7 +8394,7 @@ INSERT INTO `projects` (
   0.199,
   '000.3.2/SPK.06.AE/SPAM.Reg/PL.CK./VIII/2026',
   '2026-08-24',
-  '2026-03-01',
+  '24 Agustus - 22 Oktober 2026',
   '2026-11-30',
   'CV BAROKAH JAYA',
   'Bank Jateng',
@@ -8234,7 +8408,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus - 22 Oktober 2026"}}',
   100,
   100,
   0,
@@ -8245,7 +8419,8 @@ INSERT INTO `projects` (
   0.199,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_172","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_173',
@@ -8279,7 +8454,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8290,7 +8465,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_173","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_174',
@@ -8324,7 +8500,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8335,7 +8511,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_174","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_175',
@@ -8369,7 +8546,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8380,7 +8557,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_175","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_176',
@@ -8414,7 +8592,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8425,7 +8603,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_176","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_177',
@@ -8435,7 +8614,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_51',
   '1.03.03.2.01.03',
   'Jasa Konsultansi Pengawasan SPAM Paket 1',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0177',
@@ -8445,7 +8624,7 @@ INSERT INTO `projects` (
   0.41,
   '000.3.2/03Pgw/SPK/SPAM.PL.CK.VIII/2026',
   '2026-08-24',
-  '2026-03-01',
+  '24 Agustus - 22 Oktober 2026',
   '2026-11-30',
   'CV.DINASTI JAVA GROUP',
   'Bank Jateng',
@@ -8459,7 +8638,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus - 22 Oktober 2026"}}',
   100,
   100,
   0,
@@ -8470,7 +8649,8 @@ INSERT INTO `projects` (
   0.41,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_177","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_178',
@@ -8492,7 +8672,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -8503,8 +8683,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   5,
   7.47,
   2.47,
@@ -8515,7 +8695,8 @@ INSERT INTO `projects` (
   462650700,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_178","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 37.349.300 dan fisik mencapai 7.47% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_179',
@@ -8537,7 +8718,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -8548,8 +8729,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   55,
   56.19,
   1.19,
@@ -8560,7 +8741,8 @@ INSERT INTO `projects` (
   17350000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_179","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 22.250.000 dan fisik mencapai 56.19% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_180',
@@ -8582,7 +8764,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -8593,8 +8775,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   75,
   78.61,
   3.61,
@@ -8605,7 +8787,8 @@ INSERT INTO `projects` (
   77739783,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_180","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 112.260.217 dan fisik mencapai 78.61% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_181',
@@ -8639,7 +8822,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8650,7 +8833,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_181","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_182',
@@ -8670,7 +8854,7 @@ INSERT INTO `projects` (
   99200000,
   '000.2.8/625.6  05/TPS-KSM.BT/VII/2026',
   '2026-07-07',
-  '2026-03-01',
+  '7 Juli - Desember 2026',
   '2026-11-30',
   'TPS-KSM BETAHWALANG',
   'Bank Jateng',
@@ -8684,7 +8868,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli - Desember 2026"}}',
   75,
   8.76,
   -66.24,
@@ -8694,8 +8878,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_182","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 8.76% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_183',
@@ -8715,7 +8900,7 @@ INSERT INTO `projects` (
   99200000,
   '000.2.8/625.7 04/KSM.MM/VII/2026',
   '2026-07-07',
-  '2026-03-01',
+  '7 Juli - Desember 2026',
   '2026-11-30',
   'KSM Mugi Mberkahi',
   'Bank Jateng',
@@ -8729,7 +8914,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli - Desember 2026"}}',
   75,
   64.67,
   -10.33,
@@ -8739,8 +8924,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_183","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 64.67% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_184',
@@ -8760,7 +8946,7 @@ INSERT INTO `projects` (
   99200000,
   '000.2.8/625.5 17/TPS-KSM.SR/VII/2026',
   '2026-07-07',
-  '2026-03-01',
+  '7 Juli - Desember 2026',
   '2026-11-30',
   'TPS-KSM SANITASI RAHAYU',
   'Bank Jateng',
@@ -8774,7 +8960,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli - Desember 2026"}}',
   75,
   47.76,
   -27.24,
@@ -8784,8 +8970,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_184","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 47.76% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_185',
@@ -8805,7 +8992,7 @@ INSERT INTO `projects` (
   99200000,
   '000.2.8/625.3 17/BPSPAMS.KMD/VII/2026',
   '2026-07-07',
-  '2026-03-01',
+  '7 Juli - Desember 2026',
   '2026-11-30',
   'BP SPAMS KAMANDOWO',
   'Bank Jateng',
@@ -8819,7 +9006,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli - Desember 2026"}}',
   75,
   17.5,
   -57.5,
@@ -8829,8 +9016,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_185","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 17.5% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_186',
@@ -8850,7 +9038,7 @@ INSERT INTO `projects` (
   99200000,
   '000.2.8/625.4 12/KSM.TB/VII/2026',
   '2026-07-07',
-  '2026-03-01',
+  '7 Juli - Desember 2026',
   '2026-11-30',
   'KSM TEDUNAN BERKAH',
   'Bank Jateng',
@@ -8864,7 +9052,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Juli - Desember 2026"}}',
   75,
   71.03,
   -3.97,
@@ -8874,8 +9062,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_186","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 71.03% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_187',
@@ -8909,7 +9098,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -8920,7 +9109,8 @@ INSERT INTO `projects` (
   354000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_187","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_188',
@@ -8930,7 +9120,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_55',
   '1.03.05.2.01.04',
   'Jasa Konsultansi Pendampingan Pembangunan Tangki Septik Individu',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0188',
@@ -8940,8 +9130,8 @@ INSERT INTO `projects` (
   99156000,
   '027/01Pr/SPK/Tangki.PL.CK/II/2026',
   '2026-02-25',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-02-25',
+  '2026-12-22',
   'CV.PRIORITAS',
   'Bank Jateng',
   NULL,
@@ -8954,7 +9144,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"25 Februari 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-02-25"}}',
   80,
   80,
   0,
@@ -8965,7 +9155,8 @@ INSERT INTO `projects` (
   99156000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_188","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 80% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_189',
@@ -8975,7 +9166,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_55',
   '1.03.05.2.01.04',
   'Jasa Konsultansi Pendataan Akses Sanitasi Kecamatan Mranggen Paket 1',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0189',
@@ -8985,8 +9176,8 @@ INSERT INTO `projects` (
   99367000,
   '027/07Pr/SPK/SPAL.PL.CK/V/2026',
   '2026-05-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-05-08',
+  '2026-06-24',
   'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -8999,7 +9190,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 Mei 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-05-08"}}',
   100,
   100,
   0,
@@ -9009,8 +9200,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_189","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.367.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_190',
@@ -9030,7 +9222,7 @@ INSERT INTO `projects` (
   99398000,
   '000.3.2/01BIMTEK/SPK/PLP.CK.X/2026',
   '2026-10-23',
-  '2026-03-01',
+  '23 Oktober - 6 November 2026',
   '2026-11-30',
   'CV. MITRA JAYA TUJUH DELAPAN',
   'Bank Jateng',
@@ -9044,7 +9236,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"23 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"23 Oktober - 6 November 2026"}}',
   100,
   100,
   0,
@@ -9055,7 +9247,8 @@ INSERT INTO `projects` (
   99398000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_190","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_191',
@@ -9077,7 +9270,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -9088,8 +9281,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   5,
   3.44,
   -1.56,
@@ -9100,7 +9293,8 @@ INSERT INTO `projects` (
   99522000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_191","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 3.550.000 dan fisik mencapai 3.44% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_192',
@@ -9134,7 +9328,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -9145,7 +9339,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_192","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_193',
@@ -9167,7 +9362,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -9178,8 +9373,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Program Prioritas Bupati"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   100,
   100,
   0,
@@ -9190,7 +9385,8 @@ INSERT INTO `projects` (
   300000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_193","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_194',
@@ -9200,7 +9396,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_56',
   '1.03.06.2.01.01',
   'Jasa Konsultansi  Perencanaan Drainase Perkotaan Paket 1',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0194',
@@ -9210,7 +9406,7 @@ INSERT INTO `projects` (
   17760000,
   '000.3.2/09Pr/SPK/DR.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '28 September - 9 Oktober 2026',
   '2026-11-30',
   'CV. JK KONSULTAN',
   'Bank Jateng',
@@ -9224,7 +9420,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September - 9 Oktober 2026"}}',
   100,
   100,
   0,
@@ -9235,7 +9431,8 @@ INSERT INTO `projects` (
   17760000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_194","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_195',
@@ -9245,7 +9442,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_56',
   '1.03.06.2.01.01',
   'Jasa Konsultansi Pengawasan Drainase Perkotaan paket 1',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0195',
@@ -9269,7 +9466,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -9280,7 +9477,8 @@ INSERT INTO `projects` (
   20000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_195","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_196',
@@ -9302,7 +9500,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -9313,8 +9511,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   4,
   6.82,
   2.82,
@@ -9325,7 +9523,8 @@ INSERT INTO `projects` (
   410000000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_196","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 30.000.000 dan fisik mencapai 6.82% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_197',
@@ -9335,7 +9534,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_56',
   '1.03.06.2.01.01',
   'Jasa Konsultansi Pengawasan Revitalisasi Drainase Terakota di Perkotaan Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0197',
@@ -9359,7 +9558,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -9370,7 +9569,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_197","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_198',
@@ -9380,7 +9580,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_56',
   '1.03.06.2.01.01',
   'Jasa Konsultansi Perencanaan Revitalisasi Drainase Terakota di Perkotaan Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0198',
@@ -9404,7 +9604,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -9415,7 +9615,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_198","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_199',
@@ -9425,7 +9626,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_56',
   '1.03.06.2.01.01',
   'Jasa Konsultansi Penyusunan Masterplan Drainase Perkotaan - Demak Kota',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0199',
@@ -9449,7 +9650,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -9460,7 +9661,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_199","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_200',
@@ -9480,7 +9682,7 @@ INSERT INTO `projects` (
   99000000,
   '000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '10 Agustus - 8 Oktober 2026',
   '2026-11-30',
   'CV.BEJO',
   'Bank Jateng',
@@ -9494,7 +9696,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus - 8 Oktober 2026"}}',
   100,
   100,
   0,
@@ -9504,8 +9706,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_200","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.000.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -9522,7 +9725,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_cipta_karya_201',
@@ -9542,7 +9745,7 @@ INSERT INTO `projects` (
   148000000,
   '000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '10 Agustus - 8 Oktober 2026',
   '2026-11-30',
   'CV MITRAKU',
   'Bank Jateng',
@@ -9556,7 +9759,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus - 8 Oktober 2026"}}',
   100,
   100,
   0,
@@ -9566,8 +9769,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_201","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 148.000.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_202',
@@ -9587,7 +9791,7 @@ INSERT INTO `projects` (
   98400000,
   '000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '10 Agustus - 8 Oktober 2026',
   '2026-11-30',
   'CV MITRAKU',
   'Bank Jateng',
@@ -9601,7 +9805,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus - 8 Oktober 2026"}}',
   100,
   100,
   0,
@@ -9611,8 +9815,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_202","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 98.400.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_203',
@@ -9632,7 +9837,7 @@ INSERT INTO `projects` (
   465100000,
   '000.3.3/SP/Tender/PPSD.05.CK/VIII/2026',
   '2026-08-13',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV. GARUDA KARYA',
   'Bank Jateng',
@@ -9646,7 +9851,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"13 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   95,
   95,
   0,
@@ -9657,7 +9862,8 @@ INSERT INTO `projects` (
   325570000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_203","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 139.530.000 dan fisik mencapai 95% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_204',
@@ -9677,7 +9883,7 @@ INSERT INTO `projects` (
   948400000,
   '000.3.3/SP/Tender/PPSD.04.CK/VIII/2026',
   '2026-08-13',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV. ANDHIKA MANDIRI',
   'Bank Jateng',
@@ -9691,7 +9897,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"13 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   100,
   100,
   0,
@@ -9702,7 +9908,8 @@ INSERT INTO `projects` (
   663880000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_204","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 284.520.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_205',
@@ -9722,7 +9929,7 @@ INSERT INTO `projects` (
   1905600000,
   '000.3.3/SP/Tender/PPSD.03.CK/VIII/2026',
   '2026-08-13',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV. SHINTA',
   'Bank Jateng',
@@ -9736,7 +9943,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"13 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   100,
   100,
   0,
@@ -9747,7 +9954,8 @@ INSERT INTO `projects` (
   1905600000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_205","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_206',
@@ -9767,7 +9975,7 @@ INSERT INTO `projects` (
   1415000000,
   '000.3.3/SP/Tender/PPSD.06.CK/VIII/2026',
   '2026-08-13',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV KEMBAR JAYA',
   'Bank Jateng',
@@ -9781,7 +9989,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"13 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   100,
   100,
   0,
@@ -9792,7 +10000,8 @@ INSERT INTO `projects` (
   990500000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_206","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 424.500.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_207',
@@ -9812,7 +10021,7 @@ INSERT INTO `projects` (
   98.9,
   '000.3.2/SPK.01.AM/PPSD.Reg/PL.CK./VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '10 Agustus - 8 Oktober 2026',
   '2026-11-30',
   'CV FAZA',
   'Bank Jateng',
@@ -9826,7 +10035,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus - 8 Oktober 2026"}}',
   100,
   100,
   0,
@@ -9837,7 +10046,8 @@ INSERT INTO `projects` (
   98.9,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_207","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_208',
@@ -9857,7 +10067,7 @@ INSERT INTO `projects` (
   945900000,
   '000.3.3/SP/Tender/PPSD.02.CK/VIII/2026',
   '2026-08-13',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV.DUTA KENCANA',
   'Bank Jateng',
@@ -9871,7 +10081,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"13 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   100,
   100,
   0,
@@ -9882,7 +10092,8 @@ INSERT INTO `projects` (
   662130000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_208","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 283.770.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_209',
@@ -9902,7 +10113,7 @@ INSERT INTO `projects` (
   946400000,
   '000.3.3/SP/Tender/PPSD.01.CK/VIII/2026',
   '2026-08-13',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV. PURNA WIJAYA',
   'Bank Jateng',
@@ -9916,7 +10127,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"13 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   100,
   100,
   0,
@@ -9927,7 +10138,8 @@ INSERT INTO `projects` (
   662480000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_209","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 283.920.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_210',
@@ -9937,7 +10149,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Perencanaan Drainase Perkotaan Paket 1  ( Jalan Bhayangkara ; Nurcahya - Singorejo ; Mangunjiwan - Donorejo )',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0210',
@@ -9947,8 +10159,8 @@ INSERT INTO `projects` (
   49774000,
   '027/02Pr/SPK/DRAINASE.PL.CK/III/2026',
   '2026-03-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-05',
+  '2026-04-03',
   'CV. REKA ADI KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -9961,7 +10173,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"05 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-05"}}',
   100,
   100,
   0,
@@ -9971,8 +10183,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_210","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 49.774.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_211',
@@ -9982,7 +10195,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Perencanaan Drainase Perkotaan Paket 1  ( Jalan Sultan Hadi Wijaya ; Jalan Sultan Fatah ; Lingkungan Krapyak )',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0211',
@@ -9992,8 +10205,8 @@ INSERT INTO `projects` (
   49544000,
   '027/03Pr/SPK/DRAINASE.PL.CK/III/2026',
   '2026-03-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-05',
+  '2026-04-03',
   'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -10006,7 +10219,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"05 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-05"}}',
   100,
   100,
   0,
@@ -10016,8 +10229,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_211","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 49.544.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_212',
@@ -10027,7 +10241,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Pengawasan Drainase Perkotaan Paket 1  ( Jalan Bhayangkara ; Nurcahya - Singorejo ; Mangunjiwan - Donorejo )',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0212',
@@ -10037,7 +10251,7 @@ INSERT INTO `projects` (
   70386000,
   '000.3.2/01Pgw/SPK/DRAINASE.PL.CK.VIII/2026',
   '2026-08-19',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV. DE SATU',
   'Bank Jateng',
@@ -10051,7 +10265,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   90,
   90,
   0,
@@ -10062,7 +10276,8 @@ INSERT INTO `projects` (
   70386000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_212","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_213',
@@ -10072,7 +10287,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Pengawasan Drainase Perkotaan Paket 1  ( Jalan Sultan Hadi Wijaya ; Jalan Sultan Fatah ; Lingkungan Krapyak )',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0213',
@@ -10082,7 +10297,7 @@ INSERT INTO `projects` (
   44292000,
   '000.3.2/02Pgw/SPK/DRAINASE.PL.CK.VIII/2026',
   '2026-08-19',
-  '2026-03-01',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
   'CV.PRIORITAS',
   'Bank Jateng',
@@ -10096,7 +10311,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"19 Agustus - 16 November 2026"}}',
   90,
   90,
   0,
@@ -10107,7 +10322,8 @@ INSERT INTO `projects` (
   44292000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_213","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_214',
@@ -10141,7 +10357,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -10152,7 +10368,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_214","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_215',
@@ -10162,7 +10379,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Perencaan Drainase - Penataan Alun - Alun Perkotaan Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0215',
@@ -10172,7 +10389,7 @@ INSERT INTO `projects` (
   22013000,
   '000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '28 September - 9 Oktober 2026',
   '2026-11-30',
   'CV. DE SATU',
   'Bank Jateng',
@@ -10186,7 +10403,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September - 9 Oktober 2026"}}',
   100,
   100,
   0,
@@ -10197,7 +10414,8 @@ INSERT INTO `projects` (
   22013000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_215","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_216',
@@ -10207,7 +10425,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Perencanaan Penataan Drainase Jalan Kyai Jebat',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0216',
@@ -10231,7 +10449,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -10242,7 +10460,8 @@ INSERT INTO `projects` (
   25000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_216","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_217',
@@ -10252,7 +10471,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Perencanaan Drainase Jalan Sultan Hadi Wijaya (Lanjutan)',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0217',
@@ -10262,7 +10481,7 @@ INSERT INTO `projects` (
   21666000,
   '000.3.2/08Pr/SPK/DR.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '28 September - 9 Oktober 2026',
   '2026-11-30',
   'CV.DINASTI JAVA GROUP',
   'Bank Jateng',
@@ -10276,7 +10495,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September - 9 Oktober 2026"}}',
   100,
   100,
   0,
@@ -10287,7 +10506,8 @@ INSERT INTO `projects` (
   21666000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_217","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_218',
@@ -10297,7 +10517,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Perencanaan Penataan Drainase Mangunjiwan -  Donorejo ( Ruas Jalan Demak - Donorejo)',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0218',
@@ -10321,7 +10541,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -10332,7 +10552,8 @@ INSERT INTO `projects` (
   25000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_218","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_219',
@@ -10352,7 +10573,7 @@ INSERT INTO `projects` (
   99418000,
   '000.3.2/011Pr/SPK/DR.PLP.CK.X/2026',
   '2026-10-20',
-  '2026-03-01',
+  '20 oktober - 18 desember 2026',
   '2026-11-30',
   'CV. PURUSARA TEKNIK',
   'Bank Jateng',
@@ -10366,7 +10587,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 oktober - 18 desember 2026"}}',
   0,
   0,
   0,
@@ -10377,7 +10598,8 @@ INSERT INTO `projects` (
   99418000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_219","timestamp":"2026-10-31 16:00:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Pencatatan Kontrak Pelaksanaan","keterangan":"Kontrak pelaksanaan No. 000.3.2/011Pr/SPK/DR.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 99.418.000 kepada CV. PURUSARA TEKNIK."}]'
 ),
 (
   'prj_cipta_karya_220',
@@ -10387,7 +10609,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Pengawasan Drainase - Penataan Alun - Alun Perkotaan Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0220',
@@ -10397,7 +10619,7 @@ INSERT INTO `projects` (
   19703000,
   '000.3.2/05Pgw/SPK/SPAM.PLP.CK.X/2026',
   '2026-10-30',
-  '2026-03-01',
+  '30 Oktober - 18 Desember 2026',
   '2026-11-30',
   'CV. REKA ADI KONSULTAN',
   'Bank Jateng',
@@ -10411,7 +10633,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober - 18 Desember 2026"}}',
   0,
   0,
   0,
@@ -10422,7 +10644,8 @@ INSERT INTO `projects` (
   19703000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_220","timestamp":"2026-10-31 16:00:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Pencatatan Kontrak Pelaksanaan","keterangan":"Kontrak pelaksanaan No. 000.3.2/05Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 19.703.000 kepada CV. REKA ADI KONSULTAN."}]'
 ),
 (
   'prj_cipta_karya_221',
@@ -10432,7 +10655,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_57',
   '1.03.06.2.01.09',
   'Jasa Konsultansi Pengawasan Penataan Drainase Jalan Sultan Hadi Wijaya (Lanjutan)',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0221',
@@ -10442,7 +10665,7 @@ INSERT INTO `projects` (
   24619000,
   '000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026',
   '2026-10-30',
-  '2026-03-01',
+  '30 Oktober - 18 Desember 2026',
   '2026-11-30',
   'CV. PRIORITAS',
   'Bank Jateng',
@@ -10456,7 +10679,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober - 18 Desember 2026"}}',
   0,
   0,
   0,
@@ -10467,7 +10690,8 @@ INSERT INTO `projects` (
   24619000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_221","timestamp":"2026-10-31 16:00:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Pencatatan Kontrak Pelaksanaan","keterangan":"Kontrak pelaksanaan No. 000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 24.619.000 kepada CV. PRIORITAS."}]'
 ),
 (
   'prj_cipta_karya_222',
@@ -10487,7 +10711,7 @@ INSERT INTO `projects` (
   1207300000,
   '000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026',
   '2026-10-30',
-  '2026-03-01',
+  '30 Oktober - 18 Desember 2026',
   '2026-11-30',
   'CV. ZULFA',
   'Bank Jateng',
@@ -10501,7 +10725,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober - 18 Desember 2026"}}',
   0,
   0,
   0,
@@ -10512,7 +10736,8 @@ INSERT INTO `projects` (
   1207300000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_222","timestamp":"2026-10-31 16:00:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Pencatatan Kontrak Pelaksanaan","keterangan":"Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026 telah diterbitkan dengan nilai Rp 1.207.300.000 kepada CV. ZULFA."}]'
 ),
 (
   'prj_cipta_karya_223',
@@ -10532,7 +10757,7 @@ INSERT INTO `projects` (
   1476300000,
   '000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026',
   '2026-10-30',
-  '2026-03-01',
+  '30 Oktober - 18 Desember 2026',
   '2026-11-30',
   'CV. GARUDA KARYA',
   'Bank Jateng',
@@ -10546,7 +10771,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober - 18 Desember 2026"}}',
   0,
   0,
   0,
@@ -10557,7 +10782,8 @@ INSERT INTO `projects` (
   1476300000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_223","timestamp":"2026-10-31 16:00:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Pencatatan Kontrak Pelaksanaan","keterangan":"Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026 telah diterbitkan dengan nilai Rp 1.476.300.000 kepada CV. GARUDA KARYA."}]'
 ),
 (
   'prj_cipta_karya_224',
@@ -10591,7 +10817,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -10602,7 +10828,8 @@ INSERT INTO `projects` (
   40000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_224","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 40.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_225',
@@ -10624,7 +10851,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -10635,8 +10862,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Program Prioritas Bupati"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   65,
   69.99,
   4.99,
@@ -10647,7 +10874,8 @@ INSERT INTO `projects` (
   210082600,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_225","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 489.917.400 dan fisik mencapai 69.99% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_226',
@@ -10667,7 +10895,7 @@ INSERT INTO `projects` (
   81283000,
   '000.3.2/SPK/PL.BG.04.PL.CK/VIII/2026',
   '2026-08-07',
-  '2026-03-01',
+  '2026-08-07',
   '2026-11-30',
   'CV. SALSABIL',
   'Bank Jateng',
@@ -10681,7 +10909,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-07"}}',
   90,
   90,
   0,
@@ -10692,7 +10920,8 @@ INSERT INTO `projects` (
   81283000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_226","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_227',
@@ -10702,7 +10931,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_59',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Perencanaan  Rehabilitasi Gedung MWC NU Mijen Demak Dusun Bogorame RT 01 RW 04 Desa Bakung Kec. Mijen',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0227',
@@ -10712,7 +10941,7 @@ INSERT INTO `projects` (
   3959000,
   '027/01Pr/SPK/BG.PL.CK/III/2026',
   '2026-03-12',
-  '2026-03-01',
+  '2026-03-12',
   '2026-11-30',
   'ZAHRA SALSABILA JESSEDANTA PUTRI',
   'Bank Jateng',
@@ -10726,7 +10955,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"12 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-12"}}',
   100,
   100,
   0,
@@ -10736,8 +10965,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_227","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 3.959.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_228',
@@ -10747,7 +10977,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_59',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Pengawasan Rehabilitasi Gedung MWC NU Mijen Demak Dusun Bogorame RT 01 RW 04 Desa Bakung Kec. Mijen',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0228',
@@ -10757,7 +10987,7 @@ INSERT INTO `projects` (
   1914000,
   '000.3.2/04Pgw/SPK/BG.PL.CK.VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'IMAN SETYA PRISISWANTO',
   'Bank Jateng',
@@ -10771,7 +11001,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -10782,7 +11012,8 @@ INSERT INTO `projects` (
   1914000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_228","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_229',
@@ -10792,7 +11023,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_59',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Pengawasan Rekayasa-Jasa Pengawas Pekerjaan Konstruksi Bangunan Gedung',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0229',
@@ -10816,7 +11047,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -10827,7 +11058,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_229","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_230',
@@ -10849,7 +11081,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -10860,8 +11092,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   14,
   15.26,
   1.26,
@@ -10872,7 +11104,8 @@ INSERT INTO `projects` (
   6712480,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_230","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 1.150.000 dan fisik mencapai 15.26% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_231',
@@ -10882,7 +11115,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_59',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Perencanaan Rehabilitasi Pagar Gedung Bapperida Setda Kabupaten Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0231',
@@ -10892,7 +11125,7 @@ INSERT INTO `projects` (
   11834000,
   '000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '2026-09-28',
   '2026-11-30',
   'CV. DE SATU',
   'Bank Jateng',
@@ -10906,7 +11139,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-28"}}',
   20,
   20,
   0,
@@ -10917,7 +11150,8 @@ INSERT INTO `projects` (
   11834000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_231","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_232',
@@ -10937,7 +11171,7 @@ INSERT INTO `projects` (
   50527000,
   '000.3.2/08Pr/SPK/BG.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '2026-09-28',
   '2026-11-30',
   'CV.DINASTI JAVA GROUP',
   'Bank Jateng',
@@ -10951,7 +11185,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-28"}}',
   20,
   20,
   0,
@@ -10962,7 +11196,8 @@ INSERT INTO `projects` (
   50527000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_232","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_233',
@@ -10982,7 +11217,7 @@ INSERT INTO `projects` (
   13818000,
   '000.3.2/010Pr/SPK/BG.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '2026-09-28',
   '2026-11-30',
   'CV. RAF INOVASI',
   'Bank Jateng',
@@ -10996,7 +11231,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-28"}}',
   20,
   20,
   0,
@@ -11007,7 +11242,8 @@ INSERT INTO `projects` (
   13818000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_233","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_234',
@@ -11029,7 +11265,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -11040,8 +11276,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["APBD Perubahan"]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   20,
   20,
   0,
@@ -11052,7 +11288,8 @@ INSERT INTO `projects` (
   32000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_234","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_235',
@@ -11062,7 +11299,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_59',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Pengawasan Rehabiliasi Pagar Gedung Bapperida Setda Kabupaten Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0235',
@@ -11086,7 +11323,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11097,7 +11334,8 @@ INSERT INTO `projects` (
   8000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_235","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_236',
@@ -11107,7 +11345,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_59',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Pengawasan Rehabilitasi Pendopo Bupati Setda Kabupaten Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0236',
@@ -11131,7 +11369,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11142,7 +11380,8 @@ INSERT INTO `projects` (
   8000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_236","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_237',
@@ -11176,7 +11415,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11187,7 +11426,8 @@ INSERT INTO `projects` (
   283740480,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_237","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_238',
@@ -11221,7 +11461,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11232,7 +11472,8 @@ INSERT INTO `projects` (
   381328560,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_238","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 381.328.560 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_239',
@@ -11266,7 +11507,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11277,7 +11518,8 @@ INSERT INTO `projects` (
   378041760,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_239","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 378.041.760 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_240',
@@ -11311,7 +11553,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11322,7 +11564,8 @@ INSERT INTO `projects` (
   139659120,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_240","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 139.659.120 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_241',
@@ -11356,7 +11599,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11367,7 +11610,8 @@ INSERT INTO `projects` (
   283740480,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_241","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_242',
@@ -11401,7 +11645,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11412,7 +11656,8 @@ INSERT INTO `projects` (
   478551960,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_242","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_243',
@@ -11446,7 +11691,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11457,7 +11702,8 @@ INSERT INTO `projects` (
   574532640,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_243","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 574.532.640 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_244',
@@ -11477,7 +11723,7 @@ INSERT INTO `projects` (
   185834000,
   '000.3.2/SPK/BG.06.PL.CK/VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. HIDAYAT',
   'Bank Jateng',
@@ -11491,7 +11737,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -11502,7 +11748,8 @@ INSERT INTO `projects` (
   185834000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_244","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_245',
@@ -11522,7 +11769,7 @@ INSERT INTO `projects` (
   137668000,
   '000.3.2/SPK/BG.08.PL.CK/VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. AZZA',
   'Bank Jateng',
@@ -11536,7 +11783,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -11547,7 +11794,8 @@ INSERT INTO `projects` (
   137668000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_245","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_246',
@@ -11581,7 +11829,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -11592,7 +11840,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_246","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_247',
@@ -11612,7 +11861,7 @@ INSERT INTO `projects` (
   183684000,
   '000.3.2/SPK/BG.05.PL.CK/VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. MITRA JAYA',
   'Bank Jateng',
@@ -11626,7 +11875,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -11637,7 +11886,8 @@ INSERT INTO `projects` (
   183684000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_247","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_248',
@@ -11657,7 +11907,7 @@ INSERT INTO `projects` (
   92158000,
   '000.3.2/SPK/BG.09.PL.CK/VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. SAHALA',
   'Bank Jateng',
@@ -11671,7 +11921,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -11682,7 +11932,8 @@ INSERT INTO `projects` (
   92158000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_248","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_249',
@@ -11702,7 +11953,7 @@ INSERT INTO `projects` (
   185133000,
   '000.3.2/SPK/BG.13.PL.CK/IX/2026',
   '2026-09-04',
-  '2026-03-01',
+  '2026-09-04',
   '2026-11-30',
   'CV. INDAH LESTARI',
   'Bank Jateng',
@@ -11716,7 +11967,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"4 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-04"}}',
   100,
   100,
   0,
@@ -11726,8 +11977,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_249","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 185.133.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_250',
@@ -11747,7 +11999,7 @@ INSERT INTO `projects` (
   185788000,
   '000.3.2/SPK/BG.07.PL.CK/VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. HIDAYAT',
   'Bank Jateng',
@@ -11761,7 +12013,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -11772,7 +12024,8 @@ INSERT INTO `projects` (
   185788000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_250","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -11789,7 +12042,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_cipta_karya_251',
@@ -11809,7 +12062,7 @@ INSERT INTO `projects` (
   185460000,
   '000.3.2/SPK/BG.14.PL.CK/IX/2026',
   '2026-09-04',
-  '2026-03-01',
+  '2026-09-04',
   '2026-11-30',
   'CV. MITRA JAYA ABADI',
   'Bank Jateng',
@@ -11823,7 +12076,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"4 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-04"}}',
   65.57,
   93.78,
   28.21,
@@ -11834,7 +12087,8 @@ INSERT INTO `projects` (
   185460000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_251","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 93.78% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_252',
@@ -11854,7 +12108,7 @@ INSERT INTO `projects` (
   188307000,
   '000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026',
   '2026-08-03',
-  '2026-03-01',
+  '2026-08-03',
   '2026-11-30',
   'CV INDAH LESTARI',
   'Bank Jateng',
@@ -11868,7 +12122,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"3 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-03"}}',
   100,
   100,
   0,
@@ -11878,8 +12132,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_252","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 188.307.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_253',
@@ -11899,7 +12154,7 @@ INSERT INTO `projects` (
   187732000,
   '000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026',
   '2026-08-03',
-  '2026-03-01',
+  '2026-08-03',
   '2026-11-30',
   'CV. HARGOSARI',
   'Bank Jateng',
@@ -11913,7 +12168,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"3 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-03"}}',
   100,
   100,
   0,
@@ -11923,8 +12178,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_253","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 187.732.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_254',
@@ -11944,7 +12200,7 @@ INSERT INTO `projects` (
   140057000,
   '000.3.2/SPK/PL.BG.03.PL.CK/VIII/2026',
   '2026-08-03',
-  '2026-03-01',
+  '2026-08-03',
   '2026-11-30',
   'CV. MITRAKU',
   'Bank Jateng',
@@ -11958,7 +12214,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"3 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-03"}}',
   100,
   100,
   0,
@@ -11969,7 +12225,8 @@ INSERT INTO `projects` (
   140057000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_254","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_255',
@@ -11989,7 +12246,7 @@ INSERT INTO `projects` (
   138176000,
   '000.3.2/SPK/BG.12.PL.CK/VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. HIDAYAT',
   'Bank Jateng',
@@ -12003,7 +12260,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -12014,7 +12271,8 @@ INSERT INTO `projects` (
   138176000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_255","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_256',
@@ -12034,7 +12292,7 @@ INSERT INTO `projects` (
   27777000,
   '027/02Pr/SPK/BG.PL.CK/III/2026',
   '2026-03-12',
-  '2026-03-01',
+  '2026-03-12',
   '2026-11-30',
   'CV.PRIORITAS',
   'Bank Jateng',
@@ -12048,7 +12306,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"12 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-12"}}',
   100,
   100,
   0,
@@ -12058,8 +12316,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_256","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 27.777.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_257',
@@ -12079,7 +12338,7 @@ INSERT INTO `projects` (
   24859000,
   '027/03Pr/SPK/BG.PL.CK/III/2026',
   '2026-03-12',
-  '2026-03-01',
+  '2026-03-12',
   '2026-11-30',
   'CV. DE SATU',
   'Bank Jateng',
@@ -12093,7 +12352,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"12 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-12"}}',
   100,
   100,
   0,
@@ -12103,8 +12362,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_257","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 24.859.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_258',
@@ -12124,7 +12384,7 @@ INSERT INTO `projects` (
   15806000,
   '027/04Pr/SPK/BG.PL.CK/III/2026',
   '2026-03-12',
-  '2026-03-01',
+  '2026-03-12',
   '2026-11-30',
   'CV. JK KONSULTAN',
   'Bank Jateng',
@@ -12138,7 +12398,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"12 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-12"}}',
   100,
   100,
   0,
@@ -12148,8 +12408,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_258","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 15.806.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_259',
@@ -12169,7 +12430,7 @@ INSERT INTO `projects` (
   11632000,
   '000.3.2/05Pr/SPK/BG.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '2026-09-28',
   '2026-11-30',
   'CV. RAF INOVASI',
   'Bank Jateng',
@@ -12183,7 +12444,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-28"}}',
   30,
   30,
   0,
@@ -12194,7 +12455,8 @@ INSERT INTO `projects` (
   11632000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_259","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_260',
@@ -12204,7 +12466,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_60',
   '1.03.08.2.01.02',
   'Konsultansi Perencanaan Gedung Bangunan Gedung Negara',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0260',
@@ -12228,7 +12490,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12239,7 +12501,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_260","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_261',
@@ -12259,7 +12522,7 @@ INSERT INTO `projects` (
   21534000,
   '000.3.2/01Pgw/SPK/BG.PL.CK.VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. JK KONSULTAN',
   'Bank Jateng',
@@ -12273,7 +12536,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -12284,7 +12547,8 @@ INSERT INTO `projects` (
   21534000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_261","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_262',
@@ -12304,7 +12568,7 @@ INSERT INTO `projects` (
   18856000,
   '000.3.2/02Pgw/SPK/BG.PL.CK.VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. REKA ADI KONSULTAN',
   'Bank Jateng',
@@ -12318,7 +12582,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -12329,7 +12593,8 @@ INSERT INTO `projects` (
   18856000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_262","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_263',
@@ -12349,7 +12614,7 @@ INSERT INTO `projects` (
   8796000,
   '000.3.2/03Pgw/SPK/BG.PL.CK.VIII/2026',
   '2026-08-10',
-  '2026-03-01',
+  '2026-08-10',
   '2026-11-30',
   'CV. JK KONSULTAN',
   'Bank Jateng',
@@ -12363,7 +12628,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-10"}}',
   100,
   100,
   0,
@@ -12374,7 +12639,8 @@ INSERT INTO `projects` (
   8796000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_263","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_264',
@@ -12408,7 +12674,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12419,7 +12685,8 @@ INSERT INTO `projects` (
   8000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_264","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Perubahan)."}]'
 ),
 (
   'prj_cipta_karya_265',
@@ -12453,7 +12720,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12464,7 +12731,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_265","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_266',
@@ -12498,7 +12766,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12509,7 +12777,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_266","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_267',
@@ -12543,7 +12812,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12554,7 +12823,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_267","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_268',
@@ -12588,7 +12858,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12599,7 +12869,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_268","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_269',
@@ -12633,7 +12904,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12644,7 +12915,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_269","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_270',
@@ -12666,7 +12938,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -12677,8 +12949,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   32.44,
   32.44,
   0,
@@ -12689,7 +12961,8 @@ INSERT INTO `projects` (
   84398500,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_270","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 40.530.500 dan fisik mencapai 32.44% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_271',
@@ -12723,7 +12996,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12734,7 +13007,8 @@ INSERT INTO `projects` (
   478544800,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_271","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_272',
@@ -12744,7 +13018,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_60',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Perencanaan Pembangunan Gedung Satreskrim Polres Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0272',
@@ -12754,7 +13028,7 @@ INSERT INTO `projects` (
   7781000,
   '000.3.2/011Pr/SPK/BG.PLP.CK.X/2026',
   '2026-10-02',
-  '2026-03-01',
+  '2026-10-02',
   '2026-11-30',
   'FASTABIQ FADZIL ADHA',
   'Bank Jateng',
@@ -12768,7 +13042,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"02 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-02"}}',
   20,
   20,
   0,
@@ -12779,7 +13053,8 @@ INSERT INTO `projects` (
   7781000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_272","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_273',
@@ -12789,7 +13064,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_60',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Pengawasan  Pembangunan Gedung Satreskrim Polres Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0273',
@@ -12813,7 +13088,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12824,7 +13099,8 @@ INSERT INTO `projects` (
   12000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_273","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_274',
@@ -12858,7 +13134,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12869,7 +13145,8 @@ INSERT INTO `projects` (
   286122200,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_274","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 286.122.200 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_275',
@@ -12903,7 +13180,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12914,7 +13191,8 @@ INSERT INTO `projects` (
   236084500,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_275","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 236.084.500 (Perubahan)."}]'
 ),
 (
   'prj_cipta_karya_276',
@@ -12948,7 +13226,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -12959,7 +13237,8 @@ INSERT INTO `projects` (
   187577600,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_276","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 187.577.600 (Perubahan)."}]'
 ),
 (
   'prj_cipta_karya_277',
@@ -12993,7 +13272,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13004,7 +13283,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_277","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_278',
@@ -13038,7 +13318,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13049,7 +13329,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_278","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_279',
@@ -13083,7 +13364,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13094,7 +13375,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_279","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_280',
@@ -13104,7 +13386,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_60',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Perencanaan Pembangunan Gedung TK Kemala Bhayangkari 36 Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0280',
@@ -13128,7 +13410,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13139,7 +13421,8 @@ INSERT INTO `projects` (
   8000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_280","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_281',
@@ -13149,7 +13432,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_60',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Pengawasan Pembangunan Gedung TK Kemala Bhayangkari 36 Demak',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0281',
@@ -13173,7 +13456,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13184,7 +13467,8 @@ INSERT INTO `projects` (
   12000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_281","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Perubahan)."}]'
 ),
 (
   'prj_cipta_karya_282',
@@ -13218,7 +13502,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13229,7 +13513,8 @@ INSERT INTO `projects` (
   666589600,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_282","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_283',
@@ -13263,7 +13548,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13274,7 +13559,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_283","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_284',
@@ -13284,7 +13570,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_60',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Perencanaan Penyusunan Feasibility Study Pembangunan Gedung Kantor Kecamatan Bonang',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0284',
@@ -13308,7 +13594,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13319,7 +13605,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_284","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_285',
@@ -13353,7 +13640,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13364,7 +13651,8 @@ INSERT INTO `projects` (
   1432181600,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_285","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_286',
@@ -13398,7 +13686,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13409,7 +13697,8 @@ INSERT INTO `projects` (
   30000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_286","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_287',
@@ -13443,7 +13732,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13454,7 +13743,8 @@ INSERT INTO `projects` (
   24000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_287","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 24.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_288',
@@ -13474,7 +13764,7 @@ INSERT INTO `projects` (
   7215931000,
   '000.3.3/01/SP/Perub.BG.CK/X/2026',
   '2026-10-05',
-  '2026-03-01',
+  '2026-10-05',
   '2026-11-30',
   'CV.SEMBILAN SEMBILAN',
   'Bank Jateng',
@@ -13488,7 +13778,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"05 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-05"}}',
   20,
   20,
   0,
@@ -13499,7 +13789,8 @@ INSERT INTO `projects` (
   5051151700,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_288","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 2.164.779.300 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_289',
@@ -13519,7 +13810,7 @@ INSERT INTO `projects` (
   39732000,
   '000.3.2/05Pgw/SPK/BG.PLP.CK.X/2026',
   '2026-10-05',
-  '2026-03-01',
+  '2026-10-05',
   '2026-11-30',
   'CV. DE SATU',
   'Bank Jateng',
@@ -13533,7 +13824,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"05 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-05"}}',
   20,
   20,
   0,
@@ -13544,7 +13835,8 @@ INSERT INTO `projects` (
   39732000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_289","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_290',
@@ -13564,7 +13856,7 @@ INSERT INTO `projects` (
   3584729000,
   '000.3.3/03/SP/Perub.BG.CK/X/2026',
   '2026-10-30',
-  '2026-03-01',
+  '2026-10-30',
   '2026-11-30',
   'CV. KIAN AGENG REZEKI',
   'Bank Jateng',
@@ -13578,7 +13870,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-30"}}',
   10,
   10,
   0,
@@ -13589,7 +13881,8 @@ INSERT INTO `projects` (
   3584729000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_290","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_291',
@@ -13623,7 +13916,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13634,7 +13927,8 @@ INSERT INTO `projects` (
   30000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_291","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."}]'
 ),
 (
   'prj_cipta_karya_292',
@@ -13644,7 +13938,7 @@ INSERT INTO `projects` (
   'sub_cipta_karya_60',
   '1.03.08.2.01.02',
   'Jasa Konsultansi Perencanaan Penataan Lingkungan Kantor Terpadu (Belakang kantor BPBD)',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-CIP-0292',
@@ -13654,7 +13948,7 @@ INSERT INTO `projects` (
   29550000,
   '000.3.2/06Pr/SPK/BG.PLP.CK.IX/2026',
   '2026-09-28',
-  '2026-03-01',
+  '2026-09-28',
   '2026-11-30',
   'CV ATHAR',
   'Bank Jateng',
@@ -13668,7 +13962,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-28"}}',
   50,
   50,
   0,
@@ -13679,7 +13973,8 @@ INSERT INTO `projects` (
   29550000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_292","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 50% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_cipta_karya_293',
@@ -13701,7 +13996,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -13712,8 +14007,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   60,
   70.46,
   10.46,
@@ -13724,7 +14019,8 @@ INSERT INTO `projects` (
   70546500,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_cipta_karya_293","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Cipta Karya","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 129.453.500 dan fisik mencapai 70.46% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_294',
@@ -13758,7 +14054,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13769,7 +14065,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_294","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_295',
@@ -13803,7 +14100,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13814,7 +14111,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_295","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_296',
@@ -13848,7 +14146,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13859,7 +14157,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_296","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_297',
@@ -13893,7 +14192,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13904,7 +14203,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_297","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_298',
@@ -13914,7 +14214,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_62',
   '1.03.10.2.01.01',
   'Jasa Konsultansi IJD Paket 1',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0298',
@@ -13938,7 +14238,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13949,7 +14249,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_298","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_299',
@@ -13959,7 +14260,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_62',
   '1.03.10.2.01.01',
   'Jasa Konsultansi IJD Paket 2',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0299',
@@ -13983,7 +14284,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -13994,7 +14295,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_299","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_300',
@@ -14028,7 +14330,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -14039,7 +14341,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_300","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -14056,7 +14359,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_bina_marga_301',
@@ -14076,8 +14379,8 @@ INSERT INTO `projects` (
   199353000,
   '000.3.2/PL.SPK.BM.43.3/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV .WIJAYA KUSUMA',
   'Bank Jateng',
   NULL,
@@ -14090,7 +14393,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14100,8 +14403,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_301","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.353.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_302',
@@ -14121,8 +14425,8 @@ INSERT INTO `projects` (
   148865000,
   '000.3.2/PL.SPK.BM.32/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. KAWAN KITA',
   'Bank Jateng',
   NULL,
@@ -14135,7 +14439,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14145,8 +14449,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_302","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 148.865.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_303',
@@ -14180,7 +14485,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -14191,7 +14496,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_303","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_bina_marga_304',
@@ -14211,8 +14517,8 @@ INSERT INTO `projects` (
   149606000,
   '000.3.2/PL.SPK.BM.30/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. WAHYU ABADI',
   'Bank Jateng',
   NULL,
@@ -14225,7 +14531,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   90,
   60,
   -30,
@@ -14236,7 +14542,8 @@ INSERT INTO `projects` (
   222000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_304","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 149.384.000 dan fisik mencapai 60% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_305',
@@ -14270,7 +14577,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -14281,7 +14588,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_305","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_306',
@@ -14301,8 +14609,8 @@ INSERT INTO `projects` (
   98530000,
   '000.3.2/PL.SPK.BM.043/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. ANDHIKA MANDIRI',
   'Bank Jateng',
   NULL,
@@ -14315,7 +14623,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14325,8 +14633,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_306","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 98.530.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_307',
@@ -14346,8 +14655,8 @@ INSERT INTO `projects` (
   149296000,
   '000.3.2/PL.SPK.BM.27/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. ATMA KARYA',
   'Bank Jateng',
   NULL,
@@ -14360,7 +14669,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14370,8 +14679,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_307","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 149.296.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_308',
@@ -14391,8 +14701,8 @@ INSERT INTO `projects` (
   199335000,
   '000.3.2/PL.SPK.BM.43.2/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. BANGUN MULYO',
   'Bank Jateng',
   NULL,
@@ -14405,7 +14715,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14415,8 +14725,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_308","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.335.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_309',
@@ -14436,8 +14747,8 @@ INSERT INTO `projects` (
   199251000,
   '000.3.2/PL.SPK.BM.042/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. BINTORO KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -14450,7 +14761,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14460,8 +14771,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_309","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.251.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_310',
@@ -14481,8 +14793,8 @@ INSERT INTO `projects` (
   199214000,
   '000.3.2/PL.SPK.BM.33/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. WIDI PRATAMA',
   'Bank Jateng',
   NULL,
@@ -14495,7 +14807,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14505,8 +14817,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_310","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.214.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_311',
@@ -14526,8 +14839,8 @@ INSERT INTO `projects` (
   149454000,
   '000.03.02.2/PL.SPK.BM.039/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. BINTORO KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -14540,7 +14853,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14550,8 +14863,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_311","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 149.454.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_312',
@@ -14571,8 +14885,8 @@ INSERT INTO `projects` (
   99390000,
   '000.3.2/PL.SPK.BM.55/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. SALSABIL',
   'Bank Jateng',
   NULL,
@@ -14585,7 +14899,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14595,8 +14909,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_312","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.390.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_313',
@@ -14616,8 +14931,8 @@ INSERT INTO `projects` (
   99129000,
   '000.3.2/PL.SPK.BM.35/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. MAHESA KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -14630,7 +14945,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14640,8 +14955,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_313","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.129.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_314',
@@ -14663,7 +14979,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -14674,8 +14990,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   23.35,
   23.35,
   0,
@@ -14686,7 +15002,8 @@ INSERT INTO `projects` (
   40763500,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_314","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 39.236.500 dan fisik mencapai 23.35% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_315',
@@ -14706,8 +15023,8 @@ INSERT INTO `projects` (
   199130000,
   '027.2/PL.SPK.BM.005/IV/2026',
   '2026-04-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-07',
+  '2026-06-05',
   'CV. TIRTA JAYA',
   'Bank Jateng',
   NULL,
@@ -14720,7 +15037,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-07"}}',
   100,
   100,
   0,
@@ -14730,8 +15047,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_315","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.130.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_316',
@@ -14751,8 +15069,8 @@ INSERT INTO `projects` (
   198886000,
   '027.2/PL.SPK.BM.006/IV/2026',
   '2026-04-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-07',
+  '2026-06-05',
   'CV. AGA KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -14765,7 +15083,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-07"}}',
   100,
   100,
   0,
@@ -14775,8 +15093,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_316","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.886.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_317',
@@ -14796,8 +15115,8 @@ INSERT INTO `projects` (
   148834000,
   '027.2/PL.SPK.BM.007/IV/2026',
   '2026-04-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-07',
+  '2026-06-05',
   'CV. SUMBER JAYA',
   'Bank Jateng',
   NULL,
@@ -14810,7 +15129,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-07"}}',
   100,
   100,
   0,
@@ -14820,8 +15139,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_317","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 148.834.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_318',
@@ -14841,8 +15161,8 @@ INSERT INTO `projects` (
   199034000,
   '000.3.2/PL.SPK.BM.28/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. BINTORO KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -14855,7 +15175,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -14865,8 +15185,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_318","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.034.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_319',
@@ -14886,8 +15207,8 @@ INSERT INTO `projects` (
   298414000,
   '000.3.2/PL.SPPBJ.BM.57/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-16',
   'CV. KEMBAR JAYA',
   'Bank Jateng',
   NULL,
@@ -14900,7 +15221,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   90,
   90,
   0,
@@ -14910,8 +15231,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_319","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 298.414.000 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_320',
@@ -14931,8 +15253,8 @@ INSERT INTO `projects` (
   199405000,
   '000.03.02.2/PL.SPK.BM.056/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-16',
   'CV. HIDAYAH BARU',
   'Bank Jateng',
   NULL,
@@ -14945,7 +15267,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   100,
   100,
   0,
@@ -14955,8 +15277,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_320","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.405.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_321',
@@ -14976,8 +15299,8 @@ INSERT INTO `projects` (
   198549000,
   '000.3.2/PL.SPK.BM.31/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. GARUDA KARYA',
   'Bank Jateng',
   NULL,
@@ -14990,7 +15313,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -15000,8 +15323,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_321","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.549.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_322',
@@ -15021,8 +15345,8 @@ INSERT INTO `projects` (
   174127000,
   '000.3.2/PL.SPK.BM.36/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. MUDI PUTRA JAYA',
   'Bank Jateng',
   NULL,
@@ -15035,7 +15359,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -15045,8 +15369,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_322","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 174.127.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_323',
@@ -15066,8 +15391,8 @@ INSERT INTO `projects` (
   149183000,
   '000.3.2/PL.SPK.BM.37/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. BANGKIT SENTOSA',
   'Bank Jateng',
   NULL,
@@ -15080,7 +15405,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -15090,8 +15415,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_323","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 149.183.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_324',
@@ -15111,8 +15437,8 @@ INSERT INTO `projects` (
   198604000,
   '000.03.02.2/PL.SPK.BM.038/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. AGA KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -15125,7 +15451,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   100,
   100,
   0,
@@ -15135,8 +15461,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_324","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.604.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_325',
@@ -15156,8 +15483,8 @@ INSERT INTO `projects` (
   955444001,
   '000.03.02.2/APBD.SP.BM.74/VIII/2026',
   '2026-08-20',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-20',
+  '2026-11-17',
   'CV. KEMBAR PUTRA',
   'Bank Jateng',
   NULL,
@@ -15170,7 +15497,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   0,
   0,
   0,
@@ -15180,8 +15507,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_325","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 955.444.001 dan fisik mencapai 0% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_326',
@@ -15191,7 +15519,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Perencanaan Pembangunan Talud Jalan Brambang - Sidorejo',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0326',
@@ -15201,8 +15529,8 @@ INSERT INTO `projects` (
   14705000,
   '027.2/PRC.SPK.BM.016/IV/2026',
   '2026-04-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-08',
+  '2026-05-07',
   'CV. KUBANG ENGINEERING CONSULTANT',
   'Bank Jateng',
   NULL,
@@ -15215,7 +15543,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-08"}}',
   100,
   100,
   0,
@@ -15225,8 +15553,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_326","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_327',
@@ -15236,7 +15565,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Pembangunan Talud Jalan Brambang - Sidorejo',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0327',
@@ -15260,7 +15589,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -15271,7 +15600,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_327","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_328',
@@ -15291,8 +15621,8 @@ INSERT INTO `projects` (
   149223000,
   '027/PL.SPK.BM.009/IV/2026',
   '2026-04-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-07',
+  '2026-06-05',
   'CV. INDAH LESTARI',
   'Bank Jateng',
   NULL,
@@ -15305,7 +15635,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"07 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-07"}}',
   100,
   100,
   0,
@@ -15315,8 +15645,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_328","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 149.223.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_329',
@@ -15336,8 +15667,8 @@ INSERT INTO `projects` (
   954431000,
   '000.03.02.2/APBD.SP.BM.75/VIII/2026',
   '2026-08-20',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-20',
+  '2026-11-17',
   'CV. KEMBAR PUTRA',
   'Bank Jateng',
   NULL,
@@ -15350,7 +15681,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   80,
   90,
   10,
@@ -15360,8 +15691,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_329","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 954.431.000 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_330',
@@ -15371,7 +15703,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Perencanaan Pembangunan Talud Jalan Waru - Wringinjajar',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0330',
@@ -15381,8 +15713,8 @@ INSERT INTO `projects` (
   14705000,
   '027.2/PRC.SPK.BM.017/IV/2026',
   '2026-04-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-08',
+  '2026-05-07',
   'CV. KUBANG ENGINEERING CONSULTANT',
   'Bank Jateng',
   NULL,
@@ -15395,7 +15727,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-08"}}',
   100,
   100,
   0,
@@ -15405,8 +15737,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_330","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_331',
@@ -15416,7 +15749,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Pembangunan Talud Jalan Waru - Wringinjajar',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0331',
@@ -15440,7 +15773,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -15451,7 +15784,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_331","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_332',
@@ -15485,7 +15819,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -15496,7 +15830,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_332","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_bina_marga_333',
@@ -15506,7 +15841,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Perencanaan Pembangunan Trotoar Jalan Terakota di Perkotaan Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0333',
@@ -15530,7 +15865,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -15541,7 +15876,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_333","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_bina_marga_334',
@@ -15551,7 +15887,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Pembangunan Trotoar Jalan Terakota di Perkotaan Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0334',
@@ -15575,7 +15911,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -15586,7 +15922,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_334","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."}]'
 ),
 (
   'prj_bina_marga_335',
@@ -15606,8 +15943,8 @@ INSERT INTO `projects` (
   1900504641,
   '000.3.7/APBD.SP.BM.069/VIII/2026',
   '2026-08-21',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-21',
+  '2026-12-18',
   'CV. ZULFA',
   'Bank Jateng',
   NULL,
@@ -15620,7 +15957,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"21 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-21"}}',
   30,
   50,
   20,
@@ -15631,7 +15968,8 @@ INSERT INTO `projects` (
   1313953249,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_335","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 586.551.392 dan fisik mencapai 50% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_336',
@@ -15641,7 +15979,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Perencanaan Penataan Jalan Sultan Fatah',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0336',
@@ -15651,8 +15989,8 @@ INSERT INTO `projects` (
   29646000,
   '027.2/PRC.SPK.BM.010/IV/2026',
   '2026-04-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-08',
+  '2026-05-07',
   'CV. PRIORITAS',
   'Bank Jateng',
   NULL,
@@ -15665,7 +16003,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-08"}}',
   100,
   100,
   0,
@@ -15675,8 +16013,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_336","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 29.646.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_337',
@@ -15686,7 +16025,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Penataan Jalan Sultan Fatah',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0337',
@@ -15710,7 +16049,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -15721,7 +16060,8 @@ INSERT INTO `projects` (
   30000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_337","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_338',
@@ -15741,8 +16081,8 @@ INSERT INTO `projects` (
   198789359,
   '000.3.2/ PL.SPK.BM.21/VII/2026',
   '2026-07-23',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-23',
+  '2026-09-20',
   'CV. TIRTA JAYA',
   'Bank Jateng',
   NULL,
@@ -15755,7 +16095,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"23 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-23"}}',
   0,
   0,
   0,
@@ -15766,7 +16106,8 @@ INSERT INTO `projects` (
   198789359,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_338","timestamp":"2026-10-31 16:00:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Pencatatan Kontrak Pelaksanaan","keterangan":"Kontrak pelaksanaan No. 000.3.2/ PL.SPK.BM.21/VII/2026 telah diterbitkan dengan nilai Rp 198.789.359 kepada CV. TIRTA JAYA."}]'
 ),
 (
   'prj_bina_marga_339',
@@ -15786,8 +16127,8 @@ INSERT INTO `projects` (
   198789359,
   '000.3.2/ PL.SPK.BM.21/VII/2026',
   '2026-07-23',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-23',
+  '2026-09-20',
   'CV. TIRTA JAYA',
   'Bank Jateng',
   NULL,
@@ -15800,7 +16141,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"23 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-23"}}',
   80,
   90,
   10,
@@ -15810,8 +16151,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_339","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.789.359 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_340',
@@ -15831,8 +16173,8 @@ INSERT INTO `projects` (
   198958000,
   '000.3.2/PL.SPK.BM.34/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. SINAR CAHAYA',
   'Bank Jateng',
   NULL,
@@ -15845,7 +16187,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   30,
   40,
   10,
@@ -15856,7 +16198,8 @@ INSERT INTO `projects` (
   198958000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_340","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 40% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_341',
@@ -15876,8 +16219,8 @@ INSERT INTO `projects` (
   198651000,
   '027.2/PL.SPK.BM.008/IV/2026',
   '2026-04-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-07',
+  '2026-06-05',
   'CV JAGA PUTRA MANDALA',
   'Bank Jateng',
   NULL,
@@ -15890,7 +16233,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-07"}}',
   100,
   100,
   0,
@@ -15900,8 +16243,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_341","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 198.651.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_342',
@@ -15921,8 +16265,8 @@ INSERT INTO `projects` (
   199455000,
   '000.3.2/PL.SPK.BM.040/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. BINTORO KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -15935,7 +16279,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   30,
   50,
   20,
@@ -15945,8 +16289,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_342","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.455.000 dan fisik mencapai 50% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_343',
@@ -15980,7 +16325,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -15991,7 +16336,8 @@ INSERT INTO `projects` (
   750000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_343","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_344',
@@ -16025,7 +16371,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -16036,7 +16382,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_344","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_345',
@@ -16056,8 +16403,8 @@ INSERT INTO `projects` (
   99601000,
   '000.3.2/PL.SPK.BM.023/VIII/2026',
   '2026-08-04',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-04',
+  '2026-10-02',
   'CV BRYAN JAYA PERKASA',
   'Bank Jateng',
   NULL,
@@ -16070,7 +16417,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"4 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-04"}}',
   40,
   60,
   20,
@@ -16080,8 +16427,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_345","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.601.000 dan fisik mencapai 60% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_346',
@@ -16101,7 +16449,7 @@ INSERT INTO `projects` (
   491900000,
   'EP-01M09RW6VFV2GRYK6Y2BA3M2PR',
   '2026-08-20',
-  '2026-03-01',
+  '2026-08-20',
   '2026-11-30',
   'CV. TIRTA JAYA',
   'Bank Jateng',
@@ -16115,7 +16463,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   10,
   10,
   0,
@@ -16125,8 +16473,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_346","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 491.900.000 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_347',
@@ -16146,8 +16495,8 @@ INSERT INTO `projects` (
   199228000,
   '000.3.2/PL.SPK.BM.29/VIII/2026',
   '2026-08-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-05',
+  '2026-10-03',
   'CV. DUTA KENCANA',
   'Bank Jateng',
   NULL,
@@ -16160,7 +16509,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'5 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-05"}}',
   30,
   70,
   40,
@@ -16170,8 +16519,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_347","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.228.000 dan fisik mencapai 70% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_348',
@@ -16191,8 +16541,8 @@ INSERT INTO `projects` (
   1474747199,
   '000.3.7/BANGUB.SP.BM.72/VIII/2026',
   '2026-08-20',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-20',
+  '2026-11-17',
   'CV.BRYAN JAYA PERKASA',
   'Bank Jateng',
   NULL,
@@ -16205,7 +16555,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   100,
   100,
   0,
@@ -16216,7 +16566,8 @@ INSERT INTO `projects` (
   1032323039,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_348","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 442.424.160 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_349',
@@ -16236,8 +16587,8 @@ INSERT INTO `projects` (
   0.1,
   '000.3.7/BANGUB.SP.BM.098/IX/2026',
   '2026-09-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-07',
+  '2026-12-05',
   'CV. GARUDA KARYA',
   'Bank Jateng',
   NULL,
@@ -16250,7 +16601,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-07"}}',
   50,
   55.68,
   5.68,
@@ -16260,8 +16611,9 @@ INSERT INTO `projects` (
   591067508000,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_349","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 591.067.508 dan fisik mencapai 55.68% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_350',
@@ -16281,8 +16633,8 @@ INSERT INTO `projects` (
   441501918,
   NULL,
   '2026-10-01',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-01',
+  '2026-12-08',
   'CV. SUMBER JAYA',
   'Bank Jateng',
   NULL,
@@ -16294,8 +16646,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"1 Oktober 2026"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-01"}}',
   10,
   20,
   10,
@@ -16306,7 +16658,8 @@ INSERT INTO `projects` (
   441501918,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_350","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -16323,7 +16676,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_bina_marga_351',
@@ -16343,8 +16696,8 @@ INSERT INTO `projects` (
   977195440,
   'EP-01M1NKRMJSBFDFE6WF48NHRZAS,',
   '2026-09-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-07',
+  '2026-12-05',
   'CV. REZA JATI TUNGGAL',
   'Bank Jateng',
   NULL,
@@ -16357,7 +16710,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-07"}}',
   50,
   52.4,
   2.4,
@@ -16368,7 +16721,8 @@ INSERT INTO `projects` (
   684036808,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_351","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 293.158.632 dan fisik mencapai 52.4% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_352',
@@ -16388,8 +16742,8 @@ INSERT INTO `projects` (
   984394437,
   '000.3.7.2/BANGUB.SP.BM.076/VIII/2026',
   '2026-08-21',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-21',
+  '2026-11-18',
   'CV. MAHESA KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -16402,7 +16756,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"21 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-21"}}',
   90,
   100,
   10,
@@ -16413,7 +16767,8 @@ INSERT INTO `projects` (
   689076106,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_352","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 295.318.331 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_353',
@@ -16433,8 +16788,8 @@ INSERT INTO `projects` (
   981104275,
   '000.3.7/BANGUB.SP.BM.103/IX/2026',
   '2026-09-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-07',
+  '2026-12-05',
   'CV. CAHAYA SEMBILAN PURNAMA',
   'Bank Jateng',
   NULL,
@@ -16447,7 +16802,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-07"}}',
   30,
   90,
   60,
@@ -16458,7 +16813,8 @@ INSERT INTO `projects` (
   981104275,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_353","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_354',
@@ -16478,8 +16834,8 @@ INSERT INTO `projects` (
   984248552,
   'EP-01M4A5NAHA5XG6H3N48VFBXVKA',
   '2026-10-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-08',
+  '2026-12-10',
   'CV. KIAN AGENG REZEKI',
   'Bank Jateng',
   NULL,
@@ -16492,7 +16848,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-08"}}',
   30,
   60,
   30,
@@ -16503,7 +16859,8 @@ INSERT INTO `projects` (
   984248552,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_354","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 60% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_355',
@@ -16523,8 +16880,8 @@ INSERT INTO `projects` (
   984972001,
   NULL,
   '2026-10-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-08',
+  '2026-12-10',
   'CV. BINTORO KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -16536,8 +16893,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Proyek Strategis"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 Oktober 2026"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-08"}}',
   30,
   35,
   5,
@@ -16548,7 +16905,8 @@ INSERT INTO `projects` (
   984972001,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_355","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 35% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_356',
@@ -16568,8 +16926,8 @@ INSERT INTO `projects` (
   490510253,
   NULL,
   '2026-10-01',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-01',
+  '2026-12-09',
   'CV. MITRA JAYA',
   'Bank Jateng',
   NULL,
@@ -16581,8 +16939,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"1 Oktober 2026"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-01"}}',
   30,
   40,
   10,
@@ -16593,7 +16951,8 @@ INSERT INTO `projects` (
   490510253,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_356","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 40% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_357',
@@ -16613,8 +16972,8 @@ INSERT INTO `projects` (
   945671613,
   'EP-01M0A1MW6ZSB74YWKTWVKA9AK4',
   '2026-08-20',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-20',
+  '2026-11-17',
   'CV. GENERASI PUTRA JATAYU',
   'Bank Jateng',
   NULL,
@@ -16627,7 +16986,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   100,
   100,
   0,
@@ -16638,7 +16997,8 @@ INSERT INTO `projects` (
   654603512,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_357","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 291.068.101 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_358',
@@ -16658,8 +17018,8 @@ INSERT INTO `projects` (
   1967947264,
   '000.3.7/BANGUB.SP.BM.70/VIII/2026',
   '2026-08-20',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-20',
+  '2026-11-17',
   'CV. GRAHA SENTOSA',
   'Bank Jateng',
   NULL,
@@ -16672,7 +17032,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   90,
   100,
   10,
@@ -16683,7 +17043,8 @@ INSERT INTO `projects` (
   1377563085,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_358","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 590.384.179 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_359',
@@ -16703,8 +17064,8 @@ INSERT INTO `projects` (
   983064898,
   '000.3.7/BANGUB.SP.BM.093/VIII/2026',
   '2026-08-28',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-28',
+  '2026-11-25',
   'CV. KAWAN KITA',
   'Bank Jateng',
   NULL,
@@ -16717,7 +17078,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-28"}}',
   90,
   100,
   10,
@@ -16728,7 +17089,8 @@ INSERT INTO `projects` (
   688145429,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_359","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 294.919.469 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_360',
@@ -16748,8 +17110,8 @@ INSERT INTO `projects` (
   785798015,
   'EP-01M3R2EN296GBEQ1AZM1SCYKCR',
   '2026-10-01',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-01',
+  '2026-12-10',
   'CV. DWI KARYA',
   'Bank Jateng',
   NULL,
@@ -16762,7 +17124,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"1 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-01"}}',
   30,
   40,
   10,
@@ -16773,7 +17135,8 @@ INSERT INTO `projects` (
   550058610,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_360","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 235.739.405 dan fisik mencapai 40% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_361',
@@ -16793,8 +17156,8 @@ INSERT INTO `projects` (
   983503178,
   NULL,
   '2026-10-05',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-05',
+  '2026-12-08',
   'CV. SUKA MULIA',
   'Bank Jateng',
   NULL,
@@ -16806,8 +17169,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Proyek Strategis"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"5 Oktober 2026"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-05"}}',
   30,
   10,
   -20,
@@ -16818,7 +17181,8 @@ INSERT INTO `projects` (
   983503178,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_361","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_362',
@@ -16838,8 +17202,8 @@ INSERT INTO `projects` (
   985120772,
   'EP-01M1NM4XB142X3Z1DAW5822M5Y',
   '2026-09-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-07',
+  '2026-12-05',
   'CV. MAHESA KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -16852,7 +17216,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-07"}}',
   50,
   50,
   0,
@@ -16863,7 +17227,8 @@ INSERT INTO `projects` (
   689584540,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_362","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 295.536.232 dan fisik mencapai 50% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_363',
@@ -16883,8 +17248,8 @@ INSERT INTO `projects` (
   983392334,
   'EP-01M1GNBZK0FJJD94YTXEGB4JSR',
   '2026-09-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-07',
+  '2026-12-05',
   'CV. KAWAN KITA',
   'Bank Jateng',
   NULL,
@@ -16897,7 +17262,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-07"}}',
   50,
   90,
   40,
@@ -16908,7 +17273,8 @@ INSERT INTO `projects` (
   983392334,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_363","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_364',
@@ -16928,8 +17294,8 @@ INSERT INTO `projects` (
   983050634,
   '000.3.7/BANGUB.SP.BM.091/VIII/2026',
   '2026-08-31',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-31',
+  '2026-11-28',
   'CV. KARYA ADI MAS',
   'Bank Jateng',
   NULL,
@@ -16942,7 +17308,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"31 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-31"}}',
   90,
   100,
   10,
@@ -16953,7 +17319,8 @@ INSERT INTO `projects` (
   688135444,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_364","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 294.915.190 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_365',
@@ -16973,8 +17340,8 @@ INSERT INTO `projects` (
   981015872,
   '000.3.7/BANGUB.SP.BM.099/IX/2026',
   '2026-09-07',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-07',
+  '2026-12-05',
   'CV. MAHKOTA JAYA GROUP',
   'Bank Jateng',
   NULL,
@@ -16987,7 +17354,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"7 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-07"}}',
   30,
   40,
   10,
@@ -16998,7 +17365,8 @@ INSERT INTO `projects` (
   686711110,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_365","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 294.304.762 dan fisik mencapai 40% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_366',
@@ -17018,8 +17386,8 @@ INSERT INTO `projects` (
   980937999,
   NULL,
   '2026-09-21',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-21',
+  '2026-12-09',
   'CV. MAHKOTA JAYA GROUP',
   'Bank Jateng',
   NULL,
@@ -17031,8 +17399,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Proyek Strategis"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"21 September 2026"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-21"}}',
   30,
   30,
   0,
@@ -17043,7 +17411,8 @@ INSERT INTO `projects` (
   980937999,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_366","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_367',
@@ -17077,7 +17446,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17088,7 +17457,8 @@ INSERT INTO `projects` (
   1500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_367","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_368',
@@ -17108,8 +17478,8 @@ INSERT INTO `projects` (
   687705676,
   'EP-01M3QZH21YT3M36RRR590XMFCS',
   '2026-10-01',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-01',
+  '2026-12-09',
   'CV. SUKA MULIA',
   'Bank Jateng',
   NULL,
@@ -17122,7 +17492,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"1 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-01"}}',
   30,
   93.25,
   63.25,
@@ -17133,7 +17503,8 @@ INSERT INTO `projects` (
   481393973,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_368","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 206.311.703 dan fisik mencapai 93.25% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_369',
@@ -17153,8 +17524,8 @@ INSERT INTO `projects` (
   983796544,
   'EP-01M3R4T5RBZEZP9XN9V0JJ0GCV',
   '2026-10-01',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-01',
+  '2026-12-09',
   'CV. SUKA MULIA',
   'Bank Jateng',
   NULL,
@@ -17167,7 +17538,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"1 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-01"}}',
   30,
   60,
   30,
@@ -17178,7 +17549,8 @@ INSERT INTO `projects` (
   688657581,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_369","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 295.138.963 dan fisik mencapai 60% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_370',
@@ -17200,7 +17572,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -17211,8 +17583,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   80,
   100,
   20,
@@ -17223,7 +17595,8 @@ INSERT INTO `projects` (
   0,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_370","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_371',
@@ -17243,8 +17616,8 @@ INSERT INTO `projects` (
   984495176,
   '000.3.7/BANGUB.SP.BM.71/VIII/2026',
   '2026-08-20',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-20',
+  '2026-11-17',
   'CV. HIDAYAH BARU',
   'Bank Jateng',
   NULL,
@@ -17257,7 +17630,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   80,
   100,
   20,
@@ -17268,7 +17641,8 @@ INSERT INTO `projects` (
   689146623,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_371","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 295.348.553 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_372',
@@ -17288,8 +17662,8 @@ INSERT INTO `projects` (
   2424634000,
   '027.2/APBD.SP.BM.03/III/2026',
   '2026-03-31',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-31',
+  '2026-06-28',
   'CV. KEMBAR PUTRA',
   'Bank Jateng',
   NULL,
@@ -17302,7 +17676,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"31 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-31"}}',
   100,
   100,
   0,
@@ -17312,8 +17686,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_372","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 2.424.634.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_373',
@@ -17323,7 +17698,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Pembangunan Jalan Demak - Purworejo',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0373',
@@ -17333,8 +17708,8 @@ INSERT INTO `projects` (
   24891000,
   '027.2/PWS.SPK.BM.004/III/2026',
   '2026-03-31',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-31',
+  '2026-06-28',
   'CV. GLOBAL DISAIN',
   'Bank Jateng',
   NULL,
@@ -17347,7 +17722,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"31 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-31"}}',
   100,
   100,
   0,
@@ -17357,8 +17732,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_373","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 24.891.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_374',
@@ -17392,7 +17768,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17403,7 +17779,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_374","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_375',
@@ -17437,7 +17814,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17448,7 +17825,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_375","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_376',
@@ -17482,7 +17860,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17493,7 +17871,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_376","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_377',
@@ -17527,7 +17906,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17538,7 +17917,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_377","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_378',
@@ -17572,7 +17952,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17583,7 +17963,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_378","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_379',
@@ -17617,7 +17998,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17628,7 +18009,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_379","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_380',
@@ -17662,7 +18044,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17673,7 +18055,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_380","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_381',
@@ -17707,7 +18090,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17718,7 +18101,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_381","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_382',
@@ -17752,7 +18136,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17763,7 +18147,8 @@ INSERT INTO `projects` (
   750000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_382","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_383',
@@ -17797,7 +18182,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17808,7 +18193,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_383","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_384',
@@ -17842,7 +18228,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17853,7 +18239,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_384","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_385',
@@ -17887,7 +18274,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17898,7 +18285,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_385","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_386',
@@ -17932,7 +18320,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17943,7 +18331,8 @@ INSERT INTO `projects` (
   300000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_386","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_387',
@@ -17977,7 +18366,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -17988,7 +18377,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_387","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_388',
@@ -18022,7 +18412,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18033,7 +18423,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_388","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_389',
@@ -18067,7 +18458,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18078,7 +18469,8 @@ INSERT INTO `projects` (
   1773000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_389","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_390',
@@ -18088,7 +18480,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Pembangunan Drainase jalan Desa Karangmlati',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0390',
@@ -18112,7 +18504,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18123,7 +18515,8 @@ INSERT INTO `projects` (
   27000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_390","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_391',
@@ -18157,7 +18550,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18168,7 +18561,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_391","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_392',
@@ -18178,7 +18572,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan antar Desa Bantengmati',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0392',
@@ -18202,7 +18596,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18213,7 +18607,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_392","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_393',
@@ -18223,7 +18618,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Bengkal Karanganyar',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0393',
@@ -18247,7 +18642,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18258,7 +18653,8 @@ INSERT INTO `projects` (
   22500000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_393","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_394',
@@ -18292,7 +18688,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18303,7 +18699,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_394","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_395',
@@ -18313,7 +18710,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Bintoro - Kalikondang (Jalur lambat depan SMA 1)',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0395',
@@ -18337,7 +18734,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18348,7 +18745,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_395","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_396',
@@ -18382,7 +18780,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18393,7 +18791,8 @@ INSERT INTO `projects` (
   4550000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_396","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_397',
@@ -18403,7 +18802,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Bulusari - Kalisari',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0397',
@@ -18427,7 +18826,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18438,7 +18837,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_397","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_398',
@@ -18472,7 +18872,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18483,7 +18883,8 @@ INSERT INTO `projects` (
   2970000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_398","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_399',
@@ -18493,7 +18894,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Bulusari - Onggorawe',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0399',
@@ -18517,7 +18918,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18528,7 +18929,8 @@ INSERT INTO `projects` (
   30000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_399","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_400',
@@ -18562,7 +18964,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18573,7 +18975,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_400","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -18590,7 +18993,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_bina_marga_401',
@@ -18600,7 +19003,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Buyaran Karangawen',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0401',
@@ -18624,7 +19027,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18635,7 +19038,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_401","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_402',
@@ -18669,7 +19073,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18680,7 +19084,8 @@ INSERT INTO `projects` (
   7450000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_402","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_403',
@@ -18690,7 +19095,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Demak - Purworejo',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0403',
@@ -18714,7 +19119,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18725,7 +19130,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_403","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_404',
@@ -18735,7 +19141,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Desa Jragung Kec. Karangawen',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0404',
@@ -18759,7 +19165,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18770,7 +19176,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_404","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_405',
@@ -18780,7 +19187,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Dukuh Timbulsloko',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0405',
@@ -18804,7 +19211,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18815,7 +19222,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_405","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_406',
@@ -18849,7 +19257,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18860,7 +19268,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_406","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_407',
@@ -18870,7 +19279,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Gajah Geneng',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0407',
@@ -18894,7 +19303,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18905,7 +19314,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_407","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_408',
@@ -18939,7 +19349,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18950,7 +19360,8 @@ INSERT INTO `projects` (
   1970000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_408","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_409',
@@ -18960,7 +19371,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Jalur Lambat Sultan Trenggono',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0409',
@@ -18984,7 +19395,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -18995,7 +19406,8 @@ INSERT INTO `projects` (
   30000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_409","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_410',
@@ -19029,7 +19441,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19040,7 +19452,8 @@ INSERT INTO `projects` (
   1775000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_410","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_411',
@@ -19050,7 +19463,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Kalitengah - Kangkung',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0411',
@@ -19074,7 +19487,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19085,7 +19498,8 @@ INSERT INTO `projects` (
   25000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_411","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_412',
@@ -19119,7 +19533,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19130,7 +19544,8 @@ INSERT INTO `projects` (
   1970000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_412","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_413',
@@ -19140,7 +19555,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Karanganyar - Merak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0413',
@@ -19164,7 +19579,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19175,7 +19590,8 @@ INSERT INTO `projects` (
   30000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_413","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_414',
@@ -19209,7 +19625,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19220,7 +19636,8 @@ INSERT INTO `projects` (
   1480000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_414","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_415',
@@ -19230,7 +19647,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Karanggawang - Candisari',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0415',
@@ -19254,7 +19671,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19265,7 +19682,8 @@ INSERT INTO `projects` (
   20000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_415","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_416',
@@ -19299,7 +19717,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19310,7 +19728,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_416","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_417',
@@ -19320,7 +19739,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Kyai Turmudzi',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0417',
@@ -19344,7 +19763,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19355,7 +19774,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_417","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_418',
@@ -19389,7 +19809,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19400,7 +19820,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_418","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_419',
@@ -19410,7 +19831,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Onggorawe - Mranggen',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0419',
@@ -19434,7 +19855,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19445,7 +19866,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_419","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_420',
@@ -19479,7 +19901,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19490,7 +19912,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_420","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_421',
@@ -19500,7 +19923,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Pamongan - Bulusari',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0421',
@@ -19524,7 +19947,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19535,7 +19958,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_421","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_422',
@@ -19569,7 +19993,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19580,7 +20004,8 @@ INSERT INTO `projects` (
   1775000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_422","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_423',
@@ -19590,7 +20015,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan penghubung Desa Mutih Kulon – Kendalasem',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0423',
@@ -19614,7 +20039,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19625,7 +20050,8 @@ INSERT INTO `projects` (
   25000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_423","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_424',
@@ -19659,7 +20085,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19670,7 +20096,8 @@ INSERT INTO `projects` (
   1871500000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_424","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_425',
@@ -19680,7 +20107,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Sayung - Sidogemah',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0425',
@@ -19704,7 +20131,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19715,7 +20142,8 @@ INSERT INTO `projects` (
   28500000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_425","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_426',
@@ -19749,7 +20177,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19760,7 +20188,8 @@ INSERT INTO `projects` (
   2970000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_426","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_427',
@@ -19770,7 +20199,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Sunan Kalijaga',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0427',
@@ -19794,7 +20223,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19805,7 +20234,8 @@ INSERT INTO `projects` (
   30000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_427","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_428',
@@ -19839,7 +20269,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19850,7 +20280,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_428","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_429',
@@ -19860,7 +20291,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Tedunan - Mutihkulon',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0429',
@@ -19884,7 +20315,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19895,7 +20326,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_429","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_430',
@@ -19905,7 +20337,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Tembiring',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0430',
@@ -19929,7 +20361,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19940,7 +20372,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_430","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_431',
@@ -19974,7 +20407,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -19985,7 +20418,8 @@ INSERT INTO `projects` (
   1775000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_431","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_432',
@@ -19995,7 +20429,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan Jalan Trengguli - Demung',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0432',
@@ -20019,7 +20453,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20030,7 +20464,8 @@ INSERT INTO `projects` (
   25000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_432","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_433',
@@ -20064,7 +20499,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20075,7 +20510,8 @@ INSERT INTO `projects` (
   1480000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_433","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_434',
@@ -20085,7 +20521,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan  Peningkatan jalan Waru - Brambang',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0434',
@@ -20109,7 +20545,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20120,7 +20556,8 @@ INSERT INTO `projects` (
   20000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_434","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_435',
@@ -20154,7 +20591,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20165,7 +20602,8 @@ INSERT INTO `projects` (
   1775000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_435","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_436',
@@ -20175,7 +20613,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Peningkatan Jalan Wonokerto - Tambakbulusan',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0436',
@@ -20199,7 +20637,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20210,7 +20648,8 @@ INSERT INTO `projects` (
   25000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_436","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_437',
@@ -20244,7 +20683,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20255,7 +20694,8 @@ INSERT INTO `projects` (
   985000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_437","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_438',
@@ -20265,7 +20705,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Rehabilitasi Jalan Brumbung - Menur Kec. Mranggen Kab. Demak',
-  'Fisik',
+  'Jakon',
   'Perubahan',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0438',
@@ -20289,7 +20729,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20300,7 +20740,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_438","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_439',
@@ -20334,7 +20775,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20345,7 +20786,8 @@ INSERT INTO `projects` (
   5950000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_439","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_440',
@@ -20355,7 +20797,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Rekonstruksi Jalan Demak - Kudus Kab. Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0440',
@@ -20379,7 +20821,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20390,7 +20832,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_440","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_441',
@@ -20424,7 +20867,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20435,7 +20878,8 @@ INSERT INTO `projects` (
   10850000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_441","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_442',
@@ -20445,7 +20889,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_63',
   '1.03.10.2.01.05',
   'Jasa Konsultansi Pengawasan Rekonstruksi Jalan Sultan Fatah Kab Demak',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0442',
@@ -20469,7 +20913,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20480,7 +20924,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_442","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_443',
@@ -20514,7 +20959,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20525,7 +20970,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_443","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_444',
@@ -20559,7 +21005,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20570,7 +21016,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_444","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_445',
@@ -20604,7 +21051,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20615,7 +21062,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_445","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_446',
@@ -20649,7 +21097,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20660,7 +21108,8 @@ INSERT INTO `projects` (
   600000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_446","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_447',
@@ -20694,7 +21143,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20705,7 +21154,8 @@ INSERT INTO `projects` (
   600000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_447","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_448',
@@ -20739,7 +21189,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20750,7 +21200,8 @@ INSERT INTO `projects` (
   350000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_448","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 350.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_449',
@@ -20784,7 +21235,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20795,7 +21246,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_449","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_450',
@@ -20829,7 +21281,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan","Proyek Strategis"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20840,7 +21292,8 @@ INSERT INTO `projects` (
   1477500000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_450","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan)."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -20857,7 +21310,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_bina_marga_451',
@@ -20891,7 +21344,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20902,7 +21355,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_451","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_452',
@@ -20936,7 +21390,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20947,7 +21401,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_452","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_453',
@@ -20981,7 +21436,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -20992,7 +21447,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_453","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_454',
@@ -21026,7 +21482,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21037,7 +21493,8 @@ INSERT INTO `projects` (
   380000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_454","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 380.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_455',
@@ -21071,7 +21528,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21082,7 +21539,8 @@ INSERT INTO `projects` (
   400000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_455","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_456',
@@ -21116,7 +21574,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21127,7 +21585,8 @@ INSERT INTO `projects` (
   400000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_456","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_457',
@@ -21161,7 +21620,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21172,7 +21631,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_457","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_458',
@@ -21206,7 +21666,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21217,7 +21677,8 @@ INSERT INTO `projects` (
   400000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_458","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_459',
@@ -21251,7 +21712,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21262,7 +21723,8 @@ INSERT INTO `projects` (
   345000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_459","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 345.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_460',
@@ -21296,7 +21758,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21307,7 +21769,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_460","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_461',
@@ -21341,7 +21804,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21352,7 +21815,8 @@ INSERT INTO `projects` (
   300000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_461","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_462',
@@ -21386,7 +21850,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21397,7 +21861,8 @@ INSERT INTO `projects` (
   300000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_462","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_463',
@@ -21431,7 +21896,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21442,7 +21907,8 @@ INSERT INTO `projects` (
   250000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_463","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_464',
@@ -21476,7 +21942,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -21487,7 +21953,8 @@ INSERT INTO `projects` (
   400000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_464","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_465',
@@ -21507,8 +21974,8 @@ INSERT INTO `projects` (
   197600000,
   '027.2/PEMEL.SP.BM.02/III/2026',
   '2026-03-16',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-16',
+  '2026-03-30',
   'CV SAHALA',
   'Bank Jateng',
   NULL,
@@ -21521,7 +21988,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"16 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-16"}}',
   100,
   100,
   0,
@@ -21531,8 +21998,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_465","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_466',
@@ -21552,8 +22020,8 @@ INSERT INTO `projects` (
   188097048,
   'EP-01KXD89MFMSHMQJ7PANKNEERC6',
   '2026-07-16',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-16',
+  '2026-07-30',
   'CV. MUDI PUTRA JAYA',
   'Bank Jateng',
   NULL,
@@ -21566,7 +22034,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"16 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-16"}}',
   100,
   100,
   0,
@@ -21576,8 +22044,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_466","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 188.097.048 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_467',
@@ -21597,8 +22066,8 @@ INSERT INTO `projects` (
   187663260,
   'EP-01KW94RJ27DTEGTV2ZD8ZX85GF',
   '2026-07-02',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-02',
+  '2026-07-16',
   'CV. BEJO MULYO JAYA',
   'Bank Jateng',
   NULL,
@@ -21611,7 +22080,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'02 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-02"}}',
   100,
   100,
   0,
@@ -21621,8 +22090,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_467","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 187.663.260 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_468',
@@ -21642,8 +22112,8 @@ INSERT INTO `projects` (
   199404000,
   '027.2/PEMEL.SP.BM.01/III/2026',
   '2026-03-16',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-03-16',
+  '2026-03-30',
   'CV. BEJO MULYO JAYA',
   'Bank Jateng',
   NULL,
@@ -21656,7 +22126,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"16 Maret 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-16"}}',
   100,
   100,
   0,
@@ -21666,8 +22136,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_468","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 199.404.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_469',
@@ -21687,8 +22158,8 @@ INSERT INTO `projects` (
   187962549,
   'EP-01M1G0JF6ZGPVQ5MG421RQA5WN',
   '2026-09-04',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-04',
+  '2026-09-18',
   'CV. SAHALA',
   'Bank Jateng',
   NULL,
@@ -21701,7 +22172,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"4 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-04"}}',
   100,
   100,
   0,
@@ -21711,8 +22182,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_469","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 187.962.549 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_470',
@@ -21732,8 +22204,8 @@ INSERT INTO `projects` (
   188097048,
   'EP-01KXHXCNFCYTACM7900S9DFCGT',
   '2026-07-17',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-17',
+  '2026-07-31',
   'CV. MUDI PUTRA JAYA',
   'Bank Jateng',
   NULL,
@@ -21746,7 +22218,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"17 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-17"}}',
   100,
   100,
   0,
@@ -21756,8 +22228,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_470","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 188.097.048 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_471',
@@ -21777,8 +22250,8 @@ INSERT INTO `projects` (
   187008416,
   'EP-01M0CF8AXNG5GFZ75M9GSEHT6Q',
   '2026-08-24',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-24',
+  '2026-09-04',
   'CV. BOKAMA JAYA MANDIRI',
   'Bank Jateng',
   NULL,
@@ -21791,7 +22264,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"24 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-24"}}',
   100,
   100,
   0,
@@ -21801,8 +22274,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_471","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 187.008.416 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_472',
@@ -21822,7 +22296,7 @@ INSERT INTO `projects` (
   186046989,
   'EP-01KYV2VG3NHHNNZ8X1V6BV61K6',
   '2026-08-06',
-  '2026-03-01',
+  '2026-08-06',
   '2026-11-30',
   'CV. BOKAMA JAYA MANDIRI',
   'Bank Jateng',
@@ -21836,7 +22310,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"6 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-06"}}',
   100,
   100,
   0,
@@ -21846,8 +22320,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_472","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 186.046.989 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_473',
@@ -21867,7 +22342,7 @@ INSERT INTO `projects` (
   187558321,
   'EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH',
   '2026-08-28',
-  '2026-03-01',
+  '2026-08-28',
   '2026-11-30',
   'CV. MUDI PUTRA JAYA',
   'Bank Jateng',
@@ -21881,7 +22356,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"28 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-28"}}',
   100,
   100,
   0,
@@ -21891,8 +22366,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_473","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 187.558.321 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_474',
@@ -21912,8 +22388,8 @@ INSERT INTO `projects` (
   195757380,
   'EP-01KTB0XPQ8R4H2W2SY5BQ09703',
   '2026-06-11',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-06-11',
+  '2026-06-25',
   'CV. AL BAROKAH',
   'Bank Jateng',
   NULL,
@@ -21926,7 +22402,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"11 Juni 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-06-11"}}',
   100,
   100,
   0,
@@ -21936,8 +22412,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_474","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_475',
@@ -21957,8 +22434,8 @@ INSERT INTO `projects` (
   195757380,
   'EP-01M1N8N5S92115F4NXAFJ2ZWFG',
   '2026-09-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-08',
+  '2026-09-22',
   'CV. AL BAROKAH',
   'Bank Jateng',
   NULL,
@@ -21971,7 +22448,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-08"}}',
   100,
   100,
   0,
@@ -21981,8 +22458,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_475","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_476',
@@ -22004,7 +22482,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -22015,8 +22493,8 @@ INSERT INTO `projects` (
   '110.6385',
   '["Proyek Strategis"]',
   1,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   43.66,
   43.66,
   0,
@@ -22027,7 +22505,8 @@ INSERT INTO `projects` (
   1107413170,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_476","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_477',
@@ -22061,7 +22540,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22072,7 +22551,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_477","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_478',
@@ -22106,7 +22586,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22117,7 +22597,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_478","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_479',
@@ -22151,7 +22632,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22162,7 +22643,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_479","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_480',
@@ -22196,7 +22678,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22207,7 +22689,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_480","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_481',
@@ -22241,7 +22724,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22252,7 +22735,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_481","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_482',
@@ -22274,7 +22758,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -22285,8 +22769,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22297,7 +22781,8 @@ INSERT INTO `projects` (
   25529401,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_482","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 174.470.599 dan fisik mencapai 0% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_483',
@@ -22317,8 +22802,8 @@ INSERT INTO `projects` (
   86658587,
   'EP-01KYKEVJFNZQXCBPV715VJKR94',
   '2026-07-31',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-31',
+  '2026-08-14',
   'CV. SAHALA',
   'Bank Jateng',
   NULL,
@@ -22331,7 +22816,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"31 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-31"}}',
   100,
   100,
   0,
@@ -22341,8 +22826,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_483","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 86.658.587 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_484',
@@ -22364,7 +22850,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -22375,8 +22861,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   8.18,
   8.18,
   0,
@@ -22387,7 +22873,8 @@ INSERT INTO `projects` (
   418384000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_484","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_485',
@@ -22421,7 +22908,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22432,7 +22919,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_485","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_486',
@@ -22466,7 +22954,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22477,7 +22965,8 @@ INSERT INTO `projects` (
   338000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_486","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 338.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_487',
@@ -22511,7 +23000,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22522,7 +23011,8 @@ INSERT INTO `projects` (
   100000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_487","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_488',
@@ -22556,7 +23046,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22567,7 +23057,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_488","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_489',
@@ -22577,7 +23068,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 2',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0489',
@@ -22601,7 +23092,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22612,7 +23103,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_489","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_490',
@@ -22622,7 +23114,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 3',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0490',
@@ -22646,7 +23138,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22657,7 +23149,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_490","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_491',
@@ -22667,7 +23160,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 4',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0491',
@@ -22691,7 +23184,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22702,7 +23195,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_491","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_492',
@@ -22712,7 +23206,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 5',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0492',
@@ -22736,7 +23230,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22747,7 +23241,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_492","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_493',
@@ -22757,7 +23252,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 6',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0493',
@@ -22781,7 +23276,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22792,7 +23287,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_493","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_494',
@@ -22802,7 +23298,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 7',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0494',
@@ -22826,7 +23322,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22837,7 +23333,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_494","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_495',
@@ -22847,7 +23344,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 8',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0495',
@@ -22871,7 +23368,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22882,7 +23379,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_495","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_496',
@@ -22892,7 +23390,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 9',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0496',
@@ -22916,7 +23414,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22927,7 +23425,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_496","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_497',
@@ -22937,7 +23436,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_66',
   '1.03.10.2.01.05',
   'Jasa Pengawasan Paket 10',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0497',
@@ -22961,7 +23460,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -22972,7 +23471,8 @@ INSERT INTO `projects` (
   50000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_497","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_498',
@@ -22992,8 +23492,8 @@ INSERT INTO `projects` (
   950072075,
   'EP-01M0A23VA8CST258XMAXYNE6WN',
   '2026-08-20',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-20',
+  '2026-11-17',
   'CV. AGA KONSTRUKSI',
   'Bank Jateng',
   NULL,
@@ -23006,7 +23506,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"20 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-20"}}',
   10,
   10,
   0,
@@ -23017,7 +23517,8 @@ INSERT INTO `projects` (
   665050452,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_498","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 285.021.623 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_499',
@@ -23027,7 +23528,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_67',
   '1.03.10.2.01.06',
   'Jasa Konsultansi Perencanaan Pelebaran dan Penataan Jalan Bakung-Wonorejo',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0499',
@@ -23037,8 +23538,8 @@ INSERT INTO `projects` (
   14779000,
   '027.2/PRC.SPK.BM.015/IV/2026',
   '2026-04-15',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-15',
+  '2026-05-14',
   'CV. PRIORITAS',
   'Bank Jateng',
   NULL,
@@ -23051,7 +23552,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"15 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-15"}}',
   100,
   100,
   0,
@@ -23061,8 +23562,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_499","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 14.779.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_500',
@@ -23072,7 +23574,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_67',
   '1.03.10.2.01.06',
   'Jasa Konsultansi Pengawasan Pelebaran dan Penataan Jalan Bakung-Wonorejo',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0500',
@@ -23084,7 +23586,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -23095,8 +23597,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   10,
   10,
   0,
@@ -23107,7 +23609,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_500","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -23124,7 +23627,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_bina_marga_501',
@@ -23144,8 +23647,8 @@ INSERT INTO `projects` (
   199379000,
   '000.3.2/PL.SPK.BM.61/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-10-16',
   'CV. CAHAYA MUDA',
   'Bank Jateng',
   NULL,
@@ -23158,7 +23661,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   75,
   75,
   0,
@@ -23169,7 +23672,8 @@ INSERT INTO `projects` (
   199379000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_501","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_502',
@@ -23189,8 +23693,8 @@ INSERT INTO `projects` (
   953717401,
   '\'000.3.7/APBD.SP.BM.96/IX/2026',
   '2026-09-01',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-01',
+  '2026-11-29',
   'CV. MUNZAROH INDAH',
   'Bank Jateng',
   NULL,
@@ -23203,7 +23707,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"\'01 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-01"}}',
   30,
   30,
   0,
@@ -23214,7 +23718,8 @@ INSERT INTO `projects` (
   667602181,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_502","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 286.115.220 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_503',
@@ -23224,7 +23729,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_67',
   '1.03.10.2.01.06',
   'Jasa Konsultansi Perencanaan Pelebaran dan Penataan Sempadan Jalan Kuripan - Wonosekar',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0503',
@@ -23234,8 +23739,8 @@ INSERT INTO `projects` (
   14710000,
   '027.2/PRC.SPK.BM.014/IV/2026',
   '2026-04-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-08',
+  '2026-05-07',
   'CV KUBANG ENGINEERING CONSULTANT',
   'Bank Jateng',
   NULL,
@@ -23248,7 +23753,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-08"}}',
   100,
   100,
   0,
@@ -23258,8 +23763,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_503","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 14.710.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_504',
@@ -23269,7 +23775,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_67',
   '1.03.10.2.01.06',
   'Jasa Konsultansi Pengawasan Pelebaran dan Penataan Sempadan Jalan Kuripan - Wonosekar',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0504',
@@ -23281,7 +23787,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -23292,8 +23798,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   30,
   30,
   0,
@@ -23304,7 +23810,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_504","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_505',
@@ -23338,7 +23845,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -23349,7 +23856,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_505","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_506',
@@ -23369,8 +23877,8 @@ INSERT INTO `projects` (
   9613970000,
   '027.2/APBD.SPK.BM.03/VII/2026',
   '2026-07-23',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-23',
+  '2026-12-19',
   'CV. MULYO JOYO BERKAH',
   'Bank Jateng',
   NULL,
@@ -23383,7 +23891,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"23 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-23"}}',
   25,
   25,
   0,
@@ -23394,7 +23902,8 @@ INSERT INTO `projects` (
   6721578870,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_506","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 2.892.391.130 dan fisik mencapai 25% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_507',
@@ -23404,7 +23913,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_68',
   '1.03.10.2.01.07',
   'Jasa Konsultansi Pengawasan Pembangunan Jembatan Babalan Kec. Wedung',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0507',
@@ -23414,8 +23923,8 @@ INSERT INTO `projects` (
   38034770,
   '000.3.2/PWS/SP.BM.021.1/VII/2026',
   '2026-07-23',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-23',
+  '2026-12-19',
   'CV. PURUSARA TEKNIK',
   'Bank Jateng',
   NULL,
@@ -23428,7 +23937,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"23 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-23"}}',
   20,
   20,
   0,
@@ -23439,7 +23948,8 @@ INSERT INTO `projects` (
   38034770,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_507","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_508',
@@ -23459,8 +23969,8 @@ INSERT INTO `projects` (
   3425849992,
   '000.3.3/APBD.SP.BM.022/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-12-25',
   'CV. ASALAMAHWALBAROKAH',
   'Bank Jateng',
   NULL,
@@ -23473,7 +23983,7 @@ INSERT INTO `projects` (
   '["Proyek Strategis"]',
   1,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   20,
   20,
   0,
@@ -23484,7 +23994,8 @@ INSERT INTO `projects` (
   2381694994,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_508","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 1.044.154.998 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_509',
@@ -23494,7 +24005,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_68',
   '1.03.10.2.01.07',
   'Jasa Konsultansi Perencanaan Pembangunan Jembatan Barijah (akses menuju Bogorame) Desa Timbulsloko Kec. Sayung',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0509',
@@ -23504,8 +24015,8 @@ INSERT INTO `projects` (
   24812000,
   '027.2/PRC.SPK.BM.011/IV/2026',
   '2026-04-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-08',
+  '2026-05-07',
   'CV. MITRA DISIGN',
   'Bank Jateng',
   NULL,
@@ -23518,7 +24029,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-08"}}',
   100,
   100,
   0,
@@ -23528,8 +24039,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_509","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 24.812.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_510',
@@ -23539,7 +24051,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_68',
   '1.03.10.2.01.07',
   'Jasa Konsultansi Pengawasan Pembangunan Jembatan Barijah (akses menuju Bogorame) Desa Timbulsloko Kec. Sayung',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0510',
@@ -23549,8 +24061,8 @@ INSERT INTO `projects` (
   12898200,
   '000.3.2/PWS/SP.BM.024/VII/2026',
   '2026-07-30',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-30',
+  '2026-12-25',
   'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -23563,7 +24075,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"30 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-30"}}',
   20,
   20,
   0,
@@ -23574,7 +24086,8 @@ INSERT INTO `projects` (
   12898200,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_510","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_511',
@@ -23594,8 +24107,8 @@ INSERT INTO `projects` (
   951056717,
   '000.3.3/APBD.SP.BM.094/VIII/2026',
   '2026-08-31',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-31',
+  '2026-12-28',
   'CV. MAHKOTA JAYA GRUP',
   'Bank Jateng',
   NULL,
@@ -23608,7 +24121,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"31 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-31"}}',
   25,
   30,
   5,
@@ -23619,7 +24132,8 @@ INSERT INTO `projects` (
   665739702,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_511","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 285.317.015 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_512',
@@ -23629,7 +24143,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_68',
   '1.03.10.2.01.07',
   'Jasa Konsultansi Perencanaan Pembangunan Jembatan Desa Dempet',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0512',
@@ -23639,8 +24153,8 @@ INSERT INTO `projects` (
   14842000,
   '027.2/PRC.SPK.BM.012/IV/2026',
   '2026-04-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-08',
+  '2026-05-07',
   'CV. MITRA DISIGN',
   'Bank Jateng',
   NULL,
@@ -23653,7 +24167,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-08"}}',
   100,
   100,
   0,
@@ -23663,8 +24177,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_512","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 14.842.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_513',
@@ -23674,7 +24189,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_68',
   '1.03.10.2.01.07',
   'Jasa Konsultansi Pengawasan Pembangunan Jembatan Desa Dempet',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0513',
@@ -23686,7 +24201,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -23697,8 +24212,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   25,
   30,
   5,
@@ -23709,7 +24224,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_513","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_514',
@@ -23729,8 +24245,8 @@ INSERT INTO `projects` (
   199117737,
   '000.3.2/PL.SPK.BM.60/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-15',
   'CV.EKA KARYA',
   'Bank Jateng',
   NULL,
@@ -23743,7 +24259,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   10,
   10,
   0,
@@ -23754,7 +24270,8 @@ INSERT INTO `projects` (
   199117737,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_514","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_515',
@@ -23774,8 +24291,8 @@ INSERT INTO `projects` (
   398786000,
   '000.3.2/PL.SPK.BM.58/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-15',
   'CV. PULUNG MANUNGGAL',
   'Bank Jateng',
   NULL,
@@ -23788,7 +24305,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   10,
   10,
   0,
@@ -23799,7 +24316,8 @@ INSERT INTO `projects` (
   398786000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_515","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_516',
@@ -23819,8 +24337,8 @@ INSERT INTO `projects` (
   199161933,
   '000.3.2/PL.SPK.BM.59/VIII/2026',
   '2026-08-18',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-08-18',
+  '2026-11-15',
   'CV.EKA KARYA',
   'Bank Jateng',
   NULL,
@@ -23833,7 +24351,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"18 Agustus 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-08-18"}}',
   10,
   10,
   0,
@@ -23844,7 +24362,8 @@ INSERT INTO `projects` (
   199161933,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_516","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_517',
@@ -23864,8 +24383,8 @@ INSERT INTO `projects` (
   951105060,
   '000.3.3/APBD.SP.BM.107/IX/2026',
   '2026-09-11',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-09-11',
+  '2026-12-22',
   'CV. MITRA JAYA',
   'Bank Jateng',
   NULL,
@@ -23878,7 +24397,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"11 September 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-09-11"}}',
   25,
   30,
   5,
@@ -23889,7 +24408,8 @@ INSERT INTO `projects` (
   665773542,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_517","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 285.331.518 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_518',
@@ -23899,7 +24419,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_68',
   '1.03.10.2.01.07',
   'Jasa Konsultansi Perencanaan Perbaikan Jembatan Donorojo - Mangunjiwan',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0518',
@@ -23909,8 +24429,8 @@ INSERT INTO `projects` (
   14842000,
   '027.2/PRC.SPK.BM.012/IV/2026',
   '2026-04-08',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-04-08',
+  '2026-05-07',
   'CV. MITRA DESIGN',
   'Bank Jateng',
   NULL,
@@ -23923,7 +24443,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"8 April 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-08"}}',
   100,
   100,
   0,
@@ -23933,8 +24453,9 @@ INSERT INTO `projects` (
   100.03,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_518","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 14.847.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_519',
@@ -23944,7 +24465,7 @@ INSERT INTO `projects` (
   'sub_bina_marga_68',
   '1.03.10.2.01.07',
   'Jasa Konsultansi Pengawasan Perbaikan Jembatan Donorojo - Mangunjiwan',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-BIN-0519',
@@ -23956,7 +24477,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -23967,8 +24488,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   25,
   30,
   5,
@@ -23979,7 +24500,8 @@ INSERT INTO `projects` (
   15000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_519","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Bina Marga","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_bina_marga_520',
@@ -24013,7 +24535,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24024,7 +24546,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_520","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_521',
@@ -24058,7 +24581,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24069,7 +24592,8 @@ INSERT INTO `projects` (
   700000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_521","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_522',
@@ -24103,7 +24627,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24114,7 +24638,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_522","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_523',
@@ -24148,7 +24673,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24159,7 +24684,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_523","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_524',
@@ -24193,7 +24719,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24204,7 +24730,8 @@ INSERT INTO `projects` (
   175000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_524","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_525',
@@ -24238,7 +24765,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24249,7 +24776,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_525","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_526',
@@ -24283,7 +24811,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24294,7 +24822,8 @@ INSERT INTO `projects` (
   700000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_526","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_527',
@@ -24328,7 +24857,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24339,7 +24868,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_527","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_528',
@@ -24373,7 +24903,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24384,7 +24914,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_528","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_529',
@@ -24418,7 +24949,7 @@ INSERT INTO `projects` (
   '["APBD Perubahan"]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24429,7 +24960,8 @@ INSERT INTO `projects` (
   500000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_529","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."}]'
 ),
 (
   'prj_bina_marga_530',
@@ -24463,7 +24995,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24474,7 +25006,8 @@ INSERT INTO `projects` (
   200000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_530","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_531',
@@ -24508,7 +25041,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24519,7 +25052,8 @@ INSERT INTO `projects` (
   175000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_531","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_532',
@@ -24553,7 +25087,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24564,7 +25098,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_532","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."}]'
 ),
 (
   'prj_bina_marga_533',
@@ -24598,7 +25133,7 @@ INSERT INTO `projects` (
   '["Program Prioritas Bupati"]',
   1,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -24609,7 +25144,8 @@ INSERT INTO `projects` (
   150000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_bina_marga_533","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."}]'
 ),
 (
   'prj_sda_bk_534',
@@ -24629,8 +25165,8 @@ INSERT INTO `projects` (
   98884350,
   '000.3.2/004/SPK/JAKON.P/SDABK/X/2026',
   '2026-10-22',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-10-22',
+  '2026-12-05',
   'CV. GEOPAKSI KARYA',
   'Bank Jateng',
   NULL,
@@ -24643,7 +25179,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"22 Oktober 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-10-22"}}',
   25,
   25,
   0,
@@ -24654,7 +25190,8 @@ INSERT INTO `projects` (
   98884350,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_534","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 25% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_535',
@@ -24676,7 +25213,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -24687,8 +25224,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   60,
   64.09,
   4.09,
@@ -24699,7 +25236,8 @@ INSERT INTO `projects` (
   35907800,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_535","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 64.092.200 dan fisik mencapai 64.09% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_sda_bk_536',
@@ -24721,7 +25259,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -24732,8 +25270,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   80,
   84.17,
   4.17,
@@ -24744,7 +25282,8 @@ INSERT INTO `projects` (
   14245000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_sda_bk_536","timestamp":"2026-10-31 16:30:00","userName":"Koordinator SDA & BK","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 75.755.000 dan fisik mencapai 84.17% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_537',
@@ -24764,8 +25303,8 @@ INSERT INTO `projects` (
   99630000,
   '027/SPK/Kons.01/TARU/II/2026',
   '2026-02-27',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-02-27',
+  '2026-05-27',
   'PT. ARSIKEN CITRATAMA',
   'Bank Jateng',
   NULL,
@@ -24778,7 +25317,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"27 Februari 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-02-27"}}',
   100,
   100,
   0,
@@ -24788,8 +25327,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_537","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.630.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_538',
@@ -24811,7 +25351,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -24822,8 +25362,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   60,
   77.87,
   17.87,
@@ -24834,7 +25374,8 @@ INSERT INTO `projects` (
   17518588,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_538","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 61.631.412 dan fisik mencapai 77.87% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_539',
@@ -24856,7 +25397,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -24867,8 +25408,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   38.47,
   38.47,
   0,
@@ -24879,7 +25420,8 @@ INSERT INTO `projects` (
   42173800,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_539","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 26.366.200 dan fisik mencapai 38.47% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_540',
@@ -24899,8 +25441,8 @@ INSERT INTO `projects` (
   99608000,
   '027/SPK/Kons.02/TARU/VII/2026',
   '2026-07-10',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-10',
+  '2026-10-07',
   'PT. ARSIKEN CITRATAMA',
   'Bank Jateng',
   NULL,
@@ -24913,7 +25455,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-10"}}',
   100,
   100,
   0,
@@ -24923,8 +25465,9 @@ INSERT INTO `projects` (
   100,
   0,
   '[]',
-  'sp2d_terbit',
-  NULL
+  'sudah_sp2d',
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_540","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.608.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_541',
@@ -24946,7 +25489,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -24957,8 +25500,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   99.3,
   99.3,
   0,
@@ -24969,7 +25512,8 @@ INSERT INTO `projects` (
   695000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_541","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 99.305.000 dan fisik mencapai 99.3% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_542',
@@ -24991,7 +25535,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25002,8 +25546,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   49.63,
   49.63,
   0,
@@ -25014,7 +25558,8 @@ INSERT INTO `projects` (
   269703000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_542","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 39.197.000 dan fisik mencapai 49.63% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_543',
@@ -25048,7 +25593,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -25059,7 +25604,8 @@ INSERT INTO `projects` (
   175000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_543","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni)."}]'
 ),
 (
   'prj_tata_ruang_544',
@@ -25081,7 +25627,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25092,8 +25638,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   65,
   69.15,
   4.15,
@@ -25104,7 +25650,8 @@ INSERT INTO `projects` (
   53865504,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_544","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 120.754.496 dan fisik mencapai 69.15% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_545',
@@ -25126,7 +25673,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25137,8 +25684,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   5,
   6.58,
   1.58,
@@ -25149,7 +25696,8 @@ INSERT INTO `projects` (
   46710000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_545","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 3.290.000 dan fisik mencapai 6.58% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_546',
@@ -25159,7 +25707,7 @@ INSERT INTO `projects` (
   'sub_tata_ruang_77',
   '1.03.12.2.02.02',
   'Penyusunan RDTR Kabupaten/Kota',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-TAT-0546',
@@ -25171,7 +25719,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25182,8 +25730,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   65,
   69.26,
   4.26,
@@ -25194,7 +25742,8 @@ INSERT INTO `projects` (
   15369081,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_546","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 34.630.919 dan fisik mencapai 69.26% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_547',
@@ -25228,7 +25777,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   0,
   0,
   0,
@@ -25239,7 +25788,8 @@ INSERT INTO `projects` (
   90000000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_547","timestamp":"2026-10-31 15:00:00","userName":"Admin SIMON SATUPUTARU","userRole":"Sistem Monitoring","action":"Pendaftaran Paket APBD 2026","keterangan":"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 90.000.000 (Murni)."}]'
 ),
 (
   'prj_tata_ruang_548',
@@ -25249,7 +25799,7 @@ INSERT INTO `projects` (
   'sub_tata_ruang_79',
   '1.03.12.2.02.04',
   'Penyusunan RTRW Kabupaten/Kota',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-TAT-0548',
@@ -25261,7 +25811,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25272,8 +25822,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   85,
   89.4,
   4.4,
@@ -25284,7 +25834,8 @@ INSERT INTO `projects` (
   1060000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_548","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 8.940.000 dan fisik mencapai 89.4% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_549',
@@ -25306,7 +25857,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25317,8 +25868,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   50,
   54.29,
   4.29,
@@ -25329,7 +25880,8 @@ INSERT INTO `projects` (
   11682771,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_549","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 13.877.229 dan fisik mencapai 54.29% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_550',
@@ -25351,7 +25903,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25362,8 +25914,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   35,
   41.59,
   6.59,
@@ -25374,7 +25926,8 @@ INSERT INTO `projects` (
   29906900,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_550","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 21.293.100 dan fisik mencapai 41.59% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),
@@ -25391,7 +25944,7 @@ INSERT INTO `projects` (
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
   `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
-  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`
+  `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
   'prj_tata_ruang_551',
@@ -25413,7 +25966,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25424,8 +25977,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   45,
   49.2,
   4.2,
@@ -25436,7 +25989,8 @@ INSERT INTO `projects` (
   5080000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_551","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 4.920.000 dan fisik mencapai 49.2% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_552',
@@ -25456,8 +26010,8 @@ INSERT INTO `projects` (
   99731000,
   '027/SPK/Kons.03/TARU/VII/2026',
   '2026-07-10',
-  '2026-03-01',
-  '2026-11-30',
+  '2026-07-10',
+  '2026-10-07',
   'CV. PADMADUTA CIPTA KREASI',
   'Bank Jateng',
   NULL,
@@ -25470,7 +26024,7 @@ INSERT INTO `projects` (
   '[]',
   0,
   'pelaksanaan_kontrak',
-  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"10 Juli 2026"}}',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-07-10"}}',
   70,
   70,
   0,
@@ -25481,7 +26035,8 @@ INSERT INTO `projects` (
   99731000,
   '[]',
   'belum_diajukan',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_552","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 70% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_553',
@@ -25503,7 +26058,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25514,8 +26069,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   60,
   69.49,
   9.49,
@@ -25526,7 +26081,8 @@ INSERT INTO `projects` (
   9152125,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_553","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 20.847.875 dan fisik mencapai 69.49% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_554',
@@ -25548,7 +26104,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25559,8 +26115,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   45,
   49.12,
   4.12,
@@ -25571,7 +26127,8 @@ INSERT INTO `projects` (
   105538527,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_554","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 101.891.473 dan fisik mencapai 49.12% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_555',
@@ -25581,7 +26138,7 @@ INSERT INTO `projects` (
   'sub_tata_ruang_86',
   '1.03.12.2.04.03',
   'Pengawasan TURBINLAK dan Pengawasan Fungsi dan Manfaat',
-  'Fisik',
+  'Jakon',
   'Murni',
   'APBD Murni (DAU)',
   'RUP-2026-TAT-0555',
@@ -25593,7 +26150,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25604,8 +26161,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   40,
   41.6,
   1.6,
@@ -25616,7 +26173,8 @@ INSERT INTO `projects` (
   14600000,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_555","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 10.400.000 dan fisik mencapai 41.6% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_556',
@@ -25638,7 +26196,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25649,8 +26207,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   42.5,
   48.42,
   5.92,
@@ -25661,7 +26219,8 @@ INSERT INTO `projects` (
   98601700,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_556","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 91.948.300 dan fisik mencapai 48.42% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_557',
@@ -25683,7 +26242,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25694,8 +26253,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   40,
   49.17,
   9.17,
@@ -25706,7 +26265,8 @@ INSERT INTO `projects` (
   38119925,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_557","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 36.880.075 dan fisik mencapai 49.17% per laporan bulan Oktober 2026."}]'
 ),
 (
   'prj_tata_ruang_558',
@@ -25728,7 +26288,7 @@ INSERT INTO `projects` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  '-',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -25739,8 +26299,8 @@ INSERT INTO `projects` (
   '110.6385',
   '[]',
   0,
-  'identifikasi_kebutuhan',
-  '{"tahapSaatIni":"identifikasi_kebutuhan","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-04-01"}}',
+  'pelaksanaan_kontrak',
+  '{"tahapSaatIni":"pelaksanaan_kontrak","jadwalPraKontrak":{"targetMulaiPekerjaan":"2026-03-01"}}',
   45,
   47.66,
   2.66,
@@ -25751,7 +26311,8 @@ INSERT INTO `projects` (
   60481775,
   '[]',
   'sp2d_terbit',
-  NULL
+  NULL,
+  '[{"id":"log_init_prj_tata_ruang_558","timestamp":"2026-10-31 16:30:00","userName":"Koordinator Tata Ruang","userRole":"Koordinator Bidang","action":"Input SP2D & Progres Fisik","keterangan":"Realisasi SP2D tercatat Rp 55.068.225 dan fisik mencapai 47.66% per laporan bulan Oktober 2026."}]'
 )
 ON DUPLICATE KEY UPDATE 
   `nama_paket` = VALUES(`nama_paket`),

@@ -3,6 +3,7 @@
  * Dihasilkan dari Dokumen Excel: Program Kegiatan Sub Kegiatan Pekerjaan 2026
  * DINPUTARU KABUPATEN DEMAK
  * Total Pekerjaan: 558 Paket
+ * Dilengkapi data kontrak, realisasi fisik, SP2D, dan audit log riwayat
  */
 
 export const REAL_PROJECTS_2026 = [
@@ -12,6 +13,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Perencanaan, Penganggaran, dan Evaluasi Kinerja Perangkat Daerah",
     "namaPaket": "Penyusunan Dokumen Perencanaan Perangkat Daerah",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0001",
@@ -60,7 +62,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 117412864,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_1",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 41.947.136 dan realisasi fisik 26.32% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_2",
@@ -68,6 +80,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Perencanaan, Penganggaran, dan Evaluasi Kinerja Perangkat Daerah",
     "namaPaket": "Koordinasi dan Penyusunan Dokumen RKA-SKPD",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0002",
@@ -116,7 +129,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 5781050,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_2",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 44.218.950 dan realisasi fisik 88.44% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_3",
@@ -124,6 +147,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Perencanaan, Penganggaran, dan Evaluasi Kinerja Perangkat Daerah",
     "namaPaket": "Koordinasi dan Penyusunan DPA-SKPD",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0003",
@@ -172,7 +196,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15710000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_3",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 1.290.000 dan realisasi fisik 7.59% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_4",
@@ -180,6 +214,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Perencanaan, Penganggaran, dan Evaluasi Kinerja Perangkat Daerah",
     "namaPaket": "Koordinasi dan   Penyusunan Laporan Capaian Kinerja dan Ikhtisar Realisasi Kinerja SKPD",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0004",
@@ -228,7 +263,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 5447175,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_4",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 48.452.825 dan realisasi fisik 89.89% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_5",
@@ -236,6 +281,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Keuangan Perangkat Daerah",
     "namaPaket": "Penyediaan Gaji dan Tunjangan ASN",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0005",
@@ -272,9 +318,9 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 83,
+      "progresRencana": 83.33,
       "progresRealisasi": 81.47,
-      "deviasiFisik": -1.53,
+      "deviasiFisik": -1.86,
       "statusDeviasi": "Waspada",
       "mingguan": []
     },
@@ -284,7 +330,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2663125720,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_5",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 11.710.298.280 dan realisasi fisik 81.47% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_6",
@@ -292,6 +348,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Keuangan Perangkat Daerah",
     "namaPaket": "Penyediaan Administrasi Pelaksanaan Tugas ASN",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0006",
@@ -340,7 +397,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 331858600,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_6",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 1.287.929.268 dan realisasi fisik 79.51% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_7",
@@ -348,6 +415,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Barang Milik Daerah pada Perangkat Daerah",
     "namaPaket": "Penyusunan Perencanaan Kebutuhan Barang Milik Daerah SKPD",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0007",
@@ -396,7 +464,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20354750,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_7",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 24.645.250 dan realisasi fisik 54.77% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_8",
@@ -404,6 +482,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Kepegawaian Perangkat Daerah",
     "namaPaket": "Pengadaan Pakaian Dinas Beserta Atribut Kelengkapannya",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0008",
@@ -452,7 +531,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100500000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_8",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 17.000.000 dan realisasi fisik 14.47% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_9",
@@ -460,6 +549,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Kepegawaian Perangkat Daerah",
     "namaPaket": "Pendidikan dan Pelatihan Pegawai Berdasarkan Tugas dan Fungsi",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0009",
@@ -508,7 +598,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 187339100,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_9",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 584.260.900 dan realisasi fisik 75.72% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_10",
@@ -516,6 +616,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Umum Perangkat Daerah",
     "namaPaket": "Penyediaan Komponen Instalasi Listrik/Penerangan Bangunan Kantor",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0010",
@@ -564,7 +665,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1028750,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_10",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 18.971.250 dan realisasi fisik 94.86% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_11",
@@ -572,6 +683,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Umum Perangkat Daerah",
     "namaPaket": "Penyediaan Peralatan dan Perlengkapan Kantor",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0011",
@@ -620,7 +732,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20770500,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_11",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 39.229.500 dan realisasi fisik 72.69% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_12",
@@ -628,6 +750,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Umum Perangkat Daerah",
     "namaPaket": "Penyediaan Peralatan Rumah Tangga",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0012",
@@ -676,7 +799,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 18219000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_12",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 43.781.000 dan realisasi fisik 88.07% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_13",
@@ -684,6 +817,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Umum Perangkat Daerah",
     "namaPaket": "Penyediaan Barang Cetakan dan Penggandaan",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0013",
@@ -732,7 +866,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 5130125,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_13",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 39.869.875 dan realisasi fisik 95% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_14",
@@ -740,6 +884,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Umum Perangkat Daerah",
     "namaPaket": "Penyelenggaraan Rapat Koordinasi dan Konsultasi SKPD",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0014",
@@ -788,7 +933,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 190193744,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_14",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 143.426.256 dan realisasi fisik 50.35% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_15",
@@ -796,6 +951,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Administrasi Umum Perangkat Daerah",
     "namaPaket": "Penatausahaan Arsip Dinamis pada SKPD",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0015",
@@ -844,7 +1000,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8713625,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_15",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 41.286.375 dan realisasi fisik 82.57% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_16",
@@ -852,6 +1018,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pengadaan Barang Milik Daerah Penunjang Urusan Pemerintah Daerah",
     "namaPaket": "Pengadaan Kendaraan Dinas Operasional atau lapangan",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0016",
@@ -869,9 +1036,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_16",
     "kodeSubKegiatan": "1.03.01.2.07.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "statusTahapPraKontrak": "identifikasi_kebutuhan",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -900,7 +1067,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 262500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_16",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Pencatatan Sub Kegiatan",
+        "keterangan": "Sub kegiatan terdaftar dengan alokasi pagu Rp 262.500.000."
+      }
+    ]
   },
   {
     "id": "prj_sek_17",
@@ -908,6 +1085,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pengadaan Barang Milik Daerah Penunjang Urusan Pemerintah Daerah",
     "namaPaket": "Pengadaan Mebel",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0017",
@@ -956,7 +1134,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50341998,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_17",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 19.880.002 dan realisasi fisik 100% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_18",
@@ -964,6 +1152,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pengadaan Barang Milik Daerah Penunjang Urusan Pemerintah Daerah",
     "namaPaket": "Pengadaan Peralatan dan Mesin Lainnya",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0018",
@@ -1012,7 +1201,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 906623963,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_18",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 194.150.007 dan realisasi fisik 17.64% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_19",
@@ -1020,6 +1219,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Penyediaan Jasa Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Penyediaan Jasa Surat Menyurat",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0019",
@@ -1068,7 +1268,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 3500000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_19",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 1.500.000 dan realisasi fisik 50% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_20",
@@ -1076,6 +1286,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Penyediaan Jasa Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Penyediaan Jasa Komunikasi, Sumber Daya Air dan Listrik",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0020",
@@ -1124,7 +1335,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 237808213,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_20",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 322.191.787 dan realisasi fisik 58.33% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_21",
@@ -1132,6 +1353,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Penyediaan Jasa Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Penyediaan Jasa Peralatan dan Perlengkapan Kantor",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0021",
@@ -1180,7 +1402,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 76899000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_21",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 73.101.000 dan realisasi fisik 58.87% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_22",
@@ -1188,6 +1420,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Penyediaan Jasa Pemeliharaan, Biaya Pemeliharaan,  dan Pajak Kendaraan Perorangan Dinas atau Kendaraan Dinas Jabatan",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0022",
@@ -1236,7 +1469,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 13217176,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_22",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 35.755.000 dan realisasi fisik 73.01% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_23",
@@ -1244,6 +1487,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Penyediaan Jasa Pemeliharaan, Biaya Pemeliharaan, Pajak, dan Perizinan Kendaraan Dinas Operasional atau Lapangan",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0023",
@@ -1292,7 +1536,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 206132267,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_23",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 364.213.321 dan realisasi fisik 67.15% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_24",
@@ -1300,6 +1554,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Penyediaan Jasa Pemeliharaan, Biaya Pemeliharaan dan Perizinan Alat Besar",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0024",
@@ -1348,7 +1603,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1128000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_24",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 48.872.000 dan realisasi fisik 97.74% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_25",
@@ -1356,6 +1621,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Pemeliharaan Mebel",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0025",
@@ -1404,7 +1670,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 567000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_25",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 9.433.000 dan realisasi fisik 100% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_26",
@@ -1412,6 +1688,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Pemeliharaan Peralatan dan Mesin Lainnya",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0026",
@@ -1460,7 +1737,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 68521500,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_26",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 14.478.500 dan realisasi fisik 47.87% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_27",
@@ -1468,6 +1755,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Pemeliharaan/Rehabilitasi Gedung Kantor dan Bangunan Lainnya",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0027",
@@ -1516,7 +1804,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 468292214,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_27",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 193.497.000 dan realisasi fisik 29.24% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_28",
@@ -1524,6 +1822,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Pemeliharaan/Rehabilitasi Sarana dan Prasarana Gedung Kantor atau Bangunan Lainnya",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0028",
@@ -1572,7 +1871,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 350000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_28",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 19.650.000 dan realisasi fisik 100% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sek_29",
@@ -1580,6 +1889,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sekretariat",
     "subBagian": "Pemeliharaan Barang Milik Daerah Penunjang Urusan Pemerintahan Daerah",
     "namaPaket": "Pemeliharaan/Rehabilitasi Sarana dan Prasarana Pendukung Gedung Kantor atau Bangunan Lainnya",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SEK-0029",
@@ -1628,7 +1938,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 66492660,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sek_29",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Rizky Prahardini, S.E.",
+        "userRole": "Koordinator Sekretariat",
+        "action": "Input SP2D & Realisasi Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 124.348.500 dan realisasi fisik 76.02% per laporan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_30",
@@ -1636,6 +1956,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Rumah Pompa Terpadu Kecamatan Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0030",
@@ -1657,14 +1978,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/006/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-12-15",
       "nilaiKontrak": 2893907000,
       "namaPenyedia": "CV. ARGO DAHONO",
       "bankRekanan": "Bank Jateng",
@@ -1684,7 +2005,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2025734900,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_30",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 868.172.100 dan fisik mencapai 35% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_31",
@@ -1692,6 +2023,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Rumah Pompa Terpadu Kecamatan Bonang",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0031",
@@ -1711,14 +2043,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/006/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-12-15",
       "nilaiKontrak": 26057250,
       "namaPenyedia": "CV. SALAHUDDIN SELARAS",
       "bankRekanan": "Bank Jateng",
@@ -1738,7 +2070,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 26057250,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_31",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 35% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_32",
@@ -1746,6 +2088,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "BOP",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0032",
@@ -1761,11 +2104,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -1774,7 +2117,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -1792,7 +2135,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 13600000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_32",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 9.760.000 dan fisik mencapai 41.78% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_33",
@@ -1800,6 +2153,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pengadaan Pompa Kelurahan Betokan Kab. Demak",
+    "kategoriPekerjaan": "Barang",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0033",
@@ -1821,7 +2175,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -1848,7 +2202,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_33",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_34",
@@ -1856,6 +2220,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pengadaan Pompa Kab. Demak",
+    "kategoriPekerjaan": "Barang",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0034",
@@ -1877,7 +2242,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -1904,7 +2269,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 450000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_34",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 450.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_35",
@@ -1912,6 +2287,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Pintu Air Afvour Tempel Kec. Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0035",
@@ -1933,14 +2309,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/040/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 298832000,
       "namaPenyedia": "CV. SHINTA",
       "bankRekanan": "Bank Jateng",
@@ -1960,7 +2336,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298832000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_35",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_36",
@@ -1968,6 +2354,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Pintu Air Desa Tridonorejo Kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0036",
@@ -1989,14 +2376,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/041/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199010000,
       "namaPenyedia": "CV. LUMBUNG ARTHA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -2016,7 +2403,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199010000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_36",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_37",
@@ -2024,6 +2421,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Pintu Air Desa Mutih Wetan Kec. Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0037",
@@ -2045,7 +2443,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2072,7 +2470,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_37",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_38",
@@ -2080,6 +2488,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultansi Pengawasan Rehabilitasi Pintu Air Desa Mutih Wetan Kec. Wedung",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0038",
@@ -2101,7 +2510,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2128,7 +2537,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_38",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_39",
@@ -2136,6 +2555,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Komunitas Peduli Sungai",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0039",
@@ -2151,11 +2571,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_32",
     "kodeSubKegiatan": "1.03.02.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2164,7 +2584,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -2182,7 +2602,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 74040000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_39",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 6.760.000 dan fisik mencapai 10.22% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_40",
@@ -2190,6 +2620,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Operasi dan Pemeliharaan Sungai",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0040",
@@ -2207,11 +2638,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_32",
     "kodeSubKegiatan": "1.03.02.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2220,7 +2651,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -2238,7 +2669,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 782428107,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_40",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 1.197.302.115 dan fisik mencapai 62.44% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_41",
@@ -2246,6 +2687,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Koordinasi dan Sinkronisasi Peningkatan Kapasitas Kelembagaan Pengelolaan SDA Kewenangan Kabupaten/Kota",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0041",
@@ -2261,11 +2703,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_33",
     "kodeSubKegiatan": "1.03.02.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2274,7 +2716,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -2292,7 +2734,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 104730500,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_41",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 145.269.500 dan fisik mencapai 58.11% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_42",
@@ -2300,6 +2752,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pemeliharaan Rutin Check Dam",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0042",
@@ -2315,11 +2768,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_34",
     "kodeSubKegiatan": "1.03.02.2.01.24",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2328,7 +2781,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -2346,7 +2799,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 40064400,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_42",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 109.935.600 dan fisik mencapai 99.58% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_43",
@@ -2354,6 +2817,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Operasi dan Pemeliharaan Stasiun Pompa Banjir",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0043",
@@ -2369,11 +2833,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_35",
     "kodeSubKegiatan": "1.03.02.2.01.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2382,7 +2846,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -2400,7 +2864,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 499650000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_43",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 100.350.000 dan fisik mencapai 16.73% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_44",
@@ -2408,6 +2882,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pemeliharaan Embung dan Penampung Air Lainnya",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0044",
@@ -2423,11 +2898,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_36",
     "kodeSubKegiatan": "1.03.02.2.01.26",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2436,7 +2911,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -2454,7 +2929,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1299300,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_44",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.700.700 dan fisik mencapai 99.35% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_45",
@@ -2462,6 +2947,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran A.28 Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0045",
@@ -2481,14 +2967,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/007/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 953827000,
       "namaPenyedia": "CV. WIJAYA KUSUMA",
       "bankRekanan": "Bank Jateng",
@@ -2508,7 +2994,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 667678900,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_45",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 286.148.100 dan fisik mencapai 85% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_46",
@@ -2516,6 +3012,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Saluran A.28 Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0046",
@@ -2535,14 +3032,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/004/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 25320210,
       "namaPenyedia": "CV. PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -2562,7 +3059,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25320210,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_46",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_47",
@@ -2570,6 +3077,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Pembuang Desa Kalisari",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0047",
@@ -2591,14 +3099,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/003/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 977183000,
       "namaPenyedia": "CV. CAHAYA SEMBILAN PURNAMA",
       "bankRekanan": "Bank Jateng",
@@ -2618,7 +3126,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 684028100,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_47",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 293.154.900 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_48",
@@ -2626,6 +3144,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Pembuang Desa Singorejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0048",
@@ -2645,14 +3164,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/005/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 463492000,
       "namaPenyedia": "CV. KIAN AGENG REZEKI",
       "bankRekanan": "Bank Jateng",
@@ -2672,7 +3191,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_48",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 463.492.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_49",
@@ -2680,6 +3209,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Saluran Pembuang Desa Singorejo",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0049",
@@ -2699,14 +3229,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/008/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 25299675,
       "namaPenyedia": "CV. RAF INOVASI",
       "bankRekanan": "Bank Jateng",
@@ -2726,7 +3256,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25299675,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_49",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_50",
@@ -2734,6 +3274,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Pembuang Kali Blorok Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0050",
@@ -2755,14 +3296,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/009/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 1929006000,
       "namaPenyedia": "CV. REZA JATI TUNGGAL",
       "bankRekanan": "Bank Jateng",
@@ -2782,7 +3323,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1350304200,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_50",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 578.701.800 dan fisik mencapai 85% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_51",
@@ -2790,6 +3341,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Saluran Pembuang Kali Blorok Kab. Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0051",
@@ -2809,14 +3361,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/002/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 24961125,
       "namaPenyedia": "CV. RANCANG JAYA DISAIN",
       "bankRekanan": "Bank Jateng",
@@ -2836,7 +3388,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24961125,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_51",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_52",
@@ -2844,6 +3406,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Pembuang Kali Tuntang Lama - Kali Jajar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0052",
@@ -2863,7 +3426,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2890,7 +3453,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_52",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_53",
@@ -2898,6 +3471,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Saluran Pembuang Kali Tuntang Lama - Kali Jajar",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0053",
@@ -2917,7 +3491,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -2944,7 +3518,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_53",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_54",
@@ -2952,6 +3536,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Pembuang Stasiun - Tembiring - Tuntang Lama",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0054",
@@ -2973,14 +3558,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/008/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 1911946000,
       "namaPenyedia": "CV. ANUGRAH MEKAR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -3000,7 +3585,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1338362200,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_54",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 573.583.800 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_55",
@@ -3008,6 +3603,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawas Rehabilitasi Saluran Pembuang Stasiun - Tembiring - Tuntang Lama",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0055",
@@ -3027,14 +3623,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/003/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 25320210,
       "namaPenyedia": "CV. PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -3054,7 +3650,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25320210,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_55",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_56",
@@ -3062,6 +3668,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Blok Putat Desa Karangrowo Kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0056",
@@ -3081,14 +3688,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/004/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 148914000,
       "namaPenyedia": "CV. SHINTA",
       "bankRekanan": "Bank Jateng",
@@ -3108,7 +3715,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_56",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 148.914.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_57",
@@ -3116,6 +3733,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Dukun Kec. Karangtengah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0057",
@@ -3135,14 +3753,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/005/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 298936000,
       "namaPenyedia": "CV. GIRI BANGUN",
       "bankRekanan": "Bank Jateng",
@@ -3162,7 +3780,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_57",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 298.936.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_58",
@@ -3170,6 +3798,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Kali Welingan Desa Poncoharjo Kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0058",
@@ -3189,14 +3818,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/008/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 198978000,
       "namaPenyedia": "CV. HARGOSARI",
       "bankRekanan": "Bank Jateng",
@@ -3216,7 +3845,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198978000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_58",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_59",
@@ -3224,6 +3863,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Saluran Air Desa Bumirejo Kec. Karangawen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0059",
@@ -3243,14 +3883,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/009/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 129642000,
       "namaPenyedia": "CV. HARGOSARI",
       "bankRekanan": "Bank Jateng",
@@ -3270,7 +3910,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 129642000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_59",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_60",
@@ -3278,6 +3928,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Saluran Pembuang Desa Bulusari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0060",
@@ -3297,14 +3948,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/007/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 198740000,
       "namaPenyedia": "CV. SHINTA",
       "bankRekanan": "Bank Jateng",
@@ -3324,7 +3975,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_60",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.740.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_61",
@@ -3332,6 +3993,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Saluran Pembuang Desa Karangrejo Kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0061",
@@ -3351,14 +4013,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/004/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 489472000,
       "namaPenyedia": "CV. KIAN AGENG REZEKI",
       "bankRekanan": "Bank Jateng",
@@ -3378,7 +4040,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 489472000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_61",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_62",
@@ -3386,6 +4058,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Sungai Daleman Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0062",
@@ -3405,14 +4078,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/001/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 954210000,
       "namaPenyedia": "CV.SETIAJI",
       "bankRekanan": "Bank Jateng",
@@ -3432,7 +4105,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 667947000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_62",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 286.263.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_63",
@@ -3440,6 +4123,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Normalisasi Sungai Daleman Kab. Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0063",
@@ -3459,14 +4143,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/007/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 25410675,
       "namaPenyedia": "CV. RAF INOVASI",
       "bankRekanan": "Bank Jateng",
@@ -3486,7 +4170,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25410675,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_63",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_64",
@@ -3494,6 +4188,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Sungai Onggorawe Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0064",
@@ -3513,14 +4208,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 September 2026"
+        "targetMulaiPekerjaan": "2026-09-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/014/SP/TENDER/SDABK/IX/2026",
-      "tanggalKontrak": "8 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-08",
+      "tanggalMulai": "2026-09-08",
+      "tanggalSelesai": "2026-12-16",
       "nilaiKontrak": 968638000,
       "namaPenyedia": "CV. URIP KARYA BARU",
       "bankRekanan": "Bank Jateng",
@@ -3540,7 +4235,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 678046600,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_64",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 290.591.400 dan fisik mencapai 75% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_65",
@@ -3548,6 +4253,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Normalisasi Sungai Onggorawe Kab. Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0065",
@@ -3567,14 +4273,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 September 2026"
+        "targetMulaiPekerjaan": "2026-09-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/009/SPK/PGWS/SDABK/IX/2026",
-      "tanggalKontrak": "8 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-08",
+      "tanggalMulai": "2026-09-08",
+      "tanggalSelesai": "2026-12-16",
       "nilaiKontrak": 25428990,
       "namaPenyedia": "CV. SALAHUDDIN SELARAS",
       "bankRekanan": "Bank Jateng",
@@ -3594,7 +4300,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25428990,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_65",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_66",
@@ -3602,6 +4318,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Sungai Tuntang Lama Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0066",
@@ -3623,14 +4340,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/002/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 2912739000,
       "namaPenyedia": "CV. SHINTA",
       "bankRekanan": "Bank Jateng",
@@ -3650,7 +4367,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2912739000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_66",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 65% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_67",
@@ -3658,6 +4385,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Normalisasi Sungai Tuntang Lama Kab. Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0067",
@@ -3677,14 +4405,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/001/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 24929490,
       "namaPenyedia": "CV. UTAMA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -3704,7 +4432,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24929490,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_67",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 65% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_68",
@@ -3712,6 +4450,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pendampingan Bantuan Hukum Rehabilitasi Saluran Pembuang Stasiun - Tembiring - Tuntang Lama",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0068",
@@ -3727,11 +4466,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -3740,7 +4479,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -3758,7 +4497,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15160000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_68",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 8.200.000 dan fisik mencapai 35.1% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_69",
@@ -3766,6 +4515,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Kali Setu Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0069",
@@ -3787,14 +4537,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/023/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 960738000,
       "namaPenyedia": "CV. SETIAJI",
       "bankRekanan": "Bank Jateng",
@@ -3814,7 +4564,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 960738000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_69",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_70",
@@ -3822,6 +4582,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultan Pengawas Normalisasi Kali Setu Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0070",
@@ -3843,14 +4604,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/010/SPK/PGWS.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 19513800,
       "namaPenyedia": "CV. RAF INOVASI",
       "bankRekanan": "Bank Jateng",
@@ -3870,7 +4631,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19513800,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_70",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_71",
@@ -3878,6 +4649,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi kali kategang Desa Bungo Kec Wedung Kab.Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0071",
@@ -3899,14 +4671,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/014/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 199628000,
       "namaPenyedia": "PULUNG MANUNGGAL",
       "bankRekanan": "Bank Jateng",
@@ -3926,7 +4698,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199628000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_71",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_72",
@@ -3934,6 +4716,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Sungai Makam Pahlawan - Karangmlati",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0072",
@@ -3955,14 +4738,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/024/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 940631000,
       "namaPenyedia": "CV. SHINTA",
       "bankRekanan": "Bank Jateng",
@@ -3982,7 +4765,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 940631000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_72",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_73",
@@ -3990,6 +4783,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultan Pengawas Normalisasi Sungai Makam Pahlawan - Karangmlati",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0073",
@@ -4011,14 +4805,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/011/SPK/PGWS.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 19839030,
       "namaPenyedia": "CV. FANA KARYA GUNA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -4038,7 +4832,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19839030,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_73",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_74",
@@ -4046,6 +4850,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "BOP (Makan Minum dan Honor Pendampingan)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0074",
@@ -4067,7 +4872,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -4094,7 +4899,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 23360000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_74",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 23.360.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_75",
@@ -4102,6 +4917,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Selatan Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0075",
@@ -4123,14 +4939,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/021/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 785960000,
       "namaPenyedia": "CV. SAHALA",
       "bankRekanan": "Bank Jateng",
@@ -4150,7 +4966,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 785960000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_75",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_76",
@@ -4158,6 +4984,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Saluran C.59 Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0076",
@@ -4179,14 +5006,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/015/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 398468000,
       "namaPenyedia": "CV. BANGKIT SENTOSA",
       "bankRekanan": "Bank Jateng",
@@ -4206,7 +5033,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 398468000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_76",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_77",
@@ -4214,6 +5051,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Mlaten Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0077",
@@ -4235,14 +5073,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/017/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 490544000,
       "namaPenyedia": "CV. WIJAYA KUSUMA",
       "bankRekanan": "Bank Jateng",
@@ -4262,7 +5100,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 490544000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_77",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_78",
@@ -4270,6 +5118,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Sarimulyo-Doreng Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0078",
@@ -4291,14 +5140,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/028/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 297863000,
       "namaPenyedia": "CV. KEMBAR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -4318,7 +5167,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 297863000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_78",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_79",
@@ -4326,6 +5185,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Jamus wringinjajar Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0079",
@@ -4347,14 +5207,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/016/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 198290000,
       "namaPenyedia": "CV. KARYA DEWA",
       "bankRekanan": "Bank Jateng",
@@ -4374,7 +5234,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198290000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_79",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_80",
@@ -4382,6 +5252,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Katonsari Kec. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0080",
@@ -4403,14 +5274,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/043/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 133843000,
       "namaPenyedia": "CV. CAHAYA SEMBILAN PURNAMA",
       "bankRekanan": "Bank Jateng",
@@ -4430,7 +5301,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 133843000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_80",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_81",
@@ -4438,6 +5319,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Tlogoweru Kecamatan Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0081",
@@ -4459,14 +5341,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/029/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199449000,
       "namaPenyedia": "CV. BANGUN KARYA SEJAHTERA",
       "bankRekanan": "Bank Jateng",
@@ -4486,7 +5368,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199449000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_81",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_82",
@@ -4494,6 +5386,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Kali Gendong Kecamatan Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0082",
@@ -4515,14 +5408,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/030/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 298624000,
       "namaPenyedia": "CV. BANGUN KARYA SEJAHTERA",
       "bankRekanan": "Bank Jateng",
@@ -4542,7 +5435,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298624000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_82",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_83",
@@ -4550,6 +5453,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Desa Karangtowo Kec. Karangtengah Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0083",
@@ -4571,14 +5475,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/017/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 199498000,
       "namaPenyedia": "CV. LANCAR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -4598,7 +5502,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199498000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_83",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_84",
@@ -4606,6 +5520,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Trimulyo Kec. Guntur Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0084",
@@ -4627,14 +5542,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/031/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199080000,
       "namaPenyedia": "CV. PURNA WIJAYA",
       "bankRekanan": "Bank Jateng",
@@ -4654,7 +5569,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199080000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_84",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_85",
@@ -4662,6 +5587,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Kendaldoyong - Kadilangu Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0085",
@@ -4683,14 +5609,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/032/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 298912000,
       "namaPenyedia": "CV. CITRA DELIMA",
       "bankRekanan": "Bank Jateng",
@@ -4710,7 +5636,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298912000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_85",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_86",
@@ -4718,6 +5654,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour A.25 Kecamatan Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0086",
@@ -4739,14 +5676,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/018/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 149061000,
       "namaPenyedia": "CV. PURNA WIJAYA",
       "bankRekanan": "Bank Jateng",
@@ -4766,7 +5703,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 149061000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_86",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_87",
@@ -4774,6 +5721,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Kali Gendong Kali Jajar Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0087",
@@ -4795,14 +5743,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/033/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 298732000,
       "namaPenyedia": "CV. CITRA DELIMA",
       "bankRekanan": "Bank Jateng",
@@ -4822,7 +5770,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298732000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_87",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_88",
@@ -4830,6 +5788,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Dukuh Tlogowaru Desa Tlogosih Kec. Kebonagung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0088",
@@ -4851,14 +5810,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/019/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 148967000,
       "namaPenyedia": "CV. BANGUN KARYA SEJAHTERA",
       "bankRekanan": "Bank Jateng",
@@ -4878,7 +5837,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 148967000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_88",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_89",
@@ -4886,6 +5855,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Kali Konang Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0089",
@@ -4907,14 +5877,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/018/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 588931000,
       "namaPenyedia": "CV. MITRA JAYA ABADI",
       "bankRekanan": "Bank Jateng",
@@ -4934,7 +5904,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 588931000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_89",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_90",
@@ -4942,6 +5922,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Wonoketingal Dk. Gajah Lor",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0090",
@@ -4963,14 +5944,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/020/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 298526000,
       "namaPenyedia": "CV. BANGKIT SENTOSA",
       "bankRekanan": "Bank Jateng",
@@ -4990,7 +5971,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298526000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_90",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_91",
@@ -4998,6 +5989,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Kalianyar Kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0091",
@@ -5019,14 +6011,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/046/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199169000,
       "namaPenyedia": "CV. LANCAR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -5046,7 +6038,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199169000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_91",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_92",
@@ -5054,6 +6056,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Desa Baleromo Kec. Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0092",
@@ -5075,14 +6078,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/034/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 248778000,
       "namaPenyedia": "CV. WAHYU ABADI",
       "bankRekanan": "Bank Jateng",
@@ -5102,7 +6105,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 248778000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_92",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_93",
@@ -5110,6 +6123,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Mojodemak-Mrisen Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0093",
@@ -5131,14 +6145,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/021/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 199014000,
       "namaPenyedia": "CV. AGA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -5158,7 +6172,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199014000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_93",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_94",
@@ -5166,6 +6190,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Sungai Gemboyo Wonokerto",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0094",
@@ -5187,14 +6212,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/025/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 968000000,
       "namaPenyedia": "CV. MITRA JAYA ABADI",
       "bankRekanan": "Bank Jateng",
@@ -5214,7 +6239,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 968000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_94",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_95",
@@ -5222,6 +6257,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultansi Pengawasan Normalisasi Sungai Gemboyo Wonokerto",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0095",
@@ -5243,14 +6279,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/012/SPK/PGWS.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 19491600,
       "namaPenyedia": "CV. SALAHUDDIN SELARAS",
       "bankRekanan": "Bank Jateng",
@@ -5270,7 +6306,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19491600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_95",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_96",
@@ -5278,6 +6324,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Wringinjajar - Kali Dombo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0096",
@@ -5299,14 +6346,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/016/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 491026000,
       "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -5326,7 +6373,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 491026000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_96",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_97",
@@ -5334,6 +6391,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Dolog Desa Kembangarum Kec Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0097",
@@ -5355,14 +6413,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/019/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 491740000,
       "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -5382,7 +6440,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 491740000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_97",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_98",
@@ -5390,6 +6458,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Afvour Desa Ruwit Kec. Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0098",
@@ -5411,14 +6480,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/035/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 299324000,
       "namaPenyedia": "CV. MERAH PUTIH",
       "bankRekanan": "Bank Jateng",
@@ -5438,7 +6507,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 299324000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_98",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_99",
@@ -5446,6 +6525,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Desa Bakung Kec. Mijen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0099",
@@ -5467,14 +6547,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/044/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 149077000,
       "namaPenyedia": "CV. WAQIAH NUR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -5494,7 +6574,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 149077000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_99",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_100",
@@ -5502,6 +6592,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Gajah Kanal",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0100",
@@ -5524,14 +6615,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/022/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 1455627000,
       "namaPenyedia": "CV. SHINTA",
       "bankRekanan": "Bank Jateng",
@@ -5551,7 +6642,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1455627000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_100",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_101",
@@ -5559,6 +6660,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultansi Pengawasan Normalisasi Gajah Kanal",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0101",
@@ -5580,14 +6682,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/015/SPK/PGWS.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 19709160,
       "namaPenyedia": "CV. UTAMA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -5607,7 +6709,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19709160,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_101",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_102",
@@ -5615,6 +6727,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Normalisasi Kanal Sedo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0102",
@@ -5636,14 +6749,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/026/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 831212025.157773,
       "namaPenyedia": "CV. IBRAHIM MAJU JAYA",
       "bankRekanan": "Bank Jateng",
@@ -5663,7 +6776,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 831212025.157773,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_102",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_103",
@@ -5671,6 +6794,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultansi Perencanaan Paket 1 SDA",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0103",
@@ -5692,14 +6816,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/001/SPK/STD.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 99612510,
       "namaPenyedia": "CV. ARWINDO KARYA UTAMA",
       "bankRekanan": "Bank Jateng",
@@ -5719,7 +6843,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99612510,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_103",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_104",
@@ -5727,6 +6861,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Kajian Pengendalian dan Penanganan Banjir Kecamatan Sayung Sisi Selatan Pantura",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0104",
@@ -5748,14 +6883,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/003/SPK/STD.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 99592530,
       "namaPenyedia": "CV. INDERA CIPTA KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -5775,7 +6910,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99592530,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_104",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_105",
@@ -5783,6 +6928,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Embung Desa Kedondong Kec. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0105",
@@ -5802,14 +6948,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/013/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 464516000,
       "namaPenyedia": "CV. GIRI BANGUN",
       "bankRekanan": "Bank Jateng",
@@ -5829,7 +6975,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 325161200,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_105",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 139.354.800 dan fisik mencapai 75% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_106",
@@ -5837,6 +6993,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Embung Desa Kedondong Kec. Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0106",
@@ -5856,14 +7013,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/005/SPK/PGWS/SDABK/VII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 24961125,
       "namaPenyedia": "CV. RANCANG JAYA DISAIN",
       "bankRekanan": "Bank Jateng",
@@ -5883,7 +7040,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24961125,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_106",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_107",
@@ -5891,6 +7058,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Pintu Air RW 03 Desa Tempuran Kec. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0107",
@@ -5910,7 +7078,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -5937,7 +7105,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_107",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_108",
@@ -5945,6 +7123,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembuatan Pintu Air Desa Karangasem Kec. Sayung - Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0108",
@@ -5964,14 +7143,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/006/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 198760000,
       "namaPenyedia": "CV. PULUNG MANUNGGAL",
       "bankRekanan": "Bank Jateng",
@@ -5991,7 +7170,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_108",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.760.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_109",
@@ -5999,6 +7188,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Pintu Air Desa Donorejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0109",
@@ -6020,14 +7210,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/022/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 198337000,
       "namaPenyedia": "CV. SINAR PUTRI UTAMA",
       "bankRekanan": "Bank Jateng",
@@ -6047,7 +7237,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198337000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_109",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_110",
@@ -6055,6 +7255,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "PEMBANGUNAN SALURAN DUKUH JLEPER - NGEMPLAK KEC. MIJEN",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0110",
@@ -6074,14 +7275,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/012/SPK/PL/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
       "nilaiKontrak": 149374000,
       "namaPenyedia": "CV. SETIAJI",
       "bankRekanan": "Bank Jateng",
@@ -6101,7 +7302,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_110",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 149.374.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_111",
@@ -6109,6 +7320,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud avour Dukuh prigijobo Desa Kalikondang Kecamatan Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0111",
@@ -6128,7 +7340,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6155,7 +7367,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_111",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_112",
@@ -6163,6 +7385,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Desa Krandon Kec. Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0112",
@@ -6182,14 +7405,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/003/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 99036000,
       "namaPenyedia": "CV. MITRAKU",
       "bankRekanan": "Bank Jateng",
@@ -6209,7 +7432,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_112",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.036.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_113",
@@ -6217,6 +7450,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Desa Mijen Kec Mijen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0113",
@@ -6236,14 +7470,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/010/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 99074000,
       "namaPenyedia": "CV. SETIAJI",
       "bankRekanan": "Bank Jateng",
@@ -6263,7 +7497,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_113",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.074.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_114",
@@ -6271,6 +7515,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Desa Rejosari Kecamatan Mijen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0114",
@@ -6290,7 +7535,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6317,7 +7562,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_114",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_115",
@@ -6325,6 +7580,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Desa Tanjunganyar Kec. Gajah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0115",
@@ -6344,14 +7600,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/001/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 248866000,
       "namaPenyedia": "CV. CITRA DELIMA",
       "bankRekanan": "Bank Jateng",
@@ -6371,7 +7627,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_115",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 248.866.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_116",
@@ -6379,6 +7645,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Ouster Leideng Desa Waru Kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0116",
@@ -6398,14 +7665,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/013/SPK/PL/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
       "nilaiKontrak": 199177000,
       "namaPenyedia": "CV. WIDI PRATAMA",
       "bankRekanan": "Bank Jateng",
@@ -6425,7 +7692,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199177000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_116",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_117",
@@ -6433,6 +7710,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Afvour Pucanggading Lama Kab. Demak (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0117",
@@ -6452,7 +7730,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6479,7 +7757,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_117",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_118",
@@ -6487,6 +7775,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Branjangan Kec. Demak (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0118",
@@ -6506,7 +7795,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6533,7 +7822,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_118",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_119",
@@ -6541,6 +7840,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Desa Purworejo Kec. Bonang (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0119",
@@ -6560,7 +7860,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6587,7 +7887,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_119",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_120",
@@ -6595,6 +7905,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Dombo Kec. Sayung (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0120",
@@ -6614,7 +7925,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6641,7 +7952,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_120",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_121",
@@ -6649,6 +7970,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Setu Kec. Guntur (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0121",
@@ -6668,7 +7990,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6695,7 +8017,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_121",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_122",
@@ -6703,6 +8035,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi saluran Desa Wonorejo Kec. Karanganyar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0122",
@@ -6722,14 +8055,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/011/SPK/PL/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
       "nilaiKontrak": 199048000,
       "namaPenyedia": "CV. LANCAR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -6749,7 +8082,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199048000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_122",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_123",
@@ -6757,6 +8100,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Perkuatan Tebing Sungai Kalilanang Desa Mranak Kec. Wonosalam KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0123",
@@ -6776,14 +8120,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/011/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
       "nilaiKontrak": 488270000,
       "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
       "bankRekanan": "Bank Jateng",
@@ -6803,7 +8147,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 341789000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_123",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 146.481.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_124",
@@ -6811,6 +8165,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Ronggo Desa Kendodong Kec. Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0124",
@@ -6832,14 +8187,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/010/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
       "nilaiKontrak": 1367856000,
       "namaPenyedia": "CV. PULUNG MANUNGGAL",
       "bankRekanan": "Bank Jateng",
@@ -6859,7 +8214,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 957499200,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_124",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 410.356.800 dan fisik mencapai 80% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_125",
@@ -6867,6 +8232,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Tangking - Solondoko Desa Tambakbulusan Kec. Karangtengah KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0125",
@@ -6888,14 +8254,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/012/SP/TENDER/SDABK/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
       "nilaiKontrak": 976848000,
       "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
       "bankRekanan": "Bank Jateng",
@@ -6915,7 +8281,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 683793600,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_125",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 293.054.400 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_126",
@@ -6923,6 +8299,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi jaringan irigasi di Lingkungan sawah-mendung kelurahan mangunjiwan KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0126",
@@ -6942,7 +8319,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -6969,7 +8346,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_126",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_127",
@@ -6977,6 +8364,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour C.71 Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0127",
@@ -6999,7 +8387,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -7026,7 +8414,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1280000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_127",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_128",
@@ -7034,6 +8432,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultan Pengawas Rehabilitasi Afvour C.71 Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0128",
@@ -7055,7 +8454,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -7082,7 +8481,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_128",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_129",
@@ -7090,6 +8499,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Saluran Pembuang Desa Jogoloyo Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0129",
@@ -7111,14 +8521,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/020/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 963493000,
       "namaPenyedia": "CV. CIPTA KARYA DIMYATI",
       "bankRekanan": "Bank Jateng",
@@ -7138,7 +8548,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 963493000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_129",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_130",
@@ -7146,6 +8566,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultan Pengawas Pembangunan Saluran Pembuang Desa Jogoloyo Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0130",
@@ -7167,14 +8588,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/013/SPK/PGWS.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 19558200,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -7194,7 +8615,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19558200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_130",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_131",
@@ -7202,6 +8633,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Dukuh Maguwon Desa Jerukgulung Kec Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0131",
@@ -7223,14 +8655,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/023/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 148456000,
       "namaPenyedia": "CV. ATTAQI MULIA ABADI",
       "bankRekanan": "Bank Jateng",
@@ -7250,7 +8682,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 148456000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_131",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_132",
@@ -7258,6 +8700,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Sabuk Desa di Dukuh Lengkong Desa Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0132",
@@ -7279,14 +8722,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "CV. CIPTA KARYA DIMYATI"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/015/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "CV. CIPTA KARYA DIMYATI",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 959159000,
       "namaPenyedia": "CV. MAZDA",
       "bankRekanan": "Bank Jateng",
@@ -7306,7 +8749,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 959159000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_132",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_133",
@@ -7314,6 +8767,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultan Pengawas Pembangunan Sabuk Desa di Dukuh Lengkong Desa Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0133",
@@ -7335,14 +8789,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/014/SPK/PGWS.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 19491600,
       "namaPenyedia": "CV. SALAHUDDIN SELARAS",
       "bankRekanan": "Bank Jateng",
@@ -7362,7 +8816,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19491600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_133",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_134",
@@ -7370,6 +8834,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Desa Sarimulyo Kec. Kebonagung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0134",
@@ -7391,14 +8856,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/045/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199097000,
       "namaPenyedia": "CV. SETIAJI",
       "bankRekanan": "Bank Jateng",
@@ -7418,7 +8883,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199097000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_134",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_135",
@@ -7426,6 +8901,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Kelurahan Betokan Kec. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0135",
@@ -7447,14 +8923,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/036/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199196000,
       "namaPenyedia": "CV. URIP KARYA BARU",
       "bankRekanan": "Bank Jateng",
@@ -7474,7 +8950,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199196000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_135",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_136",
@@ -7482,6 +8968,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Desa Wonosalam Kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0136",
@@ -7503,14 +8990,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/024/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 199010000,
       "namaPenyedia": "CV. INDAH LESTARI",
       "bankRekanan": "Bank Jateng",
@@ -7530,7 +9017,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199010000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_136",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_137",
@@ -7538,6 +9035,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Afvour Tapen Desa Kuncir Kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0137",
@@ -7559,14 +9057,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/037/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 298721000,
       "namaPenyedia": "CV. BEJO",
       "bankRekanan": "Bank Jateng",
@@ -7586,7 +9084,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298721000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_137",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_138",
@@ -7594,6 +9102,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Desa Kunir",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0138",
@@ -7615,14 +9124,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/038/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 298894000,
       "namaPenyedia": "CV. DUTA KENCANA",
       "bankRekanan": "Bank Jateng",
@@ -7642,7 +9151,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298894000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_138",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_139",
@@ -7650,6 +9169,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Desa Jatirogo Kec Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0139",
@@ -7671,14 +9191,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/025/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199288000,
       "namaPenyedia": "CV. IBRAHIM MAJU JAYA",
       "bankRekanan": "Bank Jateng",
@@ -7698,7 +9218,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199288000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_139",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_140",
@@ -7706,6 +9236,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Saluran T.50 Desa Kendaldoyong Kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0140",
@@ -7727,14 +9258,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/026/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 99229000,
       "namaPenyedia": "CV. IBRAHIM MAJU JAYA",
       "bankRekanan": "Bank Jateng",
@@ -7754,7 +9285,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99229000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_140",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_141",
@@ -7762,6 +9303,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Air Desa Ngemplak Kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0141",
@@ -7783,14 +9325,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/039/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 173939000,
       "namaPenyedia": "CV. MAHKOTA JAYA GROUP",
       "bankRekanan": "Bank Jateng",
@@ -7810,7 +9352,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 173939000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_141",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_142",
@@ -7818,6 +9370,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Embung Desa Kedungori Kecamatan Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0142",
@@ -7839,14 +9392,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/042/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
       "nilaiKontrak": 199238000,
       "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
       "bankRekanan": "Bank Jateng",
@@ -7866,7 +9419,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199238000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_142",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_143",
@@ -7874,6 +9437,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jaringan Irigasi D.I. Pelayaran Buyaran",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0143",
@@ -7893,14 +9457,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/002/SPK/PL/SDABK/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-10-12",
       "nilaiKontrak": 198907000,
       "namaPenyedia": "CV. BANGKIT SENTOSA",
       "bankRekanan": "Bank Jateng",
@@ -7920,7 +9484,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_143",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.907.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_144",
@@ -7928,6 +9502,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran D.I. Gablok Kecamatan Karangawen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0144",
@@ -7949,14 +9524,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/027/SPK/PL.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 398090000,
       "namaPenyedia": "CV. LANCAR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -7976,7 +9551,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 398090000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_144",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_145",
@@ -7984,6 +9569,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Saluran Sekunder Wonokerto (Pelayaran Buyaran)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0145",
@@ -8005,14 +9591,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/027/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 957232988.451036,
       "namaPenyedia": "CV. CAHAYA TESCHA",
       "bankRekanan": "Bank Jateng",
@@ -8032,7 +9618,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 957232988.451036,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_145",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_146",
@@ -8040,6 +9636,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultansi Pengawasan Rehabilitasi Saluran Sekunder Wonokerto (Pelayaran Buyaran)",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0146",
@@ -8061,14 +9658,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "29 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/016/SPK/PGWS.P/SDABK/X/2026",
-      "tanggalKontrak": "29 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
       "nilaiKontrak": 19558200,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -8088,7 +9685,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19558200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_146",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_147",
@@ -8096,6 +9703,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Operasi dan Pemeliharaan Jaringan Irigasi Permukaan",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0147",
@@ -8113,11 +9721,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_44",
     "kodeSubKegiatan": "1.03.02.2.02.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -8126,7 +9734,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -8144,7 +9752,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1031000416,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_147",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 713.151.284 dan fisik mencapai 40.89% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_148",
@@ -8152,6 +9770,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Operasi dan Pemeliharaan Jaringan Irigasi Tambak",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0148",
@@ -8167,11 +9786,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_45",
     "kodeSubKegiatan": "1.03.02.2.02.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -8180,7 +9799,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -8198,7 +9817,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2145800,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_148",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 97.854.200 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_149",
@@ -8206,6 +9835,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Penguatan Kapasitas Kelembagaan Pengelola Irigasi Kewenangan Kabupaten/Kota",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0149",
@@ -8221,11 +9851,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_46",
     "kodeSubKegiatan": "1.03.02.2.02.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -8234,7 +9864,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -8252,7 +9882,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 60977782,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_149",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 204.647.218 dan fisik mencapai 77.04% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_150",
@@ -8260,6 +9900,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultansi Pengelolaan Aset dan Kinerja Sistem Irigasi",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0150",
@@ -8281,14 +9922,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/002/SPK/STD.P/SDABK/X/2026",
-      "tanggalKontrak": "15 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
       "nilaiKontrak": 99684660,
       "namaPenyedia": "CV. ARWINDO KARYA UTAMA",
       "bankRekanan": "Bank Jateng",
@@ -8308,7 +9949,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99684660,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_150",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_151",
@@ -8316,6 +9967,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Pengembangan dan Pengelolaan Sistem Irigasi Primer dan Sekunder pada Daerah Irigasi yang Luasnya dibawah 1000 Ha dalam 1 (Satu) Daerah Kabupaten/Kota",
     "namaPaket": "Operasi dan Pemeliharaan Bendung Irigasi",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0151",
@@ -8335,7 +9987,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -8362,7 +10014,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_151",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_152",
@@ -8370,6 +10032,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan SPAM Paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0152",
@@ -8389,14 +10052,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "12 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-12"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/04Pr/SPK/SPAM.PL.CK/III/2026",
-      "tanggalKontrak": "12 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-12",
+      "tanggalMulai": "2026-03-12",
+      "tanggalSelesai": "2026-04-10",
       "nilaiKontrak": 49550000,
       "namaPenyedia": "CV.PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -8416,7 +10079,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_152",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 49.550.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_153",
@@ -8424,6 +10097,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan SPAM Paket 2",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0153",
@@ -8443,14 +10117,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "12 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-12"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/05Pr/SPK/SPAM.PL.CK/III/2026",
-      "tanggalKontrak": "12 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-12",
+      "tanggalMulai": "2026-03-12",
+      "tanggalSelesai": "2026-04-10",
       "nilaiKontrak": 49550000,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -8470,7 +10144,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_153",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 49.550.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_154",
@@ -8478,6 +10162,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pendataan Akses Air Minum Kecamatan Mranggen Paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0154",
@@ -8497,14 +10182,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "11 Mei 2026"
+        "targetMulaiPekerjaan": "2026-05-11"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/06Pr/SPK/SPAM.PL.CK/V/2026",
-      "tanggalKontrak": "11 Mei 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-05-11",
+      "tanggalMulai": "2026-05-11",
+      "tanggalSelesai": "2026-06-24",
       "nilaiKontrak": 99367000,
       "namaPenyedia": "CV.PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -8524,7 +10209,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_154",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.367.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_155",
@@ -8532,6 +10227,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "PEMBANGUNAN SPAM DI RW 03 DAN RW 04 DS. MLATEN KEC. MIJEN",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0155",
@@ -8551,13 +10247,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.05.AE/SPAM.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 299100000,
       "namaPenyedia": "CV. PRIMAKARYA",
@@ -8578,7 +10274,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 299100000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_155",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_156",
@@ -8586,6 +10292,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM RW 4 Desa Bulusari Kecamatan Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0156",
@@ -8605,7 +10312,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -8632,7 +10339,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_156",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_157",
@@ -8640,6 +10357,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Dukuh Bulu RW 4 Desa Bulusari Kecamatan Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0157",
@@ -8659,13 +10377,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.10.AE/SPAM.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0.199,
       "namaPenyedia": "CV BAROKAH JAYA",
@@ -8686,7 +10404,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_157",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_158",
@@ -8694,6 +10422,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Sumur Artetis Desa Sumberejo Kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0158",
@@ -8713,13 +10442,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "14 September 2026"
+        "targetMulaiPekerjaan": "14 September - 12 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.13.AE/SPAM.Reg/PL.CK./IX/2026",
-      "tanggalKontrak": "14 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-14",
+      "tanggalMulai": "14 September - 12 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 199190000,
       "namaPenyedia": "CV. IMARA JAYA",
@@ -8740,7 +10469,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199190000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_158",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_159",
@@ -8748,6 +10487,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Sumur Artetis RW 09 Desa Kebonbatur Kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0159",
@@ -8767,13 +10507,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.09.AE/SPAM.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0.199,
       "namaPenyedia": "CV.DUTA KENCANA",
@@ -8794,7 +10534,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_159",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_160",
@@ -8802,6 +10552,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Sumur Artetis RW 8 Tegalmas Desa Mranggen Kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0160",
@@ -8821,13 +10572,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.07.AE/SPAM.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0.199,
       "namaPenyedia": "CV BAROKAH JAYA",
@@ -8848,7 +10599,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_160",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_161",
@@ -8856,6 +10617,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Peningkatan SPAM Jaringan Perpipaan di Kawasan Perdesaan (Desa PKE) - Desa Bantengmati Kecamatan Mijen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0161",
@@ -8875,7 +10637,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -8902,7 +10664,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_161",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_162",
@@ -8910,6 +10682,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Peningkatan SPAM Jaringan Perpipaan di Kawasan Perdesaan (Desa PKE) - Desa Donorojo Kecamatan Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0162",
@@ -8929,13 +10702,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "14 September 2026"
+        "targetMulaiPekerjaan": "14 September - 12 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.12.AE/SPAM.Reg/PL.CK./IX/2026",
-      "tanggalKontrak": "14 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-14",
+      "tanggalMulai": "14 September - 12 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 199380000,
       "namaPenyedia": "CV BRYAN JAYA PERKASA",
@@ -8956,7 +10729,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199380000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_162",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_163",
@@ -8964,6 +10747,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Peningkatan SPAM Jaringan Perpipaan di Kawasan Perdesaan (Desa PKE) - Desa Kedondong Kecamatan Gajah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0163",
@@ -8983,13 +10767,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.08.AE/SPAM.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0.199,
       "namaPenyedia": "CV BAROKAH JAYA",
@@ -9010,7 +10794,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_163",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_164",
@@ -9018,6 +10812,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan SPAM Paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0164",
@@ -9037,13 +10832,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 September 2026"
+        "targetMulaiPekerjaan": "15 September - 13 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/04Pgw/SPK/SPAM.PL.CK.IX/2026",
-      "tanggalKontrak": "15 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-15",
+      "tanggalMulai": "15 September - 13 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0.19,
       "namaPenyedia": "CV. PRIORITAS",
@@ -9064,7 +10859,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.19,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_164",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_165",
@@ -9072,6 +10877,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan SPAM Paket 2",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0165",
@@ -9091,7 +10897,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9118,7 +10924,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_165",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_166",
@@ -9126,6 +10942,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "BOP",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0166",
@@ -9141,11 +10958,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9154,7 +10971,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -9172,7 +10989,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 34417500,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_166",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 55.582.500 dan fisik mencapai 69.57% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_167",
@@ -9180,6 +11007,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Desa Dombo Kecamatan Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0167",
@@ -9199,7 +11027,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9226,7 +11054,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 250000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_167",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_168",
@@ -9234,6 +11072,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Peningkatan SPAM Desa Bakalrejo Kecamatan Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0168",
@@ -9253,7 +11092,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9280,7 +11119,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 250000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_168",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_169",
@@ -9288,6 +11137,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Peningkatan SPAM Jaringan perpipaan pada Dukuh Wonodadi Lor RW 5 Desa Wonoagung Kecamatan Karangtengah (Desa PKE)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0169",
@@ -9307,7 +11157,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9334,7 +11184,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_169",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_170",
@@ -9342,6 +11202,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Peningkatan SPAM RW 13 Desa Jragung Kecamatan Karangawen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0170",
@@ -9361,7 +11222,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9388,7 +11249,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_170",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_171",
@@ -9396,6 +11267,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Jaringan Perpipaan di Kawasan Perdesaan (Desa Stunting) - Desa Bakalrejo Kecamatan Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0171",
@@ -9415,13 +11287,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "14 September 2026"
+        "targetMulaiPekerjaan": "14 September - 12 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.11.AE/SPAM.Reg/PL.CK./IX/2026",
-      "tanggalKontrak": "14 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-14",
+      "tanggalMulai": "14 September - 12 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 19955000,
       "namaPenyedia": "CV. IMARA JAYA",
@@ -9442,7 +11314,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19955000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_171",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 63% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_172",
@@ -9450,6 +11332,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Jaringan Perpipaan di Kawasan Perdesaan (Desa Stunting) - Desa Wonokerto Kecamatan Karangtengah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0172",
@@ -9469,13 +11352,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.06.AE/SPAM.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0.199,
       "namaPenyedia": "CV BAROKAH JAYA",
@@ -9496,7 +11379,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_172",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_173",
@@ -9504,6 +11397,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Jaringan Perpipaan di Kawasan Perdesaan - Desa Gajah Kecamatan Gajah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0173",
@@ -9523,7 +11417,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9550,7 +11444,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_173",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_174",
@@ -9558,6 +11462,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Jaringan Perpipaan di Kawasan Perdesaan - Pengolahan Air Desa Gajah Kecamatan Gajah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0174",
@@ -9577,7 +11482,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9604,7 +11509,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_174",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_175",
@@ -9612,6 +11527,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Jaringan Perpipaan di Kawasan Perdesaan - Desa Gedangalas Kecamatan Gajah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0175",
@@ -9631,7 +11547,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9658,7 +11574,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_175",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_176",
@@ -9666,6 +11592,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan SPAM Jaringan Perpipaan di Kawasan Perdesaan - Pengolahan Air Desa Gedangalas Kecamatan Gajah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0176",
@@ -9685,7 +11612,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9712,7 +11639,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_176",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_177",
@@ -9720,6 +11657,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan SPAM Paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0177",
@@ -9739,13 +11677,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/03Pgw/SPK/SPAM.PL.CK.VIII/2026",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0.41,
       "namaPenyedia": "CV.DINASTI JAVA GROUP",
@@ -9766,7 +11704,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.41,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_177",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_178",
@@ -9774,6 +11722,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Operasi dan Pemeliharaan Sistem Pengelolaan Air Limbah Domestik (SPALD)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0178",
@@ -9789,11 +11738,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_52",
     "kodeSubKegiatan": "1.03.05.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9802,7 +11751,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -9820,7 +11769,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 462650700,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_178",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 37.349.300 dan fisik mencapai 7.47% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_179",
@@ -9828,6 +11787,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Pembinaan dan Pemberdayaan Masyarakat dalam Pengembangan Sistem Pengelolaan Air Limbah Domestik (SPALD)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0179",
@@ -9843,11 +11803,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_53",
     "kodeSubKegiatan": "1.03.05.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9856,7 +11816,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -9874,7 +11834,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 17350000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_179",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 22.250.000 dan fisik mencapai 56.19% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_180",
@@ -9882,6 +11852,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "BOP",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0180",
@@ -9897,11 +11868,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9910,7 +11881,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -9928,7 +11899,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 77739783,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_180",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 112.260.217 dan fisik mencapai 78.61% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_181",
@@ -9936,6 +11917,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan tangki septik individu (APBD Prioritas)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0181",
@@ -9955,7 +11937,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -9982,7 +11964,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_181",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_182",
@@ -9990,6 +11982,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Tangki Septik Skala Individu Desa Betahwalang Kecamatan Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0182",
@@ -10009,13 +12002,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 Juli 2026"
+        "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.2.8/625.6  05/TPS-KSM.BT/VII/2026",
-      "tanggalKontrak": "7 Juli 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-07-07",
+      "tanggalMulai": "7 Juli - Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99200000,
       "namaPenyedia": "TPS-KSM BETAHWALANG",
@@ -10036,7 +12029,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_182",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 8.76% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_183",
@@ -10044,6 +12047,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Tangki Septik Skala Individu Desa Bumiharjo Kecamatan Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0183",
@@ -10063,13 +12067,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 Juli 2026"
+        "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.2.8/625.7 04/KSM.MM/VII/2026",
-      "tanggalKontrak": "7 Juli 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-07-07",
+      "tanggalMulai": "7 Juli - Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99200000,
       "namaPenyedia": "KSM Mugi Mberkahi",
@@ -10090,7 +12094,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_183",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 64.67% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_184",
@@ -10098,6 +12112,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Tangki Septik Skala Individu Desa Kebonbatur Kecamatan Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0184",
@@ -10117,13 +12132,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 Juli 2026"
+        "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.2.8/625.5 17/TPS-KSM.SR/VII/2026",
-      "tanggalKontrak": "7 Juli 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-07-07",
+      "tanggalMulai": "7 Juli - Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99200000,
       "namaPenyedia": "TPS-KSM SANITASI RAHAYU",
@@ -10144,7 +12159,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_184",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 47.76% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_185",
@@ -10152,6 +12177,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Tangki Septik Skala Individu Desa Sidokumpul Kecamatan Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0185",
@@ -10171,13 +12197,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 Juli 2026"
+        "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.2.8/625.3 17/BPSPAMS.KMD/VII/2026",
-      "tanggalKontrak": "7 Juli 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-07-07",
+      "tanggalMulai": "7 Juli - Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99200000,
       "namaPenyedia": "BP SPAMS KAMANDOWO",
@@ -10198,7 +12224,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_185",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 17.5% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_186",
@@ -10206,6 +12242,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Tangki Septik Skala Individu Desa Tedunan Kecamatan Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0186",
@@ -10225,13 +12262,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 Juli 2026"
+        "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.2.8/625.4 12/KSM.TB/VII/2026",
-      "tanggalKontrak": "7 Juli 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-07-07",
+      "tanggalMulai": "7 Juli - Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99200000,
       "namaPenyedia": "KSM TEDUNAN BERKAH",
@@ -10252,7 +12289,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_186",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.200.000 dan fisik mencapai 71.03% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_187",
@@ -10260,6 +12307,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Hibah Barang Tangki Septik Individu Pabrikasi",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0187",
@@ -10279,7 +12327,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10306,7 +12354,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 354000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_187",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_188",
@@ -10314,6 +12372,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pendampingan Pembangunan Tangki Septik Individu",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0188",
@@ -10333,14 +12392,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "25 Februari 2026"
+        "targetMulaiPekerjaan": "2026-02-25"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/01Pr/SPK/Tangki.PL.CK/II/2026",
-      "tanggalKontrak": "25 Februari 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-02-25",
+      "tanggalMulai": "2026-02-25",
+      "tanggalSelesai": "2026-12-22",
       "nilaiKontrak": 99156000,
       "namaPenyedia": "CV.PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -10360,7 +12419,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99156000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_188",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 80% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_189",
@@ -10368,6 +12437,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pendataan Akses Sanitasi Kecamatan Mranggen Paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0189",
@@ -10387,14 +12457,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 Mei 2026"
+        "targetMulaiPekerjaan": "2026-05-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/07Pr/SPK/SPAL.PL.CK/V/2026",
-      "tanggalKontrak": "8 Mei 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-05-08",
+      "tanggalMulai": "2026-05-08",
+      "tanggalSelesai": "2026-06-24",
       "nilaiKontrak": 99367000,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -10414,7 +12484,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_189",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.367.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_190",
@@ -10422,6 +12502,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "Bimbingan Teknis Pengelelolaan Air Limbah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0190",
@@ -10441,13 +12522,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "23 Oktober 2026"
+        "targetMulaiPekerjaan": "23 Oktober - 6 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/01BIMTEK/SPK/PLP.CK.X/2026",
-      "tanggalKontrak": "23 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-23",
+      "tanggalMulai": "23 Oktober - 6 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99398000,
       "namaPenyedia": "CV. MITRA JAYA TUJUH DELAPAN",
@@ -10468,7 +12549,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99398000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_190",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_191",
@@ -10476,6 +12567,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
     "namaPaket": "BOP",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0191",
@@ -10491,11 +12583,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10504,7 +12596,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -10522,7 +12614,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99522000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_191",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 3.550.000 dan fisik mencapai 3.44% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_192",
@@ -10530,6 +12632,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Revitalisasi Drainase Terakota di Perkotaan Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0192",
@@ -10549,7 +12652,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10576,7 +12679,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_192",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_193",
@@ -10584,6 +12697,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Kp. Genggongan RW 02 Kelurahan Mangunjiwan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0193",
@@ -10601,11 +12715,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10614,7 +12728,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -10632,7 +12746,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_193",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_194",
@@ -10640,6 +12764,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi  Perencanaan Drainase Perkotaan Paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0194",
@@ -10659,13 +12784,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "28 September - 9 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/09Pr/SPK/DR.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "28 September - 9 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 17760000,
       "namaPenyedia": "CV. JK KONSULTAN",
@@ -10686,7 +12811,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 17760000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_194",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_195",
@@ -10694,6 +12829,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Drainase Perkotaan paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0195",
@@ -10713,7 +12849,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10740,7 +12876,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_195",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_196",
@@ -10748,6 +12894,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Sistem Drainase Perkotaan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0196",
@@ -10763,11 +12910,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10776,7 +12923,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -10794,7 +12941,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 410000000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_196",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 30.000.000 dan fisik mencapai 6.82% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_197",
@@ -10802,6 +12959,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Revitalisasi Drainase Terakota di Perkotaan Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0197",
@@ -10821,7 +12979,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10848,7 +13006,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_197",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_198",
@@ -10856,6 +13024,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Revitalisasi Drainase Terakota di Perkotaan Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0198",
@@ -10875,7 +13044,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10902,7 +13071,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_198",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_199",
@@ -10910,6 +13089,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Penyusunan Masterplan Drainase Perkotaan - Demak Kota",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0199",
@@ -10929,7 +13109,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -10956,7 +13136,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_199",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_200",
@@ -10964,6 +13154,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Drainase Dukuh Brangkal Desa Sidomulyo Kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0200",
@@ -10985,13 +13176,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "10 Agustus - 8 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99000000,
       "namaPenyedia": "CV.BEJO",
@@ -11012,7 +13203,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_200",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.000.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_201",
@@ -11020,6 +13221,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Drainase Dukuh Gabus RW 1 Desa Banjarejo Kec Guntur Kab Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0201",
@@ -11041,13 +13243,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "10 Agustus - 8 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 148000000,
       "namaPenyedia": "CV MITRAKU",
@@ -11068,7 +13270,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_201",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 148.000.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_202",
@@ -11076,6 +13288,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Drainase RT 10 RW 3 Krandon Guntur Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0202",
@@ -11097,13 +13310,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "10 Agustus - 8 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 98400000,
       "namaPenyedia": "CV MITRAKU",
@@ -11124,7 +13337,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_202",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 98.400.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_203",
@@ -11132,6 +13355,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Jalan Bhayangkara",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0203",
@@ -11151,13 +13375,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "13 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender/PPSD.05.CK/VIII/2026",
-      "tanggalKontrak": "13 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-13",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 465100000,
       "namaPenyedia": "CV. GARUDA KARYA",
@@ -11178,7 +13402,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 325570000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_203",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 139.530.000 dan fisik mencapai 95% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_204",
@@ -11186,6 +13420,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Jalan Sultan Fatah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0204",
@@ -11205,13 +13440,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "13 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender/PPSD.04.CK/VIII/2026",
-      "tanggalKontrak": "13 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-13",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 948400000,
       "namaPenyedia": "CV. ANDHIKA MANDIRI",
@@ -11232,7 +13467,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 663880000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_204",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 284.520.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_205",
@@ -11240,6 +13485,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Mangunjiwan - Donorejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0205",
@@ -11261,13 +13507,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "13 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender/PPSD.03.CK/VIII/2026",
-      "tanggalKontrak": "13 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-13",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 1905600000,
       "namaPenyedia": "CV. SHINTA",
@@ -11288,7 +13534,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1905600000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_205",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_206",
@@ -11296,6 +13552,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Nurcahya - Singorejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0206",
@@ -11318,13 +13575,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "13 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender/PPSD.06.CK/VIII/2026",
-      "tanggalKontrak": "13 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-13",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 1415000000,
       "namaPenyedia": "CV KEMBAR JAYA",
@@ -11345,7 +13602,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 990500000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_206",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 424.500.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_207",
@@ -11353,6 +13620,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase RW 03 Desa Tegalarum Kec Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0207",
@@ -11372,13 +13640,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK.01.AM/PPSD.Reg/PL.CK./VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "10 Agustus - 8 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 98.9,
       "namaPenyedia": "CV FAZA",
@@ -11399,7 +13667,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 98.9,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_207",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_208",
@@ -11407,6 +13685,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Sultan Hadi Wijaya - Sekunder Kauman - Kelurahan Mangunjiwan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0208",
@@ -11426,13 +13705,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "13 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender/PPSD.02.CK/VIII/2026",
-      "tanggalKontrak": "13 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-13",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 945900000,
       "namaPenyedia": "CV.DUTA KENCANA",
@@ -11453,7 +13732,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 662130000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_208",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 283.770.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_209",
@@ -11461,6 +13750,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Saluran Lingkungan Krapyak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0209",
@@ -11480,13 +13770,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "13 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender/PPSD.01.CK/VIII/2026",
-      "tanggalKontrak": "13 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-13",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 946400000,
       "namaPenyedia": "CV. PURNA WIJAYA",
@@ -11507,7 +13797,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 662480000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_209",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 283.920.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_210",
@@ -11515,6 +13815,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Drainase Perkotaan Paket 1  ( Jalan Bhayangkara ; Nurcahya - Singorejo ; Mangunjiwan - Donorejo )",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0210",
@@ -11536,14 +13837,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "05 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/02Pr/SPK/DRAINASE.PL.CK/III/2026",
-      "tanggalKontrak": "05 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-05",
+      "tanggalMulai": "2026-03-05",
+      "tanggalSelesai": "2026-04-03",
       "nilaiKontrak": 49774000,
       "namaPenyedia": "CV. REKA ADI KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -11563,7 +13864,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_210",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 49.774.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_211",
@@ -11571,6 +13882,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Drainase Perkotaan Paket 1  ( Jalan Sultan Hadi Wijaya ; Jalan Sultan Fatah ; Lingkungan Krapyak )",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0211",
@@ -11592,14 +13904,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "05 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/03Pr/SPK/DRAINASE.PL.CK/III/2026",
-      "tanggalKontrak": "05 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-05",
+      "tanggalMulai": "2026-03-05",
+      "tanggalSelesai": "2026-04-03",
       "nilaiKontrak": 49544000,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -11619,7 +13931,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_211",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 49.544.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_212",
@@ -11627,6 +13949,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Drainase Perkotaan Paket 1  ( Jalan Bhayangkara ; Nurcahya - Singorejo ; Mangunjiwan - Donorejo )",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0212",
@@ -11646,13 +13969,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "19 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/01Pgw/SPK/DRAINASE.PL.CK.VIII/2026",
-      "tanggalKontrak": "19 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-19",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 70386000,
       "namaPenyedia": "CV. DE SATU",
@@ -11673,7 +13996,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 70386000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_212",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_213",
@@ -11681,6 +14014,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Drainase Perkotaan Paket 1  ( Jalan Sultan Hadi Wijaya ; Jalan Sultan Fatah ; Lingkungan Krapyak )",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0213",
@@ -11700,13 +14034,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "19 Agustus 2026"
+        "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/02Pgw/SPK/DRAINASE.PL.CK.VIII/2026",
-      "tanggalKontrak": "19 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-19",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 44292000,
       "namaPenyedia": "CV.PRIORITAS",
@@ -11727,7 +14061,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 44292000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_213",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_214",
@@ -11735,6 +14079,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Lingkungan Kampung Sempalwadak Bintoro Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0214",
@@ -11754,7 +14099,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -11781,7 +14126,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_214",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_215",
@@ -11789,6 +14144,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencaan Drainase - Penataan Alun - Alun Perkotaan Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0215",
@@ -11810,13 +14166,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "28 September - 9 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "28 September - 9 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 22013000,
       "namaPenyedia": "CV. DE SATU",
@@ -11837,7 +14193,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 22013000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_215",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_216",
@@ -11845,6 +14211,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Penataan Drainase Jalan Kyai Jebat",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0216",
@@ -11864,7 +14231,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -11891,7 +14258,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_216",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_217",
@@ -11899,6 +14276,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Drainase Jalan Sultan Hadi Wijaya (Lanjutan)",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0217",
@@ -11918,13 +14296,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "28 September - 9 Oktober 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/08Pr/SPK/DR.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "28 September - 9 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 21666000,
       "namaPenyedia": "CV.DINASTI JAVA GROUP",
@@ -11945,7 +14323,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 21666000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_217",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_218",
@@ -11953,6 +14341,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Penataan Drainase Mangunjiwan -  Donorejo ( Ruas Jalan Demak - Donorejo)",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0218",
@@ -11972,7 +14361,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -11999,7 +14388,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_218",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_219",
@@ -12007,6 +14406,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Masterplan Drainase Kawasan Perkotaan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0219",
@@ -12028,13 +14428,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Oktober 2026"
+        "targetMulaiPekerjaan": "20 oktober - 18 desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/011Pr/SPK/DR.PLP.CK.X/2026",
-      "tanggalKontrak": "20 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-20",
+      "tanggalMulai": "20 oktober - 18 desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 99418000,
       "namaPenyedia": "CV. PURUSARA TEKNIK",
@@ -12055,7 +14455,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99418000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_219",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Pencatatan Kontrak Pelaksanaan",
+        "keterangan": "Kontrak pelaksanaan No. 000.3.2/011Pr/SPK/DR.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 99.418.000 kepada CV. PURUSARA TEKNIK."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_220",
@@ -12063,6 +14473,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Drainase - Penataan Alun - Alun Perkotaan Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0220",
@@ -12084,13 +14495,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Oktober 2026"
+        "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/05Pgw/SPK/SPAM.PLP.CK.X/2026",
-      "tanggalKontrak": "30 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "30 Oktober - 18 Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 19703000,
       "namaPenyedia": "CV. REKA ADI KONSULTAN",
@@ -12111,7 +14522,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19703000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_220",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Pencatatan Kontrak Pelaksanaan",
+        "keterangan": "Kontrak pelaksanaan No. 000.3.2/05Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 19.703.000 kepada CV. REKA ADI KONSULTAN."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_221",
@@ -12119,6 +14540,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Penataan Drainase Jalan Sultan Hadi Wijaya (Lanjutan)",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0221",
@@ -12138,13 +14560,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Oktober 2026"
+        "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026",
-      "tanggalKontrak": "30 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "30 Oktober - 18 Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 24619000,
       "namaPenyedia": "CV. PRIORITAS",
@@ -12165,7 +14587,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24619000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_221",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Pencatatan Kontrak Pelaksanaan",
+        "keterangan": "Kontrak pelaksanaan No. 000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 24.619.000 kepada CV. PRIORITAS."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_222",
@@ -12173,6 +14605,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Alun - Alun Perkotaan Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0222",
@@ -12195,13 +14628,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Oktober 2026"
+        "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026",
-      "tanggalKontrak": "30 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "30 Oktober - 18 Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 1207300000,
       "namaPenyedia": "CV. ZULFA",
@@ -12222,7 +14655,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1207300000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_222",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Pencatatan Kontrak Pelaksanaan",
+        "keterangan": "Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026 telah diterbitkan dengan nilai Rp 1.207.300.000 kepada CV. ZULFA."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_223",
@@ -12230,6 +14673,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Penataan Drainase Jalan Sultan Hadi Wijaya (Lanjutan)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0223",
@@ -12251,13 +14695,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Oktober 2026"
+        "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026",
-      "tanggalKontrak": "30 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "30 Oktober - 18 Desember 2026",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 1476300000,
       "namaPenyedia": "CV. GARUDA KARYA",
@@ -12278,7 +14722,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1476300000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_223",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Pencatatan Kontrak Pelaksanaan",
+        "keterangan": "Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026 telah diterbitkan dengan nilai Rp 1.476.300.000 kepada CV. GARUDA KARYA."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_224",
@@ -12286,6 +14740,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Honorarium Narasumber atau Pembahas, Moderator, Pembawa Acara dan Panitia",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0224",
@@ -12305,7 +14760,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -12332,7 +14787,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 40000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_224",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 40.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_225",
@@ -12340,6 +14805,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Drainase yang Terhubung Langsung dengan Sungai dalam daerah Kabupaten/Kota",
     "namaPaket": "Operasi dan Pemeliharaan Sistem Drainase Perkotaan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0225",
@@ -12357,11 +14823,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_58",
     "kodeSubKegiatan": "1.03.06.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -12370,7 +14836,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -12388,7 +14854,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 210082600,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_225",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 489.917.400 dan fisik mencapai 69.99% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_226",
@@ -12396,6 +14872,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Gedung MWC NU Mijen Demak Dusun Bogorame RT 01  RW 04 Desa Bakung Kec. Mijen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0226",
@@ -12415,13 +14892,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/PL.BG.04.PL.CK/VIII/2026",
-      "tanggalKontrak": "7 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-07",
+      "tanggalMulai": "2026-08-07",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 81283000,
       "namaPenyedia": "CV. SALSABIL",
@@ -12442,7 +14919,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 81283000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_226",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_227",
@@ -12450,6 +14937,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Perencanaan  Rehabilitasi Gedung MWC NU Mijen Demak Dusun Bogorame RT 01 RW 04 Desa Bakung Kec. Mijen",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0227",
@@ -12469,13 +14957,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "12 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-12"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/01Pr/SPK/BG.PL.CK/III/2026",
-      "tanggalKontrak": "12 Maret 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-03-12",
+      "tanggalMulai": "2026-03-12",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 3959000,
       "namaPenyedia": "ZAHRA SALSABILA JESSEDANTA PUTRI",
@@ -12496,7 +14984,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_227",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 3.959.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_228",
@@ -12504,6 +15002,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Gedung MWC NU Mijen Demak Dusun Bogorame RT 01 RW 04 Desa Bakung Kec. Mijen",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0228",
@@ -12523,13 +15022,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/04Pgw/SPK/BG.PL.CK.VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 1914000,
       "namaPenyedia": "IMAN SETYA PRISISWANTO",
@@ -12550,7 +15049,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1914000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_228",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_229",
@@ -12558,6 +15067,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Pengawasan Rekayasa-Jasa Pengawas Pekerjaan Konstruksi Bangunan Gedung",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0229",
@@ -12577,7 +15087,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -12604,7 +15114,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_229",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_230",
@@ -12612,6 +15132,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "BOP",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0230",
@@ -12627,11 +15148,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -12640,7 +15161,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -12658,7 +15179,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 6712480,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_230",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 1.150.000 dan fisik mencapai 15.26% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_231",
@@ -12666,6 +15197,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Perencanaan Rehabilitasi Pagar Gedung Bapperida Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0231",
@@ -12687,13 +15219,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "2026-09-28"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "2026-09-28",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 11834000,
       "namaPenyedia": "CV. DE SATU",
@@ -12714,7 +15246,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 11834000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_231",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_232",
@@ -12722,6 +15264,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Desain Arsitektural - Konsultan Parencana Paket 5",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0232",
@@ -12743,13 +15286,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "2026-09-28"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/08Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "2026-09-28",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 50527000,
       "namaPenyedia": "CV.DINASTI JAVA GROUP",
@@ -12770,7 +15313,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50527000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_232",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_233",
@@ -12778,6 +15331,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Pendopo Bupati Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0233",
@@ -12799,13 +15353,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "2026-09-28"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/010Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "2026-09-28",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 13818000,
       "namaPenyedia": "CV. RAF INOVASI",
@@ -12826,7 +15380,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 13818000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_233",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_234",
@@ -12834,6 +15398,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Pengawas Pekerjaan Konstruksi Bangunan Gedung-Konsultan Pengawas Paket 5",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0234",
@@ -12851,11 +15416,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -12864,7 +15429,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -12882,7 +15447,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 32000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_234",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_235",
@@ -12890,6 +15465,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabiliasi Pagar Gedung Bapperida Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0235",
@@ -12911,7 +15487,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -12938,7 +15514,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_235",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_236",
@@ -12946,6 +15532,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Pendopo Bupati Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0236",
@@ -12967,7 +15554,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -12994,7 +15581,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_236",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_237",
@@ -13002,6 +15599,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Gedung Hijau Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0237",
@@ -13023,7 +15621,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13050,7 +15648,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 283740480,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_237",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_238",
@@ -13058,6 +15666,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Gedung MPP Kabupaten Demak Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0238",
@@ -13079,7 +15688,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13106,7 +15715,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 381328560,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_238",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 381.328.560 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_239",
@@ -13114,6 +15733,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Gedung MWC NU Kecamatan Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0239",
@@ -13135,7 +15755,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13162,7 +15782,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 378041760,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_239",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 378.041.760 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_240",
@@ -13170,6 +15800,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Gedung Rehabilitasi RSKW Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0240",
@@ -13191,7 +15822,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13218,7 +15849,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 139659120,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_240",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 139.659.120 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_241",
@@ -13226,6 +15867,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Gedung Ungu Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0241",
@@ -13247,7 +15889,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13274,7 +15916,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 283740480,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_241",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_242",
@@ -13282,6 +15934,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Pagar Gedung Bapperida Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0242",
@@ -13303,7 +15956,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13330,7 +15983,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 478551960,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_242",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_243",
@@ -13338,6 +16001,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Rehabilitasi Pendopo Bupati Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0243",
@@ -13359,7 +16023,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13386,7 +16050,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 574532640,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_243",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 574.532.640 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_244",
@@ -13394,6 +16068,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Lanjutan Pembangunan Gedung MWC NU Karanganyar",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0244",
@@ -13413,13 +16088,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.06.PL.CK/VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 185834000,
       "namaPenyedia": "CV. HIDAYAT",
@@ -13440,7 +16115,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 185834000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_244",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_245",
@@ -13448,6 +16133,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gapura Desa Bungo Kecamatan Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0245",
@@ -13467,13 +16153,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.08.PL.CK/VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 137668000,
       "namaPenyedia": "CV. AZZA",
@@ -13494,7 +16180,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 137668000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_245",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_246",
@@ -13502,6 +16198,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gapura Selamat Datang Desa Donorejo Kec. Karangtengah Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0246",
@@ -13521,7 +16218,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -13548,7 +16245,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_246",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_247",
@@ -13556,6 +16263,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gedung Serbaguna Lanjutan Desa Karangsari Kecamatan Karangtengah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0247",
@@ -13575,13 +16283,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.05.PL.CK/VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 183684000,
       "namaPenyedia": "CV. MITRA JAYA",
@@ -13602,7 +16310,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 183684000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_247",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_248",
@@ -13610,6 +16328,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Lanjutan Gedung Bumdesa Wonorejo Rw 03 Desa Desa Wonorejo Kec Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0248",
@@ -13629,13 +16348,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.09.PL.CK/VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 92158000,
       "namaPenyedia": "CV. SAHALA",
@@ -13656,7 +16375,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 92158000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_248",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_249",
@@ -13664,6 +16393,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Lantai Dasar Gedung Serbaguna RT 03 RW 06 Desa Jetak Kec. Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0249",
@@ -13683,13 +16413,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "4 September 2026"
+        "targetMulaiPekerjaan": "2026-09-04"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.13.PL.CK/IX/2026",
-      "tanggalKontrak": "4 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-04",
+      "tanggalMulai": "2026-09-04",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 185133000,
       "namaPenyedia": "CV. INDAH LESTARI",
@@ -13710,7 +16440,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_249",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 185.133.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_250",
@@ -13718,6 +16458,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Pondok Pesantren Al Amin Jl. Suburan Timur No 162 RT 07 RW 02 Desa Mranggen Kec Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0250",
@@ -13737,13 +16478,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.07.PL.CK/VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 185788000,
       "namaPenyedia": "CV. HIDAYAT",
@@ -13764,7 +16505,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 185788000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_250",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_251",
@@ -13772,6 +16523,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan ruang kelas SMK NU Raudlatul Muallimin Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0251",
@@ -13791,13 +16543,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "4 September 2026"
+        "targetMulaiPekerjaan": "2026-09-04"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.14.PL.CK/IX/2026",
-      "tanggalKontrak": "4 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-04",
+      "tanggalMulai": "2026-09-04",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 185460000,
       "namaPenyedia": "CV. MITRA JAYA ABADI",
@@ -13818,7 +16570,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 185460000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_251",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 93.78% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_252",
@@ -13826,6 +16588,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Talud Lapangan Desa Kuwu Kec. Dempet kab Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0252",
@@ -13845,13 +16608,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "3 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-03"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026",
-      "tanggalKontrak": "3 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-03",
+      "tanggalMulai": "2026-08-03",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 188307000,
       "namaPenyedia": "CV INDAH LESTARI",
@@ -13872,7 +16635,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_252",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 188.307.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_253",
@@ -13880,6 +16653,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Talud Makam Desa Mlatiharjo Kec Gajah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0253",
@@ -13899,13 +16673,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "3 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-03"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026",
-      "tanggalKontrak": "3 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-03",
+      "tanggalMulai": "2026-08-03",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 187732000,
       "namaPenyedia": "CV. HARGOSARI",
@@ -13926,7 +16700,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_253",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 187.732.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_254",
@@ -13934,6 +16718,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Talud Makam RT 6 RW 5 Dukuh Bogoreco Desa Bogosari Kec. Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0254",
@@ -13953,13 +16738,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "3 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-03"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/PL.BG.03.PL.CK/VIII/2026",
-      "tanggalKontrak": "3 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-03",
+      "tanggalMulai": "2026-08-03",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 140057000,
       "namaPenyedia": "CV. MITRAKU",
@@ -13980,7 +16765,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 140057000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_254",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_255",
@@ -13988,6 +16783,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Penataan Lingkungan Daleman 4 RW 03 Desa Batursari Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0255",
@@ -14007,13 +16803,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/SPK/BG.12.PL.CK/VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 138176000,
       "namaPenyedia": "CV. HIDAYAT",
@@ -14034,7 +16830,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 138176000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_255",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_256",
@@ -14042,6 +16848,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Perencana Paket 1",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0256",
@@ -14061,13 +16868,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "12 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-12"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/02Pr/SPK/BG.PL.CK/III/2026",
-      "tanggalKontrak": "12 Maret 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-03-12",
+      "tanggalMulai": "2026-03-12",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 27777000,
       "namaPenyedia": "CV.PRIORITAS",
@@ -14088,7 +16895,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_256",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 27.777.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_257",
@@ -14096,6 +16913,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Perencana Paket 2",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0257",
@@ -14115,13 +16933,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "12 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-12"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/03Pr/SPK/BG.PL.CK/III/2026",
-      "tanggalKontrak": "12 Maret 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-03-12",
+      "tanggalMulai": "2026-03-12",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 24859000,
       "namaPenyedia": "CV. DE SATU",
@@ -14142,7 +16960,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_257",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 24.859.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_258",
@@ -14150,6 +16978,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Perencana Paket 3",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0258",
@@ -14169,13 +16998,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "12 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-12"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/04Pr/SPK/BG.PL.CK/III/2026",
-      "tanggalKontrak": "12 Maret 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-03-12",
+      "tanggalMulai": "2026-03-12",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 15806000,
       "namaPenyedia": "CV. JK KONSULTAN",
@@ -14196,7 +17025,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_258",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 15.806.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_259",
@@ -14204,6 +17043,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Perencana Paket 4",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0259",
@@ -14225,13 +17065,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "2026-09-28"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/05Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "2026-09-28",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 11632000,
       "namaPenyedia": "CV. RAF INOVASI",
@@ -14252,7 +17092,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 11632000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_259",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_260",
@@ -14260,6 +17110,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultansi Perencanaan Gedung Bangunan Gedung Negara",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0260",
@@ -14279,7 +17130,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14306,7 +17157,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_260",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_261",
@@ -14314,6 +17175,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Pengawas Paket 1",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0261",
@@ -14333,13 +17195,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/01Pgw/SPK/BG.PL.CK.VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 21534000,
       "namaPenyedia": "CV. JK KONSULTAN",
@@ -14360,7 +17222,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 21534000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_261",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_262",
@@ -14368,6 +17240,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Pengawas Paket 2",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0262",
@@ -14387,13 +17260,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/02Pgw/SPK/BG.PL.CK.VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 18856000,
       "namaPenyedia": "CV. REKA ADI KONSULTAN",
@@ -14414,7 +17287,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 18856000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_262",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_263",
@@ -14422,6 +17305,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Pengawas Paket 3",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0263",
@@ -14441,13 +17325,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/03Pgw/SPK/BG.PL.CK.VIII/2026",
-      "tanggalKontrak": "10 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 8796000,
       "namaPenyedia": "CV. JK KONSULTAN",
@@ -14468,7 +17352,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8796000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_263",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_264",
@@ -14476,6 +17370,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Konsultan Pengawas Paket 4",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0264",
@@ -14497,7 +17392,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14524,7 +17419,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_264",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_265",
@@ -14532,6 +17437,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Penataan Kawasan Religi dan Budaya Tembiring",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0265",
@@ -14551,7 +17457,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14578,7 +17484,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_265",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_266",
@@ -14586,6 +17502,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Desain Arsitektural-Penataan Kawasan Religi dan Budaya Tembiring",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0266",
@@ -14605,7 +17522,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14632,7 +17549,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_266",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_267",
@@ -14640,6 +17567,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "asa Pengawas Pekerjaan Konstruksi Bangunan Gedung-Penataan Kawasan Religi dan Budaya Tembiring",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0267",
@@ -14659,7 +17587,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14686,7 +17614,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_267",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_268",
@@ -14694,6 +17632,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gedung Commad Center Dinkominfo Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0268",
@@ -14713,7 +17652,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14740,7 +17679,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_268",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_269",
@@ -14748,6 +17697,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Pengawas Pekerjaan Konstruksi Bangunan Gedung-Pembangunan Gedung Command Center Dinkominfo Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0269",
@@ -14767,7 +17717,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14794,7 +17744,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_269",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_270",
@@ -14802,6 +17762,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "BOP",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0270",
@@ -14817,11 +17778,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14830,7 +17791,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -14848,7 +17809,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 84398500,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_270",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 40.530.500 dan fisik mencapai 32.44% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_271",
@@ -14856,6 +17827,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gedung Satreskrim Polres Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0271",
@@ -14877,7 +17849,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -14904,7 +17876,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 478544800,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_271",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_272",
@@ -14912,6 +17894,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Perencanaan Pembangunan Gedung Satreskrim Polres Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0272",
@@ -14933,13 +17916,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "02 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-02"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/011Pr/SPK/BG.PLP.CK.X/2026",
-      "tanggalKontrak": "02 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-02",
+      "tanggalMulai": "2026-10-02",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 7781000,
       "namaPenyedia": "FASTABIQ FADZIL ADHA",
@@ -14960,7 +17943,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 7781000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_272",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_273",
@@ -14968,6 +17961,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Pengawasan  Pembangunan Gedung Satreskrim Polres Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0273",
@@ -14989,7 +17983,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15016,7 +18010,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 12000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_273",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_274",
@@ -15024,6 +18028,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gedung SPKT Polres Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0274",
@@ -15045,7 +18050,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15072,7 +18077,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 286122200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_274",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 286.122.200 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_275",
@@ -15080,6 +18095,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Lanjutan Gedung Serbaguna Desa Donorejo Kec. Karangtengah Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0275",
@@ -15101,7 +18117,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15128,7 +18144,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 236084500,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_275",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 236.084.500 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_276",
@@ -15136,6 +18162,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Penataan Lingkungan Halaman kantor PGRI Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0276",
@@ -15157,7 +18184,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15184,7 +18211,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 187577600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_276",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 187.577.600 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_277",
@@ -15192,6 +18229,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "DED Gedung Bina Praja Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0277",
@@ -15213,7 +18251,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15240,7 +18278,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_277",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_278",
@@ -15248,6 +18296,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "DED Gedung Kantor Dinkominfo Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0278",
@@ -15269,7 +18318,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15296,7 +18345,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_278",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_279",
@@ -15304,6 +18363,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "DED Gedung Kantor Inspektorat Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0279",
@@ -15325,7 +18385,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15352,7 +18412,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_279",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_280",
@@ -15360,6 +18430,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Perencanaan Pembangunan Gedung TK Kemala Bhayangkari 36 Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0280",
@@ -15381,7 +18452,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15408,7 +18479,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_280",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_281",
@@ -15416,6 +18497,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Gedung TK Kemala Bhayangkari 36 Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0281",
@@ -15437,7 +18519,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15464,7 +18546,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 12000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_281",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_282",
@@ -15472,6 +18564,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gedung TK Kemala Bhayangkari 36 Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0282",
@@ -15493,7 +18586,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15520,7 +18613,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 666589600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_282",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_283",
@@ -15528,6 +18631,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Review DED Gedung Kantor Terpadu",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0283",
@@ -15549,7 +18653,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15576,7 +18680,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_283",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_284",
@@ -15584,6 +18698,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Perencanaan Penyusunan Feasibility Study Pembangunan Gedung Kantor Kecamatan Bonang",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0284",
@@ -15605,7 +18720,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15632,7 +18747,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_284",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_285",
@@ -15640,6 +18765,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Pagar Pendopo Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0285",
@@ -15662,7 +18788,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15689,7 +18815,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1432181600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_285",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_286",
@@ -15697,6 +18833,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Desain Arsitektural - Pembangunan Pagar Pendopo Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0286",
@@ -15718,7 +18855,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15745,7 +18882,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_286",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_287",
@@ -15753,6 +18900,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Pengawas Pembangunan Pagar Pendopo Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0287",
@@ -15774,7 +18922,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -15801,7 +18949,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_287",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 24.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_288",
@@ -15809,6 +18967,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Pembangunan Gedung Kantor Kecamatan Mijen Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0288",
@@ -15831,13 +18990,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "05 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/01/SP/Perub.BG.CK/X/2026",
-      "tanggalKontrak": "05 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 7215931000,
       "namaPenyedia": "CV.SEMBILAN SEMBILAN",
@@ -15858,7 +19017,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 5051151700,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_288",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 2.164.779.300 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_289",
@@ -15866,6 +19035,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Pengawas  Pembangunan Gedung Kantor Kecamatan Mijen Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0289",
@@ -15887,13 +19057,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "05 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/05Pgw/SPK/BG.PLP.CK.X/2026",
-      "tanggalKontrak": "05 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 39732000,
       "namaPenyedia": "CV. DE SATU",
@@ -15914,7 +19084,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 39732000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_289",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_290",
@@ -15922,6 +19102,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Penataan Lingkungan Kantor Terpadu (Belakang Kantor BPBD)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0290",
@@ -15944,13 +19125,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/03/SP/Perub.BG.CK/X/2026",
-      "tanggalKontrak": "30 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "2026-10-30",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 3584729000,
       "namaPenyedia": "CV. KIAN AGENG REZEKI",
@@ -15971,7 +19152,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 3584729000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_290",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_291",
@@ -15979,6 +19170,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Pengawas Penataan Lingkungan Kantor Terpadu (Belakang Kantor BPBD)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0291",
@@ -16000,7 +19192,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16027,7 +19219,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_291",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_292",
@@ -16035,6 +19237,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Jasa Konsultansi Perencanaan Penataan Lingkungan Kantor Terpadu (Belakang kantor BPBD)",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0292",
@@ -16056,13 +19259,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 September 2026"
+        "targetMulaiPekerjaan": "2026-09-28"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/06Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "28 September 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "2026-09-28",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 29550000,
       "namaPenyedia": "CV ATHAR",
@@ -16083,7 +19286,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 29550000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_292",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_cipta_karya_293",
@@ -16091,6 +19304,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
     "namaPaket": "Penyelenggaraan Penerbitan Persetujuan Bangunan Gedung (PBG), Sertifikat Laik Fungsi (SLF), Surat Bukti Kepemilikan Bangunan Gedung (SBKBG), Rencana Teknis Pembongkaran Bangunan Gedung (RTB), Tim Profesi Ahli (TPA), Tim Penilai Teknis (TPT), Penilik, dan Pendataan Bangunan Gedung melalui SIMBG",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0293",
@@ -16106,11 +19320,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_61",
     "kodeSubKegiatan": "1.03.08.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16119,7 +19333,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -16137,7 +19351,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 70546500,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_cipta_karya_293",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 129.453.500 dan fisik mencapai 70.46% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_294",
@@ -16145,6 +19369,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Survey Kondisi Jalan",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0294",
@@ -16166,7 +19391,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16193,7 +19418,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_294",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_295",
@@ -16201,6 +19436,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Survey Kondisi Jembatan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0295",
@@ -16222,7 +19458,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16249,7 +19485,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_295",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_296",
@@ -16257,6 +19503,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "survey kondisi jalan dengan metode pkrms wilayah 1",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0296",
@@ -16278,7 +19525,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16305,7 +19552,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_296",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_297",
@@ -16313,6 +19570,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "survey kondisi jalan dengan metode pkrms wilayah 2",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0297",
@@ -16334,7 +19592,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16361,7 +19619,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_297",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_298",
@@ -16369,6 +19637,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi IJD Paket 1",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0298",
@@ -16390,7 +19659,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16417,7 +19686,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_298",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_299",
@@ -16425,6 +19704,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi IJD Paket 2",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0299",
@@ -16446,7 +19726,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16473,7 +19753,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_299",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_300",
@@ -16481,6 +19771,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "UKL UPL IJD 2026",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0300",
@@ -16502,7 +19793,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16529,7 +19820,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_300",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_301",
@@ -16537,6 +19838,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan dan Pembangunan Talud RT 05 RW 06 Desa Jetak Kec. Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0301",
@@ -16556,14 +19858,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.43.3/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199353000,
       "namaPenyedia": "CV .WIJAYA KUSUMA",
       "bankRekanan": "Bank Jateng",
@@ -16583,7 +19885,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_301",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.353.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_302",
@@ -16591,6 +19903,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan RT 01 RW 05 Desa Kunir Kecamatan Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0302",
@@ -16610,14 +19923,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.32/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 148865000,
       "namaPenyedia": "CV. KAWAN KITA",
       "bankRekanan": "Bank Jateng",
@@ -16637,7 +19950,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_302",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 148.865.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_303",
@@ -16645,6 +19968,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan RT 02 RW 02 Desa Pulosari Kec Karangtengah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0303",
@@ -16664,7 +19988,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16691,7 +20015,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_303",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_304",
@@ -16699,6 +20033,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan RW 01 Desa Donorojo Menuju Katonsari Kec. Demak Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0304",
@@ -16718,14 +20053,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.30/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 149606000,
       "namaPenyedia": "CV. WAHYU ABADI",
       "bankRekanan": "Bank Jateng",
@@ -16745,7 +20080,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 222000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_304",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 149.384.000 dan fisik mencapai 60% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_305",
@@ -16753,6 +20098,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan RW 03 Desa Karangtowo Kecamatan Karangtengah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0305",
@@ -16772,7 +20118,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -16799,7 +20145,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_305",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_306",
@@ -16807,6 +20163,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan RW 1 Desa Cangkring Kec Karanganyar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0306",
@@ -16826,14 +20183,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.043/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 98530000,
       "namaPenyedia": "CV. ANDHIKA MANDIRI",
       "bankRekanan": "Bank Jateng",
@@ -16853,7 +20210,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_306",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 98.530.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_307",
@@ -16861,6 +20228,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan Utara Dukuh Dampak arah Gempoldenok Desa Sidomulyo Kec. Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0307",
@@ -16880,14 +20248,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.27/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 149296000,
       "namaPenyedia": "CV. ATMA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -16907,7 +20275,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_307",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 149.296.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_308",
@@ -16915,6 +20293,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi RW 4 dan RW 6 Desa Cabean Kec. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0308",
@@ -16934,14 +20313,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.43.2/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199335000,
       "namaPenyedia": "CV. BANGUN MULYO",
       "bankRekanan": "Bank Jateng",
@@ -16961,7 +20340,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_308",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.335.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_309",
@@ -16969,6 +20358,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi RW 4 Desa Kalikondang Kec. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0309",
@@ -16988,14 +20378,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.042/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199251000,
       "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -17015,7 +20405,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_309",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.251.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_310",
@@ -17023,6 +20423,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Karangrejo RW 01 Kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0310",
@@ -17042,14 +20443,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.33/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199214000,
       "namaPenyedia": "CV. WIDI PRATAMA",
       "bankRekanan": "Bank Jateng",
@@ -17069,7 +20470,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_310",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.214.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_311",
@@ -17077,6 +20488,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan RW 03 Desa Grogol Kec. Karangtengah Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0311",
@@ -17096,14 +20508,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.03.02.2/PL.SPK.BM.039/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 149454000,
       "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -17123,7 +20535,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_311",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 149.454.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_312",
@@ -17131,6 +20553,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan RW 01 Desa Tambakroto Kec Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0312",
@@ -17150,14 +20573,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.55/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 99390000,
       "namaPenyedia": "CV. SALSABIL",
       "bankRekanan": "Bank Jateng",
@@ -17177,7 +20600,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_312",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.390.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_313",
@@ -17185,6 +20618,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan RW 02 Jetaksari Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0313",
@@ -17204,14 +20638,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.35/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 99129000,
       "namaPenyedia": "CV. MAHESA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -17231,7 +20665,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_313",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.129.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_314",
@@ -17239,6 +20683,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "OPERASIONAL BIDANG",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0314",
@@ -17254,11 +20699,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -17267,7 +20712,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -17285,7 +20730,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 40763500,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_314",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 39.236.500 dan fisik mencapai 23.35% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_315",
@@ -17293,6 +20748,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "BETONISASI JALAN DEMPET - DORENG KECAMATAN DEMPET",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0315",
@@ -17312,14 +20768,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 April 2026"
+        "targetMulaiPekerjaan": "2026-04-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PL.SPK.BM.005/IV/2026",
-      "tanggalKontrak": "7 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-07",
+      "tanggalMulai": "2026-04-07",
+      "tanggalSelesai": "2026-06-05",
       "nilaiKontrak": 199130000,
       "namaPenyedia": "CV. TIRTA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -17339,7 +20795,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_315",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.130.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_316",
@@ -17347,6 +20813,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan Desa Mojodemak Menuju Desa Getas Kec. Wonosalam Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0316",
@@ -17366,14 +20833,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 April 2026"
+        "targetMulaiPekerjaan": "2026-04-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PL.SPK.BM.006/IV/2026",
-      "tanggalKontrak": "7 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-07",
+      "tanggalMulai": "2026-04-07",
+      "tanggalSelesai": "2026-06-05",
       "nilaiKontrak": 198886000,
       "namaPenyedia": "CV. AGA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -17393,7 +20860,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_316",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.886.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_317",
@@ -17401,6 +20878,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan Desa Mojodemak Menuju Kec. Wonosalam Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0317",
@@ -17420,14 +20898,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 April 2026"
+        "targetMulaiPekerjaan": "2026-04-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PL.SPK.BM.007/IV/2026",
-      "tanggalKontrak": "7 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-07",
+      "tanggalMulai": "2026-04-07",
+      "tanggalSelesai": "2026-06-05",
       "nilaiKontrak": 148834000,
       "namaPenyedia": "CV. SUMBER JAYA",
       "bankRekanan": "Bank Jateng",
@@ -17447,7 +20925,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_317",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 148.834.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_318",
@@ -17455,6 +20943,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "BETONISASI JALAN PENGHUBUNG DESA MRISEN-DESA KUNCIR KEC WONOSALAM KAB DEMAK",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0318",
@@ -17474,14 +20963,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.28/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199034000,
       "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -17501,7 +20990,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_318",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.034.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_319",
@@ -17509,6 +21008,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi jalan Pucang Argo menuju TVRI Desa Batursari Kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0319",
@@ -17528,14 +21028,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPPBJ.BM.57/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-16",
       "nilaiKontrak": 298414000,
       "namaPenyedia": "CV. KEMBAR JAYA",
       "bankRekanan": "Bank Jateng",
@@ -17555,7 +21055,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_319",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 298.414.000 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_320",
@@ -17563,6 +21073,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Drainase Jalan Ngemplak - Waru",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0320",
@@ -17582,14 +21093,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.03.02.2/PL.SPK.BM.056/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-16",
       "nilaiKontrak": 199405000,
       "namaPenyedia": "CV. HIDAYAH BARU",
       "bankRekanan": "Bank Jateng",
@@ -17609,7 +21120,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_320",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.405.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_321",
@@ -17617,6 +21138,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "PEMBANGUNAN JALAN ANTAR DESA WERDOYO - MANGUNREJO, DUSUN NGARIBOYO RW 7",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0321",
@@ -17636,14 +21158,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.31/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 198549000,
       "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -17663,7 +21185,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_321",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.549.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_322",
@@ -17671,6 +21203,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jalan Antar Desa Wonosari - Poncoharjo Kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0322",
@@ -17690,14 +21223,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.36/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 174127000,
       "namaPenyedia": "CV. MUDI PUTRA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -17717,7 +21250,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_322",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 174.127.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_323",
@@ -17725,6 +21268,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jalan Utama Penghubung Desa Krajanbogo, Kembangan, dan Karangrejo Kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0323",
@@ -17744,14 +21288,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.37/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 149183000,
       "namaPenyedia": "CV. BANGKIT SENTOSA",
       "bankRekanan": "Bank Jateng",
@@ -17771,7 +21315,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_323",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 149.183.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_324",
@@ -17779,6 +21333,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Saluran Drainase Jalan Raya Utama Desa Krandon-Tangkis",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0324",
@@ -17798,14 +21353,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.03.02.2/PL.SPK.BM.038/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 198604000,
       "namaPenyedia": "CV. AGA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -17825,7 +21380,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_324",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.604.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_325",
@@ -17833,6 +21398,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Jalan Brambang - Sidorejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0325",
@@ -17852,14 +21418,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.03.02.2/APBD.SP.BM.74/VIII/2026",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
       "nilaiKontrak": 955444001,
       "namaPenyedia": "CV. KEMBAR PUTRA",
       "bankRekanan": "Bank Jateng",
@@ -17879,7 +21445,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_325",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 955.444.001 dan fisik mencapai 0% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_326",
@@ -17887,6 +21463,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Pembangunan Talud Jalan Brambang - Sidorejo",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0326",
@@ -17906,14 +21483,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 April 2026"
+        "targetMulaiPekerjaan": "2026-04-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.016/IV/2026",
-      "tanggalKontrak": "8 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 14705000,
       "namaPenyedia": "CV. KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
@@ -17933,7 +21510,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_326",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_327",
@@ -17941,6 +21528,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Pembangunan Talud Jalan Brambang - Sidorejo",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0327",
@@ -17960,7 +21548,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -17987,7 +21575,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_327",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_328",
@@ -17995,6 +21593,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Jalan Sepanjang AMD Bumiharjo-Bakalrejo, Kec. Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0328",
@@ -18014,14 +21613,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "07 April 2026"
+        "targetMulaiPekerjaan": "2026-04-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/PL.SPK.BM.009/IV/2026",
-      "tanggalKontrak": "07 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-07",
+      "tanggalMulai": "2026-04-07",
+      "tanggalSelesai": "2026-06-05",
       "nilaiKontrak": 149223000,
       "namaPenyedia": "CV. INDAH LESTARI",
       "bankRekanan": "Bank Jateng",
@@ -18041,7 +21640,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_328",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 149.223.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_329",
@@ -18049,6 +21658,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Jalan Waru - Wringinjajar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0329",
@@ -18068,14 +21678,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.03.02.2/APBD.SP.BM.75/VIII/2026",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
       "nilaiKontrak": 954431000,
       "namaPenyedia": "CV. KEMBAR PUTRA",
       "bankRekanan": "Bank Jateng",
@@ -18095,7 +21705,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_329",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 954.431.000 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_330",
@@ -18103,6 +21723,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Pembangunan Talud Jalan Waru - Wringinjajar",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0330",
@@ -18122,14 +21743,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 April 2026"
+        "targetMulaiPekerjaan": "2026-04-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.017/IV/2026",
-      "tanggalKontrak": "8 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 14705000,
       "namaPenyedia": "CV. KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
@@ -18149,7 +21770,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_330",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_331",
@@ -18157,6 +21788,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Talud Jalan Waru - Wringinjajar",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0331",
@@ -18176,7 +21808,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -18203,7 +21835,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_331",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_332",
@@ -18211,6 +21853,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Trotoar Jalan Terakota di Perkotaan Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0332",
@@ -18230,7 +21873,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -18257,7 +21900,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_332",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_333",
@@ -18265,6 +21918,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Pembangunan Trotoar Jalan Terakota di Perkotaan Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0333",
@@ -18284,7 +21938,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -18311,7 +21965,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_333",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_334",
@@ -18319,6 +21983,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Trotoar Jalan Terakota di Perkotaan Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0334",
@@ -18338,7 +22003,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -18365,7 +22030,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_334",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_335",
@@ -18373,6 +22048,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Penataan Jalan Sultan Fatah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0335",
@@ -18394,14 +22070,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "21 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-21"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/APBD.SP.BM.069/VIII/2026",
-      "tanggalKontrak": "21 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-12-18",
       "nilaiKontrak": 1900504641,
       "namaPenyedia": "CV. ZULFA",
       "bankRekanan": "Bank Jateng",
@@ -18421,7 +22097,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1313953249,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_335",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 586.551.392 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_336",
@@ -18429,6 +22115,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Penataan Jalan Sultan Fatah",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0336",
@@ -18448,14 +22135,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 April 2026"
+        "targetMulaiPekerjaan": "2026-04-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.010/IV/2026",
-      "tanggalKontrak": "8 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 29646000,
       "namaPenyedia": "CV. PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -18475,7 +22162,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_336",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 29.646.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_337",
@@ -18483,6 +22180,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Penataan Jalan Sultan Fatah",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0337",
@@ -18502,7 +22200,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -18529,7 +22227,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_337",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_338",
@@ -18537,6 +22245,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Honorarium Narasumber atau Pembahas, Moderator, Pembawa Acara, dan Panitia enataan Jalan Sultan Fatah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0338",
@@ -18556,14 +22265,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "23 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-23"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/ PL.SPK.BM.21/VII/2026",
-      "tanggalKontrak": "23 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-23",
+      "tanggalMulai": "2026-07-23",
+      "tanggalSelesai": "2026-09-20",
       "nilaiKontrak": 198789359,
       "namaPenyedia": "CV. TIRTA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -18583,7 +22292,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198789359,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_338",
+        "timestamp": "2026-10-31 16:00:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Pencatatan Kontrak Pelaksanaan",
+        "keterangan": "Kontrak pelaksanaan No. 000.3.2/ PL.SPK.BM.21/VII/2026 telah diterbitkan dengan nilai Rp 198.789.359 kepada CV. TIRTA JAYA."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_339",
@@ -18591,6 +22310,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bantengmati - Geneng",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0339",
@@ -18610,14 +22330,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "23 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-23"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/ PL.SPK.BM.21/VII/2026",
-      "tanggalKontrak": "23 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-23",
+      "tanggalMulai": "2026-07-23",
+      "tanggalSelesai": "2026-09-20",
       "nilaiKontrak": 198789359,
       "namaPenyedia": "CV. TIRTA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -18637,7 +22357,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_339",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.789.359 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_340",
@@ -18645,6 +22375,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Bakalrejo Menuju Desa Temuroso",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0340",
@@ -18664,14 +22395,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.34/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 198958000,
       "namaPenyedia": "CV. SINAR CAHAYA",
       "bankRekanan": "Bank Jateng",
@@ -18691,7 +22422,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198958000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_340",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 40% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_341",
@@ -18699,6 +22440,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Betahwalang Kecamatan Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0341",
@@ -18718,14 +22460,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 April 2026"
+        "targetMulaiPekerjaan": "2026-04-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PL.SPK.BM.008/IV/2026",
-      "tanggalKontrak": "7 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-07",
+      "tanggalMulai": "2026-04-07",
+      "tanggalSelesai": "2026-06-05",
       "nilaiKontrak": 198651000,
       "namaPenyedia": "CV JAGA PUTRA MANDALA",
       "bankRekanan": "Bank Jateng",
@@ -18745,7 +22487,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_341",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 198.651.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_342",
@@ -18753,6 +22505,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Ketanjung Kec. Karanganyar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0342",
@@ -18772,14 +22525,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.040/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199455000,
       "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -18799,7 +22552,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_342",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.455.000 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_343",
@@ -18807,6 +22570,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Loireng-Pilangsari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0343",
@@ -18826,7 +22590,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -18853,7 +22617,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 750000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_343",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_344",
@@ -18861,6 +22635,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan desa Sumberejo Kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0344",
@@ -18880,7 +22655,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -18907,7 +22682,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_344",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_345",
@@ -18915,6 +22700,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan penghubung Desa Ngemplik Wetan menuju ke Undaan Lor Kec. Karanganyar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0345",
@@ -18934,14 +22720,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "4 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-04"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.023/VIII/2026",
-      "tanggalKontrak": "4 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-04",
+      "tanggalMulai": "2026-08-04",
+      "tanggalSelesai": "2026-10-02",
       "nilaiKontrak": 99601000,
       "namaPenyedia": "CV BRYAN JAYA PERKASA",
       "bankRekanan": "Bank Jateng",
@@ -18961,7 +22747,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_345",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.601.000 dan fisik mencapai 60% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_346",
@@ -18969,6 +22765,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Purwosari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0346",
@@ -18988,13 +22785,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M09RW6VFV2GRYK6Y2BA3M2PR",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 491900000,
       "namaPenyedia": "CV. TIRTA JAYA",
@@ -19015,7 +22812,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_346",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 491.900.000 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_347",
@@ -19023,6 +22830,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Sampang-Kedunguter",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0347",
@@ -19042,14 +22850,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'5 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.29/VIII/2026",
-      "tanggalKontrak": "'5 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-05",
+      "tanggalMulai": "2026-08-05",
+      "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199228000,
       "namaPenyedia": "CV. DUTA KENCANA",
       "bankRekanan": "Bank Jateng",
@@ -19069,7 +22877,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_347",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.228.000 dan fisik mencapai 70% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_348",
@@ -19077,6 +22895,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pelebaran Jalan geneng - ngaluran KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0348",
@@ -19098,14 +22917,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.72/VIII/2026",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
       "nilaiKontrak": 1474747199,
       "namaPenyedia": "CV.BRYAN JAYA PERKASA",
       "bankRekanan": "Bank Jateng",
@@ -19125,7 +22944,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1032323039,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_348",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 442.424.160 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_349",
@@ -19133,6 +22962,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud/Penahan Tebing/Pembentuk Badan Jalan jalan karanggawang- nggaji KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0349",
@@ -19154,14 +22984,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 September 2026"
+        "targetMulaiPekerjaan": "2026-09-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.098/IX/2026",
-      "tanggalKontrak": "7 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
       "nilaiKontrak": 0.1,
       "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -19181,7 +23011,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_349",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 591.067.508 dan fisik mencapai 55.68% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_350",
@@ -19189,6 +23029,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud/Penahan Tebing/Pembentuk Badan Jalan MIJEN - WEDUNG KABUPATEN DEMAK (RUAS NO. 13) KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0350",
@@ -19204,18 +23045,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "1 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-01"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "",
-      "tanggalKontrak": "1 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-08",
       "nilaiKontrak": 441501918,
       "namaPenyedia": "CV. SUMBER JAYA",
       "bankRekanan": "Bank Jateng",
@@ -19235,7 +23076,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 441501918,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_350",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_351",
@@ -19243,6 +23094,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud/Penahan Tebing/Pembentuk Badan Jalan Ruas Kalikondang menuju Desa Sumberejo Kec. Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0351",
@@ -19264,14 +23116,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 September 2026"
+        "targetMulaiPekerjaan": "2026-09-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M1NKRMJSBFDFE6WF48NHRZAS,",
-      "tanggalKontrak": "7 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
       "nilaiKontrak": 977195440,
       "namaPenyedia": "CV. REZA JATI TUNGGAL",
       "bankRekanan": "Bank Jateng",
@@ -19291,7 +23143,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 684036808,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_351",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 293.158.632 dan fisik mencapai 52.4% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_352",
@@ -19299,6 +23161,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Brumbung - Menur Kecamatan Mranggen KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0352",
@@ -19320,14 +23183,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "21 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-21"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7.2/BANGUB.SP.BM.076/VIII/2026",
-      "tanggalKontrak": "21 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-11-18",
       "nilaiKontrak": 984394437,
       "namaPenyedia": "CV. MAHESA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -19347,7 +23210,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 689076106,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_352",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.318.331 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_353",
@@ -19355,6 +23228,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Desa Karangrejo menuju Wonosalam kec. Wonosalam KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0353",
@@ -19376,14 +23250,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 September 2026"
+        "targetMulaiPekerjaan": "2026-09-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.103/IX/2026",
-      "tanggalKontrak": "7 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
       "nilaiKontrak": 981104275,
       "namaPenyedia": "CV. CAHAYA SEMBILAN PURNAMA",
       "bankRekanan": "Bank Jateng",
@@ -19403,7 +23277,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 981104275,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_353",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_354",
@@ -19411,6 +23295,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Desa Karangsari menuju Jalan Desa Wonoagung Kec. Karangtengah KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0354",
@@ -19432,14 +23317,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M4A5NAHA5XG6H3N48VFBXVKA",
-      "tanggalKontrak": "8 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-08",
+      "tanggalMulai": "2026-10-08",
+      "tanggalSelesai": "2026-12-10",
       "nilaiKontrak": 984248552,
       "namaPenyedia": "CV. KIAN AGENG REZEKI",
       "bankRekanan": "Bank Jateng",
@@ -19459,7 +23344,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 984248552,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_354",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 60% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_355",
@@ -19467,6 +23362,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Desa Katonsari Menuju Desa Donorojo Kec. Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0355",
@@ -19484,18 +23380,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "",
-      "tanggalKontrak": "8 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-08",
+      "tanggalMulai": "2026-10-08",
+      "tanggalSelesai": "2026-12-10",
       "nilaiKontrak": 984972001,
       "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -19515,7 +23411,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 984972001,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_355",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 35% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_356",
@@ -19523,6 +23429,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Desa Rejosari - Desa Tlogorejo Kec Karangawen KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0356",
@@ -19538,18 +23445,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "1 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-01"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "",
-      "tanggalKontrak": "1 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-09",
       "nilaiKontrak": 490510253,
       "namaPenyedia": "CV. MITRA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -19569,7 +23476,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 490510253,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_356",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 40% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_357",
@@ -19577,6 +23494,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan DESA TEMPURAN KE DESA BANGO KEC. DEMAK KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0357",
@@ -19598,14 +23516,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M0A1MW6ZSB74YWKTWVKA9AK4",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
       "nilaiKontrak": 945671613,
       "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
       "bankRekanan": "Bank Jateng",
@@ -19625,7 +23543,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 654603512,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_357",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 291.068.101 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_358",
@@ -19633,6 +23561,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Jalan Gajah - Dempet KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0358",
@@ -19654,14 +23583,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.70/VIII/2026",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
       "nilaiKontrak": 1967947264,
       "namaPenyedia": "CV. GRAHA SENTOSA",
       "bankRekanan": "Bank Jateng",
@@ -19681,7 +23610,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1377563085,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_358",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 590.384.179 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_359",
@@ -19689,6 +23628,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan jalan tlogorejo - kendaldoyong KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0359",
@@ -19710,14 +23650,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-28"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.093/VIII/2026",
-      "tanggalKontrak": "28 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-28",
+      "tanggalMulai": "2026-08-28",
+      "tanggalSelesai": "2026-11-25",
       "nilaiKontrak": 983064898,
       "namaPenyedia": "CV. KAWAN KITA",
       "bankRekanan": "Bank Jateng",
@@ -19737,7 +23677,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 688145429,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_359",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 294.919.469 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_360",
@@ -19745,6 +23695,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan KALIKONDANG - SUMBEREJO (RUAS 218) KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0360",
@@ -19764,14 +23715,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "1 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-01"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M3R2EN296GBEQ1AZM1SCYKCR",
-      "tanggalKontrak": "1 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-10",
       "nilaiKontrak": 785798015,
       "namaPenyedia": "CV. DWI KARYA",
       "bankRekanan": "Bank Jateng",
@@ -19791,7 +23742,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 550058610,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_360",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 235.739.405 dan fisik mencapai 40% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_361",
@@ -19799,6 +23760,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Karangrowo- Kalianyar Kecamatan Wonosalam KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0361",
@@ -19816,18 +23778,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "5 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "",
-      "tanggalKontrak": "5 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
+      "tanggalSelesai": "2026-12-08",
       "nilaiKontrak": 983503178,
       "namaPenyedia": "CV. SUKA MULIA",
       "bankRekanan": "Bank Jateng",
@@ -19847,7 +23809,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 983503178,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_361",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_362",
@@ -19855,6 +23827,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Mangunjiwan Kecamatan Kota KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0362",
@@ -19876,14 +23849,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 September 2026"
+        "targetMulaiPekerjaan": "2026-09-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M1NM4XB142X3Z1DAW5822M5Y",
-      "tanggalKontrak": "7 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
       "nilaiKontrak": 985120772,
       "namaPenyedia": "CV. MAHESA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -19903,7 +23876,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 689584540,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_362",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.536.232 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_363",
@@ -19911,6 +23894,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Menuju TPA BERAHAN KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0363",
@@ -19932,14 +23916,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 September 2026"
+        "targetMulaiPekerjaan": "2026-09-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M1GNBZK0FJJD94YTXEGB4JSR",
-      "tanggalKontrak": "7 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
       "nilaiKontrak": 983392334,
       "namaPenyedia": "CV. KAWAN KITA",
       "bankRekanan": "Bank Jateng",
@@ -19959,7 +23943,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 983392334,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_363",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_364",
@@ -19967,6 +23961,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan peningkatan jalan Desa kakung - Tlogorejo ruas Sumberejo Kecamatan Mranggen Kabupaten Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0364",
@@ -19988,14 +23983,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "31 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-31"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.091/VIII/2026",
-      "tanggalKontrak": "31 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-31",
+      "tanggalMulai": "2026-08-31",
+      "tanggalSelesai": "2026-11-28",
       "nilaiKontrak": 983050634,
       "namaPenyedia": "CV. KARYA ADI MAS",
       "bankRekanan": "Bank Jateng",
@@ -20015,7 +24010,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 688135444,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_364",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 294.915.190 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_365",
@@ -20023,6 +24028,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Peningkatan jalan Gemulak Bedono Kecamatan Sayung Kabupaten Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0365",
@@ -20044,14 +24050,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "7 September 2026"
+        "targetMulaiPekerjaan": "2026-09-07"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.099/IX/2026",
-      "tanggalKontrak": "7 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
       "nilaiKontrak": 981015872,
       "namaPenyedia": "CV. MAHKOTA JAYA GROUP",
       "bankRekanan": "Bank Jateng",
@@ -20071,7 +24077,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 686711110,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_365",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 294.304.762 dan fisik mencapai 40% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_366",
@@ -20079,6 +24095,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Rehabilitasi Jl. Ruas Desa Bakalrejo - Bumiharjo Kec. Guntur KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0366",
@@ -20096,18 +24113,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "21 September 2026"
+        "targetMulaiPekerjaan": "2026-09-21"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "",
-      "tanggalKontrak": "21 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-21",
+      "tanggalMulai": "2026-09-21",
+      "tanggalSelesai": "2026-12-09",
       "nilaiKontrak": 980937999,
       "namaPenyedia": "CV. MAHKOTA JAYA GROUP",
       "bankRekanan": "Bank Jateng",
@@ -20127,7 +24144,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 980937999,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_366",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_367",
@@ -20135,6 +24162,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Rehabilitasi Jl. Ruas Desa Bakalrejo - Temuroso Kec. Guntur KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0367",
@@ -20156,7 +24184,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20183,7 +24211,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_367",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_368",
@@ -20191,6 +24229,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan SAMBUNG - MLEKANG KEC. GAJAH KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0368",
@@ -20210,14 +24249,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "1 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-01"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M3QZH21YT3M36RRR590XMFCS",
-      "tanggalKontrak": "1 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-09",
       "nilaiKontrak": 687705676,
       "namaPenyedia": "CV. SUKA MULIA",
       "bankRekanan": "Bank Jateng",
@@ -20237,7 +24276,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 481393973,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_368",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 206.311.703 dan fisik mencapai 93.25% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_369",
@@ -20245,6 +24294,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Telogorejo- Bumiharjo Kecamatan Guntur KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0369",
@@ -20266,14 +24316,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "1 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-01"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M3R4T5RBZEZP9XN9V0JJ0GCV",
-      "tanggalKontrak": "1 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-09",
       "nilaiKontrak": 983796544,
       "namaPenyedia": "CV. SUKA MULIA",
       "bankRekanan": "Bank Jateng",
@@ -20293,7 +24343,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 688657581,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_369",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.138.963 dan fisik mencapai 60% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_370",
@@ -20301,6 +24361,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekontruksi Jalan demak-kudus KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0370",
@@ -20316,11 +24377,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20329,7 +24390,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -20347,7 +24408,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_370",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_371",
@@ -20355,6 +24426,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekontruksi Jalan DESA KUNIR KE DESA BRAKAS KECAMATAN DEMPET KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0371",
@@ -20376,14 +24448,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.7/BANGUB.SP.BM.71/VIII/2026",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
       "nilaiKontrak": 984495176,
       "namaPenyedia": "CV. HIDAYAH BARU",
       "bankRekanan": "Bank Jateng",
@@ -20403,7 +24475,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 689146623,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_371",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.348.553 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_372",
@@ -20411,6 +24493,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jalan Demak - Purworejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0372",
@@ -20432,14 +24515,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "31 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-31"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/APBD.SP.BM.03/III/2026",
-      "tanggalKontrak": "31 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-31",
+      "tanggalMulai": "2026-03-31",
+      "tanggalSelesai": "2026-06-28",
       "nilaiKontrak": 2424634000,
       "namaPenyedia": "CV. KEMBAR PUTRA",
       "bankRekanan": "Bank Jateng",
@@ -20459,7 +24542,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_372",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 2.424.634.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_373",
@@ -20467,6 +24560,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Jalan Demak - Purworejo",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0373",
@@ -20486,14 +24580,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "31 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-31"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PWS.SPK.BM.004/III/2026",
-      "tanggalKontrak": "31 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-31",
+      "tanggalMulai": "2026-03-31",
+      "tanggalSelesai": "2026-06-28",
       "nilaiKontrak": 24891000,
       "namaPenyedia": "CV. GLOBAL DISAIN",
       "bankRekanan": "Bank Jateng",
@@ -20513,7 +24607,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_373",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 24.891.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_374",
@@ -20521,6 +24625,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan Desa Lempuyang Kec.Wonosalam Kab.Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0374",
@@ -20542,7 +24647,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20569,7 +24674,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_374",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_375",
@@ -20577,6 +24692,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan Desa Pulosari Kec Karangtengah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0375",
@@ -20598,7 +24714,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20625,7 +24741,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_375",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_376",
@@ -20633,6 +24759,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi jalan Lingkar Desa Mojodemak Kec Wonosalam Kab.Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0376",
@@ -20654,7 +24781,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20681,7 +24808,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_376",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_377",
@@ -20689,6 +24826,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan jalan dukuh baru arah desa banjarsari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0377",
@@ -20710,7 +24848,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20737,7 +24875,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_377",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_378",
@@ -20745,6 +24893,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Jalan Desa Rejosari Kecamatan Mijen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0378",
@@ -20766,7 +24915,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20793,7 +24942,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_378",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_379",
@@ -20801,6 +24960,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan desa balerejo kepitu kec. Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0379",
@@ -20822,7 +24982,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20849,7 +25009,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_379",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_380",
@@ -20857,6 +25027,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Jragung Kec. Karangawen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0380",
@@ -20878,7 +25049,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20905,7 +25076,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_380",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_381",
@@ -20913,6 +25094,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan desa karangrejo kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0381",
@@ -20934,7 +25116,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -20961,7 +25143,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_381",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_382",
@@ -20969,6 +25161,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Rt 2/5 Gapura Kuning Desa Dempet Kec. Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0382",
@@ -20990,7 +25183,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21017,7 +25210,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 750000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_382",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_383",
@@ -21025,6 +25228,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Tambakroto Rw 3 Kec. Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0383",
@@ -21046,7 +25250,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21073,7 +25277,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_383",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_384",
@@ -21081,6 +25295,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Dukuh Timbulsloko",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0384",
@@ -21102,7 +25317,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21129,7 +25344,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_384",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_385",
@@ -21137,6 +25362,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Penghubung Desa Banjarejo dan Desa Sidokumpul Kec. Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0385",
@@ -21158,7 +25384,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21185,7 +25411,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_385",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_386",
@@ -21193,6 +25429,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan penghubung dukuh tanggungharjo Desa Baleromo - dukuh Genting Desa Jerukugulung Kec. Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0386",
@@ -21214,7 +25451,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21241,7 +25478,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_386",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_387",
@@ -21249,6 +25496,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Sumberejo - Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0387",
@@ -21270,7 +25518,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21297,7 +25545,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_387",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_388",
@@ -21305,6 +25563,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Tembiring",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0388",
@@ -21326,7 +25585,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21353,7 +25612,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_388",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_389",
@@ -21361,6 +25630,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Drainase jalan Desa Karangmlati",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0389",
@@ -21383,7 +25653,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21410,7 +25680,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1773000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_389",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_390",
@@ -21418,6 +25698,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Drainase jalan Desa Karangmlati",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0390",
@@ -21439,7 +25720,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21466,7 +25747,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 27000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_390",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_391",
@@ -21474,6 +25765,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan antar Desa Bantengmati",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0391",
@@ -21495,7 +25787,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21522,7 +25814,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_391",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_392",
@@ -21530,6 +25832,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan antar Desa Bantengmati",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0392",
@@ -21551,7 +25854,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21578,7 +25881,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_392",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_393",
@@ -21586,6 +25899,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Bengkal Karanganyar",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0393",
@@ -21607,7 +25921,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21634,7 +25948,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 22500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_393",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_394",
@@ -21642,6 +25966,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bintoro - Kalikondang (Jalur lambat depan SMA 1)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0394",
@@ -21663,7 +25988,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21690,7 +26015,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_394",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_395",
@@ -21698,6 +26033,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Bintoro - Kalikondang (Jalur lambat depan SMA 1)",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0395",
@@ -21719,7 +26055,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21746,7 +26082,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_395",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_396",
@@ -21754,6 +26100,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bulusari - Kalisari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0396",
@@ -21776,7 +26123,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21803,7 +26150,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 4550000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_396",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_397",
@@ -21811,6 +26168,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Bulusari - Kalisari",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0397",
@@ -21832,7 +26190,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21859,7 +26217,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_397",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_398",
@@ -21867,6 +26235,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bulusari - Onggorawe",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0398",
@@ -21889,7 +26258,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21916,7 +26285,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_398",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_399",
@@ -21924,6 +26303,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Bulusari - Onggorawe",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0399",
@@ -21945,7 +26325,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -21972,7 +26352,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_399",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_400",
@@ -21980,6 +26370,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Buyaran Karangawen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0400",
@@ -22001,7 +26392,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22028,7 +26419,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_400",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_401",
@@ -22036,6 +26437,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Buyaran Karangawen",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0401",
@@ -22057,7 +26459,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22084,7 +26486,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_401",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_402",
@@ -22092,6 +26504,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Demak - Purworejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0402",
@@ -22114,7 +26527,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22141,7 +26554,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 7450000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_402",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_403",
@@ -22149,6 +26572,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Demak - Purworejo",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0403",
@@ -22170,7 +26594,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22197,7 +26621,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_403",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_404",
@@ -22205,6 +26639,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Desa Jragung Kec. Karangawen",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0404",
@@ -22226,7 +26661,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22253,7 +26688,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_404",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_405",
@@ -22261,6 +26706,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Dukuh Timbulsloko",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0405",
@@ -22282,7 +26728,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22309,7 +26755,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_405",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_406",
@@ -22317,6 +26773,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Gajah Geneng",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0406",
@@ -22338,7 +26795,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22365,7 +26822,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_406",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_407",
@@ -22373,6 +26840,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Gajah Geneng",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0407",
@@ -22394,7 +26862,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22421,7 +26889,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_407",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_408",
@@ -22429,6 +26907,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Jalur Lambat Sultan Trenggono",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0408",
@@ -22451,7 +26930,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22478,7 +26957,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_408",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_409",
@@ -22486,6 +26975,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Jalur Lambat Sultan Trenggono",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0409",
@@ -22507,7 +26997,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22534,7 +27024,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_409",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_410",
@@ -22542,6 +27042,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Kalitengah - Kangkung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0410",
@@ -22564,7 +27065,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22591,7 +27092,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_410",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_411",
@@ -22599,6 +27110,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Kalitengah - Kangkung",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0411",
@@ -22620,7 +27132,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22647,7 +27159,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_411",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_412",
@@ -22655,6 +27177,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Karanganyar - Merak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0412",
@@ -22677,7 +27200,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22704,7 +27227,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_412",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_413",
@@ -22712,6 +27245,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Karanganyar - Merak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0413",
@@ -22733,7 +27267,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22760,7 +27294,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_413",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_414",
@@ -22768,6 +27312,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Karanggawang - Candisari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0414",
@@ -22790,7 +27335,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22817,7 +27362,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1480000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_414",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_415",
@@ -22825,6 +27380,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Karanggawang - Candisari",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0415",
@@ -22846,7 +27402,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22873,7 +27429,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_415",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_416",
@@ -22881,6 +27447,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Kyai Turmudzi",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0416",
@@ -22902,7 +27469,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22929,7 +27496,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_416",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_417",
@@ -22937,6 +27514,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Kyai Turmudzi",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0417",
@@ -22958,7 +27536,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -22985,7 +27563,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_417",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_418",
@@ -22993,6 +27581,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Onggorawe - Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0418",
@@ -23014,7 +27603,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23041,7 +27630,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_418",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_419",
@@ -23049,6 +27648,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Onggorawe - Mranggen",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0419",
@@ -23070,7 +27670,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23097,7 +27697,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_419",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_420",
@@ -23105,6 +27715,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Pamongan - Bulusari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0420",
@@ -23126,7 +27737,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23153,7 +27764,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_420",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_421",
@@ -23161,6 +27782,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Pamongan - Bulusari",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0421",
@@ -23182,7 +27804,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23209,7 +27831,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_421",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_422",
@@ -23217,6 +27849,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan penghubung Desa Mutih Kulon – Kendalasem",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0422",
@@ -23239,7 +27872,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23266,7 +27899,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_422",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_423",
@@ -23274,6 +27917,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan penghubung Desa Mutih Kulon – Kendalasem",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0423",
@@ -23295,7 +27939,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23322,7 +27966,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_423",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_424",
@@ -23330,6 +27984,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Sayung - Sidogemah",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0424",
@@ -23352,7 +28007,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23379,7 +28034,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1871500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_424",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_425",
@@ -23387,6 +28052,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Sayung - Sidogemah",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0425",
@@ -23408,7 +28074,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23435,7 +28101,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 28500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_425",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_426",
@@ -23443,6 +28119,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Sunan Kalijaga",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0426",
@@ -23465,7 +28142,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23492,7 +28169,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_426",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_427",
@@ -23500,6 +28187,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Sunan Kalijaga",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0427",
@@ -23521,7 +28209,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23548,7 +28236,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_427",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_428",
@@ -23556,6 +28254,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Tedunan - Mutihkulon",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0428",
@@ -23577,7 +28276,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23604,7 +28303,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_428",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_429",
@@ -23612,6 +28321,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Tedunan - Mutihkulon",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0429",
@@ -23633,7 +28343,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23660,7 +28370,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_429",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_430",
@@ -23668,6 +28388,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Tembiring",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0430",
@@ -23689,7 +28410,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23716,7 +28437,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_430",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_431",
@@ -23724,6 +28455,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Trengguli - Demung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0431",
@@ -23746,7 +28478,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23773,7 +28505,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_431",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_432",
@@ -23781,6 +28523,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Trengguli - Demung",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0432",
@@ -23802,7 +28545,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23829,7 +28572,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_432",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_433",
@@ -23837,6 +28590,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan Waru - Brambang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0433",
@@ -23859,7 +28613,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23886,7 +28640,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1480000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_433",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_434",
@@ -23894,6 +28658,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan jalan Waru - Brambang",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0434",
@@ -23915,7 +28680,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23942,7 +28707,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_434",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_435",
@@ -23950,6 +28725,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Wonokerto - Tambakbulusan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0435",
@@ -23972,7 +28748,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -23999,7 +28775,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_435",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_436",
@@ -24007,6 +28793,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Wonokerto - Tambakbulusan",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0436",
@@ -24028,7 +28815,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24055,7 +28842,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_436",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_437",
@@ -24063,6 +28860,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jalan Brumbung - Menur Kec. Mranggen Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0437",
@@ -24084,7 +28882,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24111,7 +28909,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_437",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_438",
@@ -24119,6 +28927,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Jalan Brumbung - Menur Kec. Mranggen Kab. Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0438",
@@ -24140,7 +28949,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24167,7 +28976,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_438",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_439",
@@ -24175,6 +28994,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Jalan Demak - Kudus Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0439",
@@ -24197,7 +29017,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24224,7 +29044,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 5950000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_439",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_440",
@@ -24232,6 +29062,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rekonstruksi Jalan Demak - Kudus Kab. Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0440",
@@ -24253,7 +29084,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24280,7 +29111,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_440",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_441",
@@ -24288,6 +29129,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Jalan Sultan Fatah Kab Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0441",
@@ -24310,7 +29152,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24337,7 +29179,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 10850000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_441",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_442",
@@ -24345,6 +29197,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rekonstruksi Jalan Sultan Fatah Kab Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0442",
@@ -24366,7 +29219,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24393,7 +29246,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_442",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_443",
@@ -24401,6 +29264,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan antar Desa Karangsari menuju Wonoagung Kec.Karangtengah Kab.Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0443",
@@ -24422,7 +29286,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24449,7 +29313,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_443",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_444",
@@ -24457,6 +29331,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jalan Antara Desa Rejosari - Desa Karangawen Kab.Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0444",
@@ -24478,7 +29353,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24505,7 +29380,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_444",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_445",
@@ -24513,6 +29398,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jalan Megonten - Karangrejo Kec Kebonagung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0445",
@@ -24534,7 +29420,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24561,7 +29447,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_445",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_446",
@@ -24569,6 +29465,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jalan pada ruas jalan Gemulak - Timbulsloko",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0446",
@@ -24590,7 +29487,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24617,7 +29514,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 600000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_446",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_447",
@@ -24625,6 +29532,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Jalan Sidorejo - Brambang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0447",
@@ -24646,7 +29554,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24673,7 +29581,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 600000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_447",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_448",
@@ -24681,6 +29599,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan batursari mranggen Kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0448",
@@ -24702,7 +29621,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24729,7 +29648,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 350000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_448",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 350.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_449",
@@ -24737,6 +29666,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan belakang pasar sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0449",
@@ -24758,7 +29688,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24785,7 +29715,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_449",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_450",
@@ -24793,6 +29733,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bengkal Karanganyar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0450",
@@ -24815,7 +29756,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24842,7 +29783,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1477500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_450",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_451",
@@ -24850,6 +29801,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan bogorame timbulsloko Kec. Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0451",
@@ -24871,7 +29823,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24898,7 +29850,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_451",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_452",
@@ -24906,6 +29868,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Cangkring - Karangrejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0452",
@@ -24927,7 +29890,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -24954,7 +29917,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_452",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_453",
@@ -24962,6 +29935,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan desa dempet kec. Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0453",
@@ -24983,7 +29957,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25010,7 +29984,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_453",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_454",
@@ -25018,6 +30002,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Kalikondang - Sumberejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0454",
@@ -25039,7 +30024,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25066,7 +30051,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 380000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_454",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 380.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_455",
@@ -25074,6 +30069,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Kuncir - Bango",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0455",
@@ -25095,7 +30091,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25122,7 +30118,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_455",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_456",
@@ -25130,6 +30136,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Kuncir - Jatisono",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0456",
@@ -25151,7 +30158,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25178,7 +30185,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_456",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_457",
@@ -25186,6 +30203,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Menur - Jamus",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0457",
@@ -25207,7 +30225,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25234,7 +30252,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_457",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_458",
@@ -25242,6 +30270,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Mrisen - Kuncir",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0458",
@@ -25263,7 +30292,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25290,7 +30319,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_458",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_459",
@@ -25298,6 +30337,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan pada ruas jalan Sriwulan - Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0459",
@@ -25319,7 +30359,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25346,7 +30386,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 345000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_459",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 345.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_460",
@@ -25354,6 +30404,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan prampelan bulusari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0460",
@@ -25375,7 +30426,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25402,7 +30453,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_460",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_461",
@@ -25410,6 +30471,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Ruas Jalan Mangunrejo - Werdoyo (Desa Werdoyo) Kecamatan Kebonagung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0461",
@@ -25431,7 +30493,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25458,7 +30520,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_461",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_462",
@@ -25466,6 +30538,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Ruas Jalan Ngemplak - Brumbung (Desa Ngemplak) Kecamatan Mranggen Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0462",
@@ -25487,7 +30560,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25514,7 +30587,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_462",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_463",
@@ -25522,6 +30605,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Jalan Ngemplak - Waru (Desa Waru Kecamatan Mranggen)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0463",
@@ -25543,7 +30627,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25570,7 +30654,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 250000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_463",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_464",
@@ -25578,6 +30672,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Ruas Jalan Purwosari - Prampelan Desa Purwosari Kec. Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0464",
@@ -25599,7 +30694,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -25626,7 +30721,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_464",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_465",
@@ -25634,6 +30739,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Kayu Bakar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0465",
@@ -25653,14 +30759,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "16 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-16"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PEMEL.SP.BM.02/III/2026",
-      "tanggalKontrak": "16 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-16",
+      "tanggalMulai": "2026-03-16",
+      "tanggalSelesai": "2026-03-30",
       "nilaiKontrak": 197600000,
       "namaPenyedia": "CV SAHALA",
       "bankRekanan": "Bank Jateng",
@@ -25680,7 +30786,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_465",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_466",
@@ -25688,6 +30804,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan dalam Kota",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0466",
@@ -25707,14 +30824,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "16 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-16"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01KXD89MFMSHMQJ7PANKNEERC6",
-      "tanggalKontrak": "16 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-16",
+      "tanggalMulai": "2026-07-16",
+      "tanggalSelesai": "2026-07-30",
       "nilaiKontrak": 188097048,
       "namaPenyedia": "CV. MUDI PUTRA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -25734,7 +30851,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_466",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 188.097.048 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_467",
@@ -25742,6 +30869,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0467",
@@ -25761,14 +30889,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'02 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-02"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01KW94RJ27DTEGTV2ZD8ZX85GF",
-      "tanggalKontrak": "'02 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-02",
+      "tanggalMulai": "2026-07-02",
+      "tanggalSelesai": "2026-07-16",
       "nilaiKontrak": 187663260,
       "namaPenyedia": "CV. BEJO MULYO JAYA",
       "bankRekanan": "Bank Jateng",
@@ -25788,7 +30916,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_467",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 187.663.260 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_468",
@@ -25796,6 +30934,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Reahabilitasi Jalan Kecamatan Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0468",
@@ -25815,14 +30954,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "16 Maret 2026"
+        "targetMulaiPekerjaan": "2026-03-16"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PEMEL.SP.BM.01/III/2026",
-      "tanggalKontrak": "16 Maret 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-03-16",
+      "tanggalMulai": "2026-03-16",
+      "tanggalSelesai": "2026-03-30",
       "nilaiKontrak": 199404000,
       "namaPenyedia": "CV. BEJO MULYO JAYA",
       "bankRekanan": "Bank Jateng",
@@ -25842,7 +30981,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_468",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 199.404.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_469",
@@ -25850,6 +30999,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Onggorawe - Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0469",
@@ -25869,14 +31019,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "4 September 2026"
+        "targetMulaiPekerjaan": "2026-09-04"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M1G0JF6ZGPVQ5MG421RQA5WN",
-      "tanggalKontrak": "4 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-04",
+      "tanggalMulai": "2026-09-04",
+      "tanggalSelesai": "2026-09-18",
       "nilaiKontrak": 187962549,
       "namaPenyedia": "CV. SAHALA",
       "bankRekanan": "Bank Jateng",
@@ -25896,7 +31046,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_469",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 187.962.549 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_470",
@@ -25904,6 +31064,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Wilayah 1",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0470",
@@ -25923,14 +31084,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "17 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-17"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01KXHXCNFCYTACM7900S9DFCGT",
-      "tanggalKontrak": "17 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-17",
+      "tanggalMulai": "2026-07-17",
+      "tanggalSelesai": "2026-07-31",
       "nilaiKontrak": 188097048,
       "namaPenyedia": "CV. MUDI PUTRA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -25950,7 +31111,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_470",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 188.097.048 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_471",
@@ -25958,6 +31129,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Wilayah 2",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0471",
@@ -25977,14 +31149,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "24 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-24"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M0CF8AXNG5GFZ75M9GSEHT6Q",
-      "tanggalKontrak": "24 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "2026-08-24",
+      "tanggalSelesai": "2026-09-04",
       "nilaiKontrak": 187008416,
       "namaPenyedia": "CV. BOKAMA JAYA MANDIRI",
       "bankRekanan": "Bank Jateng",
@@ -26004,7 +31176,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_471",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 187.008.416 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_472",
@@ -26012,6 +31194,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Wilayah 3",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0472",
@@ -26031,13 +31214,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "6 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-06"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01KYV2VG3NHHNNZ8X1V6BV61K6",
-      "tanggalKontrak": "6 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-06",
+      "tanggalMulai": "2026-08-06",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 186046989,
       "namaPenyedia": "CV. BOKAMA JAYA MANDIRI",
@@ -26058,7 +31241,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_472",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 186.046.989 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_473",
@@ -26066,6 +31259,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Wilayah 4",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0473",
@@ -26085,13 +31279,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "28 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-28"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH",
-      "tanggalKontrak": "28 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
+      "tanggalKontrak": "2026-08-28",
+      "tanggalMulai": "2026-08-28",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 187558321,
       "namaPenyedia": "CV. MUDI PUTRA JAYA",
@@ -26112,7 +31306,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_473",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 187.558.321 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_474",
@@ -26120,6 +31324,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Timbunan pilihan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0474",
@@ -26139,14 +31344,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "11 Juni 2026"
+        "targetMulaiPekerjaan": "2026-06-11"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01KTB0XPQ8R4H2W2SY5BQ09703",
-      "tanggalKontrak": "11 Juni 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-06-11",
+      "tanggalMulai": "2026-06-11",
+      "tanggalSelesai": "2026-06-25",
       "nilaiKontrak": 195757380,
       "namaPenyedia": "CV. AL BAROKAH",
       "bankRekanan": "Bank Jateng",
@@ -26166,7 +31371,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_474",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_475",
@@ -26174,6 +31389,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Timbunan pilihan Paket 2",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0475",
@@ -26193,14 +31409,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 September 2026"
+        "targetMulaiPekerjaan": "2026-09-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M1N8N5S92115F4NXAFJ2ZWFG",
-      "tanggalKontrak": "8 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-08",
+      "tanggalMulai": "2026-09-08",
+      "tanggalSelesai": "2026-09-22",
       "nilaiKontrak": 195757380,
       "namaPenyedia": "CV. AL BAROKAH",
       "bankRekanan": "Bank Jateng",
@@ -26220,7 +31436,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_475",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_476",
@@ -26228,6 +31454,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi jalan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0476",
@@ -26245,11 +31472,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26258,7 +31485,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -26276,7 +31503,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1107413170,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_476",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_477",
@@ -26284,6 +31521,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Karanganyar - Merak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0477",
@@ -26305,7 +31543,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26332,7 +31570,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_477",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_478",
@@ -26340,6 +31588,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Candisari - Karangsono",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0478",
@@ -26361,7 +31610,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26388,7 +31637,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_478",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_479",
@@ -26396,6 +31655,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Bulusari - Kalisari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0479",
@@ -26417,7 +31677,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26444,7 +31704,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_479",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_480",
@@ -26452,6 +31722,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jalan Karangawen - Bumiharjo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0480",
@@ -26473,7 +31744,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26500,7 +31771,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_480",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_481",
@@ -26508,6 +31789,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Kayu Bakar 1",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0481",
@@ -26529,7 +31811,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26556,7 +31838,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_481",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_482",
@@ -26564,6 +31856,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jembatan kabupaten Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0482",
@@ -26579,11 +31872,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26592,7 +31885,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -26610,7 +31903,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25529401,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_482",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 174.470.599 dan fisik mencapai 0% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_483",
@@ -26618,6 +31921,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi - Rehabilitasi Jembatan Wilayah 1",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0483",
@@ -26637,14 +31941,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "31 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-31"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01KYKEVJFNZQXCBPV715VJKR94",
-      "tanggalKontrak": "31 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-31",
+      "tanggalMulai": "2026-07-31",
+      "tanggalSelesai": "2026-08-14",
       "nilaiKontrak": 86658587,
       "namaPenyedia": "CV. SAHALA",
       "bankRekanan": "Bank Jateng",
@@ -26664,7 +31968,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_483",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 86.658.587 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_484",
@@ -26672,6 +31986,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jembatan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0484",
@@ -26687,11 +32002,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26700,7 +32015,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -26718,7 +32033,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 418384000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_484",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_485",
@@ -26726,6 +32051,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi   - Rehabilitasi Jembatan Kabupaten 2",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0485",
@@ -26745,7 +32071,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26772,7 +32098,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_485",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_486",
@@ -26780,6 +32116,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi   -  Rehabilitasi Jembatan Kabupaten Wilayah 2",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0486",
@@ -26799,7 +32136,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26826,7 +32163,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 338000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_486",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 338.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_487",
@@ -26834,6 +32181,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Belanja Bahan-Bahan Bangunan dan Konstruksi   -  Rehabilitasi Jembatan Kabupaten Wilayah 3",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0487",
@@ -26853,7 +32201,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26880,7 +32228,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_487",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_488",
@@ -26888,6 +32246,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 1",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0488",
@@ -26907,7 +32266,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26934,7 +32293,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_488",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_489",
@@ -26942,6 +32311,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 2",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0489",
@@ -26961,7 +32331,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -26988,7 +32358,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_489",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_490",
@@ -26996,6 +32376,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 3",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0490",
@@ -27015,7 +32396,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27042,7 +32423,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_490",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_491",
@@ -27050,6 +32441,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 4",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0491",
@@ -27069,7 +32461,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27096,7 +32488,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_491",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_492",
@@ -27104,6 +32506,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 5",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0492",
@@ -27123,7 +32526,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27150,7 +32553,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_492",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_493",
@@ -27158,6 +32571,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 6",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0493",
@@ -27177,7 +32591,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27204,7 +32618,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_493",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_494",
@@ -27212,6 +32636,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 7",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0494",
@@ -27231,7 +32656,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27258,7 +32683,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_494",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_495",
@@ -27266,6 +32701,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 8",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0495",
@@ -27285,7 +32721,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27312,7 +32748,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_495",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_496",
@@ -27320,6 +32766,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 9",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0496",
@@ -27339,7 +32786,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27366,7 +32813,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_496",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_497",
@@ -27374,6 +32831,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Pengawasan Paket 10",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0497",
@@ -27393,7 +32851,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27420,7 +32878,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_497",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_498",
@@ -27428,6 +32896,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pebaran dan Penataan Jalan Bakung-Wonorejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0498",
@@ -27447,14 +32916,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "20 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01M0A23VA8CST258XMAXYNE6WN",
-      "tanggalKontrak": "20 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
       "nilaiKontrak": 950072075,
       "namaPenyedia": "CV. AGA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
@@ -27474,7 +32943,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 665050452,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_498",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 285.021.623 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_499",
@@ -27482,6 +32961,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Pelebaran dan Penataan Jalan Bakung-Wonorejo",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0499",
@@ -27501,14 +32981,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "15 April 2026"
+        "targetMulaiPekerjaan": "2026-04-15"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.015/IV/2026",
-      "tanggalKontrak": "15 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-15",
+      "tanggalMulai": "2026-04-15",
+      "tanggalSelesai": "2026-05-14",
       "nilaiKontrak": 14779000,
       "namaPenyedia": "CV. PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -27528,7 +33008,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_499",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 14.779.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_500",
@@ -27536,6 +33026,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pelebaran dan Penataan Jalan Bakung-Wonorejo",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0500",
@@ -27551,11 +33042,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27564,7 +33055,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -27582,7 +33073,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_500",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_501",
@@ -27590,6 +33091,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pelebaran Jalan Mboyor-Singopadu, Desa Sidorejo Kec. Karangawen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0501",
@@ -27609,14 +33111,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.61/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-16",
       "nilaiKontrak": 199379000,
       "namaPenyedia": "CV. CAHAYA MUDA",
       "bankRekanan": "Bank Jateng",
@@ -27636,7 +33138,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199379000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_501",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_502",
@@ -27644,6 +33156,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pelebaran dan Penataan Sempadan Jalan Kuripan - Wonosekar",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0502",
@@ -27663,14 +33176,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "'01 September 2026"
+        "targetMulaiPekerjaan": "2026-09-01"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "'000.3.7/APBD.SP.BM.96/IX/2026",
-      "tanggalKontrak": "'01 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-01",
+      "tanggalMulai": "2026-09-01",
+      "tanggalSelesai": "2026-11-29",
       "nilaiKontrak": 953717401,
       "namaPenyedia": "CV. MUNZAROH INDAH",
       "bankRekanan": "Bank Jateng",
@@ -27690,7 +33203,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 667602181,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_502",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 286.115.220 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_503",
@@ -27698,6 +33221,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Pelebaran dan Penataan Sempadan Jalan Kuripan - Wonosekar",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0503",
@@ -27717,14 +33241,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 April 2026"
+        "targetMulaiPekerjaan": "2026-04-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.014/IV/2026",
-      "tanggalKontrak": "8 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 14710000,
       "namaPenyedia": "CV KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
@@ -27744,7 +33268,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_503",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 14.710.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_504",
@@ -27752,6 +33286,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pelebaran dan Penataan Sempadan Jalan Kuripan - Wonosekar",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0504",
@@ -27767,11 +33302,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27780,7 +33315,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -27798,7 +33333,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_504",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_505",
@@ -27806,6 +33351,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pelebaran Ruas Jalan Brumbung - Menur Desa Brumbung Kec. Mranggen Kab. Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0505",
@@ -27827,7 +33373,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -27854,7 +33400,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_505",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_506",
@@ -27862,6 +33418,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Babalan Kec. Wedung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0506",
@@ -27883,14 +33440,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "23 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-23"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/APBD.SPK.BM.03/VII/2026",
-      "tanggalKontrak": "23 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-23",
+      "tanggalMulai": "2026-07-23",
+      "tanggalSelesai": "2026-12-19",
       "nilaiKontrak": 9613970000,
       "namaPenyedia": "CV. MULYO JOYO BERKAH",
       "bankRekanan": "Bank Jateng",
@@ -27910,7 +33467,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 6721578870,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_506",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 2.892.391.130 dan fisik mencapai 25% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_507",
@@ -27918,6 +33485,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Jembatan Babalan Kec. Wedung",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0507",
@@ -27937,14 +33505,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "23 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-23"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PWS/SP.BM.021.1/VII/2026",
-      "tanggalKontrak": "23 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-23",
+      "tanggalMulai": "2026-07-23",
+      "tanggalSelesai": "2026-12-19",
       "nilaiKontrak": 38034770,
       "namaPenyedia": "CV. PURUSARA TEKNIK",
       "bankRekanan": "Bank Jateng",
@@ -27964,7 +33532,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 38034770,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_507",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_508",
@@ -27972,6 +33550,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Barijah (akses menuju Bogorame) Desa Timbulsloko Kec. Sayung",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0508",
@@ -27993,14 +33572,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/APBD.SP.BM.022/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-12-25",
       "nilaiKontrak": 3425849992,
       "namaPenyedia": "CV. ASALAMAHWALBAROKAH",
       "bankRekanan": "Bank Jateng",
@@ -28020,7 +33599,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2381694994,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_508",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 1.044.154.998 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_509",
@@ -28028,6 +33617,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Pembangunan Jembatan Barijah (akses menuju Bogorame) Desa Timbulsloko Kec. Sayung",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0509",
@@ -28047,14 +33637,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 April 2026"
+        "targetMulaiPekerjaan": "2026-04-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.011/IV/2026",
-      "tanggalKontrak": "8 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 24812000,
       "namaPenyedia": "CV. MITRA DISIGN",
       "bankRekanan": "Bank Jateng",
@@ -28074,7 +33664,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_509",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 24.812.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_510",
@@ -28082,6 +33682,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Jembatan Barijah (akses menuju Bogorame) Desa Timbulsloko Kec. Sayung",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0510",
@@ -28101,14 +33702,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "30 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-30"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PWS/SP.BM.024/VII/2026",
-      "tanggalKontrak": "30 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-30",
+      "tanggalMulai": "2026-07-30",
+      "tanggalSelesai": "2026-12-25",
       "nilaiKontrak": 12898200,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -28128,7 +33729,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 12898200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_510",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_511",
@@ -28136,6 +33747,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Desa Dempet",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0511",
@@ -28155,14 +33767,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "31 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-31"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/APBD.SP.BM.094/VIII/2026",
-      "tanggalKontrak": "31 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-31",
+      "tanggalMulai": "2026-08-31",
+      "tanggalSelesai": "2026-12-28",
       "nilaiKontrak": 951056717,
       "namaPenyedia": "CV. MAHKOTA JAYA GRUP",
       "bankRekanan": "Bank Jateng",
@@ -28182,7 +33794,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 665739702,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_511",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 285.317.015 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_512",
@@ -28190,6 +33812,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Pembangunan Jembatan Desa Dempet",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0512",
@@ -28209,14 +33832,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 April 2026"
+        "targetMulaiPekerjaan": "2026-04-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.012/IV/2026",
-      "tanggalKontrak": "8 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 14842000,
       "namaPenyedia": "CV. MITRA DISIGN",
       "bankRekanan": "Bank Jateng",
@@ -28236,7 +33859,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_512",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 14.842.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_513",
@@ -28244,6 +33877,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Pembangunan Jembatan Desa Dempet",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0513",
@@ -28259,11 +33893,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28272,7 +33906,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -28290,7 +33924,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_513",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_514",
@@ -28298,6 +33942,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Desa Gebangarum Kecamatan Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0514",
@@ -28317,14 +33962,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.60/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-15",
       "nilaiKontrak": 199117737,
       "namaPenyedia": "CV.EKA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -28344,7 +33989,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199117737,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_514",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_515",
@@ -28352,6 +34007,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "PEMBANGUNAN JEMBATAN KAMPUNG SUKOLILO RT 02 RW 01 DESA PILANGSARI KEC. SAYUNG",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0515",
@@ -28371,14 +34027,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.58/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-15",
       "nilaiKontrak": 398786000,
       "namaPenyedia": "CV. PULUNG MANUNGGAL",
       "bankRekanan": "Bank Jateng",
@@ -28398,7 +34054,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 398786000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_515",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_516",
@@ -28406,6 +34072,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Penghubung Desa Betahwalang dengan Desa Serangan Kecamatan Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0516",
@@ -28425,14 +34092,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "18 Agustus 2026"
+        "targetMulaiPekerjaan": "2026-08-18"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.59/VIII/2026",
-      "tanggalKontrak": "18 Agustus 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-15",
       "nilaiKontrak": 199161933,
       "namaPenyedia": "CV.EKA KARYA",
       "bankRekanan": "Bank Jateng",
@@ -28452,7 +34119,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199161933,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_516",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_517",
@@ -28460,6 +34137,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Perbaikan Jembatan Donorojo - Mangunjiwan",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0517",
@@ -28479,14 +34157,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "11 September 2026"
+        "targetMulaiPekerjaan": "2026-09-11"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.3/APBD.SP.BM.107/IX/2026",
-      "tanggalKontrak": "11 September 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-09-11",
+      "tanggalMulai": "2026-09-11",
+      "tanggalSelesai": "2026-12-22",
       "nilaiKontrak": 951105060,
       "namaPenyedia": "CV. MITRA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -28506,7 +34184,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 665773542,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_517",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 285.331.518 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_518",
@@ -28514,6 +34202,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Perencanaan Perbaikan Jembatan Donorojo - Mangunjiwan",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0518",
@@ -28533,14 +34222,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "8 April 2026"
+        "targetMulaiPekerjaan": "2026-04-08"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.012/IV/2026",
-      "tanggalKontrak": "8 April 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 14842000,
       "namaPenyedia": "CV. MITRA DESIGN",
       "bankRekanan": "Bank Jateng",
@@ -28560,7 +34249,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_518",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 14.847.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_519",
@@ -28568,6 +34267,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Perbaikan Jembatan Donorojo - Mangunjiwan",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0519",
@@ -28583,11 +34283,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28596,7 +34296,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -28614,7 +34314,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_519",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_520",
@@ -28622,6 +34332,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan depan Masjid Wonokerto kec Karangtengah Kab.Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0520",
@@ -28643,7 +34354,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28670,7 +34381,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_520",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_521",
@@ -28678,6 +34399,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Gebang (depan pondok)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0521",
@@ -28699,7 +34421,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28726,7 +34448,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 700000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_521",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_522",
@@ -28734,6 +34466,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Gladak Dukuh Timbulsloko",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0522",
@@ -28755,7 +34488,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28782,7 +34515,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_522",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_523",
@@ -28790,6 +34533,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Jembatan Ndero bonang kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0523",
@@ -28811,7 +34555,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28838,7 +34582,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_523",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_524",
@@ -28846,6 +34600,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Jembatan sumberejo bonang kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0524",
@@ -28867,7 +34622,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28894,7 +34649,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 175000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_524",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_525",
@@ -28902,6 +34667,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan depan SMP N 3 Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0525",
@@ -28923,7 +34689,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -28950,7 +34716,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_525",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_526",
@@ -28958,6 +34734,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jembatan Glodak Desa Banjarsari",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0526",
@@ -28979,7 +34756,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29006,7 +34783,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 700000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_526",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_527",
@@ -29014,6 +34801,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud jembatan pasar gablog Kec karangawen kab.Demak",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0527",
@@ -29035,7 +34823,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29062,7 +34850,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_527",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_528",
@@ -29070,6 +34868,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Gorong Gorong Jalan Buyaran Karangawen di Desa Guntur",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0528",
@@ -29091,7 +34890,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29118,7 +34917,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_528",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_529",
@@ -29126,6 +34935,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jembatan Desa Kedungwaru Bandungrejo",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Perubahan",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0529",
@@ -29147,7 +34957,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29174,7 +34984,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_529",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_530",
@@ -29182,6 +35002,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi jembatan desa serangan kec. Bonang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0530",
@@ -29203,7 +35024,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29230,7 +35051,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_530",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_531",
@@ -29238,6 +35069,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi jembatan jalan dempet doreng",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0531",
@@ -29259,7 +35091,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29286,7 +35118,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 175000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_531",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_532",
@@ -29294,6 +35136,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi jembatan jalan kalianyar doreng kec. Wonosalam",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0532",
@@ -29315,7 +35158,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29342,7 +35185,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_532",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_bina_marga_533",
@@ -29350,6 +35203,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "bina_marga",
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi jembatan Wringinjajar kec. Mranggen",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0533",
@@ -29371,7 +35225,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29398,7 +35252,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_533",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_534",
@@ -29406,6 +35270,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Penyelenggaraan Pelatihan Tenaga Terampil Konstruksi",
     "namaPaket": "Belanja Jasa Konsultasi Survei Harga",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0534",
@@ -29425,14 +35290,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "22 Oktober 2026"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/004/SPK/JAKON.P/SDABK/X/2026",
-      "tanggalKontrak": "22 Oktober 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-05",
       "nilaiKontrak": 98884350,
       "namaPenyedia": "CV. GEOPAKSI KARYA",
       "bankRekanan": "Bank Jateng",
@@ -29452,7 +35317,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 98884350,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_534",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 25% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_535",
@@ -29460,6 +35335,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Penyelenggaraan Pelatihan Tenaga Terampil Konstruksi",
     "namaPaket": "Pembinaan dan Peningkatan Kapasitas Kelembagaan Jasa Konstruksi",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0535",
@@ -29475,11 +35351,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_69",
     "kodeSubKegiatan": "1.03.11.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29488,7 +35364,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29506,7 +35382,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 35907800,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_535",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 64.092.200 dan fisik mencapai 64.09% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_sda_bk_536",
@@ -29514,6 +35400,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "sda_bk",
     "subBagian": "Penyelenggaraan Pelatihan Tenaga Terampil Konstruksi",
     "namaPaket": "Pelatihan Tenaga Kerja Konstruksi Kualifikasi Jabatan Operator, Teknisi atau Analis",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0536",
@@ -29529,11 +35416,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_70",
     "kodeSubKegiatan": "1.03.11.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29542,7 +35429,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29560,7 +35447,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 14245000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_536",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 75.755.000 dan fisik mencapai 84.17% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_537",
@@ -29568,6 +35465,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Penyusunan Naskah Akademik dan Ranperda RTRW",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0537",
@@ -29587,14 +35485,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "27 Februari 2026"
+        "targetMulaiPekerjaan": "2026-02-27"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/SPK/Kons.01/TARU/II/2026",
-      "tanggalKontrak": "27 Februari 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-02-27",
+      "tanggalMulai": "2026-02-27",
+      "tanggalSelesai": "2026-05-27",
       "nilaiKontrak": 99630000,
       "namaPenyedia": "PT. ARSIKEN CITRATAMA",
       "bankRekanan": "Bank Jateng",
@@ -29614,7 +35512,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_537",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.630.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_538",
@@ -29622,6 +35530,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Pelaksanaan Persetujuan Substansi RDTR Kabupaten/Kota",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0538",
@@ -29637,11 +35546,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_72",
     "kodeSubKegiatan": "1.03.12.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29650,7 +35559,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29668,7 +35577,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 17518588,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_538",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 61.631.412 dan fisik mencapai 77.87% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_539",
@@ -29676,6 +35595,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Penetapan RDTR Kabupaten/Kota",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0539",
@@ -29691,11 +35611,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_73",
     "kodeSubKegiatan": "1.03.12.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29704,7 +35624,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29722,7 +35642,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 42173800,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_539",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 26.366.200 dan fisik mencapai 38.47% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_540",
@@ -29730,6 +35660,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Pendampingan Rencana Tata Ruang Wilayah (RTRW)",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0540",
@@ -29749,14 +35680,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/SPK/Kons.02/TARU/VII/2026",
-      "tanggalKontrak": "10 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-10",
+      "tanggalMulai": "2026-07-10",
+      "tanggalSelesai": "2026-10-07",
       "nilaiKontrak": 99608000,
       "namaPenyedia": "PT. ARSIKEN CITRATAMA",
       "bankRekanan": "Bank Jateng",
@@ -29776,7 +35707,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sudah_sp2d",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_540",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.608.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_541",
@@ -29784,6 +35725,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Focus Group Discussion Penetapan RTRW",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0541",
@@ -29799,11 +35741,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29812,7 +35754,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29830,7 +35772,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 695000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_541",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 99.305.000 dan fisik mencapai 99.3% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_542",
@@ -29838,6 +35790,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Penetapan RTRW Kabupaten/Kota",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0542",
@@ -29853,11 +35806,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29866,7 +35819,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29884,7 +35837,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 269703000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_542",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 39.197.000 dan fisik mencapai 49.63% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_543",
@@ -29892,6 +35855,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Focus Group Discussion Pembahasan Ranperda RTRW",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0543",
@@ -29911,7 +35875,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29938,7 +35902,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 175000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_543",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_544",
@@ -29946,6 +35920,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Rencana Tata Ruang Wilayah RTRW dan Rencana Rinci Tata Ruang RRTR Kabupaten/Kota",
     "namaPaket": "Sosialisasi Kebijakan dan Peraturan Perundang-Undangan Bidang Penataan Ruang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0544",
@@ -29961,11 +35936,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_75",
     "kodeSubKegiatan": "1.03.12.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -29974,7 +35949,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29992,7 +35967,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 53865504,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_544",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 120.754.496 dan fisik mencapai 69.15% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_545",
@@ -30000,6 +35985,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Perencanaan Tata Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Penyusunan Peta Dasar",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0545",
@@ -30015,11 +36001,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_76",
     "kodeSubKegiatan": "1.03.12.2.02.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30028,7 +36014,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30046,7 +36032,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 46710000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_545",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 3.290.000 dan fisik mencapai 6.58% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_546",
@@ -30054,6 +36050,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Perencanaan Tata Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Penyusunan RDTR Kabupaten/Kota",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0546",
@@ -30069,11 +36066,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_77",
     "kodeSubKegiatan": "1.03.12.2.02.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30082,7 +36079,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30100,7 +36097,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15369081,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_546",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 34.630.919 dan fisik mencapai 69.26% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_547",
@@ -30108,6 +36115,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Perencanaan Tata Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Peningkatan kompetensi SDM bidang penataan ruang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0547",
@@ -30127,7 +36135,7 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "identifikasi_kebutuhan",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30154,7 +36162,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 90000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_547",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 90.000.000 (Murni)."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_548",
@@ -30162,6 +36180,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Perencanaan Tata Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Penyusunan RTRW Kabupaten/Kota",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0548",
@@ -30177,11 +36196,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_79",
     "kodeSubKegiatan": "1.03.12.2.02.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30190,7 +36209,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30208,7 +36227,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1060000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_548",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 8.940.000 dan fisik mencapai 89.4% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_549",
@@ -30216,6 +36245,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Koordinasi Penyelenggaraan Penataan Ruang",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0549",
@@ -30231,11 +36261,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_80",
     "kodeSubKegiatan": "1.03.12.2.03.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30244,7 +36274,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30262,7 +36292,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 11682771,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_549",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 13.877.229 dan fisik mencapai 54.29% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_550",
@@ -30270,6 +36310,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Pelaksanaan Persetujuan Kesesuaian Kegiatan Pemanfaatan Ruang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0550",
@@ -30285,11 +36326,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_81",
     "kodeSubKegiatan": "1.03.12.2.03.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30298,7 +36339,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30316,7 +36357,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 29906900,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_550",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 21.293.100 dan fisik mencapai 41.59% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_551",
@@ -30324,6 +36375,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Pelaksanaan Sinkronisasi Program Pemanfaatan Ruang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0551",
@@ -30339,11 +36391,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_82",
     "kodeSubKegiatan": "1.03.12.2.03.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30352,7 +36404,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30370,7 +36422,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 5080000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_551",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 4.920.000 dan fisik mencapai 49.2% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_552",
@@ -30378,6 +36440,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Web Aplikasi Si Keren",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0552",
@@ -30397,14 +36460,14 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "10 Juli 2026"
+        "targetMulaiPekerjaan": "2026-07-10"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/SPK/Kons.03/TARU/VII/2026",
-      "tanggalKontrak": "10 Juli 2026",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalKontrak": "2026-07-10",
+      "tanggalMulai": "2026-07-10",
+      "tanggalSelesai": "2026-10-07",
       "nilaiKontrak": 99731000,
       "namaPenyedia": "CV. PADMADUTA CIPTA KREASI",
       "bankRekanan": "Bank Jateng",
@@ -30424,7 +36487,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99731000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan"
+    "spjStatus": "belum_diajukan",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_552",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 70% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_553",
@@ -30432,6 +36505,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pengendalian Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Penilaian Pelaksanaan Kesesuaian Kegiatan Pemanfaatan Ruang dan/atau pernyataan mandiri pelaku UMK",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0553",
@@ -30447,11 +36521,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_84",
     "kodeSubKegiatan": "1.03.12.2.04.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30460,7 +36534,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30478,7 +36552,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 9152125,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_553",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 20.847.875 dan fisik mencapai 69.49% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_554",
@@ -30486,6 +36570,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pengendalian Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Operasionalisasi Tugas dan Fungsi Forum Penataan Ruang",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0554",
@@ -30501,11 +36586,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_85",
     "kodeSubKegiatan": "1.03.12.2.04.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30514,7 +36599,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30532,7 +36617,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 105538527,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_554",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 101.891.473 dan fisik mencapai 49.12% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_555",
@@ -30540,6 +36635,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pengendalian Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "Pengawasan TURBINLAK dan Pengawasan Fungsi dan Manfaat",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0555",
@@ -30555,11 +36651,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_86",
     "kodeSubKegiatan": "1.03.12.2.04.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30568,7 +36664,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30586,7 +36682,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 14600000,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_555",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 10.400.000 dan fisik mencapai 41.6% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_556",
@@ -30594,6 +36700,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Koordinasi dan Sinkronisasi Pengendalian Pemanfaatan Ruang Daerah Kabupaten/Kota",
     "namaPaket": "URUSAN PEMERINTAHAN BIDANG PERTANAHAN",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0556",
@@ -30609,11 +36716,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_86",
     "kodeSubKegiatan": "1.03.12.2.04.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30622,7 +36729,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30640,7 +36747,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 98601700,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_556",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 91.948.300 dan fisik mencapai 48.42% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_557",
@@ -30648,6 +36765,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penetapan Subjek dan Objek Redistribusi Tanah serta Ganti Kerugian Tanah Kelebihan Maksimum dan Tanah Absentee dalam 1 (Satu)",
     "namaPaket": "Koordinasi Pembentukan dan Pelaksanaan Fungsi Gugus Tugas Reforma Agraria Tingkat Kabupaten/Kota.",
+    "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0557",
@@ -30663,11 +36781,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_87",
     "kodeSubKegiatan": "2.10.01.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30676,7 +36794,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30694,7 +36812,17 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 38119925,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_557",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 36.880.075 dan fisik mencapai 49.17% per laporan bulan Oktober 2026."
+      }
+    ]
   },
   {
     "id": "prj_tata_ruang_558",
@@ -30702,6 +36830,7 @@ export const REAL_PROJECTS_2026 = [
     "bidangId": "tata_ruang",
     "subBagian": "Penggunaan Tanah yang Hamparannya dalam satu Daerah Kabupaten/Kota",
     "namaPaket": "Koordinasi dan SinkronisasiPelaksanaan Konsolidasi Tanah Kabupaten/Kota",
+    "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-TAT-0558",
@@ -30717,11 +36846,11 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_88",
     "kodeSubKegiatan": "2.10.02.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "statusTahapPraKontrak": "pelaksanaan_kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "pelaksanaan_kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-01"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
@@ -30730,7 +36859,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30748,6 +36877,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 60481775,
       "terminHistory": []
     },
-    "spjStatus": "sp2d_terbit"
+    "spjStatus": "sp2d_terbit",
+    "logs": [
+      {
+        "id": "log_init_prj_tata_ruang_558",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Tata Ruang",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 55.068.225 dan fisik mencapai 47.66% per laporan bulan Oktober 2026."
+      }
+    ]
   }
 ];

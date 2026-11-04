@@ -950,93 +950,26 @@ export const INITIAL_SIPD_SUB_KEGIATAN = [
   }
 ];
 
-/**
- * Mencocokkan paket pekerjaan dengan sub kegiatan SIPD
- */
-export const matchProjectToSubKegiatan = (project, subKegiatanList) => {
-  if (!project || !Array.isArray(subKegiatanList) || subKegiatanList.length === 0) return null;
-
+export function matchProjectToSubKegiatan(project, subKegiatanList = INITIAL_SIPD_SUB_KEGIATAN) {
+  if (!project || !subKegiatanList || subKegiatanList.length === 0) return null;
   if (project.subKegiatanId) {
-    const found = subKegiatanList.find((s) => s.id === project.subKegiatanId);
+    const found = subKegiatanList.find(s => s.id === project.subKegiatanId);
     if (found) return found;
   }
-
   if (project.kodeSubKegiatan) {
-    const found = subKegiatanList.find((s) => s.kodeSubKegiatan === project.kodeSubKegiatan);
+    const found = subKegiatanList.find(s => s.kodeSubKegiatan === project.kodeSubKegiatan);
     if (found) return found;
   }
+  return null;
+}
 
-  const nama = (project.namaPaket || '').toLowerCase();
-  const bId = project.bidangId;
 
-  // Filter sub kegiatan pada bidang yang bersangkutan
-  const candidates = subKegiatanList.filter((s) => !bId || s.bidangId === bId);
-
-  // Pencocokan cerdas berdasarkan kata kunci nama paket
-  if (nama.includes('jembatan')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('jembatan'));
-    if (match) return match;
-  }
-  if (nama.includes('rekonstruksi') || nama.includes('rigid') || nama.includes('peninggian')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('rekonstruksi'));
-    if (match) return match;
-  }
-  if (nama.includes('pelebaran') || nama.includes('poros')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pelebaran'));
-    if (match) return match;
-  }
-  if (nama.includes('pemeliharaan') && (bId === 'bina_marga' || nama.includes('jalan'))) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pemeliharaan'));
-    if (match) return match;
-  }
-  if (nama.includes('air minum') || nama.includes('spam')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('air minum') || s.namaSubKegiatan.toLowerCase().includes('spam'));
-    if (match) return match;
-  }
-  if (nama.includes('limbah') || nama.includes('spald') || nama.includes('septik') || nama.includes('sanitasi')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('limbah') || s.namaSubKegiatan.toLowerCase().includes('setempat'));
-    if (match) return match;
-  }
-  if (nama.includes('gedung') || nama.includes('bangunan')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('gedung') || s.namaSubKegiatan.toLowerCase().includes('bangunan'));
-    if (match) return match;
-  }
-  if (nama.includes('pompa') || nama.includes('banjir')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pompa') || s.namaSubKegiatan.toLowerCase().includes('sungai'));
-    if (match) return match;
-  }
-  if (nama.includes('sungai') || nama.includes('normalisasi')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('sungai') || s.namaSubKegiatan.toLowerCase().includes('tanggul'));
-    if (match) return match;
-  }
-  if (nama.includes('embung') || nama.includes('waduk')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('embung'));
-    if (match) return match;
-  }
-  if (nama.includes('irigasi') || nama.includes('d.i.')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('irigasi'));
-    if (match) return match;
-  }
-  if (nama.includes('drainase') || nama.includes('saluran')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('drainase'));
-    if (match) return match;
-  }
-  if (nama.includes('rtrw') || nama.includes('rdtr') || nama.includes('tata ruang')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('rtrw') || s.namaSubKegiatan.toLowerCase().includes('rdtr') || s.namaSubKegiatan.toLowerCase().includes('tata ruang'));
-    if (match) return match;
-  }
-  if (nama.includes('tanah') || nama.includes('reforma') || nama.includes('gtra')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('tanah') || s.namaSubKegiatan.toLowerCase().includes('reforma'));
-    if (match) return match;
-  }
-
-  return candidates.length > 0 ? candidates[0] : subKegiatanList[0];
-};
 
 /**
  * Membangun struktur pohon hierarki Program -> Kegiatan -> Sub Kegiatan -> Pekerjaan
  */
 export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
+  // Mapping project ke sub kegiatan
   const projectMapBySubKeg = {};
   projects.forEach((prj) => {
     const subKeg = matchProjectToSubKegiatan(prj, subKegiatans);
@@ -1050,6 +983,7 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
     });
   });
 
+  // Susun Pohon
   return programs.map((prog) => {
     const progKegiatans = kegiatans.filter((k) => k.programId === prog.id);
 
@@ -1076,7 +1010,7 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
         const subTotalPencairan = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataKeuangan?.totalPencairan) || 0), 0);
         const subFisikSum = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataFisik?.progresRealisasi) || 0), 0);
         const subAvgFisik = subProjects.length > 0 ? parseFloat((subFisikSum / subProjects.length).toFixed(1)) : 0;
-        const subPersenKeu = subTotalKontrak > 0 ? parseFloat(((subTotalPencairan / subTotalKontrak) * 100).toFixed(1)) : (subTotalPagu > 0 ? parseFloat(((subTotalPencairan / subTotalPagu) * 100).toFixed(1)) : 0);
+        const subPersenKeu = subTotalKontrak > 0 ? parseFloat(((subTotalPencairan / subTotalKontrak) * 100).toFixed(1)) : 0;
 
         kegTotalPagu += subTotalPagu;
         kegTotalKontrak += subTotalKontrak;
@@ -1097,7 +1031,7 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
       });
 
       const kegAvgFisik = kegProjectCount > 0 ? parseFloat((kegFisikSum / kegProjectCount).toFixed(1)) : 0;
-      const kegPersenKeu = kegTotalKontrak > 0 ? parseFloat(((kegTotalPencairan / kegTotalKontrak) * 100).toFixed(1)) : (kegTotalPagu > 0 ? parseFloat(((kegTotalPencairan / kegTotalPagu) * 100).toFixed(1)) : 0);
+      const kegPersenKeu = kegTotalKontrak > 0 ? parseFloat(((kegTotalPencairan / kegTotalKontrak) * 100).toFixed(1)) : 0;
 
       progTotalPagu += kegTotalPagu;
       progTotalKontrak += kegTotalKontrak;
@@ -1118,7 +1052,7 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
     });
 
     const progAvgFisik = progProjectCount > 0 ? parseFloat((progFisikSum / progProjectCount).toFixed(1)) : 0;
-    const progPersenKeu = progTotalKontrak > 0 ? parseFloat(((progTotalPencairan / progTotalKontrak) * 100).toFixed(1)) : (progTotalPagu > 0 ? parseFloat(((progTotalPencairan / progTotalPagu) * 100).toFixed(1)) : 0);
+    const progPersenKeu = progTotalKontrak > 0 ? parseFloat(((progTotalPencairan / progTotalKontrak) * 100).toFixed(1)) : 0;
 
     return {
       ...prog,

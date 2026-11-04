@@ -437,7 +437,7 @@ const MasterPekerjaanView = ({ onOpenProjectModal, onViewProject, onOpenImportEx
           <div>
             <div style={{ fontSize: 11.5, fontWeight: 700, color: '#64748b', textTransform: 'uppercase' }}>TOTAL PAGU ANGGARAN</div>
             <div style={{ fontSize: 18, fontWeight: 900, color: '#0f2c59', marginTop: 2 }}>
-              Rp {(totalPagu / 1e9).toFixed(2)} M
+              Rp {Math.round(totalPagu).toLocaleString('id-ID')}
             </div>
             <div style={{ fontSize: 11, color: '#64748b' }}>Rp {totalPagu.toLocaleString('id-ID')}</div>
           </div>

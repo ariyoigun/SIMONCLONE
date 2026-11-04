@@ -338,3 +338,4 @@ if (normalizeLF(apiContent).includes(normalizeLF(oldSaveSql))) {
 
 fs.writeFileSync(apiPath, apiContent, 'utf8');
 console.log('public/api/api.php saved!');
+

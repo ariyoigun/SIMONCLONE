@@ -8,6 +8,44 @@ const rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
 
 console.log('Read rows:', rows.length);
 
+const INDO_MONTHS = {
+  januari: '01', feb: '02', februari: '02', mar: '03', maret: '03',
+  apr: '04', april: '04', mei: '05', jun: '06', juni: '06',
+  jul: '07', juli: '07', agustus: '08', agt: '08', agu: '08',
+  sep: '09', september: '09', okt: '10', oktober: '10',
+  nov: '11', november: '11', des: '12', desember: '12'
+};
+
+function normalizeDate(str) {
+  if (!str) return null;
+  let s = String(str).trim().replace(/^['"]+|['"]+$/g, '');
+  if (!s) return null;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  const m = s.match(/^(\d{1,2})\s*([a-zA-Z]+)\s*(\d{4})$/);
+  if (m) {
+    const day = m[1].padStart(2, '0');
+    const monthName = m[2].toLowerCase();
+    const year = m[3];
+    const month = INDO_MONTHS[monthName];
+    if (month) return `${year}-${month}-${day}`;
+  }
+  if (s.toUpperCase().includes('CV.') || s.toUpperCase().includes('PT.')) return null;
+  return s;
+}
+
+function parseDateRange(str) {
+  if (!str) return { mulai: null, selesai: null };
+  const s = String(str).trim();
+  const parts = s.split(/\s+s\/?d\s+|\s+s\.d\.\s+|\s+sampai\s+/i);
+  if (parts.length >= 2) {
+    return {
+      mulai: normalizeDate(parts[0].trim()),
+      selesai: normalizeDate(parts[1].trim())
+    };
+  }
+  return { mulai: normalizeDate(s), selesai: null };
+}
+
 function getBidangId(progName) {
   const p = progName.toUpperCase();
   if (p.includes('PENUNJANG')) return 'sekretariat';
@@ -160,11 +198,9 @@ for (let i = 8; i < rows.length; i++) {
     if (subName && subName.toLowerCase().includes('sub kegiatan')) {
       subName = subName.substring(subName.indexOf(':') + 1).trim();
     }
-    // Clean string
     subName = subName.replace(/\r?\n/g, ' ').trim();
     if (!subName) continue;
 
-    // Determine clean code
     let kodeSub = '';
     if (col38) {
       const match = col38.match(/(\d+\.\d+)\s*\.\s*(\d+)$/);
@@ -180,8 +216,11 @@ for (let i = 8; i < rows.length; i++) {
     const subId = `sub_${curProg ? curProg.bidangId : 'gen'}_${subKegiatans.length + 1}`;
     const pagu = typeof col7 === 'number' ? col7 : (parseFloat(String(col7).replace(/[^\d.-]/g, '')) || 0);
     const pencairan = typeof r[17] === 'number' ? r[17] : (parseFloat(String(r[17] || '').replace(/[^\d.-]/g, '')) || 0);
-    const fTarget = typeof r[21] === 'number' ? r[21] * 100 : (parseFloat(String(r[21] || '').replace('%', '')) || 0);
-    const fRealisasi = typeof r[22] === 'number' ? r[22] * 100 : (parseFloat(String(r[22] || '').replace('%', '')) || 0);
+    const rawTarget = typeof r[21] === 'number' ? (r[21] <= 1 ? r[21] * 100 : r[21]) : (parseFloat(String(r[21] || '').replace('%', '').replace(',', '.')) || 0);
+    const rawRealisasi = typeof r[22] === 'number' ? (r[22] <= 1 ? r[22] * 100 : r[22]) : (parseFloat(String(r[22] || '').replace('%', '').replace(',', '.')) || 0);
+    const fTarget = parseFloat(rawTarget.toFixed(2));
+    const fRealisasi = parseFloat(rawRealisasi.toFixed(2));
+    const keterangan = r[23] ? String(r[23]).trim() : '';
 
     curSubKeg = {
       id: subId,
@@ -196,17 +235,39 @@ for (let i = 8; i < rows.length; i++) {
     // USER RULE:
     // "Perlu diingat untuk pekerjaan di program penunjang adalah nama sub kegiatan tersebut."
     if (curProg && curProg.bidangId === 'sekretariat') {
-      const dev = fRealisasi - fTarget;
+      const dev = parseFloat((fRealisasi - fTarget).toFixed(2));
       const statusDev = dev >= 0 ? 'Aman' : (dev >= -10 ? 'Waspada' : 'Kritis');
       const persenKeu = pagu > 0 ? parseFloat(((pencairan / pagu) * 100).toFixed(2)) : 0;
 
+      const isPerubahan = keterangan.toUpperCase().includes('PERUBAHAN');
+      const isPrioritas = keterangan.toUpperCase().includes('PRIORITAS');
+      const jenisAnggaran = isPerubahan ? 'Perubahan' : 'Murni';
+
+      const tags = ['Kegiatan Penunjang Perangkat Daerah'];
+      if (isPrioritas) tags.push('Program Prioritas Bupati');
+      if (isPerubahan) tags.push('APBD Perubahan');
+
+      // Rule: jika nilai kontrak / pagu sesuai/sama dengan SP2D berarti status SP2D sudah selesai
+      let spjStatus = 'belum_diajukan';
+      if (pagu > 0 && pencairan >= pagu) {
+        spjStatus = 'sudah_sp2d';
+      } else if (pencairan > 0) {
+        spjStatus = 'sp2d_terbit';
+      }
+
+      // Rule: untuk semua pekerjaan yang sudah ada realisasi berarti sudah kontrak
+      const isKontrak = pencairan > 0 || fRealisasi > 0;
+      const statusTahapPraKontrak = isKontrak ? 'pelaksanaan_kontrak' : 'identifikasi_kebutuhan';
+
+      const pId = `prj_sek_${projects.length + 1}`;
       projects.push({
-        id: `prj_sek_${projects.length + 1}`,
+        id: pId,
         tahunAnggaran: 2026,
         bidangId: 'sekretariat',
         subBagian: curKeg ? curKeg.namaKegiatan : 'Sub Bagian Umum & Kepegawaian',
         namaPaket: subName,
-        jenisAnggaran: 'Murni',
+        kategoriPekerjaan: 'Swakelola',
+        jenisAnggaran,
         sumberDana: 'APBD Murni (DAU)',
         kodeRup: `RUP-2026-SEK-${String(projects.length + 1).padStart(4, '0')}`,
         tipePengadaan: 'Swakelola',
@@ -217,13 +278,13 @@ for (let i = 8; i < rows.length; i++) {
         lokasiLengkap: 'Kantor DINPUTARU Kabupaten Demak, Jl. Kyai Singkil No. 7 Demak',
         latitude: -6.8944,
         longitude: 110.6385,
-        tags: ['Kegiatan Penunjang Perangkat Daerah'],
+        tags,
         isPublicHighlight: false,
         subKegiatanId: curSubKeg.id,
         kodeSubKegiatan: curSubKeg.kodeSubKegiatan,
-        statusTahapPraKontrak: 'pelaksanaan_kontrak',
+        statusTahapPraKontrak,
         dataPraKontrak: {
-          tahapSaatIni: 'pelaksanaan_kontrak',
+          tahapSaatIni: statusTahapPraKontrak,
           jadwalPraKontrak: { targetMulaiPekerjaan: '2026-01-02' }
         },
         dataKontrak: {
@@ -238,9 +299,9 @@ for (let i = 8; i < rows.length; i++) {
           npwpRekanan: ''
         },
         dataFisik: {
-          progresRencana: parseFloat(fTarget.toFixed(2)),
-          progresRealisasi: parseFloat(fRealisasi.toFixed(2)),
-          deviasiFisik: parseFloat(dev.toFixed(2)),
+          progresRencana: fTarget,
+          progresRealisasi: fRealisasi,
+          deviasiFisik: dev,
           statusDeviasi: statusDev,
           mingguan: []
         },
@@ -250,7 +311,19 @@ for (let i = 8; i < rows.length; i++) {
           sisaAnggaran: Math.max(0, pagu - pencairan),
           terminHistory: []
         },
-        spjStatus: pencairan > 0 ? 'sp2d_terbit' : 'belum_diajukan'
+        spjStatus,
+        logs: [
+          {
+            id: `log_init_${pId}`,
+            timestamp: '2026-10-31 16:00:00',
+            userName: 'Rizky Prahardini, S.E.',
+            userRole: 'Koordinator Sekretariat',
+            action: pencairan > 0 ? 'Input SP2D & Realisasi Fisik' : 'Pencatatan Sub Kegiatan',
+            keterangan: pencairan > 0
+              ? `Realisasi SP2D sebesar Rp ${Math.round(pencairan).toLocaleString('id-ID')} dan realisasi fisik ${fRealisasi}% per laporan Oktober 2026.`
+              : `Sub kegiatan terdaftar dengan alokasi pagu Rp ${Math.round(pagu).toLocaleString('id-ID')}.`
+          }
+        ]
       });
     }
     continue;
@@ -295,16 +368,23 @@ for (let i = 8; i < rows.length; i++) {
     const jobText = col5 || (col4 && !col4.toLowerCase().includes('sub kegiatan') ? col4 : '') || (col6 && !col6.toLowerCase().includes('sub kegiatan') && !col6.toLowerCase().includes('kegiatan') ? col6 : '');
     const cleanJob = jobText.replace(/^[P|p]ekerjaan\s*:\s*/, '').replace(/\r?\n/g, ' ').trim();
 
-    if (cleanJob && cleanJob.length > 2 && (col7 || r[12] || r[14] || r[15] || (col4 && col4.match(/^\d+$/)))) {
+    if (cleanJob && cleanJob.length > 2 && (col7 || r[12] || r[14] || r[15] || (col4 && String(col4).match(/^\d+$/)))) {
       const pagu = typeof col7 === 'number' ? col7 : (parseFloat(String(col7).replace(/[^\d.-]/g, '')) || 0);
       const noKontrak = r[12] ? String(r[12]).trim().replace(/\r?\n/g, ' ') : '';
-      const tglKontrak = r[13] ? String(r[13]).trim() : '';
+      const tglKontrakRaw = r[13] ? String(r[13]).trim() : '';
+      const tglKontrak = normalizeDate(tglKontrakRaw) || '';
       const nilaiKontrak = typeof r[14] === 'number' ? r[14] : (parseFloat(String(r[14] || '').replace(/[^\d.-]/g, '')) || 0);
       const pelaksana = r[15] ? String(r[15]).trim().replace(/\r?\n/g, ' ') : '';
       const waktuPelaksanaan = r[16] ? String(r[16]).trim().replace(/\r?\n/g, ' ') : '';
+      const dateRange = parseDateRange(waktuPelaksanaan);
+      const tanggalMulai = dateRange.mulai || tglKontrak || '2026-03-01';
+      const tanggalSelesai = dateRange.selesai || '2026-11-30';
+
       const pencairan = typeof r[17] === 'number' ? r[17] : (parseFloat(String(r[17] || '').replace(/[^\d.-]/g, '')) || 0);
-      const fTarget = typeof r[21] === 'number' ? r[21] * 100 : (parseFloat(String(r[21] || '').replace('%', '')) || 0);
-      const fRealisasi = typeof r[22] === 'number' ? r[22] * 100 : (parseFloat(String(r[22] || '').replace('%', '')) || 0);
+      const rawTarget = typeof r[21] === 'number' ? (r[21] <= 1 ? r[21] * 100 : r[21]) : (parseFloat(String(r[21] || '').replace('%', '').replace(',', '.')) || 0);
+      const rawRealisasi = typeof r[22] === 'number' ? (r[22] <= 1 ? r[22] * 100 : r[22]) : (parseFloat(String(r[22] || '').replace('%', '').replace(',', '.')) || 0);
+      const fTarget = parseFloat(rawTarget.toFixed(2));
+      const fRealisasi = parseFloat(rawRealisasi.toFixed(2));
       const keterangan = r[23] ? String(r[23]).trim() : '';
 
       let tipePengadaan = 'Pengadaan Langsung';
@@ -313,15 +393,36 @@ for (let i = 8; i < rows.length; i++) {
       else if (r[10] === '√' || r[10] === 'v' || r[10] === 'V' || noKontrak.toUpperCase().includes('TENDER')) tipePengadaan = 'Tender / Seleksi Umum';
       else if (r[11] === '√' || r[11] === 'v' || r[11] === 'V') tipePengadaan = 'Hibah';
 
-      const dev = fRealisasi - fTarget;
+      const dev = parseFloat((fRealisasi - fTarget).toFixed(2));
       const statusDev = dev >= 0 ? 'Aman' : (dev >= -10 ? 'Waspada' : 'Kritis');
       const baseValue = nilaiKontrak > 0 ? nilaiKontrak : (pagu > 0 ? pagu : 1);
       const persenKeu = parseFloat(((pencairan / baseValue) * 100).toFixed(2));
 
+      // Rules:
+      // "di kolom keterangan jika ada perubahan berarti itu adalah anggaran APBD Perubahn dan jikaa ada keterangan program Prioritas berarti itu Program Prioritas Bupati. tolong sesuaikan. jika tidak ada keterangan berarti APBD Murni."
+      const isPerubahan = keterangan.toUpperCase().includes('PERUBAHAN');
+      const isPrioritas = keterangan.toUpperCase().includes('PRIORITAS');
+      const jenisAnggaran = isPerubahan ? 'Perubahan' : 'Murni';
+
       const tags = [];
-      if (keterangan.toUpperCase().includes('PRIORITAS')) tags.push('Program Prioritas Bupati');
-      if (keterangan.toUpperCase().includes('PERUBAHAN')) tags.push('APBD Perubahan');
+      if (isPrioritas) tags.push('Program Prioritas Bupati');
+      if (isPerubahan) tags.push('APBD Perubahan');
       if (pagu >= 1000000000) tags.push('Proyek Strategis');
+
+      // Rules:
+      // "Tambahan, jika nilai kontrak sesuai/sama dengan SP2D berarti status SP2D sudah selesai."
+      let spjStatus = 'belum_diajukan';
+      if (baseValue > 0 && pencairan >= baseValue) {
+        spjStatus = 'sudah_sp2d';
+      } else if (pencairan > 0) {
+        spjStatus = 'sp2d_terbit';
+      }
+
+      // Rules:
+      // "Jika pekerjaan sudah ada nilai kontrak dans udah ada pelaksana berarti status pekerjaan tersebut sduah kontrak. tolong perbaiki"
+      // "Untuk semua pekerjaan yang sudah ada realisasi berarti sudah kontrak"
+      const isKontrak = (nilaiKontrak > 0 && pelaksana) || Boolean(noKontrak) || fRealisasi > 0 || pencairan > 0;
+      const statusTahapPraKontrak = isKontrak ? 'pelaksanaan_kontrak' : 'identifikasi_kebutuhan';
 
       let kecamatan = 'Demak';
       const kecList = ['Mranggen', 'Karangawen', 'Guntur', 'Sayung', 'Karangtengah', 'Bonang', 'Demak', 'Wonosalam', 'Dempet', 'Gajah', 'Karanganyar', 'Mijen', 'Wedung', 'Kebonagung'];
@@ -332,13 +433,55 @@ for (let i = 8; i < rows.length; i++) {
         }
       }
 
+      let kategoriPekerjaan = 'Fisik';
+      if (tipePengadaan === 'Swakelola') {
+        kategoriPekerjaan = 'Swakelola';
+      } else if (cleanJob.toLowerCase().includes('pengawasan') || cleanJob.toLowerCase().includes('perencanaan') || cleanJob.toLowerCase().includes('konsultansi') || cleanJob.toLowerCase().includes('studi') || cleanJob.toLowerCase().includes('penyusunan')) {
+        kategoriPekerjaan = 'Jakon';
+      } else if (cleanJob.toLowerCase().includes('pengadaan') || cleanJob.toLowerCase().includes('pembelian') || cleanJob.toLowerCase().includes('sewa')) {
+        kategoriPekerjaan = 'Barang';
+      }
+
+      const pId = `prj_${curProg.bidangId}_${projects.length + 1}`;
+
+      const logEntries = [];
+      if (pencairan > 0 || fRealisasi > 0) {
+        logEntries.push({
+          id: `log_init_${pId}`,
+          timestamp: '2026-10-31 16:30:00',
+          userName: 'Koordinator ' + (curProg.bidangId === 'bina_marga' ? 'Bina Marga' : (curProg.bidangId === 'cipta_karya' ? 'Cipta Karya' : (curProg.bidangId === 'sda_bk' ? 'SDA & BK' : 'Tata Ruang'))),
+          userRole: 'Koordinator Bidang',
+          action: 'Input SP2D & Progres Fisik',
+          keterangan: `Realisasi SP2D tercatat Rp ${Math.round(pencairan).toLocaleString('id-ID')} dan fisik mencapai ${fRealisasi}% per laporan bulan Oktober 2026.`
+        });
+      } else if (isKontrak) {
+        logEntries.push({
+          id: `log_init_${pId}`,
+          timestamp: '2026-10-31 16:00:00',
+          userName: 'Koordinator ' + (curProg.bidangId === 'bina_marga' ? 'Bina Marga' : (curProg.bidangId === 'cipta_karya' ? 'Cipta Karya' : (curProg.bidangId === 'sda_bk' ? 'SDA & BK' : 'Tata Ruang'))),
+          userRole: 'Koordinator Bidang',
+          action: 'Pencatatan Kontrak Pelaksanaan',
+          keterangan: `Kontrak pelaksanaan ${noKontrak ? 'No. ' + noKontrak : ''} telah diterbitkan dengan nilai Rp ${Math.round(nilaiKontrak).toLocaleString('id-ID')} kepada ${pelaksana || 'Penyedia'}.`
+        });
+      } else {
+        logEntries.push({
+          id: `log_init_${pId}`,
+          timestamp: '2026-10-31 15:00:00',
+          userName: 'Admin SIMON SATUPUTARU',
+          userRole: 'Sistem Monitoring',
+          action: 'Pendaftaran Paket APBD 2026',
+          keterangan: `Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp ${Math.round(pagu).toLocaleString('id-ID')} (${jenisAnggaran}).`
+        });
+      }
+
       projects.push({
-        id: `prj_${curProg.bidangId}_${projects.length + 1}`,
+        id: pId,
         tahunAnggaran: 2026,
         bidangId: curProg.bidangId,
         subBagian: curKeg ? curKeg.namaKegiatan : '',
         namaPaket: cleanJob,
-        jenisAnggaran: keterangan.toUpperCase().includes('PERUBAHAN') ? 'Perubahan' : 'Murni',
+        kategoriPekerjaan,
+        jenisAnggaran,
         sumberDana: 'APBD Murni (DAU)',
         kodeRup: `RUP-2026-${curProg.bidangId.toUpperCase().substring(0, 3)}-${String(projects.length + 1).padStart(4, '0')}`,
         tipePengadaan,
@@ -350,31 +493,31 @@ for (let i = 8; i < rows.length; i++) {
         latitude: -6.8944,
         longitude: 110.6385,
         tags,
-        isPublicHighlight: pagu >= 1000000000 || tags.includes('Program Prioritas Bupati'),
+        isPublicHighlight: pagu >= 1000000000 || isPrioritas,
         subKegiatanId: curSubKeg.id,
         kodeSubKegiatan: curSubKeg.kodeSubKegiatan,
-        statusTahapPraKontrak: noKontrak ? 'pelaksanaan_kontrak' : 'identifikasi_kebutuhan',
+        statusTahapPraKontrak,
         dataPraKontrak: {
-          tahapSaatIni: noKontrak ? 'pelaksanaan_kontrak' : 'identifikasi_kebutuhan',
+          tahapSaatIni: statusTahapPraKontrak,
           jadwalPraKontrak: {
-            targetMulaiPekerjaan: tglKontrak || '2026-04-01'
+            targetMulaiPekerjaan: tanggalMulai || '2026-04-01'
           }
         },
         dataKontrak: {
           nomorKontrak: noKontrak,
-          tanggalKontrak: tglKontrak || '',
-          tanggalMulai: '2026-03-01',
-          tanggalSelesai: '2026-11-30',
+          tanggalKontrak: tglKontrak,
+          tanggalMulai,
+          tanggalSelesai,
           nilaiKontrak,
-          namaPenyedia: pelaksana || (noKontrak ? 'Penyedia Jasa Konstruksi' : '-'),
+          namaPenyedia: pelaksana || (isKontrak ? 'Penyedia Jasa Konstruksi' : '-'),
           bankRekanan: 'Bank Jateng',
           rekeningRekanan: '',
           npwpRekanan: ''
         },
         dataFisik: {
-          progresRencana: parseFloat(fTarget.toFixed(2)),
-          progresRealisasi: parseFloat(fRealisasi.toFixed(2)),
-          deviasiFisik: parseFloat(dev.toFixed(2)),
+          progresRencana: fTarget,
+          progresRealisasi: fRealisasi,
+          deviasiFisik: dev,
           statusDeviasi: statusDev,
           mingguan: []
         },
@@ -384,7 +527,8 @@ for (let i = 8; i < rows.length; i++) {
           sisaAnggaran: Math.max(0, (nilaiKontrak > 0 ? nilaiKontrak : pagu) - pencairan),
           terminHistory: []
         },
-        spjStatus: pencairan > 0 ? 'sp2d_terbit' : 'belum_diajukan'
+        spjStatus,
+        logs: logEntries
       });
     }
   }
@@ -396,22 +540,21 @@ console.log('Kegiatans count:', kegiatans.length);
 console.log('SubKegiatans count:', subKegiatans.length);
 console.log('Projects count:', projects.length);
 
-// Write to realProjects2026.js
 const projectFileContent = `/**
  * DATA REAL PAKET PEKERJAAN 2026
  * Dihasilkan dari Dokumen Excel: Program Kegiatan Sub Kegiatan Pekerjaan 2026
  * DINPUTARU KABUPATEN DEMAK
  * Total Pekerjaan: ${projects.length} Paket
+ * Dilengkapi data kontrak, realisasi fisik, SP2D, dan audit log riwayat
  */
 
 export const REAL_PROJECTS_2026 = ${JSON.stringify(projects, null, 2)};
 `;
 
-fs.writeFileSync('./src/data/realProjects2026.js', projectFileContent, 'utf-8');
+fs.writeFileSync('src/data/realProjects2026.js', projectFileContent, 'utf8');
 console.log('Successfully written to src/data/realProjects2026.js');
 
-// Also update sipdData.js with these real programs, kegiatans, subKegiatans
-const sipdContent = `/**
+const sipdFileContent = `/**
  * MASTER DATA NOMENKLATUR SIPD KEMENDAGRI (DINPUTARU KABUPATEN DEMAK)
  * Berdasarkan Klasifikasi/Kodefikasi Standar SIPD RI Kemendagri & Excel Rencana Kerja 2026
  * Total Program: ${programs.length}
@@ -425,190 +568,19 @@ export const INITIAL_SIPD_KEGIATAN = ${JSON.stringify(kegiatans, null, 2)};
 
 export const INITIAL_SIPD_SUB_KEGIATAN = ${JSON.stringify(subKegiatans, null, 2)};
 
-/**
- * Mencocokkan paket pekerjaan dengan sub kegiatan SIPD
- */
-export const matchProjectToSubKegiatan = (project, subKegiatanList) => {
-  if (!project || !Array.isArray(subKegiatanList) || subKegiatanList.length === 0) return null;
-
+export function matchProjectToSubKegiatan(project, subKegiatanList = INITIAL_SIPD_SUB_KEGIATAN) {
+  if (!project || !subKegiatanList || subKegiatanList.length === 0) return null;
   if (project.subKegiatanId) {
-    const found = subKegiatanList.find((s) => s.id === project.subKegiatanId);
+    const found = subKegiatanList.find(s => s.id === project.subKegiatanId);
     if (found) return found;
   }
-
   if (project.kodeSubKegiatan) {
-    const found = subKegiatanList.find((s) => s.kodeSubKegiatan === project.kodeSubKegiatan);
+    const found = subKegiatanList.find(s => s.kodeSubKegiatan === project.kodeSubKegiatan);
     if (found) return found;
   }
-
-  const nama = (project.namaPaket || '').toLowerCase();
-  const bId = project.bidangId;
-
-  // Filter sub kegiatan pada bidang yang bersangkutan
-  const candidates = subKegiatanList.filter((s) => !bId || s.bidangId === bId);
-
-  // Pencocokan cerdas berdasarkan kata kunci nama paket
-  if (nama.includes('jembatan')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('jembatan'));
-    if (match) return match;
-  }
-  if (nama.includes('rekonstruksi') || nama.includes('rigid') || nama.includes('peninggian')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('rekonstruksi'));
-    if (match) return match;
-  }
-  if (nama.includes('pelebaran') || nama.includes('poros')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pelebaran'));
-    if (match) return match;
-  }
-  if (nama.includes('pemeliharaan') && (bId === 'bina_marga' || nama.includes('jalan'))) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pemeliharaan'));
-    if (match) return match;
-  }
-  if (nama.includes('air minum') || nama.includes('spam')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('air minum') || s.namaSubKegiatan.toLowerCase().includes('spam'));
-    if (match) return match;
-  }
-  if (nama.includes('limbah') || nama.includes('spald') || nama.includes('septik') || nama.includes('sanitasi')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('limbah') || s.namaSubKegiatan.toLowerCase().includes('setempat'));
-    if (match) return match;
-  }
-  if (nama.includes('gedung') || nama.includes('bangunan')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('gedung') || s.namaSubKegiatan.toLowerCase().includes('bangunan'));
-    if (match) return match;
-  }
-  if (nama.includes('pompa') || nama.includes('banjir')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('pompa') || s.namaSubKegiatan.toLowerCase().includes('sungai'));
-    if (match) return match;
-  }
-  if (nama.includes('sungai') || nama.includes('normalisasi')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('sungai') || s.namaSubKegiatan.toLowerCase().includes('tanggul'));
-    if (match) return match;
-  }
-  if (nama.includes('embung') || nama.includes('waduk')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('embung'));
-    if (match) return match;
-  }
-  if (nama.includes('irigasi') || nama.includes('d.i.')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('irigasi'));
-    if (match) return match;
-  }
-  if (nama.includes('drainase') || nama.includes('saluran')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('drainase'));
-    if (match) return match;
-  }
-  if (nama.includes('rtrw') || nama.includes('rdtr') || nama.includes('tata ruang')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('rtrw') || s.namaSubKegiatan.toLowerCase().includes('rdtr') || s.namaSubKegiatan.toLowerCase().includes('tata ruang'));
-    if (match) return match;
-  }
-  if (nama.includes('tanah') || nama.includes('reforma') || nama.includes('gtra')) {
-    const match = candidates.find((s) => s.namaSubKegiatan.toLowerCase().includes('tanah') || s.namaSubKegiatan.toLowerCase().includes('reforma'));
-    if (match) return match;
-  }
-
-  return candidates.length > 0 ? candidates[0] : subKegiatanList[0];
-};
-
-/**
- * Membangun struktur pohon hierarki Program -> Kegiatan -> Sub Kegiatan -> Pekerjaan
- */
-export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
-  const projectMapBySubKeg = {};
-  projects.forEach((prj) => {
-    const subKeg = matchProjectToSubKegiatan(prj, subKegiatans);
-    const subKegId = subKeg ? subKeg.id : 'unassigned';
-    if (!projectMapBySubKeg[subKegId]) {
-      projectMapBySubKeg[subKegId] = [];
-    }
-    projectMapBySubKeg[subKegId].push({
-      ...prj,
-      matchedSubKegiatan: subKeg
-    });
-  });
-
-  return programs.map((prog) => {
-    const progKegiatans = kegiatans.filter((k) => k.programId === prog.id);
-
-    let progTotalPagu = 0;
-    let progTotalKontrak = 0;
-    let progTotalPencairan = 0;
-    let progFisikSum = 0;
-    let progProjectCount = 0;
-
-    const formattedKegiatans = progKegiatans.map((keg) => {
-      const kegSubKegiatans = subKegiatans.filter((s) => s.kegiatanId === keg.id);
-
-      let kegTotalPagu = 0;
-      let kegTotalKontrak = 0;
-      let kegTotalPencairan = 0;
-      let kegFisikSum = 0;
-      let kegProjectCount = 0;
-
-      const formattedSubKegiatans = kegSubKegiatans.map((sub) => {
-        const subProjects = projectMapBySubKeg[sub.id] || [];
-
-        const subTotalPagu = subProjects.reduce((sum, p) => sum + (parseFloat(p.paguAnggaran) || 0), 0);
-        const subTotalKontrak = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataKontrak?.nilaiKontrak) || 0), 0);
-        const subTotalPencairan = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataKeuangan?.totalPencairan) || 0), 0);
-        const subFisikSum = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataFisik?.progresRealisasi) || 0), 0);
-        const subAvgFisik = subProjects.length > 0 ? parseFloat((subFisikSum / subProjects.length).toFixed(1)) : 0;
-        const subPersenKeu = subTotalKontrak > 0 ? parseFloat(((subTotalPencairan / subTotalKontrak) * 100).toFixed(1)) : (subTotalPagu > 0 ? parseFloat(((subTotalPencairan / subTotalPagu) * 100).toFixed(1)) : 0);
-
-        kegTotalPagu += subTotalPagu;
-        kegTotalKontrak += subTotalKontrak;
-        kegTotalPencairan += subTotalPencairan;
-        kegFisikSum += subFisikSum;
-        kegProjectCount += subProjects.length;
-
-        return {
-          ...sub,
-          projects: subProjects,
-          totalPagu: subTotalPagu,
-          totalKontrak: subTotalKontrak,
-          totalPencairan: subTotalPencairan,
-          persenKeuangan: subPersenKeu,
-          avgFisik: subAvgFisik,
-          projectCount: subProjects.length
-        };
-      });
-
-      const kegAvgFisik = kegProjectCount > 0 ? parseFloat((kegFisikSum / kegProjectCount).toFixed(1)) : 0;
-      const kegPersenKeu = kegTotalKontrak > 0 ? parseFloat(((kegTotalPencairan / kegTotalKontrak) * 100).toFixed(1)) : (kegTotalPagu > 0 ? parseFloat(((kegTotalPencairan / kegTotalPagu) * 100).toFixed(1)) : 0);
-
-      progTotalPagu += kegTotalPagu;
-      progTotalKontrak += kegTotalKontrak;
-      progTotalPencairan += kegTotalPencairan;
-      progFisikSum += kegFisikSum;
-      progProjectCount += kegProjectCount;
-
-      return {
-        ...keg,
-        subKegiatans: formattedSubKegiatans,
-        totalPagu: kegTotalPagu,
-        totalKontrak: kegTotalKontrak,
-        totalPencairan: kegTotalPencairan,
-        persenKeuangan: kegPersenKeu,
-        avgFisik: kegAvgFisik,
-        projectCount: kegProjectCount
-      };
-    });
-
-    const progAvgFisik = progProjectCount > 0 ? parseFloat((progFisikSum / progProjectCount).toFixed(1)) : 0;
-    const progPersenKeu = progTotalKontrak > 0 ? parseFloat(((progTotalPencairan / progTotalKontrak) * 100).toFixed(1)) : (progTotalPagu > 0 ? parseFloat(((progTotalPencairan / progTotalPagu) * 100).toFixed(1)) : 0);
-
-    return {
-      ...prog,
-      kegiatans: formattedKegiatans,
-      totalPagu: progTotalPagu,
-      totalKontrak: progTotalKontrak,
-      totalPencairan: progTotalPencairan,
-      persenKeuangan: progPersenKeu,
-      avgFisik: progAvgFisik,
-      projectCount: progProjectCount
-    };
-  });
-};
+  return null;
+}
 `;
 
-fs.writeFileSync('./src/data/sipdData.js', sipdContent, 'utf-8');
+fs.writeFileSync('src/data/sipdData.js', sipdFileContent, 'utf8');
 console.log('Successfully written to src/data/sipdData.js');
-

@@ -31,14 +31,14 @@ export const AppProvider = ({ children }) => {
   // Data Versioning & Auto-Migration for Real 2026 Dataset & Users
   if (typeof window !== 'undefined') {
     const currentVersion = localStorage.getItem('simon_app_version_2026');
-    if (currentVersion !== '2026_real_v1') {
+    if (currentVersion !== '2026_real_v2') {
       localStorage.removeItem('simon_users');
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_projects_v2');
       localStorage.removeItem('simon_sipd_programs');
       localStorage.removeItem('simon_sipd_kegiatans');
       localStorage.removeItem('simon_sipd_sub_kegiatans');
-      localStorage.setItem('simon_app_version_2026', '2026_real_v1');
+      localStorage.setItem('simon_app_version_2026', '2026_real_v2');
     }
   }
 
@@ -337,7 +337,8 @@ export const AppProvider = ({ children }) => {
           nomorSPM: '',
           catatanVerifikator: '',
           petugasVerifikator: ''
-        }
+        },
+        logs: Array.isArray(p.logs) ? p.logs : []
       };
     };
 
@@ -1325,7 +1326,8 @@ export const AppProvider = ({ children }) => {
         terminHistory: terminList,
         totalPencairan,
         persenKeuangan
-      },
+          },
+          logs: updatedData.logs !== undefined ? updatedData.logs : (Array.isArray(p.logs) ? p.logs : []),
       updatedAt: new Date().toLocaleString('id-ID'),
       updatedBy: currentUser.nama
     };
@@ -1425,6 +1427,7 @@ export const AppProvider = ({ children }) => {
             totalPencairan,
             persenKeuangan
           },
+          logs: updatedData.logs !== undefined ? updatedData.logs : (Array.isArray(p.logs) ? p.logs : []),
           updatedAt: new Date().toLocaleString('id-ID'),
           updatedBy: currentUser.nama
         };
@@ -1552,6 +1555,85 @@ export const AppProvider = ({ children }) => {
     return true;
   };
 
+  
+  // Add Project Audit & Progress Log
+  const addProjectLog = (projectId, { aksi, keterangan, dataChanged = {} }) => {
+    const target = projects.find((p) => p.id === projectId);
+    if (!target) return false;
+
+    const now = new Date();
+    const waktuStr = now.toLocaleDateString('id-ID', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    }) + ' ' + now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+
+    const newLog = {
+      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+      timestamp: now.toISOString(),
+      waktu: waktuStr,
+      userName: currentUser?.nama || 'Sistem',
+      userRole: currentUser?.role || 'koordinator',
+      userJabatan: currentUser?.jabatan || '',
+      aksi: aksi || 'Update Data',
+      keterangan: keterangan || '',
+      dataChanged: dataChanged
+    };
+
+    const currentLogs = Array.isArray(target.logs) ? target.logs : [];
+    const updatedLogs = [newLog, ...currentLogs];
+
+    const patch = {
+      logs: updatedLogs
+    };
+
+    if (dataChanged.progresFisik !== undefined && dataChanged.progresFisik !== '') {
+      const fVal = parseFloat(dataChanged.progresFisik) || 0;
+      patch.dataFisik = {
+        ...(target.dataFisik || {}),
+        progresRealisasi: fVal
+      };
+      patch.isKontrak = true;
+      if (target.tahapPraKontrak?.status !== 'kontrak') {
+        patch.tahapPraKontrak = {
+          ...(target.tahapPraKontrak || {}),
+          status: 'kontrak'
+        };
+      }
+    }
+
+    if (dataChanged.sp2d !== undefined && dataChanged.sp2d !== '') {
+      const sp2dVal = parseFloat(dataChanged.sp2d) || 0;
+      const existingTermin = target.dataKeuangan?.terminHistory || [];
+      const updatedTermin = [
+        ...existingTermin,
+        {
+          tahap: `SP2D ${dataChanged.bulan || waktuStr}`,
+          jumlah: sp2dVal,
+          tanggal: now.toISOString().split('T')[0],
+          keterangan: dataChanged.catatan || keterangan || 'Pencairan SP2D'
+        }
+      ];
+      const newTotalCair = (parseFloat(target.dataKeuangan?.totalPencairan) || 0) + sp2dVal;
+      patch.dataKeuangan = {
+        ...(target.dataKeuangan || {}),
+        terminHistory: updatedTermin,
+        totalPencairan: newTotalCair
+      };
+      patch.isKontrak = true;
+      if (target.tahapPraKontrak?.status !== 'kontrak') {
+        patch.tahapPraKontrak = {
+          ...(target.tahapPraKontrak || {}),
+          status: 'kontrak'
+        };
+      }
+    }
+
+    updateProject(projectId, patch);
+    showToast('Catatan log perubahan & progres berhasil ditambahkan!', 'success');
+    return newLog;
+  };
+
   // Reset to default sample data (for easy testing)
   const resetToDemoData = () => {
     localStorage.removeItem('simon_projects');
@@ -1660,6 +1742,7 @@ export const AppProvider = ({ children }) => {
     deleteProject,
     togglePublicHighlight,
     addTermin,
+    addProjectLog,
     activeTab,
     setActiveTab,
     toast,

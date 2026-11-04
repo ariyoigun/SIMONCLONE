@@ -278,6 +278,7 @@ if ($action === 'load_all') {
                 ],
                 'spjStatus' => $p['spj_status'],
                 'dataSpj' => !empty($p['spj_checklist_json']) ? json_decode($p['spj_checklist_json'], true) : null,
+                'logs' => !empty($p['logs_json']) ? json_decode($p['logs_json'], true) : [],
             ];
         }, $projectsRaw);
 
@@ -325,7 +326,7 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             pelaksana_rekening, pelaksana_npwp, kecamatan, desa, lokasi_lengkap, latitude,
             longitude, tags_json, is_public_highlight, status_tahap_pra_kontrak, pra_kontrak_json,
             progres_rencana, progres_realisasi, deviasi_fisik, status_deviasi, kurva_s_json,
-            total_pencairan, persen_keuangan, sisa_anggaran, termin_json, spj_status, spj_checklist_json
+            total_pencairan, persen_keuangan, sisa_anggaran, termin_json, spj_status, spj_checklist_json, logs_json
         ) VALUES (
             :id, :tahun_anggaran, :bidang_id, :sub_bagian, :sub_kegiatan_id, :kode_sub_kegiatan, :nama_paket, :kategori_pekerjaan, :jenis_anggaran, :sumber_dana,
             :kode_rup, :tipe_pengadaan, :pagu_anggaran, :hps, :nilai_kontrak, :nomor_kontrak,
@@ -333,7 +334,7 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             :pelaksana_rekening, :pelaksana_npwp, :kecamatan, :desa, :lokasi_lengkap, :latitude,
             :longitude, :tags_json, :is_public_highlight, :status_tahap_pra_kontrak, :pra_kontrak_json,
             :progres_rencana, :progres_realisasi, :deviasi_fisik, :status_deviasi, :kurva_s_json,
-            :total_pencairan, :persen_keuangan, :sisa_anggaran, :termin_json, :spj_status, :spj_checklist_json
+            :total_pencairan, :persen_keuangan, :sisa_anggaran, :termin_json, :spj_status, :spj_checklist_json, :logs_json
         ) ON DUPLICATE KEY UPDATE
             tahun_anggaran = VALUES(tahun_anggaran),
             bidang_id = VALUES(bidang_id),
@@ -376,7 +377,8 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             sisa_anggaran = VALUES(sisa_anggaran),
             termin_json = VALUES(termin_json),
             spj_status = VALUES(spj_status),
-            spj_checklist_json = VALUES(spj_checklist_json)";
+            spj_checklist_json = VALUES(spj_checklist_json),
+            logs_json = VALUES(logs_json)";
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
@@ -422,7 +424,8 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             ':sisa_anggaran' => (float)($q['sisaAnggaran'] ?? 0),
             ':termin_json' => json_encode($q['terminHistory'] ?? []),
             ':spj_status' => $p['spjStatus'] ?? 'belum_diajukan',
-            ':spj_checklist_json' => json_encode($p['dataSpj'] ?? [])
+            ':spj_checklist_json' => json_encode($p['dataSpj'] ?? []),
+            ':logs_json' => json_encode($p['logs'] ?? [])
         ]);
 
         echo json_encode(['status' => 'success', 'message' => 'Paket pekerjaan berhasil disimpan ke database']);

@@ -332,13 +332,7 @@ const SipdSummaryView = ({ onOpenProjectModal, onViewProject }) => {
   }, [chartData, totalPaguAll]);
 
   const formatRpCompact = (val) => {
-    const num = parseFloat(val) || 0;
-    if (num >= 1e9) {
-      return `Rp ${(num / 1e9).toFixed(2)} M`;
-    }
-    if (num >= 1e6) {
-      return `Rp ${(num / 1e6).toFixed(1)} Jt`;
-    }
+    const num = Math.round(parseFloat(val) || 0);
     return `Rp ${num.toLocaleString('id-ID')}`;
   };
 
@@ -613,9 +607,9 @@ const SipdSummaryView = ({ onOpenProjectModal, onViewProject }) => {
           <div>
             <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase' }}>TOTAL PAGU INDUK</div>
             <div style={{ fontSize: 18, fontWeight: 900, color: '#0f2c59', marginTop: 2 }}>
-              Rp {(totalPaguAll / 1e9).toFixed(2)} M
+              Rp {Math.round(totalPaguAll).toLocaleString('id-ID')}
             </div>
-            <div style={{ fontSize: 11, color: '#64748b' }}>Kontrak: Rp {(totalKontrakAll / 1e9).toFixed(2)} M</div>
+            <div style={{ fontSize: 11, color: '#64748b' }}>Kontrak: Rp {Math.round(totalKontrakAll).toLocaleString('id-ID')}</div>
           </div>
         </div>
       </div>

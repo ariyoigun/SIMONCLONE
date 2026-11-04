@@ -90,10 +90,8 @@ const DonutPieChart = ({
     centerValue !== null
       ? centerValue
       : isCurrency
-      ? total >= 1000000000
-        ? `Rp ${(total / 1000000000).toFixed(1)}M`
-        : `Rp ${(total / 1000000).toFixed(0)}Jt`
-      : total;
+      ? `Rp ${Math.round(total).toLocaleString('id-ID')}`
+      : total.toLocaleString('id-ID');
 
   const displayCenterLabel = centerLabel || (isCurrency ? 'Total' : 'Paket');
 
@@ -279,7 +277,10 @@ const DonutPieChart = ({
                 <>
                   <div
                     style={{
-                      fontSize: typeof displayCenterValue === 'string' && displayCenterValue.length > 7 ? 15 : 18,
+                      fontSize: typeof displayCenterValue === 'string' && displayCenterValue.length > 15 ? 11 : typeof displayCenterValue === 'string' && displayCenterValue.length > 9 ? 13 : 17,
+                      padding: '0 6px',
+                      wordBreak: 'break-word',
+                      maxWidth: size - thickness * 2 - 4,
                       fontWeight: 900,
                       color: '#0f2c59',
                       lineHeight: 1.1

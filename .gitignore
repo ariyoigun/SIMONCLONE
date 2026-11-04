@@ -25,3 +25,4 @@ config.local.php
 *.njsproj
 *.sln
 *.sw?
+deploy_simon_satuputaru/
