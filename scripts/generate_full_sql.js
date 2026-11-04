@@ -462,8 +462,8 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   ${sqlEscape(p.longitude ? String(p.longitude) : null)},
   ${sqlEscape(p.tags || [])},
   ${p.isPublicHighlight ? 1 : 0},
-  ${sqlEscape(p.statusTahapPraKontrak || 'identifikasi_kebutuhan')},
-  ${sqlEscape(p.dataPraKontrak || null)},
+  ${sqlEscape(p.tahapPraKontrak?.status || (p.isKontrak ? "kontrak" : "rup"))},
+  ${sqlEscape(p.tahapPraKontrak || p.dataPraKontrak || null)},
   ${sqlEscape(f.progresRencana || 0)},
   ${sqlEscape(f.progresRealisasi || 0)},
   ${sqlEscape(f.deviasiFisik || 0)},
@@ -473,8 +473,8 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   ${sqlEscape(q.persenKeuangan || 0)},
   ${sqlEscape(q.sisaAnggaran || 0)},
   ${sqlEscape(q.terminHistory || [])},
-  ${sqlEscape(p.spjStatus || 'belum_diajukan')},
-  ${sqlEscape(p.dataSpj || null)},
+  ${sqlEscape(p.administrasiSPJ?.status || p.spjStatus || "belum_masuk")},
+  ${sqlEscape(p.administrasiSPJ || p.dataSpj || null)},
   ${sqlEscape(p.logs || [])}
 )`;
   }).join(',\n');

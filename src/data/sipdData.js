@@ -964,12 +964,10 @@ export function matchProjectToSubKegiatan(project, subKegiatanList = INITIAL_SIP
 }
 
 
-
 /**
  * Membangun struktur pohon hierarki Program -> Kegiatan -> Sub Kegiatan -> Pekerjaan
  */
 export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
-  // Mapping project ke sub kegiatan
   const projectMapBySubKeg = {};
   projects.forEach((prj) => {
     const subKeg = matchProjectToSubKegiatan(prj, subKegiatans);
@@ -983,7 +981,6 @@ export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
     });
   });
 
-  // Susun Pohon
   return programs.map((prog) => {
     const progKegiatans = kegiatans.filter((k) => k.programId === prog.id);
 

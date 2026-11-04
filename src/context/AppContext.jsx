@@ -31,14 +31,14 @@ export const AppProvider = ({ children }) => {
   // Data Versioning & Auto-Migration for Real 2026 Dataset & Users
   if (typeof window !== 'undefined') {
     const currentVersion = localStorage.getItem('simon_app_version_2026');
-    if (currentVersion !== '2026_real_v2') {
+    if (currentVersion !== '2026_real_v3') {
       localStorage.removeItem('simon_users');
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_projects_v2');
       localStorage.removeItem('simon_sipd_programs');
       localStorage.removeItem('simon_sipd_kegiatans');
       localStorage.removeItem('simon_sipd_sub_kegiatans');
-      localStorage.setItem('simon_app_version_2026', '2026_real_v2');
+      localStorage.setItem('simon_app_version_2026', '2026_real_v3');
     }
   }
 
@@ -269,20 +269,44 @@ export const AppProvider = ({ children }) => {
         tipePengadaan = 'Pengadaan Langsung';
       }
 
-      // Clean tahap pra-kontrak
-      let statusTahap = p.tahapPraKontrak?.status || 'rup';
-      if (p.isKontrak) {
-        statusTahap = 'kontrak';
-      } else if (statusTahap === 'pemilihan' || statusTahap === 'pbj') {
-        statusTahap = 'tayang';
-      } else if (statusTahap === 'hps') {
-        statusTahap = 'perencanaan';
-      } else if (statusTahap === 'evaluasi') {
-        statusTahap = 'sppbj';
-      }
+      // Check contract info & progress
+      const totalCair = parseFloat(p.dataKeuangan?.totalPencairan) || 0;
+      const fRealisasi = parseFloat(p.dataFisik?.progresRealisasi) || 0;
+      const fRencana = parseFloat(p.dataFisik?.progresRencana) || 0;
+      const kNilai = parseFloat(p.dataKontrak?.nilaiKontrak) || 0;
+      const kDate = p.dataKontrak?.tanggalKontrak;
+      const kNo = p.dataKontrak?.nomorKontrak;
+      const kPenyedia = p.dataKontrak?.namaPenyedia;
+      const hasContractor = Boolean(kPenyedia) && kPenyedia !== '-' && kPenyedia !== 'Belum Ditunjuk / Tahap Pemilihan';
 
-      const isBatal = statusTahap === 'batal';
-      const isKontrak = !isBatal && (statusTahap === 'kontrak' || p.isKontrak);
+      const hasContractInfo =
+        Boolean(p.isKontrak) ||
+        p.tahapPraKontrak?.status === 'kontrak' ||
+        p.statusTahapPraKontrak === 'kontrak' ||
+        p.statusTahapPraKontrak === 'pelaksanaan_kontrak' ||
+        Boolean(kDate) ||
+        (kNilai > 0) ||
+        Boolean(kNo) ||
+        hasContractor ||
+        (totalCair > 0) ||
+        (fRealisasi > 0);
+
+      const isBatal = p.tahapPraKontrak?.status === 'batal' || p.statusDeviasi === 'Batal';
+      const isKontrak = !isBatal && hasContractInfo;
+      const statusTahap = isBatal ? 'batal' : (isKontrak ? 'kontrak' : (p.tahapPraKontrak?.status || 'rup'));
+
+      // Clean SPJ status
+      const baseValue = kNilai > 0 ? kNilai : (parseFloat(p.paguAnggaran) || 1);
+      let spjStatusClean = p.administrasiSPJ?.status || p.spjStatus;
+      if (!spjStatusClean || spjStatusClean === 'belum_diajukan' || spjStatusClean === 'sp2d_terbit') {
+        if (totalCair > 0 && totalCair >= baseValue) {
+          spjStatusClean = 'sudah_sp2d';
+        } else if (totalCair > 0) {
+          spjStatusClean = 'sudah_masuk';
+        } else {
+          spjStatusClean = isKontrak ? 'belum_masuk' : 'belum_masuk';
+        }
+      }
 
       // SIPD Mapping
       let matchedSub = null;
@@ -295,6 +319,18 @@ export const AppProvider = ({ children }) => {
       if (!matchedSub) {
         matchedSub = matchProjectToSubKegiatan(p, INITIAL_SIPD_SUB_KEGIATAN);
       }
+
+      const terminHistory = Array.isArray(p.dataKeuangan?.terminHistory) && p.dataKeuangan.terminHistory.length > 0
+        ? p.dataKeuangan.terminHistory
+        : (totalCair > 0 ? [{
+            id: `TRM-${p.id}-1`,
+            terminKe: totalCair >= baseValue ? 'Pelunasan SP2D 100%' : 'Pencairan SP2D Termin',
+            nomorSP2D: kNo ? `SP2D-${kNo}` : 'SP2D-2026-OKT',
+            tanggalSP2D: kDate || '2026-10-31',
+            jumlah: totalCair,
+            persen: kNilai > 0 ? parseFloat(((totalCair / kNilai) * 100).toFixed(2)) : 0,
+            keterangan: 'Pencairan SP2D Keuangan s/d Oktober 2026'
+          }] : []);
 
       return {
         ...p,
@@ -314,29 +350,42 @@ export const AppProvider = ({ children }) => {
         longitude: p.longitude || '110.6385',
         isPublicHighlight: p.isPublicHighlight !== undefined ? p.isPublicHighlight : true,
         tahapPraKontrak: {
-          ...p.tahapPraKontrak,
           status: statusTahap,
+          targetMulaiTender: p.tahapPraKontrak?.targetMulaiTender || p.dataKontrak?.tanggalMulai || '',
+          targetSelesaiTender: p.tahapPraKontrak?.targetSelesaiTender || p.dataKontrak?.tanggalSelesai || '',
           catatanPraKontrak: isBatal
             ? (p.tahapPraKontrak?.catatanPraKontrak || 'Pekerjaan dibatalkan')
-            : (p.tahapPraKontrak?.catatanPraKontrak || '')
+            : (isKontrak ? 'Kontrak pelaksanaan pekerjaan telah diterbitkan dan sedang berjalan' : (p.tahapPraKontrak?.catatanPraKontrak || 'Tahapan persiapan RUP'))
         },
         dataKontrak: {
           ...p.dataKontrak,
+          nilaiKontrak: kNilai,
+          tanggalKontrak: kDate || '',
           tanggalMulai: p.dataKontrak?.tanggalMulai || '',
-          tanggalSelesai: p.dataKontrak?.tanggalSelesai || ''
+          tanggalSelesai: p.dataKontrak?.tanggalSelesai || '',
+          namaPenyedia: kPenyedia || (isKontrak ? 'Penyedia Jasa Konstruksi' : 'Belum Ditunjuk / Tahap Pemilihan')
         },
         dataFisik: {
           ...p.dataFisik,
-          statusDeviasi: isBatal ? 'Batal' : (p.dataFisik?.statusDeviasi || 'Aman')
+          progresRencana: fRencana,
+          progresRealisasi: fRealisasi,
+          statusDeviasi: isBatal ? 'Batal' : (p.dataFisik?.statusDeviasi || (fRealisasi >= 100 ? 'Selesai' : ((fRealisasi - fRencana) < -5 ? 'Kritis' : ((fRealisasi - fRencana) < 0 ? 'Perhatian' : 'Aman'))))
         },
-        administrasiSPJ: p.administrasiSPJ || {
-          status: isKontrak && p.dataFisik?.progresRealisasi >= 100 ? 'sudah_sp2d' : 'belum_masuk',
-          tanggalMasuk: '',
-          tanggalKoreksi: '',
-          tanggalSPM: '',
-          nomorSPM: '',
-          catatanVerifikator: '',
-          petugasVerifikator: ''
+        dataKeuangan: {
+          ...p.dataKeuangan,
+          totalPencairan: totalCair,
+          persenKeuangan: p.dataKeuangan?.persenKeuangan || (kNilai > 0 ? parseFloat(((totalCair / kNilai) * 100).toFixed(2)) : (parseFloat(p.paguAnggaran) > 0 ? parseFloat(((totalCair / parseFloat(p.paguAnggaran)) * 100).toFixed(2)) : 0)),
+          sisaAnggaran: Math.max(0, (kNilai > 0 ? kNilai : (parseFloat(p.paguAnggaran) || 0)) - totalCair),
+          terminHistory
+        },
+        administrasiSPJ: {
+          status: spjStatusClean,
+          tanggalMasuk: p.administrasiSPJ?.tanggalMasuk || (spjStatusClean !== 'belum_masuk' ? (kDate || '2026-10-15') : ''),
+          tanggalKoreksi: p.administrasiSPJ?.tanggalKoreksi || '',
+          tanggalSPM: p.administrasiSPJ?.tanggalSPM || (spjStatusClean === 'sudah_sp2d' ? '2026-10-25' : ''),
+          nomorSPM: p.administrasiSPJ?.nomorSPM || (spjStatusClean === 'sudah_sp2d' ? (kNo ? `900/SPM/${kNo}` : '900/SPM/DPU/2026') : ''),
+          catatanVerifikator: p.administrasiSPJ?.catatanVerifikator || (spjStatusClean === 'sudah_sp2d' ? 'Berkas SPJ lengkap & SP2D lunas 100%' : (spjStatusClean === 'sudah_masuk' ? 'Berkas SPJ termin masuk, proses verifikasi SP2D' : 'Belum menyerahkan berkas SPJ')),
+          petugasVerifikator: p.administrasiSPJ?.petugasVerifikator || (spjStatusClean !== 'belum_masuk' ? 'Tim Verifikasi SPJ Keuangan' : '')
         },
         logs: Array.isArray(p.logs) ? p.logs : []
       };
@@ -442,7 +491,7 @@ export const AppProvider = ({ children }) => {
           const json = await res.json();
           if (json && json.status === 'success' && json.data && isMounted) {
             if (Array.isArray(json.data.projects) && json.data.projects.length > 0) {
-              setProjects(json.data.projects);
+              setProjects(json.data.projects.map(mapProjectClean));
             }
             if (json.data.systemSettings) {
               setSystemSettings((prev) => ({ ...prev, ...json.data.systemSettings }));

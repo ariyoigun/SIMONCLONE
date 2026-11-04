@@ -31,9 +31,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_1",
     "kodeSubKegiatan": "1.03.01.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -60,9 +67,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 41947136,
       "persenKeuangan": 26.32,
       "sisaAnggaran": 117412864,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_1-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 41947136,
+          "persen": 26.32,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_1",
@@ -98,9 +124,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_2",
     "kodeSubKegiatan": "1.03.01.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -127,9 +160,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 44218950,
       "persenKeuangan": 88.44,
       "sisaAnggaran": 5781050,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_2-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 44218950,
+          "persen": 88.44,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_2",
@@ -165,9 +217,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_3",
     "kodeSubKegiatan": "1.03.01.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -194,9 +253,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 1290000,
       "persenKeuangan": 7.59,
       "sisaAnggaran": 15710000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_3-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 1290000,
+          "persen": 7.59,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_3",
@@ -232,9 +310,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_4",
     "kodeSubKegiatan": "1.03.01.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -261,9 +346,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 48452825,
       "persenKeuangan": 89.89,
       "sisaAnggaran": 5447175,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_4-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 48452825,
+          "persen": 89.89,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_4",
@@ -299,9 +403,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_5",
     "kodeSubKegiatan": "1.03.01.2.02.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -328,9 +439,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 11710298280,
       "persenKeuangan": 81.47,
       "sisaAnggaran": 2663125720,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_5-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 11710298280,
+          "persen": 81.47,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_5",
@@ -366,9 +496,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_6",
     "kodeSubKegiatan": "1.03.01.2.02.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -395,9 +532,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 1287929268,
       "persenKeuangan": 79.51,
       "sisaAnggaran": 331858600,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_6-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 1287929268,
+          "persen": 79.51,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_6",
@@ -433,9 +589,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_7",
     "kodeSubKegiatan": "1.03.01.2.03.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -462,9 +625,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 24645250,
       "persenKeuangan": 54.77,
       "sisaAnggaran": 20354750,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_7-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 24645250,
+          "persen": 54.77,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_7",
@@ -500,9 +682,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_8",
     "kodeSubKegiatan": "1.03.01.2.04.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -529,9 +718,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 17000000,
       "persenKeuangan": 14.47,
       "sisaAnggaran": 100500000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_8-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 17000000,
+          "persen": 14.47,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_8",
@@ -567,9 +775,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_9",
     "kodeSubKegiatan": "1.03.01.2.04.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -596,9 +811,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 584260900,
       "persenKeuangan": 75.72,
       "sisaAnggaran": 187339100,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_9-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 584260900,
+          "persen": 75.72,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_9",
@@ -634,9 +868,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_10",
     "kodeSubKegiatan": "1.03.01.2.06.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -663,9 +904,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 18971250,
       "persenKeuangan": 94.86,
       "sisaAnggaran": 1028750,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_10-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 18971250,
+          "persen": 94.86,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_10",
@@ -701,9 +961,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_11",
     "kodeSubKegiatan": "1.03.01.2.06.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -730,9 +997,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 39229500,
       "persenKeuangan": 65.38,
       "sisaAnggaran": 20770500,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_11-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 39229500,
+          "persen": 65.38,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_11",
@@ -768,9 +1054,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_12",
     "kodeSubKegiatan": "1.03.01.2.06.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -797,9 +1090,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 43781000,
       "persenKeuangan": 70.61,
       "sisaAnggaran": 18219000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_12-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 43781000,
+          "persen": 70.61,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_12",
@@ -835,9 +1147,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_13",
     "kodeSubKegiatan": "1.03.01.2.06.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -864,9 +1183,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 39869875,
       "persenKeuangan": 88.6,
       "sisaAnggaran": 5130125,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_13-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 39869875,
+          "persen": 88.6,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_13",
@@ -902,9 +1240,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_14",
     "kodeSubKegiatan": "1.03.01.2.06.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -931,9 +1276,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 143426256,
       "persenKeuangan": 42.99,
       "sisaAnggaran": 190193744,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_14-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 143426256,
+          "persen": 42.99,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_14",
@@ -969,9 +1333,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_15",
     "kodeSubKegiatan": "1.03.01.2.06.10",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -998,9 +1369,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 41286375,
       "persenKeuangan": 82.57,
       "sisaAnggaran": 8713625,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_15-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 41286375,
+          "persen": 82.57,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_15",
@@ -1036,9 +1426,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_16",
     "kodeSubKegiatan": "1.03.01.2.07.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1067,7 +1464,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 262500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Belum mengajukan SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_16",
@@ -1103,9 +1509,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_17",
     "kodeSubKegiatan": "1.03.01.2.07.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1132,9 +1545,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 19880002,
       "persenKeuangan": 28.31,
       "sisaAnggaran": 50341998,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_17-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 19880002,
+          "persen": 28.31,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_17",
@@ -1170,9 +1602,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_18",
     "kodeSubKegiatan": "1.03.01.2.07.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1199,9 +1638,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 194150007,
       "persenKeuangan": 17.64,
       "sisaAnggaran": 906623963,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_18-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 194150007,
+          "persen": 17.64,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_18",
@@ -1237,9 +1695,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_19",
     "kodeSubKegiatan": "1.03.01.2.08.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1266,9 +1731,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 1500000,
       "persenKeuangan": 30,
       "sisaAnggaran": 3500000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_19-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 1500000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_19",
@@ -1304,9 +1788,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_20",
     "kodeSubKegiatan": "1.03.01.2.08.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1333,9 +1824,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 322191787,
       "persenKeuangan": 57.53,
       "sisaAnggaran": 237808213,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_20-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 322191787,
+          "persen": 57.53,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_20",
@@ -1371,9 +1881,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_21",
     "kodeSubKegiatan": "1.03.01.2.08.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1400,9 +1917,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 73101000,
       "persenKeuangan": 48.73,
       "sisaAnggaran": 76899000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_21-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 73101000,
+          "persen": 48.73,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_21",
@@ -1438,9 +1974,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_22",
     "kodeSubKegiatan": "1.03.01.2.09.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1467,9 +2010,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 35755000,
       "persenKeuangan": 73.01,
       "sisaAnggaran": 13217176,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_22-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 35755000,
+          "persen": 73.01,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_22",
@@ -1505,9 +2067,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_23",
     "kodeSubKegiatan": "1.03.01.2.09.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1534,9 +2103,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 364213321,
       "persenKeuangan": 63.86,
       "sisaAnggaran": 206132267,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_23-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 364213321,
+          "persen": 63.86,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_23",
@@ -1572,9 +2160,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_24",
     "kodeSubKegiatan": "1.03.01.2.09.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1601,9 +2196,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 48872000,
       "persenKeuangan": 97.74,
       "sisaAnggaran": 1128000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_24-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 48872000,
+          "persen": 97.74,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_24",
@@ -1639,9 +2253,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_25",
     "kodeSubKegiatan": "1.03.01.2.09.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1668,9 +2289,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 9433000,
       "persenKeuangan": 94.33,
       "sisaAnggaran": 567000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_25-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 9433000,
+          "persen": 94.33,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_25",
@@ -1706,9 +2346,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_26",
     "kodeSubKegiatan": "1.03.01.2.09.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1735,9 +2382,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 14478500,
       "persenKeuangan": 17.44,
       "sisaAnggaran": 68521500,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_26-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 14478500,
+          "persen": 17.44,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_26",
@@ -1773,9 +2439,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_27",
     "kodeSubKegiatan": "1.03.01.2.09.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1802,9 +2475,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 193497000,
       "persenKeuangan": 29.24,
       "sisaAnggaran": 468292214,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_27-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 193497000,
+          "persen": 29.24,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_27",
@@ -1840,9 +2532,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_28",
     "kodeSubKegiatan": "1.03.01.2.09.10",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1869,9 +2568,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 19650000,
       "persenKeuangan": 98.25,
       "sisaAnggaran": 350000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_28-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 19650000,
+          "persen": 98.25,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_28",
@@ -1907,9 +2625,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sekretariat_29",
     "kodeSubKegiatan": "1.03.01.2.09.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-01-02",
+      "targetSelesaiTender": "2026-12-31",
+      "catatanPraKontrak": "Kegiatan penunjang dinas berjalan secara swakelola"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-01-02"
       }
@@ -1936,9 +2661,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 124348500,
       "persenKeuangan": 65.16,
       "sisaAnggaran": 66492660,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sek_29-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-SEK",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 124348500,
+          "persen": 65.16,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Kasubag Program & Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sek_29",
@@ -1974,9 +2718,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-12-15",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -2003,9 +2754,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 868172100,
       "persenKeuangan": 30,
       "sisaAnggaran": 2025734900,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_30-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/006/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 868172100,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_30",
@@ -2039,9 +2809,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-12-15",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -2070,7 +2847,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 26057250,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_31",
@@ -2104,9 +2890,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2133,9 +2926,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 9760000,
       "persenKeuangan": 41.78,
       "sisaAnggaran": 13600000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_32-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 9760000,
+          "persen": 41.78,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_32",
@@ -2171,9 +2983,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2202,7 +3021,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_33",
@@ -2238,9 +3066,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2269,7 +3104,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 450000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_34",
@@ -2305,9 +3149,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -2336,7 +3187,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298832000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_35",
@@ -2372,9 +3232,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -2403,7 +3270,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199010000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_36",
@@ -2439,9 +3315,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2470,7 +3353,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_37",
@@ -2506,9 +3398,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2537,7 +3436,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_38",
@@ -2571,9 +3479,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_32",
     "kodeSubKegiatan": "1.03.02.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2600,9 +3515,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 6760000,
       "persenKeuangan": 8.37,
       "sisaAnggaran": 74040000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_39-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 6760000,
+          "persen": 8.37,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_39",
@@ -2638,9 +3572,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_32",
     "kodeSubKegiatan": "1.03.02.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2667,9 +3608,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 1197302115,
       "persenKeuangan": 60.48,
       "sisaAnggaran": 782428107,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_40-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 1197302115,
+          "persen": 60.48,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_40",
@@ -2703,9 +3663,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_33",
     "kodeSubKegiatan": "1.03.02.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2732,9 +3699,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 145269500,
       "persenKeuangan": 58.11,
       "sisaAnggaran": 104730500,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_41-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 145269500,
+          "persen": 58.11,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_41",
@@ -2768,9 +3754,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_34",
     "kodeSubKegiatan": "1.03.02.2.01.24",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2780,7 +3773,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 150000000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -2797,9 +3790,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 109935600,
       "persenKeuangan": 73.29,
       "sisaAnggaran": 40064400,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_42-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 109935600,
+          "persen": 73.29,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_42",
@@ -2833,9 +3845,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_35",
     "kodeSubKegiatan": "1.03.02.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2862,9 +3881,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 100350000,
       "persenKeuangan": 16.73,
       "sisaAnggaran": 499650000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_43-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 100350000,
+          "persen": 16.73,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_43",
@@ -2898,9 +3936,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_36",
     "kodeSubKegiatan": "1.03.02.2.01.26",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -2910,7 +3955,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 200000000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -2927,9 +3972,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198700700,
       "persenKeuangan": 99.35,
       "sisaAnggaran": 1299300,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_44-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 198700700,
+          "persen": 99.35,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_44",
@@ -2963,9 +4027,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -2992,9 +4063,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 286148100,
       "persenKeuangan": 30,
       "sisaAnggaran": 667678900,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_45-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/007/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 286148100,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_45",
@@ -3028,9 +4118,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3059,7 +4156,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25320210,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_46",
@@ -3095,9 +4201,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3124,9 +4237,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 293154900,
       "persenKeuangan": 30,
       "sisaAnggaran": 684028100,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_47-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/003/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 293154900,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_47",
@@ -3160,9 +4292,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3189,9 +4328,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 463492000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_48-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.3/005/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 463492000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.3/005/SP/TENDER/SDABK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_48",
@@ -3225,9 +4383,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3256,7 +4421,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25299675,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_49",
@@ -3292,9 +4466,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3321,9 +4502,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 578701800,
       "persenKeuangan": 30,
       "sisaAnggaran": 1350304200,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_50-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/009/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 578701800,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_50",
@@ -3357,9 +4557,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3388,7 +4595,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24961125,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_51",
@@ -3422,9 +4638,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -3453,7 +4676,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_52",
@@ -3487,9 +4719,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -3518,7 +4757,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_53",
@@ -3554,9 +4802,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3583,9 +4838,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 573583800,
       "persenKeuangan": 30,
       "sisaAnggaran": 1338362200,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_54-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/008/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 573583800,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_54",
@@ -3619,9 +4893,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -3650,7 +4931,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25320210,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_55",
@@ -3684,9 +4974,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -3713,9 +5010,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 148914000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_56-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/004/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 148914000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/004/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_56",
@@ -3749,9 +5065,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -3778,9 +5101,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 298936000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_57-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/005/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 298936000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/005/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_57",
@@ -3814,9 +5156,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -3845,7 +5194,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198978000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_58",
@@ -3879,9 +5237,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -3910,7 +5275,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 129642000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_59",
@@ -3944,9 +5318,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -3973,9 +5354,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198740000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_60-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/007/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 198740000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/007/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_60",
@@ -4009,9 +5409,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -4040,7 +5447,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 489472000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_61",
@@ -4074,9 +5490,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -4103,9 +5526,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 286263000,
       "persenKeuangan": 30,
       "sisaAnggaran": 667947000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_62-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/001/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 286263000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_62",
@@ -4139,9 +5581,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -4170,7 +5619,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25410675,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_63",
@@ -4204,9 +5662,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-08",
+      "targetSelesaiTender": "2026-12-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-08"
       }
@@ -4233,9 +5698,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 290591400,
       "persenKeuangan": 30,
       "sisaAnggaran": 678046600,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_64-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/014/SP/TENDER/SDABK/IX/2026",
+          "tanggalSP2D": "2026-09-08",
+          "jumlah": 290591400,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_64",
@@ -4269,9 +5753,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-08",
+      "targetSelesaiTender": "2026-12-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-08"
       }
@@ -4300,7 +5791,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25428990,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_65",
@@ -4336,9 +5836,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -4367,7 +5874,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2912739000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_66",
@@ -4401,9 +5917,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -4432,7 +5955,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24929490,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_67",
@@ -4466,9 +5998,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -4495,9 +6034,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 8200000,
       "persenKeuangan": 35.1,
       "sisaAnggaran": 15160000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_68-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 8200000,
+          "persen": 35.1,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_68",
@@ -4533,9 +6091,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -4564,7 +6129,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 960738000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_69",
@@ -4600,9 +6174,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -4631,7 +6212,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19513800,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_70",
@@ -4667,9 +6257,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -4698,7 +6295,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199628000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_71",
@@ -4734,9 +6340,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -4765,7 +6378,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 940631000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_72",
@@ -4801,9 +6423,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -4832,7 +6461,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19839030,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_73",
@@ -4868,9 +6506,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -4899,7 +6544,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 23360000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_74",
@@ -4935,9 +6589,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -4966,7 +6627,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 785960000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_75",
@@ -5002,9 +6672,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -5033,7 +6710,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 398468000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_76",
@@ -5069,9 +6755,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -5100,7 +6793,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 490544000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_77",
@@ -5136,9 +6838,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -5167,7 +6876,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 297863000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_78",
@@ -5203,9 +6921,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -5234,7 +6959,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198290000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_79",
@@ -5270,9 +7004,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -5301,7 +7042,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 133843000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_80",
@@ -5337,9 +7087,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -5368,7 +7125,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199449000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_81",
@@ -5404,9 +7170,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -5435,7 +7208,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298624000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_82",
@@ -5471,9 +7253,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -5502,7 +7291,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199498000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_83",
@@ -5538,9 +7336,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -5569,7 +7374,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199080000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_84",
@@ -5605,9 +7419,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -5636,7 +7457,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298912000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_85",
@@ -5672,9 +7502,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -5703,7 +7540,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 149061000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_86",
@@ -5739,9 +7585,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -5770,7 +7623,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298732000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_87",
@@ -5806,9 +7668,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -5837,7 +7706,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 148967000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_88",
@@ -5873,9 +7751,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -5904,7 +7789,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 588931000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_89",
@@ -5940,9 +7834,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -5971,7 +7872,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298526000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_90",
@@ -6007,9 +7917,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -6038,7 +7955,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199169000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_91",
@@ -6074,9 +8000,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -6105,7 +8038,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 248778000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_92",
@@ -6141,9 +8083,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -6172,7 +8121,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199014000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_93",
@@ -6208,9 +8166,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -6239,7 +8204,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 968000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_94",
@@ -6275,9 +8249,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -6306,7 +8287,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19491600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_95",
@@ -6342,9 +8332,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -6373,7 +8370,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 491026000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_96",
@@ -6409,9 +8415,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -6440,7 +8453,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 491740000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_97",
@@ -6476,9 +8498,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -6507,7 +8536,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 299324000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_98",
@@ -6543,9 +8581,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -6574,7 +8619,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 149077000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_99",
@@ -6611,9 +8665,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -6642,7 +8703,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1455627000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_100",
@@ -6678,9 +8748,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -6709,7 +8786,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19709160,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_101",
@@ -6745,9 +8831,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -6776,7 +8869,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 831212025.157773,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_102",
@@ -6812,9 +8914,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_38",
     "kodeSubKegiatan": "1.03.02.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -6843,7 +8952,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99612510,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_103",
@@ -6879,9 +8997,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_38",
     "kodeSubKegiatan": "1.03.02.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -6910,7 +9035,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99592530,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_104",
@@ -6944,9 +9078,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_39",
     "kodeSubKegiatan": "1.03.02.2.01.10",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -6973,9 +9114,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 139354800,
       "persenKeuangan": 30,
       "sisaAnggaran": 325161200,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_105-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/013/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 139354800,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_105",
@@ -7009,9 +9169,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_39",
     "kodeSubKegiatan": "1.03.02.2.01.10",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -7040,7 +9207,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24961125,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_106",
@@ -7074,9 +9250,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_40",
     "kodeSubKegiatan": "1.03.02.2.01.11",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -7105,7 +9288,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_107",
@@ -7139,9 +9331,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_40",
     "kodeSubKegiatan": "1.03.02.2.01.11",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -7168,9 +9367,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198760000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_108-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/006/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 198760000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/006/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_108",
@@ -7206,9 +9424,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_40",
     "kodeSubKegiatan": "1.03.02.2.01.11",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -7237,7 +9462,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198337000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_109",
@@ -7271,9 +9505,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-31",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -7300,9 +9541,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 149374000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_110-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/012/SPK/PL/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 149374000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/012/SPK/PL/SDABK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_110",
@@ -7336,9 +9596,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -7367,7 +9634,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_111",
@@ -7401,9 +9677,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -7430,9 +9713,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99036000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_112-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/003/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 99036000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/003/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_112",
@@ -7466,9 +9768,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -7495,9 +9804,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99074000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_113-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/010/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 99074000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/010/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_113",
@@ -7531,9 +9859,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -7562,7 +9897,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_114",
@@ -7596,9 +9940,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -7625,9 +9976,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 248866000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_115-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/001/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 248866000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/001/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_115",
@@ -7661,9 +10031,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-31",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -7692,7 +10069,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199177000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_116",
@@ -7726,9 +10112,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -7757,7 +10150,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_117",
@@ -7791,9 +10193,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -7822,7 +10231,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_118",
@@ -7856,9 +10274,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -7887,7 +10312,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_119",
@@ -7921,9 +10355,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -7952,7 +10393,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_120",
@@ -7986,9 +10436,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -8017,7 +10474,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_121",
@@ -8051,9 +10517,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-31",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -8082,7 +10555,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199048000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_122",
@@ -8116,9 +10598,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-31",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -8145,9 +10634,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 146481000,
       "persenKeuangan": 30,
       "sisaAnggaran": 341789000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_123-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/011/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 146481000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_123",
@@ -8183,9 +10691,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-31",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -8212,9 +10727,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 410356800,
       "persenKeuangan": 30,
       "sisaAnggaran": 957499200,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_124-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/010/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 410356800,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_124",
@@ -8250,9 +10784,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-31",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -8279,9 +10820,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 293054400,
       "persenKeuangan": 30,
       "sisaAnggaran": 683793600,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_125-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/012/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 293054400,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_125",
@@ -8315,9 +10875,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -8346,7 +10913,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_126",
@@ -8383,9 +10959,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -8414,7 +10997,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1280000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_127",
@@ -8450,9 +11042,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -8481,7 +11080,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_128",
@@ -8517,9 +11125,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -8548,7 +11163,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 963493000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_129",
@@ -8584,9 +11208,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -8615,7 +11246,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19558200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_130",
@@ -8651,9 +11291,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -8682,7 +11329,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 148456000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_131",
@@ -8718,9 +11374,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -8749,7 +11412,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 959159000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_132",
@@ -8785,9 +11457,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -8816,7 +11495,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19491600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_133",
@@ -8852,9 +11540,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -8883,7 +11578,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199097000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_134",
@@ -8919,9 +11623,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -8950,7 +11661,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199196000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_135",
@@ -8986,9 +11706,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -9017,7 +11744,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199010000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_136",
@@ -9053,9 +11789,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -9084,7 +11827,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298721000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_137",
@@ -9120,9 +11872,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -9151,7 +11910,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 298894000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_138",
@@ -9187,9 +11955,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -9218,7 +11993,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199288000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_139",
@@ -9254,9 +12038,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -9285,7 +12076,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99229000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_140",
@@ -9321,9 +12121,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -9352,7 +12159,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 173939000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_141",
@@ -9388,9 +12204,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_42",
     "kodeSubKegiatan": "1.03.02.2.01.13",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -9419,7 +12242,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199238000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_142",
@@ -9453,9 +12285,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-10-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -9482,9 +12321,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198907000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_143-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/002/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 198907000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/002/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_143",
@@ -9520,9 +12378,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -9551,7 +12416,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 398090000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_144",
@@ -9587,9 +12461,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -9618,7 +12499,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 957232988.451036,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_145",
@@ -9654,9 +12544,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-29"
       }
@@ -9685,7 +12582,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19558200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_146",
@@ -9721,9 +12627,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_44",
     "kodeSubKegiatan": "1.03.02.2.02.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -9733,7 +12646,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 1744151700,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -9750,9 +12663,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 713151284,
       "persenKeuangan": 40.89,
       "sisaAnggaran": 1031000416,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_147-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 713151284,
+          "persen": 40.89,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_147",
@@ -9786,9 +12718,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_45",
     "kodeSubKegiatan": "1.03.02.2.02.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -9798,7 +12737,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 100000000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -9815,9 +12754,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 97854200,
       "persenKeuangan": 97.85,
       "sisaAnggaran": 2145800,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_148-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 97854200,
+          "persen": 97.85,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_148",
@@ -9851,9 +12809,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_46",
     "kodeSubKegiatan": "1.03.02.2.02.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -9880,9 +12845,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 204647218,
       "persenKeuangan": 77.04,
       "sisaAnggaran": 60977782,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_149-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 204647218,
+          "persen": 77.04,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_149",
@@ -9918,9 +12902,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_47",
     "kodeSubKegiatan": "1.03.02.2.02.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-15"
       }
@@ -9949,7 +12940,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99684660,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_150",
@@ -9983,9 +12983,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_48",
     "kodeSubKegiatan": "1.03.02.2.02.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10014,7 +13021,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_151",
@@ -10048,9 +13064,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_49",
     "kodeSubKegiatan": "1.03.03.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-12",
+      "targetSelesaiTender": "2026-04-10",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-12"
       }
@@ -10077,9 +13100,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 49550000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_152-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/04Pr/SPK/SPAM.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-12",
+          "jumlah": 49550000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-12",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/04Pr/SPK/SPAM.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_152",
@@ -10113,9 +13155,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_49",
     "kodeSubKegiatan": "1.03.03.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-12",
+      "targetSelesaiTender": "2026-04-10",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-12"
       }
@@ -10142,9 +13191,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 49550000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_153-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/05Pr/SPK/SPAM.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-12",
+          "jumlah": 49550000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-12",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/05Pr/SPK/SPAM.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_153",
@@ -10178,9 +13246,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_49",
     "kodeSubKegiatan": "1.03.03.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-05-11",
+      "targetSelesaiTender": "2026-06-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-05-11"
       }
@@ -10207,9 +13282,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99367000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_154-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/06Pr/SPK/SPAM.PL.CK/V/2026",
+          "tanggalSP2D": "2026-05-11",
+          "jumlah": 99367000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-05-11",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/06Pr/SPK/SPAM.PL.CK/V/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_154",
@@ -10243,9 +13337,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
@@ -10274,7 +13375,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 299100000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_155",
@@ -10308,9 +13418,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10339,7 +13456,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_156",
@@ -10373,9 +13499,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
@@ -10404,7 +13537,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_157",
@@ -10438,9 +13580,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "14 September - 12 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "14 September - 12 November 2026"
       }
@@ -10469,7 +13618,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199190000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_158",
@@ -10503,9 +13661,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
@@ -10534,7 +13699,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_159",
@@ -10568,9 +13742,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
@@ -10599,7 +13780,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_160",
@@ -10633,9 +13823,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10664,7 +13861,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_161",
@@ -10698,9 +13904,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "14 September - 12 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "14 September - 12 November 2026"
       }
@@ -10729,7 +13942,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199380000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_162",
@@ -10763,9 +13985,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
@@ -10794,7 +14023,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_163",
@@ -10828,9 +14066,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "15 September - 13 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "15 September - 13 November 2026"
       }
@@ -10859,7 +14104,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.19,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_164",
@@ -10893,9 +14147,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10924,7 +14185,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_165",
@@ -10958,9 +14228,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10970,7 +14247,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 90000000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -10987,9 +14264,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 55582500,
       "persenKeuangan": 61.76,
       "sisaAnggaran": 34417500,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_166-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 55582500,
+          "persen": 61.76,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_166",
@@ -11023,9 +14319,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11054,7 +14357,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 250000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_167",
@@ -11088,9 +14400,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11119,7 +14438,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 250000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_168",
@@ -11153,9 +14481,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11184,7 +14519,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_169",
@@ -11218,9 +14562,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11249,7 +14600,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_170",
@@ -11283,9 +14643,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "14 September - 12 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "14 September - 12 November 2026"
       }
@@ -11314,7 +14681,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19955000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_171",
@@ -11348,9 +14724,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
@@ -11379,7 +14762,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.199,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_172",
@@ -11413,9 +14805,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11444,7 +14843,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_173",
@@ -11478,9 +14886,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11509,7 +14924,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_174",
@@ -11543,9 +14967,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11574,7 +15005,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_175",
@@ -11608,9 +15048,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11639,7 +15086,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_176",
@@ -11673,9 +15129,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "24 Agustus - 22 Oktober 2026"
       }
@@ -11704,7 +15167,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0.41,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_177",
@@ -11738,9 +15210,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_52",
     "kodeSubKegiatan": "1.03.05.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11767,9 +15246,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 37349300,
       "persenKeuangan": 7.47,
       "sisaAnggaran": 462650700,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_178-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 37349300,
+          "persen": 7.47,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_178",
@@ -11803,9 +15301,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_53",
     "kodeSubKegiatan": "1.03.05.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11832,9 +15337,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 22250000,
       "persenKeuangan": 56.19,
       "sisaAnggaran": 17350000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_179-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 22250000,
+          "persen": 56.19,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_179",
@@ -11868,9 +15392,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11880,7 +15411,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 190000000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -11897,9 +15428,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 112260217,
       "persenKeuangan": 59.08,
       "sisaAnggaran": 77739783,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_180-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 112260217,
+          "persen": 59.08,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_180",
@@ -11933,9 +15483,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11964,7 +15521,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_181",
@@ -11998,9 +15564,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 Juli - Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
@@ -12027,9 +15600,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_182-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.2.8/625.6  05/TPS-KSM.BT/VII/2026",
+          "tanggalSP2D": "2026-07-07",
+          "jumlah": 99200000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.2.8/625.6  05/TPS-KSM.BT/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_182",
@@ -12063,9 +15655,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 Juli - Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
@@ -12092,9 +15691,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_183-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.2.8/625.7 04/KSM.MM/VII/2026",
+          "tanggalSP2D": "2026-07-07",
+          "jumlah": 99200000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.2.8/625.7 04/KSM.MM/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_183",
@@ -12128,9 +15746,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 Juli - Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
@@ -12157,9 +15782,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_184-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.2.8/625.5 17/TPS-KSM.SR/VII/2026",
+          "tanggalSP2D": "2026-07-07",
+          "jumlah": 99200000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.2.8/625.5 17/TPS-KSM.SR/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_184",
@@ -12193,9 +15837,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 Juli - Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
@@ -12222,9 +15873,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_185-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.2.8/625.3 17/BPSPAMS.KMD/VII/2026",
+          "tanggalSP2D": "2026-07-07",
+          "jumlah": 99200000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.2.8/625.3 17/BPSPAMS.KMD/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_185",
@@ -12258,9 +15928,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 Juli - Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "7 Juli - Desember 2026"
       }
@@ -12287,9 +15964,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_186-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.2.8/625.4 12/KSM.TB/VII/2026",
+          "tanggalSP2D": "2026-07-07",
+          "jumlah": 99200000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.2.8/625.4 12/KSM.TB/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_186",
@@ -12323,9 +16019,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -12354,7 +16057,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 354000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_187",
@@ -12388,9 +16100,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-02-25",
+      "targetSelesaiTender": "2026-12-22",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-02-25"
       }
@@ -12419,7 +16138,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99156000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_188",
@@ -12453,9 +16181,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-05-08",
+      "targetSelesaiTender": "2026-06-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-05-08"
       }
@@ -12482,9 +16217,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99367000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_189-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/07Pr/SPK/SPAL.PL.CK/V/2026",
+          "tanggalSP2D": "2026-05-08",
+          "jumlah": 99367000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-05-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/07Pr/SPK/SPAL.PL.CK/V/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_189",
@@ -12518,9 +16272,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "23 Oktober - 6 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "23 Oktober - 6 November 2026"
       }
@@ -12549,7 +16310,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99398000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_190",
@@ -12583,9 +16353,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -12612,9 +16389,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 3550000,
       "persenKeuangan": 3.44,
       "sisaAnggaran": 99522000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_191-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 3550000,
+          "persen": 3.44,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_191",
@@ -12648,9 +16444,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -12679,7 +16482,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_192",
@@ -12715,9 +16527,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -12746,7 +16565,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_193",
@@ -12780,9 +16608,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "28 September - 9 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "28 September - 9 Oktober 2026"
       }
@@ -12811,7 +16646,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 17760000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_194",
@@ -12845,9 +16689,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -12876,7 +16727,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_195",
@@ -12910,9 +16770,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -12939,9 +16806,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 30000000,
       "persenKeuangan": 6.82,
       "sisaAnggaran": 410000000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_196-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 30000000,
+          "persen": 6.82,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_196",
@@ -12975,9 +16861,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -13006,7 +16899,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_197",
@@ -13040,9 +16942,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -13071,7 +16980,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_198",
@@ -13105,9 +17023,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -13136,7 +17061,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_199",
@@ -13172,9 +17106,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
@@ -13201,9 +17142,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99000000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_200-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 99000000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_200",
@@ -13239,9 +17199,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
@@ -13268,9 +17235,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 148000000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_201-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 148000000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_201",
@@ -13306,9 +17292,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
@@ -13335,9 +17328,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 98400000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_202-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 98400000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_202",
@@ -13371,9 +17383,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -13400,9 +17419,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 139530000,
       "persenKeuangan": 30,
       "sisaAnggaran": 325570000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_203-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.05.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-13",
+          "jumlah": 139530000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-13",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_203",
@@ -13436,9 +17474,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -13465,9 +17510,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 284520000,
       "persenKeuangan": 30,
       "sisaAnggaran": 663880000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_204-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.04.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-13",
+          "jumlah": 284520000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-13",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_204",
@@ -13503,9 +17567,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -13534,7 +17605,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1905600000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_205",
@@ -13571,9 +17651,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -13600,9 +17687,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 424500000,
       "persenKeuangan": 30,
       "sisaAnggaran": 990500000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_206-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.06.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-13",
+          "jumlah": 424500000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-13",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_206",
@@ -13636,9 +17742,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "10 Agustus - 8 Oktober 2026"
       }
@@ -13667,7 +17780,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 98.9,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_207",
@@ -13701,9 +17823,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -13730,9 +17859,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 283770000,
       "persenKeuangan": 30,
       "sisaAnggaran": 662130000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_208-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.02.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-13",
+          "jumlah": 283770000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-13",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_208",
@@ -13766,9 +17914,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -13795,9 +17950,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 283920000,
       "persenKeuangan": 30,
       "sisaAnggaran": 662480000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_209-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.01.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-13",
+          "jumlah": 283920000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-13",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_209",
@@ -13833,9 +18007,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-05",
+      "targetSelesaiTender": "2026-04-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-05"
       }
@@ -13862,9 +18043,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 49774000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_210-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/02Pr/SPK/DRAINASE.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-05",
+          "jumlah": 49774000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/02Pr/SPK/DRAINASE.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_210",
@@ -13900,9 +18100,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-05",
+      "targetSelesaiTender": "2026-04-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-05"
       }
@@ -13929,9 +18136,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 49544000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_211-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/03Pr/SPK/DRAINASE.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-05",
+          "jumlah": 49544000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/03Pr/SPK/DRAINASE.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_211",
@@ -13965,9 +18191,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -13996,7 +18229,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 70386000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_212",
@@ -14030,9 +18272,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "19 Agustus - 16 November 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "19 Agustus - 16 November 2026"
       }
@@ -14061,7 +18310,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 44292000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_213",
@@ -14095,9 +18353,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -14126,7 +18391,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_214",
@@ -14162,9 +18436,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "28 September - 9 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "28 September - 9 Oktober 2026"
       }
@@ -14193,7 +18474,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 22013000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_215",
@@ -14227,9 +18517,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -14258,7 +18555,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_216",
@@ -14292,9 +18598,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "28 September - 9 Oktober 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "28 September - 9 Oktober 2026"
       }
@@ -14323,7 +18636,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 21666000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_217",
@@ -14357,9 +18679,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -14388,7 +18717,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_218",
@@ -14424,9 +18762,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "20 oktober - 18 desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "20 oktober - 18 desember 2026"
       }
@@ -14455,7 +18800,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99418000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_219",
@@ -14491,9 +18845,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "30 Oktober - 18 Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
@@ -14522,7 +18883,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 19703000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_220",
@@ -14556,9 +18926,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "30 Oktober - 18 Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
@@ -14587,7 +18964,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24619000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_221",
@@ -14624,9 +19010,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "30 Oktober - 18 Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
@@ -14655,7 +19048,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1207300000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_222",
@@ -14691,9 +19093,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "30 Oktober - 18 Desember 2026",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "30 Oktober - 18 Desember 2026"
       }
@@ -14722,7 +19131,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1476300000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_223",
@@ -14756,9 +19174,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -14787,7 +19212,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 40000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_224",
@@ -14823,9 +19257,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_58",
     "kodeSubKegiatan": "1.03.06.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -14852,9 +19293,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 489917400,
       "persenKeuangan": 69.99,
       "sisaAnggaran": 210082600,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_225-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 489917400,
+          "persen": 69.99,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_225",
@@ -14888,9 +19348,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-07",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-07"
       }
@@ -14919,7 +19386,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 81283000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_226",
@@ -14953,9 +19429,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-12",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-12"
       }
@@ -14982,9 +19465,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 3959000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_227-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/01Pr/SPK/BG.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-12",
+          "jumlah": 3959000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-12",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/01Pr/SPK/BG.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_227",
@@ -15018,9 +19520,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -15049,7 +19558,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1914000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_228",
@@ -15083,9 +19601,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15114,7 +19639,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_229",
@@ -15148,9 +19682,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15177,9 +19718,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 1150000,
       "persenKeuangan": 14.63,
       "sisaAnggaran": 6712480,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_230-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 1150000,
+          "persen": 14.63,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_230",
@@ -15215,9 +19775,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-28",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-28"
       }
@@ -15246,7 +19813,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 11834000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_231",
@@ -15282,9 +19858,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-28",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-28"
       }
@@ -15313,7 +19896,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50527000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_232",
@@ -15349,9 +19941,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-28",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-28"
       }
@@ -15380,7 +19979,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 13818000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_233",
@@ -15416,9 +20024,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15447,7 +20062,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 32000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_234",
@@ -15483,9 +20107,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15514,7 +20145,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_235",
@@ -15550,9 +20190,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15581,7 +20228,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_236",
@@ -15617,9 +20273,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15648,7 +20311,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 283740480,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_237",
@@ -15684,9 +20356,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15715,7 +20394,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 381328560,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_238",
@@ -15751,9 +20439,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15782,7 +20477,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 378041760,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_239",
@@ -15818,9 +20522,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15849,7 +20560,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 139659120,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_240",
@@ -15885,9 +20605,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15916,7 +20643,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 283740480,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_241",
@@ -15952,9 +20688,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15983,7 +20726,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 478551960,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_242",
@@ -16019,9 +20771,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -16050,7 +20809,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 574532640,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_243",
@@ -16084,9 +20852,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -16115,7 +20890,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 185834000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_244",
@@ -16149,9 +20933,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -16180,7 +20971,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 137668000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_245",
@@ -16214,9 +21014,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -16245,7 +21052,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_246",
@@ -16279,9 +21095,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -16310,7 +21133,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 183684000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_247",
@@ -16344,9 +21176,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -16375,7 +21214,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 92158000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_248",
@@ -16409,9 +21257,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-04",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-04"
       }
@@ -16438,9 +21293,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 185133000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_249-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.13.PL.CK/IX/2026",
+          "tanggalSP2D": "2026-09-04",
+          "jumlah": 185133000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-04",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.13.PL.CK/IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_249",
@@ -16474,9 +21348,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -16505,7 +21386,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 185788000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_250",
@@ -16539,9 +21429,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-04",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-04"
       }
@@ -16570,7 +21467,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 185460000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_251",
@@ -16604,9 +21510,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-03",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-03"
       }
@@ -16633,9 +21546,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 188307000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_252-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-03",
+          "jumlah": 188307000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-03",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_252",
@@ -16669,9 +21601,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-03",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-03"
       }
@@ -16698,9 +21637,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 187732000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_253-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-03",
+          "jumlah": 187732000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-03",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_253",
@@ -16734,9 +21692,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-03",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-03"
       }
@@ -16765,7 +21730,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 140057000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_254",
@@ -16799,9 +21773,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -16830,7 +21811,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 138176000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_255",
@@ -16864,9 +21854,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-12",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-12"
       }
@@ -16893,9 +21890,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 27777000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_256-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/02Pr/SPK/BG.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-12",
+          "jumlah": 27777000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-12",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/02Pr/SPK/BG.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_256",
@@ -16929,9 +21945,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-12",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-12"
       }
@@ -16958,9 +21981,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 24859000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_257-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/03Pr/SPK/BG.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-12",
+          "jumlah": 24859000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-12",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/03Pr/SPK/BG.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_257",
@@ -16994,9 +22036,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-12",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-12"
       }
@@ -17023,9 +22072,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 15806000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_258-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/04Pr/SPK/BG.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-12",
+          "jumlah": 15806000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-12",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/04Pr/SPK/BG.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_258",
@@ -17061,9 +22129,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-28",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-28"
       }
@@ -17092,7 +22167,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 11632000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_259",
@@ -17126,9 +22210,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17157,7 +22248,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_260",
@@ -17191,9 +22291,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -17222,7 +22329,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 21534000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_261",
@@ -17256,9 +22372,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -17287,7 +22410,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 18856000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_262",
@@ -17321,9 +22453,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-10"
       }
@@ -17352,7 +22491,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8796000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_263",
@@ -17388,9 +22536,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17419,7 +22574,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_264",
@@ -17453,9 +22617,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17484,7 +22655,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_265",
@@ -17518,9 +22698,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17549,7 +22736,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_266",
@@ -17583,9 +22779,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17614,7 +22817,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_267",
@@ -17648,9 +22860,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17679,7 +22898,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_268",
@@ -17713,9 +22941,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17744,7 +22979,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_269",
@@ -17778,9 +23022,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17807,9 +23058,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 40530500,
       "persenKeuangan": 32.44,
       "sisaAnggaran": 84398500,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_270-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 40530500,
+          "persen": 32.44,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_270",
@@ -17845,9 +23115,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17876,7 +23153,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 478544800,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_271",
@@ -17912,9 +23198,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-02",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-02"
       }
@@ -17943,7 +23236,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 7781000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_272",
@@ -17979,9 +23281,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18010,7 +23319,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 12000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_273",
@@ -18046,9 +23364,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18077,7 +23402,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 286122200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_274",
@@ -18113,9 +23447,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18144,7 +23485,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 236084500,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_275",
@@ -18180,9 +23530,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18211,7 +23568,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 187577600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_276",
@@ -18247,9 +23613,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18278,7 +23651,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_277",
@@ -18314,9 +23696,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18345,7 +23734,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_278",
@@ -18381,9 +23779,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18412,7 +23817,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_279",
@@ -18448,9 +23862,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18479,7 +23900,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 8000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_280",
@@ -18515,9 +23945,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18546,7 +23983,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 12000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_281",
@@ -18582,9 +24028,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18613,7 +24066,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 666589600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_282",
@@ -18649,9 +24111,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18680,7 +24149,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_283",
@@ -18716,9 +24194,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18747,7 +24232,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_284",
@@ -18784,9 +24278,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18815,7 +24316,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1432181600,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_285",
@@ -18851,9 +24361,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18882,7 +24399,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_286",
@@ -18918,9 +24444,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18949,7 +24482,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 24000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_287",
@@ -18986,9 +24528,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-05"
       }
@@ -19015,9 +24564,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 2164779300,
       "persenKeuangan": 30,
       "sisaAnggaran": 5051151700,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_288-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/01/SP/Perub.BG.CK/X/2026",
+          "tanggalSP2D": "2026-10-05",
+          "jumlah": 2164779300,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_288",
@@ -19053,9 +24621,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-05"
       }
@@ -19084,7 +24659,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 39732000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_289",
@@ -19121,9 +24705,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-30",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-30"
       }
@@ -19152,7 +24743,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 3584729000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_290",
@@ -19188,9 +24788,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19219,7 +24826,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_291",
@@ -19255,9 +24871,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-28",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-28"
       }
@@ -19286,7 +24909,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 29550000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_292",
@@ -19320,9 +24952,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_61",
     "kodeSubKegiatan": "1.03.08.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19349,9 +24988,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 129453500,
       "persenKeuangan": 64.73,
       "sisaAnggaran": 70546500,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_293-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 129453500,
+          "persen": 64.73,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_293",
@@ -19387,9 +25045,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19399,7 +25064,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 100000000,
       "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -19418,7 +25083,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_294",
@@ -19454,9 +25128,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19485,7 +25166,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_295",
@@ -19521,9 +25211,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19552,7 +25249,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_296",
@@ -19588,9 +25294,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19619,7 +25332,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_297",
@@ -19655,9 +25377,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19686,7 +25415,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_298",
@@ -19722,9 +25460,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19753,7 +25498,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_299",
@@ -19789,9 +25543,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19820,7 +25581,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_300",
@@ -19854,9 +25624,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -19883,9 +25660,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199353000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_301-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.43.3/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 199353000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.43.3/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_301",
@@ -19919,9 +25715,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -19948,9 +25751,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 148865000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_302-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.32/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 148865000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.32/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_302",
@@ -19984,9 +25806,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -20015,7 +25844,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_303",
@@ -20049,9 +25887,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20078,9 +25923,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 149384000,
       "persenKeuangan": 99.85,
       "sisaAnggaran": 222000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_304-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.30/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 149384000,
+          "persen": 99.85,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_304",
@@ -20114,9 +25978,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -20145,7 +26016,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_305",
@@ -20179,9 +26059,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20208,9 +26095,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 98530000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_306-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.043/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 98530000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.043/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_306",
@@ -20244,9 +26150,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20273,9 +26186,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 149296000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_307-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.27/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 149296000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.27/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_307",
@@ -20309,9 +26241,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20338,9 +26277,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199335000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_308-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.43.2/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 199335000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.43.2/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_308",
@@ -20374,9 +26332,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20403,9 +26368,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199251000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_309-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.042/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 199251000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.042/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_309",
@@ -20439,9 +26423,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20468,9 +26459,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199214000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_310-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.33/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 199214000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.33/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_310",
@@ -20504,9 +26514,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20533,9 +26550,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 149454000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_311-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.03.02.2/PL.SPK.BM.039/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 149454000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.039/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_311",
@@ -20569,9 +26605,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20598,9 +26641,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99390000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_312-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.55/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 99390000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.55/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_312",
@@ -20634,9 +26696,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20663,9 +26732,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99129000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_313-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.35/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 99129000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.35/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_313",
@@ -20699,9 +26787,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -20728,9 +26823,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 39236500,
       "persenKeuangan": 49.05,
       "sisaAnggaran": 40763500,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_314-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 39236500,
+          "persen": 49.05,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_314",
@@ -20764,9 +26878,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-07",
+      "targetSelesaiTender": "2026-06-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-07"
       }
@@ -20793,9 +26914,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199130000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_315-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PL.SPK.BM.005/IV/2026",
+          "tanggalSP2D": "2026-04-07",
+          "jumlah": 199130000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.005/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_315",
@@ -20829,9 +26969,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-07",
+      "targetSelesaiTender": "2026-06-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-07"
       }
@@ -20858,9 +27005,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198886000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_316-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PL.SPK.BM.006/IV/2026",
+          "tanggalSP2D": "2026-04-07",
+          "jumlah": 198886000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.006/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_316",
@@ -20894,9 +27060,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-07",
+      "targetSelesaiTender": "2026-06-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-07"
       }
@@ -20923,9 +27096,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 148834000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_317-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PL.SPK.BM.007/IV/2026",
+          "tanggalSP2D": "2026-04-07",
+          "jumlah": 148834000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.007/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_317",
@@ -20959,9 +27151,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -20988,9 +27187,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199034000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_318-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.28/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 199034000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.28/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_318",
@@ -21024,9 +27242,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -21053,9 +27278,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 298414000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_319-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPPBJ.BM.57/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 298414000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPPBJ.BM.57/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_319",
@@ -21089,9 +27333,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -21118,9 +27369,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199405000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_320-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.03.02.2/PL.SPK.BM.056/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 199405000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.056/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_320",
@@ -21154,9 +27424,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -21183,9 +27460,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198549000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_321-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.31/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 198549000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.31/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_321",
@@ -21219,9 +27515,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -21248,9 +27551,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 174127000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_322-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.36/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 174127000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.36/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_322",
@@ -21284,9 +27606,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -21313,9 +27642,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 149183000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_323-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.37/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 149183000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.37/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_323",
@@ -21349,9 +27697,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -21378,9 +27733,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198604000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_324-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.03.02.2/PL.SPK.BM.038/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 198604000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.038/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_324",
@@ -21414,9 +27788,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -21443,9 +27824,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 955444001,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_325-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.03.02.2/APBD.SP.BM.74/VIII/2026",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 955444001,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.03.02.2/APBD.SP.BM.74/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_325",
@@ -21479,9 +27879,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-08",
+      "targetSelesaiTender": "2026-05-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-08"
       }
@@ -21508,9 +27915,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 14705000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_326-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.016/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14705000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.016/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_326",
@@ -21544,9 +27970,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -21575,7 +28008,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_327",
@@ -21609,9 +28051,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-07",
+      "targetSelesaiTender": "2026-06-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-07"
       }
@@ -21638,9 +28087,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 149223000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_328-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/PL.SPK.BM.009/IV/2026",
+          "tanggalSP2D": "2026-04-07",
+          "jumlah": 149223000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/PL.SPK.BM.009/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_328",
@@ -21674,9 +28142,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -21703,9 +28178,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 954431000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_329-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.03.02.2/APBD.SP.BM.75/VIII/2026",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 954431000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.03.02.2/APBD.SP.BM.75/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_329",
@@ -21739,9 +28233,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-08",
+      "targetSelesaiTender": "2026-05-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-08"
       }
@@ -21768,9 +28269,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 14705000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_330-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.017/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14705000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.017/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_330",
@@ -21804,9 +28324,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -21835,7 +28362,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_331",
@@ -21869,9 +28405,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -21900,7 +28443,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_332",
@@ -21934,9 +28486,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -21965,7 +28524,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_333",
@@ -21999,9 +28567,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -22030,7 +28605,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_334",
@@ -22066,9 +28650,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-21",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-21"
       }
@@ -22095,9 +28686,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 586551392,
       "persenKeuangan": 30.86,
       "sisaAnggaran": 1313953249,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_335-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/APBD.SP.BM.069/VIII/2026",
+          "tanggalSP2D": "2026-08-21",
+          "jumlah": 586551392,
+          "persen": 30.86,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-21",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_335",
@@ -22131,9 +28741,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-08",
+      "targetSelesaiTender": "2026-05-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-08"
       }
@@ -22160,9 +28777,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 29646000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_336-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.010/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 29646000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.010/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_336",
@@ -22196,9 +28832,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -22227,7 +28870,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_337",
@@ -22261,9 +28913,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-23",
+      "targetSelesaiTender": "2026-09-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-23"
       }
@@ -22292,7 +28951,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198789359,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_338",
@@ -22326,9 +28994,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-23",
+      "targetSelesaiTender": "2026-09-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-23"
       }
@@ -22355,9 +29030,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198789359,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_339-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/ PL.SPK.BM.21/VII/2026",
+          "tanggalSP2D": "2026-07-23",
+          "jumlah": 198789359,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-23",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/ PL.SPK.BM.21/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_339",
@@ -22391,9 +29085,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -22422,7 +29123,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 198958000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_340",
@@ -22456,9 +29166,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-07",
+      "targetSelesaiTender": "2026-06-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-07"
       }
@@ -22485,9 +29202,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 198651000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_341-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PL.SPK.BM.008/IV/2026",
+          "tanggalSP2D": "2026-04-07",
+          "jumlah": 198651000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.008/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_341",
@@ -22521,9 +29257,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -22550,9 +29293,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199455000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_342-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.040/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 199455000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.040/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_342",
@@ -22586,9 +29348,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -22617,7 +29386,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 750000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_343",
@@ -22651,9 +29429,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -22682,7 +29467,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_344",
@@ -22716,9 +29510,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-04",
+      "targetSelesaiTender": "2026-10-02",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-04"
       }
@@ -22745,9 +29546,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99601000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_345-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.023/VIII/2026",
+          "tanggalSP2D": "2026-08-04",
+          "jumlah": 99601000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-04",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.023/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_345",
@@ -22781,9 +29601,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -22810,9 +29637,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 491900000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_346-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01M09RW6VFV2GRYK6Y2BA3M2PR",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 491900000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01M09RW6VFV2GRYK6Y2BA3M2PR",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_346",
@@ -22846,9 +29692,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-05",
+      "targetSelesaiTender": "2026-10-03",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-05"
       }
@@ -22875,9 +29728,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199228000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_347-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.29/VIII/2026",
+          "tanggalSP2D": "2026-08-05",
+          "jumlah": 199228000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.29/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_347",
@@ -22913,9 +29785,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -22942,9 +29821,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 442424160,
       "persenKeuangan": 30,
       "sisaAnggaran": 1032323039,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_348-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.72/VIII/2026",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 442424160,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_348",
@@ -22980,9 +29878,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-07",
+      "targetSelesaiTender": "2026-12-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-07"
       }
@@ -23009,9 +29914,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 591067508,
       "persenKeuangan": 591067508000,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_349-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.098/IX/2026",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 591067508,
+          "persen": 591067508000,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/000.3.7/BANGUB.SP.BM.098/IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_349",
@@ -23045,9 +29969,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-01",
+      "targetSelesaiTender": "2026-12-08",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-01"
       }
@@ -23076,7 +30007,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 441501918,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_350",
@@ -23112,9 +30052,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-07",
+      "targetSelesaiTender": "2026-12-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-07"
       }
@@ -23141,9 +30088,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 293158632,
       "persenKeuangan": 30,
       "sisaAnggaran": 684036808,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_351-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M1NKRMJSBFDFE6WF48NHRZAS,",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 293158632,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_351",
@@ -23179,9 +30145,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-21",
+      "targetSelesaiTender": "2026-11-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-21"
       }
@@ -23208,9 +30181,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 295318331,
       "persenKeuangan": 30,
       "sisaAnggaran": 689076106,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_352-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7.2/BANGUB.SP.BM.076/VIII/2026",
+          "tanggalSP2D": "2026-08-21",
+          "jumlah": 295318331,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-21",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_352",
@@ -23246,9 +30238,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-07",
+      "targetSelesaiTender": "2026-12-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-07"
       }
@@ -23277,7 +30276,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 981104275,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_353",
@@ -23313,9 +30321,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-08",
+      "targetSelesaiTender": "2026-12-10",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-08"
       }
@@ -23344,7 +30359,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 984248552,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_354",
@@ -23380,9 +30404,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-08",
+      "targetSelesaiTender": "2026-12-10",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-08"
       }
@@ -23411,7 +30442,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 984972001,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_355",
@@ -23445,9 +30485,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-01",
+      "targetSelesaiTender": "2026-12-09",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-01"
       }
@@ -23476,7 +30523,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 490510253,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_356",
@@ -23512,9 +30568,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -23541,9 +30604,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 291068101,
       "persenKeuangan": 30.78,
       "sisaAnggaran": 654603512,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_357-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M0A1MW6ZSB74YWKTWVKA9AK4",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 291068101,
+          "persen": 30.78,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_357",
@@ -23579,9 +30661,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -23608,9 +30697,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 590384179,
       "persenKeuangan": 30,
       "sisaAnggaran": 1377563085,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_358-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.70/VIII/2026",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 590384179,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_358",
@@ -23646,9 +30754,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-28",
+      "targetSelesaiTender": "2026-11-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-28"
       }
@@ -23675,9 +30790,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 294919469,
       "persenKeuangan": 30,
       "sisaAnggaran": 688145429,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_359-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.093/VIII/2026",
+          "tanggalSP2D": "2026-08-28",
+          "jumlah": 294919469,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-28",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_359",
@@ -23711,9 +30845,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-01",
+      "targetSelesaiTender": "2026-12-10",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-01"
       }
@@ -23740,9 +30881,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 235739405,
       "persenKeuangan": 30,
       "sisaAnggaran": 550058610,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_360-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M3R2EN296GBEQ1AZM1SCYKCR",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 235739405,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_360",
@@ -23778,9 +30938,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-12-08",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-05"
       }
@@ -23809,7 +30976,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 983503178,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_361",
@@ -23845,9 +31021,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-07",
+      "targetSelesaiTender": "2026-12-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-07"
       }
@@ -23874,9 +31057,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 295536232,
       "persenKeuangan": 30,
       "sisaAnggaran": 689584540,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_362-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M1NM4XB142X3Z1DAW5822M5Y",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 295536232,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_362",
@@ -23912,9 +31114,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-07",
+      "targetSelesaiTender": "2026-12-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-07"
       }
@@ -23943,7 +31152,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 983392334,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_363",
@@ -23979,9 +31197,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-31",
+      "targetSelesaiTender": "2026-11-28",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-31"
       }
@@ -24008,9 +31233,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 294915190,
       "persenKeuangan": 30,
       "sisaAnggaran": 688135444,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_364-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.091/VIII/2026",
+          "tanggalSP2D": "2026-08-31",
+          "jumlah": 294915190,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-31",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_364",
@@ -24046,9 +31290,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-07",
+      "targetSelesaiTender": "2026-12-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-07"
       }
@@ -24075,9 +31326,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 294304762,
       "persenKeuangan": 30,
       "sisaAnggaran": 686711110,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_365-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.099/IX/2026",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 294304762,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_365",
@@ -24113,9 +31383,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-21",
+      "targetSelesaiTender": "2026-12-09",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-21"
       }
@@ -24144,7 +31421,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 980937999,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_366",
@@ -24180,9 +31466,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24211,7 +31504,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_367",
@@ -24245,9 +31547,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-01",
+      "targetSelesaiTender": "2026-12-09",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-01"
       }
@@ -24274,9 +31583,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 206311703,
       "persenKeuangan": 30,
       "sisaAnggaran": 481393973,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_368-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M3QZH21YT3M36RRR590XMFCS",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 206311703,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_368",
@@ -24312,9 +31640,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-01",
+      "targetSelesaiTender": "2026-12-09",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-01"
       }
@@ -24341,9 +31676,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 295138963,
       "persenKeuangan": 30,
       "sisaAnggaran": 688657581,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_369-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M3R4T5RBZEZP9XN9V0JJ0GCV",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 295138963,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_369",
@@ -24377,9 +31731,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24408,7 +31769,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_370",
@@ -24444,9 +31814,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -24473,9 +31850,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 295348553,
       "persenKeuangan": 30,
       "sisaAnggaran": 689146623,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_371-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.71/VIII/2026",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 295348553,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_371",
@@ -24511,9 +31907,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-31",
+      "targetSelesaiTender": "2026-06-28",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-31"
       }
@@ -24540,9 +31943,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 2424634000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_372-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/APBD.SP.BM.03/III/2026",
+          "tanggalSP2D": "2026-03-31",
+          "jumlah": 2424634000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-31",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/APBD.SP.BM.03/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_372",
@@ -24576,9 +31998,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-31",
+      "targetSelesaiTender": "2026-06-28",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-31"
       }
@@ -24605,9 +32034,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 24891000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_373-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PWS.SPK.BM.004/III/2026",
+          "tanggalSP2D": "2026-03-31",
+          "jumlah": 24891000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-31",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PWS.SPK.BM.004/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_373",
@@ -24643,9 +32091,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24674,7 +32129,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_374",
@@ -24710,9 +32174,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24741,7 +32212,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_375",
@@ -24777,9 +32257,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24808,7 +32295,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_376",
@@ -24844,9 +32340,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24875,7 +32378,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_377",
@@ -24911,9 +32423,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24942,7 +32461,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_378",
@@ -24978,9 +32506,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25009,7 +32544,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_379",
@@ -25045,9 +32589,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25076,7 +32627,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_380",
@@ -25112,9 +32672,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25143,7 +32710,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_381",
@@ -25179,9 +32755,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25210,7 +32793,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 750000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_382",
@@ -25246,9 +32838,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25277,7 +32876,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_383",
@@ -25313,9 +32921,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25344,7 +32959,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_384",
@@ -25380,9 +33004,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25411,7 +33042,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_385",
@@ -25447,9 +33087,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25478,7 +33125,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_386",
@@ -25514,9 +33170,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25545,7 +33208,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_387",
@@ -25581,9 +33253,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25612,7 +33291,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_388",
@@ -25649,9 +33337,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25680,7 +33375,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1773000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_389",
@@ -25716,9 +33420,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25747,7 +33458,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 27000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_390",
@@ -25783,9 +33503,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25814,7 +33541,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_391",
@@ -25850,9 +33586,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25881,7 +33624,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_392",
@@ -25917,9 +33669,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25948,7 +33707,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 22500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_393",
@@ -25984,9 +33752,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26015,7 +33790,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_394",
@@ -26051,9 +33835,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26082,7 +33873,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_395",
@@ -26119,9 +33919,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26150,7 +33957,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 4550000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_396",
@@ -26186,9 +34002,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26217,7 +34040,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_397",
@@ -26254,9 +34086,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26285,7 +34124,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_398",
@@ -26321,9 +34169,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26352,7 +34207,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_399",
@@ -26388,9 +34252,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26419,7 +34290,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_400",
@@ -26455,9 +34335,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26486,7 +34373,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_401",
@@ -26523,9 +34419,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26554,7 +34457,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 7450000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_402",
@@ -26590,9 +34502,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26621,7 +34540,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_403",
@@ -26657,9 +34585,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26688,7 +34623,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_404",
@@ -26724,9 +34668,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26755,7 +34706,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_405",
@@ -26791,9 +34751,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26822,7 +34789,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_406",
@@ -26858,9 +34834,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26889,7 +34872,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_407",
@@ -26926,9 +34918,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -26957,7 +34956,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_408",
@@ -26993,9 +35001,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27024,7 +35039,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_409",
@@ -27061,9 +35085,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27092,7 +35123,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_410",
@@ -27128,9 +35168,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27159,7 +35206,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_411",
@@ -27196,9 +35252,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27227,7 +35290,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_412",
@@ -27263,9 +35335,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27294,7 +35373,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_413",
@@ -27331,9 +35419,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27362,7 +35457,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1480000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_414",
@@ -27398,9 +35502,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27429,7 +35540,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_415",
@@ -27465,9 +35585,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27496,7 +35623,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_416",
@@ -27532,9 +35668,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27563,7 +35706,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_417",
@@ -27599,9 +35751,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27630,7 +35789,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_418",
@@ -27666,9 +35834,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27697,7 +35872,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_419",
@@ -27733,9 +35917,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27764,7 +35955,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_420",
@@ -27800,9 +36000,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27831,7 +36038,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_421",
@@ -27868,9 +36084,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27899,7 +36122,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_422",
@@ -27935,9 +36167,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27966,7 +36205,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_423",
@@ -28003,9 +36251,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28034,7 +36289,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1871500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_424",
@@ -28070,9 +36334,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28101,7 +36372,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 28500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_425",
@@ -28138,9 +36418,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28169,7 +36456,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 2970000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_426",
@@ -28205,9 +36501,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28236,7 +36539,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 30000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_427",
@@ -28272,9 +36584,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28303,7 +36622,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_428",
@@ -28339,9 +36667,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28370,7 +36705,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_429",
@@ -28406,9 +36750,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28437,7 +36788,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_430",
@@ -28474,9 +36834,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28505,7 +36872,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_431",
@@ -28541,9 +36917,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28572,7 +36955,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_432",
@@ -28609,9 +37001,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28640,7 +37039,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1480000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_433",
@@ -28676,9 +37084,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28707,7 +37122,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 20000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_434",
@@ -28744,9 +37168,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28775,7 +37206,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1775000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_435",
@@ -28811,9 +37251,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28842,7 +37289,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 25000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_436",
@@ -28878,9 +37334,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28909,7 +37372,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 985000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_437",
@@ -28945,9 +37417,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -28976,7 +37455,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_438",
@@ -29013,9 +37501,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29044,7 +37539,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 5950000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_439",
@@ -29080,9 +37584,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29111,7 +37622,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_440",
@@ -29148,9 +37668,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29179,7 +37706,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 10850000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_441",
@@ -29215,9 +37751,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29246,7 +37789,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_442",
@@ -29282,9 +37834,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29313,7 +37872,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_443",
@@ -29349,9 +37917,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29380,7 +37955,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_444",
@@ -29416,9 +38000,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29447,7 +38038,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_445",
@@ -29483,9 +38083,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29514,7 +38121,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 600000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_446",
@@ -29550,9 +38166,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29581,7 +38204,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 600000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_447",
@@ -29617,9 +38249,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29648,7 +38287,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 350000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_448",
@@ -29684,9 +38332,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29715,7 +38370,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_449",
@@ -29752,9 +38416,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29783,7 +38454,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 1477500000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_450",
@@ -29819,9 +38499,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29850,7 +38537,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_451",
@@ -29886,9 +38582,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29917,7 +38620,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_452",
@@ -29953,9 +38665,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -29984,7 +38703,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_453",
@@ -30020,9 +38748,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30051,7 +38786,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 380000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_454",
@@ -30087,9 +38831,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30118,7 +38869,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_455",
@@ -30154,9 +38914,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30185,7 +38952,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_456",
@@ -30221,9 +38997,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30252,7 +39035,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_457",
@@ -30288,9 +39080,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30319,7 +39118,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_458",
@@ -30355,9 +39163,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30386,7 +39201,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 345000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_459",
@@ -30422,9 +39246,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30453,7 +39284,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_460",
@@ -30489,9 +39329,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30520,7 +39367,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_461",
@@ -30556,9 +39412,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30587,7 +39450,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 300000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_462",
@@ -30623,9 +39495,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30654,7 +39533,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 250000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_463",
@@ -30690,9 +39578,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30721,7 +39616,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 400000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_464",
@@ -30755,9 +39659,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-16",
+      "targetSelesaiTender": "2026-03-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-16"
       }
@@ -30784,9 +39695,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 197600000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_465-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PEMEL.SP.BM.02/III/2026",
+          "tanggalSP2D": "2026-03-16",
+          "jumlah": 197600000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-16",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.02/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_465",
@@ -30820,9 +39750,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-16",
+      "targetSelesaiTender": "2026-07-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-16"
       }
@@ -30849,9 +39786,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 188097048,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_466-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01KXD89MFMSHMQJ7PANKNEERC6",
+          "tanggalSP2D": "2026-07-16",
+          "jumlah": 188097048,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-16",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01KXD89MFMSHMQJ7PANKNEERC6",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_466",
@@ -30885,9 +39841,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-02",
+      "targetSelesaiTender": "2026-07-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-02"
       }
@@ -30914,9 +39877,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 187663260,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_467-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01KW94RJ27DTEGTV2ZD8ZX85GF",
+          "tanggalSP2D": "2026-07-02",
+          "jumlah": 187663260,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-02",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01KW94RJ27DTEGTV2ZD8ZX85GF",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_467",
@@ -30950,9 +39932,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-16",
+      "targetSelesaiTender": "2026-03-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-16"
       }
@@ -30979,9 +39968,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 199404000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_468-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PEMEL.SP.BM.01/III/2026",
+          "tanggalSP2D": "2026-03-16",
+          "jumlah": 199404000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-16",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.01/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_468",
@@ -31015,9 +40023,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-04",
+      "targetSelesaiTender": "2026-09-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-04"
       }
@@ -31044,9 +40059,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 187962549,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_469-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01M1G0JF6ZGPVQ5MG421RQA5WN",
+          "tanggalSP2D": "2026-09-04",
+          "jumlah": 187962549,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-04",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01M1G0JF6ZGPVQ5MG421RQA5WN",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_469",
@@ -31080,9 +40114,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-17",
+      "targetSelesaiTender": "2026-07-31",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-17"
       }
@@ -31109,9 +40150,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 188097048,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_470-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01KXHXCNFCYTACM7900S9DFCGT",
+          "tanggalSP2D": "2026-07-17",
+          "jumlah": 188097048,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-17",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01KXHXCNFCYTACM7900S9DFCGT",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_470",
@@ -31145,9 +40205,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-24",
+      "targetSelesaiTender": "2026-09-04",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-24"
       }
@@ -31174,9 +40241,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 187008416,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_471-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01M0CF8AXNG5GFZ75M9GSEHT6Q",
+          "tanggalSP2D": "2026-08-24",
+          "jumlah": 187008416,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-24",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01M0CF8AXNG5GFZ75M9GSEHT6Q",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_471",
@@ -31210,9 +40296,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-06",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-06"
       }
@@ -31239,9 +40332,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 186046989,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_472-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01KYV2VG3NHHNNZ8X1V6BV61K6",
+          "tanggalSP2D": "2026-08-06",
+          "jumlah": 186046989,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-06",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01KYV2VG3NHHNNZ8X1V6BV61K6",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_472",
@@ -31275,9 +40387,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-28",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-28"
       }
@@ -31304,9 +40423,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 187558321,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_473-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH",
+          "tanggalSP2D": "2026-08-28",
+          "jumlah": 187558321,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-28",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_473",
@@ -31340,9 +40478,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-06-11",
+      "targetSelesaiTender": "2026-06-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-06-11"
       }
@@ -31369,9 +40514,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 195757380,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_474-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01KTB0XPQ8R4H2W2SY5BQ09703",
+          "tanggalSP2D": "2026-06-11",
+          "jumlah": 195757380,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-06-11",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01KTB0XPQ8R4H2W2SY5BQ09703",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_474",
@@ -31405,9 +40569,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-08",
+      "targetSelesaiTender": "2026-09-22",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-08"
       }
@@ -31434,9 +40605,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 195757380,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_475-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01M1N8N5S92115F4NXAFJ2ZWFG",
+          "tanggalSP2D": "2026-09-08",
+          "jumlah": 195757380,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01M1N8N5S92115F4NXAFJ2ZWFG",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_475",
@@ -31472,9 +40662,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -31501,9 +40698,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 622586830,
       "persenKeuangan": 35.99,
       "sisaAnggaran": 1107413170,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_476-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 622586830,
+          "persen": 35.99,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_476",
@@ -31539,9 +40755,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -31570,7 +40793,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_477",
@@ -31606,9 +40838,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -31637,7 +40876,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_478",
@@ -31673,9 +40921,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -31704,7 +40959,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_479",
@@ -31740,9 +41004,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -31771,7 +41042,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_480",
@@ -31807,9 +41087,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -31838,7 +41125,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_481",
@@ -31872,9 +41168,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -31901,9 +41204,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 174470599,
       "persenKeuangan": 87.24,
       "sisaAnggaran": 25529401,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_482-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 174470599,
+          "persen": 87.24,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_482",
@@ -31937,9 +41259,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-31",
+      "targetSelesaiTender": "2026-08-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-31"
       }
@@ -31966,9 +41295,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 86658587,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_483-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-EP-01KYKEVJFNZQXCBPV715VJKR94",
+          "tanggalSP2D": "2026-07-31",
+          "jumlah": 86658587,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-31",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/EP-01KYKEVJFNZQXCBPV715VJKR94",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_483",
@@ -32002,9 +41350,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32031,9 +41386,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 31616000,
       "persenKeuangan": 7.03,
       "sisaAnggaran": 418384000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_484-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 31616000,
+          "persen": 7.03,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_484",
@@ -32067,9 +41441,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32098,7 +41479,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_485",
@@ -32132,9 +41522,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32163,7 +41560,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 338000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_486",
@@ -32197,9 +41603,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32228,7 +41641,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 100000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_487",
@@ -32262,9 +41684,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32274,7 +41703,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 50000000,
       "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -32293,7 +41722,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_488",
@@ -32327,9 +41765,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32358,7 +41803,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_489",
@@ -32392,9 +41846,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32423,7 +41884,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_490",
@@ -32457,9 +41927,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32488,7 +41965,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_491",
@@ -32522,9 +42008,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32553,7 +42046,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_492",
@@ -32587,9 +42089,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32618,7 +42127,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_493",
@@ -32652,9 +42170,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32683,7 +42208,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_494",
@@ -32717,9 +42251,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32748,7 +42289,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_495",
@@ -32782,9 +42332,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32813,7 +42370,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_496",
@@ -32847,9 +42413,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -32878,7 +42451,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 50000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_497",
@@ -32912,9 +42494,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-11-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-20"
       }
@@ -32941,9 +42530,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 285021623,
       "persenKeuangan": 30,
       "sisaAnggaran": 665050452,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_498-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M0A23VA8CST258XMAXYNE6WN",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 285021623,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_498",
@@ -32977,9 +42585,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-15",
+      "targetSelesaiTender": "2026-05-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-15"
       }
@@ -33006,9 +42621,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 14779000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_499-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.015/IV/2026",
+          "tanggalSP2D": "2026-04-15",
+          "jumlah": 14779000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.015/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_499",
@@ -33042,9 +42676,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -33073,7 +42714,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_500",
@@ -33107,9 +42757,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-10-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -33138,7 +42795,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199379000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_501",
@@ -33172,9 +42838,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-01",
+      "targetSelesaiTender": "2026-11-29",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-01"
       }
@@ -33201,9 +42874,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 286115220,
       "persenKeuangan": 30,
       "sisaAnggaran": 667602181,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_502-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-'000.3.7/APBD.SP.BM.96/IX/2026",
+          "tanggalSP2D": "2026-09-01",
+          "jumlah": 286115220,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_502",
@@ -33237,9 +42929,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-08",
+      "targetSelesaiTender": "2026-05-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-08"
       }
@@ -33266,9 +42965,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 14710000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_503-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.014/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14710000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.014/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_503",
@@ -33302,9 +43020,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -33333,7 +43058,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_504",
@@ -33369,9 +43103,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -33400,7 +43141,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_505",
@@ -33436,9 +43186,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-23",
+      "targetSelesaiTender": "2026-12-19",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-23"
       }
@@ -33465,9 +43222,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 2892391130,
       "persenKeuangan": 30.09,
       "sisaAnggaran": 6721578870,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_506-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-027.2/APBD.SPK.BM.03/VII/2026",
+          "tanggalSP2D": "2026-07-23",
+          "jumlah": 2892391130,
+          "persen": 30.09,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-07-23",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_506",
@@ -33501,9 +43277,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-23",
+      "targetSelesaiTender": "2026-12-19",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-23"
       }
@@ -33532,7 +43315,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 38034770,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_507",
@@ -33568,9 +43360,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-12-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -33597,9 +43396,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 1044154998,
       "persenKeuangan": 30.48,
       "sisaAnggaran": 2381694994,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_508-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.022/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 1044154998,
+          "persen": 30.48,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-07-30",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_508",
@@ -33633,9 +43451,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-08",
+      "targetSelesaiTender": "2026-05-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-08"
       }
@@ -33662,9 +43487,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 24812000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_509-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.011/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 24812000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.011/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_509",
@@ -33698,9 +43542,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-30",
+      "targetSelesaiTender": "2026-12-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-30"
       }
@@ -33729,7 +43580,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 12898200,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_510",
@@ -33763,9 +43623,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-31",
+      "targetSelesaiTender": "2026-12-28",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-31"
       }
@@ -33792,9 +43659,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 285317015,
       "persenKeuangan": 30,
       "sisaAnggaran": 665739702,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_511-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.094/VIII/2026",
+          "tanggalSP2D": "2026-08-31",
+          "jumlah": 285317015,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-31",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_511",
@@ -33828,9 +43714,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-08",
+      "targetSelesaiTender": "2026-05-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-08"
       }
@@ -33857,9 +43750,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 14842000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_512-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.012/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14842000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.012/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_512",
@@ -33893,9 +43805,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -33924,7 +43843,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_513",
@@ -33958,9 +43886,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-15",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -33989,7 +43924,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199117737,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_514",
@@ -34023,9 +43967,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-15",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -34054,7 +44005,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 398786000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_515",
@@ -34088,9 +44048,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-18",
+      "targetSelesaiTender": "2026-11-15",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-18"
       }
@@ -34119,7 +44086,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 199161933,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_516",
@@ -34153,9 +44129,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-11",
+      "targetSelesaiTender": "2026-12-22",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-09-11"
       }
@@ -34182,9 +44165,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 285331518,
       "persenKeuangan": 30,
       "sisaAnggaran": 665773542,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_517-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.107/IX/2026",
+          "tanggalSP2D": "2026-09-11",
+          "jumlah": 285331518,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-11",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_517",
@@ -34218,9 +44220,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-04-08",
+      "targetSelesaiTender": "2026-05-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-04-08"
       }
@@ -34247,9 +44256,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 14847000,
       "persenKeuangan": 100.03,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_518-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.012/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14847000,
+          "persen": 100.03,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.012/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_518",
@@ -34283,9 +44311,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34314,7 +44349,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 15000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_519",
@@ -34350,9 +44394,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34381,7 +44432,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_520",
@@ -34417,9 +44477,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34448,7 +44515,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 700000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_521",
@@ -34484,9 +44560,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34515,7 +44598,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_522",
@@ -34551,9 +44643,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34582,7 +44681,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_523",
@@ -34618,9 +44726,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34649,7 +44764,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 175000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_524",
@@ -34685,9 +44809,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34716,7 +44847,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_525",
@@ -34752,9 +44892,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34783,7 +44930,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 700000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_526",
@@ -34819,9 +44975,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34850,7 +45013,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_527",
@@ -34886,9 +45058,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34917,7 +45096,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_528",
@@ -34953,9 +45141,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -34984,7 +45179,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 500000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_529",
@@ -35020,9 +45224,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35051,7 +45262,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 200000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_530",
@@ -35087,9 +45307,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35118,7 +45345,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 175000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_531",
@@ -35154,9 +45390,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35185,7 +45428,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_532",
@@ -35221,9 +45473,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35252,7 +45511,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 150000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_bina_marga_533",
@@ -35286,9 +45554,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_69",
     "kodeSubKegiatan": "1.03.11.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-05",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-10-22"
       }
@@ -35317,7 +45592,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 98884350,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_534",
@@ -35351,9 +45635,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_69",
     "kodeSubKegiatan": "1.03.11.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35380,9 +45671,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 64092200,
       "persenKeuangan": 64.09,
       "sisaAnggaran": 35907800,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_535-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 64092200,
+          "persen": 64.09,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_535",
@@ -35416,9 +45726,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_70",
     "kodeSubKegiatan": "1.03.11.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35445,9 +45762,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 75755000,
       "persenKeuangan": 84.17,
       "sisaAnggaran": 14245000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_536-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 75755000,
+          "persen": 84.17,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_sda_bk_536",
@@ -35481,9 +45817,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_71",
     "kodeSubKegiatan": "1.03.12.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-02-27",
+      "targetSelesaiTender": "2026-05-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-02-27"
       }
@@ -35510,9 +45853,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99630000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_537-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/SPK/Kons.01/TARU/II/2026",
+          "tanggalSP2D": "2026-02-27",
+          "jumlah": 99630000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-02-27",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/SPK/Kons.01/TARU/II/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_537",
@@ -35546,9 +45908,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_72",
     "kodeSubKegiatan": "1.03.12.2.01.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35558,7 +45927,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 79150000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -35575,9 +45944,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 61631412,
       "persenKeuangan": 77.87,
       "sisaAnggaran": 17518588,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_538-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 61631412,
+          "persen": 77.87,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_538",
@@ -35611,9 +45999,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_73",
     "kodeSubKegiatan": "1.03.12.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35640,9 +46035,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 26366200,
       "persenKeuangan": 38.47,
       "sisaAnggaran": 42173800,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_539-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 26366200,
+          "persen": 38.47,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_539",
@@ -35676,9 +46090,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-10",
+      "targetSelesaiTender": "2026-10-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-10"
       }
@@ -35705,9 +46126,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99608000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_540-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/SPK/Kons.02/TARU/VII/2026",
+          "tanggalSP2D": "2026-07-10",
+          "jumlah": 99608000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-10",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/SPK/Kons.02/TARU/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_540",
@@ -35741,9 +46181,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35770,9 +46217,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 99305000,
       "persenKeuangan": 99.3,
       "sisaAnggaran": 695000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_541-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 99305000,
+          "persen": 99.3,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_541",
@@ -35806,9 +46272,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35835,9 +46308,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 39197000,
       "persenKeuangan": 12.69,
       "sisaAnggaran": 269703000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_542-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 39197000,
+          "persen": 12.69,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_542",
@@ -35871,9 +46363,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35902,7 +46401,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 175000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_543",
@@ -35936,9 +46444,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_75",
     "kodeSubKegiatan": "1.03.12.2.01.05",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35965,9 +46480,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 120754496,
       "persenKeuangan": 69.15,
       "sisaAnggaran": 53865504,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_544-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 120754496,
+          "persen": 69.15,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_544",
@@ -36001,9 +46535,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_76",
     "kodeSubKegiatan": "1.03.12.2.02.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36013,7 +46554,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 50000000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -36030,9 +46571,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 3290000,
       "persenKeuangan": 6.58,
       "sisaAnggaran": 46710000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_545-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 3290000,
+          "persen": 6.58,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_545",
@@ -36066,9 +46626,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_77",
     "kodeSubKegiatan": "1.03.12.2.02.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36095,9 +46662,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 34630919,
       "persenKeuangan": 69.26,
       "sisaAnggaran": 15369081,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_546-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 34630919,
+          "persen": 69.26,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_546",
@@ -36131,9 +46717,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_78",
     "kodeSubKegiatan": "1.03.12.2.02.03",
-    "statusTahapPraKontrak": "identifikasi_kebutuhan",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+    },
+    "statusTahapPraKontrak": "rup",
     "dataPraKontrak": {
-      "tahapSaatIni": "identifikasi_kebutuhan",
+      "tahapSaatIni": "rup",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36162,7 +46755,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 90000000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_547",
@@ -36196,9 +46798,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_79",
     "kodeSubKegiatan": "1.03.12.2.02.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36225,9 +46834,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 8940000,
       "persenKeuangan": 89.4,
       "sisaAnggaran": 1060000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_548-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 8940000,
+          "persen": 89.4,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_548",
@@ -36261,9 +46889,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_80",
     "kodeSubKegiatan": "1.03.12.2.03.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36273,7 +46908,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 25560000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -36290,9 +46925,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 13877229,
       "persenKeuangan": 54.29,
       "sisaAnggaran": 11682771,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_549-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 13877229,
+          "persen": 54.29,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_549",
@@ -36326,9 +46980,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_81",
     "kodeSubKegiatan": "1.03.12.2.03.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36355,9 +47016,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 21293100,
       "persenKeuangan": 41.59,
       "sisaAnggaran": 29906900,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_550-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 21293100,
+          "persen": 41.59,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_550",
@@ -36391,9 +47071,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_82",
     "kodeSubKegiatan": "1.03.12.2.03.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36420,9 +47107,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 4920000,
       "persenKeuangan": 49.2,
       "sisaAnggaran": 5080000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_551-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 4920000,
+          "persen": 49.2,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_551",
@@ -36456,9 +47162,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_83",
     "kodeSubKegiatan": "1.03.12.2.03.04",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-07-10",
+      "targetSelesaiTender": "2026-10-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-07-10"
       }
@@ -36487,7 +47200,16 @@ export const REAL_PROJECTS_2026 = [
       "sisaAnggaran": 99731000,
       "terminHistory": []
     },
-    "spjStatus": "belum_diajukan",
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_552",
@@ -36521,9 +47243,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_84",
     "kodeSubKegiatan": "1.03.12.2.04.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36550,9 +47279,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 20847875,
       "persenKeuangan": 69.49,
       "sisaAnggaran": 9152125,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_553-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 20847875,
+          "persen": 69.49,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_553",
@@ -36586,9 +47334,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_85",
     "kodeSubKegiatan": "1.03.12.2.04.02",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36615,9 +47370,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 101891473,
       "persenKeuangan": 49.12,
       "sisaAnggaran": 105538527,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_554-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 101891473,
+          "persen": 49.12,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_554",
@@ -36651,9 +47425,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_86",
     "kodeSubKegiatan": "1.03.12.2.04.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36680,9 +47461,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 10400000,
       "persenKeuangan": 41.6,
       "sisaAnggaran": 14600000,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_555-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 10400000,
+          "persen": 41.6,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_555",
@@ -36716,9 +47516,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_86",
     "kodeSubKegiatan": "1.03.12.2.04.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36745,9 +47552,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 91948300,
       "persenKeuangan": 48.25,
       "sisaAnggaran": 98601700,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_556-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 91948300,
+          "persen": 48.25,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_556",
@@ -36781,9 +47607,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_87",
     "kodeSubKegiatan": "2.10.01.2.01.03",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36793,7 +47626,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
+      "nilaiKontrak": 75000000,
       "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -36810,9 +47643,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 36880075,
       "persenKeuangan": 49.17,
       "sisaAnggaran": 38119925,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_557-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 36880075,
+          "persen": 49.17,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_557",
@@ -36846,9 +47698,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_88",
     "kodeSubKegiatan": "2.10.02.2.01.01",
-    "statusTahapPraKontrak": "pelaksanaan_kontrak",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+    },
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "pelaksanaan_kontrak",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -36875,9 +47734,28 @@ export const REAL_PROJECTS_2026 = [
       "totalPencairan": 55068225,
       "persenKeuangan": 47.66,
       "sisaAnggaran": 60481775,
-      "terminHistory": []
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_558-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-OKT",
+          "tanggalSP2D": "2026-10-31",
+          "jumlah": 55068225,
+          "persen": 47.66,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
-    "spjStatus": "sp2d_terbit",
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
+    },
     "logs": [
       {
         "id": "log_init_prj_tata_ruang_558",

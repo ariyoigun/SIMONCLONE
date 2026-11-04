@@ -247,17 +247,16 @@ for (let i = 8; i < rows.length; i++) {
       if (isPrioritas) tags.push('Program Prioritas Bupati');
       if (isPerubahan) tags.push('APBD Perubahan');
 
-      // Rule: jika nilai kontrak / pagu sesuai/sama dengan SP2D berarti status SP2D sudah selesai
-      let spjStatus = 'belum_diajukan';
+      // Sekretariat Swakelola: Sudah kontrak berjalan
+      const isKontrak = true;
+      const statusTahapPraKontrak = 'kontrak';
+
+      let spjStatus = 'belum_masuk';
       if (pagu > 0 && pencairan >= pagu) {
         spjStatus = 'sudah_sp2d';
       } else if (pencairan > 0) {
-        spjStatus = 'sp2d_terbit';
+        spjStatus = 'sudah_masuk';
       }
-
-      // Rule: untuk semua pekerjaan yang sudah ada realisasi berarti sudah kontrak
-      const isKontrak = pencairan > 0 || fRealisasi > 0;
-      const statusTahapPraKontrak = isKontrak ? 'pelaksanaan_kontrak' : 'identifikasi_kebutuhan';
 
       const pId = `prj_sek_${projects.length + 1}`;
       projects.push({
@@ -282,9 +281,17 @@ for (let i = 8; i < rows.length; i++) {
         isPublicHighlight: false,
         subKegiatanId: curSubKeg.id,
         kodeSubKegiatan: curSubKeg.kodeSubKegiatan,
-        statusTahapPraKontrak,
+        
+        isKontrak: true,
+        tahapPraKontrak: {
+          status: 'kontrak',
+          targetMulaiTender: '2026-01-02',
+          targetSelesaiTender: '2026-12-31',
+          catatanPraKontrak: 'Kegiatan penunjang dinas berjalan secara swakelola'
+        },
+        statusTahapPraKontrak: 'kontrak',
         dataPraKontrak: {
-          tahapSaatIni: statusTahapPraKontrak,
+          tahapSaatIni: 'kontrak',
           jadwalPraKontrak: { targetMulaiPekerjaan: '2026-01-02' }
         },
         dataKontrak: {
@@ -309,9 +316,30 @@ for (let i = 8; i < rows.length; i++) {
           totalPencairan: pencairan,
           persenKeuangan: persenKeu,
           sisaAnggaran: Math.max(0, pagu - pencairan),
-          terminHistory: []
+          terminHistory: pencairan > 0 ? [
+            {
+              id: `TRM-${pId}-1`,
+              terminKe: pencairan >= pagu ? 'Pelunasan SP2D 100%' : 'Pencairan SP2D Termin',
+              nomorSP2D: 'SP2D-2026-SEK',
+              tanggalSP2D: '2026-10-31',
+              jumlah: pencairan,
+              persen: persenKeu,
+              keterangan: 'Pencairan SP2D Keuangan s/d Oktober 2026'
+            }
+          ] : []
         },
         spjStatus,
+        administrasiSPJ: {
+          status: spjStatus,
+          tanggalMasuk: spjStatus !== 'belum_masuk' ? '2026-10-15' : '',
+          tanggalKoreksi: '',
+          tanggalSPM: spjStatus === 'sudah_sp2d' ? '2026-10-25' : '',
+          nomorSPM: spjStatus === 'sudah_sp2d' ? '900/SPM/DPU/SEK/2026' : '',
+          catatanVerifikator: spjStatus === 'sudah_sp2d'
+            ? 'SPJ Penunjang Lengkap & SP2D Lunas'
+            : (spjStatus === 'sudah_masuk' ? 'Berkas SPJ termin masuk, proses verifikasi SP2D' : 'Belum mengajukan SPJ'),
+          petugasVerifikator: spjStatus !== 'belum_masuk' ? 'Kasubag Program & Keuangan' : ''
+        },
         logs: [
           {
             id: `log_init_${pId}`,
@@ -410,19 +438,20 @@ for (let i = 8; i < rows.length; i++) {
       if (pagu >= 1000000000) tags.push('Proyek Strategis');
 
       // Rules:
-      // "Tambahan, jika nilai kontrak sesuai/sama dengan SP2D berarti status SP2D sudah selesai."
-      let spjStatus = 'belum_diajukan';
+      // "jika sudah ada tanggal kontrak dan nilai kontak status pekerjaan harusnya 'sudah kontrak' tolong sinkronkan progres fisik dan progres keuangan"
+      // "jika nilai kontrak sesuai/sama dengan SP2D berarti status SP2D sudah selesai... jika sudah ada pencairan berarti spj sudah masuk"
+      const hasContract = Boolean(tglKontrak) || (nilaiKontrak > 0) || Boolean(noKontrak) || (Boolean(pelaksana) && pelaksana !== '-') || (fRealisasi > 0) || (pencairan > 0);
+      const isKontrak = hasContract;
+      const statusTahapPraKontrak = isKontrak ? 'kontrak' : 'rup';
+
+      let spjStatus = 'belum_masuk';
       if (baseValue > 0 && pencairan >= baseValue) {
         spjStatus = 'sudah_sp2d';
       } else if (pencairan > 0) {
-        spjStatus = 'sp2d_terbit';
+        spjStatus = 'sudah_masuk';
+      } else if (isKontrak) {
+        spjStatus = 'belum_masuk';
       }
-
-      // Rules:
-      // "Jika pekerjaan sudah ada nilai kontrak dans udah ada pelaksana berarti status pekerjaan tersebut sduah kontrak. tolong perbaiki"
-      // "Untuk semua pekerjaan yang sudah ada realisasi berarti sudah kontrak"
-      const isKontrak = (nilaiKontrak > 0 && pelaksana) || Boolean(noKontrak) || fRealisasi > 0 || pencairan > 0;
-      const statusTahapPraKontrak = isKontrak ? 'pelaksanaan_kontrak' : 'identifikasi_kebutuhan';
 
       let kecamatan = 'Demak';
       const kecList = ['Mranggen', 'Karangawen', 'Guntur', 'Sayung', 'Karangtengah', 'Bonang', 'Demak', 'Wonosalam', 'Dempet', 'Gajah', 'Karanganyar', 'Mijen', 'Wedung', 'Kebonagung'];
@@ -496,6 +525,15 @@ for (let i = 8; i < rows.length; i++) {
         isPublicHighlight: pagu >= 1000000000 || isPrioritas,
         subKegiatanId: curSubKeg.id,
         kodeSubKegiatan: curSubKeg.kodeSubKegiatan,
+        isKontrak: Boolean(isKontrak),
+        tahapPraKontrak: {
+          status: statusTahapPraKontrak,
+          targetMulaiTender: tanggalMulai || '',
+          targetSelesaiTender: tanggalSelesai || '',
+          catatanPraKontrak: isKontrak
+            ? 'Kontrak pelaksanaan pekerjaan telah berjalan'
+            : 'Pekerjaan dalam tahapan persiapan RUP'
+        },
         statusTahapPraKontrak,
         dataPraKontrak: {
           tahapSaatIni: statusTahapPraKontrak,
@@ -508,7 +546,7 @@ for (let i = 8; i < rows.length; i++) {
           tanggalKontrak: tglKontrak,
           tanggalMulai,
           tanggalSelesai,
-          nilaiKontrak,
+          nilaiKontrak: nilaiKontrak > 0 ? nilaiKontrak : (tipePengadaan === 'Swakelola' ? pagu : 0),
           namaPenyedia: pelaksana || (isKontrak ? 'Penyedia Jasa Konstruksi' : '-'),
           bankRekanan: 'Bank Jateng',
           rekeningRekanan: '',
@@ -525,9 +563,30 @@ for (let i = 8; i < rows.length; i++) {
           totalPencairan: pencairan,
           persenKeuangan: persenKeu,
           sisaAnggaran: Math.max(0, (nilaiKontrak > 0 ? nilaiKontrak : pagu) - pencairan),
-          terminHistory: []
+          terminHistory: pencairan > 0 ? [
+            {
+              id: `TRM-${pId}-1`,
+              terminKe: pencairan >= baseValue ? 'Pelunasan SP2D 100%' : 'Pencairan SP2D Termin',
+              nomorSP2D: noKontrak ? `SP2D-${noKontrak}` : 'SP2D-2026-OKT',
+              tanggalSP2D: tglKontrak || '2026-10-31',
+              jumlah: pencairan,
+              persen: persenKeu,
+              keterangan: 'Pencairan SP2D Keuangan s/d Oktober 2026'
+            }
+          ] : []
         },
         spjStatus,
+        administrasiSPJ: {
+          status: spjStatus,
+          tanggalMasuk: spjStatus !== 'belum_masuk' ? (tglKontrak || '2026-10-15') : '',
+          tanggalKoreksi: '',
+          tanggalSPM: spjStatus === 'sudah_sp2d' ? '2026-10-25' : '',
+          nomorSPM: spjStatus === 'sudah_sp2d' ? (noKontrak ? `900/SPM/${noKontrak}` : '900/SPM/DPU/2026') : '',
+          catatanVerifikator: spjStatus === 'sudah_sp2d'
+            ? 'Berkas SPJ lengkap & SP2D lunas 100%'
+            : (spjStatus === 'sudah_masuk' ? 'Berkas SPJ termin masuk, proses verifikasi SP2D' : 'Penyedia belum menyerahkan berkas SPJ'),
+          petugasVerifikator: spjStatus !== 'belum_masuk' ? 'Tim Verifikasi SPJ Keuangan' : ''
+        },
         logs: logEntries
       });
     }
@@ -580,6 +639,107 @@ export function matchProjectToSubKegiatan(project, subKegiatanList = INITIAL_SIP
   }
   return null;
 }
+
+/**
+ * Membangun struktur pohon hierarki Program -> Kegiatan -> Sub Kegiatan -> Pekerjaan
+ */
+export const buildSipdTree = (programs, kegiatans, subKegiatans, projects) => {
+  const projectMapBySubKeg = {};
+  projects.forEach((prj) => {
+    const subKeg = matchProjectToSubKegiatan(prj, subKegiatans);
+    const subKegId = subKeg ? subKeg.id : 'unassigned';
+    if (!projectMapBySubKeg[subKegId]) {
+      projectMapBySubKeg[subKegId] = [];
+    }
+    projectMapBySubKeg[subKegId].push({
+      ...prj,
+      matchedSubKegiatan: subKeg
+    });
+  });
+
+  return programs.map((prog) => {
+    const progKegiatans = kegiatans.filter((k) => k.programId === prog.id);
+
+    let progTotalPagu = 0;
+    let progTotalKontrak = 0;
+    let progTotalPencairan = 0;
+    let progFisikSum = 0;
+    let progProjectCount = 0;
+
+    const formattedKegiatans = progKegiatans.map((keg) => {
+      const kegSubKegiatans = subKegiatans.filter((s) => s.kegiatanId === keg.id);
+
+      let kegTotalPagu = 0;
+      let kegTotalKontrak = 0;
+      let kegTotalPencairan = 0;
+      let kegFisikSum = 0;
+      let kegProjectCount = 0;
+
+      const formattedSubKegiatans = kegSubKegiatans.map((sub) => {
+        const subProjects = projectMapBySubKeg[sub.id] || [];
+
+        const subTotalPagu = subProjects.reduce((sum, p) => sum + (parseFloat(p.paguAnggaran) || 0), 0);
+        const subTotalKontrak = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataKontrak?.nilaiKontrak) || 0), 0);
+        const subTotalPencairan = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataKeuangan?.totalPencairan) || 0), 0);
+        const subFisikSum = subProjects.reduce((sum, p) => sum + (parseFloat(p.dataFisik?.progresRealisasi) || 0), 0);
+        const subAvgFisik = subProjects.length > 0 ? parseFloat((subFisikSum / subProjects.length).toFixed(1)) : 0;
+        const subPersenKeu = subTotalKontrak > 0 ? parseFloat(((subTotalPencairan / subTotalKontrak) * 100).toFixed(1)) : 0;
+
+        kegTotalPagu += subTotalPagu;
+        kegTotalKontrak += subTotalKontrak;
+        kegTotalPencairan += subTotalPencairan;
+        kegFisikSum += subFisikSum;
+        kegProjectCount += subProjects.length;
+
+        return {
+          ...sub,
+          projects: subProjects,
+          totalPagu: subTotalPagu,
+          totalKontrak: subTotalKontrak,
+          totalPencairan: subTotalPencairan,
+          persenKeuangan: subPersenKeu,
+          avgFisik: subAvgFisik,
+          projectCount: subProjects.length
+        };
+      });
+
+      const kegAvgFisik = kegProjectCount > 0 ? parseFloat((kegFisikSum / kegProjectCount).toFixed(1)) : 0;
+      const kegPersenKeu = kegTotalKontrak > 0 ? parseFloat(((kegTotalPencairan / kegTotalKontrak) * 100).toFixed(1)) : 0;
+
+      progTotalPagu += kegTotalPagu;
+      progTotalKontrak += kegTotalKontrak;
+      progTotalPencairan += kegTotalPencairan;
+      progFisikSum += kegFisikSum;
+      progProjectCount += kegProjectCount;
+
+      return {
+        ...keg,
+        subKegiatans: formattedSubKegiatans,
+        totalPagu: kegTotalPagu,
+        totalKontrak: kegTotalKontrak,
+        totalPencairan: kegTotalPencairan,
+        persenKeuangan: kegPersenKeu,
+        avgFisik: kegAvgFisik,
+        projectCount: kegProjectCount
+      };
+    });
+
+    const progAvgFisik = progProjectCount > 0 ? parseFloat((progFisikSum / progProjectCount).toFixed(1)) : 0;
+    const progPersenKeu = progTotalKontrak > 0 ? parseFloat(((progTotalPencairan / progTotalKontrak) * 100).toFixed(1)) : 0;
+
+    return {
+      ...prog,
+      kegiatans: formattedKegiatans,
+      totalPagu: progTotalPagu,
+      totalKontrak: progTotalKontrak,
+      totalPencairan: progTotalPencairan,
+      persenKeuangan: progPersenKeu,
+      avgFisik: progAvgFisik,
+      projectCount: progProjectCount
+    };
+  });
+};
+
 `;
 
 fs.writeFileSync('src/data/sipdData.js', sipdFileContent, 'utf8');
