@@ -47,14 +47,24 @@ Options -Indexes
   AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
-# 5. Caching Aset Statis di Browser Pengunjung
+# 5. Caching Aset Statis di Browser Pengunjung (Kecuali API & PHP)
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
   ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
 </IfModule>
+
+# Nonaktifkan caching untuk semua file dinamis PHP dan JSON
+<FilesMatch "\.(php|json)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </IfModule>
+</FilesMatch>

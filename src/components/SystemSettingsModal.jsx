@@ -29,7 +29,13 @@ import {
   Upload,
   FolderTree,
   Database,
-  Printer
+  Printer,
+  Server,
+  RefreshCw,
+  ExternalLink,
+  EyeOff,
+  CheckCircle2,
+  AlertCircle
 } from 'lucide-react';
 import { DEFAULT_CUSTOM_TEXTS, DEFAULT_BIDANG_DESCRIPTIONS, BIDANG_LIST } from '../data/constants';
 import { LOGO_PRESETS } from '../data/logoPresets';
@@ -119,6 +125,19 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     deskripsi: '',
     url: ''
   });
+
+  // Database Configuration State (Hostinger MySQL)
+  const [dbConfig, setDbConfig] = useState({
+    host: 'localhost',
+    port: '3306',
+    database: 'u490770675_simona',
+    user: 'u490770675_adminsimon',
+    password: '*Demak2026'
+  });
+  const [showDbPass, setShowDbPass] = useState(false);
+  const [isTestingDb, setIsTestingDb] = useState(false);
+  const [isSavingDb, setIsSavingDb] = useState(false);
+  const [dbTestResult, setDbTestResult] = useState(null);
 
   // Custom Texts & Bidang Descriptions State (Superadmin)
   const [customTextsForm, setCustomTextsForm] = useState(DEFAULT_CUSTOM_TEXTS);
@@ -265,6 +284,89 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     setIdentityForm((prev) => ({ ...prev, logoUrl: '' }));
   };
 
+  // Database handlers
+  useEffect(() => {
+    if (isOpen && activeTab === 'database') {
+      fetch('/api/api.php?action=get_db_config&_t=' + Date.now())
+        .then((r) => r.json())
+        .then((data) => {
+          if (data && data.status === 'success' && data.config) {
+            setDbConfig({
+              host: data.config.db_host || 'localhost',
+              port: data.config.db_port || '3306',
+              database: data.config.db_name || 'u490770675_simona',
+              user: data.config.db_user || 'u490770675_adminsimon',
+              password: data.config.db_pass || '*Demak2026'
+            });
+            if (data.connected !== undefined) {
+              setDbTestResult({
+                connected: data.connected,
+                message: data.message,
+                troubleshooting: data.error_detail ? [data.error_detail] : []
+              });
+            }
+          }
+        })
+        .catch(() => {});
+    }
+  }, [isOpen, activeTab]);
+
+  const handleTestDbConnection = async () => {
+    setIsTestingDb(true);
+    setDbTestResult(null);
+    try {
+      const res = await fetch('/api/api.php?action=test_db', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          db_host: dbConfig.host,
+          db_port: dbConfig.port,
+          db_name: dbConfig.database,
+          db_user: dbConfig.user,
+          db_pass: dbConfig.password
+        })
+      });
+      const data = await res.json();
+      setDbTestResult(data);
+    } catch (err) {
+      setDbTestResult({
+        connected: false,
+        message: 'Gagal menghubungi endpoint pengujian database: ' + err.message,
+        troubleshooting: ['Pastikan web server Apache / PHP Hostinger aktif dan folder /api/ dapat diakses.']
+      });
+    } finally {
+      setIsTestingDb(false);
+    }
+  };
+
+  const handleSaveDbConfig = async () => {
+    setIsSavingDb(true);
+    try {
+      const res = await fetch('/api/api.php?action=save_db_config', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          db_host: dbConfig.host,
+          db_port: dbConfig.port,
+          db_name: dbConfig.database,
+          db_user: dbConfig.user,
+          db_pass: dbConfig.password
+        })
+      });
+      const data = await res.json();
+      if (data && data.status === 'success') {
+        alert('Konfigurasi database MySQL Hostinger berhasil disimpan!');
+        handleTestDbConnection();
+      } else {
+        alert('Gagal menyimpan konfigurasi: ' + ((data && data.message) || 'Unknown error'));
+      }
+    } catch (err) {
+      alert('Gagal mengirim konfigurasi: ' + err.message);
+    } finally {
+      setIsSavingDb(false);
+    }
+  };
+
   const handleSaveIdentity = (e) => {
     e.preventDefault();
     updateSystemSettings(identityForm);
@@ -402,6 +504,19 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
           desc: 'Tahapan verifikasi dan validasi kelengkapan dokumen Surat Pertanggungjawaban (SPJ) keuangan oleh verifikator.',
           icon: Receipt,
           badge: spjStatuses.length
+        }
+      ]
+    },
+    {
+      groupTitle: 'SERVER & DATABASE HOSTINGER',
+      items: [
+        {
+          id: 'database',
+          label: 'Database MySQL Hostinger',
+          sub: 'simon.satuputarudemak.id',
+          desc: 'Pengaturan koneksi basis data MySQL production Hostinger (u490770675_simona), uji koneksi langsung, dan panduan integrasi.',
+          icon: Database,
+          badge: 'MySQL'
         }
       ]
     }

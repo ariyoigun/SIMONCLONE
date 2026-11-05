@@ -425,7 +425,7 @@ const Sidebar = ({
           <button
             type="button"
             onClick={() => {
-              if (window.confirm(`Keluar dari akun ${currentUser.nama}?`)) {
+              if (window.confirm(`Keluar dari akun ${currentUser?.nama}?`)) {
                 logout();
               }
             }}

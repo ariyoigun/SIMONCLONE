@@ -16,7 +16,7 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <Sparkles size={16} color="#f59e0b" />
           <span>
-            Mode Pengguna Aktif: <strong>{currentUser.nama}</strong> — {roleDef.nama || currentUser.role}
+            Mode Pengguna Aktif: <strong>{currentUser?.nama}</strong> — {roleDef.nama || currentUser?.role}
             {bidang ? ` (${bidang.nama})` : ' (Seluruh Bidang Dinas)'}
           </span>
         </div>
@@ -134,9 +134,9 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
             onClick={onOpenRoleModal}
             title="Klik untuk simulasi peran lain"
           >
-            <img src={currentUser.avatar} alt="" className="user-avatar" />
+            <img src={currentUser?.avatar} alt="" className="user-avatar" />
             <div className="user-info">
-              <span className="user-name">{currentUser.nama}</span>
+              <span className="user-name">{currentUser?.nama}</span>
               <span className="user-role-tag">
                 <Shield size={11} />
                 {roleDef.nama} • {bidang ? bidang.singkatan : 'DINPUTARU'}
@@ -150,7 +150,7 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
             type="button"
             className="btn btn-outline btn-sm"
             onClick={() => {
-              if (window.confirm(`Keluar dari akun ${currentUser.nama}?`)) {
+              if (window.confirm(`Keluar dari akun ${currentUser?.nama}?`)) {
                 logout();
               }
             }}

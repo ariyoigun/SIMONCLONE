@@ -115,7 +115,7 @@ export const AppProvider = ({ children }) => {
     return INITIAL_USERS;
   });
 
-  // Active Logged-in User
+  // Active Logged-in User (Default null jika belum login)
   const [currentUser, setCurrentUser] = useState(() => {
     const saved = localStorage.getItem('simon_current_user');
     if (saved) {
@@ -130,13 +130,14 @@ export const AppProvider = ({ children }) => {
         }
       } catch (e) {}
     }
-    return INITIAL_USERS[0]; // Default Superadmin
+    return null;
   });
 
-  // Login Session State
+  // Login Session State - Default FALSE (Wajib login manual, tidak otomatis masuk superadmin)
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
-    const saved = localStorage.getItem('simon_is_logged_in');
-    return saved !== null ? saved === 'true' : true;
+    const savedLoggedIn = localStorage.getItem('simon_is_logged_in');
+    const savedUser = localStorage.getItem('simon_current_user');
+    return savedLoggedIn === 'true' && !!savedUser;
   });
 
   // Master Tagging State
@@ -426,11 +427,19 @@ export const AppProvider = ({ children }) => {
   }, [users]);
 
   useEffect(() => {
-    localStorage.setItem('simon_current_user', JSON.stringify(currentUser));
+    if (currentUser) {
+      localStorage.setItem('simon_current_user', JSON.stringify(currentUser));
+    } else {
+      localStorage.removeItem('simon_current_user');
+    }
   }, [currentUser]);
 
   useEffect(() => {
-    localStorage.setItem('simon_is_logged_in', isLoggedIn ? 'true' : 'false');
+    if (isLoggedIn) {
+      localStorage.setItem('simon_is_logged_in', 'true');
+    } else {
+      localStorage.removeItem('simon_is_logged_in');
+    }
   }, [isLoggedIn]);
 
   useEffect(() => {
@@ -486,7 +495,7 @@ export const AppProvider = ({ children }) => {
     let isMounted = true;
     const fetchRemoteData = async () => {
       try {
-        const res = await fetch('/api/api.php?action=load_all');
+        const res = await fetch(`/api/api.php?action=load_all&_t=${Date.now()}`);
         if (res.ok) {
           const json = await res.json();
           if (json && json.status === 'success' && json.data && isMounted) {
@@ -619,12 +628,21 @@ export const AppProvider = ({ children }) => {
 
     setCurrentUser(user);
     setIsLoggedIn(true);
+    try {
+      localStorage.setItem('simon_current_user', JSON.stringify(user));
+      localStorage.setItem('simon_is_logged_in', 'true');
+    } catch (e) {}
     showToast(`Selamat datang kembali, ${user.nama}!`, 'success');
     return { success: true, user };
   };
 
   const logout = () => {
+    setCurrentUser(null);
     setIsLoggedIn(false);
+    try {
+      localStorage.removeItem('simon_current_user');
+      localStorage.removeItem('simon_is_logged_in');
+    } catch (e) {}
     showToast('Anda telah keluar dari sistem SIMON - SATUPUTARU (DINPUTARU).', 'info');
   };
 
@@ -632,6 +650,10 @@ export const AppProvider = ({ children }) => {
   const switchUser = (user) => {
     setCurrentUser(user);
     setIsLoggedIn(true);
+    try {
+      localStorage.setItem('simon_current_user', JSON.stringify(user));
+      localStorage.setItem('simon_is_logged_in', 'true');
+    } catch (e) {}
     showToast(`Beralih ke akun: ${user.nama} (${ROLE_DEFINITIONS[user.role]?.nama})`, 'info');
   };
 
@@ -683,7 +705,7 @@ export const AppProvider = ({ children }) => {
         return u;
       })
     );
-    if (currentUser.id === userId) {
+    if (currentUser && currentUser.id === userId) {
       setCurrentUser((prev) => {
         const merged = { ...prev, ...updatedData };
         if (!updatedData.password) {
@@ -704,7 +726,7 @@ export const AppProvider = ({ children }) => {
       showToast('Minimal harus ada 1 pengguna di sistem!', 'error');
       return false;
     }
-    if (currentUser.id === userId) {
+    if (currentUser && currentUser.id === userId) {
       showToast('Tidak dapat menghapus akun yang sedang aktif digunakan!', 'error');
       return false;
     }
@@ -952,16 +974,19 @@ export const AppProvider = ({ children }) => {
     setProjects((prev) =>
       prev.map((p) => {
         if (p.id !== projectId) return p;
+        const spjPayload = {
+          ...(p.administrasiSPJ || {}),
+          ...spjData,
+          petugasVerifikator: currentUser?.nama || 'Petugas Verifikator',
+          tanggalUpdate: new Date().toLocaleDateString('id-ID')
+        };
         const merged = {
           ...p,
-          administrasiSPJ: {
-            ...p.administrasiSPJ,
-            ...spjData,
-            petugasVerifikator: currentUser.nama,
-            tanggalUpdate: new Date().toLocaleDateString('id-ID')
-          },
+          spjStatus: spjData.status || p.spjStatus || 'belum_masuk',
+          administrasiSPJ: spjPayload,
+          dataSpj: spjPayload,
           updatedAt: new Date().toLocaleString('id-ID'),
-          updatedBy: currentUser.nama
+          updatedBy: currentUser?.nama || 'Pengguna'
         };
         updatedTarget = merged;
         return merged;
@@ -975,16 +1000,18 @@ export const AppProvider = ({ children }) => {
   };
 
   // Project Access Permissions & Filtering
-  const userRoleDef = ROLE_DEFINITIONS[currentUser?.role] || ROLE_DEFINITIONS.superadmin;
+  const userRoleDef = (currentUser && ROLE_DEFINITIONS[currentUser.role]) || ROLE_DEFINITIONS.superadmin;
 
   // Projects strictly for active year
   const activeYearProjects = projects.filter((p) => p.tahunAnggaran === activeYear);
 
   // Projects accessible by the current user:
+  // - If not logged in: return empty array
   // - Superadmin, Sekretaris, Kepala Dinas, Kasubag ProgKeu, Koord ProgKeu: See ALL Bidang
   // - Kasubag Umpeg & Koord Umpeg: See Sekretariat Bidang
   // - Koordinator, Kepala Bidang: See ONLY their own Bidang!
   const accessibleProjects = activeYearProjects.filter((p) => {
+    if (!currentUser) return false;
     if (userRoleDef.canSeeAllBidang) return true;
     if (currentUser.role === 'kasubag_umpeg' || currentUser.role === 'koordinator_umpeg') {
       return p.bidangId === 'sekretariat';
