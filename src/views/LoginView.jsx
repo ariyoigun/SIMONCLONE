@@ -96,7 +96,7 @@ const LoginView = ({ onBackToLanding }) => {
     setErrorMessage('');
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMessage('');
     setMathError(false);
@@ -113,16 +113,20 @@ const LoginView = ({ onBackToLanding }) => {
       return;
     }
 
-    // 2. Verify Credentials
+    // 2. Verify Credentials Langsung ke Server MySQL
     setIsLoading(true);
-    setTimeout(() => {
-      const result = login(identifier, password);
+    try {
+      const result = await login(identifier, password);
       setIsLoading(false);
       if (!result.success) {
         setErrorMessage(result.message);
         generateMathProblem();
       }
-    }, 300);
+    } catch (err) {
+      setIsLoading(false);
+      setErrorMessage('Terjadi kendala saat verifikasi akun: ' + err.message);
+      generateMathProblem();
+    }
   };
 
   return (

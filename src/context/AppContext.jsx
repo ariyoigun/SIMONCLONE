@@ -594,12 +594,46 @@ export const AppProvider = ({ children }) => {
     }, 4000);
   };
 
-  // Authentication: Login & Logout
-  const login = (identifier, password) => {
+  // Authentication: Login Langsung ke Database MySQL (Dengan Fallback Offline)
+  const login = async (identifier, password) => {
     const cleanId = (identifier || '').trim().toLowerCase();
     const cleanPass = (password || '').trim();
 
-    // Match users by username, email, or NIP
+    if (!cleanId || !cleanPass) {
+      return { success: false, message: 'Username / NIP dan Kata Sandi wajib diisi!' };
+    }
+
+    // 1. Prioritas Utama: Otentikasi Langsung ke MySQL Server
+    try {
+      const res = await fetch('/api/api.php?action=login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ identifier: cleanId, password: cleanPass })
+      });
+      const json = await res.json().catch(() => null);
+
+      if (res.ok && json && json.status === 'success' && json.user) {
+        const remoteUser = json.user;
+        setCurrentUser(remoteUser);
+        setIsLoggedIn(true);
+        setUsers((prev) => {
+          const exists = prev.some((u) => u.id === remoteUser.id);
+          return exists ? prev.map((u) => (u.id === remoteUser.id ? { ...u, ...remoteUser } : u)) : [remoteUser, ...prev];
+        });
+        try {
+          localStorage.setItem('simon_current_user', JSON.stringify(remoteUser));
+          localStorage.setItem('simon_is_logged_in', 'true');
+        } catch (e) {}
+        showToast(`Selamat datang kembali, ${remoteUser.nama}!`, 'success');
+        return { success: true, user: remoteUser };
+      } else if (json && json.message) {
+        return { success: false, message: json.message };
+      }
+    } catch (apiErr) {
+      // Server down / offline, fallback ke in-memory users
+    }
+
+    // 2. Fallback Validasi Offline (Lokal)
     let matchedUsers = users.filter((u) => {
       const uEmail = (u.email || '').toLowerCase();
       const uUser = (u.username || '').toLowerCase();
@@ -608,7 +642,6 @@ export const AppProvider = ({ children }) => {
       return uEmail === cleanId || uUser === cleanId || (uNip && uNip === cleanNip);
     });
 
-    // Fallback for koor.sekre1 / koor.sekre2
     if (matchedUsers.length === 0 && cleanId === 'koor.sekre1') {
       const rani = users.find((u) => u.username === 'koor.sekre2');
       if (rani) matchedUsers = [rani];
@@ -618,9 +651,7 @@ export const AppProvider = ({ children }) => {
       return { success: false, message: 'Akun dengan email / username / NIP tersebut tidak ditemukan!' };
     }
 
-    // Pick user matching password if multiple matched (e.g. same NIP or dual roles)
     const user = matchedUsers.find((u) => (u.password || 'pupr2025') === cleanPass) || matchedUsers[0];
-
     const userPassword = user.password || 'pupr2025';
     if (userPassword !== cleanPass) {
       return { success: false, message: 'Kata sandi / Password salah! Silakan periksa kembali.' };

@@ -11,8 +11,9 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
 
   return (
     <>
-      {/* Top Simulation Banner */}
-      <div className="quick-switcher-banner">
+      {/* Top Simulation Banner - Hanya Tampil Untuk Superadmin */}
+      {currentUser?.role === 'superadmin' && (
+        <div className="quick-switcher-banner">
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <Sparkles size={16} color="#f59e0b" />
           <span>
@@ -48,31 +49,9 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
           >
             Ganti Peran / Role Switcher
           </button>
-          {typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && (
-            <button
-              style={{
-                background: 'none',
-                border: 'none',
-                color: '#94a3b8',
-                fontSize: 11,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 4
-              }}
-              onClick={() => {
-                if (window.confirm('Reset data lokal ke data sampel awal DINPUTARU? (Data database Hostinger tidak terpengaruh)')) {
-                  resetToDemoData();
-                }
-              }}
-              title="Reset data lokal demo jika ingin mulai dari awal (Hanya tampil di Localhost)"
-            >
-              <RotateCcw size={12} />
-              Reset Demo Lokal
-            </button>
-          )}
         </div>
       </div>
+      )}
 
       {/* Main Navbar */}
       <header className="navbar-header">
@@ -133,8 +112,9 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
           {/* User profile dropdown / trigger */}
           <div
             className="user-profile-badge"
-            onClick={onOpenRoleModal}
-            title="Klik untuk simulasi peran lain"
+            onClick={currentUser?.role === 'superadmin' ? onOpenRoleModal : undefined}
+            style={{ cursor: currentUser?.role === 'superadmin' ? 'pointer' : 'default' }}
+            title={currentUser?.role === 'superadmin' ? "Ganti peran pengguna (Superadmin)" : currentUser?.nama}
           >
             <img src={currentUser?.avatar} alt="" className="user-avatar" />
             <div className="user-info">
@@ -144,7 +124,7 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
                 {roleDef.nama} • {bidang ? bidang.singkatan : 'DINPUTARU'}
               </span>
             </div>
-            <ChevronDown size={14} color="#94a3b8" />
+            {currentUser?.role === 'superadmin' && <ChevronDown size={14} color="#94a3b8" />}
           </div>
 
           {/* Logout Button */}

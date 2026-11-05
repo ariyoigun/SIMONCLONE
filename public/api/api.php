@@ -10,6 +10,92 @@ require_once __DIR__ . '/config.php';
 
 $action = isset($_GET['action']) ? $_GET['action'] : '';
 
+// Pastikan kolom avatar dan teks panjang berukuran LONGTEXT agar tidak terpotong (max 4GB)
+if ($pdo && ($action === 'health' || $action === 'login' || $action === 'save_user' || $action === 'save_settings' || $action === 'migrate_db')) {
+    try {
+        $pdo->exec("ALTER TABLE users MODIFY COLUMN avatar LONGTEXT DEFAULT NULL");
+        $pdo->exec("ALTER TABLE system_settings MODIFY COLUMN logo_url LONGTEXT DEFAULT NULL");
+        $pdo->exec("ALTER TABLE system_settings MODIFY COLUMN galeri_json LONGTEXT DEFAULT NULL");
+    } catch (Exception $e) {}
+}
+
+// 1.05 API Otentikasi Login Terpadu Langsung ke Database MySQL
+if ($action === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    $input = json_decode(file_get_contents('php://input'), true) ?? [];
+    $rawId = trim($input['identifier'] ?? '');
+    $rawPass = trim($input['password'] ?? '');
+
+    if ($rawId === '' || $rawPass === '') {
+        http_response_code(400);
+        echo json_encode(['status' => 'error', 'message' => 'Username/NIP dan Password wajib diisi!']);
+        exit;
+    }
+
+    if (!$pdo) {
+        http_response_code(500);
+        echo json_encode(['status' => 'error', 'message' => 'Koneksi database MySQL belum siap: ' . ($db_connection_error ?? 'Offline')]);
+        exit;
+    }
+
+    try {
+        $cleanId = strtolower($rawId);
+        $cleanNip = preg_replace('/\s+/', '', $rawId);
+
+        // Cari akun di tabel users
+        $stmt = $pdo->prepare("SELECT id, username, password, nama, nip, jabatan, role, bidang_id AS bidangId, email, avatar 
+            FROM users 
+            WHERE LOWER(username) = :u 
+               OR LOWER(email) = :e 
+               OR REPLACE(nip, ' ', '') = :n 
+            LIMIT 5");
+        $stmt->execute([':u' => $cleanId, ':e' => $cleanId, ':n' => $cleanNip]);
+        $matched = $stmt->fetchAll();
+
+        // Fallback untuk koor.sekre1 / koor.sekre2
+        if (empty($matched) && $cleanId === 'koor.sekre1') {
+            $stmt = $pdo->prepare("SELECT id, username, password, nama, nip, jabatan, role, bidang_id AS bidangId, email, avatar FROM users WHERE username = 'koor.sekre2' LIMIT 1");
+            $stmt->execute();
+            $matched = $stmt->fetchAll();
+        }
+
+        if (empty($matched)) {
+            http_response_code(404);
+            echo json_encode(['status' => 'error', 'message' => 'Akun dengan username / NIP / email tersebut tidak ditemukan di sistem!']);
+            exit;
+        }
+
+        // Cari user yang password-nya cocok jika ada beberapa akun dengan NIP yang sama
+        $user = null;
+        foreach ($matched as $m) {
+            $uPass = $m['password'] ?? 'pupr2025';
+            if ($uPass === $rawPass) {
+                $user = $m;
+                break;
+            }
+        }
+
+        if (!$user) {
+            $expected = $matched[0]['password'] ?? 'pupr2025';
+            if ($expected !== $rawPass) {
+                http_response_code(401);
+                echo json_encode(['status' => 'error', 'message' => 'Kata sandi / Password salah! Silakan periksa kembali.']);
+                exit;
+            }
+            $user = $matched[0];
+        }
+
+        echo json_encode([
+            'status' => 'success',
+            'message' => 'Login berhasil!',
+            'user' => $user
+        ]);
+    } catch (Exception $e) {
+        http_response_code(500);
+        echo json_encode(['status' => 'error', 'message' => 'Kesalahan server saat verifikasi akun: ' . $e->getMessage()]);
+    }
+    exit;
+}
+
 // 1. Cek Koneksi / Health Check
 if ($action === 'health') {
     if ($pdo) {

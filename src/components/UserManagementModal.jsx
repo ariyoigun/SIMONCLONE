@@ -560,11 +560,11 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                               onChange={(e) => {
                                 const file = e.target.files?.[0];
                                 if (file) {
-                                  if (file.size > 2 * 1024 * 1024) {
+                                  if (file.size > 10 * 1024 * 1024) {
                                     setNotifModal({
                                       isOpen: true,
                                       title: 'Ukuran Foto Terlalu Besar',
-                                      message: 'Ukuran foto maksimal 2 MB agar performa sistem tetap cepat.',
+                                      message: 'Ukuran file foto maksimal 10 MB.',
                                       type: 'error',
                                       btnText: 'Tutup'
                                     });
@@ -572,7 +572,31 @@ const UserManagementModal = ({ isOpen, onClose }) => {
                                   }
                                   const reader = new FileReader();
                                   reader.onload = (event) => {
-                                    setFormData({ ...formData, avatar: event.target?.result });
+                                    const img = new Image();
+                                    img.onload = () => {
+                                      const canvas = document.createElement('canvas');
+                                      const MAX_DIM = 256;
+                                      let w = img.width;
+                                      let h = img.height;
+                                      if (w > h) {
+                                        if (w > MAX_DIM) {
+                                          h = Math.round((h * MAX_DIM) / w);
+                                          w = MAX_DIM;
+                                        }
+                                      } else {
+                                        if (h > MAX_DIM) {
+                                          w = Math.round((w * MAX_DIM) / h);
+                                          h = MAX_DIM;
+                                        }
+                                      }
+                                      canvas.width = w;
+                                      canvas.height = h;
+                                      const ctx = canvas.getContext('2d');
+                                      ctx.drawImage(img, 0, 0, w, h);
+                                      const compressed = canvas.toDataURL('image/jpeg', 0.85);
+                                      setFormData((prev) => ({ ...prev, avatar: compressed }));
+                                    };
+                                    img.src = event.target?.result;
                                   };
                                   reader.readAsDataURL(file);
                                 }

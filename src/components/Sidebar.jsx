@@ -398,29 +398,31 @@ const Sidebar = ({
               ? 'Wewenang: Melihat pekerjaan SEMUA BIDANG (Dinas).'
               : `Wewenang: Terbatas hanya untuk ${bidang?.nama || 'bidang terkait'}.`}
           </div>
-          <button
-            type="button"
-            onClick={onOpenRoleModal}
-            style={{
-              marginTop: 8,
-              width: '100%',
-              padding: '6px 10px',
-              fontSize: 11,
-              fontWeight: 700,
-              color: '#f59e0b',
-              background: 'rgba(245, 158, 11, 0.1)',
-              border: '1px solid rgba(245, 158, 11, 0.3)',
-              borderRadius: 6,
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: 4
-            }}
-          >
-            <span>Simulasi Peran Lain</span>
-            <ChevronRight size={13} />
-          </button>
+          {currentUser?.role === 'superadmin' && (
+            <button
+              type="button"
+              onClick={onOpenRoleModal}
+              style={{
+                marginTop: 8,
+                width: '100%',
+                padding: '6px 10px',
+                fontSize: 11,
+                fontWeight: 700,
+                color: '#f59e0b',
+                background: 'rgba(245, 158, 11, 0.1)',
+                border: '1px solid rgba(245, 158, 11, 0.3)',
+                borderRadius: 6,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 4
+              }}
+            >
+              <span>Simulasi Peran Lain</span>
+              <ChevronRight size={13} />
+            </button>
+          )}
 
           <button
             type="button"

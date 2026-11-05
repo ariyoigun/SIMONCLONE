@@ -7,6 +7,7 @@ const RoleSwitcherModal = ({ isOpen, onClose }) => {
   const { users, currentUser, switchUser } = useApp();
 
   if (!isOpen) return null;
+  if (currentUser?.role !== 'superadmin') return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
