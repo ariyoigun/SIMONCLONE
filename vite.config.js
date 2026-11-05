@@ -6,6 +6,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3001,
-    allowedHosts: true
+    allowedHosts: true,
+    proxy: {
+      '/api': {
+        target: 'https://simon.satuputarudemak.id',
+        changeOrigin: true,
+        secure: false
+      }
+    }
   }
 })

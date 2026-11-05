@@ -48,27 +48,29 @@ const Navbar = ({ onOpenYearModal, onOpenRoleModal, onOpenPublicPortal }) => {
           >
             Ganti Peran / Role Switcher
           </button>
-          <button
-            style={{
-              background: 'none',
-              border: 'none',
-              color: '#94a3b8',
-              fontSize: 11,
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: 4
-            }}
-            onClick={() => {
-              if (window.confirm('Reset semua data ke data sampel awal DINPUTARU?')) {
-                resetToDemoData();
-              }
-            }}
-            title="Reset data demo jika ingin mulai dari awal"
-          >
-            <RotateCcw size={12} />
-            Reset Data
-          </button>
+          {typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && (
+            <button
+              style={{
+                background: 'none',
+                border: 'none',
+                color: '#94a3b8',
+                fontSize: 11,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 4
+              }}
+              onClick={() => {
+                if (window.confirm('Reset data lokal ke data sampel awal DINPUTARU? (Data database Hostinger tidak terpengaruh)')) {
+                  resetToDemoData();
+                }
+              }}
+              title="Reset data lokal demo jika ingin mulai dari awal (Hanya tampil di Localhost)"
+            >
+              <RotateCcw size={12} />
+              Reset Demo Lokal
+            </button>
+          )}
         </div>
       </div>
 
