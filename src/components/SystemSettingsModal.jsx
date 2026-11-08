@@ -298,7 +298,8 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     }
   };
 
-  if (!isOpen || !canManageSettings) return null;
+  // Checked before render
+  // if (!isOpen || !canManageSettings) return null;
 
   const handleAddTagSubmit = (e) => {
     e.preventDefault();
@@ -612,6 +613,9 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
 
   const allMenuItems = menuCategories.flatMap((g) => g.items);
   const activeTabInfo = allMenuItems.find((m) => m.id === activeTab) || allMenuItems[0];
+
+  if (!isOpen || !canManageSettings) return null;
+
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -965,6 +969,49 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                       <span style={{ fontSize: 12.5, color: '#64748b' }}>
                         Menentukan berapa banyak paket pekerjaan berstatus sorotan publik yang ditampilkan di halaman depan masyarakat.
                       </span>
+                    </div>
+                  </div>
+
+                  {/* Pengaturan Visualisasi Kurva S Pekerjaan */}
+                  <div
+                    className="form-group"
+                    style={{
+                      gridColumn: '1 / -1',
+                      background: '#f8fafc',
+                      border: '1.5px solid #cbd5e1',
+                      borderRadius: 14,
+                      padding: '16px 20px',
+                      marginTop: 4,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      flexWrap: 'wrap',
+                      gap: 12
+                    }}
+                  >
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 800, color: '#0f2c59', display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <span>Visualisasi Kurva S pada Rincian Pekerjaan</span>
+                        <span style={{ fontSize: 11, fontWeight: 700, padding: '2px 8px', borderRadius: 6, background: systemSettings?.showKurvaS ? '#e0f2fe' : '#f1f5f9', color: systemSettings?.showKurvaS ? '#0369a1' : '#64748b' }}>
+                          Default: Nonaktif (OFF)
+                        </span>
+                      </div>
+                      <div style={{ fontSize: 12.5, color: '#64748b', marginTop: 2 }}>
+                        Fungsi untuk menampilkan atau menyembunyikan visualisasi Kurva S (Rencana vs Realisasi) pada detail pekerjaan di seluruh sistem.
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                      <label style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer', gap: 8, padding: '6px 12px', borderRadius: 8, background: '#fff', border: '1px solid #cbd5e1' }}>
+                        <input
+                          type="checkbox"
+                          checked={systemSettings?.showKurvaS === true}
+                          onChange={(e) => updateSystemSettings({ showKurvaS: e.target.checked })}
+                          style={{ width: 18, height: 18, cursor: 'pointer', accentColor: '#0284c7' }}
+                        />
+                        <span style={{ fontSize: 13, fontWeight: 700, color: systemSettings?.showKurvaS ? '#0284c7' : '#64748b' }}>
+                          {systemSettings?.showKurvaS ? 'Aktif (ON - Kurva S Ditampilkan)' : 'Nonaktif (OFF - Kurva S Disembunyikan)'}
+                        </span>
+                      </label>
                     </div>
                   </div>
 

@@ -874,6 +874,7 @@ export const DEFAULT_SYSTEM_SETTINGS = {
   showGaleriSlideshow: false,
   showSlideshowUnggulan: true,
   showPetaKoordinat: false,
+  showKurvaS: false, // Default: OFF (Sembunyikan Kurva S)
   slideshowUnggulan: [
       {
           "id": "slide-1",

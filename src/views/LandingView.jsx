@@ -108,9 +108,22 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
     const selected12 = [];
 
     techBidangs.forEach((b) => {
-      const bProjs = projects.filter((p) => p.bidangId === b.id);
-      // Urutkan berdasarkan nominal terbesar di bidang tersebut
-      const sorted = [...bProjs].sort((p1, p2) => getNominal(p2) - getNominal(p1));
+      const bProjsAll = projects.filter((p) => p.bidangId === b.id);
+      
+      // Ambil 3 besar tiap bidang yang sudah berjalan, sudah ada pelaksana, dan realisasi fisik > 0
+      const bProjsRunning = bProjsAll.filter((p) => {
+        const hasPelaksana = p.dataKontrak?.namaPenyedia &&
+          p.dataKontrak.namaPenyedia.trim() !== '-' &&
+          !p.dataKontrak.namaPenyedia.toLowerCase().includes('belum') &&
+          !p.dataKontrak.namaPenyedia.toLowerCase().includes('tahap');
+        const hasFisik = (parseFloat(p.dataFisik?.progresRealisasi) || 0) > 0;
+        const isRunning = p.isKontrak || (p.dataKontrak?.nilaiKontrak > 0) || (p.dataKontrak?.nomorKontrak && p.dataKontrak.nomorKontrak !== '-');
+        return hasPelaksana && hasFisik && isRunning;
+      });
+
+      // Pilih dari yang berjalan & ada fisik > 0; jika kurang dari 3, tambahkan dari yang berpelaksana/kontrak
+      const pool = bProjsRunning.length >= 3 ? bProjsRunning : (bProjsRunning.length > 0 ? bProjsRunning : bProjsAll);
+      const sorted = [...pool].sort((p1, p2) => getNominal(p2) - getNominal(p1));
       const top3 = sorted.slice(0, 3);
       selected12.push(...top3);
     });
@@ -1013,7 +1026,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                         }}
                       >
                         <Eye size={14} />
-                        <span>Lihat Rincian Publik & Foto</span>
+                        <span>Lihat Rincian Pekerjaan</span>
                       </button>
                     </div>
                   </div>

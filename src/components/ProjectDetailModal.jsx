@@ -31,9 +31,7 @@ import {
 } from 'lucide-react';
 
 const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
-  if (!isOpen || !project) return null;
-
-  const { praKontrakStages = [], currentUser, addProjectLog, canEditProject } = useApp();
+  const { systemSettings, praKontrakStages = [], currentUser, addProjectLog, canEditProject } = useApp();
   const [activeTab, setActiveTab] = useState('fisik'); // 'fisik' | 'keuangan' | 'spj' | 'prakontrak' | 'identitas' | 'logs'
   const [showLogInput, setShowLogInput] = useState(false);
 
@@ -60,6 +58,10 @@ const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
     type: 'success',
     btnText: 'OK, Selesai'
   });
+
+  const [previewPhoto, setPreviewPhoto] = useState(null);
+
+  if (!isOpen || !project) return null;
 
   const canInputProgress = canEditProject ? canEditProject(project) : (currentUser?.role === 'superadmin' || currentUser?.bidangId === project?.bidangId);
   const logs = Array.isArray(project?.logs) ? project.logs : [];
@@ -306,7 +308,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
               onClick={() => setActiveTab('fisik')}
             >
               <TrendingUp size={16} />
-              Progres Fisik & Kurva S
+              {systemSettings?.showKurvaS ? 'Progres Fisik & Kurva S' : 'Progres Fisik'}
             </button>
             <button
               className={`tab-btn ${activeTab === 'keuangan' ? 'active' : ''}`}
@@ -411,7 +413,8 @@ const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
                 </div>
               </div>
 
-              {/* Kurva S Card */}
+              {/* Kurva S Card (Kondisional dari Superadmin) */}
+              {systemSettings?.showKurvaS && (
               <div
                 style={{
                   background: '#ffffff',
@@ -432,6 +435,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
                 </div>
                 <ScurveChart data={dataFisik.mingguanKurvaS || []} height={260} />
               </div>
+              )}
 
               {/* Kendala Lapangan */}
               <div
@@ -451,68 +455,124 @@ const ProjectDetailModal = ({ project, isOpen, onClose, onEdit }) => {
                 </p>
               </div>
 
-              {/* Galeri Foto Dokumentasi Lapangan */}
+                            {/* Galeri Foto Dokumentasi */}
               <div>
-                <h4 style={{ fontSize: 14, fontWeight: 700, color: '#0f2c59', marginBottom: 12 }}>
-                  Dokumentasi Foto Lapangan (0%, 50%, 100%)
-                </h4>
-                {(!dataFisik.fotoDokumentasi || dataFisik.fotoDokumentasi.length === 0) ? (
-                  <div
-                    style={{
-                      padding: '20px',
-                      textAlign: 'center',
-                      background: '#f8fafc',
-                      borderRadius: 10,
-                      border: '1px dashed #cbd5e1',
-                      color: '#64748b',
-                      fontSize: 13
-                    }}
-                  >
-                    Belum ada foto dokumentasi lapangan yang diunggah.
-                  </div>
-                ) : (
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14 }}>
-                    {dataFisik.fotoDokumentasi.map((foto, idx) => (
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
+                  <h4 style={{ fontSize: 15, fontWeight: 700, color: '#0f2c59', margin: 0, display: 'flex', alignItems: 'center', gap: 6 }}>
+                    <span>Dokumentasi</span>
+                    <span style={{ fontSize: 12, fontWeight: 600, color: '#64748b' }}>(Milestone 0%, 50%, 100%)</span>
+                  </h4>
+                  {onEdit && canInputProgress && (
+                    <button
+                      type="button"
+                      className="btn btn-outline"
+                      onClick={() => onEdit(project)}
+                      style={{ padding: '5px 12px', fontSize: 12, gap: 5 }}
+                    >
+                      <Sparkles size={14} color="#0284c7" />
+                      <span>Unggah / Ubah Foto Dokumentasi</span>
+                    </button>
+                  )}
+                </div>
+
+                {(() => {
+                  let fotos = dataFisik.fotoDokumentasi || [];
+                  if (!fotos || fotos.length === 0) {
+                    const dok = project.dokumentasi || project.fotoLapangan || {};
+                    const fallbackFotos = [];
+                    if (dok.foto0) fallbackFotos.push({ tahap: '0%', label: 'Kondisi 0% (Titik Nol)', url: dok.foto0, tanggal: dok.tanggal0 || '' });
+                    if (dok.foto50) fallbackFotos.push({ tahap: '50%', label: 'Progres 50% (Pelaksanaan)', url: dok.foto50, tanggal: dok.tanggal50 || '' });
+                    if (dok.foto100) fallbackFotos.push({ tahap: '100%', label: 'Progres 100% (Selesai Fisik)', url: dok.foto100, tanggal: dok.tanggal100 || '' });
+                    fotos = fallbackFotos;
+                  }
+
+                  if (fotos.length === 0) {
+                    return (
                       <div
-                        key={idx}
                         style={{
-                          borderRadius: 10,
-                          overflow: 'hidden',
-                          border: '1px solid #e2e8f0',
-                          background: '#fff'
+                          padding: '24px 20px',
+                          textAlign: 'center',
+                          background: '#f8fafc',
+                          borderRadius: 12,
+                          border: '1.5px dashed #cbd5e1',
+                          color: '#64748b',
+                          fontSize: 13
                         }}
                       >
-                        <img
-                          src={foto.url}
-                          alt={foto.label}
-                          style={{ width: '100%', height: 140, objectFit: 'cover' }}
-                        />
-                        <div style={{ padding: '10px' }}>
-                          <span
-                            style={{
-                              fontSize: 10.5,
-                              fontWeight: 700,
-                              background: '#0f2c59',
-                              color: '#fff',
-                              padding: '2px 6px',
-                              borderRadius: 4
-                            }}
-                          >
-                            {foto.tahap}
-                          </span>
-                          <div style={{ fontSize: 12, fontWeight: 600, color: '#0f172a', marginTop: 4 }}>
-                            {foto.label}
-                          </div>
-                          {foto.tanggal && (
-                            <div style={{ fontSize: 10.5, color: '#94a3b8', marginTop: 2 }}>
-                              {foto.tanggal}
-                            </div>
-                          )}
+                        <div style={{ fontSize: 14, fontWeight: 700, color: '#475569' }}>
+                          Belum ada foto dokumentasi lapangan (0%, 50%, 100%) yang diunggah.
                         </div>
+                        <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 4 }}>
+                          Koordinator bidang dapat mengunggah foto melalui tombol Edit Pekerjaan atau formulir Progres Fisik.
+                        </div>
+                        {onEdit && canInputProgress && (
+                          <button
+                            type="button"
+                            className="btn btn-primary"
+                            onClick={() => onEdit(project)}
+                            style={{ marginTop: 12, padding: '7px 16px', fontSize: 12.5 }}
+                          >
+                            <span>Unggah Foto Sekarang</span>
+                          </button>
+                        )}
                       </div>
-                    ))}
-                  </div>
-                )}
+                    );
+                  }
+
+                  return (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14 }}>
+                      {fotos.map((foto, idx) => (
+                        <div
+                          key={idx}
+                          style={{
+                            borderRadius: 10,
+                            overflow: 'hidden',
+                            border: '1px solid #e2e8f0',
+                            background: '#fff',
+                            boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
+                            cursor: 'pointer',
+                            transition: 'transform 0.15s ease'
+                          }}
+                          onClick={() => setPreviewPhoto(foto)}
+                          title="Klik untuk melihat foto ukuran penuh"
+                        >
+                          <div style={{ position: 'relative' }}>
+                            <img
+                              src={foto.url}
+                              alt={foto.label}
+                              style={{ width: '100%', height: 160, objectFit: 'cover', display: 'block' }}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: 8,
+                                left: 8,
+                                fontSize: 11,
+                                fontWeight: 800,
+                                background: foto.tahap === '100%' ? '#059669' : (foto.tahap === '50%' ? '#0284c7' : '#0f2c59'),
+                                color: '#fff',
+                                padding: '3px 8px',
+                                borderRadius: 6,
+                                boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+                              }}
+                            >
+                              {foto.tahap}
+                            </div>
+                          </div>
+                          <div style={{ padding: '10px 12px' }}>
+                            <div style={{ fontSize: 13, fontWeight: 700, color: '#0f172a' }}>
+                              {foto.label}
+                            </div>
+                            <div style={{ fontSize: 11, color: '#64748b', marginTop: 2, display: 'flex', justifyContent: 'space-between' }}>
+                              <span>{foto.tanggal || 'Foto Progres'}</span>
+                              <span style={{ color: '#0284c7', fontWeight: 600 }}>🔍 Perbesar</span>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           )}

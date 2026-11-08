@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import ConfirmModal from './ConfirmModal';
 import NotificationModal from './NotificationModal';
-import { X, TrendingUp, DollarSign, Save } from 'lucide-react';
+import { X, TrendingUp, DollarSign, Save, Camera, Upload, Trash2 } from 'lucide-react';
 
 const QuickProgressModal = ({ project, isOpen, onClose }) => {
   const { updateProject, addTermin, addProjectLog, currentUser } = useApp();
@@ -10,6 +10,62 @@ const QuickProgressModal = ({ project, isOpen, onClose }) => {
   const [rencana, setRencana] = useState(project?.dataFisik?.progresRencana || 0);
   const [realisasi, setRealisasi] = useState(project?.dataFisik?.progresRealisasi || 0);
   const [kendala, setKendala] = useState(project?.dataFisik?.kendalaLapangan || '');
+
+  // Dokumentasi Foto 0%, 50%, 100%
+  const existingFotos = project?.dataFisik?.fotoDokumentasi || [];
+  const dok = project?.dokumentasi || project?.fotoLapangan || {};
+  const [foto0, setFoto0] = useState(() => existingFotos.find((f) => f.tahap === '0%')?.url || dok.foto0 || '');
+  const [foto50, setFoto50] = useState(() => existingFotos.find((f) => f.tahap === '50%')?.url || dok.foto50 || '');
+  const [foto100, setFoto100] = useState(() => existingFotos.find((f) => f.tahap === '100%')?.url || dok.foto100 || '');
+  const [tanggal0, setTanggal0] = useState(() => existingFotos.find((f) => f.tahap === '0%')?.tanggal || dok.tanggal0 || '');
+  const [tanggal50, setTanggal50] = useState(() => existingFotos.find((f) => f.tahap === '50%')?.tanggal || dok.tanggal50 || '');
+  const [tanggal100, setTanggal100] = useState(() => existingFotos.find((f) => f.tahap === '100%')?.tanggal || dok.tanggal100 || '');
+
+  const handlePhotoUpload = (tahap, file) => {
+    if (!file) return;
+    if (file.size > 10 * 1024 * 1024) {
+      alert('Ukuran file foto maksimal 10 MB.');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        let width = img.width;
+        let height = img.height;
+        const maxDim = 1200;
+        if (width > maxDim || height > maxDim) {
+          if (width > height) {
+            height = Math.round((height * maxDim) / width);
+            width = maxDim;
+          } else {
+            width = Math.round((width * maxDim) / height);
+            height = maxDim;
+          }
+        }
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+        const compressedBase64 = canvas.toDataURL('image/jpeg', 0.82);
+        const todayStr = new Date().toISOString().slice(0, 10);
+
+        if (tahap === '0%') {
+          setFoto0(compressedBase64);
+          if (!tanggal0) setTanggal0(todayStr);
+        } else if (tahap === '50%') {
+          setFoto50(compressedBase64);
+          if (!tanggal50) setTanggal50(todayStr);
+        } else if (tahap === '100%') {
+          setFoto100(compressedBase64);
+          if (!tanggal100) setTanggal100(todayStr);
+        }
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  };
 
   // Add Termin quickly
   const [addTerminNow, setAddTerminNow] = useState(false);
@@ -86,13 +142,30 @@ const QuickProgressModal = ({ project, isOpen, onClose }) => {
           }
         });
 
-        // Update physical progress & notes
+        const finalFotos = [
+          foto0 ? { tahap: '0%', label: 'Kondisi 0% (Titik Nol)', url: foto0, tanggal: tanggal0 || new Date().toISOString().slice(0, 10) } : null,
+          foto50 ? { tahap: '50%', label: 'Progres 50% (Pelaksanaan)', url: foto50, tanggal: tanggal50 || new Date().toISOString().slice(0, 10) } : null,
+          foto100 ? { tahap: '100%', label: 'Progres 100% (Selesai Fisik)', url: foto100, tanggal: tanggal100 || new Date().toISOString().slice(0, 10) } : null
+        ].filter(Boolean);
+
+        // Update physical progress, notes & documentation photos
         updateProject(project.id, {
           dataFisik: {
             ...project.dataFisik,
             progresRencana: fRencana,
             progresRealisasi: fRealisasi,
-            kendalaLapangan: kendala
+            kendalaLapangan: kendala,
+            fotoDokumentasi: finalFotos
+          },
+          dokumentasi: {
+            foto0,
+            foto50,
+            foto100
+          },
+          fotoLapangan: {
+            foto0,
+            foto50,
+            foto100
           }
         });
 
@@ -204,6 +277,97 @@ const QuickProgressModal = ({ project, isOpen, onClose }) => {
                 value={kendala}
                 onChange={(e) => setKendala(e.target.value)}
               />
+            </div>
+
+            
+            {/* Dokumentasi Foto Lapangan (0%, 50%, 100%) */}
+            <div
+              style={{
+                marginBottom: 16,
+                padding: '16px',
+                borderRadius: 12,
+                border: '1.5px solid #cbd5e1',
+                background: '#f8fafc'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+                <div style={{ fontSize: 13.5, fontWeight: 800, color: '#0f2c59', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <Camera size={16} color="#0284c7" />
+                  <span>Foto Dokumentasi (0%, 50%, 100%)</span>
+                </div>
+                <span style={{ fontSize: 11, color: '#64748b' }}>Pratinjau Instan</span>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
+                {/* 0% */}
+                <div style={{ background: '#fff', borderRadius: 8, border: '1px solid #e2e8f0', padding: 8 }}>
+                  <div style={{ fontSize: 11, fontWeight: 800, color: '#0f2c59', marginBottom: 4 }}>0% Titik Nol</div>
+                  {foto0 ? (
+                    <div style={{ position: 'relative', borderRadius: 6, overflow: 'hidden' }}>
+                      <img src={foto0} alt="0%" style={{ width: '100%', height: 75, objectFit: 'cover' }} />
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
+                        <label style={{ fontSize: 10, color: '#0284c7', fontWeight: 700, cursor: 'pointer' }}>
+                          Ganti
+                          <input type="file" accept="image/*" style={{ display: 'none' }} onChange={(e) => handlePhotoUpload('0%', e.target.files?.[0])} />
+                        </label>
+                        <button type="button" onClick={() => setFoto0('')} style={{ background: 'none', border: 'none', color: '#dc2626', fontSize: 10, cursor: 'pointer' }}>Hapus</button>
+                      </div>
+                    </div>
+                  ) : (
+                    <label style={{ height: 75, borderRadius: 6, border: '1px dashed #cbd5e1', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', background: '#f8fafc', color: '#64748b' }}>
+                      <Upload size={14} color="#0284c7" />
+                      <span style={{ fontSize: 10, fontWeight: 700, marginTop: 2 }}>Upload 0%</span>
+                      <input type="file" accept="image/*" style={{ display: 'none' }} onChange={(e) => handlePhotoUpload('0%', e.target.files?.[0])} />
+                    </label>
+                  )}
+                </div>
+
+                {/* 50% */}
+                <div style={{ background: '#fff', borderRadius: 8, border: '1px solid #e2e8f0', padding: 8 }}>
+                  <div style={{ fontSize: 11, fontWeight: 800, color: '#0284c7', marginBottom: 4 }}>50% Progres</div>
+                  {foto50 ? (
+                    <div style={{ position: 'relative', borderRadius: 6, overflow: 'hidden' }}>
+                      <img src={foto50} alt="50%" style={{ width: '100%', height: 75, objectFit: 'cover' }} />
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
+                        <label style={{ fontSize: 10, color: '#0284c7', fontWeight: 700, cursor: 'pointer' }}>
+                          Ganti
+                          <input type="file" accept="image/*" style={{ display: 'none' }} onChange={(e) => handlePhotoUpload('50%', e.target.files?.[0])} />
+                        </label>
+                        <button type="button" onClick={() => setFoto50('')} style={{ background: 'none', border: 'none', color: '#dc2626', fontSize: 10, cursor: 'pointer' }}>Hapus</button>
+                      </div>
+                    </div>
+                  ) : (
+                    <label style={{ height: 75, borderRadius: 6, border: '1px dashed #cbd5e1', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', background: '#f8fafc', color: '#64748b' }}>
+                      <Upload size={14} color="#0284c7" />
+                      <span style={{ fontSize: 10, fontWeight: 700, marginTop: 2 }}>Upload 50%</span>
+                      <input type="file" accept="image/*" style={{ display: 'none' }} onChange={(e) => handlePhotoUpload('50%', e.target.files?.[0])} />
+                    </label>
+                  )}
+                </div>
+
+                {/* 100% */}
+                <div style={{ background: '#fff', borderRadius: 8, border: '1px solid #e2e8f0', padding: 8 }}>
+                  <div style={{ fontSize: 11, fontWeight: 800, color: '#059669', marginBottom: 4 }}>100% Selesai</div>
+                  {foto100 ? (
+                    <div style={{ position: 'relative', borderRadius: 6, overflow: 'hidden' }}>
+                      <img src={foto100} alt="100%" style={{ width: '100%', height: 75, objectFit: 'cover' }} />
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
+                        <label style={{ fontSize: 10, color: '#0284c7', fontWeight: 700, cursor: 'pointer' }}>
+                          Ganti
+                          <input type="file" accept="image/*" style={{ display: 'none' }} onChange={(e) => handlePhotoUpload('100%', e.target.files?.[0])} />
+                        </label>
+                        <button type="button" onClick={() => setFoto100('')} style={{ background: 'none', border: 'none', color: '#dc2626', fontSize: 10, cursor: 'pointer' }}>Hapus</button>
+                      </div>
+                    </div>
+                  ) : (
+                    <label style={{ height: 75, borderRadius: 6, border: '1px dashed #cbd5e1', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', background: '#f8fafc', color: '#64748b' }}>
+                      <Upload size={14} color="#059669" />
+                      <span style={{ fontSize: 10, fontWeight: 700, marginTop: 2 }}>Upload 100%</span>
+                      <input type="file" accept="image/*" style={{ display: 'none' }} onChange={(e) => handlePhotoUpload('100%', e.target.files?.[0])} />
+                    </label>
+                  )}
+                </div>
+              </div>
             </div>
 
             {/* Quick Termin Checkbox */}

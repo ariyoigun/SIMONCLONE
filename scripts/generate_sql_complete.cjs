@@ -135,6 +135,7 @@ INSERT INTO \`system_settings\` (
   0,
   1,
   0,
+  0,
   ${esc(DEFAULT_SYSTEM_SETTINGS.slideshowUnggulan)},
   ${esc(DEFAULT_SYSTEM_SETTINGS.customTexts)},
   ${esc(DEFAULT_SYSTEM_SETTINGS.bidangDescriptions)},

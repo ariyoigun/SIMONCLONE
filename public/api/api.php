@@ -80,7 +80,8 @@ if ($action === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
                         'progresRealisasi' => (float)($p['progres_realisasi'] ?? 0),
                         'deviasiFisik' => (float)($p['deviasi_fisik'] ?? 0),
                         'statusDeviasi' => $p['status_deviasi'] ?? 'Aman',
-                        'mingguan' => !empty($p['kurva_s_json']) ? json_decode($p['kurva_s_json'], true) : []
+                        'mingguan' => !empty($p['kurva_s_json']) ? json_decode($p['kurva_s_json'], true) : [],
+                    'fotoDokumentasi' => !empty($p['foto_dokumentasi_json']) ? json_decode($p['foto_dokumentasi_json'], true) : []
                     ],
                     'dataKeuangan' => [
                         'totalPencairan' => (float)($p['total_pencairan'] ?? 0),
@@ -341,6 +342,7 @@ if ($action === 'load_all') {
             $settings['showGaleriSlideshow'] = isset($settings['show_galeri_slideshow']) ? (bool)$settings['show_galeri_slideshow'] : false;
             $settings['showSlideshowUnggulan'] = isset($settings['show_slideshow_unggulan']) ? (bool)$settings['show_slideshow_unggulan'] : true;
             $settings['showPetaKoordinat'] = isset($settings['show_peta_koordinat']) ? (bool)$settings['show_peta_koordinat'] : false;
+            $settings['showKurvaS'] = isset($settings['show_kurva_s']) ? (bool)$settings['show_kurva_s'] : false;
             if (!empty($settings['slideshow_unggulan_json'])) {
                 $settings['slideshowUnggulan'] = json_decode($settings['slideshow_unggulan_json'], true);
             }
@@ -557,7 +559,7 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             tanggal_kontrak, tanggal_mulai, tanggal_selesai, pelaksana_nama, pelaksana_bank,
             pelaksana_rekening, pelaksana_npwp, kecamatan, desa, lokasi_lengkap, latitude,
             longitude, tags_json, is_public_highlight, status_tahap_pra_kontrak, pra_kontrak_json,
-            progres_rencana, progres_realisasi, deviasi_fisik, status_deviasi, kurva_s_json,
+            progres_rencana, progres_realisasi, deviasi_fisik, status_deviasi, kurva_s_json, foto_dokumentasi_json,
             total_pencairan, persen_keuangan, sisa_anggaran, termin_json, spj_status, spj_checklist_json, logs_json
         ) VALUES (
             :id, :tahun_anggaran, :bidang_id, :sub_bagian, :sub_kegiatan_id, :kode_sub_kegiatan, :nama_paket, :kategori_pekerjaan, :jenis_anggaran, :sumber_dana,
@@ -565,7 +567,7 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             :tanggal_kontrak, :tanggal_mulai, :tanggal_selesai, :pelaksana_nama, :pelaksana_bank,
             :pelaksana_rekening, :pelaksana_npwp, :kecamatan, :desa, :lokasi_lengkap, :latitude,
             :longitude, :tags_json, :is_public_highlight, :status_tahap_pra_kontrak, :pra_kontrak_json,
-            :progres_rencana, :progres_realisasi, :deviasi_fisik, :status_deviasi, :kurva_s_json,
+            :progres_rencana, :progres_realisasi, :deviasi_fisik, :status_deviasi, :kurva_s_json, :foto_dokumentasi_json,
             :total_pencairan, :persen_keuangan, :sisa_anggaran, :termin_json, :spj_status, :spj_checklist_json, :logs_json
         ) ON DUPLICATE KEY UPDATE
             tahun_anggaran = VALUES(tahun_anggaran),
@@ -604,6 +606,7 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             deviasi_fisik = VALUES(deviasi_fisik),
             status_deviasi = VALUES(status_deviasi),
             kurva_s_json = VALUES(kurva_s_json),
+            foto_dokumentasi_json = VALUES(foto_dokumentasi_json),
             total_pencairan = VALUES(total_pencairan),
             persen_keuangan = VALUES(persen_keuangan),
             sisa_anggaran = VALUES(sisa_anggaran),
@@ -651,6 +654,7 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             ':deviasi_fisik' => (float)($f['deviasiFisik'] ?? 0),
             ':status_deviasi' => $f['statusDeviasi'] ?? 'Aman',
             ':kurva_s_json' => json_encode($f['mingguan'] ?? []),
+            ':foto_dokumentasi_json' => json_encode($f['fotoDokumentasi'] ?? []),
             ':total_pencairan' => (float)($q['totalPencairan'] ?? 0),
             ':persen_keuangan' => (float)($q['persenKeuangan'] ?? 0),
             ':sisa_anggaran' => (float)($q['sisaAnggaran'] ?? 0),
@@ -897,6 +901,7 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 show_galeri_slideshow = :show_galeri_slideshow,
                 show_slideshow_unggulan = :show_slideshow_unggulan,
                 show_peta_koordinat = :show_peta_koordinat,
+                show_kurva_s = :show_kurva_s,
                 slideshow_unggulan_json = :slideshow_unggulan_json
                 WHERE id = 1";
 
@@ -907,6 +912,7 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 ':show_galeri_slideshow' => !empty($input['showGaleriSlideshow']) ? 1 : 0,
                 ':show_slideshow_unggulan' => isset($input['showSlideshowUnggulan']) && !$input['showSlideshowUnggulan'] ? 0 : 1,
                 ':show_peta_koordinat' => !empty($input['showPetaKoordinat']) ? 1 : 0,
+                ':show_kurva_s' => !empty($input['showKurvaS']) ? 1 : 0,
                 ':slideshow_unggulan_json' => !empty($input['slideshowUnggulan']) ? json_encode($input['slideshowUnggulan']) : null
             ]));
         } catch (Exception $colEx) {

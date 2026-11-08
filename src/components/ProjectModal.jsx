@@ -273,6 +273,12 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
           diverifikasiOleh: ''
         }
       });
+      setFoto0('');
+      setTanggal0('');
+      setFoto50('');
+      setTanggal50('');
+      setFoto100('');
+      setTanggal100('');
     }
     setActiveTab('umum');
     setNewTagInput('');
@@ -421,6 +427,12 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
       subKeg = matchProjectToSubKegiatan(formData, sipdSubKegiatans);
     }
 
+    const finalFotos = [
+      foto0 ? { tahap: '0%', label: 'Kondisi 0% (Titik Nol)', url: foto0, tanggal: tanggal0 || new Date().toISOString().slice(0, 10) } : null,
+      foto50 ? { tahap: '50%', label: 'Progres 50% (Pelaksanaan)', url: foto50, tanggal: tanggal50 || new Date().toISOString().slice(0, 10) } : null,
+      foto100 ? { tahap: '100%', label: 'Progres 100% (Selesai Fisik)', url: foto100, tanggal: tanggal100 || new Date().toISOString().slice(0, 10) } : null
+    ].filter(Boolean);
+
     const payload = {
       ...formData,
       programId: formData.programId || subKeg?.programId || '',
@@ -432,6 +444,23 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
       tahapPraKontrak: {
         ...formData.tahapPraKontrak,
         status: isBatal ? 'batal' : (isKontrak ? 'kontrak' : statusTahap)
+      },
+      dataFisik: {
+        ...formData.dataFisik,
+        fotoDokumentasi: finalFotos
+      },
+      dokumentasi: {
+        foto0,
+        foto50,
+        foto100,
+        tanggal0,
+        tanggal50,
+        tanggal100
+      },
+      fotoLapangan: {
+        foto0,
+        foto50,
+        foto100
       }
     };
 

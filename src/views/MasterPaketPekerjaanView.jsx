@@ -29,7 +29,7 @@ const formatRupiah = (val) => {
 const BIDANG_COLOR_MAP = {
   bina_marga: { nama: 'Bina Marga', singkatan: 'BM', warna: '#0284c7', bg: '#e0f2fe', border: '#bae6fd' },
   cipta_karya: { nama: 'Cipta Karya', singkatan: 'CK', warna: '#d97706', bg: '#fef3c7', border: '#fde68a' },
-  sda_bk: { nama: 'SDA & Bangunan Koko', singkatan: 'SDA-BK', warna: '#059669', bg: '#d1fae5', border: '#a7f3d0' },
+  sda_bk: { nama: 'SDA & Bina Konstruksi', singkatan: 'SDA-BK', warna: '#059669', bg: '#d1fae5', border: '#a7f3d0' },
   tata_ruang: { nama: 'Tata Ruang', singkatan: 'TRP', warna: '#7c3aed', bg: '#ede9fe', border: '#ddd6fe' },
   sekretariat: { nama: 'Sekretariat', singkatan: 'Sekre', warna: '#475569', bg: '#f1f5f9', border: '#e2e8f0' }
 };

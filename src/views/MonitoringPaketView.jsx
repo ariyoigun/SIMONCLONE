@@ -47,7 +47,7 @@ const BIDANG_COLOR_MAP = {
     border: '#fde68a'
   },
   sda_bk: {
-    nama: 'SDA & Bangunan Koko',
+    nama: 'SDA & Bina Konstruksi',
     singkatan: 'SDA-BK',
     warna: '#059669',
     bg: '#d1fae5',
@@ -606,7 +606,7 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
             <span>Petunjuk Warna Bidang:</span>
             <span style={{ color: '#0284c7', fontWeight: 700 }}>● Bina Marga</span>
             <span style={{ color: '#d97706', fontWeight: 700 }}>● Cipta Karya</span>
-            <span style={{ color: '#059669', fontWeight: 700 }}>● SDA & Bangunan Koko</span>
+            <span style={{ color: '#059669', fontWeight: 700 }}>● SDA & Bina Konstruksi</span>
             <span style={{ color: '#7c3aed', fontWeight: 700 }}>● Tata Ruang</span>
           </div>
         </div>
