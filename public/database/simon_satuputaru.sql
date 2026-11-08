@@ -3,7 +3,7 @@
 -- Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
 -- Server: Hostinger MySQL / MariaDB (simon.satuputarudemak.id)
 -- Database: u490770675_simona
--- Tanggal Generate: 2026-11-08T17:21:20.731Z
+-- Tanggal Generate: 2026-11-08T17:50:07.080Z
 -- Master Data Pekerjaan (projects): 558 Data
 -- Master Data Paket Pekerjaan (monitoring_paket): 478 Data
 -- ==============================================================================
@@ -31562,7 +31562,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_220\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.2/05Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 19.703.000 kepada CV. REKA ADI KONSULTAN.\"}]'
 ),
 (
-  'prj_cipta_karya_221',
+  'pkt_113_prj_cipta_karya_221',
   2026,
   113,
   'Pekerjaan Konstruksi (Fisik)',
@@ -32408,7 +32408,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_286\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
-  'prj_cipta_karya_285',
+  'pkt_131_prj_cipta_karya_285',
   2026,
   131,
   'Pekerjaan Konstruksi (Fisik)',
@@ -32502,7 +32502,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_288\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 2.164.779.300 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_288',
+  'pkt_133_prj_cipta_karya_288',
   2026,
   133,
   'Pekerjaan Konstruksi (Fisik)',
@@ -32596,7 +32596,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
 (
-  'prj_cipta_karya_285',
+  'pkt_135_prj_cipta_karya_285',
   2026,
   135,
   'Pekerjaan Konstruksi (Fisik)',
@@ -32690,7 +32690,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_290\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_290',
+  'pkt_137_prj_cipta_karya_290',
   2026,
   137,
   'Pekerjaan Konstruksi (Fisik)',
@@ -32737,7 +32737,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_290\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_290',
+  'pkt_138_prj_cipta_karya_290',
   2026,
   138,
   'Pekerjaan Konstruksi (Fisik)',
@@ -39726,7 +39726,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_mp_jakon_1\",\"timestamp\":\"2026-01-02 08:00:00\",\"userName\":\"Admin Sistem\",\"userRole\":\"Superadmin\",\"action\":\"Sinkronisasi Master Paket 2026\",\"keterangan\":\"Paket Penyusunan Peta Infrastruktur Kabupaten Demak terdaftar dalam Perencanaan & Monitoring Pengadaan TA 2026.\"}]'
 ),
 (
-  'prj_sda_bk_30',
+  'pkt_286_prj_sda_bk_30',
   2026,
   2,
   'Jasa Konsultansi',
@@ -39773,7 +39773,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_30\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 868.172.100 dan fisik mencapai 35\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_54',
+  'pkt_287_prj_sda_bk_54',
   2026,
   3,
   'Jasa Konsultansi',
@@ -39820,7 +39820,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_54\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 573.583.800 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_50',
+  'pkt_288_prj_sda_bk_50',
   2026,
   4,
   'Jasa Konsultansi',
@@ -39867,7 +39867,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_50\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 578.701.800 dan fisik mencapai 85\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_66',
+  'pkt_289_prj_sda_bk_66',
   2026,
   5,
   'Jasa Konsultansi',
@@ -39914,7 +39914,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_66\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 65\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_48',
+  'pkt_290_prj_sda_bk_48',
   2026,
   6,
   'Jasa Konsultansi',
@@ -39961,7 +39961,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_48\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 463.492.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_64',
+  'pkt_291_prj_sda_bk_64',
   2026,
   7,
   'Jasa Konsultansi',
@@ -40008,7 +40008,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_64\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 290.591.400 dan fisik mencapai 75\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_62',
+  'pkt_292_prj_sda_bk_62',
   2026,
   8,
   'Jasa Konsultansi',
@@ -40102,7 +40102,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_46\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_69',
+  'pkt_294_prj_sda_bk_69',
   2026,
   10,
   'Jasa Konsultansi',
@@ -40149,7 +40149,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_70\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_72',
+  'pkt_295_prj_sda_bk_72',
   2026,
   11,
   'Jasa Konsultansi',
@@ -40196,7 +40196,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_73\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_94',
+  'pkt_296_prj_sda_bk_94',
   2026,
   12,
   'Jasa Konsultansi',
@@ -40243,7 +40243,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_95\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_100',
+  'pkt_297_prj_sda_bk_100',
   2026,
   13,
   'Jasa Konsultansi',
@@ -40384,7 +40384,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_104\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_105',
+  'pkt_300_prj_sda_bk_105',
   2026,
   16,
   'Jasa Konsultansi',
@@ -40442,7 +40442,7 @@ INSERT INTO `monitoring_paket` (
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
 (
-  'prj_sda_bk_127',
+  'pkt_301_prj_sda_bk_127',
   2026,
   17,
   'Jasa Konsultansi',
@@ -40489,7 +40489,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_128\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
-  'prj_sda_bk_129',
+  'pkt_302_prj_sda_bk_129',
   2026,
   18,
   'Jasa Konsultansi',
@@ -40536,7 +40536,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_130\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_132',
+  'pkt_303_prj_sda_bk_132',
   2026,
   19,
   'Jasa Konsultansi',
@@ -40583,7 +40583,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_sda_bk_133\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_sda_bk_145',
+  'pkt_304_prj_sda_bk_145',
   2026,
   20,
   'Jasa Konsultansi',
@@ -41147,7 +41147,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
-  'prj_cipta_karya_194',
+  'pkt_316_prj_cipta_karya_194',
   2026,
   32,
   'Jasa Konsultansi',
@@ -41194,7 +41194,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_210\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 49.774.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_194',
+  'pkt_317_prj_cipta_karya_194',
   2026,
   33,
   'Jasa Konsultansi',
@@ -41241,7 +41241,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_211\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 49.544.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_195',
+  'pkt_318_prj_cipta_karya_195',
   2026,
   34,
   'Jasa Konsultansi',
@@ -41288,7 +41288,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_212\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_195',
+  'pkt_319_prj_cipta_karya_195',
   2026,
   35,
   'Jasa Konsultansi',
@@ -41429,7 +41429,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_mp_jakon_37\",\"timestamp\":\"2026-01-02 08:00:00\",\"userName\":\"Admin Sistem\",\"userRole\":\"Superadmin\",\"action\":\"Sinkronisasi Master Paket 2026\",\"keterangan\":\"Paket Konsultan Perencana Paket 5 terdaftar dalam Perencanaan & Monitoring Pengadaan TA 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_226',
+  'pkt_322_prj_cipta_karya_226',
   2026,
   38,
   'Jasa Konsultansi',
@@ -41570,7 +41570,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_234\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_226',
+  'pkt_325_prj_cipta_karya_226',
   2026,
   41,
   'Jasa Konsultansi',
@@ -41617,7 +41617,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_226\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_233',
+  'pkt_326_prj_cipta_karya_233',
   2026,
   42,
   'Jasa Konsultansi',
@@ -41664,7 +41664,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_233\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_231',
+  'pkt_327_prj_cipta_karya_231',
   2026,
   43,
   'Jasa Konsultansi',
@@ -41946,7 +41946,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_241\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
 ),
 (
-  'prj_cipta_karya_231',
+  'pkt_333_prj_cipta_karya_231',
   2026,
   49,
   'Jasa Konsultansi',
@@ -41993,7 +41993,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
-  'prj_cipta_karya_233',
+  'pkt_334_prj_cipta_karya_233',
   2026,
   50,
   'Jasa Konsultansi',
@@ -42369,7 +42369,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_259\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_cipta_karya_271',
+  'pkt_342_prj_cipta_karya_271',
   2026,
   58,
   'Jasa Konsultansi',
@@ -42803,7 +42803,7 @@ INSERT INTO `monitoring_paket` (
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
 (
-  'prj_cipta_karya_229',
+  'pkt_351_prj_cipta_karya_229',
   2026,
   67,
   'Jasa Konsultansi',
@@ -43038,7 +43038,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_299\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_294',
+  'pkt_356_prj_bina_marga_294',
   2026,
   72,
   'Jasa Konsultansi',
@@ -43085,7 +43085,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_296\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_294',
+  'pkt_357_prj_bina_marga_294',
   2026,
   73,
   'Jasa Konsultansi',
@@ -43179,7 +43179,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_300\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_389',
+  'pkt_359_prj_bina_marga_389',
   2026,
   75,
   'Jasa Konsultansi',
@@ -43226,7 +43226,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_390\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_372',
+  'pkt_360_prj_bina_marga_372',
   2026,
   76,
   'Jasa Konsultansi',
@@ -43273,7 +43273,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_373\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 24.891.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_325',
+  'pkt_361_prj_bina_marga_325',
   2026,
   77,
   'Jasa Konsultansi',
@@ -43320,7 +43320,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_327\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_325',
+  'pkt_362_prj_bina_marga_325',
   2026,
   78,
   'Jasa Konsultansi',
@@ -43367,7 +43367,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_326\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_329',
+  'pkt_363_prj_bina_marga_329',
   2026,
   79,
   'Jasa Konsultansi',
@@ -43414,7 +43414,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_331\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_329',
+  'pkt_364_prj_bina_marga_329',
   2026,
   80,
   'Jasa Konsultansi',
@@ -43461,7 +43461,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_330\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_335',
+  'pkt_365_prj_bina_marga_335',
   2026,
   81,
   'Jasa Konsultansi',
@@ -43508,7 +43508,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_337\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_335',
+  'pkt_366_prj_bina_marga_335',
   2026,
   82,
   'Jasa Konsultansi',
@@ -43555,7 +43555,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_336\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 29.646.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_391',
+  'pkt_367_prj_bina_marga_391',
   2026,
   83,
   'Jasa Konsultansi',
@@ -43602,7 +43602,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_392\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_393',
+  'pkt_368_prj_bina_marga_393',
   2026,
   84,
   'Jasa Konsultansi',
@@ -43649,7 +43649,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_393\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_394',
+  'pkt_369_prj_bina_marga_394',
   2026,
   85,
   'Jasa Konsultansi',
@@ -43696,7 +43696,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_395\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_396',
+  'pkt_370_prj_bina_marga_396',
   2026,
   86,
   'Jasa Konsultansi',
@@ -43743,7 +43743,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_397\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_398',
+  'pkt_371_prj_bina_marga_398',
   2026,
   87,
   'Jasa Konsultansi',
@@ -43790,7 +43790,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_399\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_400',
+  'pkt_372_prj_bina_marga_400',
   2026,
   88,
   'Jasa Konsultansi',
@@ -43837,7 +43837,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_401\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_402',
+  'pkt_373_prj_bina_marga_402',
   2026,
   89,
   'Jasa Konsultansi',
@@ -43884,7 +43884,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_403\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_380',
+  'pkt_374_prj_bina_marga_380',
   2026,
   90,
   'Jasa Konsultansi',
@@ -43931,7 +43931,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_404\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_384',
+  'pkt_375_prj_bina_marga_384',
   2026,
   91,
   'Jasa Konsultansi',
@@ -43978,7 +43978,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_405\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_406',
+  'pkt_376_prj_bina_marga_406',
   2026,
   92,
   'Jasa Konsultansi',
@@ -44025,7 +44025,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_407\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_408',
+  'pkt_377_prj_bina_marga_408',
   2026,
   93,
   'Jasa Konsultansi',
@@ -44072,7 +44072,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_409\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_410',
+  'pkt_378_prj_bina_marga_410',
   2026,
   94,
   'Jasa Konsultansi',
@@ -44119,7 +44119,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_411\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_412',
+  'pkt_379_prj_bina_marga_412',
   2026,
   95,
   'Jasa Konsultansi',
@@ -44166,7 +44166,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_413\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_414',
+  'pkt_380_prj_bina_marga_414',
   2026,
   96,
   'Jasa Konsultansi',
@@ -44213,7 +44213,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_415\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_416',
+  'pkt_381_prj_bina_marga_416',
   2026,
   97,
   'Jasa Konsultansi',
@@ -44260,7 +44260,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_417\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_418',
+  'pkt_382_prj_bina_marga_418',
   2026,
   98,
   'Jasa Konsultansi',
@@ -44307,7 +44307,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_419\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_420',
+  'pkt_383_prj_bina_marga_420',
   2026,
   99,
   'Jasa Konsultansi',
@@ -44354,7 +44354,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_421\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_422',
+  'pkt_384_prj_bina_marga_422',
   2026,
   100,
   'Jasa Konsultansi',
@@ -44401,7 +44401,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_423\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_424',
+  'pkt_385_prj_bina_marga_424',
   2026,
   101,
   'Jasa Konsultansi',
@@ -44448,7 +44448,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_425\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_426',
+  'pkt_386_prj_bina_marga_426',
   2026,
   102,
   'Jasa Konsultansi',
@@ -44495,7 +44495,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_427\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_428',
+  'pkt_387_prj_bina_marga_428',
   2026,
   103,
   'Jasa Konsultansi',
@@ -44542,7 +44542,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_429\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_388',
+  'pkt_388_prj_bina_marga_388',
   2026,
   104,
   'Jasa Konsultansi',
@@ -44589,7 +44589,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_430\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_431',
+  'pkt_389_prj_bina_marga_431',
   2026,
   105,
   'Jasa Konsultansi',
@@ -44636,7 +44636,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_432\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_433',
+  'pkt_390_prj_bina_marga_433',
   2026,
   106,
   'Jasa Konsultansi',
@@ -44683,7 +44683,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_434\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_435',
+  'pkt_391_prj_bina_marga_435',
   2026,
   107,
   'Jasa Konsultansi',
@@ -44730,7 +44730,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_436\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_437',
+  'pkt_392_prj_bina_marga_437',
   2026,
   108,
   'Jasa Konsultansi',
@@ -44777,7 +44777,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_438\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_439',
+  'pkt_393_prj_bina_marga_439',
   2026,
   109,
   'Jasa Konsultansi',
@@ -44824,7 +44824,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_440\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_441',
+  'pkt_394_prj_bina_marga_441',
   2026,
   110,
   'Jasa Konsultansi',
@@ -45399,7 +45399,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_500\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_499',
+  'pkt_406_prj_bina_marga_499',
   2026,
   122,
   'Jasa Konsultansi',
@@ -45446,7 +45446,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_499\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.779.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_502',
+  'pkt_407_prj_bina_marga_502',
   2026,
   123,
   'Jasa Konsultansi',
@@ -45493,7 +45493,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_504\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_502',
+  'pkt_408_prj_bina_marga_502',
   2026,
   124,
   'Jasa Konsultansi',
@@ -45540,7 +45540,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_503\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.710.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_506',
+  'pkt_409_prj_bina_marga_506',
   2026,
   125,
   'Jasa Konsultansi',
@@ -45587,7 +45587,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_507\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_508',
+  'pkt_410_prj_bina_marga_508',
   2026,
   126,
   'Jasa Konsultansi',
@@ -45634,7 +45634,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_510\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_508',
+  'pkt_411_prj_bina_marga_508',
   2026,
   127,
   'Jasa Konsultansi',
@@ -45681,7 +45681,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_509\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 24.812.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_511',
+  'pkt_412_prj_bina_marga_511',
   2026,
   128,
   'Jasa Konsultansi',
@@ -45728,7 +45728,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_513\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_511',
+  'pkt_413_prj_bina_marga_511',
   2026,
   129,
   'Jasa Konsultansi',
@@ -45775,7 +45775,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_512\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.842.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_517',
+  'pkt_414_prj_bina_marga_517',
   2026,
   130,
   'Jasa Konsultansi',
@@ -45822,7 +45822,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_519\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_517',
+  'pkt_415_prj_bina_marga_517',
   2026,
   131,
   'Jasa Konsultansi',
@@ -47420,7 +47420,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_cipta_karya_187\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_465',
+  'pkt_449_prj_bina_marga_465',
   2026,
   30,
   'Pengadaan Barang',
@@ -47467,7 +47467,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_465\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_465',
+  'pkt_450_prj_bina_marga_465',
   2026,
   31,
   'Pengadaan Barang',
@@ -47807,7 +47807,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_473\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 187.558.321 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_465',
+  'pkt_457_prj_bina_marga_465',
   2026,
   38,
   'Pengadaan Barang',
@@ -47948,7 +47948,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_474\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_474',
+  'pkt_460_prj_bina_marga_474',
   2026,
   41,
   'Pengadaan Barang',
@@ -48042,7 +48042,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_469\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 187.962.549 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_476',
+  'pkt_462_prj_bina_marga_476',
   2026,
   43,
   'Pengadaan Barang',
@@ -48089,7 +48089,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_477\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_476',
+  'pkt_463_prj_bina_marga_476',
   2026,
   44,
   'Pengadaan Barang',
@@ -48136,7 +48136,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_478\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_476',
+  'pkt_464_prj_bina_marga_476',
   2026,
   45,
   'Pengadaan Barang',
@@ -48183,7 +48183,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_479\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_476',
+  'pkt_465_prj_bina_marga_476',
   2026,
   46,
   'Pengadaan Barang',
@@ -48230,7 +48230,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_480\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
-  'prj_bina_marga_465',
+  'pkt_466_prj_bina_marga_465',
   2026,
   47,
   'Pengadaan Barang',
@@ -48371,7 +48371,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_482\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 174.470.599 dan fisik mencapai 0\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_484',
+  'pkt_469_prj_bina_marga_484',
   2026,
   50,
   'Pengadaan Barang',
@@ -48418,7 +48418,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_485\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
-  'prj_bina_marga_484',
+  'pkt_470_prj_bina_marga_484',
   2026,
   51,
   'Pengadaan Barang',
@@ -48465,7 +48465,7 @@ INSERT INTO `monitoring_paket` (
   '[{\"id\":\"log_init_prj_bina_marga_484\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
-  'prj_bina_marga_484',
+  'pkt_471_prj_bina_marga_484',
   2026,
   52,
   'Pengadaan Barang',

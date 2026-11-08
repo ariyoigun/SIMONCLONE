@@ -59,3 +59,4 @@ fs.copyFileSync(dbFile, path.join(deployDbDir, 'simon_satuputaru.sql'));
 console.log('Copied database/simon_satuputaru.sql to deploy_simon_satuputaru/database/');
 
 console.log('Deploy directory is completely prepared!');
+
