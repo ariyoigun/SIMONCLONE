@@ -3,7 +3,7 @@
 -- Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
 -- Server: Hostinger MySQL / MariaDB (simon.satuputarudemak.id)
 -- Database: u490770675_simona
--- Tanggal Generate: 2026-11-08T17:50:07.080Z
+-- Tanggal Generate: 2026-11-08T18:06:46.644Z
 -- Master Data Pekerjaan (projects): 558 Data
 -- Master Data Paket Pekerjaan (monitoring_paket): 478 Data
 -- ==============================================================================
@@ -44,6 +44,7 @@ CREATE TABLE `system_settings` (
   `show_galeri_slideshow` tinyint(1) NOT NULL DEFAULT 0,
   `show_slideshow_unggulan` tinyint(1) NOT NULL DEFAULT 1,
   `show_peta_koordinat` tinyint(1) NOT NULL DEFAULT 0,
+  `show_kurva_s` tinyint(1) NOT NULL DEFAULT 0,
   `slideshow_unggulan_json` longtext DEFAULT NULL,
   `custom_texts_json` longtext DEFAULT NULL,
   `bidang_descriptions_json` longtext DEFAULT NULL,
@@ -57,7 +58,7 @@ INSERT INTO `system_settings` (
   `id`, `nama_sistem`, `sub_nama`, `instansi`, `pemerintah_daerah`, `alamat`, `telepon`, `email`, `website`,
   `logo_url`, `nama_kepala_dinas`, `nip_kepala_dinas`, `pangkat_kepala_dinas`, `jabatan_kepala_dinas`,
   `nama_sekretaris`, `nip_sekretaris`, `pangkat_sekretaris`, `jabatan_sekretaris`, `max_public_highlights`,
-  `show_galeri_slideshow`, `show_slideshow_unggulan`, `show_peta_koordinat`, `slideshow_unggulan_json`,
+  `show_galeri_slideshow`, `show_slideshow_unggulan`, `show_peta_koordinat`, `show_kurva_s`, `slideshow_unggulan_json`,
   `custom_texts_json`, `bidang_descriptions_json`, `galeri_json`
 ) VALUES (
   1,
