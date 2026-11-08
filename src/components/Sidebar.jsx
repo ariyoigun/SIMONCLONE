@@ -147,13 +147,38 @@ const Sidebar = ({
           </>
         )}
 
-        {(hasMenuAccess('prakontrak') ||
+        {(hasMenuAccess('monitoring_paket') ||
+          hasMenuAccess('prakontrak') ||
           hasMenuAccess('fisik') ||
           hasMenuAccess('keuangan') ||
           hasMenuAccess('spj_keuangan') ||
           hasMenuAccess('sipd_summary') ||
           hasMenuAccess('pendapatan')) && (
           <div className="nav-section-title">Modul Monitoring Progres</div>
+        )}
+
+        {hasMenuAccess('monitoring_paket') && (
+          <a
+            href="#monitoring_paket"
+            className={`nav-item ${activeTab === 'monitoring_paket' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveTab('monitoring_paket');
+            }}
+            style={{
+              background: activeTab === 'monitoring_paket' ? 'rgba(16, 185, 129, 0.15)' : undefined,
+              fontWeight: activeTab === 'monitoring_paket' ? 800 : undefined
+            }}
+          >
+            <Layers className="icon" style={{ color: '#10b981' }} />
+            <span>Monitoring Paket Pekerjaan</span>
+            <span
+              className="nav-badge-count"
+              style={{ background: '#10b981', color: '#fff' }}
+            >
+              {accessibleProjects.length}
+            </span>
+          </a>
         )}
 
         {hasMenuAccess('prakontrak') && (

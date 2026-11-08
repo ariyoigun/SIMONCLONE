@@ -31,14 +31,14 @@ export const AppProvider = ({ children }) => {
   // Data Versioning & Auto-Migration for Real 2026 Dataset & Users
   if (typeof window !== 'undefined') {
     const currentVersion = localStorage.getItem('simon_app_version_2026');
-    if (currentVersion !== '2026_real_v3') {
+    if (currentVersion !== '2026_real_v4') {
       localStorage.removeItem('simon_users');
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_projects_v2');
       localStorage.removeItem('simon_sipd_programs');
       localStorage.removeItem('simon_sipd_kegiatans');
       localStorage.removeItem('simon_sipd_sub_kegiatans');
-      localStorage.setItem('simon_app_version_2026', '2026_real_v3');
+      localStorage.setItem('simon_app_version_2026', '2026_real_v4');
     }
   }
 
@@ -79,6 +79,10 @@ export const AppProvider = ({ children }) => {
             pangkatSekretaris: parsed.pangkatSekretaris || DEFAULT_SYSTEM_SETTINGS.pangkatSekretaris,
             jabatanSekretaris: (parsed.jabatanSekretaris || DEFAULT_SYSTEM_SETTINGS.jabatanSekretaris).replace(/PUPR/g, 'DINPUTARU'),
             galeri: Array.isArray(parsed.galeri) && parsed.galeri.length > 0 ? parsed.galeri : DEFAULT_SYSTEM_SETTINGS.galeri,
+            showGaleriSlideshow: parsed.showGaleriSlideshow !== undefined ? parsed.showGaleriSlideshow : DEFAULT_SYSTEM_SETTINGS.showGaleriSlideshow,
+            showSlideshowUnggulan: parsed.showSlideshowUnggulan !== undefined ? parsed.showSlideshowUnggulan : DEFAULT_SYSTEM_SETTINGS.showSlideshowUnggulan,
+            showPetaKoordinat: parsed.showPetaKoordinat !== undefined ? parsed.showPetaKoordinat : DEFAULT_SYSTEM_SETTINGS.showPetaKoordinat,
+            slideshowUnggulan: Array.isArray(parsed.slideshowUnggulan) && parsed.slideshowUnggulan.length > 0 ? parsed.slideshowUnggulan : DEFAULT_SYSTEM_SETTINGS.slideshowUnggulan,
             customTexts: {
               ...DEFAULT_CUSTOM_TEXTS,
               ...(parsed.customTexts || {})
@@ -387,6 +391,15 @@ export const AppProvider = ({ children }) => {
           nomorSPM: p.administrasiSPJ?.nomorSPM || (spjStatusClean === 'sudah_sp2d' ? (kNo ? `900/SPM/${kNo}` : '900/SPM/DPU/2026') : ''),
           catatanVerifikator: p.administrasiSPJ?.catatanVerifikator || (spjStatusClean === 'sudah_sp2d' ? 'Berkas SPJ lengkap & SP2D lunas 100%' : (spjStatusClean === 'sudah_masuk' ? 'Berkas SPJ termin masuk, proses verifikasi SP2D' : 'Belum menyerahkan berkas SPJ')),
           petugasVerifikator: p.administrasiSPJ?.petugasVerifikator || (spjStatusClean !== 'belum_masuk' ? 'Tim Verifikasi SPJ Keuangan' : '')
+        },
+        tahapanPencairan: p.tahapanPencairan || {
+          berkasBelumMasuk: !isKontrak && totalCair === 0,
+          berkasMasuk: totalCair > 0 || fRealisasi > 0,
+          koreksi: false,
+          berkasRevisiMasuk: false,
+          spm: totalCair > 0,
+          selesai: fRealisasi >= 100 && totalCair >= baseValue,
+          catatanPencairan: ''
         },
         logs: Array.isArray(p.logs) ? p.logs : []
       };

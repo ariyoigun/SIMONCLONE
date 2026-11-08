@@ -1,4 +1,5 @@
 import { REAL_PROJECTS_2026 } from './realProjects2026.js';
+import { MONITORING_PAKET_2026 } from './monitoringPaket2026.js';
 
 export const INITIAL_USERS = [
   {
@@ -197,4 +198,4 @@ export const INITIAL_USERS = [
   }
 ];
 
-export const INITIAL_PROJECTS = REAL_PROJECTS_2026;
+export const INITIAL_PROJECTS = MONITORING_PAKET_2026;

@@ -230,6 +230,7 @@ export const ROLE_DEFINITIONS = {
 export const SYSTEM_MENUS = [
   { id: 'dashboard', label: 'Dashboard Eksekutif', section: 'Ringkasan Eksekutif' },
   { id: 'master_pekerjaan', label: 'Master Data Pekerjaan', section: 'Data Pokok & Master' },
+  { id: 'monitoring_paket', label: 'Monitoring Paket Pekerjaan', section: 'Modul Monitoring Progres' },
   { id: 'prakontrak', label: 'Pekerjaan Pra-Kontrak', section: 'Modul Monitoring Progres' },
   { id: 'fisik', label: 'Progres Fisik', section: 'Modul Monitoring Progres' },
   { id: 'keuangan', label: 'Progres Keuangan', section: 'Modul Monitoring Progres' },
@@ -868,7 +869,30 @@ export const DEFAULT_SYSTEM_SETTINGS = {
   deskripsi:
     'Platform terpadu pemantauan dan pengendalian paket pekerjaan konstruksi, preservasi jalan, pengelolaan sumber daya air, cipta karya, dan penataan ruang di Kabupaten Demak dari perencanaan pra-kontrak hingga serah terima akhir.',
   logoUrl: '', // Kosong = gunakan logo dinas PU default beraksen emas
-  maxPublicHighlights: 10, // Maksimal jumlah paket sorotan yang tampil di landing page publik
+  maxPublicHighlights: 10,
+  showGaleriSlideshow: false,
+  showSlideshowUnggulan: true,
+  showPetaKoordinat: false,
+  slideshowUnggulan: [
+      {
+          "id": "slide-1",
+          "projectId": "prj_sda_bk_54",
+          "judul": "Rehabilitasi Saluran Pembuang Stasiun - Tembiring - Tuntang Lama",
+          "subKegiatan": "Normalisasi/Restorasi Sungai",
+          "bidangId": "sda_bk",
+          "kategori": "Pekerjaan Konstruksi (Fisik)",
+          "paguAnggaran": 1950036600,
+          "nilaiKontrak": 1911946000,
+          "pelaksana": "CV. ANUGRAH MEKAR JAYA",
+          "nomorKontrak": "000.3.3/008/SP/TENDER/SDABK/VIII/2026",
+          "progresFisik": 30,
+          "progresKeuangan": 30,
+          "sp2d": 573583800,
+          "lokasi": "Kecamatan Demak (Pusat Kota)",
+          "deskripsi": "Pekerjaan strategis normalisasi dan rehabilitasi saluran pembuang air pengendali banjir perkotaan kawasan Stasiun, Tembiring hingga Tuntang Lama.",
+          "url": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=1200&auto=format&fit=crop&q=80"
+      }
+  ], // Maksimal jumlah paket sorotan yang tampil di landing page publik
   alamat: 'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak',
   telepon: '(0291) 685123',
   email: 'dinputaru@demakkab.go.id',
