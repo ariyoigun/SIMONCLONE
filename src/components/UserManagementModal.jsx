@@ -32,7 +32,7 @@ const emptyForm = {
   email: '',
   password: '',
   avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80',
-  allowedMenus: ['dashboard', 'master_pekerjaan', 'prakontrak', 'fisik', 'keuangan', 'pendapatan', 'laporan'],
+  allowedMenus: ['dashboard', 'master_pekerjaan', 'master_paket', 'monitoring_paket', 'prakontrak', 'fisik', 'keuangan', 'pendapatan', 'laporan'],
   canInputPendapatan: false
 };
 
@@ -74,7 +74,7 @@ const UserManagementModal = ({ isOpen, onClose }) => {
     setFormData({
       ...emptyForm,
       password: 'pupr' + Math.floor(100 + Math.random() * 900),
-      allowedMenus: ['dashboard', 'master_pekerjaan', 'prakontrak', 'fisik', 'keuangan', 'pendapatan', 'laporan'],
+      allowedMenus: ['dashboard', 'master_pekerjaan', 'master_paket', 'monitoring_paket', 'prakontrak', 'fisik', 'keuangan', 'pendapatan', 'laporan'],
       canInputPendapatan: false
     });
     setShowPassword(true);

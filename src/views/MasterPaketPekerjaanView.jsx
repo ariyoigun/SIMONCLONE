@@ -52,7 +52,7 @@ const MasterPaketPekerjaanView = () => {
     canCreateProject
   } = useApp();
 
-  const dataList = accessiblePaketPekerjaan.length > 0 ? accessiblePaketPekerjaan : paketPekerjaanList;
+  const dataList = paketPekerjaanList.length > 0 ? paketPekerjaanList : accessiblePaketPekerjaan;
 
   const [activeKategori, setActiveKategori] = useState('ALL');
   const [selectedBidang, setSelectedBidang] = useState('ALL');
@@ -80,13 +80,14 @@ const MasterPaketPekerjaanView = () => {
     return dataList.filter((p) => {
       if (activeKategori !== 'ALL') {
         const catCfg = KATEGORI_CONFIG.find((k) => k.id === activeKategori);
-        if (catCfg) {
-          const matchCat =
-            (p.kategoriPaket || '').includes(catCfg.keyMatch) ||
-            (p.kategoriPekerjaan || '').includes(catCfg.keyMatch) ||
-            (p.jenisPengadaan || '').includes(catCfg.keyMatch);
-          if (!matchCat) return false;
-        }
+        const matchCat =
+          p.kategoriPaketId === activeKategori ||
+          (catCfg && (
+            (p.kategoriPaket || '').toLowerCase().includes(catCfg.keyMatch.toLowerCase()) ||
+            (p.kategoriPekerjaan || '').toLowerCase().includes(catCfg.keyMatch.toLowerCase()) ||
+            (p.jenisPengadaan || '').toLowerCase().includes(catCfg.keyMatch.toLowerCase())
+          ));
+        if (!matchCat) return false;
       }
 
       if (selectedBidang !== 'ALL' && p.bidangId !== selectedBidang) {
@@ -818,3 +819,4 @@ const MasterPaketPekerjaanView = () => {
 };
 
 export default MasterPaketPekerjaanView;
+

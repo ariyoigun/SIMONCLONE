@@ -24,3 +24,4 @@ if (!c.includes('MasterPaketPekerjaanView')) {
   fs.writeFileSync('src/App.jsx', c, 'utf8');
   console.log('App.jsx updated with MasterPaketPekerjaanView!');
 }
+

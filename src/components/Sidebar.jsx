@@ -98,47 +98,51 @@ const Sidebar = ({
         )}
 
         {/* Master Data Section */}
-        {hasMenuAccess('master_pekerjaan') && (
+        {(hasMenuAccess('master_pekerjaan') || hasMenuAccess('master_paket')) && (
           <>
             <div className="nav-section-title">Data Pokok & Master</div>
 
-            <a
-              href="#master_pekerjaan"
-              className={`nav-item ${activeTab === 'master_pekerjaan' ? 'active' : ''}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveTab('master_pekerjaan');
-              }}
-              style={{
-                background: activeTab === 'master_pekerjaan' ? 'rgba(37, 99, 235, 0.15)' : undefined,
-                fontWeight: activeTab === 'master_pekerjaan' ? 800 : undefined
-              }}
-            >
-              <Database className="icon" style={{ color: '#0284c7' }} />
-              <span>Master Data Pekerjaan</span>
-              <span className="nav-badge-count" style={{ background: '#0284c7', color: '#fff' }}>
-                {countTotal}
-              </span>
-            </a>
+            {hasMenuAccess('master_pekerjaan') && (
+              <a
+                href="#master_pekerjaan"
+                className={`nav-item ${activeTab === 'master_pekerjaan' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActiveTab('master_pekerjaan');
+                }}
+                style={{
+                  background: activeTab === 'master_pekerjaan' ? 'rgba(37, 99, 235, 0.15)' : undefined,
+                  fontWeight: activeTab === 'master_pekerjaan' ? 800 : undefined
+                }}
+              >
+                <Database className="icon" style={{ color: '#0284c7' }} />
+                <span>Master Data Pekerjaan</span>
+                <span className="nav-badge-count" style={{ background: '#0284c7', color: '#fff' }}>
+                  {countTotal}
+                </span>
+              </a>
+            )}
 
-            <a
-              href="#master_paket"
-              className={`nav-item ${activeTab === 'master_paket' ? 'active' : ''}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveTab('master_paket');
-              }}
-              style={{
-                background: activeTab === 'master_paket' ? 'rgba(217, 119, 6, 0.15)' : undefined,
-                fontWeight: activeTab === 'master_paket' ? 800 : undefined
-              }}
-            >
-              <FolderTree className="icon" style={{ color: '#d97706' }} />
-              <span>Master Data Paket Pekerjaan</span>
-              <span className="nav-badge-count" style={{ background: '#d97706', color: '#fff' }}>
-                {paketPekerjaanList.length || 478}
-              </span>
-            </a>
+            {hasMenuAccess('master_paket') && (
+              <a
+                href="#master_paket"
+                className={`nav-item ${activeTab === 'master_paket' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActiveTab('master_paket');
+                }}
+                style={{
+                  background: activeTab === 'master_paket' ? 'rgba(217, 119, 6, 0.15)' : undefined,
+                  fontWeight: activeTab === 'master_paket' ? 800 : undefined
+                }}
+              >
+                <FolderTree className="icon" style={{ color: '#d97706' }} />
+                <span>Master Data Paket Pekerjaan</span>
+                <span className="nav-badge-count" style={{ background: '#d97706', color: '#fff' }}>
+                  {paketPekerjaanList.length || 478}
+                </span>
+              </a>
+            )}
 
             {onOpenImportExportModal && (
               <button

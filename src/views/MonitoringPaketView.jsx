@@ -84,7 +84,7 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
     currentUser,
     updatePaketPekerjaan
   } = useApp();
-  const activeList = accessiblePaketPekerjaan.length > 0 ? accessiblePaketPekerjaan : paketPekerjaanList;
+  const activeList = paketPekerjaanList.length > 0 ? paketPekerjaanList : accessiblePaketPekerjaan;
 
   const [activeKategori, setActiveKategori] = useState('ALL');
   const [viewMode, setViewMode] = useState('fisik'); // 'fisik' | 'pencairan' | 'semua'
@@ -99,13 +99,14 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
       // 1. Filter Kategori
       if (activeKategori !== 'ALL') {
         const catCfg = KATEGORI_CONFIG.find((k) => k.id === activeKategori);
-        if (catCfg) {
-          const matchCat =
-            (p.kategoriPaket || '').includes(catCfg.keyMatch) ||
-            (p.kategoriPekerjaan || '').includes(catCfg.keyMatch) ||
-            (p.jenisPengadaan || '').includes(catCfg.keyMatch);
-          if (!matchCat) return false;
-        }
+        const matchCat =
+          p.kategoriPaketId === activeKategori ||
+          (catCfg && (
+            (p.kategoriPaket || '').toLowerCase().includes(catCfg.keyMatch.toLowerCase()) ||
+            (p.kategoriPekerjaan || '').toLowerCase().includes(catCfg.keyMatch.toLowerCase()) ||
+            (p.jenisPengadaan || '').toLowerCase().includes(catCfg.keyMatch.toLowerCase())
+          ));
+        if (!matchCat) return false;
       }
 
       // 2. Filter Bidang

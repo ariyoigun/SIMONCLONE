@@ -32,7 +32,7 @@ export const AppProvider = ({ children }) => {
   // Data Versioning & Auto-Migration for Real 2026 Dataset & Users
   if (typeof window !== 'undefined') {
     const currentVersion = localStorage.getItem('simon_app_version_2026');
-    if (currentVersion !== '2026_real_v5') {
+    if (currentVersion !== '2026_real_v6') {
       localStorage.removeItem('simon_users');
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_projects_v2');
@@ -40,7 +40,7 @@ export const AppProvider = ({ children }) => {
       localStorage.removeItem('simon_sipd_programs');
       localStorage.removeItem('simon_sipd_kegiatans');
       localStorage.removeItem('simon_sipd_sub_kegiatans');
-      localStorage.setItem('simon_app_version_2026', '2026_real_v5');
+      localStorage.setItem('simon_app_version_2026', '2026_real_v6');
     }
   }
 
@@ -1198,22 +1198,32 @@ export const AppProvider = ({ children }) => {
   );
 
   // Granular Menu Access Control
+  // Granular Menu Access Control
   const hasMenuAccess = (menuId) => {
     if (!currentUser) return false;
     if (currentUser.role === 'superadmin') return true;
+
+    // Default wewenang berdasarkan Peran Sistem (Role)
+    if (menuId === 'spj_keuangan') {
+      return canAccessSPJMenu;
+    }
+    if (menuId === 'pendapatan') {
+      return canAccessPendapatanMenu;
+    }
+    if (currentUser.role === 'koordinator_pendapatan') {
+      return ['dashboard', 'pendapatan', 'laporan'].includes(menuId);
+    }
+
+    // Menu Master Paket dan Monitoring Paket terbuka untuk seluruh staf dinas
+    if (menuId === 'monitoring_paket' || menuId === 'master_paket') {
+      return true;
+    }
 
     // Jika admin mengatur custom allowedMenus pada user ini
     if (Array.isArray(currentUser.allowedMenus) && currentUser.allowedMenus.length > 0) {
       return currentUser.allowedMenus.includes(menuId);
     }
 
-    // Default wewenang berdasarkan Peran Sistem (Role)
-    if (menuId === 'spj_keuangan') {
-      return canAccessSPJMenu;
-    }
-    if (currentUser.role === 'koordinator_pendapatan') {
-      return ['dashboard', 'pendapatan', 'laporan'].includes(menuId);
-    }
     return true;
   };
 

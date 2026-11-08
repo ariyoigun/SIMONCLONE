@@ -6,3 +6,4 @@ c = c.replace(
 );
 fs.writeFileSync('src/data/initialData.js', c, 'utf8');
 console.log('Restored INITIAL_PROJECTS to REAL_PROJECTS_2026 in initialData.js');
+

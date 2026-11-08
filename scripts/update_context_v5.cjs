@@ -82,3 +82,4 @@ if (!c.includes('paketPekerjaanList,')) {
 
 fs.writeFileSync('src/context/AppContext.jsx', c, 'utf8');
 console.log('AppContext.jsx updated with separate paketPekerjaanList state!');
+

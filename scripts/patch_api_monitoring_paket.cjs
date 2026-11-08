@@ -262,3 +262,4 @@ if (content.includes(beforeSettingsMarker)) {
 
 fs.writeFileSync(apiPath, content, 'utf8');
 console.log('Finished updating api.php');
+

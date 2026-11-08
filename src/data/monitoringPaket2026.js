@@ -1,7 +1,14 @@
 /**
- * DATA RESMI MONITORING PAKET PEKERJAAN DINPUTARU KABUPATEN DEMAK TA 2026
- * Bersumber langsung dari file: Monitoring Paket 2026.xlsx (Sheet PAKET)
- * Total: 478 Paket Pekerjaan
+ * ==============================================================================
+ * MASTER DATA PAKET PEKERJAAN TA 2026 (478 PAKET DINPUTARU DEMAK)
+ * Sumber: Monitoring Paket 2026.xlsx & Sinkronisasi Realisasi Master Pekerjaan
+ * Kategori:
+ * 1. Pekerjaan Konstruksi (Fisik)   : 284 Paket
+ * 2. Jasa Konsultansi (Jakon)       : 135 Paket
+ * 3. Pengadaan Barang               : 53 Paket
+ * 4. Jasa Lainnya                   : 6 Paket
+ * Total: 478 Paket Terverifikasi DINPUTARU Kabupaten Demak
+ * ==============================================================================
  */
 
 export const MONITORING_PAKET_2026 = [
@@ -328,17 +335,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 868.172.100"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -414,15 +421,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -498,15 +505,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -588,17 +595,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 286.148.100"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -680,17 +687,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_48",
+      "nomorSPM": "900/SPM/000.3.3/005/SP/TENDER/SDABK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -774,17 +781,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 573.583.800"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -868,17 +875,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 293.154.900"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -962,17 +969,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 578.701.800"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -1048,15 +1055,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -1132,15 +1139,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -1214,15 +1221,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -1304,17 +1311,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_56",
+      "nomorSPM": "900/SPM/000.3.2/004/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -1396,17 +1403,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 286.263.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -1488,17 +1495,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 290.591.400"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -1574,15 +1581,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -1664,17 +1671,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_60",
+      "nomorSPM": "900/SPM/000.3.2/007/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -1748,15 +1755,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -1830,15 +1837,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -1920,17 +1927,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_57",
+      "nomorSPM": "900/SPM/000.3.2/005/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -2006,15 +2013,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2090,15 +2097,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2174,15 +2181,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2258,15 +2265,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2342,15 +2349,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2426,15 +2433,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2510,15 +2517,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2594,15 +2601,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2678,15 +2685,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2762,15 +2769,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2846,15 +2853,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -2930,15 +2937,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3014,15 +3021,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3098,15 +3105,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3182,15 +3189,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3266,15 +3273,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3350,15 +3357,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3434,15 +3441,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3518,15 +3525,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3602,15 +3609,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3686,15 +3693,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3770,15 +3777,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3854,15 +3861,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -3938,15 +3945,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -4022,15 +4029,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -4107,15 +4114,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -4191,15 +4198,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -4281,17 +4288,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 139.354.800"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -4373,17 +4380,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_108",
+      "nomorSPM": "900/SPM/027.2/006/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -4459,15 +4466,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -4549,17 +4556,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_110",
+      "nomorSPM": "900/SPM/000.3.2/012/SPK/PL/SDABK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -4641,17 +4648,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_115",
+      "nomorSPM": "900/SPM/000.3.2/001/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -4725,15 +4732,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -4807,15 +4814,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -4897,17 +4904,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_113",
+      "nomorSPM": "900/SPM/000.3.2/010/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -4989,17 +4996,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_112",
+      "nomorSPM": "900/SPM/000.3.2/003/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -5081,17 +5088,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 146.481.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -5175,17 +5182,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 410.356.800"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -5269,17 +5276,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 293.054.400"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -5355,15 +5362,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -5439,15 +5446,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -5523,15 +5530,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -5607,15 +5614,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -5691,15 +5698,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -5775,15 +5782,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -5867,7 +5874,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -5944,15 +5951,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6028,15 +6035,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6112,15 +6119,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6196,15 +6203,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6280,15 +6287,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6364,15 +6371,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6454,17 +6461,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_143",
+      "nomorSPM": "900/SPM/027.2/002/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -6540,15 +6547,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6624,15 +6631,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6706,15 +6713,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6788,15 +6795,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6870,15 +6877,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -6952,15 +6959,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -7034,15 +7041,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -7123,7 +7130,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -7198,15 +7205,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -7280,15 +7287,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -7369,7 +7376,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -7451,7 +7458,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -7533,7 +7540,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -7608,15 +7615,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -7690,15 +7697,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -7779,7 +7786,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -7861,7 +7868,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -7903,8 +7910,8 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -7938,15 +7945,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -8030,17 +8037,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_200",
+      "nomorSPM": "900/SPM/000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8124,17 +8131,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_201",
+      "nomorSPM": "900/SPM/000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8218,17 +8225,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_202",
+      "nomorSPM": "900/SPM/000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8310,17 +8317,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 139.530.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8402,17 +8409,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 284.520.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8488,15 +8495,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -8581,17 +8588,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 424.500.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8665,15 +8672,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -8755,17 +8762,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 283.770.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8847,17 +8854,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 283.920.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -8938,7 +8945,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -8983,19 +8990,19 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026",
-      "tanggalKontrak": "2026-09-28",
-      "tanggalMulai": "28 September - 9 Oktober 2026",
+      "nomorKontrak": "000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "30 Oktober - 18 Desember 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 22013000,
-      "namaPenyedia": "CV. DE SATU",
+      "nilaiKontrak": 1207300000,
+      "namaPenyedia": "CV. ZULFA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
-      "progresRealisasi": 100,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
@@ -9003,36 +9010,36 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 22013000,
+      "sisaAnggaran": 1207300000,
       "terminHistory": []
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": false,
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_215",
-        "timestamp": "2026-10-31 16:30:00",
+        "id": "log_init_prj_cipta_karya_222",
+        "timestamp": "2026-10-31 16:00:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+        "action": "Pencatatan Kontrak Pelaksanaan",
+        "keterangan": "Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026 telah diterbitkan dengan nilai Rp 1.207.300.000 kepada CV. ZULFA."
       }
     ]
   },
@@ -9065,18 +9072,18 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026",
+      "nomorKontrak": "000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026",
       "tanggalKontrak": "2026-10-30",
       "tanggalMulai": "30 Oktober - 18 Desember 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 24619000,
-      "namaPenyedia": "CV. PRIORITAS",
+      "nilaiKontrak": 1476300000,
+      "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -9085,7 +9092,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 24619000,
+      "sisaAnggaran": 1476300000,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -9104,17 +9111,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_221",
+        "id": "log_init_prj_cipta_karya_223",
         "timestamp": "2026-10-31 16:00:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Pencatatan Kontrak Pelaksanaan",
-        "keterangan": "Kontrak pelaksanaan No. 000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 24.619.000 kepada CV. PRIORITAS."
+        "keterangan": "Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026 telah diterbitkan dengan nilai Rp 1.476.300.000 kepada CV. GARUDA KARYA."
       }
     ]
   },
@@ -9160,7 +9167,7 @@ export const MONITORING_PAKET_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -9188,7 +9195,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -9234,19 +9241,19 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026",
-      "tanggalKontrak": "2026-10-30",
-      "tanggalMulai": "30 Oktober - 18 Desember 2026",
+      "nomorKontrak": "000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "28 September - 9 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 1207300000,
-      "namaPenyedia": "CV. ZULFA",
+      "nilaiKontrak": 22013000,
+      "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
       "progresRencana": 100,
-      "progresRealisasi": 0,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
@@ -9254,12 +9261,12 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1207300000,
+      "sisaAnggaran": 22013000,
       "terminHistory": []
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
-      "berkasMasuk": false,
+      "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": false,
@@ -9273,17 +9280,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_222",
-        "timestamp": "2026-10-31 16:00:00",
+        "id": "log_init_prj_cipta_karya_215",
+        "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
-        "action": "Pencatatan Kontrak Pelaksanaan",
-        "keterangan": "Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026 telah diterbitkan dengan nilai Rp 1.207.300.000 kepada CV. ZULFA."
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -9329,7 +9336,7 @@ export const MONITORING_PAKET_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -9357,7 +9364,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -9439,7 +9446,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -9579,7 +9586,7 @@ export const MONITORING_PAKET_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -9607,7 +9614,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -9661,7 +9668,7 @@ export const MONITORING_PAKET_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -9689,7 +9696,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -9764,15 +9771,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -9846,15 +9853,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -9928,15 +9935,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -10019,7 +10026,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -10094,15 +10101,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -10260,15 +10267,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -10351,7 +10358,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -10434,17 +10441,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-04",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_249",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.13.PL.CK/IX/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -10518,15 +10525,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -10600,15 +10607,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -10690,17 +10697,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-03",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_252",
+      "nomorSPM": "900/SPM/000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -10782,17 +10789,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-03",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_253",
+      "nomorSPM": "900/SPM/000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -10866,15 +10873,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -10948,15 +10955,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -11039,7 +11046,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -11124,17 +11131,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_285",
+        "id": "log_init_prj_cipta_karya_286",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
       }
     ]
   },
@@ -11209,7 +11216,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -11295,17 +11302,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 2.164.779.300"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-10-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -11390,17 +11397,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 2.164.779.300"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-10-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -11483,17 +11490,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_280",
+        "id": "log_init_prj_cipta_karya_282",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni)."
       }
     ]
   },
@@ -11568,7 +11575,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -11646,15 +11653,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -11731,15 +11738,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -11816,15 +11823,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -11906,17 +11913,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_301",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.43.3/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -11998,17 +12005,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_302",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.32/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12090,17 +12097,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 149.384.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12181,7 +12188,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -12264,17 +12271,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_306",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.043/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12356,17 +12363,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_307",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.27/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12448,17 +12455,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_308",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.43.2/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12540,17 +12547,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_309",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.042/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12632,17 +12639,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_310",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.33/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12724,17 +12731,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_311",
+      "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.039/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12816,17 +12823,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_312",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.55/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12908,17 +12915,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_313",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.35/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -13001,7 +13008,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13085,7 +13092,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13169,7 +13176,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13253,7 +13260,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13337,7 +13344,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13421,7 +13428,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13505,7 +13512,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13589,7 +13596,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13673,7 +13680,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13757,7 +13764,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13841,7 +13848,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -13925,7 +13932,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -14009,7 +14016,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -14093,7 +14100,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -14177,7 +14184,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -14260,17 +14267,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_315",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.005/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14352,17 +14359,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_316",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.006/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14444,17 +14451,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_317",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.007/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14536,17 +14543,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_318",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.28/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14627,18 +14634,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_319",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPPBJ.BM.57/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14720,17 +14727,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_320",
+      "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.056/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14812,17 +14819,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_321",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.31/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14904,17 +14911,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_322",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.36/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14996,17 +15003,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_323",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.37/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15088,17 +15095,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_324",
+      "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.038/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15151,7 +15158,7 @@ export const MONITORING_PAKET_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -15179,18 +15186,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_325",
+      "nomorSPM": "900/SPM/000.03.02.2/APBD.SP.BM.74/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15272,17 +15279,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_328",
+      "nomorSPM": "900/SPM/027/PL.SPK.BM.009/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15363,18 +15370,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_329",
+      "nomorSPM": "900/SPM/000.03.02.2/APBD.SP.BM.75/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15458,17 +15465,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 586.551.392"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-21",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15549,18 +15556,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-23",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_339",
+      "nomorSPM": "900/SPM/000.3.2/ PL.SPK.BM.21/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15634,15 +15641,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -15724,17 +15731,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_341",
+      "nomorSPM": "900/SPM/027.2/PL.SPK.BM.008/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15815,18 +15822,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_342",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.040/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -15907,7 +15914,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -15989,7 +15996,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -16071,18 +16078,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-04",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_345",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.023/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16163,18 +16170,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_346",
+      "nomorSPM": "900/SPM/EP-01M09RW6VFV2GRYK6Y2BA3M2PR",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16255,18 +16262,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_347",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.29/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16350,7 +16357,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -16435,17 +16442,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 442.424.160"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16528,18 +16535,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_349",
+      "nomorSPM": "900/SPM/000.3.7/BANGUB.SP.BM.098/IX/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16613,15 +16620,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -16705,17 +16712,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 293.158.632"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16799,17 +16806,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 295.318.331"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-21",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16885,15 +16892,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -16969,15 +16976,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -17053,15 +17060,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -17135,15 +17142,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -17227,17 +17234,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 291.068.101"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17321,17 +17328,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 590.384.179"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17415,17 +17422,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 294.919.469"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-28",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17507,17 +17514,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 235.739.405"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-10-01",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17593,15 +17600,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -17685,17 +17692,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 295.536.232"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17771,15 +17778,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -17863,17 +17870,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 294.915.190"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-31",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17957,17 +17964,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 294.304.762"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -18043,15 +18050,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -18134,7 +18141,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -18217,17 +18224,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 206.311.703"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-10-01",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -18311,17 +18318,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 295.138.963"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-10-01",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -18405,17 +18412,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 295.348.553"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -18499,17 +18506,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-31",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_372",
+      "nomorSPM": "900/SPM/027.2/APBD.SP.BM.03/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -18593,7 +18600,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -18678,7 +18685,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -18762,7 +18769,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -18846,7 +18853,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -18930,7 +18937,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19014,7 +19021,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19098,7 +19105,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19182,7 +19189,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19267,7 +19274,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19351,7 +19358,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19435,7 +19442,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19519,7 +19526,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19603,7 +19610,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19687,7 +19694,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19771,7 +19778,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19856,7 +19863,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -19940,7 +19947,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20025,7 +20032,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20110,7 +20117,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20194,7 +20201,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20279,7 +20286,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20364,7 +20371,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20448,7 +20455,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20532,17 +20539,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_393",
+        "id": "log_init_prj_bina_marga_450",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan)."
       }
     ]
   },
@@ -20616,7 +20623,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20700,7 +20707,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20784,7 +20791,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20868,7 +20875,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -20953,7 +20960,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21038,7 +21045,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21123,7 +21130,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21207,7 +21214,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21292,7 +21299,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21376,7 +21383,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21460,7 +21467,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21544,7 +21551,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21628,7 +21635,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21712,7 +21719,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21797,7 +21804,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21881,7 +21888,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -21965,7 +21972,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22050,7 +22057,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22134,7 +22141,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22219,7 +22226,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22303,7 +22310,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22387,7 +22394,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22470,17 +22477,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-15",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_499",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.015/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -22562,17 +22569,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 286.115.220"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-01",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -22646,15 +22653,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -22737,7 +22744,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22821,7 +22828,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22905,7 +22912,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -22989,7 +22996,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -23073,7 +23080,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -23157,7 +23164,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -23242,17 +23249,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 2.892.391.130"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-23",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -23336,17 +23343,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 1.044.154.998"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -23428,17 +23435,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 285.317.015"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-31",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -23512,15 +23519,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -23594,15 +23601,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -23676,15 +23683,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -23766,17 +23773,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 285.331.518"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-11",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -23859,7 +23866,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -23943,7 +23950,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -24027,7 +24034,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -24111,7 +24118,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -24195,7 +24202,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -24279,7 +24286,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -24327,61 +24334,51 @@ export const MONITORING_PAKET_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 8.18,
-      "progresRealisasi": 8.18,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 31616000,
-      "persenKeuangan": 7.03,
-      "sisaAnggaran": 468384000,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_484-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 31616000,
-          "persen": 7.03,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 500000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 31.616.000"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_484",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_529",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan)."
       }
     ]
   },
@@ -24455,7 +24452,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -24539,7 +24536,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -24708,17 +24705,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 868.172.100"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -24802,17 +24799,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 573.583.800"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -24896,17 +24893,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 578.701.800"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -24982,15 +24979,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -25072,17 +25069,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_48",
+      "nomorSPM": "900/SPM/000.3.3/005/SP/TENDER/SDABK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -25164,17 +25161,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 290.591.400"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -25256,17 +25253,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 286.263.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -25340,15 +25337,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -25392,12 +25389,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/023/SP/TENDER.P/SDABK/X/2026",
+      "nomorKontrak": "000.3.2/010/SPK/PGWS.P/SDABK/X/2026",
       "tanggalKontrak": "2026-10-29",
       "tanggalMulai": "2026-10-29",
       "tanggalSelesai": "2026-12-27",
-      "nilaiKontrak": 960738000,
-      "namaPenyedia": "CV. SETIAJI",
+      "nilaiKontrak": 19513800,
+      "namaPenyedia": "CV. RAF INOVASI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -25412,7 +25409,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 960738000,
+      "sisaAnggaran": 19513800,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -25424,19 +25421,19 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_69",
+        "id": "log_init_prj_sda_bk_70",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator SDA & BK",
         "userRole": "Koordinator Bidang",
@@ -25476,12 +25473,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/024/SP/TENDER.P/SDABK/X/2026",
+      "nomorKontrak": "000.3.2/011/SPK/PGWS.P/SDABK/X/2026",
       "tanggalKontrak": "2026-10-29",
       "tanggalMulai": "2026-10-29",
       "tanggalSelesai": "2026-12-27",
-      "nilaiKontrak": 940631000,
-      "namaPenyedia": "CV. SHINTA",
+      "nilaiKontrak": 19839030,
+      "namaPenyedia": "CV. FANA KARYA GUNA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -25496,7 +25493,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 940631000,
+      "sisaAnggaran": 19839030,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -25508,19 +25505,19 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_72",
+        "id": "log_init_prj_sda_bk_73",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator SDA & BK",
         "userRole": "Koordinator Bidang",
@@ -25560,12 +25557,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/025/SP/TENDER.P/SDABK/X/2026",
+      "nomorKontrak": "000.3.2/012/SPK/PGWS.P/SDABK/X/2026",
       "tanggalKontrak": "2026-10-29",
       "tanggalMulai": "2026-10-29",
       "tanggalSelesai": "2026-12-27",
-      "nilaiKontrak": 968000000,
-      "namaPenyedia": "CV. MITRA JAYA ABADI",
+      "nilaiKontrak": 19491600,
+      "namaPenyedia": "CV. SALAHUDDIN SELARAS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -25580,7 +25577,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 968000000,
+      "sisaAnggaran": 19491600,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -25592,19 +25589,19 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_94",
+        "id": "log_init_prj_sda_bk_95",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator SDA & BK",
         "userRole": "Koordinator Bidang",
@@ -25645,12 +25642,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/022/SP/TENDER.P/SDABK/X/2026",
+      "nomorKontrak": "000.3.2/015/SPK/PGWS.P/SDABK/X/2026",
       "tanggalKontrak": "2026-10-29",
       "tanggalMulai": "2026-10-29",
       "tanggalSelesai": "2026-12-27",
-      "nilaiKontrak": 1455627000,
-      "namaPenyedia": "CV. SHINTA",
+      "nilaiKontrak": 19709160,
+      "namaPenyedia": "CV. UTAMA KARYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -25665,7 +25662,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1455627000,
+      "sisaAnggaran": 19709160,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -25677,19 +25674,19 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_100",
+        "id": "log_init_prj_sda_bk_101",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator SDA & BK",
         "userRole": "Koordinator Bidang",
@@ -25761,15 +25758,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -25845,15 +25842,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -25935,17 +25932,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 139.354.800"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -26029,17 +26026,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_127",
+        "id": "log_init_prj_sda_bk_128",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
       }
     ]
   },
@@ -26074,12 +26071,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/020/SP/TENDER.P/SDABK/X/2026",
+      "nomorKontrak": "000.3.2/013/SPK/PGWS.P/SDABK/X/2026",
       "tanggalKontrak": "2026-10-29",
       "tanggalMulai": "2026-10-29",
       "tanggalSelesai": "2026-12-27",
-      "nilaiKontrak": 963493000,
-      "namaPenyedia": "CV. CIPTA KARYA DIMYATI",
+      "nilaiKontrak": 19558200,
+      "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -26094,7 +26091,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 963493000,
+      "sisaAnggaran": 19558200,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -26106,19 +26103,19 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_129",
+        "id": "log_init_prj_sda_bk_130",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator SDA & BK",
         "userRole": "Koordinator Bidang",
@@ -26158,12 +26155,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/015/SP/TENDER.P/SDABK/X/2026",
-      "tanggalKontrak": "",
+      "nomorKontrak": "000.3.2/014/SPK/PGWS.P/SDABK/X/2026",
+      "tanggalKontrak": "2026-10-29",
       "tanggalMulai": "2026-10-29",
       "tanggalSelesai": "2026-12-27",
-      "nilaiKontrak": 959159000,
-      "namaPenyedia": "CV. MAZDA",
+      "nilaiKontrak": 19491600,
+      "namaPenyedia": "CV. SALAHUDDIN SELARAS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -26178,7 +26175,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 959159000,
+      "sisaAnggaran": 19491600,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -26190,19 +26187,19 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_132",
+        "id": "log_init_prj_sda_bk_133",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator SDA & BK",
         "userRole": "Koordinator Bidang",
@@ -26242,12 +26239,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/027/SP/TENDER.P/SDABK/X/2026",
+      "nomorKontrak": "000.3.2/016/SPK/PGWS.P/SDABK/X/2026",
       "tanggalKontrak": "2026-10-29",
       "tanggalMulai": "2026-10-29",
       "tanggalSelesai": "2026-12-27",
-      "nilaiKontrak": 957232988.451036,
-      "namaPenyedia": "CV. CAHAYA TESCHA",
+      "nilaiKontrak": 19558200,
+      "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -26262,7 +26259,7 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 957232988.451036,
+      "sisaAnggaran": 19558200,
       "terminHistory": []
     },
     "tahapanPencairan": {
@@ -26274,19 +26271,19 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_145",
+        "id": "log_init_prj_sda_bk_146",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator SDA & BK",
         "userRole": "Koordinator Bidang",
@@ -26358,15 +26355,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -26448,17 +26445,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_152",
+      "nomorSPM": "900/SPM/027/04Pr/SPK/SPAM.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -26540,17 +26537,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_153",
+      "nomorSPM": "900/SPM/027/05Pr/SPK/SPAM.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -26632,17 +26629,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-05-11",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_154",
+      "nomorSPM": "900/SPM/027/06Pr/SPK/SPAM.PL.CK/V/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -26716,15 +26713,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -26805,7 +26802,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -26880,15 +26877,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -26962,15 +26959,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -27052,17 +27049,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-05-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_189",
+      "nomorSPM": "900/SPM/027/07Pr/SPK/SPAL.PL.CK/V/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -27136,15 +27133,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -27225,7 +27222,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -27268,12 +27265,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/09Pr/SPK/DR.PLP.CK.IX/2026",
-      "tanggalKontrak": "2026-09-28",
-      "tanggalMulai": "28 September - 9 Oktober 2026",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 17760000,
-      "namaPenyedia": "CV. JK KONSULTAN",
+      "nomorKontrak": "027/02Pr/SPK/DRAINASE.PL.CK/III/2026",
+      "tanggalKontrak": "2026-03-05",
+      "tanggalMulai": "2026-03-05",
+      "tanggalSelesai": "2026-04-03",
+      "nilaiKontrak": 49774000,
+      "namaPenyedia": "CV. REKA ADI KONSULTAN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -27286,38 +27283,48 @@ export const MONITORING_PAKET_2026 = [
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 17760000,
-      "terminHistory": []
+      "totalPencairan": 49774000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_210-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/02Pr/SPK/DRAINASE.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-05",
+          "jumlah": 49774000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
       "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": false,
-      "selesai": false,
-      "catatanPencairan": "Belum ada pencairan SP2D"
+      "spm": true,
+      "selesai": true,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-05",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/02Pr/SPK/DRAINASE.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_194",
+        "id": "log_init_prj_cipta_karya_210",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 49.774.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -27350,11 +27357,11 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/09Pr/SPK/DR.PLP.CK.IX/2026",
-      "tanggalKontrak": "2026-09-28",
-      "tanggalMulai": "28 September - 9 Oktober 2026",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 17760000,
+      "nomorKontrak": "027/03Pr/SPK/DRAINASE.PL.CK/III/2026",
+      "tanggalKontrak": "2026-03-05",
+      "tanggalMulai": "2026-03-05",
+      "tanggalSelesai": "2026-04-03",
+      "nilaiKontrak": 49544000,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -27368,38 +27375,48 @@ export const MONITORING_PAKET_2026 = [
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 17760000,
-      "terminHistory": []
+      "totalPencairan": 49544000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_211-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/03Pr/SPK/DRAINASE.PL.CK/III/2026",
+          "tanggalSP2D": "2026-03-05",
+          "jumlah": 49544000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+        }
+      ]
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
       "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": false,
-      "selesai": false,
-      "catatanPencairan": "Belum ada pencairan SP2D"
+      "spm": true,
+      "selesai": true,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-03-05",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027/03Pr/SPK/DRAINASE.PL.CK/III/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_194",
+        "id": "log_init_prj_cipta_karya_211",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 49.544.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -27429,22 +27446,22 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/01Pgw/SPK/DRAINASE.PL.CK.VIII/2026",
+      "tanggalKontrak": "2026-08-19",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 70386000,
+      "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
@@ -27452,12 +27469,12 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 75000000,
+      "sisaAnggaran": 70386000,
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
-      "berkasMasuk": false,
+      "berkasBelumMasuk": false,
+      "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": false,
@@ -27471,17 +27488,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_195",
-        "timestamp": "2026-10-31 15:00:00",
-        "userName": "Admin SIMON SATUPUTARU",
-        "userRole": "Sistem Monitoring",
-        "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
+        "id": "log_init_prj_cipta_karya_212",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -27511,22 +27528,22 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/02Pgw/SPK/DRAINASE.PL.CK.VIII/2026",
+      "tanggalKontrak": "2026-08-19",
+      "tanggalMulai": "19 Agustus - 16 November 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 44292000,
+      "namaPenyedia": "CV.PRIORITAS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
@@ -27534,12 +27551,12 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 45000000,
+      "sisaAnggaran": 44292000,
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
-      "berkasMasuk": false,
+      "berkasBelumMasuk": false,
+      "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": false,
@@ -27553,17 +27570,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_195",
-        "timestamp": "2026-10-31 15:00:00",
-        "userName": "Admin SIMON SATUPUTARU",
-        "userRole": "Sistem Monitoring",
-        "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
+        "id": "log_init_prj_cipta_karya_213",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -27595,22 +27612,22 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "2026-09-28",
-      "tanggalMulai": "2026-09-28",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 11834000,
-      "namaPenyedia": "CV. DE SATU",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
@@ -27618,36 +27635,36 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 11834000,
+      "sisaAnggaran": 12000000,
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": false,
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_231",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Cipta Karya",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_cipta_karya_242",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni)."
       }
     ]
   },
@@ -27796,15 +27813,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -27880,15 +27897,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -27929,8 +27946,8 @@ export const MONITORING_PAKET_2026 = [
       "APBD Perubahan"
     ],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -27964,15 +27981,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -28046,15 +28063,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -28130,15 +28147,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -28179,22 +28196,22 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "2026-09-28",
-      "tanggalMulai": "2026-09-28",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 11834000,
-      "namaPenyedia": "CV. DE SATU",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
@@ -28202,36 +28219,36 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 11834000,
+      "sisaAnggaran": 8000000,
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": false,
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_231",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Cipta Karya",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_cipta_karya_242",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni)."
       }
     ]
   },
@@ -28305,7 +28322,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -28389,7 +28406,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -28473,7 +28490,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -28641,7 +28658,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -28683,22 +28700,22 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026",
-      "tanggalKontrak": "2026-09-28",
-      "tanggalMulai": "2026-09-28",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 11834000,
-      "namaPenyedia": "CV. DE SATU",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
@@ -28706,36 +28723,36 @@ export const MONITORING_PAKET_2026 = [
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 11834000,
+      "sisaAnggaran": 478551960,
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": false,
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_231",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Cipta Karya",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_cipta_karya_242",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni)."
       }
     ]
   },
@@ -28802,15 +28819,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -28893,7 +28910,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -28977,7 +28994,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -29061,7 +29078,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -29144,17 +29161,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_256",
+      "nomorSPM": "900/SPM/027/02Pr/SPK/BG.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -29236,17 +29253,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_257",
+      "nomorSPM": "900/SPM/027/03Pr/SPK/BG.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -29328,17 +29345,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_cipta_karya_258",
+      "nomorSPM": "900/SPM/027/04Pr/SPK/BG.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -29414,15 +29431,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -29505,7 +29522,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -29589,7 +29606,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -29673,7 +29690,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -29757,7 +29774,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -29832,15 +29849,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -29914,15 +29931,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -29996,15 +30013,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -30087,7 +30104,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -30169,17 +30186,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_229",
+        "id": "log_init_prj_cipta_karya_271",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni)."
       }
     ]
   },
@@ -30251,17 +30268,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_229",
+        "id": "log_init_prj_cipta_karya_282",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni)."
       }
     ]
   },
@@ -30307,7 +30324,7 @@ export const MONITORING_PAKET_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -30335,7 +30352,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -30419,7 +30436,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -30503,7 +30520,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -30587,7 +30604,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -30629,21 +30646,21 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 100000000,
+      "nilaiKontrak": 0,
       "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -30656,7 +30673,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
+      "berkasBelumMasuk": true,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -30671,17 +30688,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_294",
+        "id": "log_init_prj_bina_marga_296",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
       }
     ]
   },
@@ -30713,21 +30730,21 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 100000000,
+      "nilaiKontrak": 0,
       "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
@@ -30740,7 +30757,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
+      "berkasBelumMasuk": true,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -30755,17 +30772,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_294",
+        "id": "log_init_prj_bina_marga_297",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
       }
     ]
   },
@@ -30839,7 +30856,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -30924,17 +30941,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_389",
+        "id": "log_init_prj_bina_marga_390",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni)."
       }
     ]
   },
@@ -30969,12 +30986,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "027.2/APBD.SP.BM.03/III/2026",
+      "nomorKontrak": "027.2/PWS.SPK.BM.004/III/2026",
       "tanggalKontrak": "2026-03-31",
       "tanggalMulai": "2026-03-31",
       "tanggalSelesai": "2026-06-28",
-      "nilaiKontrak": 2424634000,
-      "namaPenyedia": "CV. KEMBAR PUTRA",
+      "nilaiKontrak": 24891000,
+      "namaPenyedia": "CV. GLOBAL DISAIN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -30987,16 +31004,16 @@ export const MONITORING_PAKET_2026 = [
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 2424634000,
+      "totalPencairan": 24891000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_372-1",
+          "id": "TRM-prj_bina_marga_373-1",
           "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-027.2/APBD.SP.BM.03/III/2026",
+          "nomorSP2D": "SP2D-027.2/PWS.SPK.BM.004/III/2026",
           "tanggalSP2D": "2026-03-31",
-          "jumlah": 2424634000,
+          "jumlah": 24891000,
           "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
@@ -31009,26 +31026,26 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-31",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_372",
+      "nomorSPM": "900/SPM/027.2/PWS.SPK.BM.004/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_372",
+        "id": "log_init_prj_bina_marga_373",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 2.424.634.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 24.891.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -31058,69 +31075,59 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
-      "nomorKontrak": "000.03.02.2/APBD.SP.BM.74/VIII/2026",
-      "tanggalKontrak": "2026-08-20",
-      "tanggalMulai": "2026-08-20",
-      "tanggalSelesai": "2026-11-17",
-      "nilaiKontrak": 955444001,
-      "namaPenyedia": "CV. KEMBAR PUTRA",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
+      "progresRencana": 0,
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 955444001,
-      "persenKeuangan": 100,
-      "sisaAnggaran": 0,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_325-1",
-          "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-000.03.02.2/APBD.SP.BM.74/VIII/2026",
-          "tanggalSP2D": "2026-08-20",
-          "jumlah": 955444001,
-          "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 15000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "spm": false,
+      "selesai": false,
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_325",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_325",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 955.444.001 dan fisik mencapai 0% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_327",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -31153,34 +31160,34 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.03.02.2/APBD.SP.BM.74/VIII/2026",
-      "tanggalKontrak": "2026-08-20",
-      "tanggalMulai": "2026-08-20",
-      "tanggalSelesai": "2026-11-17",
-      "nilaiKontrak": 955444001,
-      "namaPenyedia": "CV. KEMBAR PUTRA",
+      "nomorKontrak": "027.2/PRC.SPK.BM.016/IV/2026",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
+      "nilaiKontrak": 14705000,
+      "namaPenyedia": "CV. KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
       "progresRencana": 100,
-      "progresRealisasi": 0,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 955444001,
+      "totalPencairan": 14705000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_325-1",
+          "id": "TRM-prj_bina_marga_326-1",
           "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-000.03.02.2/APBD.SP.BM.74/VIII/2026",
-          "tanggalSP2D": "2026-08-20",
-          "jumlah": 955444001,
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.016/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14705000,
           "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
@@ -31193,26 +31200,26 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_325",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.016/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_325",
+        "id": "log_init_prj_bina_marga_326",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 955.444.001 dan fisik mencapai 0% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -31242,69 +31249,59 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
-      "nomorKontrak": "000.03.02.2/APBD.SP.BM.75/VIII/2026",
-      "tanggalKontrak": "2026-08-20",
-      "tanggalMulai": "2026-08-20",
-      "tanggalSelesai": "2026-11-17",
-      "nilaiKontrak": 954431000,
-      "namaPenyedia": "CV. KEMBAR PUTRA",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 90,
-      "deviasiFisik": 10,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 954431000,
-      "persenKeuangan": 100,
-      "sisaAnggaran": 0,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_329-1",
-          "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-000.03.02.2/APBD.SP.BM.75/VIII/2026",
-          "tanggalSP2D": "2026-08-20",
-          "jumlah": 954431000,
-          "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 15000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "spm": false,
+      "selesai": false,
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_329",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_329",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 954.431.000 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_331",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -31337,34 +31334,34 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.03.02.2/APBD.SP.BM.75/VIII/2026",
-      "tanggalKontrak": "2026-08-20",
-      "tanggalMulai": "2026-08-20",
-      "tanggalSelesai": "2026-11-17",
-      "nilaiKontrak": 954431000,
-      "namaPenyedia": "CV. KEMBAR PUTRA",
+      "nomorKontrak": "027.2/PRC.SPK.BM.017/IV/2026",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
+      "nilaiKontrak": 14705000,
+      "namaPenyedia": "CV. KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 90,
-      "deviasiFisik": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 954431000,
+      "totalPencairan": 14705000,
       "persenKeuangan": 100,
       "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_329-1",
+          "id": "TRM-prj_bina_marga_330-1",
           "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-000.03.02.2/APBD.SP.BM.75/VIII/2026",
-          "tanggalSP2D": "2026-08-20",
-          "jumlah": 954431000,
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.017/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14705000,
           "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
@@ -31377,26 +31374,26 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_329",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.017/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_329",
+        "id": "log_init_prj_bina_marga_330",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 954.431.000 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -31428,69 +31425,59 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
-      "nomorKontrak": "000.3.7/APBD.SP.BM.069/VIII/2026",
-      "tanggalKontrak": "2026-08-21",
-      "tanggalMulai": "2026-08-21",
-      "tanggalSelesai": "2026-12-18",
-      "nilaiKontrak": 1900504641,
-      "namaPenyedia": "CV. ZULFA",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 50,
-      "deviasiFisik": 20,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 586551392,
-      "persenKeuangan": 30.86,
-      "sisaAnggaran": 1313953249,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_335-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.7/APBD.SP.BM.069/VIII/2026",
-          "tanggalSP2D": "2026-08-21",
-          "jumlah": 586551392,
-          "persen": 30.86,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 30000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 586.551.392"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_335",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 586.551.392 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_337",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
       }
     ]
   },
@@ -31525,35 +31512,35 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.7/APBD.SP.BM.069/VIII/2026",
-      "tanggalKontrak": "2026-08-21",
-      "tanggalMulai": "2026-08-21",
-      "tanggalSelesai": "2026-12-18",
-      "nilaiKontrak": 1900504641,
-      "namaPenyedia": "CV. ZULFA",
+      "nomorKontrak": "027.2/PRC.SPK.BM.010/IV/2026",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
+      "nilaiKontrak": 29646000,
+      "namaPenyedia": "CV. PRIORITAS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 50,
-      "deviasiFisik": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 586551392,
-      "persenKeuangan": 30.86,
-      "sisaAnggaran": 1313953249,
+      "totalPencairan": 29646000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_335-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.7/APBD.SP.BM.069/VIII/2026",
-          "tanggalSP2D": "2026-08-21",
-          "jumlah": 586551392,
-          "persen": 30.86,
+          "id": "TRM-prj_bina_marga_336-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.010/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 29646000,
+          "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
       ]
@@ -31564,27 +31551,27 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 586.551.392"
+      "selesai": true,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.010/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_335",
+        "id": "log_init_prj_bina_marga_336",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 586.551.392 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 29.646.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -31658,17 +31645,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_391",
+        "id": "log_init_prj_bina_marga_392",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
       }
     ]
   },
@@ -31742,7 +31729,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -31826,17 +31813,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_394",
+        "id": "log_init_prj_bina_marga_395",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -31911,17 +31898,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_396",
+        "id": "log_init_prj_bina_marga_397",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan)."
       }
     ]
   },
@@ -31996,17 +31983,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_398",
+        "id": "log_init_prj_bina_marga_399",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan)."
       }
     ]
   },
@@ -32080,17 +32067,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_400",
+        "id": "log_init_prj_bina_marga_401",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -32165,17 +32152,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_402",
+        "id": "log_init_prj_bina_marga_403",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
       }
     ]
   },
@@ -32249,17 +32236,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_380",
+        "id": "log_init_prj_bina_marga_404",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -32333,17 +32320,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_384",
+        "id": "log_init_prj_bina_marga_405",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
       }
     ]
   },
@@ -32417,17 +32404,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_406",
+        "id": "log_init_prj_bina_marga_407",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -32502,17 +32489,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_408",
+        "id": "log_init_prj_bina_marga_409",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
       }
     ]
   },
@@ -32587,17 +32574,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_410",
+        "id": "log_init_prj_bina_marga_411",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
       }
     ]
   },
@@ -32672,17 +32659,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_412",
+        "id": "log_init_prj_bina_marga_413",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
       }
     ]
   },
@@ -32757,17 +32744,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_414",
+        "id": "log_init_prj_bina_marga_415",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
       }
     ]
   },
@@ -32841,17 +32828,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_416",
+        "id": "log_init_prj_bina_marga_417",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -32925,17 +32912,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_418",
+        "id": "log_init_prj_bina_marga_419",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
       }
     ]
   },
@@ -33009,17 +32996,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_420",
+        "id": "log_init_prj_bina_marga_421",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
       }
     ]
   },
@@ -33094,17 +33081,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_422",
+        "id": "log_init_prj_bina_marga_423",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
       }
     ]
   },
@@ -33179,17 +33166,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_424",
+        "id": "log_init_prj_bina_marga_425",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan)."
       }
     ]
   },
@@ -33264,17 +33251,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_426",
+        "id": "log_init_prj_bina_marga_427",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
       }
     ]
   },
@@ -33348,17 +33335,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_428",
+        "id": "log_init_prj_bina_marga_429",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
       }
     ]
   },
@@ -33432,17 +33419,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_388",
+        "id": "log_init_prj_bina_marga_430",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni)."
       }
     ]
   },
@@ -33517,17 +33504,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_431",
+        "id": "log_init_prj_bina_marga_432",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni)."
       }
     ]
   },
@@ -33602,17 +33589,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_433",
+        "id": "log_init_prj_bina_marga_434",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni)."
       }
     ]
   },
@@ -33687,17 +33674,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_435",
+        "id": "log_init_prj_bina_marga_436",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan)."
       }
     ]
   },
@@ -33771,17 +33758,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_437",
+        "id": "log_init_prj_bina_marga_438",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan)."
       }
     ]
   },
@@ -33856,17 +33843,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_439",
+        "id": "log_init_prj_bina_marga_440",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
       }
     ]
   },
@@ -33941,17 +33928,17 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_441",
+        "id": "log_init_prj_bina_marga_442",
         "timestamp": "2026-10-31 15:00:00",
         "userName": "Admin SIMON SATUPUTARU",
         "userRole": "Sistem Monitoring",
         "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni)."
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni)."
       }
     ]
   },
@@ -34821,8 +34808,8 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -34856,15 +34843,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -34946,17 +34933,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-04-15",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_499",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.015/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -34998,12 +34985,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "'000.3.7/APBD.SP.BM.96/IX/2026",
-      "tanggalKontrak": "2026-09-01",
-      "tanggalMulai": "2026-09-01",
-      "tanggalSelesai": "2026-11-29",
-      "nilaiKontrak": 953717401,
-      "namaPenyedia": "CV. MUNZAROH INDAH",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -35016,48 +35003,38 @@ export const MONITORING_PAKET_2026 = [
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 286115220,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 667602181,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_502-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-'000.3.7/APBD.SP.BM.96/IX/2026",
-          "tanggalSP2D": "2026-09-01",
-          "jumlah": 286115220,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 15000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
       "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 286.115.220"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_502",
+        "id": "log_init_prj_bina_marga_504",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 286.115.220 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35090,35 +35067,35 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "'000.3.7/APBD.SP.BM.96/IX/2026",
-      "tanggalKontrak": "2026-09-01",
-      "tanggalMulai": "2026-09-01",
-      "tanggalSelesai": "2026-11-29",
-      "nilaiKontrak": 953717401,
-      "namaPenyedia": "CV. MUNZAROH INDAH",
+      "nomorKontrak": "027.2/PRC.SPK.BM.014/IV/2026",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
+      "nilaiKontrak": 14710000,
+      "namaPenyedia": "CV KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 30,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 286115220,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 667602181,
+      "totalPencairan": 14710000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_502-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-'000.3.7/APBD.SP.BM.96/IX/2026",
-          "tanggalSP2D": "2026-09-01",
-          "jumlah": 286115220,
-          "persen": 30,
+          "id": "TRM-prj_bina_marga_503-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.014/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14710000,
+          "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
       ]
@@ -35129,27 +35106,27 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 286.115.220"
+      "selesai": true,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.014/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_502",
+        "id": "log_init_prj_bina_marga_503",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 286.115.220 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 14.710.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35184,66 +35161,56 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "027.2/APBD.SPK.BM.03/VII/2026",
+      "nomorKontrak": "000.3.2/PWS/SP.BM.021.1/VII/2026",
       "tanggalKontrak": "2026-07-23",
       "tanggalMulai": "2026-07-23",
       "tanggalSelesai": "2026-12-19",
-      "nilaiKontrak": 9613970000,
-      "namaPenyedia": "CV. MULYO JOYO BERKAH",
+      "nilaiKontrak": 38034770,
+      "namaPenyedia": "CV. PURUSARA TEKNIK",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 25,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 2892391130,
-      "persenKeuangan": 30.09,
-      "sisaAnggaran": 6721578870,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_506-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-027.2/APBD.SPK.BM.03/VII/2026",
-          "tanggalSP2D": "2026-07-23",
-          "jumlah": 2892391130,
-          "persen": 30.09,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 38034770,
+      "terminHistory": []
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
       "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 2.892.391.130"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_506",
+        "id": "log_init_prj_bina_marga_507",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 2.892.391.130 dan fisik mencapai 25% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35278,12 +35245,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/APBD.SP.BM.022/VII/2026",
+      "nomorKontrak": "000.3.2/PWS/SP.BM.024/VII/2026",
       "tanggalKontrak": "2026-07-30",
       "tanggalMulai": "2026-07-30",
       "tanggalSelesai": "2026-12-25",
-      "nilaiKontrak": 3425849992,
-      "namaPenyedia": "CV. ASALAMAHWALBAROKAH",
+      "nilaiKontrak": 12898200,
+      "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -35296,48 +35263,38 @@ export const MONITORING_PAKET_2026 = [
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 1044154998,
-      "persenKeuangan": 30.48,
-      "sisaAnggaran": 2381694994,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_508-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.022/VII/2026",
-          "tanggalSP2D": "2026-07-30",
-          "jumlah": 1044154998,
-          "persen": 30.48,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 12898200,
+      "terminHistory": []
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
       "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 1.044.154.998"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_508",
+        "id": "log_init_prj_bina_marga_510",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 1.044.154.998 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35372,35 +35329,35 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/APBD.SP.BM.022/VII/2026",
-      "tanggalKontrak": "2026-07-30",
-      "tanggalMulai": "2026-07-30",
-      "tanggalSelesai": "2026-12-25",
-      "nilaiKontrak": 3425849992,
-      "namaPenyedia": "CV. ASALAMAHWALBAROKAH",
+      "nomorKontrak": "027.2/PRC.SPK.BM.011/IV/2026",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
+      "nilaiKontrak": 24812000,
+      "namaPenyedia": "CV. MITRA DISIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 1044154998,
-      "persenKeuangan": 30.48,
-      "sisaAnggaran": 2381694994,
+      "totalPencairan": 24812000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_508-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.022/VII/2026",
-          "tanggalSP2D": "2026-07-30",
-          "jumlah": 1044154998,
-          "persen": 30.48,
+          "id": "TRM-prj_bina_marga_509-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.011/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 24812000,
+          "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
       ]
@@ -35411,27 +35368,27 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 1.044.154.998"
+      "selesai": true,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.011/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_508",
+        "id": "log_init_prj_bina_marga_509",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 1.044.154.998 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 24.812.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35464,12 +35421,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/APBD.SP.BM.094/VIII/2026",
-      "tanggalKontrak": "2026-08-31",
-      "tanggalMulai": "2026-08-31",
-      "tanggalSelesai": "2026-12-28",
-      "nilaiKontrak": 951056717,
-      "namaPenyedia": "CV. MAHKOTA JAYA GRUP",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -35482,48 +35439,38 @@ export const MONITORING_PAKET_2026 = [
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 285317015,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 665739702,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_511-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.094/VIII/2026",
-          "tanggalSP2D": "2026-08-31",
-          "jumlah": 285317015,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 15000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
       "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 285.317.015"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_511",
+        "id": "log_init_prj_bina_marga_513",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 285.317.015 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35556,35 +35503,35 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/APBD.SP.BM.094/VIII/2026",
-      "tanggalKontrak": "2026-08-31",
-      "tanggalMulai": "2026-08-31",
-      "tanggalSelesai": "2026-12-28",
-      "nilaiKontrak": 951056717,
-      "namaPenyedia": "CV. MAHKOTA JAYA GRUP",
+      "nomorKontrak": "027.2/PRC.SPK.BM.012/IV/2026",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
+      "nilaiKontrak": 14842000,
+      "namaPenyedia": "CV. MITRA DISIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 30,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 285317015,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 665739702,
+      "totalPencairan": 14842000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_511-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.094/VIII/2026",
-          "tanggalSP2D": "2026-08-31",
-          "jumlah": 285317015,
-          "persen": 30,
+          "id": "TRM-prj_bina_marga_512-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.012/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14842000,
+          "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
       ]
@@ -35595,27 +35542,27 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 285.317.015"
+      "selesai": true,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.012/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_511",
+        "id": "log_init_prj_bina_marga_512",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 285.317.015 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 14.842.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35648,12 +35595,12 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/APBD.SP.BM.107/IX/2026",
-      "tanggalKontrak": "2026-09-11",
-      "tanggalMulai": "2026-09-11",
-      "tanggalSelesai": "2026-12-22",
-      "nilaiKontrak": 951105060,
-      "namaPenyedia": "CV. MITRA JAYA",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "Penyedia Jasa Konstruksi",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -35666,48 +35613,38 @@ export const MONITORING_PAKET_2026 = [
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 285331518,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 665773542,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_517-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.107/IX/2026",
-          "tanggalSP2D": "2026-09-11",
-          "jumlah": 285331518,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 15000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
       "berkasBelumMasuk": false,
       "berkasMasuk": true,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 285.331.518"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_517",
+        "id": "log_init_prj_bina_marga_519",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 285.331.518 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35740,35 +35677,35 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "000.3.3/APBD.SP.BM.107/IX/2026",
-      "tanggalKontrak": "2026-09-11",
-      "tanggalMulai": "2026-09-11",
-      "tanggalSelesai": "2026-12-22",
-      "nilaiKontrak": 951105060,
-      "namaPenyedia": "CV. MITRA JAYA",
+      "nomorKontrak": "027.2/PRC.SPK.BM.012/IV/2026",
+      "tanggalKontrak": "2026-04-08",
+      "tanggalMulai": "2026-04-08",
+      "tanggalSelesai": "2026-05-07",
+      "nilaiKontrak": 14842000,
+      "namaPenyedia": "CV. MITRA DESIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 30,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 285331518,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 665773542,
+      "totalPencairan": 14847000,
+      "persenKeuangan": 100.03,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_517-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-000.3.3/APBD.SP.BM.107/IX/2026",
-          "tanggalSP2D": "2026-09-11",
-          "jumlah": 285331518,
-          "persen": 30,
+          "id": "TRM-prj_bina_marga_518-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027.2/PRC.SPK.BM.012/IV/2026",
+          "tanggalSP2D": "2026-04-08",
+          "jumlah": 14847000,
+          "persen": 100.03,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
         }
       ]
@@ -35779,27 +35716,27 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 285.331.518"
+      "selesai": true,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.012/IV/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_517",
+        "id": "log_init_prj_bina_marga_518",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 285.331.518 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 14.847.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -35864,15 +35801,15 @@ export const MONITORING_PAKET_2026 = [
       "selesai": false,
       "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
@@ -38139,7 +38076,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -38223,7 +38160,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -38265,8 +38202,8 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -38307,18 +38244,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
+      "status": "sudah_masuk",
       "tanggalMasuk": "2026-10-15",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_sda_bk_40",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38402,7 +38339,7 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 713.151.284"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
@@ -38412,7 +38349,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38494,17 +38431,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-16",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_465",
+      "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.02/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38585,7 +38522,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -38668,17 +38605,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-16",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_465",
+      "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.02/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38760,17 +38697,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-16",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_465",
+      "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.02/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38811,8 +38748,8 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -38853,18 +38790,18 @@ export const MONITORING_PAKET_2026 = [
       "koreksi": false,
       "berkasRevisiMasuk": false,
       "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "selesai": false,
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
+      "status": "sudah_masuk",
       "tanggalMasuk": "2026-10-15",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_476",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38946,17 +38883,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-02",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_467",
+      "nomorSPM": "900/SPM/EP-01KW94RJ27DTEGTV2ZD8ZX85GF",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39038,17 +38975,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-17",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_470",
+      "nomorSPM": "900/SPM/EP-01KXHXCNFCYTACM7900S9DFCGT",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39130,17 +39067,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-24",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_471",
+      "nomorSPM": "900/SPM/EP-01M0CF8AXNG5GFZ75M9GSEHT6Q",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39222,17 +39159,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-06",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_472",
+      "nomorSPM": "900/SPM/EP-01KYV2VG3NHHNNZ8X1V6BV61K6",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39314,17 +39251,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-08-28",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_473",
+      "nomorSPM": "900/SPM/EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39406,17 +39343,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-03-16",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_465",
+      "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.02/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39498,17 +39435,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-16",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_466",
+      "nomorSPM": "900/SPM/EP-01KXD89MFMSHMQJ7PANKNEERC6",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39590,17 +39527,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-06-11",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_474",
+      "nomorSPM": "900/SPM/EP-01KTB0XPQ8R4H2W2SY5BQ09703",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39642,10 +39579,10 @@ export const MONITORING_PAKET_2026 = [
     "isKontrak": true,
     "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "EP-01KTB0XPQ8R4H2W2SY5BQ09703",
-      "tanggalKontrak": "2026-06-11",
-      "tanggalMulai": "2026-06-11",
-      "tanggalSelesai": "2026-06-25",
+      "nomorKontrak": "EP-01M1N8N5S92115F4NXAFJ2ZWFG",
+      "tanggalKontrak": "2026-09-08",
+      "tanggalMulai": "2026-09-08",
+      "tanggalSelesai": "2026-09-22",
       "nilaiKontrak": 195757380,
       "namaPenyedia": "CV. AL BAROKAH",
       "bankRekanan": "Bank Jateng",
@@ -39665,10 +39602,10 @@ export const MONITORING_PAKET_2026 = [
       "sisaAnggaran": 0,
       "terminHistory": [
         {
-          "id": "TRM-prj_bina_marga_474-1",
+          "id": "TRM-prj_bina_marga_475-1",
           "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-EP-01KTB0XPQ8R4H2W2SY5BQ09703",
-          "tanggalSP2D": "2026-06-11",
+          "nomorSP2D": "SP2D-EP-01M1N8N5S92115F4NXAFJ2ZWFG",
+          "tanggalSP2D": "2026-09-08",
           "jumlah": 195757380,
           "persen": 100,
           "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
@@ -39682,21 +39619,21 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_474",
+      "nomorSPM": "900/SPM/EP-01M1N8N5S92115F4NXAFJ2ZWFG",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_474",
+        "id": "log_init_prj_bina_marga_475",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Bina Marga",
         "userRole": "Koordinator Bidang",
@@ -39774,17 +39711,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-09-04",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_469",
+      "nomorSPM": "900/SPM/EP-01M1G0JF6ZGPVQ5MG421RQA5WN",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39833,61 +39770,51 @@ export const MONITORING_PAKET_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 43.66,
-      "progresRealisasi": 43.66,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 622586830,
-      "persenKeuangan": 35.99,
-      "sisaAnggaran": 0,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_476-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 622586830,
-          "persen": 35.99,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 200000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "spm": false,
+      "selesai": false,
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_476",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_476",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_477",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
       }
     ]
   },
@@ -39927,61 +39854,51 @@ export const MONITORING_PAKET_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 43.66,
-      "progresRealisasi": 43.66,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 622586830,
-      "persenKeuangan": 35.99,
-      "sisaAnggaran": 0,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_476-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 622586830,
-          "persen": 35.99,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 200000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "spm": false,
+      "selesai": false,
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_476",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_476",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_478",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
       }
     ]
   },
@@ -40021,61 +39938,51 @@ export const MONITORING_PAKET_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 43.66,
-      "progresRealisasi": 43.66,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 622586830,
-      "persenKeuangan": 35.99,
-      "sisaAnggaran": 0,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_476-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 622586830,
-          "persen": 35.99,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 200000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "spm": false,
+      "selesai": false,
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_476",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_476",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_479",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
       }
     ]
   },
@@ -40115,61 +40022,51 @@ export const MONITORING_PAKET_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 43.66,
-      "progresRealisasi": 43.66,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 622586830,
-      "persenKeuangan": 35.99,
-      "sisaAnggaran": 0,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_476-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 622586830,
-          "persen": 35.99,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 200000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "spm": false,
+      "selesai": false,
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_476",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_476",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_480",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan)."
       }
     ]
   },
@@ -40199,69 +40096,59 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": true,
-    "statusTahapPraKontrak": "kontrak",
+    "isKontrak": false,
+    "statusTahapPraKontrak": "rup",
     "dataKontrak": {
-      "nomorKontrak": "027.2/PEMEL.SP.BM.02/III/2026",
-      "tanggalKontrak": "2026-03-16",
-      "tanggalMulai": "2026-03-16",
-      "tanggalSelesai": "2026-03-30",
-      "nilaiKontrak": 197600000,
-      "namaPenyedia": "CV SAHALA",
+      "nomorKontrak": "",
+      "tanggalKontrak": "",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 100,
-      "progresRealisasi": 100,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 197600000,
-      "persenKeuangan": 100,
-      "sisaAnggaran": 0,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_465-1",
-          "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-027.2/PEMEL.SP.BM.02/III/2026",
-          "tanggalSP2D": "2026-03-16",
-          "jumlah": 197600000,
-          "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 100000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
-      "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "spm": false,
+      "selesai": false,
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_465",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_465",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_481",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan)."
       }
     ]
   },
@@ -40334,17 +40221,17 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": true,
-      "catatanPencairan": "SP2D Lunas 100%"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-07-31",
       "tanggalKoreksi": "",
       "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/prj_bina_marga_483",
+      "nomorSPM": "900/SPM/EP-01KYKEVJFNZQXCBPV715VJKR94",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -40383,8 +40270,8 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -40426,7 +40313,7 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 174.470.599"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
@@ -40436,7 +40323,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -40483,61 +40370,51 @@ export const MONITORING_PAKET_2026 = [
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "namaPenyedia": "-",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 8.18,
-      "progresRealisasi": 8.18,
+      "progresRencana": 0,
+      "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
       "mingguan": []
     },
     "dataKeuangan": {
-      "totalPencairan": 31616000,
-      "persenKeuangan": 7.03,
-      "sisaAnggaran": 168384000,
-      "terminHistory": [
-        {
-          "id": "TRM-prj_bina_marga_484-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 31616000,
-          "persen": 7.03,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
-        }
-      ]
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 200000000,
+      "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": false,
-      "berkasMasuk": true,
+      "berkasBelumMasuk": true,
+      "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
-      "spm": true,
+      "spm": false,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 31.616.000"
+      "catatanPencairan": "Belum ada pencairan SP2D"
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "belum_masuk",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": ""
     },
     "logs": [
       {
-        "id": "log_init_prj_bina_marga_484",
-        "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator Bina Marga",
-        "userRole": "Koordinator Bidang",
-        "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18% per laporan bulan Oktober 2026."
+        "id": "log_init_prj_bina_marga_485",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATUPUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni)."
       }
     ]
   },
@@ -40567,8 +40444,8 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -40610,7 +40487,7 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 31.616.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
@@ -40620,7 +40497,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -40659,8 +40536,8 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -40702,7 +40579,7 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 31.616.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
@@ -40712,7 +40589,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -41213,7 +41090,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Belum mengajukan berkas SPJ",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
       "petugasVerifikator": ""
     },
     "logs": [
@@ -41253,8 +41130,8 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -41296,7 +41173,7 @@ export const MONITORING_PAKET_2026 = [
       "berkasRevisiMasuk": false,
       "spm": true,
       "selesai": false,
-      "catatanPencairan": "SP2D Cair Rp 99.305.000"
+      "catatanPencairan": "Pencairan SP2D sedang/telah berjalan"
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
@@ -41306,7 +41183,7 @@ export const MONITORING_PAKET_2026 = [
       "tanggalSPM": "",
       "nomorSPM": "",
       "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
-      "petugasVerifikator": "Kasubag Program & Keuangan"
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {

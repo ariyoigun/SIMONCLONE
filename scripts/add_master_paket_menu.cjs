@@ -8,3 +8,4 @@ if (!c.includes("'master_paket'")) {
   fs.writeFileSync('src/data/constants.js', c, 'utf8');
   console.log('Added master_paket to SYSTEM_MENUS in constants.js');
 }
+

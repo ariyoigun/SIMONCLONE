@@ -3,7 +3,7 @@
 -- Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
 -- Server: Hostinger MySQL / MariaDB (simon.satuputarudemak.id)
 -- Database: u490770675_simona
--- Tanggal Generate: 2026-11-08T15:48:34.689Z
+-- Tanggal Generate: 2026-11-08T16:14:44.284Z
 -- Master Data Pekerjaan (projects): 558 Data
 -- Master Data Paket Pekerjaan (monitoring_paket): 478 Data
 -- ==============================================================================
@@ -26458,8 +26458,8 @@ INSERT INTO `monitoring_paket` (
   2025734900,
   '[{\"id\":\"TRM-prj_sda_bk_30-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/006/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":868172100,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 868.172.100\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_30\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 868.172.100 dan fisik mencapai 35\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -26504,8 +26504,8 @@ INSERT INTO `monitoring_paket` (
   0,
   298832000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_35\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -26551,8 +26551,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199010000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_36\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -26599,8 +26599,8 @@ INSERT INTO `monitoring_paket` (
   667678900,
   '[{\"id\":\"TRM-prj_sda_bk_45-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/007/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":286148100,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 286.148.100\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_45\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 286.148.100 dan fisik mencapai 85\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -26646,8 +26646,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_48-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.3/005/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":463492000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_48\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.3/005/SP/TENDER/SDABK/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_48\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 463.492.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -26693,8 +26693,8 @@ INSERT INTO `monitoring_paket` (
   1338362200,
   '[{\"id\":\"TRM-prj_sda_bk_54-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/008/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":573583800,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 573.583.800\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_54\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 573.583.800 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -26740,8 +26740,8 @@ INSERT INTO `monitoring_paket` (
   684028100,
   '[{\"id\":\"TRM-prj_sda_bk_47-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/003/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":293154900,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 293.154.900\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_47\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 293.154.900 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -26787,8 +26787,8 @@ INSERT INTO `monitoring_paket` (
   1350304200,
   '[{\"id\":\"TRM-prj_sda_bk_50-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/009/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":578701800,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 578.701.800\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_50\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 578.701.800 dan fisik mencapai 85\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -26833,8 +26833,8 @@ INSERT INTO `monitoring_paket` (
   0,
   491026000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_96\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -26880,8 +26880,8 @@ INSERT INTO `monitoring_paket` (
   0,
   491740000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_97\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -26927,8 +26927,8 @@ INSERT INTO `monitoring_paket` (
   0,
   129642000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_59\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -26975,8 +26975,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_56-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/004/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":148914000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_56\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/004/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_56\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 148.914.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -27022,8 +27022,8 @@ INSERT INTO `monitoring_paket` (
   667947000,
   '[{\"id\":\"TRM-prj_sda_bk_62-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/001/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":286263000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 286.263.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_62\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 286.263.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -27069,8 +27069,8 @@ INSERT INTO `monitoring_paket` (
   678046600,
   '[{\"id\":\"TRM-prj_sda_bk_64-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/014/SP/TENDER/SDABK/IX/2026\",\"tanggalSP2D\":\"2026-09-08\",\"jumlah\":290591400,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 290.591.400\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-09-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_64\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 290.591.400 dan fisik mencapai 75\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -27115,8 +27115,8 @@ INSERT INTO `monitoring_paket` (
   0,
   2912739000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_66\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 65\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27163,8 +27163,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_60-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/007/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":198740000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_60\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/007/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_60\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.740.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -27209,8 +27209,8 @@ INSERT INTO `monitoring_paket` (
   0,
   489472000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_61\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27256,8 +27256,8 @@ INSERT INTO `monitoring_paket` (
   0,
   198978000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_58\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27304,8 +27304,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_57-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/005/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":298936000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_57\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/005/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_57\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 298.936.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -27350,8 +27350,8 @@ INSERT INTO `monitoring_paket` (
   0,
   960738000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_69\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27397,8 +27397,8 @@ INSERT INTO `monitoring_paket` (
   0,
   198290000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_79\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27444,8 +27444,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199628000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_71\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27491,8 +27491,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199014000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_93\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27538,8 +27538,8 @@ INSERT INTO `monitoring_paket` (
   0,
   940631000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_72\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27585,8 +27585,8 @@ INSERT INTO `monitoring_paket` (
   0,
   133843000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_80\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27632,8 +27632,8 @@ INSERT INTO `monitoring_paket` (
   0,
   148967000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_88\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27679,8 +27679,8 @@ INSERT INTO `monitoring_paket` (
   0,
   785960000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_75\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27726,8 +27726,8 @@ INSERT INTO `monitoring_paket` (
   0,
   398468000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_76\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27773,8 +27773,8 @@ INSERT INTO `monitoring_paket` (
   0,
   490544000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_77\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27820,8 +27820,8 @@ INSERT INTO `monitoring_paket` (
   0,
   297863000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_78\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27867,8 +27867,8 @@ INSERT INTO `monitoring_paket` (
   0,
   588931000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_89\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27914,8 +27914,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199449000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_81\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -27961,8 +27961,8 @@ INSERT INTO `monitoring_paket` (
   0,
   298624000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_82\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28008,8 +28008,8 @@ INSERT INTO `monitoring_paket` (
   0,
   298526000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_90\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28055,8 +28055,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199169000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_91\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28102,8 +28102,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199498000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_83\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28149,8 +28149,8 @@ INSERT INTO `monitoring_paket` (
   0,
   248778000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_92\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28196,8 +28196,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199080000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_84\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28243,8 +28243,8 @@ INSERT INTO `monitoring_paket` (
   0,
   298732000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_87\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28290,8 +28290,8 @@ INSERT INTO `monitoring_paket` (
   0,
   298912000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_85\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28337,8 +28337,8 @@ INSERT INTO `monitoring_paket` (
   0,
   149061000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_86\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28384,8 +28384,8 @@ INSERT INTO `monitoring_paket` (
   0,
   968000000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_94\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28431,8 +28431,8 @@ INSERT INTO `monitoring_paket` (
   0,
   299324000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_98\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28478,8 +28478,8 @@ INSERT INTO `monitoring_paket` (
   0,
   149077000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_99\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28525,8 +28525,8 @@ INSERT INTO `monitoring_paket` (
   0,
   1455627000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_100\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28572,8 +28572,8 @@ INSERT INTO `monitoring_paket` (
   0,
   831212025.157773,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_102\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28620,8 +28620,8 @@ INSERT INTO `monitoring_paket` (
   325161200,
   '[{\"id\":\"TRM-prj_sda_bk_105-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/013/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":139354800,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 139.354.800\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_105\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 139.354.800 dan fisik mencapai 75\% per laporan bulan Oktober 2026.\"}]'
 );
 
@@ -28678,8 +28678,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_108-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/006/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":198760000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_108\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/006/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_108\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.760.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -28724,8 +28724,8 @@ INSERT INTO `monitoring_paket` (
   0,
   198337000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_109\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28772,8 +28772,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_110-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/012/SPK/PL/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":149374000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_110\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/012/SPK/PL/SDABK/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_110\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 149.374.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -28819,8 +28819,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_115-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/001/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":248866000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_115\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/001/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_115\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 248.866.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -28865,8 +28865,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199177000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_116\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28912,8 +28912,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199048000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_122\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -28960,8 +28960,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_113-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/010/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":99074000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_113\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/010/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_113\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.074.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -29007,8 +29007,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_112-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/003/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":99036000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_112\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/003/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_112\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.036.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -29054,8 +29054,8 @@ INSERT INTO `monitoring_paket` (
   341789000,
   '[{\"id\":\"TRM-prj_sda_bk_123-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/011/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":146481000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 146.481.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_123\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 146.481.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -29101,8 +29101,8 @@ INSERT INTO `monitoring_paket` (
   957499200,
   '[{\"id\":\"TRM-prj_sda_bk_124-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/010/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":410356800,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 410.356.800\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_124\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 410.356.800 dan fisik mencapai 80\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -29148,8 +29148,8 @@ INSERT INTO `monitoring_paket` (
   683793600,
   '[{\"id\":\"TRM-prj_sda_bk_125-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/012/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":293054400,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 293.054.400\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_125\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 293.054.400 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -29194,8 +29194,8 @@ INSERT INTO `monitoring_paket` (
   0,
   298894000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_138\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29241,8 +29241,8 @@ INSERT INTO `monitoring_paket` (
   0,
   298721000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_137\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29288,8 +29288,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199010000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_136\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29335,8 +29335,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199196000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_135\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29382,8 +29382,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199097000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_134\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29429,8 +29429,8 @@ INSERT INTO `monitoring_paket` (
   0,
   148456000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_131\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29477,7 +29477,7 @@ INSERT INTO `monitoring_paket` (
   1280000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_127\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni).\"}]'
 ),
@@ -29523,8 +29523,8 @@ INSERT INTO `monitoring_paket` (
   0,
   963493000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_129\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29570,8 +29570,8 @@ INSERT INTO `monitoring_paket` (
   0,
   959159000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_132\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29617,8 +29617,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199288000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_139\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29664,8 +29664,8 @@ INSERT INTO `monitoring_paket` (
   0,
   99229000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_140\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29711,8 +29711,8 @@ INSERT INTO `monitoring_paket` (
   0,
   173939000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_141\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29758,8 +29758,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199238000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_142\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29806,8 +29806,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_143-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/002/SPK/PL/SDABK/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":198907000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_143\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/002/SPK/PL/SDABK/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_143\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.907.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -29852,8 +29852,8 @@ INSERT INTO `monitoring_paket` (
   0,
   398090000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_144\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 15\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29899,8 +29899,8 @@ INSERT INTO `monitoring_paket` (
   0,
   957232988.451036,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_145\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29946,8 +29946,8 @@ INSERT INTO `monitoring_paket` (
   0,
   299100000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_155\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -29993,8 +29993,8 @@ INSERT INTO `monitoring_paket` (
   0,
   0.199,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_157\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30040,8 +30040,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199190000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_158\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 50\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30087,8 +30087,8 @@ INSERT INTO `monitoring_paket` (
   0,
   0.199,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_159\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30134,8 +30134,8 @@ INSERT INTO `monitoring_paket` (
   0,
   0.199,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_160\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30182,7 +30182,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_169\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -30228,8 +30228,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199380000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_162\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30275,8 +30275,8 @@ INSERT INTO `monitoring_paket` (
   0,
   0.199,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_163\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30323,7 +30323,7 @@ INSERT INTO `monitoring_paket` (
   250000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_168\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
 ),
@@ -30370,7 +30370,7 @@ INSERT INTO `monitoring_paket` (
   300000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_170\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
 ),
@@ -30417,7 +30417,7 @@ INSERT INTO `monitoring_paket` (
   250000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_167\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
 ),
@@ -30463,8 +30463,8 @@ INSERT INTO `monitoring_paket` (
   0,
   19955000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_171\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 63\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30510,8 +30510,8 @@ INSERT INTO `monitoring_paket` (
   0,
   0.199,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_172\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30558,7 +30558,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_173\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -30605,7 +30605,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_175\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -30641,7 +30641,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Program Prioritas Bupati\"]',
   1,
-  'rup',
+  'kontrak',
   100,
   100,
   0,
@@ -30651,8 +30651,8 @@ INSERT INTO `monitoring_paket` (
   0,
   300000000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_193\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30699,8 +30699,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_200-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026\",\"tanggalSP2D\":\"2026-08-10\",\"jumlah\":99000000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_200\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-10\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_200\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.000.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -30746,8 +30746,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_201-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026\",\"tanggalSP2D\":\"2026-08-10\",\"jumlah\":148000000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_201\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-10\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_201\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 148.000.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -30793,8 +30793,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_202-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026\",\"tanggalSP2D\":\"2026-08-10\",\"jumlah\":98400000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_202\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-10\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_202\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 98.400.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -30840,8 +30840,8 @@ INSERT INTO `monitoring_paket` (
   325570000,
   '[{\"id\":\"TRM-prj_cipta_karya_203-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/SP/Tender/PPSD.05.CK/VIII/2026\",\"tanggalSP2D\":\"2026-08-13\",\"jumlah\":139530000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 139.530.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-13\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_203\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 139.530.000 dan fisik mencapai 95\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -30887,8 +30887,8 @@ INSERT INTO `monitoring_paket` (
   663880000,
   '[{\"id\":\"TRM-prj_cipta_karya_204-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/SP/Tender/PPSD.04.CK/VIII/2026\",\"tanggalSP2D\":\"2026-08-13\",\"jumlah\":284520000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 284.520.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-13\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_204\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 284.520.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -30933,8 +30933,8 @@ INSERT INTO `monitoring_paket` (
   0,
   1905600000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_205\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -30981,8 +30981,8 @@ INSERT INTO `monitoring_paket` (
   990500000,
   '[{\"id\":\"TRM-prj_cipta_karya_206-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/SP/Tender/PPSD.06.CK/VIII/2026\",\"tanggalSP2D\":\"2026-08-13\",\"jumlah\":424500000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 424.500.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-13\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_206\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 424.500.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 );
 
@@ -31038,8 +31038,8 @@ INSERT INTO `monitoring_paket` (
   0,
   98.9,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_207\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -31086,8 +31086,8 @@ INSERT INTO `monitoring_paket` (
   662130000,
   '[{\"id\":\"TRM-prj_cipta_karya_208-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/SP/Tender/PPSD.02.CK/VIII/2026\",\"tanggalSP2D\":\"2026-08-13\",\"jumlah\":283770000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 283.770.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-13\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_208\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 283.770.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -31133,8 +31133,8 @@ INSERT INTO `monitoring_paket` (
   662480000,
   '[{\"id\":\"TRM-prj_cipta_karya_209-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/SP/Tender/PPSD.01.CK/VIII/2026\",\"tanggalSP2D\":\"2026-08-13\",\"jumlah\":283920000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 283.920.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-13\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_209\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 283.920.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -31180,7 +31180,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_214\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -31200,12 +31200,12 @@ INSERT INTO `monitoring_paket` (
   'Tender',
   1235000000,
   25000000,
-  22013000,
-  '000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026',
-  '2026-09-28',
-  '28 September - 9 Oktober 2026',
+  1207300000,
+  '000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026',
+  '2026-10-30',
+  '30 Oktober - 18 Desember 2026',
   '2026-11-30',
-  'CV. DE SATU',
+  'CV. ZULFA',
   'Bank Jateng',
   NULL,
   NULL,
@@ -31217,19 +31217,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Program Prioritas Bupati\"]',
   1,
   'kontrak',
-  100,
-  100,
+  0,
+  0,
   0,
   'Aman',
   '[]',
   0,
   0,
-  22013000,
+  1207300000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_215\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_222\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026 telah diterbitkan dengan nilai Rp 1.207.300.000 kepada CV. ZULFA.\"}]'
 ),
 (
   'prj_cipta_karya_221',
@@ -31247,12 +31247,12 @@ INSERT INTO `monitoring_paket` (
   'Tender',
   1500000000,
   25000000,
-  24619000,
-  '000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026',
+  1476300000,
+  '000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026',
   '2026-10-30',
   '30 Oktober - 18 Desember 2026',
   '2026-11-30',
-  'CV. PRIORITAS',
+  'CV. GARUDA KARYA',
   'Bank Jateng',
   NULL,
   NULL,
@@ -31264,19 +31264,19 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'kontrak',
-  100,
+  0,
   0,
   0,
   'Aman',
   '[]',
   0,
   0,
-  24619000,
+  1476300000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_221\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 24.619.000 kepada CV. PRIORITAS.\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_223\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026 telah diterbitkan dengan nilai Rp 1.476.300.000 kepada CV. GARUDA KARYA.\"}]'
 ),
 (
   'prj_cipta_karya_219',
@@ -31311,7 +31311,7 @@ INSERT INTO `monitoring_paket` (
   '[\"Program Prioritas Bupati\"]',
   1,
   'kontrak',
-  100,
+  0,
   0,
   0,
   'Aman',
@@ -31321,7 +31321,7 @@ INSERT INTO `monitoring_paket` (
   99418000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_219\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.2/011Pr/SPK/DR.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 99.418.000 kepada CV. PURUSARA TEKNIK.\"}]'
 ),
@@ -31341,12 +31341,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   25000000,
   1235000000,
-  1207300000,
-  '000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026',
-  '2026-10-30',
-  '30 Oktober - 18 Desember 2026',
+  22013000,
+  '000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026',
+  '2026-09-28',
+  '28 September - 9 Oktober 2026',
   '2026-11-30',
-  'CV. ZULFA',
+  'CV. DE SATU',
   'Bank Jateng',
   NULL,
   NULL,
@@ -31359,18 +31359,18 @@ INSERT INTO `monitoring_paket` (
   1,
   'kontrak',
   100,
-  0,
+  100,
   0,
   'Aman',
   '[]',
   0,
   0,
-  1207300000,
+  22013000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_222\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026 telah diterbitkan dengan nilai Rp 1.207.300.000 kepada CV. ZULFA.\"}]'
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_215\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_cipta_karya_223',
@@ -31405,7 +31405,7 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'kontrak',
-  100,
+  0,
   0,
   0,
   'Aman',
@@ -31415,7 +31415,7 @@ INSERT INTO `monitoring_paket` (
   1476300000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_223\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026 telah diterbitkan dengan nilai Rp 1.476.300.000 kepada CV. GARUDA KARYA.\"}]'
 ),
@@ -31462,7 +31462,7 @@ INSERT INTO `monitoring_paket` (
   25000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_216\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
@@ -31546,7 +31546,7 @@ INSERT INTO `monitoring_paket` (
   '[\"Program Prioritas Bupati\"]',
   1,
   'kontrak',
-  100,
+  0,
   0,
   0,
   'Aman',
@@ -31556,7 +31556,7 @@ INSERT INTO `monitoring_paket` (
   19703000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_220\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.2/05Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 19.703.000 kepada CV. REKA ADI KONSULTAN.\"}]'
 ),
@@ -31593,7 +31593,7 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'kontrak',
-  100,
+  0,
   0,
   0,
   'Aman',
@@ -31603,7 +31603,7 @@ INSERT INTO `monitoring_paket` (
   24619000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_221\",\"timestamp\":\"2026-10-31 16:00:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Pencatatan Kontrak Pelaksanaan\",\"keterangan\":\"Kontrak pelaksanaan No. 000.3.2/06Pgw/SPK/SPAM.PLP.CK.X/2026 telah diterbitkan dengan nilai Rp 24.619.000 kepada CV. PRIORITAS.\"}]'
 ),
@@ -31649,8 +31649,8 @@ INSERT INTO `monitoring_paket` (
   0,
   81283000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_226\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -31696,8 +31696,8 @@ INSERT INTO `monitoring_paket` (
   0,
   185834000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_244\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -31743,8 +31743,8 @@ INSERT INTO `monitoring_paket` (
   0,
   137668000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_245\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -31791,7 +31791,7 @@ INSERT INTO `monitoring_paket` (
   478544800,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
 ),
@@ -31837,8 +31837,8 @@ INSERT INTO `monitoring_paket` (
   0,
   183684000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_247\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -31931,8 +31931,8 @@ INSERT INTO `monitoring_paket` (
   0,
   92158000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_248\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -31979,7 +31979,7 @@ INSERT INTO `monitoring_paket` (
   236084500,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_275\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 236.084.500 (Perubahan).\"}]'
 ),
@@ -32026,8 +32026,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_249-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/SPK/BG.13.PL.CK/IX/2026\",\"tanggalSP2D\":\"2026-09-04\",\"jumlah\":185133000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_249\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-09-04\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/SPK/BG.13.PL.CK/IX/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_249\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 185.133.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32072,8 +32072,8 @@ INSERT INTO `monitoring_paket` (
   0,
   185788000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_250\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -32119,8 +32119,8 @@ INSERT INTO `monitoring_paket` (
   0,
   185460000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_251\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 93.78\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -32167,8 +32167,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_252-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026\",\"tanggalSP2D\":\"2026-08-03\",\"jumlah\":188307000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_252\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-03\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_252\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 188.307.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32214,8 +32214,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_253-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026\",\"tanggalSP2D\":\"2026-08-03\",\"jumlah\":187732000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_253\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-03\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_253\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 187.732.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32260,8 +32260,8 @@ INSERT INTO `monitoring_paket` (
   0,
   140057000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_254\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -32307,8 +32307,8 @@ INSERT INTO `monitoring_paket` (
   0,
   138176000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_255\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -32355,7 +32355,7 @@ INSERT INTO `monitoring_paket` (
   187577600,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_276\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 187.577.600 (Perubahan).\"}]'
 ),
@@ -32402,9 +32402,9 @@ INSERT INTO `monitoring_paket` (
   30000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_286\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_285',
@@ -32449,7 +32449,7 @@ INSERT INTO `monitoring_paket` (
   24000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
 ),
@@ -32496,8 +32496,8 @@ INSERT INTO `monitoring_paket` (
   5051151700,
   '[{\"id\":\"TRM-prj_cipta_karya_288-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/01/SP/Perub.BG.CK/X/2026\",\"tanggalSP2D\":\"2026-10-05\",\"jumlah\":2164779300,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 2.164.779.300\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_288\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 2.164.779.300 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32543,8 +32543,8 @@ INSERT INTO `monitoring_paket` (
   5051151700,
   '[{\"id\":\"TRM-prj_cipta_karya_288-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/01/SP/Perub.BG.CK/X/2026\",\"tanggalSP2D\":\"2026-10-05\",\"jumlah\":2164779300,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 2.164.779.300\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_288\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 2.164.779.300 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32590,9 +32590,9 @@ INSERT INTO `monitoring_paket` (
   666589600,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_280\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_285',
@@ -32637,7 +32637,7 @@ INSERT INTO `monitoring_paket` (
   1432181600,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
 ),
@@ -32683,8 +32683,8 @@ INSERT INTO `monitoring_paket` (
   0,
   3584729000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_290\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -32730,8 +32730,8 @@ INSERT INTO `monitoring_paket` (
   0,
   3584729000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_290\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -32777,8 +32777,8 @@ INSERT INTO `monitoring_paket` (
   0,
   3584729000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_290\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -32825,8 +32825,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_301-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.43.3/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":199353000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_301\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.43.3/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_301\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.353.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32872,8 +32872,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_302-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.32/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":148865000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_302\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.32/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_302\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 148.865.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32919,8 +32919,8 @@ INSERT INTO `monitoring_paket` (
   222000,
   '[{\"id\":\"TRM-prj_bina_marga_304-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.30/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":149384000,\"persen\":99.85,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 149.384.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_304\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 149.384.000 dan fisik mencapai 60\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -32966,7 +32966,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_305\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -33013,8 +33013,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_306-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.043/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":98530000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_306\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.043/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_306\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 98.530.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -33060,8 +33060,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_307-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.27/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":149296000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_307\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.27/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_307\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 149.296.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -33107,8 +33107,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_308-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.43.2/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":199335000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_308\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.43.2/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_308\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.335.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -33154,8 +33154,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_309-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.042/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":199251000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_309\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.042/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_309\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.251.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -33201,8 +33201,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_310-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.33/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":199214000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_310\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.33/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_310\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.214.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -33248,8 +33248,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_311-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/PL.SPK.BM.039/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":149454000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_311\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.03.02.2/PL.SPK.BM.039/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_311\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 149.454.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -33295,8 +33295,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_312-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.55/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":99390000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_312\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.55/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_312\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.390.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -33342,8 +33342,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_313-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.35/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":99129000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_313\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.35/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_313\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.129.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 );
 
@@ -33400,7 +33400,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_375\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
@@ -33447,7 +33447,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_387\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
@@ -33494,7 +33494,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_378\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
@@ -33541,7 +33541,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_374\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -33588,7 +33588,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_384\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
@@ -33635,7 +33635,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_376\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -33682,7 +33682,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_379\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -33729,7 +33729,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_377\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
@@ -33776,7 +33776,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_381\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
@@ -33823,7 +33823,7 @@ INSERT INTO `monitoring_paket` (
   300000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_386\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
 ),
@@ -33870,7 +33870,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_380\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -33917,7 +33917,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_383\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
@@ -33964,7 +33964,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_385\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
@@ -34011,7 +34011,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_388\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -34058,7 +34058,7 @@ INSERT INTO `monitoring_paket` (
   750000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_382\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
 ),
@@ -34105,8 +34105,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_315-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PL.SPK.BM.005/IV/2026\",\"tanggalSP2D\":\"2026-04-07\",\"jumlah\":199130000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_315\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PL.SPK.BM.005/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_315\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.130.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34152,8 +34152,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_316-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PL.SPK.BM.006/IV/2026\",\"tanggalSP2D\":\"2026-04-07\",\"jumlah\":198886000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_316\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PL.SPK.BM.006/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_316\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.886.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34199,8 +34199,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_317-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PL.SPK.BM.007/IV/2026\",\"tanggalSP2D\":\"2026-04-07\",\"jumlah\":148834000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_317\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PL.SPK.BM.007/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_317\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 148.834.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34246,8 +34246,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_318-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.28/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":199034000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_318\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.28/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_318\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.034.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34293,8 +34293,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_319-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPPBJ.BM.57/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":298414000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_319\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPPBJ.BM.57/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_319\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 298.414.000 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34340,8 +34340,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_320-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/PL.SPK.BM.056/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":199405000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_320\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.03.02.2/PL.SPK.BM.056/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_320\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.405.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34387,8 +34387,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_321-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.31/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":198549000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_321\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.31/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_321\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.549.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34434,8 +34434,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_322-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.36/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":174127000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_322\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.36/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_322\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 174.127.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34481,8 +34481,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_323-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.37/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":149183000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_323\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.37/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_323\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 149.183.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34528,8 +34528,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_324-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/PL.SPK.BM.038/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":198604000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_324\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.03.02.2/PL.SPK.BM.038/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_324\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.604.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34565,7 +34565,7 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'kontrak',
-  100,
+  0,
   0,
   0,
   'Aman',
@@ -34575,8 +34575,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_325-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/APBD.SP.BM.74/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":955444001,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_325\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-20\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.03.02.2/APBD.SP.BM.74/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_325\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 955.444.001 dan fisik mencapai 0\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34622,8 +34622,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_328-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/PL.SPK.BM.009/IV/2026\",\"tanggalSP2D\":\"2026-04-07\",\"jumlah\":149223000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_328\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/PL.SPK.BM.009/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_328\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 149.223.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34669,8 +34669,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_329-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/APBD.SP.BM.75/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":954431000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_329\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-20\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.03.02.2/APBD.SP.BM.75/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_329\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 954.431.000 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34716,8 +34716,8 @@ INSERT INTO `monitoring_paket` (
   1313953249,
   '[{\"id\":\"TRM-prj_bina_marga_335-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/APBD.SP.BM.069/VIII/2026\",\"tanggalSP2D\":\"2026-08-21\",\"jumlah\":586551392,\"persen\":30.86,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 586.551.392\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-21\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_335\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 586.551.392 dan fisik mencapai 50\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34763,8 +34763,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_339-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/ PL.SPK.BM.21/VII/2026\",\"tanggalSP2D\":\"2026-07-23\",\"jumlah\":198789359,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_339\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-23\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/ PL.SPK.BM.21/VII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_339\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.789.359 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34809,8 +34809,8 @@ INSERT INTO `monitoring_paket` (
   0,
   198958000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_340\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 40\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -34857,8 +34857,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_341-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PL.SPK.BM.008/IV/2026\",\"tanggalSP2D\":\"2026-04-07\",\"jumlah\":198651000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_341\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PL.SPK.BM.008/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_341\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 198.651.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34904,8 +34904,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_342-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.040/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":199455000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_342\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.040/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_342\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.455.000 dan fisik mencapai 50\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -34951,7 +34951,7 @@ INSERT INTO `monitoring_paket` (
   750000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_343\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
 ),
@@ -34998,7 +34998,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_344\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
@@ -35045,8 +35045,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_345-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.023/VIII/2026\",\"tanggalSP2D\":\"2026-08-04\",\"jumlah\":99601000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_345\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-04\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.023/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_345\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.601.000 dan fisik mencapai 60\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35092,8 +35092,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_346-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01M09RW6VFV2GRYK6Y2BA3M2PR\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":491900000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_346\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-20\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01M09RW6VFV2GRYK6Y2BA3M2PR\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_346\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 491.900.000 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35139,8 +35139,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_347-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.2/PL.SPK.BM.29/VIII/2026\",\"tanggalSP2D\":\"2026-08-05\",\"jumlah\":199228000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_347\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.2/PL.SPK.BM.29/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_347\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 199.228.000 dan fisik mencapai 70\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35186,7 +35186,7 @@ INSERT INTO `monitoring_paket` (
   1871500000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_424\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan).\"}]'
 ),
@@ -35233,8 +35233,8 @@ INSERT INTO `monitoring_paket` (
   1032323039,
   '[{\"id\":\"TRM-prj_bina_marga_348-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/BANGUB.SP.BM.72/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":442424160,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 442.424.160\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-20\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_348\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 442.424.160 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35280,8 +35280,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_349-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.7/BANGUB.SP.BM.098/IX/2026\",\"tanggalSP2D\":\"2026-09-07\",\"jumlah\":591067508,\"persen\":591067508000,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_349\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-09-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.7/BANGUB.SP.BM.098/IX/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_349\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 591.067.508 dan fisik mencapai 55.68\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35326,8 +35326,8 @@ INSERT INTO `monitoring_paket` (
   0,
   441501918,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_350\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -35374,8 +35374,8 @@ INSERT INTO `monitoring_paket` (
   684036808,
   '[{\"id\":\"TRM-prj_bina_marga_351-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-EP-01M1NKRMJSBFDFE6WF48NHRZAS,\",\"tanggalSP2D\":\"2026-09-07\",\"jumlah\":293158632,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 293.158.632\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-09-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_351\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 293.158.632 dan fisik mencapai 52.4\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35421,8 +35421,8 @@ INSERT INTO `monitoring_paket` (
   689076106,
   '[{\"id\":\"TRM-prj_bina_marga_352-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7.2/BANGUB.SP.BM.076/VIII/2026\",\"tanggalSP2D\":\"2026-08-21\",\"jumlah\":295318331,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 295.318.331\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-21\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_352\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 295.318.331 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35467,8 +35467,8 @@ INSERT INTO `monitoring_paket` (
   0,
   981104275,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_353\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -35514,8 +35514,8 @@ INSERT INTO `monitoring_paket` (
   0,
   984248552,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_354\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 60\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -35561,8 +35561,8 @@ INSERT INTO `monitoring_paket` (
   0,
   984972001,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_355\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 35\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -35608,8 +35608,8 @@ INSERT INTO `monitoring_paket` (
   0,
   490510253,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_356\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 40\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -35656,8 +35656,8 @@ INSERT INTO `monitoring_paket` (
   654603512,
   '[{\"id\":\"TRM-prj_bina_marga_357-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-EP-01M0A1MW6ZSB74YWKTWVKA9AK4\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":291068101,\"persen\":30.78,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 291.068.101\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-20\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_357\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 291.068.101 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35703,8 +35703,8 @@ INSERT INTO `monitoring_paket` (
   1377563085,
   '[{\"id\":\"TRM-prj_bina_marga_358-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/BANGUB.SP.BM.70/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":590384179,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 590.384.179\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-20\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_358\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 590.384.179 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 );
 
@@ -35761,8 +35761,8 @@ INSERT INTO `monitoring_paket` (
   688145429,
   '[{\"id\":\"TRM-prj_bina_marga_359-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/BANGUB.SP.BM.093/VIII/2026\",\"tanggalSP2D\":\"2026-08-28\",\"jumlah\":294919469,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 294.919.469\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-28\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_359\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 294.919.469 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35808,8 +35808,8 @@ INSERT INTO `monitoring_paket` (
   550058610,
   '[{\"id\":\"TRM-prj_bina_marga_360-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-EP-01M3R2EN296GBEQ1AZM1SCYKCR\",\"tanggalSP2D\":\"2026-10-01\",\"jumlah\":235739405,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 235.739.405\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-01\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_360\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 235.739.405 dan fisik mencapai 40\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35854,8 +35854,8 @@ INSERT INTO `monitoring_paket` (
   0,
   983503178,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_361\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -35902,8 +35902,8 @@ INSERT INTO `monitoring_paket` (
   689584540,
   '[{\"id\":\"TRM-prj_bina_marga_362-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-EP-01M1NM4XB142X3Z1DAW5822M5Y\",\"tanggalSP2D\":\"2026-09-07\",\"jumlah\":295536232,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 295.536.232\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-09-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_362\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 295.536.232 dan fisik mencapai 50\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -35948,8 +35948,8 @@ INSERT INTO `monitoring_paket` (
   0,
   983392334,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_363\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -35996,8 +35996,8 @@ INSERT INTO `monitoring_paket` (
   688135444,
   '[{\"id\":\"TRM-prj_bina_marga_364-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/BANGUB.SP.BM.091/VIII/2026\",\"tanggalSP2D\":\"2026-08-31\",\"jumlah\":294915190,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 294.915.190\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-31\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_364\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 294.915.190 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -36043,8 +36043,8 @@ INSERT INTO `monitoring_paket` (
   686711110,
   '[{\"id\":\"TRM-prj_bina_marga_365-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/BANGUB.SP.BM.099/IX/2026\",\"tanggalSP2D\":\"2026-09-07\",\"jumlah\":294304762,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 294.304.762\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-09-07\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_365\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 294.304.762 dan fisik mencapai 40\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -36089,8 +36089,8 @@ INSERT INTO `monitoring_paket` (
   0,
   980937999,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_366\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -36137,7 +36137,7 @@ INSERT INTO `monitoring_paket` (
   1500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_367\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni).\"}]'
 ),
@@ -36184,8 +36184,8 @@ INSERT INTO `monitoring_paket` (
   481393973,
   '[{\"id\":\"TRM-prj_bina_marga_368-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-EP-01M3QZH21YT3M36RRR590XMFCS\",\"tanggalSP2D\":\"2026-10-01\",\"jumlah\":206311703,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 206.311.703\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-01\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_368\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 206.311.703 dan fisik mencapai 93.25\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -36231,8 +36231,8 @@ INSERT INTO `monitoring_paket` (
   688657581,
   '[{\"id\":\"TRM-prj_bina_marga_369-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-EP-01M3R4T5RBZEZP9XN9V0JJ0GCV\",\"tanggalSP2D\":\"2026-10-01\",\"jumlah\":295138963,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 295.138.963\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-01\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_369\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 295.138.963 dan fisik mencapai 60\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -36278,8 +36278,8 @@ INSERT INTO `monitoring_paket` (
   689146623,
   '[{\"id\":\"TRM-prj_bina_marga_371-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/BANGUB.SP.BM.71/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":295348553,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 295.348.553\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-20\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_371\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 295.348.553 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -36325,8 +36325,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_372-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/APBD.SP.BM.03/III/2026\",\"tanggalSP2D\":\"2026-03-31\",\"jumlah\":2424634000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_372\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-31\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/APBD.SP.BM.03/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_372\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 2.424.634.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -36372,7 +36372,7 @@ INSERT INTO `monitoring_paket` (
   7450000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_402\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni).\"}]'
 ),
@@ -36419,7 +36419,7 @@ INSERT INTO `monitoring_paket` (
   4550000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_396\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan).\"}]'
 ),
@@ -36466,7 +36466,7 @@ INSERT INTO `monitoring_paket` (
   380000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_454\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 380.000.000 (Murni).\"}]'
 ),
@@ -36513,7 +36513,7 @@ INSERT INTO `monitoring_paket` (
   400000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_458\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
@@ -36560,7 +36560,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_416\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -36607,7 +36607,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_391\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -36654,7 +36654,7 @@ INSERT INTO `monitoring_paket` (
   600000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_447\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Murni).\"}]'
 ),
@@ -36701,7 +36701,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_418\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
@@ -36748,7 +36748,7 @@ INSERT INTO `monitoring_paket` (
   1775000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_422\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
@@ -36795,7 +36795,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_443\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
@@ -36842,7 +36842,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_444\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
@@ -36889,7 +36889,7 @@ INSERT INTO `monitoring_paket` (
   350000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_448\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 350.000.000 (Murni).\"}]'
 ),
@@ -36936,7 +36936,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_406\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -36983,7 +36983,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_428\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
@@ -37030,7 +37030,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_460\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
@@ -37077,7 +37077,7 @@ INSERT INTO `monitoring_paket` (
   1775000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_435\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan).\"}]'
 ),
@@ -37124,7 +37124,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_453\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -37171,7 +37171,7 @@ INSERT INTO `monitoring_paket` (
   1775000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_410\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
@@ -37218,7 +37218,7 @@ INSERT INTO `monitoring_paket` (
   1970000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_412\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
 ),
@@ -37265,7 +37265,7 @@ INSERT INTO `monitoring_paket` (
   400000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_456\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
@@ -37312,7 +37312,7 @@ INSERT INTO `monitoring_paket` (
   1775000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_431\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
@@ -37359,7 +37359,7 @@ INSERT INTO `monitoring_paket` (
   2970000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_426\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni).\"}]'
 ),
@@ -37406,7 +37406,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_449\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
@@ -37453,9 +37453,9 @@ INSERT INTO `monitoring_paket` (
   1477500000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_393\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_450\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_394',
@@ -37500,7 +37500,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_394\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -37547,7 +37547,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_451\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
@@ -37594,7 +37594,7 @@ INSERT INTO `monitoring_paket` (
   400000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_455\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
@@ -37641,7 +37641,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_400\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -37688,7 +37688,7 @@ INSERT INTO `monitoring_paket` (
   1480000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_414\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
 ),
@@ -37735,7 +37735,7 @@ INSERT INTO `monitoring_paket` (
   1480000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_433\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
 ),
@@ -37782,7 +37782,7 @@ INSERT INTO `monitoring_paket` (
   10850000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_441\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni).\"}]'
 ),
@@ -37829,7 +37829,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_420\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
@@ -37876,7 +37876,7 @@ INSERT INTO `monitoring_paket` (
   5950000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_439\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni).\"}]'
 ),
@@ -37923,7 +37923,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_452\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
@@ -37970,7 +37970,7 @@ INSERT INTO `monitoring_paket` (
   345000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_459\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 345.000.000 (Perubahan).\"}]'
 ),
@@ -38017,7 +38017,7 @@ INSERT INTO `monitoring_paket` (
   600000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_446\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Perubahan).\"}]'
 ),
@@ -38064,7 +38064,7 @@ INSERT INTO `monitoring_paket` (
   250000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_463\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Perubahan).\"}]'
 );
@@ -38122,7 +38122,7 @@ INSERT INTO `monitoring_paket` (
   985000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_437\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
@@ -38169,7 +38169,7 @@ INSERT INTO `monitoring_paket` (
   1773000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_389\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni).\"}]'
 ),
@@ -38216,7 +38216,7 @@ INSERT INTO `monitoring_paket` (
   300000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_462\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
 ),
@@ -38263,7 +38263,7 @@ INSERT INTO `monitoring_paket` (
   400000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_464\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Perubahan).\"}]'
 ),
@@ -38310,7 +38310,7 @@ INSERT INTO `monitoring_paket` (
   1970000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_408\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
 ),
@@ -38357,7 +38357,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_457\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
@@ -38404,7 +38404,7 @@ INSERT INTO `monitoring_paket` (
   2970000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_398\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan).\"}]'
 ),
@@ -38451,7 +38451,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_445\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
@@ -38498,7 +38498,7 @@ INSERT INTO `monitoring_paket` (
   300000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_461\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
 ),
@@ -38545,8 +38545,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_499-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.015/IV/2026\",\"tanggalSP2D\":\"2026-04-15\",\"jumlah\":14779000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_499\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.015/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_499\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.779.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -38592,8 +38592,8 @@ INSERT INTO `monitoring_paket` (
   667602181,
   '[{\"id\":\"TRM-prj_bina_marga_502-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-\'000.3.7/APBD.SP.BM.96/IX/2026\",\"tanggalSP2D\":\"2026-09-01\",\"jumlah\":286115220,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 286.115.220\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-09-01\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_502\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 286.115.220 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -38638,8 +38638,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199379000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_501\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -38686,7 +38686,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_505\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
@@ -38733,7 +38733,7 @@ INSERT INTO `monitoring_paket` (
   700000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_521\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
 ),
@@ -38780,7 +38780,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_522\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
@@ -38827,7 +38827,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_523\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -38874,7 +38874,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_520\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -38921,7 +38921,7 @@ INSERT INTO `monitoring_paket` (
   175000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_524\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
@@ -38968,8 +38968,8 @@ INSERT INTO `monitoring_paket` (
   6721578870,
   '[{\"id\":\"TRM-prj_bina_marga_506-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-027.2/APBD.SPK.BM.03/VII/2026\",\"tanggalSP2D\":\"2026-07-23\",\"jumlah\":2892391130,\"persen\":30.09,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 2.892.391.130\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-07-23\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_506\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 2.892.391.130 dan fisik mencapai 25\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -39015,8 +39015,8 @@ INSERT INTO `monitoring_paket` (
   2381694994,
   '[{\"id\":\"TRM-prj_bina_marga_508-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.022/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":1044154998,\"persen\":30.48,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 1.044.154.998\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-07-30\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_508\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 1.044.154.998 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -39062,8 +39062,8 @@ INSERT INTO `monitoring_paket` (
   665739702,
   '[{\"id\":\"TRM-prj_bina_marga_511-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.094/VIII/2026\",\"tanggalSP2D\":\"2026-08-31\",\"jumlah\":285317015,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 285.317.015\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-31\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_511\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 285.317.015 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -39108,8 +39108,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199117737,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_514\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -39155,8 +39155,8 @@ INSERT INTO `monitoring_paket` (
   0,
   398786000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_515\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -39202,8 +39202,8 @@ INSERT INTO `monitoring_paket` (
   0,
   199161933,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_516\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -39250,8 +39250,8 @@ INSERT INTO `monitoring_paket` (
   665773542,
   '[{\"id\":\"TRM-prj_bina_marga_517-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.107/IX/2026\",\"tanggalSP2D\":\"2026-09-11\",\"jumlah\":285331518,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 285.331.518\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-09-11\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_517\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 285.331.518 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -39297,7 +39297,7 @@ INSERT INTO `monitoring_paket` (
   700000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_526\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
 ),
@@ -39344,7 +39344,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_532\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
@@ -39391,7 +39391,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_527\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -39438,7 +39438,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_533\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
@@ -39485,7 +39485,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_530\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -39532,7 +39532,7 @@ INSERT INTO `monitoring_paket` (
   500000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_528\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
@@ -39557,7 +39557,7 @@ INSERT INTO `monitoring_paket` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  'Penyedia Jasa Konstruksi',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -39569,19 +39569,19 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'rup',
-  8.18,
-  8.18,
+  0,
+  0,
   0,
   'Aman',
   '[]',
-  31616000,
-  7.03,
-  468384000,
-  '[{\"id\":\"TRM-prj_bina_marga_484-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":31616000,\"persen\":7.03,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 31.616.000\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_484\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  500000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_529\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_531',
@@ -39626,7 +39626,7 @@ INSERT INTO `monitoring_paket` (
   175000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_531\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
@@ -39673,7 +39673,7 @@ INSERT INTO `monitoring_paket` (
   200000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_525\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
@@ -39767,8 +39767,8 @@ INSERT INTO `monitoring_paket` (
   2025734900,
   '[{\"id\":\"TRM-prj_sda_bk_30-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/006/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":868172100,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 868.172.100\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_30\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 868.172.100 dan fisik mencapai 35\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -39814,8 +39814,8 @@ INSERT INTO `monitoring_paket` (
   1338362200,
   '[{\"id\":\"TRM-prj_sda_bk_54-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/008/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":573583800,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 573.583.800\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_54\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 573.583.800 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -39861,8 +39861,8 @@ INSERT INTO `monitoring_paket` (
   1350304200,
   '[{\"id\":\"TRM-prj_sda_bk_50-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/009/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":578701800,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 578.701.800\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_50\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 578.701.800 dan fisik mencapai 85\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -39907,8 +39907,8 @@ INSERT INTO `monitoring_paket` (
   0,
   2912739000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_66\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 65\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -39955,8 +39955,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_sda_bk_48-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.3.3/005/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":463492000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_48\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/000.3.3/005/SP/TENDER/SDABK/VIII/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_48\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 463.492.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -40002,8 +40002,8 @@ INSERT INTO `monitoring_paket` (
   678046600,
   '[{\"id\":\"TRM-prj_sda_bk_64-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/014/SP/TENDER/SDABK/IX/2026\",\"tanggalSP2D\":\"2026-09-08\",\"jumlah\":290591400,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 290.591.400\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-09-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_64\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 290.591.400 dan fisik mencapai 75\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -40049,8 +40049,8 @@ INSERT INTO `monitoring_paket` (
   667947000,
   '[{\"id\":\"TRM-prj_sda_bk_62-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/001/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":286263000,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 286.263.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_62\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 286.263.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -40095,8 +40095,8 @@ INSERT INTO `monitoring_paket` (
   0,
   25320210,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_46\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 85\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -40116,12 +40116,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   20000000,
   980000000,
-  960738000,
-  '000.3.3/023/SP/TENDER.P/SDABK/X/2026',
+  19513800,
+  '000.3.2/010/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
   '2026-10-29',
   '2026-12-27',
-  'CV. SETIAJI',
+  'CV. RAF INOVASI',
   'Bank Jateng',
   NULL,
   NULL,
@@ -40140,12 +40140,12 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   0,
-  960738000,
+  19513800,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_69\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_70\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_72',
@@ -40163,12 +40163,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   20000000,
   956640000,
-  940631000,
-  '000.3.3/024/SP/TENDER.P/SDABK/X/2026',
+  19839030,
+  '000.3.2/011/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
   '2026-10-29',
   '2026-12-27',
-  'CV. SHINTA',
+  'CV. FANA KARYA GUNA JAYA',
   'Bank Jateng',
   NULL,
   NULL,
@@ -40187,12 +40187,12 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   0,
-  940631000,
+  19839030,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_72\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_73\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_94',
@@ -40210,12 +40210,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   20000000,
   980000000,
-  968000000,
-  '000.3.3/025/SP/TENDER.P/SDABK/X/2026',
+  19491600,
+  '000.3.2/012/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
   '2026-10-29',
   '2026-12-27',
-  'CV. MITRA JAYA ABADI',
+  'CV. SALAHUDDIN SELARAS',
   'Bank Jateng',
   NULL,
   NULL,
@@ -40234,12 +40234,12 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   0,
-  968000000,
+  19491600,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_94\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_95\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_100',
@@ -40257,12 +40257,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   20000000,
   1480000000,
-  1455627000,
-  '000.3.3/022/SP/TENDER.P/SDABK/X/2026',
+  19709160,
+  '000.3.2/015/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
   '2026-10-29',
   '2026-12-27',
-  'CV. SHINTA',
+  'CV. UTAMA KARYA',
   'Bank Jateng',
   NULL,
   NULL,
@@ -40281,12 +40281,12 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   0,
-  1455627000,
+  19709160,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_100\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_101\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_103',
@@ -40330,8 +40330,8 @@ INSERT INTO `monitoring_paket` (
   0,
   99612510,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_103\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -40377,8 +40377,8 @@ INSERT INTO `monitoring_paket` (
   0,
   99592530,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_104\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -40425,8 +40425,8 @@ INSERT INTO `monitoring_paket` (
   325161200,
   '[{\"id\":\"TRM-prj_sda_bk_105-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/013/SP/TENDER/SDABK/VIII/2026\",\"tanggalSP2D\":\"2026-08-18\",\"jumlah\":139354800,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 139.354.800\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-08-18\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_105\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 139.354.800 dan fisik mencapai 75\% per laporan bulan Oktober 2026.\"}]'
 );
 
@@ -40483,9 +40483,9 @@ INSERT INTO `monitoring_paket` (
   20000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_127\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_128\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_129',
@@ -40503,12 +40503,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   20000000,
   980000000,
-  963493000,
-  '000.3.3/020/SP/TENDER.P/SDABK/X/2026',
+  19558200,
+  '000.3.2/013/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
   '2026-10-29',
   '2026-12-27',
-  'CV. CIPTA KARYA DIMYATI',
+  'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -40527,12 +40527,12 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   0,
-  963493000,
+  19558200,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_129\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_130\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_132',
@@ -40550,12 +40550,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   20000000,
   980000000,
-  959159000,
-  '000.3.3/015/SP/TENDER.P/SDABK/X/2026',
-  NULL,
+  19491600,
+  '000.3.2/014/SPK/PGWS.P/SDABK/X/2026',
+  '2026-10-29',
   '2026-10-29',
   '2026-12-27',
-  'CV. MAZDA',
+  'CV. SALAHUDDIN SELARAS',
   'Bank Jateng',
   NULL,
   NULL,
@@ -40574,12 +40574,12 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   0,
-  959159000,
+  19491600,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_132\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_133\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_145',
@@ -40597,12 +40597,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   20000000,
   980000000,
-  957232988.451036,
-  '000.3.3/027/SP/TENDER.P/SDABK/X/2026',
+  19558200,
+  '000.3.2/016/SPK/PGWS.P/SDABK/X/2026',
   '2026-10-29',
   '2026-10-29',
   '2026-12-27',
-  'CV. CAHAYA TESCHA',
+  'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -40621,12 +40621,12 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   0,
-  957232988.451036,
+  19558200,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_145\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_146\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 5\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_150',
@@ -40670,8 +40670,8 @@ INSERT INTO `monitoring_paket` (
   0,
   99684660,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_150\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -40718,8 +40718,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_152-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/04Pr/SPK/SPAM.PL.CK/III/2026\",\"tanggalSP2D\":\"2026-03-12\",\"jumlah\":49550000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_152\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-12\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/04Pr/SPK/SPAM.PL.CK/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_152\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 49.550.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -40765,8 +40765,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_153-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/05Pr/SPK/SPAM.PL.CK/III/2026\",\"tanggalSP2D\":\"2026-03-12\",\"jumlah\":49550000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_153\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-12\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/05Pr/SPK/SPAM.PL.CK/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_153\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 49.550.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -40812,8 +40812,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_154-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/06Pr/SPK/SPAM.PL.CK/V/2026\",\"tanggalSP2D\":\"2026-05-11\",\"jumlah\":99367000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_154\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-05-11\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/06Pr/SPK/SPAM.PL.CK/V/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_154\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.367.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -40858,8 +40858,8 @@ INSERT INTO `monitoring_paket` (
   0,
   0.19,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_164\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 75\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -40906,7 +40906,7 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_165\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
@@ -40952,8 +40952,8 @@ INSERT INTO `monitoring_paket` (
   0,
   0.41,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_177\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -40999,8 +40999,8 @@ INSERT INTO `monitoring_paket` (
   0,
   99156000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_188\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 80\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -41047,8 +41047,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_189-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/07Pr/SPK/SPAL.PL.CK/V/2026\",\"tanggalSP2D\":\"2026-05-08\",\"jumlah\":99367000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_189\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-05-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/07Pr/SPK/SPAL.PL.CK/V/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_189\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.367.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -41093,8 +41093,8 @@ INSERT INTO `monitoring_paket` (
   0,
   17760000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_194\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -41141,7 +41141,7 @@ INSERT INTO `monitoring_paket` (
   20000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
@@ -41161,12 +41161,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   100000000,
   20000000,
-  17760000,
-  '000.3.2/09Pr/SPK/DR.PLP.CK.IX/2026',
-  '2026-09-28',
-  '28 September - 9 Oktober 2026',
-  '2026-11-30',
-  'CV. JK KONSULTAN',
+  49774000,
+  '027/02Pr/SPK/DRAINASE.PL.CK/III/2026',
+  '2026-03-05',
+  '2026-03-05',
+  '2026-04-03',
+  'CV. REKA ADI KONSULTAN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -41183,14 +41183,14 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  49774000,
+  100,
   0,
-  0,
-  17760000,
-  '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_194\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"TRM-prj_cipta_karya_210-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/02Pr/SPK/DRAINASE.PL.CK/III/2026\",\"tanggalSP2D\":\"2026-03-05\",\"jumlah\":49774000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'sudah_sp2d',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/02Pr/SPK/DRAINASE.PL.CK/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_210\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 49.774.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_cipta_karya_194',
@@ -41208,11 +41208,11 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   50000000,
   20000000,
-  17760000,
-  '000.3.2/09Pr/SPK/DR.PLP.CK.IX/2026',
-  '2026-09-28',
-  '28 September - 9 Oktober 2026',
-  '2026-11-30',
+  49544000,
+  '027/03Pr/SPK/DRAINASE.PL.CK/III/2026',
+  '2026-03-05',
+  '2026-03-05',
+  '2026-04-03',
   'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
@@ -41230,14 +41230,14 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  49544000,
+  100,
   0,
-  0,
-  17760000,
-  '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_194\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
+  '[{\"id\":\"TRM-prj_cipta_karya_211-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/03Pr/SPK/DRAINASE.PL.CK/III/2026\",\"tanggalSP2D\":\"2026-03-05\",\"jumlah\":49544000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'sudah_sp2d',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-05\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/03Pr/SPK/DRAINASE.PL.CK/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_211\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 49.544.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_cipta_karya_195',
@@ -41255,12 +41255,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   75000000,
   20000000,
-  0,
-  NULL,
-  NULL,
-  '2026-03-01',
+  70386000,
+  '000.3.2/01Pgw/SPK/DRAINASE.PL.CK.VIII/2026',
+  '2026-08-19',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
-  '-',
+  'CV. DE SATU',
   'Bank Jateng',
   NULL,
   NULL,
@@ -41271,20 +41271,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'rup',
-  0,
-  0,
+  'kontrak',
+  90,
+  90,
   0,
   'Aman',
   '[]',
   0,
   0,
-  75000000,
+  70386000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_212\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_cipta_karya_195',
@@ -41302,12 +41302,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   45000000,
   20000000,
-  0,
-  NULL,
-  NULL,
-  '2026-03-01',
+  44292000,
+  '000.3.2/02Pgw/SPK/DRAINASE.PL.CK.VIII/2026',
+  '2026-08-19',
+  '19 Agustus - 16 November 2026',
   '2026-11-30',
-  '-',
+  'CV.PRIORITAS',
   'Bank Jateng',
   NULL,
   NULL,
@@ -41318,20 +41318,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'rup',
-  0,
-  0,
+  'kontrak',
+  90,
+  90,
   0,
   'Aman',
   '[]',
   0,
   0,
-  45000000,
+  44292000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_213\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_cipta_karya_231',
@@ -41349,12 +41349,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   12000000,
   12000000,
-  11834000,
-  '000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026',
-  '2026-09-28',
-  '2026-09-28',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
   '2026-11-30',
-  'CV. DE SATU',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -41365,20 +41365,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Program Prioritas Bupati\"]',
   1,
-  'kontrak',
-  20,
-  20,
+  'rup',
+  0,
+  0,
   0,
   'Aman',
   '[]',
   0,
   0,
-  11834000,
+  12000000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_231\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
   'mp_jakon_37',
@@ -41469,8 +41469,8 @@ INSERT INTO `monitoring_paket` (
   0,
   81283000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_226\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -41516,8 +41516,8 @@ INSERT INTO `monitoring_paket` (
   0,
   13818000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_233\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -41553,7 +41553,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"APBD Perubahan\"]',
   0,
-  'rup',
+  'kontrak',
   20,
   20,
   0,
@@ -41563,8 +41563,8 @@ INSERT INTO `monitoring_paket` (
   0,
   32000000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_234\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -41610,8 +41610,8 @@ INSERT INTO `monitoring_paket` (
   0,
   81283000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_226\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -41657,8 +41657,8 @@ INSERT INTO `monitoring_paket` (
   0,
   13818000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_233\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -41678,12 +41678,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   8000000,
   12000000,
-  11834000,
-  '000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026',
-  '2026-09-28',
-  '2026-09-28',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
   '2026-11-30',
-  'CV. DE SATU',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -41694,20 +41694,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Program Prioritas Bupati\"]',
   1,
-  'kontrak',
-  20,
-  20,
+  'rup',
+  0,
+  0,
   0,
   'Aman',
   '[]',
   0,
   0,
-  11834000,
+  8000000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_231\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_237',
@@ -41752,7 +41752,7 @@ INSERT INTO `monitoring_paket` (
   283740480,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_237\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
 ),
@@ -41799,7 +41799,7 @@ INSERT INTO `monitoring_paket` (
   381328560,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_238\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 381.328.560 (Murni).\"}]'
 ),
@@ -41846,7 +41846,7 @@ INSERT INTO `monitoring_paket` (
   378041760,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_239\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 378.041.760 (Murni).\"}]'
 ),
@@ -41940,7 +41940,7 @@ INSERT INTO `monitoring_paket` (
   283740480,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_241\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
 ),
@@ -41960,12 +41960,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   478551960,
   12000000,
-  11834000,
-  '000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026',
-  '2026-09-28',
-  '2026-09-28',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
   '2026-11-30',
-  'CV. DE SATU',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -41976,20 +41976,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Program Prioritas Bupati\"]',
   1,
-  'kontrak',
-  20,
-  20,
+  'rup',
+  0,
+  0,
   0,
   'Aman',
   '[]',
   0,
   0,
-  11834000,
+  478551960,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_231\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_233',
@@ -42033,8 +42033,8 @@ INSERT INTO `monitoring_paket` (
   0,
   13818000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_233\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -42081,7 +42081,7 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_277\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
@@ -42128,7 +42128,7 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_278\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
@@ -42175,7 +42175,7 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_279\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
@@ -42222,8 +42222,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_256-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/02Pr/SPK/BG.PL.CK/III/2026\",\"tanggalSP2D\":\"2026-03-12\",\"jumlah\":27777000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_256\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-12\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/02Pr/SPK/BG.PL.CK/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_256\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 27.777.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -42269,8 +42269,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_257-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/03Pr/SPK/BG.PL.CK/III/2026\",\"tanggalSP2D\":\"2026-03-12\",\"jumlah\":24859000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_257\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-12\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/03Pr/SPK/BG.PL.CK/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_257\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 24.859.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -42316,8 +42316,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_cipta_karya_258-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027/04Pr/SPK/BG.PL.CK/III/2026\",\"tanggalSP2D\":\"2026-03-12\",\"jumlah\":15806000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_cipta_karya_258\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-12\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027/04Pr/SPK/BG.PL.CK/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_258\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 15.806.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -42362,8 +42362,8 @@ INSERT INTO `monitoring_paket` (
   0,
   11632000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_259\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -42410,7 +42410,7 @@ INSERT INTO `monitoring_paket` (
   8000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
 ),
@@ -42457,7 +42457,7 @@ INSERT INTO `monitoring_paket` (
   8000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
@@ -42504,7 +42504,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_283\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
@@ -42551,7 +42551,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_284\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
@@ -42597,8 +42597,8 @@ INSERT INTO `monitoring_paket` (
   0,
   21534000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_261\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -42644,8 +42644,8 @@ INSERT INTO `monitoring_paket` (
   0,
   18856000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_262\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -42691,8 +42691,8 @@ INSERT INTO `monitoring_paket` (
   0,
   8796000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_263\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Cipta Karya\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -42739,7 +42739,7 @@ INSERT INTO `monitoring_paket` (
   8000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_264\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Perubahan).\"}]'
 ),
@@ -42786,9 +42786,9 @@ INSERT INTO `monitoring_paket` (
   12000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_229\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
 );
 
 INSERT INTO `monitoring_paket` (
@@ -42844,9 +42844,9 @@ INSERT INTO `monitoring_paket` (
   17000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_229\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_294',
@@ -42881,7 +42881,7 @@ INSERT INTO `monitoring_paket` (
   '[\"Program Prioritas Bupati\"]',
   1,
   'kontrak',
-  100,
+  0,
   0,
   0,
   'Aman',
@@ -42891,7 +42891,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_294\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
@@ -42938,7 +42938,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_295\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
@@ -42985,7 +42985,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_298\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
@@ -43032,7 +43032,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_299\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
@@ -43052,7 +43052,7 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   100000000,
   100000000,
-  100000000,
+  0,
   NULL,
   NULL,
   '2026-03-01',
@@ -43068,8 +43068,8 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Program Prioritas Bupati\"]',
   1,
-  'kontrak',
-  100,
+  'rup',
+  0,
   0,
   0,
   'Aman',
@@ -43079,9 +43079,9 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_294\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_296\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_294',
@@ -43099,7 +43099,7 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   100000000,
   100000000,
-  100000000,
+  0,
   NULL,
   NULL,
   '2026-03-01',
@@ -43115,8 +43115,8 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Program Prioritas Bupati\"]',
   1,
-  'kontrak',
-  100,
+  'rup',
+  0,
   0,
   0,
   'Aman',
@@ -43126,9 +43126,9 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_294\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_297\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_300',
@@ -43173,7 +43173,7 @@ INSERT INTO `monitoring_paket` (
   100000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_300\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
@@ -43220,9 +43220,9 @@ INSERT INTO `monitoring_paket` (
   27000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_389\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_390\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_372',
@@ -43240,12 +43240,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   25000000,
   2475000000,
-  2424634000,
-  '027.2/APBD.SP.BM.03/III/2026',
+  24891000,
+  '027.2/PWS.SPK.BM.004/III/2026',
   '2026-03-31',
   '2026-03-31',
   '2026-06-28',
-  'CV. KEMBAR PUTRA',
+  'CV. GLOBAL DISAIN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -43262,14 +43262,14 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
-  2424634000,
+  24891000,
   100,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_372-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/APBD.SP.BM.03/III/2026\",\"tanggalSP2D\":\"2026-03-31\",\"jumlah\":2424634000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  '[{\"id\":\"TRM-prj_bina_marga_373-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PWS.SPK.BM.004/III/2026\",\"tanggalSP2D\":\"2026-03-31\",\"jumlah\":24891000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_372\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_372\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 2.424.634.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-31\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PWS.SPK.BM.004/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_373\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 24.891.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_325',
@@ -43287,12 +43287,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  955444001,
-  '000.03.02.2/APBD.SP.BM.74/VIII/2026',
-  '2026-08-20',
-  '2026-08-20',
-  '2026-11-17',
-  'CV. KEMBAR PUTRA',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
+  '2026-11-30',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -43303,20 +43303,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'kontrak',
-  100,
+  'rup',
+  0,
   0,
   0,
   'Aman',
   '[]',
-  955444001,
-  100,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_325-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/APBD.SP.BM.74/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":955444001,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_325\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_325\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 955.444.001 dan fisik mencapai 0\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  15000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_327\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_325',
@@ -43334,12 +43334,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  955444001,
-  '000.03.02.2/APBD.SP.BM.74/VIII/2026',
-  '2026-08-20',
-  '2026-08-20',
-  '2026-11-17',
-  'CV. KEMBAR PUTRA',
+  14705000,
+  '027.2/PRC.SPK.BM.016/IV/2026',
+  '2026-04-08',
+  '2026-04-08',
+  '2026-05-07',
+  'CV. KUBANG ENGINEERING CONSULTANT',
   'Bank Jateng',
   NULL,
   NULL,
@@ -43352,18 +43352,18 @@ INSERT INTO `monitoring_paket` (
   0,
   'kontrak',
   100,
-  0,
+  100,
   0,
   'Aman',
   '[]',
-  955444001,
+  14705000,
   100,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_325-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/APBD.SP.BM.74/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":955444001,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  '[{\"id\":\"TRM-prj_bina_marga_326-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.016/IV/2026\",\"tanggalSP2D\":\"2026-04-08\",\"jumlah\":14705000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_325\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_325\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 955.444.001 dan fisik mencapai 0\% per laporan bulan Oktober 2026.\"}]'
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.016/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_326\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_329',
@@ -43381,12 +43381,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  954431000,
-  '000.03.02.2/APBD.SP.BM.75/VIII/2026',
-  '2026-08-20',
-  '2026-08-20',
-  '2026-11-17',
-  'CV. KEMBAR PUTRA',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
+  '2026-11-30',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -43397,20 +43397,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'kontrak',
-  80,
-  90,
-  10,
+  'rup',
+  0,
+  0,
+  0,
   'Aman',
   '[]',
-  954431000,
-  100,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_329-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/APBD.SP.BM.75/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":954431000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_329\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_329\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 954.431.000 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  15000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_331\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_329',
@@ -43428,12 +43428,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  954431000,
-  '000.03.02.2/APBD.SP.BM.75/VIII/2026',
-  '2026-08-20',
-  '2026-08-20',
-  '2026-11-17',
-  'CV. KEMBAR PUTRA',
+  14705000,
+  '027.2/PRC.SPK.BM.017/IV/2026',
+  '2026-04-08',
+  '2026-04-08',
+  '2026-05-07',
+  'CV. KUBANG ENGINEERING CONSULTANT',
   'Bank Jateng',
   NULL,
   NULL,
@@ -43445,19 +43445,19 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'kontrak',
-  80,
-  90,
-  10,
-  'Aman',
-  '[]',
-  954431000,
+  100,
   100,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_329-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-000.03.02.2/APBD.SP.BM.75/VIII/2026\",\"tanggalSP2D\":\"2026-08-20\",\"jumlah\":954431000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'Aman',
+  '[]',
+  14705000,
+  100,
+  0,
+  '[{\"id\":\"TRM-prj_bina_marga_330-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.017/IV/2026\",\"tanggalSP2D\":\"2026-04-08\",\"jumlah\":14705000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_329\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_329\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 954.431.000 dan fisik mencapai 90\% per laporan bulan Oktober 2026.\"}]'
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.017/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_330\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.705.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_335',
@@ -43475,12 +43475,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   30000000,
   1940000000,
-  1900504641,
-  '000.3.7/APBD.SP.BM.069/VIII/2026',
-  '2026-08-21',
-  '2026-08-21',
-  '2026-12-18',
-  'CV. ZULFA',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
+  '2026-11-30',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -43491,20 +43491,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Proyek Strategis\"]',
   1,
-  'kontrak',
-  30,
-  50,
-  20,
+  'rup',
+  0,
+  0,
+  0,
   'Aman',
   '[]',
-  586551392,
-  30.86,
-  1313953249,
-  '[{\"id\":\"TRM-prj_bina_marga_335-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/APBD.SP.BM.069/VIII/2026\",\"tanggalSP2D\":\"2026-08-21\",\"jumlah\":586551392,\"persen\":30.86,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 586.551.392\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_335\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 586.551.392 dan fisik mencapai 50\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  30000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_337\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_335',
@@ -43522,12 +43522,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   30000000,
   1940000000,
-  1900504641,
-  '000.3.7/APBD.SP.BM.069/VIII/2026',
-  '2026-08-21',
-  '2026-08-21',
-  '2026-12-18',
-  'CV. ZULFA',
+  29646000,
+  '027.2/PRC.SPK.BM.010/IV/2026',
+  '2026-04-08',
+  '2026-04-08',
+  '2026-05-07',
+  'CV. PRIORITAS',
   'Bank Jateng',
   NULL,
   NULL,
@@ -43539,19 +43539,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'kontrak',
-  30,
-  50,
-  20,
+  100,
+  100,
+  0,
   'Aman',
   '[]',
-  586551392,
-  30.86,
-  1313953249,
-  '[{\"id\":\"TRM-prj_bina_marga_335-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.7/APBD.SP.BM.069/VIII/2026\",\"tanggalSP2D\":\"2026-08-21\",\"jumlah\":586551392,\"persen\":30.86,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 586.551.392\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_335\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 586.551.392 dan fisik mencapai 50\% per laporan bulan Oktober 2026.\"}]'
+  29646000,
+  100,
+  0,
+  '[{\"id\":\"TRM-prj_bina_marga_336-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.010/IV/2026\",\"tanggalSP2D\":\"2026-04-08\",\"jumlah\":29646000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'sudah_sp2d',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.010/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_336\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 29.646.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_391',
@@ -43596,9 +43596,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_391\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_392\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_393',
@@ -43643,7 +43643,7 @@ INSERT INTO `monitoring_paket` (
   22500000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_393\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan).\"}]'
 ),
@@ -43690,9 +43690,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_394\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_395\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_396',
@@ -43737,9 +43737,9 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_396\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_397\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_398',
@@ -43784,9 +43784,9 @@ INSERT INTO `monitoring_paket` (
   30000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_398\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_399\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_400',
@@ -43831,9 +43831,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_400\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_401\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_402',
@@ -43878,9 +43878,9 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_402\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_403\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_380',
@@ -43925,9 +43925,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_380\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_404\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_384',
@@ -43972,9 +43972,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_384\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_405\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_406',
@@ -44019,9 +44019,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_406\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_407\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_408',
@@ -44066,9 +44066,9 @@ INSERT INTO `monitoring_paket` (
   30000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_408\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_409\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_410',
@@ -44113,9 +44113,9 @@ INSERT INTO `monitoring_paket` (
   25000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_410\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_411\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_412',
@@ -44160,9 +44160,9 @@ INSERT INTO `monitoring_paket` (
   30000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_412\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_413\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_414',
@@ -44207,9 +44207,9 @@ INSERT INTO `monitoring_paket` (
   20000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_414\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_415\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_416',
@@ -44254,9 +44254,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_416\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_417\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_418',
@@ -44301,9 +44301,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_418\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_419\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_420',
@@ -44348,9 +44348,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_420\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_421\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_422',
@@ -44395,9 +44395,9 @@ INSERT INTO `monitoring_paket` (
   25000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_422\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_423\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_424',
@@ -44442,9 +44442,9 @@ INSERT INTO `monitoring_paket` (
   28500000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_424\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_425\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_426',
@@ -44489,9 +44489,9 @@ INSERT INTO `monitoring_paket` (
   30000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_426\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_427\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_428',
@@ -44536,9 +44536,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_428\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_429\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_388',
@@ -44583,9 +44583,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_388\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_430\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_431',
@@ -44630,9 +44630,9 @@ INSERT INTO `monitoring_paket` (
   25000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_431\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_432\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_433',
@@ -44677,9 +44677,9 @@ INSERT INTO `monitoring_paket` (
   20000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_433\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_434\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_435',
@@ -44724,9 +44724,9 @@ INSERT INTO `monitoring_paket` (
   25000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_435\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_436\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_437',
@@ -44771,9 +44771,9 @@ INSERT INTO `monitoring_paket` (
   15000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_437\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_438\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_439',
@@ -44818,9 +44818,9 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_439\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_440\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_441',
@@ -44865,9 +44865,9 @@ INSERT INTO `monitoring_paket` (
   50000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_441\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_442\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'mp_jakon_111',
@@ -45382,7 +45382,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'rup',
+  'kontrak',
   10,
   10,
   0,
@@ -45392,8 +45392,8 @@ INSERT INTO `monitoring_paket` (
   0,
   15000000,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_bina_marga_500\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -45440,8 +45440,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_499-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.015/IV/2026\",\"tanggalSP2D\":\"2026-04-15\",\"jumlah\":14779000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_499\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.015/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_499\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.779.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -45460,12 +45460,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  953717401,
-  '\'000.3.7/APBD.SP.BM.96/IX/2026',
-  '2026-09-01',
-  '2026-09-01',
-  '2026-11-29',
-  'CV. MUNZAROH INDAH',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
+  '2026-11-30',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45482,14 +45482,14 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
-  286115220,
-  30,
-  667602181,
-  '[{\"id\":\"TRM-prj_bina_marga_502-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-\'000.3.7/APBD.SP.BM.96/IX/2026\",\"tanggalSP2D\":\"2026-09-01\",\"jumlah\":286115220,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 286.115.220\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_502\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 286.115.220 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  15000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_504\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_502',
@@ -45507,12 +45507,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  953717401,
-  '\'000.3.7/APBD.SP.BM.96/IX/2026',
-  '2026-09-01',
-  '2026-09-01',
-  '2026-11-29',
-  'CV. MUNZAROH INDAH',
+  14710000,
+  '027.2/PRC.SPK.BM.014/IV/2026',
+  '2026-04-08',
+  '2026-04-08',
+  '2026-05-07',
+  'CV KUBANG ENGINEERING CONSULTANT',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45524,19 +45524,19 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'kontrak',
-  30,
-  30,
+  100,
+  100,
   0,
   'Aman',
   '[]',
-  286115220,
-  30,
-  667602181,
-  '[{\"id\":\"TRM-prj_bina_marga_502-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-\'000.3.7/APBD.SP.BM.96/IX/2026\",\"tanggalSP2D\":\"2026-09-01\",\"jumlah\":286115220,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 286.115.220\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_502\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 286.115.220 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
+  14710000,
+  100,
+  0,
+  '[{\"id\":\"TRM-prj_bina_marga_503-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.014/IV/2026\",\"tanggalSP2D\":\"2026-04-08\",\"jumlah\":14710000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'sudah_sp2d',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.014/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_503\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.710.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_506',
@@ -45554,12 +45554,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   38320000,
   9970000000,
-  9613970000,
-  '027.2/APBD.SPK.BM.03/VII/2026',
+  38034770,
+  '000.3.2/PWS/SP.BM.021.1/VII/2026',
   '2026-07-23',
   '2026-07-23',
   '2026-12-19',
-  'CV. MULYO JOYO BERKAH',
+  'CV. PURUSARA TEKNIK',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45571,19 +45571,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'kontrak',
-  25,
-  25,
+  20,
+  20,
   0,
   'Aman',
   '[]',
-  2892391130,
-  30.09,
-  6721578870,
-  '[{\"id\":\"TRM-prj_bina_marga_506-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-027.2/APBD.SPK.BM.03/VII/2026\",\"tanggalSP2D\":\"2026-07-23\",\"jumlah\":2892391130,\"persen\":30.09,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 2.892.391.130\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_506\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 2.892.391.130 dan fisik mencapai 25\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  38034770,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_507\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_508',
@@ -45601,12 +45601,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   13320000,
   3473360000,
-  3425849992,
-  '000.3.3/APBD.SP.BM.022/VII/2026',
+  12898200,
+  '000.3.2/PWS/SP.BM.024/VII/2026',
   '2026-07-30',
   '2026-07-30',
   '2026-12-25',
-  'CV. ASALAMAHWALBAROKAH',
+  'CV. JK KONSULTAN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45623,14 +45623,14 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
-  1044154998,
-  30.48,
-  2381694994,
-  '[{\"id\":\"TRM-prj_bina_marga_508-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.022/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":1044154998,\"persen\":30.48,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 1.044.154.998\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_508\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 1.044.154.998 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  12898200,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_510\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_508',
@@ -45648,12 +45648,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   25000000,
   3473360000,
-  3425849992,
-  '000.3.3/APBD.SP.BM.022/VII/2026',
-  '2026-07-30',
-  '2026-07-30',
-  '2026-12-25',
-  'CV. ASALAMAHWALBAROKAH',
+  24812000,
+  '027.2/PRC.SPK.BM.011/IV/2026',
+  '2026-04-08',
+  '2026-04-08',
+  '2026-05-07',
+  'CV. MITRA DISIGN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45665,19 +45665,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'kontrak',
-  20,
-  20,
+  100,
+  100,
   0,
   'Aman',
   '[]',
-  1044154998,
-  30.48,
-  2381694994,
-  '[{\"id\":\"TRM-prj_bina_marga_508-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.022/VII/2026\",\"tanggalSP2D\":\"2026-07-30\",\"jumlah\":1044154998,\"persen\":30.48,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 1.044.154.998\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_508\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 1.044.154.998 dan fisik mencapai 20\% per laporan bulan Oktober 2026.\"}]'
+  24812000,
+  100,
+  0,
+  '[{\"id\":\"TRM-prj_bina_marga_509-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.011/IV/2026\",\"tanggalSP2D\":\"2026-04-08\",\"jumlah\":24812000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'sudah_sp2d',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.011/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_509\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 24.812.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_511',
@@ -45695,12 +45695,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  951056717,
-  '000.3.3/APBD.SP.BM.094/VIII/2026',
-  '2026-08-31',
-  '2026-08-31',
-  '2026-12-28',
-  'CV. MAHKOTA JAYA GRUP',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
+  '2026-11-30',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45717,14 +45717,14 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
-  285317015,
-  30,
-  665739702,
-  '[{\"id\":\"TRM-prj_bina_marga_511-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.094/VIII/2026\",\"tanggalSP2D\":\"2026-08-31\",\"jumlah\":285317015,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 285.317.015\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_511\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 285.317.015 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  15000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_513\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_511',
@@ -45742,12 +45742,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  951056717,
-  '000.3.3/APBD.SP.BM.094/VIII/2026',
-  '2026-08-31',
-  '2026-08-31',
-  '2026-12-28',
-  'CV. MAHKOTA JAYA GRUP',
+  14842000,
+  '027.2/PRC.SPK.BM.012/IV/2026',
+  '2026-04-08',
+  '2026-04-08',
+  '2026-05-07',
+  'CV. MITRA DISIGN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45759,19 +45759,19 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'kontrak',
-  25,
-  30,
-  5,
+  100,
+  100,
+  0,
   'Aman',
   '[]',
-  285317015,
-  30,
-  665739702,
-  '[{\"id\":\"TRM-prj_bina_marga_511-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.094/VIII/2026\",\"tanggalSP2D\":\"2026-08-31\",\"jumlah\":285317015,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 285.317.015\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_511\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 285.317.015 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
+  14842000,
+  100,
+  0,
+  '[{\"id\":\"TRM-prj_bina_marga_512-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.012/IV/2026\",\"tanggalSP2D\":\"2026-04-08\",\"jumlah\":14842000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'sudah_sp2d',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.012/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_512\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.842.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_517',
@@ -45789,12 +45789,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  951105060,
-  '000.3.3/APBD.SP.BM.107/IX/2026',
-  '2026-09-11',
-  '2026-09-11',
-  '2026-12-22',
-  'CV. MITRA JAYA',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
+  '2026-11-30',
+  'Penyedia Jasa Konstruksi',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45811,14 +45811,14 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
-  285331518,
-  30,
-  665773542,
-  '[{\"id\":\"TRM-prj_bina_marga_517-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.107/IX/2026\",\"tanggalSP2D\":\"2026-09-11\",\"jumlah\":285331518,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 285.331.518\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_517\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 285.331.518 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  15000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_519\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_517',
@@ -45836,12 +45836,12 @@ INSERT INTO `monitoring_paket` (
   'Pengadaan Langsung',
   15000000,
   970000000,
-  951105060,
-  '000.3.3/APBD.SP.BM.107/IX/2026',
-  '2026-09-11',
-  '2026-09-11',
-  '2026-12-22',
-  'CV. MITRA JAYA',
+  14842000,
+  '027.2/PRC.SPK.BM.012/IV/2026',
+  '2026-04-08',
+  '2026-04-08',
+  '2026-05-07',
+  'CV. MITRA DESIGN',
   'Bank Jateng',
   NULL,
   NULL,
@@ -45853,19 +45853,19 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'kontrak',
-  25,
-  30,
-  5,
+  100,
+  100,
+  0,
   'Aman',
   '[]',
-  285331518,
-  30,
-  665773542,
-  '[{\"id\":\"TRM-prj_bina_marga_517-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-000.3.3/APBD.SP.BM.107/IX/2026\",\"tanggalSP2D\":\"2026-09-11\",\"jumlah\":285331518,\"persen\":30,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 285.331.518\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_517\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 285.331.518 dan fisik mencapai 30\% per laporan bulan Oktober 2026.\"}]'
+  14847000,
+  100.03,
+  0,
+  '[{\"id\":\"TRM-prj_bina_marga_518-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PRC.SPK.BM.012/IV/2026\",\"tanggalSP2D\":\"2026-04-08\",\"jumlah\":14847000,\"persen\":100.03,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  'sudah_sp2d',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-04-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PRC.SPK.BM.012/IV/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_518\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 14.847.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_sda_bk_534',
@@ -45909,8 +45909,8 @@ INSERT INTO `monitoring_paket` (
   0,
   98884350,
   '[]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_534\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 0 dan fisik mencapai 25\% per laporan bulan Oktober 2026.\"}]'
 ),
@@ -47179,7 +47179,7 @@ INSERT INTO `monitoring_paket` (
   150000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_33\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
@@ -47226,7 +47226,7 @@ INSERT INTO `monitoring_paket` (
   450000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_sda_bk_34\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 450.000.000 (Murni).\"}]'
 ),
@@ -47262,7 +47262,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Proyek Strategis\"]',
   1,
-  'rup',
+  'kontrak',
   60,
   62.44,
   2.44,
@@ -47272,9 +47272,9 @@ INSERT INTO `monitoring_paket` (
   60.48,
   0,
   '[{\"id\":\"TRM-prj_sda_bk_40-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":1197302115,\"persen\":60.48,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_sda_bk_40\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  'sudah_masuk',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_40\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 1.197.302.115 dan fisik mencapai 62.44\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47320,8 +47320,8 @@ INSERT INTO `monitoring_paket` (
   1031000416,
   '[{\"id\":\"TRM-prj_sda_bk_147-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":713151284,\"persen\":40.89,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 713.151.284\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_sda_bk_147\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator SDA & BK\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 713.151.284 dan fisik mencapai 40.89\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47367,8 +47367,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_465-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PEMEL.SP.BM.02/III/2026\",\"tanggalSP2D\":\"2026-03-16\",\"jumlah\":197600000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_465\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-16\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PEMEL.SP.BM.02/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_465\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47414,7 +47414,7 @@ INSERT INTO `monitoring_paket` (
   354000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_cipta_karya_187\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni).\"}]'
 ),
@@ -47461,8 +47461,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_465-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PEMEL.SP.BM.02/III/2026\",\"tanggalSP2D\":\"2026-03-16\",\"jumlah\":197600000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_465\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-16\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PEMEL.SP.BM.02/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_465\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47508,8 +47508,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_465-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PEMEL.SP.BM.02/III/2026\",\"tanggalSP2D\":\"2026-03-16\",\"jumlah\":197600000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_465\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-16\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PEMEL.SP.BM.02/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_465\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 );
 
@@ -47555,7 +47555,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[\"Proyek Strategis\"]',
   1,
-  'rup',
+  'kontrak',
   43.66,
   43.66,
   0,
@@ -47565,9 +47565,9 @@ INSERT INTO `monitoring_paket` (
   35.99,
   0,
   '[{\"id\":\"TRM-prj_bina_marga_476-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":622586830,\"persen\":35.99,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_476\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  'sudah_masuk',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_476\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47613,8 +47613,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_467-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01KW94RJ27DTEGTV2ZD8ZX85GF\",\"tanggalSP2D\":\"2026-07-02\",\"jumlah\":187663260,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_467\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-02\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01KW94RJ27DTEGTV2ZD8ZX85GF\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_467\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 187.663.260 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47660,8 +47660,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_470-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01KXHXCNFCYTACM7900S9DFCGT\",\"tanggalSP2D\":\"2026-07-17\",\"jumlah\":188097048,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_470\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-17\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01KXHXCNFCYTACM7900S9DFCGT\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_470\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 188.097.048 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47707,8 +47707,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_471-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01M0CF8AXNG5GFZ75M9GSEHT6Q\",\"tanggalSP2D\":\"2026-08-24\",\"jumlah\":187008416,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_471\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-24\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01M0CF8AXNG5GFZ75M9GSEHT6Q\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_471\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 187.008.416 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47754,8 +47754,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_472-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01KYV2VG3NHHNNZ8X1V6BV61K6\",\"tanggalSP2D\":\"2026-08-06\",\"jumlah\":186046989,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_472\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-06\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01KYV2VG3NHHNNZ8X1V6BV61K6\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_472\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 186.046.989 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47801,8 +47801,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_473-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH\",\"tanggalSP2D\":\"2026-08-28\",\"jumlah\":187558321,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_473\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-08-28\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_473\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 187.558.321 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47848,8 +47848,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_465-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PEMEL.SP.BM.02/III/2026\",\"tanggalSP2D\":\"2026-03-16\",\"jumlah\":197600000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_465\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-03-16\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/027.2/PEMEL.SP.BM.02/III/2026\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_465\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47895,8 +47895,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_466-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01KXD89MFMSHMQJ7PANKNEERC6\",\"tanggalSP2D\":\"2026-07-16\",\"jumlah\":188097048,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_466\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-16\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01KXD89MFMSHMQJ7PANKNEERC6\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_466\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 188.097.048 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47942,8 +47942,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_474-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01KTB0XPQ8R4H2W2SY5BQ09703\",\"tanggalSP2D\":\"2026-06-11\",\"jumlah\":195757380,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_474\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-06-11\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01KTB0XPQ8R4H2W2SY5BQ09703\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_474\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -47963,10 +47963,10 @@ INSERT INTO `monitoring_paket` (
   200000000,
   200000000,
   195757380,
-  'EP-01KTB0XPQ8R4H2W2SY5BQ09703',
-  '2026-06-11',
-  '2026-06-11',
-  '2026-06-25',
+  'EP-01M1N8N5S92115F4NXAFJ2ZWFG',
+  '2026-09-08',
+  '2026-09-08',
+  '2026-09-22',
   'CV. AL BAROKAH',
   'Bank Jateng',
   NULL,
@@ -47987,11 +47987,11 @@ INSERT INTO `monitoring_paket` (
   195757380,
   100,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_474-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01KTB0XPQ8R4H2W2SY5BQ09703\",\"tanggalSP2D\":\"2026-06-11\",\"jumlah\":195757380,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
+  '[{\"id\":\"TRM-prj_bina_marga_475-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01M1N8N5S92115F4NXAFJ2ZWFG\",\"tanggalSP2D\":\"2026-09-08\",\"jumlah\":195757380,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_474\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_474\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-09-08\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01M1N8N5S92115F4NXAFJ2ZWFG\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_475\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 195.757.380 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
   'prj_bina_marga_469',
@@ -48036,8 +48036,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_469-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01M1G0JF6ZGPVQ5MG421RQA5WN\",\"tanggalSP2D\":\"2026-09-04\",\"jumlah\":187962549,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_469\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-09-04\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01M1G0JF6ZGPVQ5MG421RQA5WN\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_469\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 187.962.549 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -48061,7 +48061,7 @@ INSERT INTO `monitoring_paket` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  'Penyedia Jasa Konstruksi',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -48073,19 +48073,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'rup',
-  43.66,
-  43.66,
+  0,
+  0,
   0,
   'Aman',
   '[]',
-  622586830,
-  35.99,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_476-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":622586830,\"persen\":35.99,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_476\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_476\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  200000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_477\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_476',
@@ -48108,7 +48108,7 @@ INSERT INTO `monitoring_paket` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  'Penyedia Jasa Konstruksi',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -48120,19 +48120,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'rup',
-  43.66,
-  43.66,
+  0,
+  0,
   0,
   'Aman',
   '[]',
-  622586830,
-  35.99,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_476-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":622586830,\"persen\":35.99,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_476\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_476\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  200000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_478\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_476',
@@ -48155,7 +48155,7 @@ INSERT INTO `monitoring_paket` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  'Penyedia Jasa Konstruksi',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -48167,19 +48167,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'rup',
-  43.66,
-  43.66,
+  0,
+  0,
   0,
   'Aman',
   '[]',
-  622586830,
-  35.99,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_476-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":622586830,\"persen\":35.99,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_476\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_476\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  200000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_479\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_476',
@@ -48202,7 +48202,7 @@ INSERT INTO `monitoring_paket` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  'Penyedia Jasa Konstruksi',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -48214,19 +48214,19 @@ INSERT INTO `monitoring_paket` (
   '[\"Proyek Strategis\"]',
   1,
   'rup',
-  43.66,
-  43.66,
+  0,
+  0,
   0,
   'Aman',
   '[]',
-  622586830,
-  35.99,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_476-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":622586830,\"persen\":35.99,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_476\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_476\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 622.586.830 dan fisik mencapai 43.66\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  200000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_480\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_465',
@@ -48244,12 +48244,12 @@ INSERT INTO `monitoring_paket` (
   'e-Purchasing',
   100000000,
   200000000,
-  197600000,
-  '027.2/PEMEL.SP.BM.02/III/2026',
-  '2026-03-16',
-  '2026-03-16',
-  '2026-03-30',
-  'CV SAHALA',
+  0,
+  NULL,
+  NULL,
+  '2026-03-01',
+  '2026-11-30',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -48260,20 +48260,20 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'kontrak',
-  100,
-  100,
+  'rup',
+  0,
+  0,
   0,
   'Aman',
   '[]',
-  197600000,
-  100,
   0,
-  '[{\"id\":\"TRM-prj_bina_marga_465-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-027.2/PEMEL.SP.BM.02/III/2026\",\"tanggalSP2D\":\"2026-03-16\",\"jumlah\":197600000,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_465\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_465\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 197.600.000 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  100000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_481\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_483',
@@ -48318,8 +48318,8 @@ INSERT INTO `monitoring_paket` (
   0,
   '[{\"id\":\"TRM-prj_bina_marga_483-1\",\"terminKe\":\"Pelunasan SP2D 100\%\",\"nomorSP2D\":\"SP2D-EP-01KYKEVJFNZQXCBPV715VJKR94\",\"tanggalSP2D\":\"2026-07-31\",\"jumlah\":86658587,\"persen\":100,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_sp2d',
-  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/prj_bina_marga_483\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"SP2D Lunas 100\%\"}',
+  '{\"status\":\"sudah_sp2d\",\"tanggalMasuk\":\"2026-07-31\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"2026-10-25\",\"nomorSPM\":\"900/SPM/EP-01KYKEVJFNZQXCBPV715VJKR94\",\"catatanVerifikator\":\"Berkas SPJ lengkap & SP2D lunas 100\%\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":true,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_483\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 86.658.587 dan fisik mencapai 100\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -48354,7 +48354,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'rup',
+  'kontrak',
   0,
   0,
   0,
@@ -48365,8 +48365,8 @@ INSERT INTO `monitoring_paket` (
   25529401,
   '[{\"id\":\"TRM-prj_bina_marga_482-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":174470599,\"persen\":87.24,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 174.470.599\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_482\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 174.470.599 dan fisik mencapai 0\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -48390,7 +48390,7 @@ INSERT INTO `monitoring_paket` (
   NULL,
   '2026-03-01',
   '2026-11-30',
-  'Penyedia Jasa Konstruksi',
+  '-',
   'Bank Jateng',
   NULL,
   NULL,
@@ -48402,19 +48402,19 @@ INSERT INTO `monitoring_paket` (
   '[]',
   0,
   'rup',
-  8.18,
-  8.18,
+  0,
+  0,
   0,
   'Aman',
   '[]',
-  31616000,
-  7.03,
-  168384000,
-  '[{\"id\":\"TRM-prj_bina_marga_484-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":31616000,\"persen\":7.03,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
-  'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 31.616.000\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_484\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18\% per laporan bulan Oktober 2026.\"}]'
+  0,
+  0,
+  200000000,
+  '[]',
+  'belum_masuk',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
+  '[{\"id\":\"log_init_prj_bina_marga_485\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_484',
@@ -48448,7 +48448,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'rup',
+  'kontrak',
   8.18,
   8.18,
   0,
@@ -48459,8 +48459,8 @@ INSERT INTO `monitoring_paket` (
   306384000,
   '[{\"id\":\"TRM-prj_bina_marga_484-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":31616000,\"persen\":7.03,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 31.616.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_484\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -48495,7 +48495,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'rup',
+  'kontrak',
   8.18,
   8.18,
   0,
@@ -48506,8 +48506,8 @@ INSERT INTO `monitoring_paket` (
   68384000,
   '[{\"id\":\"TRM-prj_bina_marga_484-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":31616000,\"persen\":7.03,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 31.616.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_bina_marga_484\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Bina Marga\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 31.616.000 dan fisik mencapai 8.18\% per laporan bulan Oktober 2026.\"}]'
 ),
 (
@@ -48788,7 +48788,7 @@ INSERT INTO `monitoring_paket` (
   175000000,
   '[]',
   'belum_masuk',
-  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Belum mengajukan berkas SPJ\",\"petugasVerifikator\":\"\"}',
+  '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
   '[{\"id\":\"log_init_prj_tata_ruang_543\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
@@ -48824,7 +48824,7 @@ INSERT INTO `monitoring_paket` (
   '110.6385',
   '[]',
   0,
-  'rup',
+  'kontrak',
   99.3,
   99.3,
   0,
@@ -48835,8 +48835,8 @@ INSERT INTO `monitoring_paket` (
   695000,
   '[{\"id\":\"TRM-prj_tata_ruang_541-1\",\"terminKe\":\"Pencairan SP2D Termin\",\"nomorSP2D\":\"SP2D-2026-OKT\",\"tanggalSP2D\":\"2026-10-31\",\"jumlah\":99305000,\"persen\":99.3,\"keterangan\":\"Pencairan SP2D Keuangan s/d Oktober 2026\"}]',
   'sudah_masuk',
-  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Kasubag Program & Keuangan\"}',
-  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"SP2D Cair Rp 99.305.000\"}',
+  '{\"status\":\"sudah_masuk\",\"tanggalMasuk\":\"2026-10-15\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Berkas SPJ termin masuk, proses verifikasi SP2D\",\"petugasVerifikator\":\"Tim Verifikasi SPJ Keuangan\"}',
+  '{\"berkasBelumMasuk\":false,\"berkasMasuk\":true,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":true,\"selesai\":false,\"catatanPencairan\":\"Pencairan SP2D sedang/telah berjalan\"}',
   '[{\"id\":\"log_init_prj_tata_ruang_541\",\"timestamp\":\"2026-10-31 16:30:00\",\"userName\":\"Koordinator Tata Ruang\",\"userRole\":\"Koordinator Bidang\",\"action\":\"Input SP2D & Progres Fisik\",\"keterangan\":\"Realisasi SP2D tercatat Rp 99.305.000 dan fisik mencapai 99.3\% per laporan bulan Oktober 2026.\"}]'
 );
 
