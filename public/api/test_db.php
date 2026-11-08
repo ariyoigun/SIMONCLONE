@@ -85,7 +85,7 @@ if (!isset($pdo) || $pdo === null) {
         $response['status'] = 'success';
         $response['message'] = 'Koneksi ke database MySQL berhasil! (MySQL/MariaDB ' . $serverVersion . ')';
 
-        $expected_tables = ['system_settings', 'bidang', 'users', 'projects', 'sipd_programs', 'sipd_kegiatan', 'sipd_sub_kegiatan', 'years'];
+        $expected_tables = ['system_settings', 'bidang', 'users', 'projects', 'monitoring_paket', 'sipd_programs', 'sipd_kegiatan', 'sipd_sub_kegiatan', 'years'];
         $tables_found = [];
         $missing_count = 0;
 
@@ -331,10 +331,10 @@ if ($is_browser && (!isset($_GET['format']) || $_GET['format'] !== 'json')) {
                 <div class="card">
                     <div class="card-title">
                         <span>STATUS TABEL DATABASE (DATABASE/SIMON_SATUPUTARU.SQL)</span>
-                        <?php if ($response['missing_tables_count'] > 0 || (isset($response['tables']['projects']['row_count']) && $response['tables']['projects']['row_count'] < 500)): ?>
+                        <?php if ($response['missing_tables_count'] > 0 || (isset($response['tables']['projects']['row_count']) && $response['tables']['projects']['row_count'] < 500) || (isset($response['tables']['monitoring_paket']['row_count']) && $response['tables']['monitoring_paket']['row_count'] < 400)): ?>
                             <span class="pill pill-amber"><?php echo $response['missing_tables_count']; ?> Tabel Perlu Diperbarui</span>
                         <?php else: ?>
-                            <span class="pill pill-green">Semua Tabel Lengkap (8/8)</span>
+                            <span class="pill pill-green">Semua Tabel Lengkap (9/9)</span>
                         <?php endif; ?>
                     </div>
                     <table>
@@ -342,13 +342,20 @@ if ($is_browser && (!isset($_GET['format']) || $_GET['format'] !== 'json')) {
                             <tr>
                                 <th>Nama Tabel</th>
                                 <th>Status</th>
-                                <th>Jumlah Data</th>
+                                <th>Keterangan & Jumlah Data</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($response['tables'] as $tableName => $tInfo): ?>
                                 <tr>
-                                    <td><code><?php echo htmlspecialchars($tableName); ?></code></td>
+                                    <td>
+                                        <code><?php echo htmlspecialchars($tableName); ?></code>
+                                        <?php if ($tableName === 'projects'): ?>
+                                            <div style="font-size:11px; color:#38bdf8; margin-top:2px;">(Master Data Pekerjaan)</div>
+                                        <?php elseif ($tableName === 'monitoring_paket'): ?>
+                                            <div style="font-size:11px; color:#34d399; margin-top:2px;">(Master Data Paket Pekerjaan & Monitoring Paket)</div>
+                                        <?php endif; ?>
+                                    </td>
                                     <td>
                                         <?php if ($tInfo['exists']): ?>
                                             <span class="pill pill-green">Ready / Ada</span>
@@ -359,9 +366,12 @@ if ($is_browser && (!isset($_GET['format']) || $_GET['format'] !== 'json')) {
                                     <td>
                                         <?php 
                                             if (isset($tInfo['row_count'])) {
-                                                echo number_format($tInfo['row_count']) . ' baris';
+                                                echo '<strong>' . number_format($tInfo['row_count']) . ' baris</strong>';
                                                 if ($tableName === 'projects' && $tInfo['row_count'] < 500) {
-                                                    echo ' <span style="color:#fbbf24; font-size:12px;">(Tersedia 558 paket 2026 di file SQL baru)</span>';
+                                                    echo ' <span style="color:#fbbf24; font-size:12px;">(Tersedia 558 data 2026 di file SQL terbaru)</span>';
+                                                }
+                                                if ($tableName === 'monitoring_paket' && $tInfo['row_count'] < 400) {
+                                                    echo ' <span style="color:#fbbf24; font-size:12px;">(Tersedia 478 paket 2026 di file SQL terbaru)</span>';
                                                 }
                                             } else {
                                                 echo '<span style="color:#f87171;">' . htmlspecialchars($tInfo['error']) . '</span>';

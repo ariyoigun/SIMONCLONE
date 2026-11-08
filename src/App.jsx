@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import ExecutiveDashboard from './views/ExecutiveDashboard';
 import MasterPekerjaanView from './views/MasterPekerjaanView';
+import MasterPaketPekerjaanView from './views/MasterPaketPekerjaanView';
 import MonitoringPaketView from './views/MonitoringPaketView';
 import PreContractView from './views/PreContractView';
 import PhysicalProgressView from './views/PhysicalProgressView';
@@ -200,6 +201,10 @@ const MainAppContent = () => {
             />
           )}
 
+          {activeTab === 'master_paket' && (
+            <MasterPaketPekerjaanView />
+          )}
+
           {activeTab === 'master_pekerjaan' && (
             <MasterPekerjaanView
               onOpenProjectModal={handleOpenProjectModal}
@@ -253,7 +258,7 @@ const MainAppContent = () => {
           )}
 
           {/* Floating Time Stamp di Pojok Kiri Bawah untuk Modul Monitoring */}
-          {['dashboard', 'monitoring_paket', 'prakontrak', 'fisik', 'keuangan', 'spj_keuangan', 'master_pekerjaan', 'sipd_summary', 'pendapatan'].includes(activeTab) && (
+          {['dashboard', 'master_paket', 'monitoring_paket', 'prakontrak', 'fisik', 'keuangan', 'spj_keuangan', 'master_pekerjaan', 'sipd_summary', 'pendapatan'].includes(activeTab) && (
             <div
               className="bottom-left-timestamp-pill"
               title="Waktu sinkronisasi dan update data monitoring dinas terakhir"

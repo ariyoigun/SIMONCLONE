@@ -10,3 +10,4 @@ c = c.replace(
 );
 fs.writeFileSync('src/data/initialData.js', c, 'utf8');
 console.log('initialData.js updated with MONITORING_PAKET_2026!');
+

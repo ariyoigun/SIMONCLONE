@@ -382,3 +382,4 @@ fs.writeFileSync('database/simon_satuputaru.sql', sql, 'utf8');
 console.log('database/simon_satuputaru.sql successfully generated!');
 console.log('Total monitoring packages included:', MONITORING_PAKET_2026.length);
 console.log('File size:', (fs.statSync('database/simon_satuputaru.sql').size / 1024).toFixed(1), 'KB');
+

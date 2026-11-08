@@ -230,6 +230,7 @@ export const ROLE_DEFINITIONS = {
 export const SYSTEM_MENUS = [
   { id: 'dashboard', label: 'Dashboard Eksekutif', section: 'Ringkasan Eksekutif' },
   { id: 'master_pekerjaan', label: 'Master Data Pekerjaan', section: 'Data Pokok & Master' },
+  { id: 'master_paket', label: 'Master Data Paket Pekerjaan', section: 'Data Pokok & Master' },
   { id: 'monitoring_paket', label: 'Monitoring Paket Pekerjaan', section: 'Modul Monitoring Progres' },
   { id: 'prakontrak', label: 'Pekerjaan Pra-Kontrak', section: 'Modul Monitoring Progres' },
   { id: 'fisik', label: 'Progres Fisik', section: 'Modul Monitoring Progres' },

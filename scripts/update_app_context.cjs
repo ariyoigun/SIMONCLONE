@@ -35,3 +35,4 @@ if (!c.includes('tahapanPencairan: p.tahapanPencairan')) {
 
 fs.writeFileSync('src/context/AppContext.jsx', c, 'utf8');
 console.log('AppContext.jsx updated successfully!');
+

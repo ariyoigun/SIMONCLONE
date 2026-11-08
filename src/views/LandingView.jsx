@@ -19,15 +19,14 @@ import {
   CheckCircle2,
   Clock,
   TrendingUp,
-  DollarSign,
   FileText
 } from 'lucide-react';
 import AppLogo from '../components/AppLogo';
 
 const LandingView = ({ onGoToLogin, onBackToInternal }) => {
+  // Ambil `projects` yang merupakan Master Data Pekerjaan (558 data dari REAL_PROJECTS_2026)
   const { projects = [], activeYear, isLoggedIn, currentUser, systemSettings } = useApp();
 
-  const [selectedBidang, setSelectedBidang] = useState('ALL');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeProjectDetail, setActiveProjectDetail] = useState(null);
 
@@ -52,13 +51,9 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         subKegiatan: 'Normalisasi/Restorasi Sungai',
         bidangId: 'sda_bk',
         kategori: 'Pekerjaan Konstruksi (Fisik)',
-        paguAnggaran: 1950036600,
-        nilaiKontrak: 1911946000,
         pelaksana: 'CV. ANUGRAH MEKAR JAYA',
         nomorKontrak: '000.3.3/008/SP/TENDER/SDABK/VIII/2026',
         progresFisik: 30,
-        progresKeuangan: 30,
-        sp2d: 573583800,
         lokasi: 'Kecamatan Demak (Pusat Kota)',
         deskripsi: 'Pekerjaan strategis normalisasi dan rehabilitasi saluran pembuang air pengendali banjir perkotaan kawasan Stasiun, Tembiring hingga Tuntang Lama.',
         url: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=1200&auto=format&fit=crop&q=80'
@@ -102,41 +97,38 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
     return () => clearInterval(timer);
   }, [gallerySlides.length, isGaleriPaused]);
 
-  // Highlight 3 Pekerjaan Per Bidang dengan Nominal Tertinggi
-  const top3PerBidang = useMemo(() => {
+  // HIGHLIGHT 12 PEKERJAAN UNGGULAN:
+  // Diambil dari Master Data Pekerjaan (projects), yaitu 3 pekerjaan dengan nominal terbesar di masing-masing 4 bidang teknis.
+  // Langsung tampil 12 pekerjaan tanpa kategori bidang & tanpa nominal.
+  const highlight12Projects = useMemo(() => {
     const getNominal = (p) => (p.dataKontrak?.nilaiKontrak > 0 ? p.dataKontrak.nilaiKontrak : (parseFloat(p.paguAnggaran) || 0));
 
-    // Bidang Teknis
-    const targetBidangList = selectedBidang === 'ALL'
-      ? BIDANG_LIST.filter((b) => b.id !== 'sekretariat')
-      : BIDANG_LIST.filter((b) => b.id === selectedBidang);
+    // 4 Bidang Teknis DINPUTARU: cipta_karya, sda_bk, bina_marga, tata_ruang
+    const techBidangs = BIDANG_LIST.filter((b) => b.id !== 'sekretariat');
+    const selected12 = [];
 
-    return targetBidangList.map((b) => {
-      let bProjects = projects.filter((p) => p.bidangId === b.id);
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase();
-        bProjects = bProjects.filter((p) =>
-          (p.namaPaket?.toLowerCase() || '').includes(q) ||
-          (p.subKegiatan?.toLowerCase() || '').includes(q) ||
-          (p.kecamatan?.toLowerCase() || '').includes(q) ||
-          (p.desa?.toLowerCase() || '').includes(q)
-        );
-      }
-      // Urutkan nominal tertinggi
-      const sorted = [...bProjects].sort((p1, p2) => getNominal(p2) - getNominal(p1));
-      const top3 = sorted.slice(0, 3).map((p, idx) => ({
-        ...p,
-        rankNominal: idx + 1,
-        nominalBersih: getNominal(p)
-      }));
+    techBidangs.forEach((b) => {
+      const bProjs = projects.filter((p) => p.bidangId === b.id);
+      // Urutkan berdasarkan nominal terbesar di bidang tersebut
+      const sorted = [...bProjs].sort((p1, p2) => getNominal(p2) - getNominal(p1));
+      const top3 = sorted.slice(0, 3);
+      selected12.push(...top3);
+    });
 
-      return {
-        bidang: b,
-        items: top3,
-        totalPaket: bProjects.length
-      };
-    }).filter((grp) => grp.items.length > 0);
-  }, [projects, selectedBidang, searchQuery]);
+    // Jika user mencari di search box, filter hasil 12 pekerjaan ini
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      return selected12.filter((p) =>
+        (p.namaPaket?.toLowerCase() || '').includes(q) ||
+        (p.subKegiatan?.toLowerCase() || '').includes(q) ||
+        (p.kecamatan?.toLowerCase() || '').includes(q) ||
+        (p.desa?.toLowerCase() || '').includes(q) ||
+        (p.dataKontrak?.namaPenyedia?.toLowerCase() || '').includes(q)
+      );
+    }
+
+    return selected12;
+  }, [projects, searchQuery]);
 
   // Peta filtered projects per Bidang
   const petaFilteredProjects = useMemo(() => {
@@ -144,12 +136,12 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
     return projects.filter((p) => p.bidangId === selectedBidangPeta);
   }, [projects, selectedBidangPeta]);
 
-  // Aggregate Public Stats
+  // Aggregate Public Stats (Hanya jumlah paket, tanpa nominal rupiah)
   const totalCount = projects.length;
   const contractedCount = projects.filter((p) => p.isKontrak).length;
   const completedCount = projects.filter((p) => (p.dataFisik?.progresRealisasi || 0) >= 100).length;
 
-  // Handle click on slide to open full detail
+  // Handle click on slide to open detail modal (Tanpa nominal)
   const handleOpenSlideDetail = (slide) => {
     const matched = projects.find((p) => p.id === slide.projectId || p.namaPaket === slide.judul);
     if (matched) {
@@ -162,12 +154,9 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         subBagian: slide.subKegiatan,
         bidangId: slide.bidangId || 'sda_bk',
         kategoriPekerjaan: 'Fisik',
-        paguAnggaran: slide.paguAnggaran,
-        hps: slide.paguAnggaran,
         isKontrak: true,
         dataKontrak: {
           nomorKontrak: slide.nomorKontrak || '',
-          nilaiKontrak: slide.nilaiKontrak || 0,
           namaPenyedia: slide.pelaksana || '-',
           tanggalKontrak: '2026-08-18',
           tanggalMulai: '2026-08-18',
@@ -179,40 +168,20 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
           deviasiFisik: -20,
           statusDeviasi: 'Kritis'
         },
-        dataKeuangan: {
-          totalPencairan: slide.sp2d || 573583800,
-          persenKeuangan: slide.progresKeuangan || 30,
-          sisaAnggaran: (slide.nilaiKontrak || 1911946000) - (slide.sp2d || 573583800),
-          terminHistory: [
-            {
-              id: 'TRM-1',
-              terminKe: 'Pencairan SP2D Termin',
-              nomorSP2D: 'SP2D-' + (slide.nomorKontrak || '2026'),
-              tanggalSP2D: '2026-08-18',
-              jumlah: slide.sp2d || 573583800,
-              persen: slide.progresKeuangan || 30,
-              keterangan: 'Pencairan SP2D Keuangan s/d Oktober 2026'
-            }
-          ]
-        },
         kecamatan: 'Demak',
         desa: 'Bintoro',
         lokasiLengkap: slide.lokasi || 'Kabupaten Demak',
         latitude: -6.8944,
         longitude: 110.6385,
         tags: ['Proyek Strategis', 'Pekerjaan Unggulan'],
-        administrasiSPJ: {
-          status: 'sudah_masuk',
-          catatanVerifikator: 'Berkas SPJ termin masuk, proses verifikasi SP2D'
-        },
         logs: [
           {
             id: 'log-1',
             timestamp: '2026-10-31 16:30:00',
             userName: 'Koordinator Bidang',
             userRole: 'Koordinator',
-            action: 'Update Progres',
-            keterangan: 'Fisik mencapai ' + (slide.progresFisik || 30) + '% dan SP2D Rp ' + ((slide.sp2d || 573583800).toLocaleString('id-ID'))
+            action: 'Update Progres Fisik',
+            keterangan: 'Fisik mencapai ' + (slide.progresFisik || 30) + '% per laporan berkala.'
           }
         ]
       });
@@ -221,7 +190,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
 
   return (
     <div style={{ minHeight: '100vh', background: '#f8fafc', color: '#0f172a', fontFamily: 'inherit' }}>
-      {/* 1. TOP PUBLIC NAVBAR (Clean: Nama Web di kiri, Tombol Login di kanan) */}
+      {/* 1. TOP PUBLIC NAVBAR (Nama Web di kiri, Tombol Login di kanan) */}
       <header
         style={{
           position: 'sticky',
@@ -263,7 +232,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             </div>
           </div>
 
-          {/* Tombol Login di Sudut Kanan */}
+          {/* Tombol Login */}
           <div>
             {isLoggedIn ? (
               <button
@@ -369,7 +338,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             </p>
           </div>
 
-          {/* Quick Metrics Bar */}
+          {/* Quick Metrics Bar (Hanya Jumlah Paket - Tanpa Nominal) */}
           <div
             style={{
               display: 'grid',
@@ -384,7 +353,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             }}
           >
             <div>
-              <div style={{ fontSize: 12, color: '#93c5fd', fontWeight: 600 }}>TOTAL PAKET PEKERJAAN</div>
+              <div style={{ fontSize: 12, color: '#93c5fd', fontWeight: 600 }}>TOTAL PEKERJAAN DAERAH</div>
               <div style={{ fontSize: 28, fontWeight: 900, color: '#ffffff', marginTop: 4 }}>
                 {totalCount} Paket
               </div>
@@ -410,7 +379,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </div>
       </section>
 
-      {/* 3. SLIDESHOW PEKERJAAN UNGGULAN (HERO SHOWCASE / TOGGLE ON/OFF DI SUPERADMIN) */}
+      {/* 3. SLIDESHOW PEKERJAAN UNGGULAN (Tanpa Nominal) */}
       {systemSettings?.showSlideshowUnggulan !== false && slidesUnggulan.length > 0 && (
         <section
           style={{
@@ -429,7 +398,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
               boxShadow: '0 20px 45px -10px rgba(15, 44, 89, 0.35)',
               border: '4px solid #ffffff',
               background: '#071527',
-              minHeight: 460
+              minHeight: 420
             }}
             onMouseEnter={() => setIsUnggulanPaused(true)}
             onMouseLeave={() => setIsUnggulanPaused(false)}
@@ -450,8 +419,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                     display: isCurrent ? 'block' : 'none'
                   }}
                 >
-                  {/* Background Image with Dark Overlay */}
-                  <div style={{ position: 'relative', height: 460, width: '100%', overflow: 'hidden' }}>
+                  <div style={{ position: 'relative', height: 420, width: '100%', overflow: 'hidden' }}>
                     <img
                       src={slide.url}
                       alt={slide.judul}
@@ -470,11 +438,11 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                         position: 'absolute',
                         inset: 0,
                         background:
-                          'linear-gradient(to right, rgba(7, 21, 39, 0.96) 0%, rgba(7, 21, 39, 0.88) 45%, rgba(7, 21, 39, 0.4) 100%)'
+                          'linear-gradient(to right, rgba(7, 21, 39, 0.96) 0%, rgba(7, 21, 39, 0.88) 45%, rgba(7, 21, 39, 0.35) 100%)'
                       }}
                     />
 
-                    {/* Content Layer */}
+                    {/* Content Layer (Tanpa Nominal) */}
                     <div
                       style={{
                         position: 'absolute',
@@ -486,7 +454,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                         color: '#ffffff'
                       }}
                     >
-                      {/* Top Badges */}
+                      {/* Badges */}
                       <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
                         <span
                           style={{
@@ -529,7 +497,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                         </span>
                       </div>
 
-                      {/* Main Title & Description */}
+                      {/* Main Title & Deskripsi */}
                       <div style={{ maxWidth: 760, margin: '14px 0' }}>
                         <h2
                           style={{
@@ -555,7 +523,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                           {slide.deskripsi || 'Pekerjaan infrastruktur strategis peningkatan sarana dan prasarana publik di Kabupaten Demak.'}
                         </p>
 
-                        {/* Numeric Indicators (Full Down to Units) */}
+                        {/* Indikator Pelaksanaan (Tanpa Nominal) */}
                         <div
                           style={{
                             display: 'grid',
@@ -570,37 +538,28 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                         >
                           <div>
                             <div style={{ fontSize: 10.5, color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700 }}>
-                              Pagu Anggaran
-                            </div>
-                            <div style={{ fontSize: 14, fontWeight: 900, color: '#38bdf8', marginTop: 2 }}>
-                              Rp {(slide.paguAnggaran || 0).toLocaleString('id-ID')}
-                            </div>
-                          </div>
-
-                          <div>
-                            <div style={{ fontSize: 10.5, color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700 }}>
-                              Nilai Kontrak
-                            </div>
-                            <div style={{ fontSize: 14, fontWeight: 900, color: '#4ade80', marginTop: 2 }}>
-                              Rp {(slide.nilaiKontrak || 0).toLocaleString('id-ID')}
-                            </div>
-                          </div>
-
-                          <div>
-                            <div style={{ fontSize: 10.5, color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700 }}>
                               Pelaksana / Rekanan
                             </div>
-                            <div style={{ fontSize: 12.5, fontWeight: 800, color: '#ffffff', marginTop: 2 }}>
+                            <div style={{ fontSize: 13, fontWeight: 800, color: '#ffffff', marginTop: 2 }}>
                               {slide.pelaksana || '-'}
                             </div>
                           </div>
 
                           <div>
                             <div style={{ fontSize: 10.5, color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700 }}>
-                              Realisasi Fisik & SP2D
+                              Nomor Kontrak
                             </div>
-                            <div style={{ fontSize: 13, fontWeight: 800, color: '#fde047', marginTop: 2 }}>
-                              Fisik {slide.progresFisik || 0}% • SP2D {slide.progresKeuangan || 0}%
+                            <div style={{ fontSize: 12, fontWeight: 700, color: '#38bdf8', marginTop: 2 }}>
+                              {slide.nomorKontrak || '-'}
+                            </div>
+                          </div>
+
+                          <div>
+                            <div style={{ fontSize: 10.5, color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700 }}>
+                              Realisasi Fisik Lapangan
+                            </div>
+                            <div style={{ fontSize: 13, fontWeight: 900, color: '#4ade80', marginTop: 2 }}>
+                              {slide.progresFisik || 0}% Selesai
                             </div>
                           </div>
                         </div>
@@ -731,7 +690,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </section>
       )}
 
-      {/* 4. OLD GALERI FOTO SLIDESHOW (HANYA MUNCUL JIKA TOGGLE ON DI SUPERADMIN) */}
+      {/* 4. OLD GALERI FOTO SLIDESHOW (Hanya tampil jika toggle ON di Superadmin) */}
       {systemSettings?.showGaleriSlideshow === true && (
         <section
           id="slideshow"
@@ -827,7 +786,6 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 flexDirection: 'column'
               }}
             >
-              {/* Badge Singkatan */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
                 <div
                   style={{
@@ -874,25 +832,25 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </div>
       </section>
 
-      {/* 6. SECTION: HIGHLIGHT 3 PEKERJAAN NOMINAL TERTINGGI PER BIDANG */}
+      {/* 6. SECTION: HIGHLIGHT 12 PEKERJAAN STRATEGIS (3 PER BIDANG DARI DATA PEKERJAAN - TANPA NOMINAL & TANPA KATEGORI BIDANG) */}
       <section id="sorotan" style={{ padding: '56px 24px', background: '#f1f5f9', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16, marginBottom: 28 }}>
             <div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 12, fontWeight: 800, color: '#0284c7', textTransform: 'uppercase', letterSpacing: 1 }}>
                 <Award size={15} color="#f59e0b" />
-                <span>HIGHLIGHT PEKERJAAN STRATEGIS PER BIDANG</span>
+                <span>SOROTAN PEKERJAAN STRATEGIS DAERAH</span>
               </div>
               <h2 style={{ fontSize: 26, fontWeight: 900, color: '#0f2c59', marginTop: 4 }}>
-                Pekerjaan dengan Alokasi Nominal Tertinggi (Top 3 Per Bidang)
+                12 Pekerjaan Unggulan Bidang Teknis DINPUTARU
               </h2>
               <p style={{ fontSize: 13.5, color: '#64748b', margin: '4px 0 0' }}>
-                Pemantauan paket strategis berskala prioritas tinggi untuk pengawasan transparansi pembangunan daerah.
+                Daftar pekerjaan prioritas dari masing-masing bidang teknis untuk pemantauan keterbukaan progres infrastruktur daerah.
               </p>
             </div>
 
             {/* Search Input */}
-            <div style={{ position: 'relative', width: 300, maxWidth: '100%' }}>
+            <div style={{ position: 'relative', width: 320, maxWidth: '100%' }}>
               <Search size={16} color="#94a3b8" style={{ position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)' }} />
               <input
                 type="text"
@@ -900,59 +858,13 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 placeholder="Cari pekerjaan / lokasi..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                style={{ paddingLeft: 36, height: 40, fontSize: 13, background: '#ffffff' }}
+                style={{ paddingLeft: 36, height: 40, fontSize: 13, background: '#ffffff', borderRadius: 8 }}
               />
             </div>
           </div>
 
-          {/* Bidang Filter Tabs */}
-          <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 8, marginBottom: 24 }}>
-            <button
-              type="button"
-              onClick={() => setSelectedBidang('ALL')}
-              style={{
-                padding: '8px 16px',
-                borderRadius: 9999,
-                fontSize: 13,
-                fontWeight: 700,
-                border: 'none',
-                cursor: 'pointer',
-                background: selectedBidang === 'ALL' ? '#0f2c59' : '#ffffff',
-                color: selectedBidang === 'ALL' ? '#ffffff' : '#475569',
-                boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
-              }}
-            >
-              Semua 4 Bidang Teknis
-            </button>
-
-            {BIDANG_LIST.filter((b) => b.id !== 'sekretariat').map((b) => {
-              const isSelected = selectedBidang === b.id;
-              return (
-                <button
-                  key={b.id}
-                  type="button"
-                  onClick={() => setSelectedBidang(b.id)}
-                  style={{
-                    padding: '8px 16px',
-                    borderRadius: 9999,
-                    fontSize: 13,
-                    fontWeight: 700,
-                    border: 'none',
-                    cursor: 'pointer',
-                    background: isSelected ? b.warna : '#ffffff',
-                    color: isSelected ? '#ffffff' : '#475569',
-                    boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
-                    whiteSpace: 'nowrap'
-                  }}
-                >
-                  {b.id === 'sda_bk' ? 'SDA-BK' : b.singkatan}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Top 3 Cards Grouped By Bidang */}
-          {top3PerBidang.length === 0 ? (
+          {/* LANGSUNG GRID 12 KARTU PEKERJAAN (TANPA TABS KATEGORI BIDANG, TANPA LABEL TOP 3, TANPA NOMINAL) */}
+          {highlight12Projects.length === 0 ? (
             <div
               style={{
                 background: '#ffffff',
@@ -963,183 +875,146 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
               }}
             >
               <Building2 size={36} color="#cbd5e1" style={{ margin: '0 auto 12px' }} />
-              <h4 style={{ fontSize: 16, fontWeight: 700, color: '#0f2c59' }}>Tidak ada paket pekerjaan yang ditemukan</h4>
-              <p style={{ fontSize: 13, marginTop: 4 }}>Coba ubah kata kunci pencarian atau reset filter bidang.</p>
+              <h4 style={{ fontSize: 16, fontWeight: 700, color: '#0f2c59' }}>Tidak ada paket pekerjaan yang cocok</h4>
+              <p style={{ fontSize: 13, marginTop: 4 }}>Coba ubah kata kunci pencarian.</p>
             </div>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
-              {top3PerBidang.map((group) => {
-                const b = group.bidang;
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: 20 }}>
+              {highlight12Projects.map((p) => {
+                const b = BIDANG_LIST.find((x) => x.id === p.bidangId);
+                const fRealisasi = parseFloat(p.dataFisik?.progresRealisasi || 0);
+                const pelaksana = p.dataKontrak?.namaPenyedia || '-';
 
                 return (
-                  <div key={b.id}>
-                    {/* Header Group Bidang */}
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-                      <span
+                  <div
+                    key={p.id}
+                    style={{
+                      background: '#ffffff',
+                      borderRadius: 16,
+                      border: '1px solid #e2e8f0',
+                      boxShadow: '0 4px 14px rgba(0,0,0,0.04)',
+                      overflow: 'hidden',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      transition: 'transform 0.2s, box-shadow 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-3px)';
+                      e.currentTarget.style.boxShadow = '0 12px 24px rgba(15, 44, 89, 0.08)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 4px 14px rgba(0,0,0,0.04)';
+                    }}
+                  >
+                    <div style={{ padding: '22px 24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                      {/* Badge Bidang & Metode */}
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+                        <span
+                          style={{
+                            fontSize: 11.5,
+                            fontWeight: 800,
+                            padding: '4px 10px',
+                            borderRadius: 6,
+                            background: b?.bgLight || '#e0f2fe',
+                            color: b?.warna || '#0284c7',
+                            border: `1px solid ${b?.warna || '#0284c7'}33`
+                          }}
+                        >
+                          {b?.nama || p.bidangId}
+                        </span>
+
+                        <span style={{ fontSize: 11.5, color: '#64748b', fontWeight: 600 }}>
+                          {p.metodePemilihan || p.tipePengadaan || 'Pengadaan'}
+                        </span>
+                      </div>
+
+                      {/* Judul Pekerjaan */}
+                      <h4
                         style={{
-                          background: b.bgLight,
-                          color: b.warna,
+                          fontSize: 15.5,
                           fontWeight: 800,
-                          fontSize: 12,
-                          padding: '4px 10px',
-                          borderRadius: 6,
-                          border: `1px solid ${b.warna}33`
+                          color: '#0f2c59',
+                          margin: '0 0 10px',
+                          lineHeight: 1.45,
+                          minHeight: 44
                         }}
                       >
-                        {b.id === 'sda_bk' ? 'SDA-BK' : b.singkatan}
-                      </span>
-                      <h3 style={{ fontSize: 18, fontWeight: 800, color: '#0f2c59', margin: 0 }}>
-                        {b.nama}
-                      </h3>
-                      <span style={{ fontSize: 12, color: '#64748b' }}>
-                        (Top 3 dari {group.totalPaket} Paket)
-                      </span>
-                    </div>
+                        {p.namaPaket}
+                      </h4>
 
-                    {/* 3 Cards Grid */}
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 20 }}>
-                      {group.items.map((p) => {
-                        const fRealisasi = parseFloat(p.dataFisik?.progresRealisasi || 0);
-                        const kNilai = p.dataKontrak?.nilaiKontrak || 0;
-                        const pagu = parseFloat(p.paguAnggaran) || 0;
-                        const displayNominal = kNilai > 0 ? kNilai : pagu;
-                        const pelaksana = p.dataKontrak?.namaPenyedia || '-';
+                      {/* Sub Kegiatan */}
+                      <div style={{ fontSize: 12, color: '#64748b', marginBottom: 14 }}>
+                        Sub Kegiatan: <strong style={{ color: '#334155' }}>{p.subKegiatan || p.subBagian || '-'}</strong>
+                      </div>
 
-                        return (
+                      {/* Pelaksana & Lokasi Box (Tanpa Nominal) */}
+                      <div
+                        style={{
+                          background: '#f8fafc',
+                          border: '1px solid #e2e8f0',
+                          borderRadius: 10,
+                          padding: '12px 14px',
+                          marginBottom: 16
+                        }}
+                      >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, color: '#64748b', marginBottom: 6 }}>
+                          <span>Pelaksana:</span>
+                          <span style={{ fontWeight: 700, color: '#0f2c59', textAlign: 'right', maxWidth: '65%' }}>
+                            {pelaksana}
+                          </span>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, color: '#64748b' }}>
+                          <span>Lokasi:</span>
+                          <span style={{ fontWeight: 600, color: '#334155', textAlign: 'right', maxWidth: '65%' }}>
+                            {p.desa ? `${p.desa}, Kec. ${p.kecamatan}` : (p.kecamatan || 'Kabupaten Demak')}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Progres Fisik Lapangan */}
+                      <div style={{ marginTop: 'auto', marginBottom: 16 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 5 }}>
+                          <span style={{ color: '#64748b', fontWeight: 600 }}>Realisasi Fisik Lapangan</span>
+                          <span style={{ fontWeight: 800, color: fRealisasi >= 100 ? '#15803d' : '#0284c7' }}>
+                            {fRealisasi}% Selesai
+                          </span>
+                        </div>
+                        <div style={{ height: 8, background: '#e2e8f0', borderRadius: 9999, overflow: 'hidden' }}>
                           <div
-                            key={p.id}
                             style={{
-                              background: '#ffffff',
-                              borderRadius: 16,
-                              border: '1px solid #e2e8f0',
-                              boxShadow: '0 4px 14px rgba(0,0,0,0.04)',
-                              overflow: 'hidden',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              transition: 'transform 0.2s, box-shadow 0.2s'
+                              width: `${Math.min(100, fRealisasi)}%`,
+                              height: '100%',
+                              background: fRealisasi >= 100 ? '#10b981' : '#0284c7',
+                              borderRadius: 9999
                             }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.transform = 'translateY(-3px)';
-                              e.currentTarget.style.boxShadow = '0 12px 24px rgba(15, 44, 89, 0.08)';
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.transform = 'translateY(0)';
-                              e.currentTarget.style.boxShadow = '0 4px 14px rgba(0,0,0,0.04)';
-                            }}
-                          >
-                            <div style={{ padding: '20px 22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                              {/* Header Card: Rank Badge & Sub Kegiatan */}
-                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-                                <span
-                                  style={{
-                                    fontSize: 11,
-                                    fontWeight: 800,
-                                    padding: '3px 8px',
-                                    borderRadius: 6,
-                                    background: p.rankNominal === 1 ? '#fef3c7' : p.rankNominal === 2 ? '#e0f2fe' : '#f1f5f9',
-                                    color: p.rankNominal === 1 ? '#b45309' : p.rankNominal === 2 ? '#0369a1' : '#475569',
-                                    border: p.rankNominal === 1 ? '1px solid #fde68a' : '1px solid #cbd5e1'
-                                  }}
-                                >
-                                  {p.rankNominal === 1 ? '⭐ Peringkat #1 Nominal Tertinggi' : `Peringkat #${p.rankNominal} Tertinggi`}
-                                </span>
-                                <span style={{ fontSize: 11.5, color: '#64748b', fontWeight: 600 }}>
-                                  {p.metodePemilihan || p.tipePengadaan || 'Pengadaan'}
-                                </span>
-                              </div>
+                          />
+                        </div>
+                      </div>
 
-                              {/* Title */}
-                              <h4
-                                style={{
-                                  fontSize: 15,
-                                  fontWeight: 800,
-                                  color: '#0f2c59',
-                                  margin: '0 0 10px',
-                                  lineHeight: 1.4,
-                                  minHeight: 42
-                                }}
-                              >
-                                {p.namaPaket}
-                              </h4>
-
-                              {/* Sub Kegiatan */}
-                              <div style={{ fontSize: 12, color: '#64748b', marginBottom: 14 }}>
-                                Sub: <strong>{p.subKegiatan || p.subBagian || '-'}</strong>
-                              </div>
-
-                              {/* Nominal Box (Full Unit Format down to Satuan) */}
-                              <div
-                                style={{
-                                  background: '#f8fafc',
-                                  border: '1px solid #e2e8f0',
-                                  borderRadius: 10,
-                                  padding: '12px 14px',
-                                  marginBottom: 14
-                                }}
-                              >
-                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
-                                  <span style={{ fontSize: 11.5, color: '#64748b' }}>
-                                    {kNilai > 0 ? 'Nilai Kontrak:' : 'Pagu Anggaran:'}
-                                  </span>
-                                  <span style={{ fontSize: 13.5, fontWeight: 900, color: '#0f2c59' }}>
-                                    Rp {displayNominal.toLocaleString('id-ID')}
-                                  </span>
-                                </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11.5, color: '#64748b' }}>
-                                  <span>Pelaksana:</span>
-                                  <span style={{ fontWeight: 700, color: '#334155' }}>
-                                    {pelaksana}
-                                  </span>
-                                </div>
-                              </div>
-
-                              {/* Progres Fisik Bar */}
-                              <div style={{ marginTop: 'auto', marginBottom: 16 }}>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
-                                  <span style={{ color: '#64748b', fontWeight: 600 }}>Realisasi Fisik</span>
-                                  <span style={{ fontWeight: 800, color: fRealisasi >= 100 ? '#15803d' : '#0284c7' }}>
-                                    {fRealisasi}%
-                                  </span>
-                                </div>
-                                <div style={{ height: 7, background: '#e2e8f0', borderRadius: 9999, overflow: 'hidden' }}>
-                                  <div
-                                    style={{
-                                      width: `${Math.min(100, fRealisasi)}%`,
-                                      height: '100%',
-                                      background: fRealisasi >= 100 ? '#10b981' : '#0284c7',
-                                      borderRadius: 9999
-                                    }}
-                                  />
-                                </div>
-                              </div>
-
-                              {/* Button Detail */}
-                              <button
-                                type="button"
-                                onClick={() => setActiveProjectDetail(p)}
-                                style={{
-                                  width: '100%',
-                                  padding: '9px',
-                                  borderRadius: 8,
-                                  fontSize: 12.5,
-                                  fontWeight: 700,
-                                  color: '#0f2c59',
-                                  background: '#ffffff',
-                                  border: '1.5px solid #cbd5e1',
-                                  cursor: 'pointer',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center',
-                                  gap: 6
-                                }}
-                              >
-                                <Eye size={14} />
-                                <span>Lihat Rincian Publik & Foto</span>
-                              </button>
-                            </div>
-                          </div>
-                        );
-                      })}
+                      {/* Button Detail Publik */}
+                      <button
+                        type="button"
+                        onClick={() => setActiveProjectDetail(p)}
+                        style={{
+                          width: '100%',
+                          padding: '10px',
+                          borderRadius: 8,
+                          fontSize: 12.5,
+                          fontWeight: 700,
+                          color: '#0f2c59',
+                          background: '#ffffff',
+                          border: '1.5px solid #cbd5e1',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: 6
+                        }}
+                      >
+                        <Eye size={14} />
+                        <span>Lihat Rincian Publik & Foto</span>
+                      </button>
                     </div>
                   </div>
                 );
@@ -1149,7 +1024,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </div>
       </section>
 
-      {/* 7. SECTION: GEOGRAFIS & PEMETAAN (HANYA MUNCUL JIKA TOGGLE ON DI SUPERADMIN) */}
+      {/* 7. SECTION: GEOGRAFIS & PEMETAAN (Hanya tampil jika toggle ON di Superadmin) */}
       {systemSettings?.showPetaKoordinat === true && (
         <section id="peta" style={{ padding: '64px 24px', maxWidth: 1280, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
@@ -1324,16 +1199,16 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </div>
       </footer>
 
-      {/* 9. PUBLIC PROJECT DETAIL MODAL */}
+      {/* 9. PUBLIC PROJECT DETAIL MODAL (TANPA NOMINAL) */}
       {activeProjectDetail && (
         <div className="modal-overlay" onClick={() => setActiveProjectDetail(null)}>
-          <div className="modal-dialog" style={{ maxWidth: 720 }} onClick={(e) => e.stopPropagation()}>
+          <div className="modal-dialog" style={{ maxWidth: 680 }} onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <div>
                 <span style={{ fontSize: 11, fontWeight: 700, color: '#0284c7', textTransform: 'uppercase' }}>
-                  INFORMASI LENGKAP PEKERJAAN
+                  INFORMASI PEKERJAAN DAERAH
                 </span>
-                <h3 style={{ fontSize: 17, color: '#0f2c59', marginTop: 2, lineHeight: 1.35 }}>
+                <h3 style={{ fontSize: 16.5, color: '#0f2c59', marginTop: 2, lineHeight: 1.35 }}>
                   {activeProjectDetail.namaPaket}
                 </h3>
               </div>
@@ -1343,7 +1218,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             </div>
 
             <div className="modal-body">
-              {/* Ringkasan Anggaran & Rekanan */}
+              {/* Ringkasan Data Pelaksanaan (Tanpa Nominal) */}
               <div
                 style={{
                   display: 'grid',
@@ -1357,18 +1232,16 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 }}
               >
                 <div>
-                  <div style={{ fontSize: 11, color: '#64748b' }}>PAGU ANGGARAN:</div>
-                  <div style={{ fontSize: 14, fontWeight: 900, color: '#0f2c59', marginTop: 2 }}>
-                    Rp {(parseFloat(activeProjectDetail.paguAnggaran) || 0).toLocaleString('id-ID')}
+                  <div style={{ fontSize: 11, color: '#64748b' }}>BIDANG DINAS:</div>
+                  <div style={{ fontSize: 13, fontWeight: 800, color: '#0f2c59', marginTop: 2 }}>
+                    {BIDANG_LIST.find((b) => b.id === activeProjectDetail.bidangId)?.nama || activeProjectDetail.bidangId}
                   </div>
                 </div>
 
                 <div>
-                  <div style={{ fontSize: 11, color: '#64748b' }}>NILAI KONTRAK:</div>
-                  <div style={{ fontSize: 14, fontWeight: 900, color: '#16a34a', marginTop: 2 }}>
-                    {activeProjectDetail.dataKontrak?.nilaiKontrak > 0
-                      ? `Rp ${activeProjectDetail.dataKontrak.nilaiKontrak.toLocaleString('id-ID')}`
-                      : 'Tahap Pemilihan'}
+                  <div style={{ fontSize: 11, color: '#64748b' }}>SUB KEGIATAN:</div>
+                  <div style={{ fontSize: 12.5, fontWeight: 700, color: '#334155', marginTop: 2 }}>
+                    {activeProjectDetail.subKegiatan || activeProjectDetail.subBagian || '-'}
                   </div>
                 </div>
 
@@ -1387,37 +1260,16 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 </div>
               </div>
 
-              {/* Status Progres Fisik & Keuangan */}
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                  gap: 14,
-                  marginBottom: 16
-                }}
-              >
-                <div style={{ background: '#f0fdf4', padding: '14px', borderRadius: 10, border: '1px solid #bbf7d0' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ fontSize: 12, fontWeight: 700, color: '#166534' }}>Progres Fisik Lapangan:</span>
-                    <span style={{ fontSize: 18, fontWeight: 900, color: '#15803d' }}>
-                      {activeProjectDetail.dataFisik?.progresRealisasi || 0}%
-                    </span>
-                  </div>
-                  <div style={{ fontSize: 11.5, color: '#475569', marginTop: 4 }}>
-                    Rencana: {activeProjectDetail.dataFisik?.progresRencana || 0}% • Status: <strong>{activeProjectDetail.dataFisik?.statusDeviasi || 'Aman'}</strong>
-                  </div>
+              {/* Status Progres Fisik Lapangan */}
+              <div style={{ background: '#f0fdf4', padding: '14px 16px', borderRadius: 10, border: '1px solid #bbf7d0', marginBottom: 16 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ fontSize: 12.5, fontWeight: 700, color: '#166534' }}>Progres Fisik Lapangan:</span>
+                  <span style={{ fontSize: 18, fontWeight: 900, color: '#15803d' }}>
+                    {activeProjectDetail.dataFisik?.progresRealisasi || 0}%
+                  </span>
                 </div>
-
-                <div style={{ background: '#eff6ff', padding: '14px', borderRadius: 10, border: '1px solid #bfdbfe' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ fontSize: 12, fontWeight: 700, color: '#1e40af' }}>Realisasi Keuangan (SP2D):</span>
-                    <span style={{ fontSize: 18, fontWeight: 900, color: '#1d4ed8' }}>
-                      {activeProjectDetail.dataKeuangan?.persenKeuangan || 0}%
-                    </span>
-                  </div>
-                  <div style={{ fontSize: 11.5, color: '#475569', marginTop: 4 }}>
-                    Total Cair: <strong>Rp {(activeProjectDetail.dataKeuangan?.totalPencairan || 0).toLocaleString('id-ID')}</strong>
-                  </div>
+                <div style={{ fontSize: 11.5, color: '#475569', marginTop: 4 }}>
+                  Target Rencana: {activeProjectDetail.dataFisik?.progresRencana || 0}% • Status Deviasi: <strong>{activeProjectDetail.dataFisik?.statusDeviasi || 'Aman'}</strong>
                 </div>
               </div>
 

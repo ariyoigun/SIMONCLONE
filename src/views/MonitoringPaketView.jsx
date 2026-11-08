@@ -77,7 +77,14 @@ const KATEGORI_CONFIG = [
 ];
 
 const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate }) => {
-  const { projects = [], canEditProject, currentUser, updateProject } = useApp();
+  const {
+    paketPekerjaanList = [],
+    accessiblePaketPekerjaan = [],
+    canEditProject,
+    currentUser,
+    updatePaketPekerjaan
+  } = useApp();
+  const activeList = accessiblePaketPekerjaan.length > 0 ? accessiblePaketPekerjaan : paketPekerjaanList;
 
   const [activeKategori, setActiveKategori] = useState('ALL');
   const [viewMode, setViewMode] = useState('fisik'); // 'fisik' | 'pencairan' | 'semua'
@@ -88,7 +95,7 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
 
   // Filter 478 official monitoring packages, strictly ordered by Excel order
   const filteredList = useMemo(() => {
-    return projects.filter((p) => {
+    return activeList.filter((p) => {
       // 1. Filter Kategori
       if (activeKategori !== 'ALL') {
         const catCfg = KATEGORI_CONFIG.find((k) => k.id === activeKategori);
@@ -233,7 +240,7 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
       updatedTahap.berkasMasuk = true;
     }
 
-    updateProject(projectId, {
+    updatePaketPekerjaan(projectId, {
       tahapanPencairan: updatedTahap
     });
 
@@ -894,3 +901,4 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
 };
 
 export default MonitoringPaketView;
+

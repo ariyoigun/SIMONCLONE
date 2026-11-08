@@ -37,6 +37,7 @@ const Sidebar = ({
     activeTab,
     setActiveTab,
     accessibleProjects,
+    paketPekerjaanList = [],
     activeYear,
     currentUser,
     systemSettings,
@@ -120,6 +121,25 @@ const Sidebar = ({
               </span>
             </a>
 
+            <a
+              href="#master_paket"
+              className={`nav-item ${activeTab === 'master_paket' ? 'active' : ''}`}
+              onClick={(e) => {
+                e.preventDefault();
+                setActiveTab('master_paket');
+              }}
+              style={{
+                background: activeTab === 'master_paket' ? 'rgba(217, 119, 6, 0.15)' : undefined,
+                fontWeight: activeTab === 'master_paket' ? 800 : undefined
+              }}
+            >
+              <FolderTree className="icon" style={{ color: '#d97706' }} />
+              <span>Master Data Paket Pekerjaan</span>
+              <span className="nav-badge-count" style={{ background: '#d97706', color: '#fff' }}>
+                {paketPekerjaanList.length || 478}
+              </span>
+            </a>
+
             {onOpenImportExportModal && (
               <button
                 type="button"
@@ -176,7 +196,7 @@ const Sidebar = ({
               className="nav-badge-count"
               style={{ background: '#10b981', color: '#fff' }}
             >
-              {accessibleProjects.length}
+              {paketPekerjaanList.length || 478}
             </span>
           </a>
         )}

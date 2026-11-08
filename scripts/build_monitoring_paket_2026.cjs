@@ -190,3 +190,4 @@ export const MONITORING_PAKET_2026 = ${JSON.stringify(packages, null, 2)};
 
 fs.writeFileSync('src/data/monitoringPaket2026.js', fileContent, 'utf-8');
 console.log('Wrote src/data/monitoringPaket2026.js successfully!');
+

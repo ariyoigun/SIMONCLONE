@@ -40,3 +40,4 @@ if (!c.includes('showGaleriSlideshow:')) {
 
 fs.writeFileSync('src/data/constants.js', c, 'utf8');
 console.log('constants.js updated successfully!');
+

@@ -55,3 +55,4 @@ if (!c.includes("show_galeri_slideshow = :show_galeri_slideshow")) {
 
 fs.writeFileSync('public/api/api.php', c, 'utf8');
 console.log('public/api/api.php updated successfully!');
+

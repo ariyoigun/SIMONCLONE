@@ -33,3 +33,4 @@ if (!c.includes('MonitoringPaketView')) {
 } else {
   console.log('App.jsx already contains MonitoringPaketView');
 }
+

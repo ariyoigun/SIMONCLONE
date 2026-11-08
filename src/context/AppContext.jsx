@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { INITIAL_USERS, INITIAL_PROJECTS } from '../data/initialData';
+import { MONITORING_PAKET_2026 } from '../data/monitoringPaket2026';
 import {
   DEFAULT_YEARS,
   ROLE_DEFINITIONS,
@@ -31,14 +32,15 @@ export const AppProvider = ({ children }) => {
   // Data Versioning & Auto-Migration for Real 2026 Dataset & Users
   if (typeof window !== 'undefined') {
     const currentVersion = localStorage.getItem('simon_app_version_2026');
-    if (currentVersion !== '2026_real_v4') {
+    if (currentVersion !== '2026_real_v5') {
       localStorage.removeItem('simon_users');
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_projects_v2');
+      localStorage.removeItem('simon_paket_pekerjaan_2026');
       localStorage.removeItem('simon_sipd_programs');
       localStorage.removeItem('simon_sipd_kegiatans');
       localStorage.removeItem('simon_sipd_sub_kegiatans');
-      localStorage.setItem('simon_app_version_2026', '2026_real_v4');
+      localStorage.setItem('simon_app_version_2026', '2026_real_v5');
     }
   }
 
@@ -419,6 +421,54 @@ export const AppProvider = ({ children }) => {
     return INITIAL_PROJECTS.map(mapProjectClean);
   });
 
+  
+  // Master Data Paket Pekerjaan TA 2026 (478 Paket dari Monitoring Paket 2026.xlsx)
+  const [paketPekerjaanList, setPaketPekerjaanList] = useState(() => {
+    const saved = localStorage.getItem('simon_paket_pekerjaan_2026');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      } catch (e) {}
+    }
+    return MONITORING_PAKET_2026;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('simon_paket_pekerjaan_2026', JSON.stringify(paketPekerjaanList));
+  }, [paketPekerjaanList]);
+
+  const updatePaketPekerjaan = (id, updatedFields) => {
+    setPaketPekerjaanList((prev) => {
+      const next = prev.map((item) => (item.id === id ? { ...item, ...updatedFields } : item));
+      const updated = next.find((item) => item.id === id);
+      if (updated) syncPaketToRemote(updated);
+      return next;
+    });
+  };
+
+  const addPaketPekerjaan = (newPaket) => {
+    setPaketPekerjaanList((prev) => [newPaket, ...prev]);
+    syncPaketToRemote(newPaket);
+  };
+
+  const deletePaketPekerjaan = (id) => {
+    setPaketPekerjaanList((prev) => prev.filter((item) => item.id !== id));
+    deletePaketFromRemote(id);
+  };
+
+  const accessiblePaketPekerjaan = React.useMemo(() => {
+    if (!currentUser) return paketPekerjaanList;
+    const roleDef = ROLE_DEFINITIONS[currentUser.role] || {};
+    if (roleDef.canSeeAllBidang || currentUser.role === 'superadmin') {
+      return paketPekerjaanList;
+    }
+    if (currentUser.bidangId) {
+      return paketPekerjaanList.filter((p) => p.bidangId === currentUser.bidangId);
+    }
+    return paketPekerjaanList;
+  }, [paketPekerjaanList, currentUser]);
+
   // Active Navigation Tab
   // 'dashboard' | 'prakontrak' | 'fisik' | 'keuangan' | 'spj_keuangan' | 'laporan'
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -515,6 +565,9 @@ export const AppProvider = ({ children }) => {
             if (Array.isArray(json.data.projects) && json.data.projects.length > 0) {
               setProjects(json.data.projects.map(mapProjectClean));
             }
+            if (Array.isArray(json.data.paketPekerjaanList) && json.data.paketPekerjaanList.length > 0) {
+              setPaketPekerjaanList(json.data.paketPekerjaanList);
+            }
             if (json.data.systemSettings) {
               setSystemSettings((prev) => ({ ...prev, ...json.data.systemSettings }));
             }
@@ -563,6 +616,26 @@ export const AppProvider = ({ children }) => {
   const deleteProjectFromRemote = async (projectId) => {
     try {
       await fetch(`/api/api.php?action=delete_project&id=${encodeURIComponent(projectId)}`);
+    } catch (e) {
+      // offline fallback
+    }
+  };
+
+  const syncPaketToRemote = async (paket) => {
+    try {
+      await fetch('/api/api.php?action=save_paket_pekerjaan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(paket)
+      });
+    } catch (e) {
+      // offline fallback
+    }
+  };
+
+  const deletePaketFromRemote = async (paketId) => {
+    try {
+      await fetch('/api/api.php?action=delete_paket_pekerjaan&id=' + encodeURIComponent(paketId));
     } catch (e) {
       // offline fallback
     }
