@@ -136,52 +136,161 @@ const ExecutiveDashboard = ({ onOpenProjectModal, onViewProject, onQuickUpdate }
       {paketKritis.length > 0 && (
         <div
           style={{
-            background: 'linear-gradient(90deg, #fef2f2, #fff1f2)',
-            border: '1px solid #fecaca',
-            borderRadius: 12,
+            background: 'linear-gradient(135deg, #fff5f5 0%, #fef2f2 100%)',
+            border: '1.5px solid #fecaca',
+            borderRadius: 14,
             padding: '16px 20px',
-            marginBottom: 24,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            boxShadow: '0 2px 6px rgba(220, 38, 38, 0.08)'
+            marginBottom: 22,
+            boxShadow: '0 2px 8px rgba(220, 38, 38, 0.05)'
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            <div
-              style={{
-                width: 40,
-                height: 40,
-                borderRadius: '50%',
-                background: '#fee2e2',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#dc2626'
-              }}
-            >
-              <AlertTriangle size={22} />
+          {/* Header Row */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: 10,
+              marginBottom: 12
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div
+                style={{
+                  width: 32,
+                  height: 32,
+                  borderRadius: 8,
+                  background: '#fee2e2',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#dc2626',
+                  flexShrink: 0
+                }}
+              >
+                <AlertTriangle size={18} />
+              </div>
+              <div>
+                <div style={{ fontSize: 13.5, fontWeight: 800, color: '#991b1b', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                  <span>Peringatan: Pekerjaan Mengalami Keterlambatan Kritis</span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      fontWeight: 800,
+                      background: '#dc2626',
+                      color: '#ffffff',
+                      padding: '1px 8px',
+                      borderRadius: 9999
+                    }}
+                  >
+                    {paketKritis.length} Paket (Deviasi &lt; -5%)
+                  </span>
+                </div>
+                <div style={{ fontSize: 11.5, color: '#b91c1c', marginTop: 1 }}>
+                  Memerlukan evaluasi Show Cause Meeting (SCM) bersama PPK dan Penyedia Jasa.
+                </div>
+              </div>
             </div>
-            <div>
-              <div style={{ fontSize: 14, fontWeight: 800, color: '#991b1b' }}>
-                Peringatan: Terdapat {paketKritis.length} Pekerjaan Mengalami Keterlambatan Kritis (Deviasi &lt; -5%)
-              </div>
-              <div style={{ fontSize: 12.5, color: '#b91c1c', marginTop: 2 }}>
-                Pekerjaan di bawah ini memerlukan rapat pembuktian keterlambatan (Show Cause Meeting / SCM) bersama PPK dan Penyedia Jasa.
-              </div>
+
+            <div style={{ fontSize: 11, color: '#991b1b', fontWeight: 600 }}>
+              Klik pekerjaan untuk tinjau detil:
             </div>
           </div>
-          <div style={{ display: 'flex', gap: 8 }}>
-            {paketKritis.map((k) => (
-              <button
-                key={k.id}
-                className="btn btn-outline btn-sm"
-                style={{ borderColor: '#fca5a5', color: '#991b1b', background: '#fff' }}
-                onClick={() => onViewProject(k)}
-              >
-                Tinjau {k.id}
-              </button>
-            ))}
+
+          {/* Grid Pills per Bidang with Distinct Colors */}
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 8
+            }}
+          >
+            {paketKritis.map((k) => {
+              const b = BIDANG_LIST.find((x) => x.id === k.bidangId);
+              const bColor = b?.warna || '#dc2626';
+              const bBg = b?.bgLight || 'rgba(220, 38, 38, 0.08)';
+              const bSingkatan = b?.id === 'sda_bk' ? 'SDA-BK' : (b?.singkatan || k.bidangId);
+              const deviasi = k.dataFisik?.deviasiFisik || 0;
+
+              return (
+                <button
+                  key={k.id}
+                  type="button"
+                  onClick={() => onViewProject(k)}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    padding: '6px 12px',
+                    borderRadius: 8,
+                    background: '#ffffff',
+                    border: `1.5px solid ${bColor}66`,
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                    maxWidth: '100%'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = bColor;
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                    e.currentTarget.style.boxShadow = '0 3px 8px rgba(0,0,0,0.08)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = `${bColor}66`;
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)';
+                  }}
+                  title={`${k.namaPaket}\nBidang: ${b?.nama || k.bidangId}\nDeviasi: ${deviasi}%`}
+                >
+                  {/* Badge Bidang */}
+                  <span
+                    style={{
+                      fontSize: 10,
+                      fontWeight: 800,
+                      padding: '2px 6px',
+                      borderRadius: 4,
+                      background: bBg,
+                      color: bColor,
+                      border: `1px solid ${bColor}33`,
+                      whiteSpace: 'nowrap'
+                    }}
+                  >
+                    {bSingkatan}
+                  </span>
+
+                  {/* Nama Paket Truncated */}
+                  <span
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 700,
+                      color: '#1e293b',
+                      maxWidth: 220,
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis'
+                    }}
+                  >
+                    {k.namaPaket}
+                  </span>
+
+                  {/* Deviasi Pill */}
+                  <span
+                    style={{
+                      fontSize: 11,
+                      fontWeight: 800,
+                      color: '#dc2626',
+                      background: '#fee2e2',
+                      padding: '1px 6px',
+                      borderRadius: 4,
+                      whiteSpace: 'nowrap'
+                    }}
+                  >
+                    {deviasi}%
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
       )}

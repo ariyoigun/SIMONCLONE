@@ -1927,7 +1927,13 @@ export const AppProvider = ({ children }) => {
     updateSipdSubKegiatan,
     deleteSipdSubKegiatan,
     resetSipdToDefault,
-    canManageSipd,
+        canManageSipd,
+    // Master & Monitoring Paket Pekerjaan TA 2026 (478 Paket)
+    paketPekerjaanList,
+    accessiblePaketPekerjaan,
+    updatePaketPekerjaan,
+    addPaketPekerjaan,
+    deletePaketPekerjaan,
     // Projects
     projects,
     activeYearProjects,

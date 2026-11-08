@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import { BIDANG_LIST } from '../data/constants';
+import { MONITORING_PAKET_2026 } from '../data/monitoringPaket2026';
 import {
   Search,
   Filter,
@@ -52,7 +53,9 @@ const MasterPaketPekerjaanView = () => {
     canCreateProject
   } = useApp();
 
-  const dataList = paketPekerjaanList.length > 0 ? paketPekerjaanList : accessiblePaketPekerjaan;
+  const dataList = (paketPekerjaanList && paketPekerjaanList.length > 0)
+    ? paketPekerjaanList
+    : ((accessiblePaketPekerjaan && accessiblePaketPekerjaan.length > 0) ? accessiblePaketPekerjaan : MONITORING_PAKET_2026);
 
   const [activeKategori, setActiveKategori] = useState('ALL');
   const [selectedBidang, setSelectedBidang] = useState('ALL');

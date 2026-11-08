@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import { BIDANG_LIST } from '../data/constants';
+import { MONITORING_PAKET_2026 } from '../data/monitoringPaket2026';
 import {
   Search,
   Filter,
@@ -84,7 +85,9 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
     currentUser,
     updatePaketPekerjaan
   } = useApp();
-  const activeList = paketPekerjaanList.length > 0 ? paketPekerjaanList : accessiblePaketPekerjaan;
+  const activeList = (paketPekerjaanList && paketPekerjaanList.length > 0)
+    ? paketPekerjaanList
+    : ((accessiblePaketPekerjaan && accessiblePaketPekerjaan.length > 0) ? accessiblePaketPekerjaan : MONITORING_PAKET_2026);
 
   const [activeKategori, setActiveKategori] = useState('ALL');
   const [viewMode, setViewMode] = useState('fisik'); // 'fisik' | 'pencairan' | 'semua'
@@ -136,7 +139,7 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
 
       return true;
     });
-  }, [projects, activeKategori, selectedBidang, selectedMetode, searchQuery]);
+  }, [activeList, activeKategori, selectedBidang, selectedMetode, searchQuery]);
 
   // Summary Aggregates
   const stats = useMemo(() => {
@@ -227,7 +230,7 @@ const MonitoringPaketView = ({ onOpenProjectModal, onViewProject, onQuickUpdate 
 
   // Quick update pencairan stage (70% and 100%)
   const handleSavePencairanStage = (projectId, stageKey, value) => {
-    const target = projects.find((p) => p.id === projectId);
+    const target = activeList.find((p) => p.id === projectId);
     if (!target) return;
 
     const currentTahap = target.tahapanPencairan || {};

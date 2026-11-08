@@ -244,3 +244,4 @@ if (monViewContent.includes(oldCatMatch)) {
 fs.writeFileSync(monViewPath, monViewContent, 'utf8');
 
 console.log('ALL FIXES APPLIED SUCCESSFULLY!');
+
