@@ -68,6 +68,7 @@ export const ROLE_DEFINITIONS = {
     nama: 'Kepala Dinas',
     badge: 'Eksekutif Kepala Dinas',
     canSeeAllBidang: true,
+    canAccessPendapatan: true,
     canCreate: false,
     canEdit: false,
     canDelete: false,
@@ -84,6 +85,7 @@ export const ROLE_DEFINITIONS = {
     nama: 'Sekretaris Dinas',
     badge: 'Eksekutif Sekretaris',
     canSeeAllBidang: true,
+    canAccessPendapatan: true,
     canCreate: false,
     canEdit: false,
     canDelete: false,
@@ -188,6 +190,7 @@ export const ROLE_DEFINITIONS = {
     canManageSettings: false,
     canAccessSPJ: true,
     canEditSPJ: true,
+    canAccessPendapatan: true,
     readOnly: false,
     keterangan: 'Koordinator pengelolaan administrasi, SPJ keuangan, verifikasi berkas, dan pekerjaan kesekretariatan DINPUTARU.'
   },

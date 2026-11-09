@@ -257,7 +257,7 @@ const Sidebar = ({
           </a>
         )}
 
-        {hasMenuAccess('spj_keuangan') && canAccessSPJMenu && (
+        {hasMenuAccess('spj_keuangan') && (
           <a
             href="#spj_keuangan"
             className={`nav-item ${activeTab === 'spj_keuangan' ? 'active' : ''}`}

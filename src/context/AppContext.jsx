@@ -1218,11 +1218,28 @@ export const AppProvider = ({ children }) => {
     currentUser?.canInputPendapatan === true
   );
 
-  // Granular Menu Access Control
-  // Granular Menu Access Control
+  // Wewenang Akses Menu Pendapatan
+  const canAccessPendapatanMenu = Boolean(
+    currentUser?.role === 'superadmin' ||
+    currentUser?.role === 'kadin' ||
+    currentUser?.role === 'sekretaris' ||
+    currentUser?.role === 'koordinator_pendapatan' ||
+    currentUser?.canInputPendapatan === true ||
+    (Array.isArray(currentUser?.allowedMenus) && currentUser.allowedMenus.includes('pendapatan'))
+  );
+
+  // Granular Menu Access Control: Pimpinan (Superadmin, Kepala Dinas, Sekretaris Dinas) dapat mengakses & melihat seluruh menu
   const hasMenuAccess = (menuId) => {
     if (!currentUser) return false;
-    if (currentUser.role === 'superadmin') return true;
+
+    // Superadmin, Kepala Dinas, dan Sekretaris Dinas dapat mengakses dan melihat seluruh menu dinas
+    if (
+      currentUser.role === 'superadmin' ||
+      currentUser.role === 'kadin' ||
+      currentUser.role === 'sekretaris'
+    ) {
+      return true;
+    }
 
     // Default wewenang berdasarkan Peran Sistem (Role)
     if (menuId === 'spj_keuangan') {
@@ -1235,8 +1252,18 @@ export const AppProvider = ({ children }) => {
       return ['dashboard', 'pendapatan', 'laporan'].includes(menuId);
     }
 
-    // Menu Master Paket dan Monitoring Paket terbuka untuk seluruh staf dinas
-    if (menuId === 'monitoring_paket' || menuId === 'master_paket') {
+    // Menu Master Data, Monitoring, dan Laporan terbuka untuk seluruh staf dinas
+    if (
+      menuId === 'dashboard' ||
+      menuId === 'master_pekerjaan' ||
+      menuId === 'master_paket' ||
+      menuId === 'monitoring_paket' ||
+      menuId === 'prakontrak' ||
+      menuId === 'fisik' ||
+      menuId === 'keuangan' ||
+      menuId === 'sipd_summary' ||
+      menuId === 'laporan'
+    ) {
       return true;
     }
 
@@ -1989,6 +2016,7 @@ export const AppProvider = ({ children }) => {
     updatePendapatanTarget,
     resetPendapatanToDemo,
     canInputPendapatan,
+    canAccessPendapatanMenu,
     hasMenuAccess,
     formatCurrency
   };
