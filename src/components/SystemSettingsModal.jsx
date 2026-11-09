@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useApp } from '../context/AppContext';
 import {
+  Camera,
   Settings,
   Tag,
   Clock,
@@ -159,6 +160,51 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     }
   };
 
+  const compressSlideImage = (file, callback) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (re) => {
+      const img = new Image();
+      img.onload = () => {
+        const maxWidth = 1280;
+        let w = img.width;
+        let h = img.height;
+        if (w > maxWidth) {
+          h = Math.round((h * maxWidth) / w);
+          w = maxWidth;
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        const compressedBase64 = canvas.toDataURL('image/jpeg', 0.75);
+        callback(compressedBase64);
+      };
+      img.src = re.target.result;
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleUploadNewSlideFoto = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    compressSlideImage(file, (base64) => {
+      setNewSlideUnggulanInput((prev) => ({ ...prev, url: base64 }));
+    });
+  };
+
+  const handleUploadSlideFoto = (slideId, e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    compressSlideImage(file, (base64) => {
+      const currentList = systemSettings?.slideshowUnggulan || [];
+      const updated = currentList.map((s) => (s.id === slideId ? { ...s, url: base64 } : s));
+      updateSystemSettings({ slideshowUnggulan: updated });
+      alert('Foto pekerjaan unggulan berhasil diperbarui dan tersimpan ke database!');
+    });
+  };
+
   const handleAddSlideUnggulanSubmit = (e) => {
     e.preventDefault();
     if (!newSlideUnggulanInput.judul.trim()) return;
@@ -229,7 +275,7 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
   useEffect(() => {
     if (systemSettings) {
       setIdentityForm({
-        namaSistem: systemSettings.namaSistem || 'SIMON - SATUPUTARU',
+        namaSistem: systemSettings.namaSistem || 'SIMON - SATU PUTARU',
         subNama: (systemSettings.subNama || 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU').replace(/Dinas PUPR/g, 'DINPUTARU').replace(/PUPR/g, 'DINPUTARU'),
         instansi: systemSettings.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak',
         singkatanInstansi: systemSettings.singkatanInstansi || 'DINPUTARU Demak',
@@ -1207,7 +1253,7 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                           <AppLogo logoUrl={identityForm.logoUrl} size={36} shape="rounded" />
                           <div style={{ minWidth: 0 }}>
                             <div style={{ fontSize: 11.5, fontWeight: 800, color: '#f8fafc', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                              {identityForm.namaSistem || 'SIMON - SATUPUTARU'}
+                              {identityForm.namaSistem || 'SIMON - SATU PUTARU'}
                             </div>
                             <div style={{ fontSize: 10, color: '#94a3b8' }}>Sidebar Panel</div>
                           </div>
@@ -1712,14 +1758,26 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
 
                     <div style={{ gridColumn: '1 / -1' }}>
                       <label className="form-label">URL Foto Dokumentasi Slide (Format JPG/PNG)</label>
-                      <input
-                        type="url"
-                        className="form-control"
-                        placeholder="https://images.unsplash.com/... atau URL foto dinas"
-                        value={newSlideUnggulanInput.url}
-                        onChange={(e) => setNewSlideUnggulanInput({ ...newSlideUnggulanInput, url: e.target.value })}
-                        required
-                      />
+                      <div style={{ display: 'flex', gap: 8 }}>
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="https://... atau klik Upload Foto dari Perangkat"
+                          value={newSlideUnggulanInput.url}
+                          onChange={(e) => setNewSlideUnggulanInput({ ...newSlideUnggulanInput, url: e.target.value })}
+                          required
+                        />
+                        <label className="btn-secondary" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, cursor: 'pointer', whiteSpace: 'nowrap', padding: '8px 14px', fontSize: 12.5, fontWeight: 700, borderRadius: 8, background: '#f1f5f9', border: '1px solid #cbd5e1' }}>
+                          <Camera size={15} color="#0284c7" />
+                          <span>Upload Foto</span>
+                          <input
+                            type="file"
+                            accept="image/*"
+                            style={{ display: 'none' }}
+                            onChange={handleUploadNewSlideFoto}
+                          />
+                        </label>
+                      </div>
                     </div>
 
                     <div style={{ gridColumn: '1 / -1' }}>
@@ -1765,14 +1823,43 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                         alignItems: 'center'
                       }}
                     >
-                      <img
-                        src={slide.url}
-                        alt={slide.judul}
-                        style={{ width: 120, height: 80, objectFit: 'cover', borderRadius: 8, flexShrink: 0 }}
-                        onError={(e) => {
-                          e.currentTarget.src = 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=1200&auto=format&fit=crop&q=80';
-                        }}
-                      />
+                      <div style={{ position: 'relative', width: 120, height: 80, flexShrink: 0 }}>
+                        <img
+                          src={slide.url}
+                          alt={slide.judul}
+                          style={{ width: 120, height: 80, objectFit: 'cover', borderRadius: 8, display: 'block' }}
+                          onError={(e) => {
+                            e.currentTarget.src = 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=1200&auto=format&fit=crop&q=80';
+                          }}
+                        />
+                        <label
+                          style={{
+                            position: 'absolute',
+                            bottom: 4,
+                            right: 4,
+                            background: 'rgba(15, 44, 89, 0.88)',
+                            color: '#ffffff',
+                            borderRadius: 6,
+                            padding: '3px 6px',
+                            fontSize: 10,
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 3,
+                            boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+                          }}
+                          title="Ganti Foto Slide Ini"
+                        >
+                          <Camera size={11} /> Ganti Foto
+                          <input
+                            type="file"
+                            accept="image/*"
+                            style={{ display: 'none' }}
+                            onChange={(e) => handleUploadSlideFoto(slide.id, e)}
+                          />
+                        </label>
+                      </div>
                       <div style={{ flex: 1 }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
                           <span style={{ fontSize: 11, fontWeight: 800, padding: '2px 6px', borderRadius: 4, background: b?.bgLight || '#e0f2fe', color: b?.warna || '#0284c7' }}>
@@ -4738,7 +4825,7 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                   </h4>
                 </div>
                 <p style={{ fontSize: 12.5, color: '#475569', lineHeight: 1.6, marginTop: 0 }}>
-                  Aplikasi SIMON SATUPUTARU berjalan secara penuh di domain <strong>https://simon.satuputarudemak.id</strong>. Ikuti 5 tahapan praktis berikut untuk memastikan database terhubung 100%:
+                  Aplikasi SIMON SATU PUTARU berjalan secara penuh di domain <strong>https://simon.satuputarudemak.id</strong>. Ikuti 5 tahapan praktis berikut untuk memastikan database terhubung 100%:
                 </p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', gap: 14, marginTop: 14 }}>

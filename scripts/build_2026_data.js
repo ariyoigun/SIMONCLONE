@@ -496,7 +496,7 @@ for (let i = 8; i < rows.length; i++) {
         logEntries.push({
           id: `log_init_${pId}`,
           timestamp: '2026-10-31 15:00:00',
-          userName: 'Admin SIMON SATUPUTARU',
+          userName: 'Admin SIMON SATU PUTARU',
           userRole: 'Sistem Monitoring',
           action: 'Pendaftaran Paket APBD 2026',
           keterangan: `Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp ${Math.round(pagu).toLocaleString('id-ID')} (${jenisAnggaran}).`

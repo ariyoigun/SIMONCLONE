@@ -66,9 +66,9 @@ export const AppProvider = ({ children }) => {
             ...DEFAULT_SYSTEM_SETTINGS,
             ...parsed,
             namaSistem:
-              parsed.namaSistem === 'SIMON-PUPR Demak' || parsed.namaSistem === 'SIMON-PUPR'
-                ? 'SIMON - SATUPUTARU'
-                : parsed.namaSistem || 'SIMON - SATUPUTARU',
+              parsed.namaSistem === 'SIMON-PUPR Demak' || parsed.namaSistem === 'SIMON-PUPR' || parsed.namaSistem === 'SIMON - SATUPUTARU'
+                ? 'SIMON - SATU PUTARU'
+                : parsed.namaSistem || 'SIMON - SATU PUTARU',
             subNama: (parsed.subNama || DEFAULT_SYSTEM_SETTINGS.subNama).replace(/Dinas PUPR/g, 'DINPUTARU').replace(/PUPR/g, 'DINPUTARU'),
             maxPublicHighlights:
               parsed.maxPublicHighlights !== undefined ? parseInt(parsed.maxPublicHighlights, 10) : 10,
@@ -569,7 +569,27 @@ export const AppProvider = ({ children }) => {
               setPaketPekerjaanList(json.data.paketPekerjaanList);
             }
             if (json.data.systemSettings) {
-              setSystemSettings((prev) => ({ ...prev, ...json.data.systemSettings }));
+              setSystemSettings((prev) => {
+                const remote = json.data.systemSettings;
+                return {
+                  ...prev,
+                  ...remote,
+                  namaSistem: remote.namaSistem || remote.nama_sistem || prev.namaSistem,
+                  subNama: remote.subNama || remote.sub_nama || prev.subNama,
+                  instansi: remote.instansi || prev.instansi,
+                  pemerintahDaerah: remote.pemerintahDaerah || remote.pemerintah_daerah || prev.pemerintahDaerah,
+                  showGaleriSlideshow: remote.showGaleriSlideshow !== undefined ? remote.showGaleriSlideshow : prev.showGaleriSlideshow,
+                  showSlideshowUnggulan: remote.showSlideshowUnggulan !== undefined ? remote.showSlideshowUnggulan : prev.showSlideshowUnggulan,
+                  showPetaKoordinat: remote.showPetaKoordinat !== undefined ? remote.showPetaKoordinat : prev.showPetaKoordinat,
+                  showKurvaS: remote.showKurvaS !== undefined ? remote.showKurvaS : prev.showKurvaS,
+                  slideshowUnggulan: Array.isArray(remote.slideshowUnggulan) && remote.slideshowUnggulan.length > 0
+                    ? remote.slideshowUnggulan
+                    : (Array.isArray(prev.slideshowUnggulan) && prev.slideshowUnggulan.length > 0 ? prev.slideshowUnggulan : DEFAULT_SYSTEM_SETTINGS.slideshowUnggulan),
+                  galeri: Array.isArray(remote.galeri) && remote.galeri.length > 0
+                    ? remote.galeri
+                    : prev.galeri
+                };
+              });
             }
             if (Array.isArray(json.data.users) && json.data.users.length > 0) {
               setUsers(json.data.users);
@@ -760,7 +780,7 @@ export const AppProvider = ({ children }) => {
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_is_logged_in');
     } catch (e) {}
-    showToast('Anda telah keluar dari sistem SIMON - SATUPUTARU (DINPUTARU).', 'info');
+    showToast('Anda telah keluar dari sistem SIMON - SATU PUTARU (DINPUTARU).', 'info');
   };
 
   // Switch User
@@ -1021,10 +1041,11 @@ export const AppProvider = ({ children }) => {
 
   // Master System Settings & Landing Page Gallery Management (Superadmin)
   const updateSystemSettings = (newSettings) => {
-    setSystemSettings((prev) => ({
-      ...prev,
+    const updated = {
+      ...systemSettings,
       ...newSettings
-    }));
+    };
+    setSystemSettings(updated);
 
     // Otomatis sinkronkan nama & NIP Kepala Dinas dan Sekretaris ke daftar akun pengguna jika ada perubahan
     if (newSettings.namaKepalaDinas || newSettings.nipKepalaDinas || newSettings.namaSekretaris || newSettings.nipSekretaris) {
@@ -1050,7 +1071,7 @@ export const AppProvider = ({ children }) => {
     }
 
     showToast('Pengaturan, Identitas Sistem, & Pimpinan Dinas berhasil disimpan!', 'success');
-    syncSettingsToRemote({ ...systemSettings, ...newSettings });
+    syncSettingsToRemote(updated);
     return true;
   };
 

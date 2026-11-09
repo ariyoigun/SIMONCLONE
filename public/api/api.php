@@ -1,7 +1,7 @@
 <?php
 /**
  * ==============================================================================
- * BACKEND REST API BRIDGE: SIMON - SATUPUTARU
+ * BACKEND REST API BRIDGE: SIMON - SATU PUTARU
  * Endpoint Terpadu untuk Sinkronisasi Data MySQL Hostinger
  * ==============================================================================
  */
@@ -10,18 +10,28 @@ require_once __DIR__ . '/config.php';
 
 $action = isset($_GET['action']) ? $_GET['action'] : '';
 
-// Pastikan kolom avatar dan teks panjang berukuran LONGTEXT agar tidak terpotong (max 4GB)
-if ($pdo && ($action === 'health' || $action === 'login' || $action === 'save_user' || $action === 'save_settings' || $action === 'migrate_db')) {
+// Pastikan kolom-kolom baru otomatis dibuat jika belum ada di Hostinger
+if ($pdo) {
     try {
         $pdo->exec("ALTER TABLE users MODIFY COLUMN avatar LONGTEXT DEFAULT NULL");
         $pdo->exec("ALTER TABLE system_settings MODIFY COLUMN logo_url LONGTEXT DEFAULT NULL");
         $pdo->exec("ALTER TABLE system_settings MODIFY COLUMN galeri_json LONGTEXT DEFAULT NULL");
+        $pdo->exec("ALTER TABLE system_settings MODIFY COLUMN slideshow_unggulan_json LONGTEXT DEFAULT NULL");
         try {
             $pdo->exec("ALTER TABLE system_settings ADD COLUMN IF NOT EXISTS show_galeri_slideshow TINYINT(1) DEFAULT 0");
             $pdo->exec("ALTER TABLE system_settings ADD COLUMN IF NOT EXISTS show_slideshow_unggulan TINYINT(1) DEFAULT 1");
             $pdo->exec("ALTER TABLE system_settings ADD COLUMN IF NOT EXISTS show_peta_koordinat TINYINT(1) DEFAULT 0");
+            $pdo->exec("ALTER TABLE system_settings ADD COLUMN IF NOT EXISTS show_kurva_s TINYINT(1) DEFAULT 0");
             $pdo->exec("ALTER TABLE system_settings ADD COLUMN IF NOT EXISTS slideshow_unggulan_json LONGTEXT DEFAULT NULL");
         } catch (Exception $ex) {}
+        try {
+            $pdo->exec("ALTER TABLE projects ADD COLUMN IF NOT EXISTS foto_dokumentasi_json LONGTEXT DEFAULT NULL");
+            $pdo->exec("ALTER TABLE projects ADD COLUMN IF NOT EXISTS kurva_s_json LONGTEXT DEFAULT NULL");
+        } catch (Exception $ex2) {}
+        try {
+            $pdo->exec("ALTER TABLE monitoring_paket ADD COLUMN IF NOT EXISTS foto_dokumentasi_json LONGTEXT DEFAULT NULL");
+            $pdo->exec("ALTER TABLE monitoring_paket ADD COLUMN IF NOT EXISTS kurva_s_json LONGTEXT DEFAULT NULL");
+        } catch (Exception $ex3) {}
     } catch (Exception $e) {}
 }
 
@@ -33,71 +43,7 @@ if ($action === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($rawId === '' || $rawPass === '') {
         http_response_code(400);
-                // Ambil Paket Pekerjaan jika tabel monitoring_paket ada
-        $paketPekerjaanList = [];
-        try {
-            $stmtPaket = $pdo->query("SELECT * FROM monitoring_paket ORDER BY kategori_paket_id ASC, no_urut_kategori ASC, id ASC");
-            $paketRows = $stmtPaket->fetchAll();
-            $paketPekerjaanList = array_map(function($p) {
-                return [
-                    'id' => $p['id'],
-                    'tahunAnggaran' => (int)($p['tahun_anggaran'] ?? 2026),
-                    'noUrutKategori' => (int)($p['no_urut_kategori'] ?? 0),
-                    'kategoriPaket' => $p['kategori_paket'] ?? '',
-                    'kategoriPaketId' => $p['kategori_paket_id'] ?? '',
-                    'bidangId' => $p['bidang_id'],
-                    'subBagian' => $p['sub_bagian'] ?? '',
-                    'subKegiatan' => $p['sub_kegiatan'] ?? '',
-                    'namaPaket' => $p['nama_paket'],
-                    'kategoriPekerjaan' => $p['kategori_pekerjaan'] ?? 'Fisik',
-                    'jenisPengadaan' => $p['jenis_pengadaan'] ?? '',
-                    'metodePemilihan' => $p['metode_pemilihan'] ?? '',
-                    'tipePengadaan' => $p['tipe_pengadaan'] ?? 'Tender',
-                    'paguAnggaran' => (float)($p['pagu_anggaran'] ?? 0),
-                    'hps' => (float)($p['hps'] ?? 0),
-                    'isPublicHighlight' => !empty($p['is_public_highlight']),
-                    'isKontrak' => ((float)($p['nilai_kontrak'] ?? 0) > 0 || !empty($p['nomor_kontrak']) || !empty($p['tanggal_kontrak'])),
-                    'statusTahapPraKontrak' => $p['status_tahap_pra_kontrak'] ?? 'rup',
-                    'dataKontrak' => [
-                        'nilaiKontrak' => (float)($p['nilai_kontrak'] ?? 0),
-                        'nomorKontrak' => $p['nomor_kontrak'] ?? '',
-                        'tanggalKontrak' => $p['tanggal_kontrak'] ?? '',
-                        'tanggalMulai' => $p['tanggal_mulai'] ?? '',
-                        'tanggalSelesai' => $p['tanggal_selesai'] ?? '',
-                        'namaPenyedia' => $p['pelaksana_nama'] ?? '-',
-                        'bankRekanan' => $p['pelaksana_bank'] ?? 'Bank Jateng',
-                        'rekeningRekanan' => $p['pelaksana_rekening'] ?? '',
-                        'npwpRekanan' => $p['pelaksana_npwp'] ?? ''
-                    ],
-                    'kecamatan' => $p['kecamatan'] ?? 'Demak',
-                    'desa' => $p['desa'] ?? 'Bintoro',
-                    'lokasiLengkap' => $p['lokasi_lengkap'] ?? '',
-                    'latitude' => $p['latitude'] ?? null,
-                    'longitude' => $p['longitude'] ?? null,
-                    'tags' => !empty($p['tags_json']) ? json_decode($p['tags_json'], true) : [],
-                    'dataFisik' => [
-                        'progresRencana' => (float)($p['progres_rencana'] ?? 0),
-                        'progresRealisasi' => (float)($p['progres_realisasi'] ?? 0),
-                        'deviasiFisik' => (float)($p['deviasi_fisik'] ?? 0),
-                        'statusDeviasi' => $p['status_deviasi'] ?? 'Aman',
-                        'mingguan' => !empty($p['kurva_s_json']) ? json_decode($p['kurva_s_json'], true) : [],
-                    'fotoDokumentasi' => !empty($p['foto_dokumentasi_json']) ? json_decode($p['foto_dokumentasi_json'], true) : []
-                    ],
-                    'dataKeuangan' => [
-                        'totalPencairan' => (float)($p['total_pencairan'] ?? 0),
-                        'persenKeuangan' => (float)($p['persen_keuangan'] ?? 0),
-                        'sisaAnggaran' => (float)($p['sisa_anggaran'] ?? 0),
-                        'terminHistory' => !empty($p['termin_json']) ? json_decode($p['termin_json'], true) : []
-                    ],
-                    'spjStatus' => $p['spj_status'] ?? 'belum_masuk',
-                    'administrasiSPJ' => !empty($p['spj_checklist_json']) ? json_decode($p['spj_checklist_json'], true) : null,
-                    'tahapanPencairan' => !empty($p['tahapan_pencairan_json']) ? json_decode($p['tahapan_pencairan_json'], true) : null,
-                    'logs' => !empty($p['logs_json']) ? json_decode($p['logs_json'], true) : []
-                ];
-            }, $paketRows);
-        } catch (Exception $e) {}
-
-echo json_encode(['status' => 'error', 'message' => 'Username/NIP dan Password wajib diisi!']);
+        echo json_encode(['status' => 'error', 'message' => 'Username/NIP dan Password wajib diisi!']);
         exit;
     }
 
@@ -286,7 +232,7 @@ if ($action === 'save_db_config' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     $configFile = __DIR__ . '/config.local.php';
     $phpCode = "<?php\n"
         . "/**\n"
-        . " * Konfigurasi Database Lokal Hostinger SIMON - SATUPUTARU\n"
+        . " * Konfigurasi Database Lokal Hostinger SIMON - SATU PUTARU\n"
         . " * Domain: https://simon.satuputarudemak.id\n"
         . " * Disimpan oleh Superadmin: " . date('Y-m-d H:i:s') . "\n"
         . " */\n"
@@ -328,24 +274,36 @@ if ($action === 'load_all') {
     try {
         // Ambil System Settings
         $stmtSettings = $pdo->query("SELECT * FROM system_settings WHERE id = 1 LIMIT 1");
-        $settings = $stmtSettings->fetch();
-        if ($settings) {
-            if (!empty($settings['galeri_json'])) {
-                $settings['galeri'] = json_decode($settings['galeri_json'], true);
-            }
-            if (!empty($settings['custom_texts_json'])) {
-                $settings['customTexts'] = json_decode($settings['custom_texts_json'], true);
-            }
-            if (!empty($settings['bidang_descriptions_json'])) {
-                $settings['bidangDescriptions'] = json_decode($settings['bidang_descriptions_json'], true);
-            }
-            $settings['showGaleriSlideshow'] = isset($settings['show_galeri_slideshow']) ? (bool)$settings['show_galeri_slideshow'] : false;
-            $settings['showSlideshowUnggulan'] = isset($settings['show_slideshow_unggulan']) ? (bool)$settings['show_slideshow_unggulan'] : true;
-            $settings['showPetaKoordinat'] = isset($settings['show_peta_koordinat']) ? (bool)$settings['show_peta_koordinat'] : false;
-            $settings['showKurvaS'] = isset($settings['show_kurva_s']) ? (bool)$settings['show_kurva_s'] : false;
-            if (!empty($settings['slideshow_unggulan_json'])) {
-                $settings['slideshowUnggulan'] = json_decode($settings['slideshow_unggulan_json'], true);
-            }
+        $settingsRaw = $stmtSettings->fetch();
+        $settings = null;
+        if ($settingsRaw) {
+            $settings = $settingsRaw;
+            $settings['namaSistem'] = $settingsRaw['nama_sistem'] ?? 'SIMON - SATU PUTARU';
+            $settings['subNama'] = $settingsRaw['sub_nama'] ?? 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU';
+            $settings['instansi'] = $settingsRaw['instansi'] ?? 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak';
+            $settings['pemerintahDaerah'] = $settingsRaw['pemerintah_daerah'] ?? 'Pemerintah Kabupaten Demak';
+            $settings['alamat'] = $settingsRaw['alamat'] ?? '';
+            $settings['telepon'] = $settingsRaw['telepon'] ?? '';
+            $settings['email'] = $settingsRaw['email'] ?? '';
+            $settings['website'] = $settingsRaw['website'] ?? '';
+            $settings['logoUrl'] = $settingsRaw['logo_url'] ?? '';
+            $settings['namaKepalaDinas'] = $settingsRaw['nama_kepala_dinas'] ?? '';
+            $settings['nipKepalaDinas'] = $settingsRaw['nip_kepala_dinas'] ?? '';
+            $settings['pangkatKepalaDinas'] = $settingsRaw['pangkat_kepala_dinas'] ?? '';
+            $settings['jabatanKepalaDinas'] = $settingsRaw['jabatan_kepala_dinas'] ?? '';
+            $settings['namaSekretaris'] = $settingsRaw['nama_sekretaris'] ?? '';
+            $settings['nipSekretaris'] = $settingsRaw['nip_sekretaris'] ?? '';
+            $settings['pangkatSekretaris'] = $settingsRaw['pangkat_sekretaris'] ?? '';
+            $settings['jabatanSekretaris'] = $settingsRaw['jabatan_sekretaris'] ?? '';
+            $settings['maxPublicHighlights'] = (int)($settingsRaw['max_public_highlights'] ?? 12);
+            $settings['showGaleriSlideshow'] = isset($settingsRaw['show_galeri_slideshow']) ? (bool)$settingsRaw['show_galeri_slideshow'] : false;
+            $settings['showSlideshowUnggulan'] = isset($settingsRaw['show_slideshow_unggulan']) ? (bool)$settingsRaw['show_slideshow_unggulan'] : true;
+            $settings['showPetaKoordinat'] = isset($settingsRaw['show_peta_koordinat']) ? (bool)$settingsRaw['show_peta_koordinat'] : false;
+            $settings['showKurvaS'] = isset($settingsRaw['show_kurva_s']) ? (bool)$settingsRaw['show_kurva_s'] : false;
+            $settings['slideshowUnggulan'] = !empty($settingsRaw['slideshow_unggulan_json']) ? json_decode($settingsRaw['slideshow_unggulan_json'], true) : [];
+            $settings['galeri'] = !empty($settingsRaw['galeri_json']) ? json_decode($settingsRaw['galeri_json'], true) : [];
+            $settings['customTexts'] = !empty($settingsRaw['custom_texts_json']) ? json_decode($settingsRaw['custom_texts_json'], true) : [];
+            $settings['bidangDescriptions'] = !empty($settingsRaw['bidang_descriptions_json']) ? json_decode($settingsRaw['bidang_descriptions_json'], true) : [];
         }
 
         // Ambil Users
@@ -500,8 +458,10 @@ if ($action === 'load_all') {
                     'progresRealisasi' => $fRealisasi,
                     'deviasiFisik' => (float)$p['deviasi_fisik'],
                     'statusDeviasi' => $p['status_deviasi'],
-                    'mingguan' => !empty($p['kurva_s_json']) ? json_decode($p['kurva_s_json'], true) : []
+                    'mingguan' => !empty($p['kurva_s_json']) ? json_decode($p['kurva_s_json'], true) : [],
+                    'fotoDokumentasi' => !empty($p['foto_dokumentasi_json']) ? json_decode($p['foto_dokumentasi_json'], true) : []
                 ],
+                'fotoDokumentasi' => !empty($p['foto_dokumentasi_json']) ? json_decode($p['foto_dokumentasi_json'], true) : [],
                 'dataKeuangan' => [
                     'totalPencairan' => $totalCair,
                     'persenKeuangan' => (float)$p['persen_keuangan'],
@@ -514,6 +474,70 @@ if ($action === 'load_all') {
                 'logs' => !empty($p['logs_json']) ? json_decode($p['logs_json'], true) : [],
             ];
         }, $projectsRaw);
+
+        // Ambil Paket Pekerjaan jika tabel monitoring_paket ada
+        $paketPekerjaanList = [];
+        try {
+            $stmtPaket = $pdo->query("SELECT * FROM monitoring_paket ORDER BY kategori_paket_id ASC, no_urut_kategori ASC, id ASC");
+            $paketRows = $stmtPaket->fetchAll();
+            $paketPekerjaanList = array_map(function($p) {
+                return [
+                    'id' => $p['id'],
+                    'tahunAnggaran' => (int)($p['tahun_anggaran'] ?? 2026),
+                    'noUrutKategori' => (int)($p['no_urut_kategori'] ?? 0),
+                    'kategoriPaket' => $p['kategori_paket'] ?? '',
+                    'kategoriPaketId' => $p['kategori_paket_id'] ?? '',
+                    'bidangId' => $p['bidang_id'],
+                    'subBagian' => $p['sub_bagian'] ?? '',
+                    'subKegiatan' => $p['sub_kegiatan'] ?? '',
+                    'namaPaket' => $p['nama_paket'],
+                    'kategoriPekerjaan' => $p['kategori_pekerjaan'] ?? 'Fisik',
+                    'jenisPengadaan' => $p['jenis_pengadaan'] ?? '',
+                    'metodePemilihan' => $p['metode_pemilihan'] ?? '',
+                    'tipePengadaan' => $p['tipe_pengadaan'] ?? 'Tender',
+                    'paguAnggaran' => (float)($p['pagu_anggaran'] ?? 0),
+                    'hps' => (float)($p['hps'] ?? 0),
+                    'isPublicHighlight' => !empty($p['is_public_highlight']),
+                    'isKontrak' => ((float)($p['nilai_kontrak'] ?? 0) > 0 || !empty($p['nomor_kontrak']) || !empty($p['tanggal_kontrak'])),
+                    'statusTahapPraKontrak' => $p['status_tahap_pra_kontrak'] ?? 'rup',
+                    'dataKontrak' => [
+                        'nilaiKontrak' => (float)($p['nilai_kontrak'] ?? 0),
+                        'nomorKontrak' => $p['nomor_kontrak'] ?? '',
+                        'tanggalKontrak' => $p['tanggal_kontrak'] ?? '',
+                        'tanggalMulai' => $p['tanggal_mulai'] ?? '',
+                        'tanggalSelesai' => $p['tanggal_selesai'] ?? '',
+                        'namaPenyedia' => $p['pelaksana_nama'] ?? '-',
+                        'bankRekanan' => $p['pelaksana_bank'] ?? 'Bank Jateng',
+                        'rekeningRekanan' => $p['pelaksana_rekening'] ?? '',
+                        'npwpRekanan' => $p['pelaksana_npwp'] ?? ''
+                    ],
+                    'kecamatan' => $p['kecamatan'] ?? 'Demak',
+                    'desa' => $p['desa'] ?? 'Bintoro',
+                    'lokasiLengkap' => $p['lokasi_lengkap'] ?? '',
+                    'latitude' => $p['latitude'] ?? null,
+                    'longitude' => $p['longitude'] ?? null,
+                    'tags' => !empty($p['tags_json']) ? json_decode($p['tags_json'], true) : [],
+                    'dataFisik' => [
+                        'progresRencana' => (float)($p['progres_rencana'] ?? 0),
+                        'progresRealisasi' => (float)($p['progres_realisasi'] ?? 0),
+                        'deviasiFisik' => (float)($p['deviasi_fisik'] ?? 0),
+                        'statusDeviasi' => $p['status_deviasi'] ?? 'Aman',
+                        'mingguan' => !empty($p['kurva_s_json']) ? json_decode($p['kurva_s_json'], true) : [],
+                        'fotoDokumentasi' => !empty($p['foto_dokumentasi_json']) ? json_decode($p['foto_dokumentasi_json'], true) : []
+                    ],
+                    'dataKeuangan' => [
+                        'totalPencairan' => (float)($p['total_pencairan'] ?? 0),
+                        'persenKeuangan' => (float)($p['persen_keuangan'] ?? 0),
+                        'sisaAnggaran' => (float)($p['sisa_anggaran'] ?? 0),
+                        'terminHistory' => !empty($p['termin_json']) ? json_decode($p['termin_json'], true) : []
+                    ],
+                    'spjStatus' => $p['spj_status'] ?? 'belum_masuk',
+                    'administrasiSPJ' => !empty($p['spj_checklist_json']) ? json_decode($p['spj_checklist_json'], true) : null,
+                    'tahapanPencairan' => !empty($p['tahapan_pencairan_json']) ? json_decode($p['tahapan_pencairan_json'], true) : null,
+                    'logs' => !empty($p['logs_json']) ? json_decode($p['logs_json'], true) : []
+                ];
+            }, $paketRows);
+        } catch (Exception $e) {}
 
         echo json_encode([
             'status' => 'success',
@@ -860,13 +884,15 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         $params = [
-            ':nama_sistem' => $input['namaSistem'] ?? 'SIMON - SATUPUTARU',
-            ':instansi' => $input['instansi'] ?? 'Dinas Pekerjaan Umum dan Penataan Ruang',
+            ':nama_sistem' => $input['namaSistem'] ?? 'SIMON - SATU PUTARU',
+            ':sub_nama' => $input['subNama'] ?? 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
+            ':instansi' => $input['instansi'] ?? 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak',
             ':pemerintah_daerah' => $input['pemerintahDaerah'] ?? 'Pemerintah Kabupaten Demak',
             ':alamat' => $input['alamat'] ?? '',
             ':telepon' => $input['telepon'] ?? '',
             ':email' => $input['email'] ?? '',
             ':website' => $input['website'] ?? '',
+            ':logo_url' => $input['logoUrl'] ?? '',
             ':nama_kepala_dinas' => $input['namaKepalaDinas'] ?? '',
             ':nip_kepala_dinas' => $input['nipKepalaDinas'] ?? '',
             ':pangkat_kepala_dinas' => $input['pangkatKepalaDinas'] ?? '',
@@ -875,18 +901,20 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             ':nip_sekretaris' => $input['nipSekretaris'] ?? '',
             ':pangkat_sekretaris' => $input['pangkatSekretaris'] ?? '',
             ':jabatan_sekretaris' => $input['jabatanSekretaris'] ?? '',
-            ':max_public_highlights' => (int)($input['maxPublicHighlights'] ?? 10)
+            ':max_public_highlights' => (int)($input['maxPublicHighlights'] ?? 12)
         ];
 
         try {
             $sql = "UPDATE system_settings SET
                 nama_sistem = :nama_sistem,
+                sub_nama = :sub_nama,
                 instansi = :instansi,
                 pemerintah_daerah = :pemerintah_daerah,
                 alamat = :alamat,
                 telepon = :telepon,
                 email = :email,
                 website = :website,
+                logo_url = :logo_url,
                 nama_kepala_dinas = :nama_kepala_dinas,
                 nip_kepala_dinas = :nip_kepala_dinas,
                 pangkat_kepala_dinas = :pangkat_kepala_dinas,
@@ -902,7 +930,8 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 show_slideshow_unggulan = :show_slideshow_unggulan,
                 show_peta_koordinat = :show_peta_koordinat,
                 show_kurva_s = :show_kurva_s,
-                slideshow_unggulan_json = :slideshow_unggulan_json
+                slideshow_unggulan_json = :slideshow_unggulan_json,
+                galeri_json = :galeri_json
                 WHERE id = 1";
 
             $stmt = $pdo->prepare($sql);
@@ -913,10 +942,11 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 ':show_slideshow_unggulan' => isset($input['showSlideshowUnggulan']) && !$input['showSlideshowUnggulan'] ? 0 : 1,
                 ':show_peta_koordinat' => !empty($input['showPetaKoordinat']) ? 1 : 0,
                 ':show_kurva_s' => !empty($input['showKurvaS']) ? 1 : 0,
-                ':slideshow_unggulan_json' => !empty($input['slideshowUnggulan']) ? json_encode($input['slideshowUnggulan']) : null
+                ':slideshow_unggulan_json' => !empty($input['slideshowUnggulan']) ? json_encode($input['slideshowUnggulan']) : null,
+                ':galeri_json' => !empty($input['galeri']) ? json_encode($input['galeri']) : null
             ]));
         } catch (Exception $colEx) {
-            // Fallback jika kolom json belum ditambahkan ke tabel
+            // Fallback jika ada kolom yang belum ada
             $sql = "UPDATE system_settings SET
                 nama_sistem = :nama_sistem,
                 instansi = :instansi,

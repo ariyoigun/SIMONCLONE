@@ -138,7 +138,7 @@ export const LOGO_PRESETS = [
   },
   {
     id: 'satuputaru_modern',
-    name: 'Monogram SATUPUTARU Smart City',
+    name: 'Monogram SATU PUTARU Smart City',
     description: 'Logo Modern Bernuansa Teknologi Pemantauan Infrastruktur Terintegrasi (Bina Marga, Cipta Karya, SDA, Tata Ruang)',
     category: 'Modern Branding',
     svgDataUri: `data:image/svg+xml;utf8,${encodeURIComponent(`

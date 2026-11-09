@@ -1,5 +1,5 @@
 # 🚀 PANDUAN LENGKAP DEPLOYMENT & KONEKSI DATABASE HOSTINGER
-## Sistem Informasi Monitoring Pekerjaan (SIMON - SATUPUTARU 2026)
+## Sistem Informasi Monitoring Pekerjaan (SIMON - SATU PUTARU 2026)
 **Dinas Pekerjaan Umum dan Penataan Ruang (DINPUTARU) Kabupaten Demak**
 Alamat Web App: **`https://simon.satuputarudemak.id`**
 

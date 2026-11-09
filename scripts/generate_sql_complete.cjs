@@ -52,7 +52,7 @@ function normalizeDate(d) {
 }
 
 let sql = `-- ==============================================================================
--- DATABASE RESMI LENGKAP: SIMON - SATUPUTARU
+-- DATABASE RESMI LENGKAP: SIMON - SATU PUTARU
 -- Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
 -- Server: Hostinger MySQL / MariaDB (simon.satuputarudemak.id)
 -- Database: u490770675_simona
@@ -76,7 +76,7 @@ SET time_zone = "+07:00";
 DROP TABLE IF EXISTS \`system_settings\`;
 CREATE TABLE \`system_settings\` (
   \`id\` int(11) NOT NULL AUTO_INCREMENT,
-  \`nama_sistem\` varchar(150) NOT NULL DEFAULT 'SIMON - SATUPUTARU',
+  \`nama_sistem\` varchar(150) NOT NULL DEFAULT 'SIMON - SATU PUTARU',
   \`sub_nama\` varchar(255) DEFAULT 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
   \`instansi\` varchar(255) NOT NULL DEFAULT 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak',
   \`pemerintah_daerah\` varchar(150) DEFAULT 'Pemerintah Kabupaten Demak',
@@ -335,6 +335,7 @@ CREATE TABLE \`projects\` (
   \`deviasi_fisik\` decimal(6,2) NOT NULL DEFAULT 0.00,
   \`status_deviasi\` varchar(50) NOT NULL DEFAULT 'Aman',
   \`kurva_s_json\` longtext DEFAULT NULL,
+  \`foto_dokumentasi_json\` longtext DEFAULT NULL,
   \`total_pencairan\` decimal(18,2) NOT NULL DEFAULT 0.00,
   \`persen_keuangan\` decimal(6,2) NOT NULL DEFAULT 0.00,
   \`sisa_anggaran\` decimal(18,2) NOT NULL DEFAULT 0.00,
@@ -367,7 +368,7 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   \`tipe_pengadaan\`, \`pagu_anggaran\`, \`hps\`, \`nilai_kontrak\`, \`nomor_kontrak\`, \`tanggal_kontrak\`, \`tanggal_mulai\`, 
   \`tanggal_selesai\`, \`pelaksana_nama\`, \`pelaksana_bank\`, \`pelaksana_rekening\`, \`pelaksana_npwp\`, \`kecamatan\`, \`desa\`, \`lokasi_lengkap\`, 
   \`latitude\`, \`longitude\`, \`tags_json\`, \`is_public_highlight\`, \`status_tahap_pra_kontrak\`, \`pra_kontrak_json\`,
-  \`progres_rencana\`, \`progres_realisasi\`, \`deviasi_fisik\`, \`status_deviasi\`, \`kurva_s_json\`,
+  \`progres_rencana\`, \`progres_realisasi\`, \`deviasi_fisik\`, \`status_deviasi\`, \`kurva_s_json\`, \`foto_dokumentasi_json\`,
   \`total_pencairan\`, \`persen_keuangan\`, \`sisa_anggaran\`, \`termin_json\`, \`spj_status\`, \`spj_checklist_json\`, \`logs_json\`
 ) VALUES
 `;
@@ -416,6 +417,7 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   ${esc(f.deviasiFisik || 0)},
   ${esc(f.statusDeviasi || 'Aman')},
   ${esc(f.mingguan || [])},
+  ${esc(f.fotoDokumentasi || p.fotoDokumentasi || p.dokumentasi || [])},
   ${esc(q.totalPencairan || 0)},
   ${esc(q.persenKeuangan || 0)},
   ${esc(q.sisaAnggaran || 0)},
@@ -473,6 +475,7 @@ CREATE TABLE \`monitoring_paket\` (
   \`deviasi_fisik\` decimal(6,2) NOT NULL DEFAULT 0.00,
   \`status_deviasi\` varchar(50) NOT NULL DEFAULT 'Aman',
   \`kurva_s_json\` longtext DEFAULT NULL,
+  \`foto_dokumentasi_json\` longtext DEFAULT NULL,
   \`total_pencairan\` decimal(18,2) NOT NULL DEFAULT 0.00,
   \`persen_keuangan\` decimal(6,2) NOT NULL DEFAULT 0.00,
   \`sisa_anggaran\` decimal(18,2) NOT NULL DEFAULT 0.00,
@@ -503,7 +506,7 @@ for (let i = 0; i < MONITORING_PAKET_2026.length; i += batchSize) {
   \`tipe_pengadaan\`, \`pagu_anggaran\`, \`hps\`, \`nilai_kontrak\`, \`nomor_kontrak\`, \`tanggal_kontrak\`,
   \`tanggal_mulai\`, \`tanggal_selesai\`, \`pelaksana_nama\`, \`pelaksana_bank\`, \`pelaksana_rekening\`, \`pelaksana_npwp\`,
   \`kecamatan\`, \`desa\`, \`lokasi_lengkap\`, \`latitude\`, \`longitude\`, \`tags_json\`, \`is_public_highlight\`,
-  \`status_tahap_pra_kontrak\`, \`progres_rencana\`, \`progres_realisasi\`, \`deviasi_fisik\`, \`status_deviasi\`, \`kurva_s_json\`,
+  \`status_tahap_pra_kontrak\`, \`progres_rencana\`, \`progres_realisasi\`, \`deviasi_fisik\`, \`status_deviasi\`, \`kurva_s_json\`, \`foto_dokumentasi_json\`,
   \`total_pencairan\`, \`persen_keuangan\`, \`sisa_anggaran\`, \`termin_json\`, \`spj_status\`, \`spj_checklist_json\`,
   \`tahapan_pencairan_json\`, \`logs_json\`
 ) VALUES
@@ -553,6 +556,7 @@ for (let i = 0; i < MONITORING_PAKET_2026.length; i += batchSize) {
   ${esc(f.deviasiFisik || 0)},
   ${esc(f.statusDeviasi || 'Aman')},
   ${esc(f.mingguan || [])},
+  ${esc(f.fotoDokumentasi || p.fotoDokumentasi || p.dokumentasi || [])},
   ${esc(q.totalPencairan || 0)},
   ${esc(q.persenKeuangan || 0)},
   ${esc(q.sisaAnggaran || 0)},

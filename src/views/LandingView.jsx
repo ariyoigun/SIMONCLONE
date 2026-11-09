@@ -234,7 +234,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             />
             <div>
               <div style={{ fontSize: 16, fontWeight: 900, color: '#0f2c59', letterSpacing: -0.3, display: 'flex', alignItems: 'center', gap: 6 }}>
-                <span>{systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}</span>
+                <span>{systemSettings?.namaSistem || 'SIMON - SATU PUTARU'}</span>
                 <span style={{ fontSize: 11, fontWeight: 700, background: '#eff6ff', color: '#1d4ed8', border: '1px solid #bfdbfe', padding: '1px 6px', borderRadius: 4 }}>
                   Portal Publik
                 </span>
@@ -1180,7 +1180,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 alt={systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}
               />
               <span style={{ fontSize: 18, fontWeight: 900, color: '#ffffff' }}>
-                {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}
+                {systemSettings?.namaSistem || 'SIMON - SATU PUTARU'}
               </span>
             </div>
             <p style={{ fontSize: 13, lineHeight: 1.6, color: '#94a3b8' }}>
@@ -1208,7 +1208,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </div>
 
         <div style={{ maxWidth: 1280, margin: '0 auto', paddingTop: 24, borderTop: '1px solid rgba(255,255,255,0.08)', textAlign: 'center', fontSize: 12, color: '#64748b' }}>
-          {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'} • Hak Cipta © {activeYear} {systemSettings?.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak'}.
+          {systemSettings?.namaSistem || 'SIMON - SATU PUTARU'} • Hak Cipta © {activeYear} {systemSettings?.instansi || 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak'}.
         </div>
       </footer>
 

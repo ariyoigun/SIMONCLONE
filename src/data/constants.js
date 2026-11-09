@@ -863,7 +863,7 @@ export const DEFAULT_CUSTOM_TEXTS = {
 };
 
 export const DEFAULT_SYSTEM_SETTINGS = {
-  namaSistem: 'SIMON - SATUPUTARU',
+  namaSistem: 'SIMON - SATU PUTARU',
   subNama: 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
   instansi: 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak',
   singkatanInstansi: 'DINPUTARU Demak',

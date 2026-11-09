@@ -236,7 +236,7 @@ const LoginView = ({ onBackToLanding }) => {
           </div>
 
           <h2 style={{ fontSize: 22, fontWeight: 800, margin: 0, letterSpacing: -0.5 }}>
-            {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}
+            {systemSettings?.namaSistem || 'SIMON - SATU PUTARU'}
           </h2>
           <p style={{ fontSize: 13, color: '#93c5fd', marginTop: 4, marginBottom: 0, fontWeight: 500 }}>
             {systemSettings?.subNama || 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU'}

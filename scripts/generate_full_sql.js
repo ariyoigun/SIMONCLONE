@@ -66,7 +66,7 @@ console.log(`SIPD Sub Kegiatan: ${INITIAL_SIPD_SUB_KEGIATAN.length}`);
 console.log(`Projects 2026: ${REAL_PROJECTS_2026.length}`);
 
 let sql = `-- ==============================================================================
--- DATABASE SCHEMA & SEED DATA: SIMON - SATUPUTARU
+-- DATABASE SCHEMA & SEED DATA: SIMON - SATU PUTARU
 -- Sistem Informasi Monitoring Pekerjaan Terpadu
 -- Dinas Pekerjaan Umum dan Penataan Ruang (DINPUTARU) Kabupaten Demak
 -- 
@@ -90,7 +90,7 @@ SET time_zone = "+07:00";
 -- --------------------------------------------------------
 CREATE TABLE IF NOT EXISTS \`system_settings\` (
   \`id\` int(11) NOT NULL DEFAULT 1,
-  \`nama_sistem\` varchar(100) NOT NULL DEFAULT 'SIMON - SATUPUTARU',
+  \`nama_sistem\` varchar(100) NOT NULL DEFAULT 'SIMON - SATU PUTARU',
   \`instansi\` varchar(150) NOT NULL DEFAULT 'Dinas Pekerjaan Umum dan Penataan Ruang',
   \`pemerintah_daerah\` varchar(150) NOT NULL DEFAULT 'Pemerintah Kabupaten Demak',
   \`alamat\` text DEFAULT NULL,
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS \`system_settings\` (
 INSERT INTO \`system_settings\` (\`id\`, \`nama_sistem\`, \`instansi\`, \`pemerintah_daerah\`, \`alamat\`, \`telepon\`, \`email\`, \`website\`, \`nama_kepala_dinas\`, \`nip_kepala_dinas\`, \`pangkat_kepala_dinas\`, \`jabatan_kepala_dinas\`, \`nama_sekretaris\`, \`nip_sekretaris\`, \`pangkat_sekretaris\`, \`jabatan_sekretaris\`, \`max_public_highlights\`) 
 VALUES (
   1,
-  'SIMON - SATUPUTARU',
+  'SIMON - SATU PUTARU',
   'Dinas Pekerjaan Umum dan Penataan Ruang',
   'Pemerintah Kabupaten Demak',
   'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak',

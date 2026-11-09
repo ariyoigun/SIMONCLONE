@@ -2,7 +2,7 @@
 /**
  * ==============================================================================
  * DATABASE CONNECTION TESTER & SYSTEM DIAGNOSTICS
- * SIMON - SATUPUTARU (DINPUTARU Kabupaten Demak)
+ * SIMON - SATU PUTARU (DINPUTARU Kabupaten Demak)
  * ==============================================================================
  * 
  * Akses URL ini melalui browser:
@@ -122,7 +122,7 @@ if ($is_browser && (!isset($_GET['format']) || $_GET['format'] !== 'json')) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Diagnostik Database - SIMON SATUPUTARU</title>
+        <title>Diagnostik Database - SIMON SATU PUTARU</title>
         <style>
             * { box-sizing: border-box; margin: 0; padding: 0; }
             body {
@@ -276,7 +276,7 @@ if ($is_browser && (!isset($_GET['format']) || $_GET['format'] !== 'json')) {
             <div class="header">
                 <div class="badge-logo">🏛️</div>
                 <div>
-                    <h1>Testing Koneksi Database SIMON SATUPUTARU</h1>
+                    <h1>Testing Koneksi Database SIMON SATU PUTARU</h1>
                     <div class="subtitle">Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak</div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 -- ==============================================================================
--- DATABASE RESMI LENGKAP: SIMON - SATUPUTARU
+-- DATABASE RESMI LENGKAP: SIMON - SATU PUTARU
 -- Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
 -- Server: Hostinger MySQL / MariaDB (simon.satuputarudemak.id)
 -- Database: u490770675_simona
--- Tanggal Generate: 2026-11-08T18:06:46.644Z
+-- Tanggal Generate: 2026-11-09T07:23:37.662Z
 -- Master Data Pekerjaan (projects): 558 Data
 -- Master Data Paket Pekerjaan (monitoring_paket): 478 Data
 -- ==============================================================================
@@ -23,7 +23,7 @@ SET time_zone = "+07:00";
 DROP TABLE IF EXISTS `system_settings`;
 CREATE TABLE `system_settings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nama_sistem` varchar(150) NOT NULL DEFAULT 'SIMON - SATUPUTARU',
+  `nama_sistem` varchar(150) NOT NULL DEFAULT 'SIMON - SATU PUTARU',
   `sub_nama` varchar(255) DEFAULT 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
   `instansi` varchar(255) NOT NULL DEFAULT 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak',
   `pemerintah_daerah` varchar(150) DEFAULT 'Pemerintah Kabupaten Demak',
@@ -62,7 +62,7 @@ INSERT INTO `system_settings` (
   `custom_texts_json`, `bidang_descriptions_json`, `galeri_json`
 ) VALUES (
   1,
-  'SIMON - SATUPUTARU',
+  'SIMON - SATU PUTARU',
   'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
   'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak',
   'Pemerintah Kabupaten Demak',
@@ -396,6 +396,7 @@ CREATE TABLE `projects` (
   `deviasi_fisik` decimal(6,2) NOT NULL DEFAULT 0.00,
   `status_deviasi` varchar(50) NOT NULL DEFAULT 'Aman',
   `kurva_s_json` longtext DEFAULT NULL,
+  `foto_dokumentasi_json` longtext DEFAULT NULL,
   `total_pencairan` decimal(18,2) NOT NULL DEFAULT 0.00,
   `persen_keuangan` decimal(6,2) NOT NULL DEFAULT 0.00,
   `sisa_anggaran` decimal(18,2) NOT NULL DEFAULT 0.00,
@@ -422,7 +423,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -462,6 +463,7 @@ INSERT INTO `projects` (
   26.32,
   1.32,
   'Aman',
+  '[]',
   '[]',
   41947136,
   26.32,
@@ -509,6 +511,7 @@ INSERT INTO `projects` (
   3.44,
   'Aman',
   '[]',
+  '[]',
   44218950,
   88.44,
   5781050,
@@ -554,6 +557,7 @@ INSERT INTO `projects` (
   7.59,
   0,
   'Aman',
+  '[]',
   '[]',
   1290000,
   7.59,
@@ -601,6 +605,7 @@ INSERT INTO `projects` (
   4.89,
   'Aman',
   '[]',
+  '[]',
   48452825,
   89.89,
   5447175,
@@ -646,6 +651,7 @@ INSERT INTO `projects` (
   81.47,
   -1.86,
   'Waspada',
+  '[]',
   '[]',
   11710298280,
   81.47,
@@ -693,6 +699,7 @@ INSERT INTO `projects` (
   -3.82,
   'Waspada',
   '[]',
+  '[]',
   1287929268,
   79.51,
   331858600,
@@ -738,6 +745,7 @@ INSERT INTO `projects` (
   54.77,
   4.77,
   'Aman',
+  '[]',
   '[]',
   24645250,
   54.77,
@@ -785,6 +793,7 @@ INSERT INTO `projects` (
   4.47,
   'Aman',
   '[]',
+  '[]',
   17000000,
   14.47,
   100500000,
@@ -830,6 +839,7 @@ INSERT INTO `projects` (
   75.72,
   -4.28,
   'Waspada',
+  '[]',
   '[]',
   584260900,
   75.72,
@@ -877,6 +887,7 @@ INSERT INTO `projects` (
   4.86,
   'Aman',
   '[]',
+  '[]',
   18971250,
   94.86,
   1028750,
@@ -922,6 +933,7 @@ INSERT INTO `projects` (
   72.69,
   2.69,
   'Aman',
+  '[]',
   '[]',
   39229500,
   65.38,
@@ -969,6 +981,7 @@ INSERT INTO `projects` (
   3.07,
   'Aman',
   '[]',
+  '[]',
   43781000,
   70.61,
   18219000,
@@ -1014,6 +1027,7 @@ INSERT INTO `projects` (
   95,
   5,
   'Aman',
+  '[]',
   '[]',
   39869875,
   88.6,
@@ -1061,6 +1075,7 @@ INSERT INTO `projects` (
   0.35,
   'Aman',
   '[]',
+  '[]',
   143426256,
   42.99,
   190193744,
@@ -1106,6 +1121,7 @@ INSERT INTO `projects` (
   82.57,
   2.57,
   'Aman',
+  '[]',
   '[]',
   41286375,
   82.57,
@@ -1153,6 +1169,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   262500000,
@@ -1198,6 +1215,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   19880002,
   28.31,
@@ -1245,6 +1263,7 @@ INSERT INTO `projects` (
   2.64,
   'Aman',
   '[]',
+  '[]',
   194150007,
   17.64,
   906623963,
@@ -1290,6 +1309,7 @@ INSERT INTO `projects` (
   50,
   0,
   'Aman',
+  '[]',
   '[]',
   1500000,
   30,
@@ -1337,6 +1357,7 @@ INSERT INTO `projects` (
   0.33,
   'Aman',
   '[]',
+  '[]',
   322191787,
   57.53,
   237808213,
@@ -1382,6 +1403,7 @@ INSERT INTO `projects` (
   58.87,
   3.87,
   'Aman',
+  '[]',
   '[]',
   73101000,
   48.73,
@@ -1429,6 +1451,7 @@ INSERT INTO `projects` (
   3.01,
   'Aman',
   '[]',
+  '[]',
   35755000,
   73.01,
   13217176,
@@ -1474,6 +1497,7 @@ INSERT INTO `projects` (
   67.15,
   2.15,
   'Aman',
+  '[]',
   '[]',
   364213321,
   63.86,
@@ -1521,6 +1545,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   48872000,
   97.74,
   1128000,
@@ -1566,6 +1591,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   9433000,
   94.33,
@@ -1613,6 +1639,7 @@ INSERT INTO `projects` (
   32.87,
   'Aman',
   '[]',
+  '[]',
   14478500,
   17.44,
   68521500,
@@ -1658,6 +1685,7 @@ INSERT INTO `projects` (
   29.24,
   0,
   'Aman',
+  '[]',
   '[]',
   193497000,
   29.24,
@@ -1705,6 +1733,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   19650000,
   98.25,
   350000,
@@ -1750,6 +1779,7 @@ INSERT INTO `projects` (
   76.02,
   1.02,
   'Aman',
+  '[]',
   '[]',
   124348500,
   65.16,
@@ -1797,6 +1827,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   868172100,
   30,
   2025734900,
@@ -1842,6 +1873,7 @@ INSERT INTO `projects` (
   35,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -1889,6 +1921,7 @@ INSERT INTO `projects` (
   1.78,
   'Aman',
   '[]',
+  '[]',
   9760000,
   41.78,
   13600000,
@@ -1935,13 +1968,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_33\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_33\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_34',
@@ -1981,13 +2015,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   450000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_34\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 450.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_34\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 450.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_35',
@@ -2026,6 +2061,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -2073,6 +2109,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199010000,
@@ -2119,13 +2156,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_37\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_37\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan).\"}]'
 ),
 (
   'prj_sda_bk_38',
@@ -2165,13 +2203,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_38\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_38\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Perubahan).\"}]'
 ),
 (
   'prj_sda_bk_39',
@@ -2210,6 +2249,7 @@ INSERT INTO `projects` (
   10.22,
   2.22,
   'Aman',
+  '[]',
   '[]',
   6760000,
   8.37,
@@ -2257,6 +2297,7 @@ INSERT INTO `projects` (
   2.44,
   'Aman',
   '[]',
+  '[]',
   1197302115,
   60.48,
   782428107,
@@ -2302,6 +2343,7 @@ INSERT INTO `projects` (
   58.11,
   3.11,
   'Aman',
+  '[]',
   '[]',
   145269500,
   58.11,
@@ -2349,6 +2391,7 @@ INSERT INTO `projects` (
   4.58,
   'Aman',
   '[]',
+  '[]',
   109935600,
   73.29,
   40064400,
@@ -2394,6 +2437,7 @@ INSERT INTO `projects` (
   16.73,
   1.73,
   'Aman',
+  '[]',
   '[]',
   100350000,
   16.73,
@@ -2441,6 +2485,7 @@ INSERT INTO `projects` (
   4.35,
   'Aman',
   '[]',
+  '[]',
   198700700,
   99.35,
   1299300,
@@ -2486,6 +2531,7 @@ INSERT INTO `projects` (
   85,
   5,
   'Aman',
+  '[]',
   '[]',
   286148100,
   30,
@@ -2533,6 +2579,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25320210,
@@ -2578,6 +2625,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   293154900,
   30,
@@ -2625,6 +2673,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   463492000,
   100,
   0,
@@ -2670,6 +2719,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -2717,6 +2767,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   578701800,
   30,
   1350304200,
@@ -2732,7 +2783,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -2772,6 +2823,7 @@ INSERT INTO `projects` (
   85,
   5,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -2819,13 +2871,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_52\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_52\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_53',
@@ -2865,13 +2918,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_53\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_53\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_54',
@@ -2910,6 +2964,7 @@ INSERT INTO `projects` (
   30,
   -20,
   'Kritis',
+  '[]',
   '[]',
   573583800,
   30,
@@ -2957,6 +3012,7 @@ INSERT INTO `projects` (
   -20,
   'Kritis',
   '[]',
+  '[]',
   0,
   0,
   25320210,
@@ -3002,6 +3058,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   148914000,
   100,
@@ -3049,6 +3106,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   298936000,
   100,
   0,
@@ -3094,6 +3152,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -3141,6 +3200,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   129642000,
@@ -3186,6 +3246,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198740000,
   100,
@@ -3233,6 +3294,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   489472000,
@@ -3278,6 +3340,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   286263000,
   30,
@@ -3325,6 +3388,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25410675,
@@ -3370,6 +3434,7 @@ INSERT INTO `projects` (
   75,
   5,
   'Aman',
+  '[]',
   '[]',
   290591400,
   30,
@@ -3417,6 +3482,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25428990,
@@ -3462,6 +3528,7 @@ INSERT INTO `projects` (
   65,
   5,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -3509,6 +3576,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   24929490,
@@ -3554,6 +3622,7 @@ INSERT INTO `projects` (
   35.1,
   0.1,
   'Aman',
+  '[]',
   '[]',
   8200000,
   35.1,
@@ -3601,6 +3670,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   960738000,
@@ -3646,6 +3716,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -3693,6 +3764,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199628000,
@@ -3738,6 +3810,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -3785,6 +3858,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19839030,
@@ -3831,13 +3905,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   23360000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_74\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 23.360.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_74\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 23.360.000 (Perubahan).\"}]'
 ),
 (
   'prj_sda_bk_75',
@@ -3876,6 +3951,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -3923,6 +3999,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   398468000,
@@ -3968,6 +4045,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4015,6 +4093,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   297863000,
@@ -4060,6 +4139,7 @@ INSERT INTO `projects` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4107,6 +4187,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   133843000,
@@ -4152,6 +4233,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4199,6 +4281,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   298624000,
@@ -4244,6 +4327,7 @@ INSERT INTO `projects` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4291,6 +4375,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199080000,
@@ -4336,6 +4421,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4383,6 +4469,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   149061000,
@@ -4428,6 +4515,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4475,6 +4563,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   148967000,
@@ -4520,6 +4609,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4567,6 +4657,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   298526000,
@@ -4612,6 +4703,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4659,6 +4751,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   248778000,
@@ -4704,6 +4797,7 @@ INSERT INTO `projects` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4751,6 +4845,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   968000000,
@@ -4796,6 +4891,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4843,6 +4939,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   491026000,
@@ -4888,6 +4985,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -4935,6 +5033,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   299324000,
@@ -4980,6 +5079,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -5027,6 +5127,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1455627000,
@@ -5042,7 +5143,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -5082,6 +5183,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -5129,6 +5231,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   831212025.157773,
@@ -5174,6 +5277,7 @@ INSERT INTO `projects` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -5221,6 +5325,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99592530,
@@ -5266,6 +5371,7 @@ INSERT INTO `projects` (
   75,
   5,
   'Aman',
+  '[]',
   '[]',
   139354800,
   30,
@@ -5313,6 +5419,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   24961125,
@@ -5359,13 +5466,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_107\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_107\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_108',
@@ -5404,6 +5512,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198760000,
   100,
@@ -5451,6 +5560,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   198337000,
@@ -5496,6 +5606,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   149374000,
   100,
@@ -5543,13 +5654,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_111\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_111\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_112',
@@ -5588,6 +5700,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99036000,
   100,
@@ -5635,6 +5748,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   99074000,
   100,
   0,
@@ -5681,13 +5795,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_114\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_114\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_115',
@@ -5726,6 +5841,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   248866000,
   100,
@@ -5773,6 +5889,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199177000,
@@ -5819,13 +5936,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_117\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_117\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_118',
@@ -5865,13 +5983,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_118\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_118\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_119',
@@ -5911,13 +6030,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_119\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_119\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_120',
@@ -5957,13 +6077,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_120\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_120\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_121',
@@ -6003,13 +6124,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_121\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_121\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_122',
@@ -6048,6 +6170,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6095,6 +6218,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   146481000,
   30,
   341789000,
@@ -6140,6 +6264,7 @@ INSERT INTO `projects` (
   80,
   0,
   'Aman',
+  '[]',
   '[]',
   410356800,
   30,
@@ -6187,6 +6312,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   293054400,
   30,
   683793600,
@@ -6233,13 +6359,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_126\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_126\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_127',
@@ -6279,13 +6406,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1280000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_127\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_127\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_128',
@@ -6325,13 +6453,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_128\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_128\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_129',
@@ -6370,6 +6499,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6417,6 +6547,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19558200,
@@ -6462,6 +6593,7 @@ INSERT INTO `projects` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6509,6 +6641,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   959159000,
@@ -6554,6 +6687,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6601,6 +6735,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199097000,
@@ -6646,6 +6781,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6693,6 +6829,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199010000,
@@ -6738,6 +6875,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6785,6 +6923,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   298894000,
@@ -6830,6 +6969,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6877,6 +7017,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99229000,
@@ -6922,6 +7063,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -6969,6 +7111,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199238000,
@@ -7014,6 +7157,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198907000,
   100,
@@ -7061,6 +7205,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   398090000,
@@ -7106,6 +7251,7 @@ INSERT INTO `projects` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -7153,6 +7299,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19558200,
@@ -7198,6 +7345,7 @@ INSERT INTO `projects` (
   40.89,
   0.89,
   'Aman',
+  '[]',
   '[]',
   713151284,
   40.89,
@@ -7245,6 +7393,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   97854200,
   97.85,
   2145800,
@@ -7290,6 +7439,7 @@ INSERT INTO `projects` (
   77.04,
   2.04,
   'Aman',
+  '[]',
   '[]',
   204647218,
   77.04,
@@ -7337,6 +7487,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99684660,
@@ -7352,7 +7503,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -7393,13 +7544,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_151\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_151\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_152',
@@ -7438,6 +7590,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   49550000,
   100,
@@ -7485,6 +7638,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   49550000,
   100,
   0,
@@ -7530,6 +7684,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99367000,
   100,
@@ -7577,6 +7732,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   299100000,
@@ -7623,13 +7779,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_156\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_156\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_157',
@@ -7668,6 +7825,7 @@ INSERT INTO `projects` (
   90,
   -10,
   'Waspada',
+  '[]',
   '[]',
   0,
   0,
@@ -7715,6 +7873,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199190000,
@@ -7760,6 +7919,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -7807,6 +7967,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0.199,
@@ -7853,13 +8014,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_161\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_161\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_162',
@@ -7898,6 +8060,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -7945,6 +8108,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0.199,
@@ -7990,6 +8154,7 @@ INSERT INTO `projects` (
   75,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -8037,13 +8202,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_165\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_165\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_166',
@@ -8082,6 +8248,7 @@ INSERT INTO `projects` (
   69.57,
   0,
   'Aman',
+  '[]',
   '[]',
   55582500,
   61.76,
@@ -8129,13 +8296,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   250000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_167\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_167\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_168',
@@ -8175,13 +8343,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   250000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_168\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_168\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_169',
@@ -8221,13 +8390,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_169\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_169\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_170',
@@ -8267,13 +8437,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_170\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_170\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_171',
@@ -8312,6 +8483,7 @@ INSERT INTO `projects` (
   63,
   18,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -8359,6 +8531,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0.199,
@@ -8405,13 +8578,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_173\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_173\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_174',
@@ -8451,13 +8625,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_174\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_174\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_175',
@@ -8497,13 +8672,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_175\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_175\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_176',
@@ -8543,13 +8719,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_176\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_176\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_177',
@@ -8588,6 +8765,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -8635,6 +8813,7 @@ INSERT INTO `projects` (
   2.47,
   'Aman',
   '[]',
+  '[]',
   37349300,
   7.47,
   462650700,
@@ -8680,6 +8859,7 @@ INSERT INTO `projects` (
   56.19,
   1.19,
   'Aman',
+  '[]',
   '[]',
   22250000,
   56.19,
@@ -8727,6 +8907,7 @@ INSERT INTO `projects` (
   3.61,
   'Aman',
   '[]',
+  '[]',
   112260217,
   59.08,
   77739783,
@@ -8773,13 +8954,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_181\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_181\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_182',
@@ -8818,6 +9000,7 @@ INSERT INTO `projects` (
   8.76,
   -66.24,
   'Kritis',
+  '[]',
   '[]',
   99200000,
   100,
@@ -8865,6 +9048,7 @@ INSERT INTO `projects` (
   -10.33,
   'Kritis',
   '[]',
+  '[]',
   99200000,
   100,
   0,
@@ -8910,6 +9094,7 @@ INSERT INTO `projects` (
   47.76,
   -27.24,
   'Kritis',
+  '[]',
   '[]',
   99200000,
   100,
@@ -8957,6 +9142,7 @@ INSERT INTO `projects` (
   -57.5,
   'Kritis',
   '[]',
+  '[]',
   99200000,
   100,
   0,
@@ -9002,6 +9188,7 @@ INSERT INTO `projects` (
   71.03,
   -3.97,
   'Waspada',
+  '[]',
   '[]',
   99200000,
   100,
@@ -9049,13 +9236,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   354000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_187\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_187\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_188',
@@ -9094,6 +9282,7 @@ INSERT INTO `projects` (
   80,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -9141,6 +9330,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   99367000,
   100,
   0,
@@ -9186,6 +9376,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -9233,6 +9424,7 @@ INSERT INTO `projects` (
   -1.56,
   'Waspada',
   '[]',
+  '[]',
   3550000,
   3.44,
   99522000,
@@ -9279,13 +9471,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_192\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_192\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_193',
@@ -9324,6 +9517,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -9371,6 +9565,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   17760000,
@@ -9417,13 +9612,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_196',
@@ -9462,6 +9658,7 @@ INSERT INTO `projects` (
   6.82,
   2.82,
   'Aman',
+  '[]',
   '[]',
   30000000,
   6.82,
@@ -9509,13 +9706,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_197\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_197\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_198',
@@ -9555,13 +9753,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_198\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_198\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_199',
@@ -9601,13 +9800,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_199\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_199\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_200',
@@ -9647,6 +9847,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   99000000,
   100,
   0,
@@ -9662,7 +9863,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -9702,6 +9903,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   148000000,
   100,
@@ -9749,6 +9951,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   98400000,
   100,
   0,
@@ -9794,6 +9997,7 @@ INSERT INTO `projects` (
   95,
   0,
   'Aman',
+  '[]',
   '[]',
   139530000,
   30,
@@ -9841,6 +10045,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   284520000,
   30,
   663880000,
@@ -9886,6 +10091,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -9933,6 +10139,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   424500000,
   30,
   990500000,
@@ -9978,6 +10185,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -10025,6 +10233,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   283770000,
   30,
   662130000,
@@ -10070,6 +10279,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   283920000,
   30,
@@ -10117,6 +10327,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   49774000,
   100,
   0,
@@ -10162,6 +10373,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   49544000,
   100,
@@ -10209,6 +10421,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   70386000,
@@ -10254,6 +10467,7 @@ INSERT INTO `projects` (
   90,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -10301,13 +10515,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_214\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_214\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_215',
@@ -10346,6 +10561,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -10393,13 +10609,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_216\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_216\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_217',
@@ -10438,6 +10655,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -10485,13 +10703,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_218\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_218\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_219',
@@ -10530,6 +10749,7 @@ INSERT INTO `projects` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -10577,6 +10797,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19703000,
@@ -10622,6 +10843,7 @@ INSERT INTO `projects` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -10669,6 +10891,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1207300000,
@@ -10714,6 +10937,7 @@ INSERT INTO `projects` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -10761,13 +10985,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   40000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_224\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 40.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_224\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 40.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_225',
@@ -10806,6 +11031,7 @@ INSERT INTO `projects` (
   69.99,
   4.99,
   'Aman',
+  '[]',
   '[]',
   489917400,
   69.99,
@@ -10853,6 +11079,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   81283000,
@@ -10898,6 +11125,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   3959000,
   100,
@@ -10945,6 +11173,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1914000,
@@ -10991,13 +11220,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_229\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_229\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_230',
@@ -11036,6 +11266,7 @@ INSERT INTO `projects` (
   15.26,
   1.26,
   'Aman',
+  '[]',
   '[]',
   1150000,
   14.63,
@@ -11083,6 +11314,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   11834000,
@@ -11128,6 +11360,7 @@ INSERT INTO `projects` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -11175,6 +11408,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   13818000,
@@ -11220,6 +11454,7 @@ INSERT INTO `projects` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -11267,13 +11502,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_235\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_235\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_236',
@@ -11313,13 +11549,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_236\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_236\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_237',
@@ -11359,13 +11596,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   283740480,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_237\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_237\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_238',
@@ -11405,13 +11643,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   381328560,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_238\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 381.328.560 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_238\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 381.328.560 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_239',
@@ -11451,13 +11690,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   378041760,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_239\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 378.041.760 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_239\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 378.041.760 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_240',
@@ -11497,13 +11737,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   139659120,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_240\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 139.659.120 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_240\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 139.659.120 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_241',
@@ -11543,13 +11784,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   283740480,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_241\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_241\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_242',
@@ -11589,13 +11831,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   478551960,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_243',
@@ -11635,13 +11878,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   574532640,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_243\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 574.532.640 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_243\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 574.532.640 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_244',
@@ -11680,6 +11924,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -11727,6 +11972,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   137668000,
@@ -11773,13 +12019,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_246\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_246\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_247',
@@ -11818,6 +12065,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -11865,6 +12113,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   92158000,
@@ -11910,6 +12159,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   185133000,
   100,
@@ -11957,6 +12207,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   185788000,
@@ -11972,7 +12223,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -12012,6 +12263,7 @@ INSERT INTO `projects` (
   93.78,
   28.21,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -12059,6 +12311,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   188307000,
   100,
   0,
@@ -12104,6 +12357,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   187732000,
   100,
@@ -12151,6 +12405,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   140057000,
@@ -12196,6 +12451,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -12243,6 +12499,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   27777000,
   100,
   0,
@@ -12288,6 +12545,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   24859000,
   100,
@@ -12335,6 +12593,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   15806000,
   100,
   0,
@@ -12380,6 +12639,7 @@ INSERT INTO `projects` (
   30,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -12427,13 +12687,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_260\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_260\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_261',
@@ -12472,6 +12733,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -12519,6 +12781,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   18856000,
@@ -12564,6 +12827,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -12611,13 +12875,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_264\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_264\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_cipta_karya_265',
@@ -12657,13 +12922,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_265\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_265\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_266',
@@ -12703,13 +12969,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_266\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_266\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_267',
@@ -12749,13 +13016,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_267\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_267\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_268',
@@ -12795,13 +13063,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_268\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_268\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_269',
@@ -12841,13 +13110,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_269\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_269\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_270',
@@ -12886,6 +13156,7 @@ INSERT INTO `projects` (
   32.44,
   0,
   'Aman',
+  '[]',
   '[]',
   40530500,
   32.44,
@@ -12933,13 +13204,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   478544800,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_272',
@@ -12978,6 +13250,7 @@ INSERT INTO `projects` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -13025,13 +13298,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   12000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_273\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_273\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_274',
@@ -13071,13 +13345,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   286122200,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_274\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 286.122.200 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_274\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 286.122.200 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_275',
@@ -13117,13 +13392,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   236084500,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_275\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 236.084.500 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_275\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 236.084.500 (Perubahan).\"}]'
 ),
 (
   'prj_cipta_karya_276',
@@ -13163,13 +13439,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   187577600,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_276\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 187.577.600 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_276\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 187.577.600 (Perubahan).\"}]'
 ),
 (
   'prj_cipta_karya_277',
@@ -13209,13 +13486,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_277\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_277\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_278',
@@ -13255,13 +13533,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_278\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_278\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_279',
@@ -13301,13 +13580,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_279\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_279\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_280',
@@ -13347,13 +13627,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_280\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_280\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_281',
@@ -13393,13 +13674,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   12000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_281\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_281\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 12.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_cipta_karya_282',
@@ -13439,13 +13721,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   666589600,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_283',
@@ -13485,13 +13768,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_283\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_283\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_284',
@@ -13531,13 +13815,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_284\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_284\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_285',
@@ -13577,13 +13862,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1432181600,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_286',
@@ -13623,13 +13909,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_286\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_286\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_287',
@@ -13669,13 +13956,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   24000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_287\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 24.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_287\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 24.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_288',
@@ -13714,6 +14002,7 @@ INSERT INTO `projects` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   2164779300,
   30,
@@ -13761,6 +14050,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   39732000,
@@ -13806,6 +14096,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -13853,13 +14144,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_291\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_291\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_292',
@@ -13898,6 +14190,7 @@ INSERT INTO `projects` (
   50,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -13945,6 +14238,7 @@ INSERT INTO `projects` (
   10.46,
   'Aman',
   '[]',
+  '[]',
   129453500,
   64.73,
   70546500,
@@ -13991,13 +14285,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_294\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_294\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_295',
@@ -14037,13 +14332,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_295\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_295\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_296',
@@ -14083,13 +14379,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_296\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_296\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_297',
@@ -14129,13 +14426,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_297\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_297\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_298',
@@ -14175,13 +14473,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_298\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_298\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_299',
@@ -14221,13 +14520,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_299\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_299\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_300',
@@ -14267,13 +14567,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_300\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_300\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 );
 
 INSERT INTO `projects` (
@@ -14282,7 +14583,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -14322,6 +14623,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199353000,
   100,
@@ -14369,6 +14671,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   148865000,
   100,
   0,
@@ -14415,13 +14718,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_303\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_303\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_304',
@@ -14460,6 +14764,7 @@ INSERT INTO `projects` (
   60,
   -30,
   'Kritis',
+  '[]',
   '[]',
   149384000,
   99.85,
@@ -14507,13 +14812,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_305\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_305\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_306',
@@ -14552,6 +14858,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   98530000,
   100,
@@ -14599,6 +14906,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   149296000,
   100,
   0,
@@ -14644,6 +14952,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199335000,
   100,
@@ -14691,6 +15000,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   199251000,
   100,
   0,
@@ -14736,6 +15046,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199214000,
   100,
@@ -14783,6 +15094,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   149454000,
   100,
   0,
@@ -14828,6 +15140,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99390000,
   100,
@@ -14875,6 +15188,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   99129000,
   100,
   0,
@@ -14920,6 +15234,7 @@ INSERT INTO `projects` (
   23.35,
   0,
   'Aman',
+  '[]',
   '[]',
   39236500,
   49.05,
@@ -14967,6 +15282,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   199130000,
   100,
   0,
@@ -15012,6 +15328,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198886000,
   100,
@@ -15059,6 +15376,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   148834000,
   100,
   0,
@@ -15104,6 +15422,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199034000,
   100,
@@ -15151,6 +15470,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   298414000,
   100,
   0,
@@ -15196,6 +15516,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199405000,
   100,
@@ -15243,6 +15564,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   198549000,
   100,
   0,
@@ -15288,6 +15610,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   174127000,
   100,
@@ -15335,6 +15658,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   149183000,
   100,
   0,
@@ -15380,6 +15704,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198604000,
   100,
@@ -15427,6 +15752,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   955444001,
   100,
   0,
@@ -15472,6 +15798,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14705000,
   100,
@@ -15519,13 +15846,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_327\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_327\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_328',
@@ -15564,6 +15892,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   149223000,
   100,
@@ -15611,6 +15940,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   954431000,
   100,
   0,
@@ -15656,6 +15986,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14705000,
   100,
@@ -15703,13 +16034,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_331\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_331\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_332',
@@ -15749,13 +16081,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_332\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_332\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_333',
@@ -15795,13 +16128,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_333\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_333\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_334',
@@ -15841,13 +16175,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_334\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_334\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 0 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_335',
@@ -15886,6 +16221,7 @@ INSERT INTO `projects` (
   50,
   20,
   'Aman',
+  '[]',
   '[]',
   586551392,
   30.86,
@@ -15933,6 +16269,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   29646000,
   100,
   0,
@@ -15979,13 +16316,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_337\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_337\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_338',
@@ -16024,6 +16362,7 @@ INSERT INTO `projects` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -16071,6 +16410,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   198789359,
   100,
   0,
@@ -16116,6 +16456,7 @@ INSERT INTO `projects` (
   40,
   10,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -16163,6 +16504,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   198651000,
   100,
   0,
@@ -16208,6 +16550,7 @@ INSERT INTO `projects` (
   50,
   20,
   'Aman',
+  '[]',
   '[]',
   199455000,
   100,
@@ -16255,13 +16598,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   750000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_343\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_343\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_344',
@@ -16301,13 +16645,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_344\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_344\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_345',
@@ -16346,6 +16691,7 @@ INSERT INTO `projects` (
   60,
   20,
   'Aman',
+  '[]',
   '[]',
   99601000,
   100,
@@ -16393,6 +16739,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   491900000,
   100,
   0,
@@ -16438,6 +16785,7 @@ INSERT INTO `projects` (
   70,
   40,
   'Aman',
+  '[]',
   '[]',
   199228000,
   100,
@@ -16485,6 +16833,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   442424160,
   30,
   1032323039,
@@ -16530,6 +16879,7 @@ INSERT INTO `projects` (
   55.68,
   5.68,
   'Aman',
+  '[]',
   '[]',
   591067508,
   591067508000,
@@ -16577,6 +16927,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   441501918,
@@ -16592,7 +16943,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -16632,6 +16983,7 @@ INSERT INTO `projects` (
   52.4,
   2.4,
   'Aman',
+  '[]',
   '[]',
   293158632,
   30,
@@ -16679,6 +17031,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   295318331,
   30,
   689076106,
@@ -16724,6 +17077,7 @@ INSERT INTO `projects` (
   90,
   60,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -16771,6 +17125,7 @@ INSERT INTO `projects` (
   30,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   984248552,
@@ -16816,6 +17171,7 @@ INSERT INTO `projects` (
   35,
   5,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -16863,6 +17219,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   490510253,
@@ -16908,6 +17265,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   291068101,
   30.78,
@@ -16955,6 +17313,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   590384179,
   30,
   1377563085,
@@ -17000,6 +17359,7 @@ INSERT INTO `projects` (
   100,
   10,
   'Aman',
+  '[]',
   '[]',
   294919469,
   30,
@@ -17047,6 +17407,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   235739405,
   30,
   550058610,
@@ -17092,6 +17453,7 @@ INSERT INTO `projects` (
   10,
   -20,
   'Kritis',
+  '[]',
   '[]',
   0,
   0,
@@ -17139,6 +17501,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   295536232,
   30,
   689584540,
@@ -17184,6 +17547,7 @@ INSERT INTO `projects` (
   90,
   40,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -17231,6 +17595,7 @@ INSERT INTO `projects` (
   10,
   'Aman',
   '[]',
+  '[]',
   294915190,
   30,
   688135444,
@@ -17276,6 +17641,7 @@ INSERT INTO `projects` (
   40,
   10,
   'Aman',
+  '[]',
   '[]',
   294304762,
   30,
@@ -17323,6 +17689,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   980937999,
@@ -17369,13 +17736,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_367\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_367\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_368',
@@ -17414,6 +17782,7 @@ INSERT INTO `projects` (
   93.25,
   63.25,
   'Aman',
+  '[]',
   '[]',
   206311703,
   30,
@@ -17461,6 +17830,7 @@ INSERT INTO `projects` (
   30,
   'Aman',
   '[]',
+  '[]',
   295138963,
   30,
   688657581,
@@ -17506,6 +17876,7 @@ INSERT INTO `projects` (
   100,
   20,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -17553,6 +17924,7 @@ INSERT INTO `projects` (
   20,
   'Aman',
   '[]',
+  '[]',
   295348553,
   30,
   689146623,
@@ -17598,6 +17970,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   2424634000,
   100,
@@ -17645,6 +18018,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   24891000,
   100,
   0,
@@ -17691,13 +18065,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_374\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_374\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_375',
@@ -17737,13 +18112,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_375\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_375\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_376',
@@ -17783,13 +18159,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_376\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_376\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_377',
@@ -17829,13 +18206,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_377\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_377\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_378',
@@ -17875,13 +18253,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_378\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_378\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_379',
@@ -17921,13 +18300,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_379\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_379\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_380',
@@ -17967,13 +18347,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_380\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_380\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_381',
@@ -18013,13 +18394,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_381\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_381\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_382',
@@ -18059,13 +18441,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   750000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_382\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_382\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_383',
@@ -18105,13 +18488,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_383\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_383\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_384',
@@ -18151,13 +18535,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_384\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_384\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_385',
@@ -18197,13 +18582,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_385\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_385\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_386',
@@ -18243,13 +18629,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_386\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_386\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_387',
@@ -18289,13 +18676,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_387\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_387\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_388',
@@ -18335,13 +18723,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_388\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_388\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_389',
@@ -18381,13 +18770,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1773000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_389\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_389\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_390',
@@ -18427,13 +18817,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   27000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_390\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_390\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_391',
@@ -18473,13 +18864,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_391\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_391\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_392',
@@ -18519,13 +18911,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_392\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_392\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_393',
@@ -18565,13 +18958,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   22500000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_393\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_393\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_394',
@@ -18611,13 +19005,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_394\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_394\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_395',
@@ -18657,13 +19052,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_395\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_395\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_396',
@@ -18703,13 +19099,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   4550000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_396\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_396\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_397',
@@ -18749,13 +19146,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_397\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_397\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_398',
@@ -18795,13 +19193,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   2970000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_398\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_398\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_399',
@@ -18841,13 +19240,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_399\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_399\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_400',
@@ -18887,13 +19287,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_400\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_400\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 );
 
 INSERT INTO `projects` (
@@ -18902,7 +19303,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -18943,13 +19344,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_401\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_401\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_402',
@@ -18989,13 +19391,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   7450000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_402\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_402\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_403',
@@ -19035,13 +19438,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_403\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_403\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_404',
@@ -19081,13 +19485,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_404\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_404\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_405',
@@ -19127,13 +19532,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_405\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_405\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_406',
@@ -19173,13 +19579,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_406\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_406\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_407',
@@ -19219,13 +19626,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_407\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_407\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_408',
@@ -19265,13 +19673,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1970000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_408\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_408\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_409',
@@ -19311,13 +19720,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_409\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_409\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_410',
@@ -19357,13 +19767,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_410\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_410\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_411',
@@ -19403,13 +19814,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_411\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_411\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_412',
@@ -19449,13 +19861,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1970000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_412\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_412\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_413',
@@ -19495,13 +19908,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_413\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_413\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_414',
@@ -19541,13 +19955,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1480000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_414\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_414\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_415',
@@ -19587,13 +20002,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_415\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_415\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_416',
@@ -19633,13 +20049,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_416\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_416\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_417',
@@ -19679,13 +20096,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_417\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_417\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_418',
@@ -19725,13 +20143,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_418\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_418\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_419',
@@ -19771,13 +20190,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_419\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_419\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_420',
@@ -19817,13 +20237,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_420\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_420\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_421',
@@ -19863,13 +20284,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_421\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_421\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_422',
@@ -19909,13 +20331,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_422\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_422\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_423',
@@ -19955,13 +20378,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_423\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_423\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_424',
@@ -20001,13 +20425,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1871500000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_424\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_424\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_425',
@@ -20047,13 +20472,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   28500000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_425\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_425\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_426',
@@ -20093,13 +20519,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   2970000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_426\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_426\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_427',
@@ -20139,13 +20566,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_427\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_427\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_428',
@@ -20185,13 +20613,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_428\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_428\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_429',
@@ -20231,13 +20660,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_429\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_429\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_430',
@@ -20277,13 +20707,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_430\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_430\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_431',
@@ -20323,13 +20754,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_431\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_431\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_432',
@@ -20369,13 +20801,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_432\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_432\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_433',
@@ -20415,13 +20848,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1480000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_433\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_433\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_434',
@@ -20461,13 +20895,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_434\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_434\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_435',
@@ -20507,13 +20942,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_435\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_435\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_436',
@@ -20553,13 +20989,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_436\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_436\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_437',
@@ -20599,13 +21036,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_437\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_437\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_438',
@@ -20645,13 +21083,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_438\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_438\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_439',
@@ -20691,13 +21130,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   5950000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_439\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_439\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_440',
@@ -20737,13 +21177,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_440\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_440\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_441',
@@ -20783,13 +21224,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   10850000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_441\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_441\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_442',
@@ -20829,13 +21271,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_442\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_442\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_443',
@@ -20875,13 +21318,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_443\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_443\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_444',
@@ -20921,13 +21365,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_444\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_444\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_445',
@@ -20967,13 +21412,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_445\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_445\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_446',
@@ -21013,13 +21459,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   600000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_446\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_446\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_447',
@@ -21059,13 +21506,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   600000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_447\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_447\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_448',
@@ -21105,13 +21553,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   350000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_448\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 350.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_448\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 350.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_449',
@@ -21151,13 +21600,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_449\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_449\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_450',
@@ -21197,13 +21647,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1477500000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_450\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_450\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan).\"}]'
 );
 
 INSERT INTO `projects` (
@@ -21212,7 +21663,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -21253,13 +21704,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_451\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_451\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_452',
@@ -21299,13 +21751,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_452\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_452\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_453',
@@ -21345,13 +21798,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_453\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_453\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_454',
@@ -21391,13 +21845,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   380000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_454\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 380.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_454\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 380.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_455',
@@ -21437,13 +21892,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_455\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_455\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_456',
@@ -21483,13 +21939,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_456\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_456\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_457',
@@ -21529,13 +21986,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_457\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_457\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_458',
@@ -21575,13 +22033,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_458\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_458\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_459',
@@ -21621,13 +22080,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   345000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_459\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 345.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_459\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 345.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_460',
@@ -21667,13 +22127,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_460\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_460\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_461',
@@ -21713,13 +22174,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_461\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_461\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_462',
@@ -21759,13 +22221,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_462\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_462\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_463',
@@ -21805,13 +22268,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   250000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_463\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_463\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_464',
@@ -21851,13 +22315,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_464\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_464\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_465',
@@ -21896,6 +22361,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   197600000,
   100,
@@ -21943,6 +22409,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   188097048,
   100,
   0,
@@ -21988,6 +22455,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   187663260,
   100,
@@ -22035,6 +22503,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   199404000,
   100,
   0,
@@ -22080,6 +22549,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   187962549,
   100,
@@ -22127,6 +22597,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   188097048,
   100,
   0,
@@ -22172,6 +22643,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   187008416,
   100,
@@ -22219,6 +22691,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   186046989,
   100,
   0,
@@ -22264,6 +22737,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   187558321,
   100,
@@ -22311,6 +22785,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   195757380,
   100,
   0,
@@ -22356,6 +22831,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   195757380,
   100,
@@ -22403,6 +22879,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   622586830,
   35.99,
   1107413170,
@@ -22449,13 +22926,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_477\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_477\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_478',
@@ -22495,13 +22973,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_478\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_478\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_479',
@@ -22541,13 +23020,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_479\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_479\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_480',
@@ -22587,13 +23067,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_480\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_480\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_481',
@@ -22633,13 +23114,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_481\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_481\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_482',
@@ -22678,6 +23160,7 @@ INSERT INTO `projects` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   174470599,
   87.24,
@@ -22725,6 +23208,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   86658587,
   100,
   0,
@@ -22770,6 +23254,7 @@ INSERT INTO `projects` (
   8.18,
   0,
   'Aman',
+  '[]',
   '[]',
   31616000,
   7.03,
@@ -22817,13 +23302,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_485\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_485\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_486',
@@ -22863,13 +23349,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   338000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_486\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 338.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_486\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 338.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_487',
@@ -22909,13 +23396,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_487\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_487\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_488',
@@ -22955,13 +23443,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_488\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_488\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_489',
@@ -23001,13 +23490,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_489\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_489\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_490',
@@ -23047,13 +23537,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_490\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_490\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_491',
@@ -23093,13 +23584,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_491\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_491\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_492',
@@ -23139,13 +23631,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_492\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_492\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_493',
@@ -23185,13 +23678,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_493\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_493\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_494',
@@ -23231,13 +23725,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_494\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_494\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_495',
@@ -23277,13 +23772,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_495\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_495\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_496',
@@ -23323,13 +23819,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_496\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_496\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_497',
@@ -23369,13 +23866,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_497\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_497\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_498',
@@ -23414,6 +23912,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   285021623,
   30,
@@ -23461,6 +23960,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   14779000,
   100,
   0,
@@ -23507,6 +24007,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -23522,7 +24023,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -23562,6 +24063,7 @@ INSERT INTO `projects` (
   75,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -23609,6 +24111,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   286115220,
   30,
   667602181,
@@ -23654,6 +24157,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14710000,
   100,
@@ -23701,6 +24205,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -23747,13 +24252,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_505\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_505\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_506',
@@ -23792,6 +24298,7 @@ INSERT INTO `projects` (
   25,
   0,
   'Aman',
+  '[]',
   '[]',
   2892391130,
   30.09,
@@ -23839,6 +24346,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   38034770,
@@ -23884,6 +24392,7 @@ INSERT INTO `projects` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   1044154998,
   30.48,
@@ -23931,6 +24440,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   24812000,
   100,
   0,
@@ -23976,6 +24486,7 @@ INSERT INTO `projects` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -24023,6 +24534,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   285317015,
   30,
   665739702,
@@ -24068,6 +24580,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14842000,
   100,
@@ -24115,6 +24628,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -24160,6 +24674,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -24207,6 +24722,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   398786000,
@@ -24252,6 +24768,7 @@ INSERT INTO `projects` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -24299,6 +24816,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   285331518,
   30,
   665773542,
@@ -24344,6 +24862,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14847000,
   100.03,
@@ -24391,6 +24910,7 @@ INSERT INTO `projects` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -24437,13 +24957,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_520\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_520\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_521',
@@ -24483,13 +25004,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   700000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_521\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_521\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_522',
@@ -24529,13 +25051,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_522\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_522\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_523',
@@ -24575,13 +25098,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_523\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_523\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_524',
@@ -24621,13 +25145,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   175000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_524\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_524\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_525',
@@ -24667,13 +25192,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_525\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_525\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_526',
@@ -24713,13 +25239,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   700000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_526\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_526\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_527',
@@ -24759,13 +25286,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_527\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_527\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_528',
@@ -24805,13 +25333,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_528\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_528\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_529',
@@ -24851,13 +25380,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_529\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_529\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_530',
@@ -24897,13 +25427,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_530\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_530\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_531',
@@ -24943,13 +25474,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   175000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_531\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_531\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_532',
@@ -24989,13 +25521,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_532\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_532\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_533',
@@ -25035,13 +25568,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_533\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_533\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_534',
@@ -25080,6 +25614,7 @@ INSERT INTO `projects` (
   25,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -25127,6 +25662,7 @@ INSERT INTO `projects` (
   4.09,
   'Aman',
   '[]',
+  '[]',
   64092200,
   64.09,
   35907800,
@@ -25172,6 +25708,7 @@ INSERT INTO `projects` (
   84.17,
   4.17,
   'Aman',
+  '[]',
   '[]',
   75755000,
   84.17,
@@ -25219,6 +25756,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   99630000,
   100,
   0,
@@ -25264,6 +25802,7 @@ INSERT INTO `projects` (
   77.87,
   17.87,
   'Aman',
+  '[]',
   '[]',
   61631412,
   77.87,
@@ -25311,6 +25850,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   26366200,
   38.47,
   42173800,
@@ -25356,6 +25896,7 @@ INSERT INTO `projects` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99608000,
   100,
@@ -25403,6 +25944,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   99305000,
   99.3,
   695000,
@@ -25448,6 +25990,7 @@ INSERT INTO `projects` (
   49.63,
   0,
   'Aman',
+  '[]',
   '[]',
   39197000,
   12.69,
@@ -25495,13 +26038,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   175000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_tata_ruang_543\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_tata_ruang_543\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
 (
   'prj_tata_ruang_544',
@@ -25540,6 +26084,7 @@ INSERT INTO `projects` (
   69.15,
   4.15,
   'Aman',
+  '[]',
   '[]',
   120754496,
   69.15,
@@ -25587,6 +26132,7 @@ INSERT INTO `projects` (
   1.58,
   'Aman',
   '[]',
+  '[]',
   3290000,
   6.58,
   46710000,
@@ -25632,6 +26178,7 @@ INSERT INTO `projects` (
   69.26,
   4.26,
   'Aman',
+  '[]',
   '[]',
   34630919,
   69.26,
@@ -25679,13 +26226,14 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   90000000,
   '[]',
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
-  '[{\"id\":\"log_init_prj_tata_ruang_547\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 90.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_tata_ruang_547\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 90.000.000 (Murni).\"}]'
 ),
 (
   'prj_tata_ruang_548',
@@ -25724,6 +26272,7 @@ INSERT INTO `projects` (
   89.4,
   4.4,
   'Aman',
+  '[]',
   '[]',
   8940000,
   89.4,
@@ -25771,6 +26320,7 @@ INSERT INTO `projects` (
   4.29,
   'Aman',
   '[]',
+  '[]',
   13877229,
   54.29,
   11682771,
@@ -25817,6 +26367,7 @@ INSERT INTO `projects` (
   6.59,
   'Aman',
   '[]',
+  '[]',
   21293100,
   41.59,
   29906900,
@@ -25832,7 +26383,7 @@ INSERT INTO `projects` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`, `tanggal_mulai`, 
   `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`, `kecamatan`, `desa`, `lokasi_lengkap`, 
   `latitude`, `longitude`, `tags_json`, `is_public_highlight`, `status_tahap_pra_kontrak`, `pra_kontrak_json`,
-  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`, `logs_json`
 ) VALUES
 (
@@ -25872,6 +26423,7 @@ INSERT INTO `projects` (
   49.2,
   4.2,
   'Aman',
+  '[]',
   '[]',
   4920000,
   49.2,
@@ -25919,6 +26471,7 @@ INSERT INTO `projects` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99731000,
@@ -25964,6 +26517,7 @@ INSERT INTO `projects` (
   69.49,
   9.49,
   'Aman',
+  '[]',
   '[]',
   20847875,
   69.49,
@@ -26011,6 +26565,7 @@ INSERT INTO `projects` (
   4.12,
   'Aman',
   '[]',
+  '[]',
   101891473,
   49.12,
   105538527,
@@ -26056,6 +26611,7 @@ INSERT INTO `projects` (
   41.6,
   1.6,
   'Aman',
+  '[]',
   '[]',
   10400000,
   41.6,
@@ -26103,6 +26659,7 @@ INSERT INTO `projects` (
   5.92,
   'Aman',
   '[]',
+  '[]',
   91948300,
   48.25,
   98601700,
@@ -26149,6 +26706,7 @@ INSERT INTO `projects` (
   9.17,
   'Aman',
   '[]',
+  '[]',
   36880075,
   49.17,
   38119925,
@@ -26194,6 +26752,7 @@ INSERT INTO `projects` (
   47.66,
   2.66,
   'Aman',
+  '[]',
   '[]',
   55068225,
   47.66,
@@ -26247,6 +26806,7 @@ CREATE TABLE `monitoring_paket` (
   `deviasi_fisik` decimal(6,2) NOT NULL DEFAULT 0.00,
   `status_deviasi` varchar(50) NOT NULL DEFAULT 'Aman',
   `kurva_s_json` longtext DEFAULT NULL,
+  `foto_dokumentasi_json` longtext DEFAULT NULL,
   `total_pencairan` decimal(18,2) NOT NULL DEFAULT 0.00,
   `persen_keuangan` decimal(6,2) NOT NULL DEFAULT 0.00,
   `sisa_anggaran` decimal(18,2) NOT NULL DEFAULT 0.00,
@@ -26272,7 +26832,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -26313,6 +26873,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -26361,6 +26922,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   180000000,
@@ -26407,6 +26969,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -26455,6 +27018,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   868172100,
   30,
   2025734900,
@@ -26501,6 +27065,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -26549,6 +27114,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199010000,
@@ -26595,6 +27161,7 @@ INSERT INTO `monitoring_paket` (
   85,
   5,
   'Aman',
+  '[]',
   '[]',
   286148100,
   30,
@@ -26643,6 +27210,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   463492000,
   100,
   0,
@@ -26689,6 +27257,7 @@ INSERT INTO `monitoring_paket` (
   30,
   -20,
   'Kritis',
+  '[]',
   '[]',
   573583800,
   30,
@@ -26737,6 +27306,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   293154900,
   30,
   684028100,
@@ -26783,6 +27353,7 @@ INSERT INTO `monitoring_paket` (
   85,
   5,
   'Aman',
+  '[]',
   '[]',
   578701800,
   30,
@@ -26831,6 +27402,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   491026000,
@@ -26877,6 +27449,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -26925,6 +27498,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   129642000,
@@ -26971,6 +27545,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   148914000,
   100,
@@ -27019,6 +27594,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   286263000,
   30,
   667947000,
@@ -27065,6 +27641,7 @@ INSERT INTO `monitoring_paket` (
   75,
   5,
   'Aman',
+  '[]',
   '[]',
   290591400,
   30,
@@ -27113,6 +27690,7 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   2912739000,
@@ -27159,6 +27737,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198740000,
   100,
@@ -27207,6 +27786,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   489472000,
@@ -27253,6 +27833,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27301,6 +27882,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   298936000,
   100,
   0,
@@ -27347,6 +27929,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27395,6 +27978,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   198290000,
@@ -27441,6 +28025,7 @@ INSERT INTO `monitoring_paket` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27489,6 +28074,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199014000,
@@ -27535,6 +28121,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27583,6 +28170,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   133843000,
@@ -27629,6 +28217,7 @@ INSERT INTO `monitoring_paket` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27677,6 +28266,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   785960000,
@@ -27723,6 +28313,7 @@ INSERT INTO `monitoring_paket` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27771,6 +28362,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   490544000,
@@ -27817,6 +28409,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27865,6 +28458,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   588931000,
@@ -27911,6 +28505,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -27959,6 +28554,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   298624000,
@@ -28005,6 +28601,7 @@ INSERT INTO `monitoring_paket` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28053,6 +28650,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199169000,
@@ -28099,6 +28697,7 @@ INSERT INTO `monitoring_paket` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28147,6 +28746,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   248778000,
@@ -28193,6 +28793,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28241,6 +28842,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   298732000,
@@ -28287,6 +28889,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28335,6 +28938,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   149061000,
@@ -28381,6 +28985,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28429,6 +29034,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   299324000,
@@ -28475,6 +29081,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28523,6 +29130,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1455627000,
@@ -28569,6 +29177,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28617,6 +29226,7 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
+  '[]',
   139354800,
   30,
   325161200,
@@ -28633,7 +29243,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -28674,6 +29284,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198760000,
   100,
@@ -28722,6 +29333,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   198337000,
@@ -28768,6 +29380,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   149374000,
   100,
@@ -28816,6 +29429,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   248866000,
   100,
   0,
@@ -28862,6 +29476,7 @@ INSERT INTO `monitoring_paket` (
   85,
   5,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -28910,6 +29525,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199048000,
@@ -28956,6 +29572,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99074000,
   100,
@@ -29004,6 +29621,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   99036000,
   100,
   0,
@@ -29050,6 +29668,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   146481000,
   30,
@@ -29098,6 +29717,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   410356800,
   30,
   957499200,
@@ -29144,6 +29764,7 @@ INSERT INTO `monitoring_paket` (
   90,
   5,
   'Aman',
+  '[]',
   '[]',
   293054400,
   30,
@@ -29192,6 +29813,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   298894000,
@@ -29238,6 +29860,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -29286,6 +29909,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199010000,
@@ -29332,6 +29956,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -29380,6 +30005,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199097000,
@@ -29426,6 +30052,7 @@ INSERT INTO `monitoring_paket` (
   15,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -29474,6 +30101,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1280000000,
@@ -29481,7 +30109,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_127\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_127\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.280.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_129',
@@ -29520,6 +30148,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -29568,6 +30197,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   959159000,
@@ -29614,6 +30244,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -29662,6 +30293,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99229000,
@@ -29708,6 +30340,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -29756,6 +30389,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199238000,
@@ -29802,6 +30436,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198907000,
   100,
@@ -29850,6 +30485,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   398090000,
@@ -29896,6 +30532,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -29944,6 +30581,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   299100000,
@@ -29990,6 +30628,7 @@ INSERT INTO `monitoring_paket` (
   90,
   -10,
   'Waspada',
+  '[]',
   '[]',
   0,
   0,
@@ -30038,6 +30677,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199190000,
@@ -30084,6 +30724,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -30132,6 +30773,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0.199,
@@ -30179,6 +30821,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -30186,7 +30829,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_169\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_169\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_162',
@@ -30225,6 +30868,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -30273,6 +30917,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0.199,
@@ -30320,6 +30965,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   250000000,
@@ -30327,7 +30973,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_168\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_168\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_170',
@@ -30367,6 +31013,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
@@ -30374,7 +31021,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_170\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_170\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_167',
@@ -30414,6 +31061,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   250000000,
@@ -30421,7 +31069,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_167\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_167\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_171',
@@ -30460,6 +31108,7 @@ INSERT INTO `monitoring_paket` (
   63,
   18,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -30508,6 +31157,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0.199,
@@ -30555,6 +31205,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -30562,7 +31213,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_173\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_173\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_175',
@@ -30602,6 +31253,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -30609,7 +31261,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_175\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_175\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_193',
@@ -30648,6 +31300,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -30696,6 +31349,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   99000000,
   100,
   0,
@@ -30742,6 +31396,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   148000000,
   100,
@@ -30790,6 +31445,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   98400000,
   100,
   0,
@@ -30836,6 +31492,7 @@ INSERT INTO `monitoring_paket` (
   95,
   0,
   'Aman',
+  '[]',
   '[]',
   139530000,
   30,
@@ -30884,6 +31541,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   284520000,
   30,
   663880000,
@@ -30930,6 +31588,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -30978,6 +31637,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   424500000,
   30,
   990500000,
@@ -30994,7 +31654,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -31035,6 +31695,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31083,6 +31744,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   283770000,
   30,
   662130000,
@@ -31129,6 +31791,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   283920000,
   30,
@@ -31177,6 +31840,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -31184,7 +31848,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_214\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_214\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_215',
@@ -31223,6 +31887,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31271,6 +31936,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1476300000,
@@ -31317,6 +31983,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31365,6 +32032,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   22013000,
@@ -31411,6 +32079,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31459,6 +32128,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
@@ -31466,7 +32136,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_216\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_216\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'mp_fisik_111',
@@ -31505,6 +32175,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31553,6 +32224,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19703000,
@@ -31599,6 +32271,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31647,6 +32320,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   81283000,
@@ -31693,6 +32367,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31741,6 +32416,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   137668000,
@@ -31788,6 +32464,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   478544800,
@@ -31795,7 +32472,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_247',
@@ -31834,6 +32511,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31882,6 +32560,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   286122200,
@@ -31928,6 +32607,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -31976,6 +32656,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   236084500,
@@ -31983,7 +32664,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_275\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 236.084.500 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_275\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 236.084.500 (Perubahan).\"}]'
 ),
 (
   'prj_cipta_karya_249',
@@ -32022,6 +32703,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   185133000,
   100,
@@ -32070,6 +32752,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   185788000,
@@ -32116,6 +32799,7 @@ INSERT INTO `monitoring_paket` (
   93.78,
   28.21,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -32164,6 +32848,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   188307000,
   100,
   0,
@@ -32210,6 +32895,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   187732000,
   100,
@@ -32258,6 +32944,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   140057000,
@@ -32304,6 +32991,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -32352,6 +33040,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   187577600,
@@ -32359,7 +33048,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_276\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 187.577.600 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_276\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 187.577.600 (Perubahan).\"}]'
 ),
 (
   'prj_cipta_karya_285',
@@ -32399,6 +33088,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
@@ -32406,7 +33096,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_286\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_286\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'pkt_131_prj_cipta_karya_285',
@@ -32446,6 +33136,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   24000000,
@@ -32453,7 +33144,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_288',
@@ -32492,6 +33183,7 @@ INSERT INTO `monitoring_paket` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   2164779300,
   30,
@@ -32540,6 +33232,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   2164779300,
   30,
   5051151700,
@@ -32587,6 +33280,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   666589600,
@@ -32594,7 +33288,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
 (
   'pkt_135_prj_cipta_karya_285',
@@ -32634,6 +33328,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1432181600,
@@ -32641,7 +33336,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_285\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.432.181.600 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_290',
@@ -32680,6 +33375,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -32728,6 +33424,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   3584729000,
@@ -32774,6 +33471,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -32822,6 +33520,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   199353000,
   100,
   0,
@@ -32868,6 +33567,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   148865000,
   100,
@@ -32916,6 +33616,7 @@ INSERT INTO `monitoring_paket` (
   -30,
   'Kritis',
   '[]',
+  '[]',
   149384000,
   99.85,
   222000,
@@ -32963,6 +33664,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -32970,7 +33672,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_305\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_305\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_306',
@@ -33009,6 +33711,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   98530000,
   100,
@@ -33057,6 +33760,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   149296000,
   100,
   0,
@@ -33103,6 +33807,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199335000,
   100,
@@ -33151,6 +33856,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   199251000,
   100,
   0,
@@ -33197,6 +33903,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199214000,
   100,
@@ -33245,6 +33952,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   149454000,
   100,
   0,
@@ -33291,6 +33999,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99390000,
   100,
@@ -33339,6 +34048,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   99129000,
   100,
   0,
@@ -33355,7 +34065,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -33397,6 +34107,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -33404,7 +34115,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_375\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_375\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_387',
@@ -33444,6 +34155,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -33451,7 +34163,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_387\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_387\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_378',
@@ -33491,6 +34203,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -33498,7 +34211,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_378\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_378\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_374',
@@ -33538,6 +34251,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -33545,7 +34259,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_374\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_374\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_384',
@@ -33585,6 +34299,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -33592,7 +34307,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_384\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_384\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_376',
@@ -33632,6 +34347,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -33639,7 +34355,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_376\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_376\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_379',
@@ -33679,6 +34395,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -33686,7 +34403,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_379\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_379\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_377',
@@ -33726,6 +34443,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -33733,7 +34451,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_377\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_377\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_381',
@@ -33773,6 +34491,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -33780,7 +34499,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_381\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_381\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_386',
@@ -33820,6 +34539,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
@@ -33827,7 +34547,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_386\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_386\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_380',
@@ -33867,6 +34587,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -33874,7 +34595,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_380\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_380\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_383',
@@ -33914,6 +34635,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -33921,7 +34643,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_383\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_383\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_385',
@@ -33961,6 +34683,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -33968,7 +34691,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_385\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_385\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_388',
@@ -34008,6 +34731,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -34015,7 +34739,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_388\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_388\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_382',
@@ -34055,6 +34779,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   750000000,
@@ -34062,7 +34787,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_382\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_382\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_315',
@@ -34101,6 +34826,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   199130000,
   100,
@@ -34149,6 +34875,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   198886000,
   100,
   0,
@@ -34195,6 +34922,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   148834000,
   100,
@@ -34243,6 +34971,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   199034000,
   100,
   0,
@@ -34289,6 +35018,7 @@ INSERT INTO `monitoring_paket` (
   90,
   0,
   'Aman',
+  '[]',
   '[]',
   298414000,
   100,
@@ -34337,6 +35067,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   199405000,
   100,
   0,
@@ -34383,6 +35114,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198549000,
   100,
@@ -34431,6 +35163,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   174127000,
   100,
   0,
@@ -34477,6 +35210,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   149183000,
   100,
@@ -34525,6 +35259,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   198604000,
   100,
   0,
@@ -34571,6 +35306,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   955444001,
   100,
@@ -34619,6 +35355,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   149223000,
   100,
   0,
@@ -34665,6 +35402,7 @@ INSERT INTO `monitoring_paket` (
   90,
   10,
   'Aman',
+  '[]',
   '[]',
   954431000,
   100,
@@ -34713,6 +35451,7 @@ INSERT INTO `monitoring_paket` (
   20,
   'Aman',
   '[]',
+  '[]',
   586551392,
   30.86,
   1313953249,
@@ -34759,6 +35498,7 @@ INSERT INTO `monitoring_paket` (
   90,
   10,
   'Aman',
+  '[]',
   '[]',
   198789359,
   100,
@@ -34807,6 +35547,7 @@ INSERT INTO `monitoring_paket` (
   10,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   198958000,
@@ -34853,6 +35594,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   198651000,
   100,
@@ -34901,6 +35643,7 @@ INSERT INTO `monitoring_paket` (
   20,
   'Aman',
   '[]',
+  '[]',
   199455000,
   100,
   0,
@@ -34948,6 +35691,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   750000000,
@@ -34955,7 +35699,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_343\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_343\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 750.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_344',
@@ -34995,6 +35739,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -35002,7 +35747,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_344\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_344\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_345',
@@ -35041,6 +35786,7 @@ INSERT INTO `monitoring_paket` (
   60,
   20,
   'Aman',
+  '[]',
   '[]',
   99601000,
   100,
@@ -35089,6 +35835,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   491900000,
   100,
   0,
@@ -35135,6 +35882,7 @@ INSERT INTO `monitoring_paket` (
   70,
   40,
   'Aman',
+  '[]',
   '[]',
   199228000,
   100,
@@ -35183,6 +35931,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1871500000,
@@ -35190,7 +35939,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_424\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_424\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.871.500.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_348',
@@ -35229,6 +35978,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   442424160,
   30,
@@ -35277,6 +36027,7 @@ INSERT INTO `monitoring_paket` (
   5.68,
   'Aman',
   '[]',
+  '[]',
   591067508,
   591067508000,
   0,
@@ -35323,6 +36074,7 @@ INSERT INTO `monitoring_paket` (
   20,
   10,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -35371,6 +36123,7 @@ INSERT INTO `monitoring_paket` (
   2.4,
   'Aman',
   '[]',
+  '[]',
   293158632,
   30,
   684036808,
@@ -35417,6 +36170,7 @@ INSERT INTO `monitoring_paket` (
   100,
   10,
   'Aman',
+  '[]',
   '[]',
   295318331,
   30,
@@ -35465,6 +36219,7 @@ INSERT INTO `monitoring_paket` (
   60,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   981104275,
@@ -35511,6 +36266,7 @@ INSERT INTO `monitoring_paket` (
   60,
   30,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -35559,6 +36315,7 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   984972001,
@@ -35605,6 +36362,7 @@ INSERT INTO `monitoring_paket` (
   40,
   10,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -35653,6 +36411,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   291068101,
   30.78,
   654603512,
@@ -35700,6 +36459,7 @@ INSERT INTO `monitoring_paket` (
   10,
   'Aman',
   '[]',
+  '[]',
   590384179,
   30,
   1377563085,
@@ -35716,7 +36476,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -35757,6 +36517,7 @@ INSERT INTO `monitoring_paket` (
   100,
   10,
   'Aman',
+  '[]',
   '[]',
   294919469,
   30,
@@ -35805,6 +36566,7 @@ INSERT INTO `monitoring_paket` (
   10,
   'Aman',
   '[]',
+  '[]',
   235739405,
   30,
   550058610,
@@ -35851,6 +36613,7 @@ INSERT INTO `monitoring_paket` (
   10,
   -20,
   'Kritis',
+  '[]',
   '[]',
   0,
   0,
@@ -35899,6 +36662,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   295536232,
   30,
   689584540,
@@ -35945,6 +36709,7 @@ INSERT INTO `monitoring_paket` (
   90,
   40,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -35993,6 +36758,7 @@ INSERT INTO `monitoring_paket` (
   10,
   'Aman',
   '[]',
+  '[]',
   294915190,
   30,
   688135444,
@@ -36039,6 +36805,7 @@ INSERT INTO `monitoring_paket` (
   40,
   10,
   'Aman',
+  '[]',
   '[]',
   294304762,
   30,
@@ -36087,6 +36854,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   980937999,
@@ -36134,6 +36902,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1500000000,
@@ -36141,7 +36910,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_367\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_367\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_368',
@@ -36180,6 +36949,7 @@ INSERT INTO `monitoring_paket` (
   93.25,
   63.25,
   'Aman',
+  '[]',
   '[]',
   206311703,
   30,
@@ -36228,6 +36998,7 @@ INSERT INTO `monitoring_paket` (
   30,
   'Aman',
   '[]',
+  '[]',
   295138963,
   30,
   688657581,
@@ -36274,6 +37045,7 @@ INSERT INTO `monitoring_paket` (
   100,
   20,
   'Aman',
+  '[]',
   '[]',
   295348553,
   30,
@@ -36322,6 +37094,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   2424634000,
   100,
   0,
@@ -36369,6 +37142,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   7450000000,
@@ -36376,7 +37150,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_402\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_402\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 7.450.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_396',
@@ -36416,6 +37190,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   4550000000,
@@ -36423,7 +37198,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_396\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_396\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 4.550.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_454',
@@ -36463,6 +37238,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   380000000,
@@ -36470,7 +37246,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_454\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 380.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_454\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 380.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_458',
@@ -36510,6 +37286,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
@@ -36517,7 +37294,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_458\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_458\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_416',
@@ -36557,6 +37334,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -36564,7 +37342,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_416\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_416\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_391',
@@ -36604,6 +37382,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -36611,7 +37390,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_391\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_391\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_447',
@@ -36651,6 +37430,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   600000000,
@@ -36658,7 +37438,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_447\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_447\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_418',
@@ -36698,6 +37478,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -36705,7 +37486,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_418\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_418\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_422',
@@ -36745,6 +37526,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
@@ -36752,7 +37534,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_422\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_422\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_443',
@@ -36792,6 +37574,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -36799,7 +37582,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_443\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_443\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_444',
@@ -36839,6 +37622,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -36846,7 +37630,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_444\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_444\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_448',
@@ -36886,6 +37670,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   350000000,
@@ -36893,7 +37678,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_448\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 350.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_448\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 350.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_406',
@@ -36933,6 +37718,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -36940,7 +37726,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_406\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_406\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_428',
@@ -36980,6 +37766,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -36987,7 +37774,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_428\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_428\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_460',
@@ -37027,6 +37814,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -37034,7 +37822,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_460\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_460\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_435',
@@ -37074,6 +37862,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
@@ -37081,7 +37870,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_435\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_435\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_453',
@@ -37121,6 +37910,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -37128,7 +37918,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_453\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_453\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_410',
@@ -37168,6 +37958,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
@@ -37175,7 +37966,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_410\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_410\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_412',
@@ -37215,6 +38006,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1970000000,
@@ -37222,7 +38014,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_412\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_412\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_456',
@@ -37262,6 +38054,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
@@ -37269,7 +38062,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_456\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_456\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_431',
@@ -37309,6 +38102,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1775000000,
@@ -37316,7 +38110,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_431\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_431\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.775.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_426',
@@ -37356,6 +38150,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   2970000000,
@@ -37363,7 +38158,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_426\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_426\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_449',
@@ -37403,6 +38198,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -37410,7 +38206,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_449\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_449\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_393',
@@ -37450,6 +38246,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1477500000,
@@ -37457,7 +38254,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_450\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_450\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.477.500.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_394',
@@ -37497,6 +38294,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -37504,7 +38302,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_394\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_394\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_451',
@@ -37544,6 +38342,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -37551,7 +38350,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_451\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_451\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_455',
@@ -37591,6 +38390,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
@@ -37598,7 +38398,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_455\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_455\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_400',
@@ -37638,6 +38438,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -37645,7 +38446,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_400\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_400\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_414',
@@ -37685,6 +38486,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1480000000,
@@ -37692,7 +38494,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_414\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_414\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_433',
@@ -37732,6 +38534,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1480000000,
@@ -37739,7 +38542,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_433\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_433\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.480.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_441',
@@ -37779,6 +38582,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   10850000000,
@@ -37786,7 +38590,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_441\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_441\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 10.850.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_420',
@@ -37826,6 +38630,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -37833,7 +38638,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_420\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_420\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_439',
@@ -37873,6 +38678,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   5950000000,
@@ -37880,7 +38686,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_439\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_439\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 5.950.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_452',
@@ -37920,6 +38726,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -37927,7 +38734,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_452\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_452\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_459',
@@ -37967,6 +38774,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   345000000,
@@ -37974,7 +38782,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_459\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 345.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_459\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 345.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_446',
@@ -38014,6 +38822,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   600000000,
@@ -38021,7 +38830,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_446\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_446\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 600.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_463',
@@ -38061,6 +38870,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   250000000,
@@ -38068,7 +38878,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_463\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_463\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 250.000.000 (Perubahan).\"}]'
 );
 
 INSERT INTO `monitoring_paket` (
@@ -38077,7 +38887,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -38119,6 +38929,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   985000000,
@@ -38126,7 +38937,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_437\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_437\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 985.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_389',
@@ -38166,6 +38977,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1773000000,
@@ -38173,7 +38985,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_389\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_389\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.773.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_462',
@@ -38213,6 +39025,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
@@ -38220,7 +39033,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_462\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_462\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_464',
@@ -38260,6 +39073,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   400000000,
@@ -38267,7 +39081,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_464\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_464\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 400.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_408',
@@ -38307,6 +39121,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   1970000000,
@@ -38314,7 +39129,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_408\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_408\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.970.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_457',
@@ -38354,6 +39169,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -38361,7 +39177,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_457\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_457\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_398',
@@ -38401,6 +39217,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   2970000000,
@@ -38408,7 +39225,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_398\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_398\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 2.970.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_445',
@@ -38448,6 +39265,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -38455,7 +39273,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_445\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_445\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_461',
@@ -38495,6 +39313,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   300000000,
@@ -38502,7 +39321,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_461\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_461\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 300.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_499',
@@ -38541,6 +39360,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14779000,
   100,
@@ -38589,6 +39409,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   286115220,
   30,
   667602181,
@@ -38635,6 +39456,7 @@ INSERT INTO `monitoring_paket` (
   75,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -38683,6 +39505,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -38690,7 +39513,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_505\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_505\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_521',
@@ -38730,6 +39553,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   700000000,
@@ -38737,7 +39561,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_521\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_521\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_522',
@@ -38777,6 +39601,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -38784,7 +39609,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_522\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_522\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_523',
@@ -38824,6 +39649,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -38831,7 +39657,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_523\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_523\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_520',
@@ -38871,6 +39697,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -38878,7 +39705,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_520\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_520\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_524',
@@ -38918,6 +39745,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   175000000,
@@ -38925,7 +39753,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_524\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_524\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_506',
@@ -38964,6 +39792,7 @@ INSERT INTO `monitoring_paket` (
   25,
   0,
   'Aman',
+  '[]',
   '[]',
   2892391130,
   30.09,
@@ -39012,6 +39841,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   1044154998,
   30.48,
   2381694994,
@@ -39058,6 +39888,7 @@ INSERT INTO `monitoring_paket` (
   30,
   5,
   'Aman',
+  '[]',
   '[]',
   285317015,
   30,
@@ -39106,6 +39937,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199117737,
@@ -39152,6 +39984,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -39200,6 +40033,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   199161933,
@@ -39246,6 +40080,7 @@ INSERT INTO `monitoring_paket` (
   30,
   5,
   'Aman',
+  '[]',
   '[]',
   285331518,
   30,
@@ -39294,6 +40129,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   700000000,
@@ -39301,7 +40137,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_526\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_526\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 700.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_532',
@@ -39341,6 +40177,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -39348,7 +40185,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_532\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_532\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_527',
@@ -39388,6 +40225,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -39395,7 +40233,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_527\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_527\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_533',
@@ -39435,6 +40273,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -39442,7 +40281,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_533\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_533\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_530',
@@ -39482,6 +40321,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -39489,7 +40329,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_530\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_530\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_528',
@@ -39529,6 +40369,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -39536,7 +40377,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_528\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_528\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_484',
@@ -39576,6 +40417,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   500000000,
@@ -39583,7 +40425,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_529\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_529\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 500.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_531',
@@ -39623,6 +40465,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   175000000,
@@ -39630,7 +40473,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_531\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_531\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_525',
@@ -39670,6 +40513,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -39677,7 +40521,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_525\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_525\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'mp_jakon_1',
@@ -39716,6 +40560,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -39764,6 +40609,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   868172100,
   30,
   2025734900,
@@ -39810,6 +40656,7 @@ INSERT INTO `monitoring_paket` (
   30,
   -20,
   'Kritis',
+  '[]',
   '[]',
   573583800,
   30,
@@ -39858,6 +40705,7 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
+  '[]',
   578701800,
   30,
   1350304200,
@@ -39904,6 +40752,7 @@ INSERT INTO `monitoring_paket` (
   65,
   5,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -39952,6 +40801,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   463492000,
   100,
   0,
@@ -39998,6 +40848,7 @@ INSERT INTO `monitoring_paket` (
   75,
   5,
   'Aman',
+  '[]',
   '[]',
   290591400,
   30,
@@ -40046,6 +40897,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   286263000,
   30,
   667947000,
@@ -40092,6 +40944,7 @@ INSERT INTO `monitoring_paket` (
   85,
   5,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -40140,6 +40993,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19513800,
@@ -40186,6 +41040,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -40234,6 +41089,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19491600,
@@ -40280,6 +41136,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -40328,6 +41185,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99612510,
@@ -40374,6 +41232,7 @@ INSERT INTO `monitoring_paket` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -40422,6 +41281,7 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
+  '[]',
   139354800,
   30,
   325161200,
@@ -40438,7 +41298,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -40480,6 +41340,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
@@ -40487,7 +41348,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_128\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_128\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'pkt_302_prj_sda_bk_129',
@@ -40526,6 +41387,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -40574,6 +41436,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   19491600,
@@ -40620,6 +41483,7 @@ INSERT INTO `monitoring_paket` (
   5,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -40668,6 +41532,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99684660,
@@ -40714,6 +41579,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   49550000,
   100,
@@ -40762,6 +41628,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   49550000,
   100,
   0,
@@ -40808,6 +41675,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99367000,
   100,
@@ -40856,6 +41724,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   0.19,
@@ -40903,6 +41772,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -40910,7 +41780,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_165\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_165\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_177',
@@ -40949,6 +41819,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -40997,6 +41868,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   99156000,
@@ -41043,6 +41915,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   99367000,
   100,
@@ -41091,6 +41964,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   17760000,
@@ -41138,6 +42012,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
@@ -41145,7 +42020,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_195\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'pkt_316_prj_cipta_karya_194',
@@ -41184,6 +42059,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   49774000,
   100,
@@ -41232,6 +42108,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   49544000,
   100,
   0,
@@ -41278,6 +42155,7 @@ INSERT INTO `monitoring_paket` (
   90,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -41326,6 +42204,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   44292000,
@@ -41373,6 +42252,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   12000000,
@@ -41380,7 +42260,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
   'mp_jakon_37',
@@ -41419,6 +42299,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -41467,6 +42348,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   81283000,
@@ -41513,6 +42395,7 @@ INSERT INTO `monitoring_paket` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -41561,6 +42444,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   32000000,
@@ -41607,6 +42491,7 @@ INSERT INTO `monitoring_paket` (
   90,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -41655,6 +42540,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   13818000,
@@ -41702,6 +42588,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
@@ -41709,7 +42596,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_237',
@@ -41749,6 +42636,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   283740480,
@@ -41756,7 +42644,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_237\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_237\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_238',
@@ -41796,6 +42684,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   381328560,
@@ -41803,7 +42692,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_238\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 381.328.560 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_238\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 381.328.560 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_239',
@@ -41843,6 +42732,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   378041760,
@@ -41850,7 +42740,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_239\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 378.041.760 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_239\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 378.041.760 (Murni).\"}]'
 ),
 (
   'mp_jakon_47',
@@ -41889,6 +42779,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -41937,6 +42828,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   283740480,
@@ -41944,7 +42836,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_241\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_241\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 283.740.480 (Murni).\"}]'
 ),
 (
   'pkt_333_prj_cipta_karya_231',
@@ -41984,6 +42876,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   478551960,
@@ -41991,7 +42884,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_242\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.551.960 (Murni).\"}]'
 ),
 (
   'pkt_334_prj_cipta_karya_233',
@@ -42030,6 +42923,7 @@ INSERT INTO `monitoring_paket` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -42078,6 +42972,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -42085,7 +42980,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_277\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_277\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_278',
@@ -42125,6 +43020,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -42132,7 +43028,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_278\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_278\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_279',
@@ -42172,6 +43068,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -42179,7 +43076,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_279\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_279\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_256',
@@ -42218,6 +43115,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   27777000,
   100,
@@ -42266,6 +43164,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   24859000,
   100,
   0,
@@ -42312,6 +43211,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   15806000,
   100,
@@ -42360,6 +43260,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   11632000,
@@ -42407,6 +43308,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
@@ -42414,7 +43316,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_282',
@@ -42454,6 +43356,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
@@ -42461,7 +43364,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_283',
@@ -42501,6 +43404,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -42508,7 +43412,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_283\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_283\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_284',
@@ -42548,6 +43452,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -42555,7 +43460,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_284\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_284\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_cipta_karya_261',
@@ -42594,6 +43499,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -42642,6 +43548,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   18856000,
@@ -42688,6 +43595,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -42736,6 +43644,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8000000,
@@ -42743,7 +43652,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_264\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_264\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 8.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_cipta_karya_229',
@@ -42783,6 +43692,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   12000000,
@@ -42790,7 +43700,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_271\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 478.544.800 (Murni).\"}]'
 );
 
 INSERT INTO `monitoring_paket` (
@@ -42799,7 +43709,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -42841,6 +43751,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   17000000,
@@ -42848,7 +43759,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_282\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 666.589.600 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_294',
@@ -42888,6 +43799,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -42895,7 +43807,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":false,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_294\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_294\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_295',
@@ -42935,6 +43847,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -42942,7 +43855,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_295\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_295\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Murni).\"}]'
 ),
 (
   'prj_bina_marga_298',
@@ -42982,6 +43895,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -42989,7 +43903,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_298\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_298\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_299',
@@ -43029,6 +43943,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -43036,7 +43951,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_299\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_299\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_356_prj_bina_marga_294',
@@ -43076,6 +43991,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -43083,7 +43999,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_296\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_296\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_357_prj_bina_marga_294',
@@ -43123,6 +44039,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -43130,7 +44047,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_297\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_297\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_300',
@@ -43170,6 +44087,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -43177,7 +44095,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_300\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_300\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_359_prj_bina_marga_389',
@@ -43217,6 +44135,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   27000000,
@@ -43224,7 +44143,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_390\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_390\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 27.000.000 (Murni).\"}]'
 ),
 (
   'pkt_360_prj_bina_marga_372',
@@ -43263,6 +44182,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   24891000,
   100,
@@ -43311,6 +44231,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -43318,7 +44239,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_327\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_327\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_362_prj_bina_marga_325',
@@ -43357,6 +44278,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14705000,
   100,
@@ -43405,6 +44327,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -43412,7 +44335,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_331\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_331\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_364_prj_bina_marga_329',
@@ -43451,6 +44374,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14705000,
   100,
@@ -43499,6 +44423,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
@@ -43506,7 +44431,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_337\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_337\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'pkt_366_prj_bina_marga_335',
@@ -43545,6 +44470,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   29646000,
   100,
@@ -43593,6 +44519,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -43600,7 +44527,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_392\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_392\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_368_prj_bina_marga_393',
@@ -43640,6 +44567,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   22500000,
@@ -43647,7 +44575,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_393\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_393\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 22.500.000 (Perubahan).\"}]'
 ),
 (
   'pkt_369_prj_bina_marga_394',
@@ -43687,6 +44615,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -43694,7 +44623,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_395\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_395\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_370_prj_bina_marga_396',
@@ -43734,6 +44663,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -43741,7 +44671,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_397\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_397\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_371_prj_bina_marga_398',
@@ -43781,6 +44711,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
@@ -43788,7 +44719,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_399\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_399\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_372_prj_bina_marga_400',
@@ -43828,6 +44759,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -43835,7 +44767,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_401\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_401\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_373_prj_bina_marga_402',
@@ -43875,6 +44807,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -43882,7 +44815,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_403\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_403\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'pkt_374_prj_bina_marga_380',
@@ -43922,6 +44855,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -43929,7 +44863,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_404\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_404\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_375_prj_bina_marga_384',
@@ -43969,6 +44903,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -43976,7 +44911,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_405\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_405\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_376_prj_bina_marga_406',
@@ -44016,6 +44951,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -44023,7 +44959,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_407\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_407\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_377_prj_bina_marga_408',
@@ -44063,6 +44999,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
@@ -44070,7 +45007,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_409\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_409\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'pkt_378_prj_bina_marga_410',
@@ -44110,6 +45047,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
@@ -44117,7 +45055,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_411\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_411\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'pkt_379_prj_bina_marga_412',
@@ -44157,6 +45095,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
@@ -44164,7 +45103,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_413\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_413\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'pkt_380_prj_bina_marga_414',
@@ -44204,6 +45143,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
@@ -44211,7 +45151,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_415\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_415\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'pkt_381_prj_bina_marga_416',
@@ -44251,6 +45191,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -44258,7 +45199,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_417\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_417\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_382_prj_bina_marga_418',
@@ -44298,6 +45239,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -44305,7 +45247,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_419\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_419\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_383_prj_bina_marga_420',
@@ -44345,6 +45287,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -44352,7 +45295,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_421\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_421\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_384_prj_bina_marga_422',
@@ -44392,6 +45335,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
@@ -44399,7 +45343,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_423\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_423\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'pkt_385_prj_bina_marga_424',
@@ -44439,6 +45383,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   28500000,
@@ -44446,7 +45391,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_425\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_425\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 28.500.000 (Perubahan).\"}]'
 ),
 (
   'pkt_386_prj_bina_marga_426',
@@ -44486,6 +45431,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
@@ -44493,7 +45439,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_427\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_427\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni).\"}]'
 ),
 (
   'pkt_387_prj_bina_marga_428',
@@ -44533,6 +45479,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -44540,7 +45487,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_429\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_429\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_388_prj_bina_marga_388',
@@ -44580,6 +45527,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -44587,7 +45535,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_430\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_430\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Murni).\"}]'
 ),
 (
   'pkt_389_prj_bina_marga_431',
@@ -44627,6 +45575,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
@@ -44634,7 +45583,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_432\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_432\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Murni).\"}]'
 ),
 (
   'pkt_390_prj_bina_marga_433',
@@ -44674,6 +45623,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20000000,
@@ -44681,7 +45631,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_434\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_434\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 20.000.000 (Murni).\"}]'
 ),
 (
   'pkt_391_prj_bina_marga_435',
@@ -44721,6 +45671,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   25000000,
@@ -44728,7 +45679,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_436\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_436\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 25.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_392_prj_bina_marga_437',
@@ -44768,6 +45719,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -44775,7 +45727,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_438\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_438\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 15.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_393_prj_bina_marga_439',
@@ -44815,6 +45767,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -44822,7 +45775,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_440\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_440\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'pkt_394_prj_bina_marga_441',
@@ -44862,6 +45815,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -44869,7 +45823,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_442\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_442\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 50.000.000 (Murni).\"}]'
 ),
 (
   'mp_jakon_111',
@@ -44908,6 +45862,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -44956,6 +45911,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -45002,6 +45958,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -45050,6 +46007,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -45096,6 +46054,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -45144,6 +46103,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -45160,7 +46120,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -45201,6 +46161,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -45249,6 +46210,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -45295,6 +46257,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -45343,6 +46306,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   50000000,
@@ -45389,6 +46353,7 @@ INSERT INTO `monitoring_paket` (
   10,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -45437,6 +46402,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   14779000,
   100,
   0,
@@ -45483,6 +46449,7 @@ INSERT INTO `monitoring_paket` (
   30,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -45531,6 +46498,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   14710000,
   100,
   0,
@@ -45577,6 +46545,7 @@ INSERT INTO `monitoring_paket` (
   20,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -45625,6 +46594,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   12898200,
@@ -45671,6 +46641,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   24812000,
   100,
@@ -45719,6 +46690,7 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -45765,6 +46737,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14842000,
   100,
@@ -45813,6 +46786,7 @@ INSERT INTO `monitoring_paket` (
   5,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   15000000,
@@ -45859,6 +46833,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   14847000,
   100.03,
@@ -45907,6 +46882,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   98884350,
@@ -45953,6 +46929,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46001,6 +46978,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -46047,6 +47025,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46095,6 +47074,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -46141,6 +47121,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46189,6 +47170,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   262500000,
@@ -46235,6 +47217,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46283,6 +47266,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   20222000,
@@ -46329,6 +47313,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46377,6 +47362,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   195858390,
@@ -46423,6 +47409,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46471,6 +47458,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   78000000,
@@ -46517,6 +47505,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46565,6 +47554,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   8999000,
@@ -46611,6 +47601,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46659,6 +47650,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   120500000,
@@ -46705,6 +47697,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46753,6 +47746,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   102500000,
@@ -46799,6 +47793,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46847,6 +47842,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   75000000,
@@ -46893,6 +47889,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -46941,6 +47938,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   30000000,
@@ -46987,6 +47985,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -47035,6 +48034,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   45500000,
@@ -47081,6 +48081,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -47129,6 +48130,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   10500000,
@@ -47176,6 +48178,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   150000000,
@@ -47183,7 +48186,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_33\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_33\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 150.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_34',
@@ -47223,6 +48226,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   450000000,
@@ -47230,7 +48234,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_sda_bk_34\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 450.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_sda_bk_34\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 450.000.000 (Murni).\"}]'
 ),
 (
   'prj_sda_bk_40',
@@ -47269,6 +48273,7 @@ INSERT INTO `monitoring_paket` (
   62.44,
   2.44,
   'Aman',
+  '[]',
   '[]',
   1197302115,
   60.48,
@@ -47317,6 +48322,7 @@ INSERT INTO `monitoring_paket` (
   0.89,
   'Aman',
   '[]',
+  '[]',
   713151284,
   40.89,
   1031000416,
@@ -47363,6 +48369,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   197600000,
   100,
@@ -47411,6 +48418,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   354000000,
@@ -47418,7 +48426,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_cipta_karya_187\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_cipta_karya_187\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 354.000.000 (Murni).\"}]'
 ),
 (
   'pkt_449_prj_bina_marga_465',
@@ -47457,6 +48465,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   197600000,
   100,
@@ -47505,6 +48514,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   197600000,
   100,
   0,
@@ -47521,7 +48531,7 @@ INSERT INTO `monitoring_paket` (
   `tipe_pengadaan`, `pagu_anggaran`, `hps`, `nilai_kontrak`, `nomor_kontrak`, `tanggal_kontrak`,
   `tanggal_mulai`, `tanggal_selesai`, `pelaksana_nama`, `pelaksana_bank`, `pelaksana_rekening`, `pelaksana_npwp`,
   `kecamatan`, `desa`, `lokasi_lengkap`, `latitude`, `longitude`, `tags_json`, `is_public_highlight`,
-  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`,
+  `status_tahap_pra_kontrak`, `progres_rencana`, `progres_realisasi`, `deviasi_fisik`, `status_deviasi`, `kurva_s_json`, `foto_dokumentasi_json`,
   `total_pencairan`, `persen_keuangan`, `sisa_anggaran`, `termin_json`, `spj_status`, `spj_checklist_json`,
   `tahapan_pencairan_json`, `logs_json`
 ) VALUES
@@ -47562,6 +48572,7 @@ INSERT INTO `monitoring_paket` (
   43.66,
   0,
   'Aman',
+  '[]',
   '[]',
   622586830,
   35.99,
@@ -47610,6 +48621,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   187663260,
   100,
   0,
@@ -47656,6 +48668,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   188097048,
   100,
@@ -47704,6 +48717,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   187008416,
   100,
   0,
@@ -47750,6 +48764,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   186046989,
   100,
@@ -47798,6 +48813,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   187558321,
   100,
   0,
@@ -47844,6 +48860,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   197600000,
   100,
@@ -47892,6 +48909,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   188097048,
   100,
   0,
@@ -47938,6 +48956,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   195757380,
   100,
@@ -47986,6 +49005,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   195757380,
   100,
   0,
@@ -48032,6 +49052,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   187962549,
   100,
@@ -48080,6 +49101,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -48087,7 +49109,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_477\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_477\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_463_prj_bina_marga_476',
@@ -48127,6 +49149,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -48134,7 +49157,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_478\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_478\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_464_prj_bina_marga_476',
@@ -48174,6 +49197,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -48181,7 +49205,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_479\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_479\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_465_prj_bina_marga_476',
@@ -48221,6 +49245,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -48228,7 +49253,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_480\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_480\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Perubahan).\"}]'
 ),
 (
   'pkt_466_prj_bina_marga_465',
@@ -48268,6 +49293,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -48275,7 +49301,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_481\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_481\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 100.000.000 (Perubahan).\"}]'
 ),
 (
   'prj_bina_marga_483',
@@ -48314,6 +49340,7 @@ INSERT INTO `monitoring_paket` (
   100,
   0,
   'Aman',
+  '[]',
   '[]',
   86658587,
   100,
@@ -48362,6 +49389,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   174470599,
   87.24,
   25529401,
@@ -48409,6 +49437,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   200000000,
@@ -48416,7 +49445,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_bina_marga_485\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_bina_marga_485\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 200.000.000 (Murni).\"}]'
 ),
 (
   'pkt_470_prj_bina_marga_484',
@@ -48455,6 +49484,7 @@ INSERT INTO `monitoring_paket` (
   8.18,
   0,
   'Aman',
+  '[]',
   '[]',
   31616000,
   7.03,
@@ -48503,6 +49533,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   31616000,
   7.03,
   68384000,
@@ -48549,6 +49580,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -48597,6 +49629,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   396880182,
@@ -48643,6 +49676,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -48691,6 +49725,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   100000000,
@@ -48737,6 +49772,7 @@ INSERT INTO `monitoring_paket` (
   0,
   0,
   'Aman',
+  '[]',
   '[]',
   0,
   0,
@@ -48785,6 +49821,7 @@ INSERT INTO `monitoring_paket` (
   0,
   'Aman',
   '[]',
+  '[]',
   0,
   0,
   175000000,
@@ -48792,7 +49829,7 @@ INSERT INTO `monitoring_paket` (
   'belum_masuk',
   '{\"status\":\"belum_masuk\",\"tanggalMasuk\":\"\",\"tanggalKoreksi\":\"\",\"tanggalSPM\":\"\",\"nomorSPM\":\"\",\"catatanVerifikator\":\"Penyedia belum menyerahkan berkas SPJ\",\"petugasVerifikator\":\"\"}',
   '{\"berkasBelumMasuk\":true,\"berkasMasuk\":false,\"koreksi\":false,\"berkasRevisiMasuk\":false,\"spm\":false,\"selesai\":false,\"catatanPencairan\":\"Belum ada pencairan SP2D\"}',
-  '[{\"id\":\"log_init_prj_tata_ruang_543\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATUPUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
+  '[{\"id\":\"log_init_prj_tata_ruang_543\",\"timestamp\":\"2026-10-31 15:00:00\",\"userName\":\"Admin SIMON SATU PUTARU\",\"userRole\":\"Sistem Monitoring\",\"action\":\"Pendaftaran Paket APBD 2026\",\"keterangan\":\"Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 175.000.000 (Murni).\"}]'
 ),
 (
   'prj_tata_ruang_541',
@@ -48831,6 +49868,7 @@ INSERT INTO `monitoring_paket` (
   99.3,
   0,
   'Aman',
+  '[]',
   '[]',
   99305000,
   99.3,

@@ -604,7 +604,7 @@ const ReportView = ({ onOpenSettingsModal }) => {
               {systemSettings?.instansi || 'DINAS PEKERJAAN UMUM DAN PENATAAN RUANG'}
             </div>
             <div style={{ fontSize: 13, fontWeight: 700, color: '#0284c7', textTransform: 'uppercase', letterSpacing: 1 }}>
-              {systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}
+              {systemSettings?.namaSistem || 'SIMON - SATU PUTARU'}
             </div>
             <div style={{ fontSize: 11.5, color: '#334155', marginTop: 4, lineHeight: 1.4 }}>
               {systemSettings?.alamat || 'Jl. Kyai Jebat No. 35 Bintoro Kec. Demak'} • Telp: {systemSettings?.telepon || '(0291) 685123'} • Email: {systemSettings?.email || 'dinputaru@demakkab.go.id'}
@@ -846,7 +846,7 @@ const ReportView = ({ onOpenSettingsModal }) => {
 
         {/* Catatan Kaki Cetak */}
         <div style={{ marginTop: 32, paddingTop: 12, borderTop: '1px solid #e2e8f0', fontSize: 10, color: '#94a3b8', display: 'flex', justifyContent: 'space-between' }}>
-          <span>Dicetak secara otomatis melalui SIMON - SATUPUTARU Kabupaten Demak</span>
+          <span>Dicetak secara otomatis melalui SIMON - SATU PUTARU Kabupaten Demak</span>
           <span>Halaman 1 dari 1 • Status Dokumen: Sah & Terverifikasi Kedinasan</span>
         </div>
       </div>

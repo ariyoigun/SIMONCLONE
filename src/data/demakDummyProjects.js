@@ -113,7 +113,7 @@ const DEMAK_PACKAGES_TEMPLATE = [
     kategoriPekerjaan: 'Barang',
     subBagian: 'Sub Bagian Umum & Kepegawaian',
     baseNames: [
-      'Pengadaan Server Database & Integrasi Sistem Jaringan SIMON SATUPUTARU',
+      'Pengadaan Server Database & Integrasi Sistem Jaringan SIMON SATU PUTARU',
       'Pengadaan Kendaraan Operasional Lapangan Pengawasan Infrastruktur Demak',
       'Penyusunan Dokumen Renja, RKT & LAKIP Akuntabilitas Kinerja DINPUTARU',
       'Pemeliharaan Rutin Sarana Prasarana Gedung Pelayanan DINPUTARU',

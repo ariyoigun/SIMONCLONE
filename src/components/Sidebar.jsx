@@ -73,7 +73,7 @@ const Sidebar = ({
           alt={systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}
         />
         <div className="sidebar-brand-text">
-          <h2>{systemSettings?.namaSistem || 'SIMON - SATUPUTARU'}</h2>
+          <h2>{systemSettings?.namaSistem || 'SIMON - SATU PUTARU'}</h2>
           <p>{systemSettings?.singkatanInstansi || 'DINPUTARU Demak'}</p>
         </div>
       </div>

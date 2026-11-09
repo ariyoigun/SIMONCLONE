@@ -37,7 +37,7 @@ function esc(val) {
 }
 
 let sql = `-- ==============================================================================
--- DATABASE RESMI SIMON - SATUPUTARU
+-- DATABASE RESMI SIMON - SATU PUTARU
 -- Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak
 -- Server: Hostinger MySQL / MariaDB (simon.satuputarudemak.id)
 -- Database: u490770675_simona
@@ -60,7 +60,7 @@ SET time_zone = "+07:00";
 DROP TABLE IF EXISTS \`system_settings\`;
 CREATE TABLE \`system_settings\` (
   \`id\` int(11) NOT NULL AUTO_INCREMENT,
-  \`nama_sistem\` varchar(150) NOT NULL DEFAULT 'SIMON - SATUPUTARU',
+  \`nama_sistem\` varchar(150) NOT NULL DEFAULT 'SIMON - SATU PUTARU',
   \`sub_nama\` varchar(255) DEFAULT 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
   \`instansi\` varchar(255) NOT NULL DEFAULT 'Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Demak',
   \`pemerintah_daerah\` varchar(150) DEFAULT 'Pemerintah Kabupaten Demak',

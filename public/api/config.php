@@ -2,7 +2,7 @@
 /**
  * ==============================================================================
  * KONFIGURASI KONEKSI DATABASE MYSQL HOSTINGER
- * SIMON - SATUPUTARU (DINPUTARU Kabupaten Demak)
+ * SIMON - SATU PUTARU (DINPUTARU Kabupaten Demak)
  * Alamat Domain: https://simon.satuputarudemak.id
  * ==============================================================================
  * 

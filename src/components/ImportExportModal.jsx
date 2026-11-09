@@ -1000,7 +1000,7 @@ const ImportExportModal = ({
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 14 }}>
                   <div>
                     <h4 style={{ margin: 0, fontSize: 18, fontWeight: 900, color: '#0f2c59' }}>
-                      Template Resmi Spreadsheet SIMON - SATUPUTARU
+                      Template Resmi Spreadsheet SIMON - SATU PUTARU
                     </h4>
                     <p style={{ margin: '6px 0 0', fontSize: 13, color: '#475569' }}>
                       Gunakan template ini untuk mempermudah pengetikan data di komputer atau laptop. Tersedia 5 contoh riil untuk seluruh bidang dinas.
