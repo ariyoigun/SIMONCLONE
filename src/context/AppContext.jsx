@@ -32,7 +32,7 @@ export const AppProvider = ({ children }) => {
   // Data Versioning & Auto-Migration for Real 2026 Dataset & Users
   if (typeof window !== 'undefined') {
     const currentVersion = localStorage.getItem('simon_app_version_2026');
-    if (currentVersion !== '2026_real_v6') {
+    if (currentVersion !== '2026_real_mei_v7') {
       localStorage.removeItem('simon_users');
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_projects_v2');
@@ -40,7 +40,7 @@ export const AppProvider = ({ children }) => {
       localStorage.removeItem('simon_sipd_programs');
       localStorage.removeItem('simon_sipd_kegiatans');
       localStorage.removeItem('simon_sipd_sub_kegiatans');
-      localStorage.setItem('simon_app_version_2026', '2026_real_v6');
+      localStorage.setItem('simon_app_version_2026', '2026_real_mei_v7');
     }
   }
 
