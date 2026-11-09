@@ -1,0 +1,70 @@
+# ==============================================================================
+# SIMON - SATU PUTARU (Dinas PUPR Kabupaten Demak)
+# Hostinger Apache Web Server Configuration (.htaccess)
+# ==============================================================================
+
+# 1. Nonaktifkan Directory Browsing demi Keamanan
+Options -Indexes
+
+# 2. Mengaktifkan URL Rewriting untuk React SPA & Routing
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Jangan rewrite jika request ditujukan ke folder /api/ (Backend PHP / Database Bridge)
+  RewriteCond %{REQUEST_URI} ^/api/ [NC]
+  RewriteRule ^ - [L]
+
+  # Jangan rewrite jika file atau direktori nyata benar-benar ada di server
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Arahkan seluruh navigasi halaman lainnya kembali ke index.html agar React Router bekerja
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# 3. Header Keamanan Standar Kedinasan
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# 4. Kompresi Gzip / Brotli untuk Kecepatan Loading Maksimal
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# 5. Caching Aset Statis di Browser Pengunjung (Kecuali API & PHP)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+</IfModule>
+
+# Nonaktifkan caching untuk semua file dinamis PHP dan JSON
+<FilesMatch "\.(php|json)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </IfModule>
+</FilesMatch>
