@@ -125,41 +125,26 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
     return () => clearInterval(timer);
   }, [gallerySlides.length, isGaleriPaused]);
 
-  // HIGHLIGHT 12 PEKERJAAN UNGGULAN:
-  // Diambil dari Master Data Pekerjaan (projects), yaitu 3 pekerjaan dengan nominal terbesar di masing-masing 4 bidang teknis.
-  // Langsung tampil 12 pekerjaan tanpa kategori bidang & tanpa nominal.
-  const highlight12Projects = useMemo(() => {
-    const getNominal = (p) => (p.dataKontrak?.nilaiKontrak > 0 ? p.dataKontrak.nilaiKontrak : (parseFloat(p.paguAnggaran) || 0));
-
-    // 4 Bidang Teknis DINPUTARU: cipta_karya, sda_bk, bina_marga, tata_ruang
-    const techBidangs = BIDANG_LIST.filter((b) => b.id !== 'sekretariat');
-    const selected12 = [];
-
-    techBidangs.forEach((b) => {
-      const bProjsAll = projects.filter((p) => p.bidangId === b.id);
-      
-      // Ambil 3 besar tiap bidang yang sudah berjalan, sudah ada pelaksana, dan realisasi fisik > 0
-      const bProjsRunning = bProjsAll.filter((p) => {
-        const hasPelaksana = p.dataKontrak?.namaPenyedia &&
-          p.dataKontrak.namaPenyedia.trim() !== '-' &&
-          !p.dataKontrak.namaPenyedia.toLowerCase().includes('belum') &&
-          !p.dataKontrak.namaPenyedia.toLowerCase().includes('tahap');
-        const hasFisik = (parseFloat(p.dataFisik?.progresRealisasi) || 0) > 0;
-        const isRunning = p.isKontrak || (p.dataKontrak?.nilaiKontrak > 0) || (p.dataKontrak?.nomorKontrak && p.dataKontrak.nomorKontrak !== '-');
-        return hasPelaksana && hasFisik && isRunning;
-      });
-
-      // Pilih dari yang berjalan & ada fisik > 0; jika kurang dari 3, tambahkan dari yang berpelaksana/kontrak
-      const pool = bProjsRunning.length >= 3 ? bProjsRunning : (bProjsRunning.length > 0 ? bProjsRunning : bProjsAll);
-      const sorted = [...pool].sort((p1, p2) => getNominal(p2) - getNominal(p1));
-      const top3 = sorted.slice(0, 3);
-      selected12.push(...top3);
+  // 9 PEKERJAAN DENGAN PAGU TERTINGGI:
+  // Diambil dari Master Data Monitoring Pekerjaan (projects) dengan 9 pagu anggaran terbesar
+  const top9PaguProjects = useMemo(() => {
+    // Saring pekerjaan teknis & infrastruktur (tidak termasuk belanja rutin penunjang gaji ASN sekretariat)
+    const validProjects = projects.filter((p) => {
+      if (p.bidangId === 'sekretariat' && (p.namaPaket || '').toLowerCase().includes('gaji')) return false;
+      return true;
     });
 
-    // Jika user mencari di search box, filter hasil 12 pekerjaan ini
+    const sorted = [...validProjects].sort((a, b) => {
+      const paguA = parseFloat(a.paguAnggaran) || 0;
+      const paguB = parseFloat(b.paguAnggaran) || 0;
+      return paguB - paguA;
+    });
+
+    const top9 = sorted.slice(0, 9);
+
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
-      return selected12.filter((p) =>
+      return top9.filter((p) =>
         (p.namaPaket?.toLowerCase() || '').includes(q) ||
         (p.subKegiatan?.toLowerCase() || '').includes(q) ||
         (p.kecamatan?.toLowerCase() || '').includes(q) ||
@@ -168,7 +153,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
       );
     }
 
-    return selected12;
+    return top9;
   }, [projects, searchQuery]);
 
   // Peta filtered projects per Bidang
@@ -622,7 +607,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                           }}
                         >
                           <Sparkles size={13} />
-                          PEKERJAAN UNGGULAN DAERAH
+                          PEKERJAAN DINPUTARU
                         </span>
                         <span
                           style={{
@@ -924,67 +909,134 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
-          {BIDANG_LIST.filter((b) => b.id !== 'sekretariat').map((b) => (
-            <div
-              key={b.id}
-              style={{
-                background: '#ffffff',
-                borderRadius: 16,
-                padding: '24px',
-                border: '1px solid #e2e8f0',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
-                transition: 'all 0.25s ease',
-                display: 'flex',
-                flexDirection: 'column'
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+          {BIDANG_LIST.filter((b) => b.id !== 'sekretariat').map((b) => {
+            const BIDANG_THEMES = {
+              bina_marga: {
+                bgCard: '#fffbeb',
+                borderColor: '#f59e0b',
+                topBanner: 'linear-gradient(135deg, #b45309 0%, #d97706 100%)',
+                badgeBg: 'rgba(255, 255, 255, 0.25)',
+                badgeText: '#ffffff',
+                titleColor: '#78350f',
+                descColor: '#92400e',
+                shadowHover: '0 12px 28px rgba(217, 119, 6, 0.22)'
+              },
+              cipta_karya: {
+                bgCard: '#eff6ff',
+                borderColor: '#3b82f6',
+                topBanner: 'linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%)',
+                badgeBg: 'rgba(255, 255, 255, 0.25)',
+                badgeText: '#ffffff',
+                titleColor: '#1e3a8a',
+                descColor: '#1e40af',
+                shadowHover: '0 12px 28px rgba(37, 99, 235, 0.22)'
+              },
+              sda_bk: {
+                bgCard: '#ecfdf5',
+                borderColor: '#10b981',
+                topBanner: 'linear-gradient(135deg, #047857 0%, #059669 100%)',
+                badgeBg: 'rgba(255, 255, 255, 0.25)',
+                badgeText: '#ffffff',
+                titleColor: '#064e3b',
+                descColor: '#065f46',
+                shadowHover: '0 12px 28px rgba(5, 150, 105, 0.22)'
+              },
+              tata_ruang: {
+                bgCard: '#f5f3ff',
+                borderColor: '#8b5cf6',
+                topBanner: 'linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%)',
+                badgeBg: 'rgba(255, 255, 255, 0.25)',
+                badgeText: '#ffffff',
+                titleColor: '#4c1d95',
+                descColor: '#5b21b6',
+                shadowHover: '0 12px 28px rgba(124, 58, 237, 0.22)'
+              }
+            };
+
+            const theme = BIDANG_THEMES[b.id] || {
+              bgCard: '#f8fafc',
+              borderColor: '#0284c7',
+              topBanner: 'linear-gradient(135deg, #0369a1 0%, #0284c7 100%)',
+              badgeBg: 'rgba(255, 255, 255, 0.25)',
+              badgeText: '#ffffff',
+              titleColor: '#0f2c59',
+              descColor: '#334155',
+              shadowHover: '0 12px 28px rgba(2, 132, 199, 0.22)'
+            };
+
+            return (
+              <div
+                key={b.id}
+                style={{
+                  background: theme.bgCard,
+                  borderRadius: 18,
+                  border: `2px solid ${theme.borderColor}`,
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.04)',
+                  transition: 'all 0.25s ease',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  overflow: 'hidden'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.boxShadow = theme.shadowHover;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.04)';
+                }}
+              >
+                {/* Blok Warna Header Bidang */}
                 <div
                   style={{
-                    display: 'inline-flex',
+                    background: theme.topBanner,
+                    padding: '16px 20px',
+                    color: '#ffffff',
+                    display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    padding: '6px 14px',
-                    borderRadius: 8,
-                    background: b.bgLight,
-                    color: b.warna,
-                    fontSize: 13,
-                    fontWeight: 800,
-                    letterSpacing: 0.5,
-                    whiteSpace: 'nowrap',
-                    width: 'fit-content',
-                    border: `1px solid ${b.warna}33`
+                    justifyContent: 'space-between'
                   }}
                 >
-                  {b.id === 'sda_bk' ? 'SDA-BK' : b.singkatan}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <Building2 size={18} />
+                    <span style={{ fontSize: 15, fontWeight: 900, letterSpacing: 0.5 }}>
+                      {b.id === 'sda_bk' ? 'SDA-BK' : b.singkatan}
+                    </span>
+                  </div>
+                  <span
+                    style={{
+                      fontSize: 10.5,
+                      fontWeight: 800,
+                      background: theme.badgeBg,
+                      color: theme.badgeText,
+                      padding: '3px 9px',
+                      borderRadius: 9999,
+                      border: '1px solid rgba(255,255,255,0.3)',
+                      textTransform: 'uppercase',
+                      letterSpacing: 0.5
+                    }}
+                  >
+                    Bidang Teknis
+                  </span>
                 </div>
-                <span
-                  style={{
-                    fontSize: 11,
-                    fontWeight: 700,
-                    color: b.warna,
-                    background: b.bgLight,
-                    padding: '3px 8px',
-                    borderRadius: 6
-                  }}
-                >
-                  Teknis
-                </span>
+
+                {/* Konten Kartu Bidang */}
+                <div style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <h3 style={{ fontSize: 17, fontWeight: 800, color: theme.titleColor, marginBottom: 10, lineHeight: 1.35 }}>
+                    {b.nama}
+                  </h3>
+
+                  <p style={{ fontSize: 13, color: theme.descColor, lineHeight: 1.6, flex: 1, margin: 0, fontWeight: 500 }}>
+                    {systemSettings?.bidangDescriptions?.[b.id] || DEFAULT_BIDANG_DESCRIPTIONS[b.id] || ''}
+                  </p>
+                </div>
               </div>
-
-              <h3 style={{ fontSize: 16, fontWeight: 800, color: '#0f2c59', marginBottom: 8, lineHeight: 1.3 }}>
-                {b.nama}
-              </h3>
-
-              <p style={{ fontSize: 12.5, color: '#64748b', lineHeight: 1.55, flex: 1, margin: 0 }}>
-                {systemSettings?.bidangDescriptions?.[b.id] || DEFAULT_BIDANG_DESCRIPTIONS[b.id] || ''}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
-      {/* 6. SECTION: HIGHLIGHT 12 PEKERJAAN STRATEGIS (3 PER BIDANG DARI DATA PEKERJAAN - TANPA NOMINAL & TANPA KATEGORI BIDANG) */}
+      {/* 6. SECTION: 9 PEKERJAAN DENGAN PAGU TERTINGGI (DARI DATA MONITORING PEKERJAAN - TANPA NOMINAL & TANPA KATEGORI BIDANG) */}
       <section id="sorotan" style={{ padding: '56px 24px', background: '#f1f5f9', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16, marginBottom: 28 }}>
@@ -994,10 +1046,10 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
                 <span>SOROTAN PEKERJAAN STRATEGIS DAERAH</span>
               </div>
               <h2 style={{ fontSize: 26, fontWeight: 900, color: '#0f2c59', marginTop: 4 }}>
-                12 Pekerjaan Unggulan Bidang Teknis DINPUTARU
+                9 Pekerjaan dengan Pagu Tertinggi
               </h2>
               <p style={{ fontSize: 13.5, color: '#64748b', margin: '4px 0 0' }}>
-                Daftar pekerjaan prioritas dari masing-masing bidang teknis untuk pemantauan keterbukaan progres infrastruktur daerah.
+                Daftar paket pekerjaan dengan alokasi pagu anggaran terbesar dari data monitoring pekerjaan DINPUTARU Kabupaten Demak.
               </p>
             </div>
 
@@ -1015,8 +1067,8 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             </div>
           </div>
 
-          {/* LANGSUNG GRID 12 KARTU PEKERJAAN (TANPA TABS KATEGORI BIDANG, TANPA LABEL TOP 3, TANPA NOMINAL) */}
-          {highlight12Projects.length === 0 ? (
+          {/* GRID 9 KARTU PEKERJAAN (TANPA NOMINAL) */}
+          {top9PaguProjects.length === 0 ? (
             <div
               style={{
                 background: '#ffffff',
@@ -1032,7 +1084,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: 20 }}>
-              {highlight12Projects.map((p) => {
+              {top9PaguProjects.map((p) => {
                 const b = BIDANG_LIST.find((x) => x.id === p.bidangId);
                 const fRealisasi = parseFloat(p.dataFisik?.progresRealisasi || 0);
                 const pelaksana = p.dataKontrak?.namaPenyedia || '-';
@@ -1493,9 +1545,6 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
         initialStatus={publicPaketModalFilter}
         paketList={publicPaketList}
         activeYear={activeYear}
-        onSelectPaketDetail={(p) => {
-          setActiveProjectDetail(p);
-        }}
       />
     </div>
   );

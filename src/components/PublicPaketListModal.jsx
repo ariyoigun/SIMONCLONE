@@ -12,7 +12,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Download,
-  Eye,
   SlidersHorizontal,
   Navigation,
   FileSpreadsheet
@@ -41,7 +40,6 @@ const PublicPaketListModal = ({
   onClose,
   initialStatus = 'ALL', // 'ALL' | 'KONTRAK' | 'SELESAI' | 'PRAKONTRAK'
   paketList = [],
-  onSelectPaketDetail,
   activeYear = 2026
 }) => {
   if (!isOpen) return null;
@@ -186,9 +184,7 @@ const PublicPaketListModal = ({
       'Nama Paket Pekerjaan': p.namaPaket || '-',
       'Kategori Pengadaan': p.kategoriPaket || p.jenisPengadaan || 'Pekerjaan Konstruksi',
       'Bidang Dinas': BIDANG_COLOR_MAP[p.bidangId]?.nama || p.bidangId,
-      'Kecamatan': p.kecamatan || 'Demak',
-      'Desa': p.desa || '-',
-      'Lokasi': p.lokasiLengkap || `${p.desa || ''}, Kec. ${p.kecamatan || ''}`,
+      'Kecamatan': `Kec. ${p.kecamatan || 'Demak'}`,
       'Status Kontrak': p.isKontrak ? 'Sudah Kontrak' : 'Tahap Pra-Kontrak',
       'Penyedia / Pelaksana': p.isKontrak ? (p.dataKontrak?.namaPenyedia || '-') : 'Belum Kontrak',
       'Nomor Kontrak': p.isKontrak ? (p.dataKontrak?.nomorKontrak || '-') : '-',
@@ -692,7 +688,7 @@ const PublicPaketListModal = ({
                       borderRadius: '12px',
                       padding: '14px 18px',
                       display: 'grid',
-                      gridTemplateColumns: '40px 1.8fr 1.1fr 1.2fr 1fr 110px',
+                      gridTemplateColumns: '44px 2.2fr 1.1fr 1.2fr 1.2fr',
                       gap: '16px',
                       alignItems: 'center',
                       transition: 'all 0.15s ease',
@@ -774,30 +770,30 @@ const PublicPaketListModal = ({
                       </span>
                     </div>
 
-                    {/* 4. Lokasi Paket */}
+                    {/* 4. Lokasi Paket (Hanya Kecamatan) */}
                     <div>
                       <div
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '5px',
-                          fontSize: '12.5px',
+                          gap: '6px',
+                          fontSize: '13px',
                           fontWeight: 700,
-                          color: '#334155'
+                          color: '#1e293b'
                         }}
                       >
-                        <MapPin size={13} color="#0284c7" />
+                        <MapPin size={14} color="#0284c7" style={{ flexShrink: 0 }} />
                         <span>Kec. {p.kecamatan || 'Demak'}</span>
                       </div>
                       <div
                         style={{
-                          fontSize: '11.5px',
+                          fontSize: '11px',
                           color: '#64748b',
                           marginTop: '2px',
-                          paddingLeft: '18px'
+                          paddingLeft: '20px'
                         }}
                       >
-                        {p.desa ? `Desa ${p.desa}` : p.lokasiLengkap || 'Kabupaten Demak'}
+                        Kabupaten Demak
                       </div>
                     </div>
 
@@ -857,38 +853,6 @@ const PublicPaketListModal = ({
                           {p.dataKontrak.namaPenyedia}
                         </div>
                       )}
-                    </div>
-
-                    {/* 6. Aksi */}
-                    <div style={{ textAlign: 'right' }}>
-                      <button
-                        onClick={() => onSelectPaketDetail && onSelectPaketDetail(p)}
-                        style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '5px',
-                          padding: '6px 10px',
-                          fontSize: '11.5px',
-                          fontWeight: 700,
-                          color: '#0284c7',
-                          backgroundColor: '#e0f2fe',
-                          border: '1px solid #bae6fd',
-                          borderRadius: '6px',
-                          cursor: 'pointer',
-                          transition: 'all 0.15s'
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.backgroundColor = '#0284c7';
-                          e.currentTarget.style.color = '#ffffff';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.backgroundColor = '#e0f2fe';
-                          e.currentTarget.style.color = '#0284c7';
-                        }}
-                      >
-                        <Eye size={13} />
-                        <span>Rincian</span>
-                      </button>
                     </div>
                   </div>
                 );
@@ -1000,3 +964,4 @@ const PublicPaketListModal = ({
 };
 
 export default PublicPaketListModal;
+
