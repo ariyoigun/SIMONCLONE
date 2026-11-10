@@ -22,13 +22,41 @@ import {
   FileText
 } from 'lucide-react';
 import AppLogo from '../components/AppLogo';
+import PublicPaketListModal from '../components/PublicPaketListModal';
+import { MONITORING_PAKET_2026 } from '../data/monitoringPaket2026';
 
 const LandingView = ({ onGoToLogin, onBackToInternal }) => {
-  // Ambil `projects` yang merupakan Master Data Pekerjaan (558 data dari REAL_PROJECTS_2026)
-  const { projects = [], activeYear, isLoggedIn, currentUser, systemSettings } = useApp();
+  // Ambil data dari Context: projects untuk 12 Unggulan & Peta, paketPekerjaanList untuk Segmen Statistik Paket
+  const {
+    projects = [],
+    paketPekerjaanList = [],
+    accessiblePaketPekerjaan = [],
+    activeYear,
+    isLoggedIn,
+    currentUser,
+    systemSettings
+  } = useApp();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [activeProjectDetail, setActiveProjectDetail] = useState(null);
+  const [publicPaketModalOpen, setPublicPaketModalOpen] = useState(false);
+  const [publicPaketModalFilter, setPublicPaketModalFilter] = useState('ALL');
+
+  // Sumber Data Segmen Statistik Publik: Diambil khusus dari Monitoring Paket Pekerjaan (478 Paket)
+  const publicPaketList = useMemo(() => {
+    if (Array.isArray(paketPekerjaanList) && paketPekerjaanList.length > 0) {
+      return paketPekerjaanList;
+    }
+    if (Array.isArray(accessiblePaketPekerjaan) && accessiblePaketPekerjaan.length > 0) {
+      return accessiblePaketPekerjaan;
+    }
+    return MONITORING_PAKET_2026;
+  }, [paketPekerjaanList, accessiblePaketPekerjaan]);
+
+  // Aggregate Public Stats Khusus Monitoring Paket Pekerjaan (Tanpa Nominal)
+  const totalPaketCount = publicPaketList.length;
+  const contractedPaketCount = publicPaketList.filter((p) => p.isKontrak).length;
+  const completedPaketCount = publicPaketList.filter((p) => (parseFloat(p.dataFisik?.progresRealisasi) || 0) >= 100).length;
 
   // 1. Slideshow Pekerjaan Unggulan (Hero Carousel)
   const [currentSlideUnggulan, setCurrentSlideUnggulan] = useState(0);
@@ -351,42 +379,153 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
             </p>
           </div>
 
-          {/* Quick Metrics Bar (Hanya Jumlah Paket - Tanpa Nominal) */}
+          {/* Quick Metrics Bar (Diambil Khusus dari Monitoring Paket Pekerjaan - Interaktif & Tanpa Nominal) */}
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
               gap: 16,
               background: 'rgba(255, 255, 255, 0.08)',
               border: '1px solid rgba(255, 255, 255, 0.15)',
               borderRadius: 16,
-              padding: '20px 24px',
+              padding: '16px 20px',
               backdropFilter: 'blur(8px)',
               marginTop: 12
             }}
           >
-            <div>
-              <div style={{ fontSize: 12, color: '#93c5fd', fontWeight: 600 }}>TOTAL PEKERJAAN DAERAH</div>
-              <div style={{ fontSize: 28, fontWeight: 900, color: '#ffffff', marginTop: 4 }}>
-                {totalCount} Paket
+            {/* 1. Total Paket Pekerjaan */}
+            <div
+              onClick={() => {
+                setPublicPaketModalFilter('ALL');
+                setPublicPaketModalOpen(true);
+              }}
+              style={{
+                cursor: 'pointer',
+                padding: '12px 14px',
+                borderRadius: '12px',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                transition: 'all 0.2s ease',
+                position: 'relative'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.12)';
+                e.currentTarget.style.borderColor = '#38bdf8';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+              title="Klik untuk membuka daftar seluruh paket pekerjaan dinas"
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ fontSize: 11.5, color: '#93c5fd', fontWeight: 700, letterSpacing: '0.02em' }}>
+                  TOTAL PAKET PEKERJAAN
+                </div>
+                <span style={{ fontSize: 10, color: '#38bdf8', fontWeight: 700, background: 'rgba(56, 189, 248, 0.15)', padding: '2px 7px', borderRadius: 4 }}>
+                  Lihat Daftar →
+                </span>
               </div>
-              <div style={{ fontSize: 11, color: '#cbd5e1' }}>Tahun Anggaran {activeYear}</div>
+              <div style={{ fontSize: 30, fontWeight: 900, color: '#ffffff', marginTop: 4 }}>
+                {totalPaketCount} Paket
+              </div>
+              <div style={{ fontSize: 11, color: '#cbd5e1', marginTop: 2 }}>
+                Tahun Anggaran {activeYear} • Monitoring Paket
+              </div>
             </div>
 
-            <div>
-              <div style={{ fontSize: 12, color: '#93c5fd', fontWeight: 600 }}>PEKERJAAN TERKONTRAK</div>
-              <div style={{ fontSize: 28, fontWeight: 900, color: '#38bdf8', marginTop: 4 }}>
-                {contractedCount} Paket
+            {/* 2. Paket Terkontrak */}
+            <div
+              onClick={() => {
+                setPublicPaketModalFilter('KONTRAK');
+                setPublicPaketModalOpen(true);
+              }}
+              style={{
+                cursor: 'pointer',
+                padding: '12px 14px',
+                borderRadius: '12px',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                transition: 'all 0.2s ease',
+                position: 'relative'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.12)';
+                e.currentTarget.style.borderColor = '#38bdf8';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+              title="Klik untuk melihat daftar paket yang sudah terkontrak"
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ fontSize: 11.5, color: '#93c5fd', fontWeight: 700, letterSpacing: '0.02em' }}>
+                  PAKET TERKONTRAK
+                </div>
+                <span style={{ fontSize: 10, color: '#38bdf8', fontWeight: 700, background: 'rgba(56, 189, 248, 0.15)', padding: '2px 7px', borderRadius: 4 }}>
+                  Lihat Daftar →
+                </span>
               </div>
-              <div style={{ fontSize: 11, color: '#cbd5e1' }}>Sedang berjalan & rampung</div>
+              <div style={{ fontSize: 30, fontWeight: 900, color: '#38bdf8', marginTop: 4 }}>
+                {contractedPaketCount} Paket
+              </div>
+              <div style={{ fontSize: 11, color: '#cbd5e1', marginTop: 2 }}>
+                Sedang berjalan & rampung
+              </div>
             </div>
 
-            <div>
-              <div style={{ fontSize: 12, color: '#93c5fd', fontWeight: 600 }}>SELESAI 100% (PHO)</div>
-              <div style={{ fontSize: 28, fontWeight: 900, color: '#fde047', marginTop: 4 }}>
-                {completedCount} Paket
+            {/* 3. Selesai 100% (PHO) */}
+            <div
+              onClick={() => {
+                setPublicPaketModalFilter('SELESAI');
+                setPublicPaketModalOpen(true);
+              }}
+              style={{
+                cursor: 'pointer',
+                padding: '12px 14px',
+                borderRadius: '12px',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                transition: 'all 0.2s ease',
+                position: 'relative'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.12)';
+                e.currentTarget.style.borderColor = '#fde047';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+              title="Klik untuk melihat daftar paket yang telah selesai 100% (PHO)"
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ fontSize: 11.5, color: '#93c5fd', fontWeight: 700, letterSpacing: '0.02em' }}>
+                  SELESAI 100% (PHO)
+                </div>
+                <span style={{ fontSize: 10, color: '#fde047', fontWeight: 700, background: 'rgba(253, 224, 71, 0.15)', padding: '2px 7px', borderRadius: 4 }}>
+                  Lihat Daftar →
+                </span>
               </div>
-              <div style={{ fontSize: 11, color: '#cbd5e1' }}>Siap dimanfaatkan publik</div>
+              <div style={{ fontSize: 30, fontWeight: 900, color: '#fde047', marginTop: 4 }}>
+                {completedPaketCount} Paket
+              </div>
+              <div style={{ fontSize: 11, color: '#cbd5e1', marginTop: 2 }}>
+                Siap dimanfaatkan publik
+              </div>
             </div>
           </div>
         </div>
@@ -1314,7 +1453,7 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
               {/* Foto Dokumentasi Lapangan */}
               <div>
                 <h4 style={{ fontSize: 13, fontWeight: 700, color: '#0f2c59', marginBottom: 10 }}>
-                  Dokumentasi Foto Lapangan (0%, 50%, 100%):
+                  Dokumentasi:
                 </h4>
                 {(!activeProjectDetail.dataFisik?.fotoDokumentasi || activeProjectDetail.dataFisik.fotoDokumentasi.length === 0) ? (
                   <div style={{ padding: '18px', textAlign: 'center', background: '#f8fafc', borderRadius: 10, color: '#94a3b8', fontSize: 12.5 }}>
@@ -1346,6 +1485,18 @@ const LandingView = ({ onGoToLogin, onBackToInternal }) => {
           </div>
         </div>
       )}
+
+      {/* 10. MODAL DAFTAR PAKET PEKERJAAN PUBLIK (INTERAKTIF & TANPA NOMINAL) */}
+      <PublicPaketListModal
+        isOpen={publicPaketModalOpen}
+        onClose={() => setPublicPaketModalOpen(false)}
+        initialStatus={publicPaketModalFilter}
+        paketList={publicPaketList}
+        activeYear={activeYear}
+        onSelectPaketDetail={(p) => {
+          setActiveProjectDetail(p);
+        }}
+      />
     </div>
   );
 };

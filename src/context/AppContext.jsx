@@ -411,7 +411,8 @@ export const AppProvider = ({ children }) => {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length >= INITIAL_PROJECTS.length) {
+        const hasContracts = Array.isArray(parsed) && parsed.some((p) => p.isKontrak);
+        if (hasContracts && parsed.length >= INITIAL_PROJECTS.length) {
           return parsed.map(mapProjectClean);
         }
       } catch (e) {
@@ -428,11 +429,27 @@ export const AppProvider = ({ children }) => {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        const hasContracts = Array.isArray(parsed) && parsed.some((p) => p.isKontrak);
+        if (hasContracts && parsed.length >= MONITORING_PAKET_2026.length) {
+          return parsed;
+        }
       } catch (e) {}
     }
     return MONITORING_PAKET_2026;
   });
+
+  // Self-healing: jika browser menyimpan cache lama yang 0 kontrak, segarkan ke data resmi Oktober 2026
+  useEffect(() => {
+    if (Array.isArray(paketPekerjaanList) && paketPekerjaanList.length > 0 && !paketPekerjaanList.some((p) => p.isKontrak)) {
+      setPaketPekerjaanList(MONITORING_PAKET_2026);
+      localStorage.setItem('simon_paket_pekerjaan_2026', JSON.stringify(MONITORING_PAKET_2026));
+    }
+    if (Array.isArray(projects) && projects.length > 0 && !projects.some((p) => p.isKontrak)) {
+      const cleanInit = INITIAL_PROJECTS.map(mapProjectClean);
+      setProjects(cleanInit);
+      localStorage.setItem('simon_projects_v2', JSON.stringify(cleanInit));
+    }
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('simon_paket_pekerjaan_2026', JSON.stringify(paketPekerjaanList));
@@ -563,10 +580,16 @@ export const AppProvider = ({ children }) => {
           const json = await res.json();
           if (json && json.status === 'success' && json.data && isMounted) {
             if (Array.isArray(json.data.projects) && json.data.projects.length > 0) {
-              setProjects(json.data.projects.map(mapProjectClean));
+              const remoteHasContracts = json.data.projects.some((p) => p.isKontrak);
+              if (remoteHasContracts) {
+                setProjects(json.data.projects.map(mapProjectClean));
+              }
             }
             if (Array.isArray(json.data.paketPekerjaanList) && json.data.paketPekerjaanList.length > 0) {
-              setPaketPekerjaanList(json.data.paketPekerjaanList);
+              const remoteHasContracts = json.data.paketPekerjaanList.some((p) => p.isKontrak);
+              if (remoteHasContracts) {
+                setPaketPekerjaanList(json.data.paketPekerjaanList);
+              }
             }
             if (json.data.systemSettings) {
               setSystemSettings((prev) => {
