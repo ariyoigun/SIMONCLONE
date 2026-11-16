@@ -26,3 +26,5 @@ config.local.php
 *.sln
 *.sw?
 deploy_simon_satuputaru/
+~$*.docx
+~$*.xlsx

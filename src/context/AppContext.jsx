@@ -80,6 +80,7 @@ export const AppProvider = ({ children }) => {
             nipSekretaris: parsed.nipSekretaris || DEFAULT_SYSTEM_SETTINGS.nipSekretaris,
             pangkatSekretaris: parsed.pangkatSekretaris || DEFAULT_SYSTEM_SETTINGS.pangkatSekretaris,
             jabatanSekretaris: (parsed.jabatanSekretaris || DEFAULT_SYSTEM_SETTINGS.jabatanSekretaris).replace(/PUPR/g, 'DINPUTARU'),
+            runningText: parsed.runningText || DEFAULT_SYSTEM_SETTINGS.runningText,
             galeri: Array.isArray(parsed.galeri) && parsed.galeri.length > 0 ? parsed.galeri : DEFAULT_SYSTEM_SETTINGS.galeri,
             showGaleriSlideshow: parsed.showGaleriSlideshow !== undefined ? parsed.showGaleriSlideshow : DEFAULT_SYSTEM_SETTINGS.showGaleriSlideshow,
             showSlideshowUnggulan: parsed.showSlideshowUnggulan !== undefined ? parsed.showSlideshowUnggulan : DEFAULT_SYSTEM_SETTINGS.showSlideshowUnggulan,
@@ -258,9 +259,8 @@ export const AppProvider = ({ children }) => {
     return DEFAULT_TARGET_CONFIG;
   });
 
-  // Projects State (Master Data Terpadu untuk 4 Menu + Menu 5 SIPD)
-  const [projects, setProjects] = useState(() => {
-    const mapProjectClean = (p) => {
+  // Projects Normalization Helper (Universal Clean Mapping)
+  const mapProjectClean = (p) => {
       // Clean kategori pekerjaan
       const kategoriPekerjaan = p.kategoriPekerjaan || (p.bidangId === 'tata_ruang' ? 'Jakon' : 'Fisik');
 
@@ -405,8 +405,10 @@ export const AppProvider = ({ children }) => {
         },
         logs: Array.isArray(p.logs) ? p.logs : []
       };
-    };
+  };
 
+  // Projects State (Master Data Terpadu untuk 4 Menu + Menu 5 SIPD)
+  const [projects, setProjects] = useState(() => {
     const saved = localStorage.getItem('simon_projects_v2');
     if (saved) {
       try {
@@ -570,86 +572,148 @@ export const AppProvider = ({ children }) => {
     localStorage.setItem('simon_pendapatan_target', JSON.stringify(pendapatanTargetConfig));
   }, [pendapatanTargetConfig]);
 
-  // Remote Database Sync (Hostinger MySQL API Bridge)
-  useEffect(() => {
-    let isMounted = true;
-    const fetchRemoteData = async () => {
-      try {
-        const res = await fetch(`/api/api.php?action=load_all&_t=${Date.now()}`);
-        if (res.ok) {
-          const json = await res.json();
-          if (json && json.status === 'success' && json.data && isMounted) {
-            if (Array.isArray(json.data.projects) && json.data.projects.length > 0) {
-              const remoteHasContracts = json.data.projects.some((p) => p.isKontrak);
-              if (remoteHasContracts) {
-                setProjects(json.data.projects.map(mapProjectClean));
-              }
-            }
-            if (Array.isArray(json.data.paketPekerjaanList) && json.data.paketPekerjaanList.length > 0) {
-              const remoteHasContracts = json.data.paketPekerjaanList.some((p) => p.isKontrak);
-              if (remoteHasContracts) {
-                setPaketPekerjaanList(json.data.paketPekerjaanList);
-              }
-            }
-            if (json.data.systemSettings) {
-              setSystemSettings((prev) => {
-                const remote = json.data.systemSettings;
-                return {
-                  ...prev,
-                  ...remote,
-                  namaSistem: remote.namaSistem || remote.nama_sistem || prev.namaSistem,
-                  subNama: remote.subNama || remote.sub_nama || prev.subNama,
-                  instansi: remote.instansi || prev.instansi,
-                  pemerintahDaerah: remote.pemerintahDaerah || remote.pemerintah_daerah || prev.pemerintahDaerah,
-                  showGaleriSlideshow: remote.showGaleriSlideshow !== undefined ? remote.showGaleriSlideshow : prev.showGaleriSlideshow,
-                  showSlideshowUnggulan: remote.showSlideshowUnggulan !== undefined ? remote.showSlideshowUnggulan : prev.showSlideshowUnggulan,
-                  showPetaKoordinat: remote.showPetaKoordinat !== undefined ? remote.showPetaKoordinat : prev.showPetaKoordinat,
-                  showKurvaS: remote.showKurvaS !== undefined ? remote.showKurvaS : prev.showKurvaS,
-                  slideshowUnggulan: Array.isArray(remote.slideshowUnggulan) && remote.slideshowUnggulan.length > 0
-                    ? remote.slideshowUnggulan
-                    : (Array.isArray(prev.slideshowUnggulan) && prev.slideshowUnggulan.length > 0 ? prev.slideshowUnggulan : DEFAULT_SYSTEM_SETTINGS.slideshowUnggulan),
-                  galeri: Array.isArray(remote.galeri) && remote.galeri.length > 0
-                    ? remote.galeri
-                    : prev.galeri
-                };
-              });
-            }
-            if (Array.isArray(json.data.users) && json.data.users.length > 0) {
-              setUsers(json.data.users);
-            }
-            if (Array.isArray(json.data.tags) && json.data.tags.length > 0) {
-              setTags(json.data.tags);
-            }
-            if (Array.isArray(json.data.sipdPrograms) && json.data.sipdPrograms.length > 0) {
-              setSipdPrograms(json.data.sipdPrograms);
-            }
-            if (Array.isArray(json.data.sipdKegiatans) && json.data.sipdKegiatans.length > 0) {
-              setSipdKegiatans(json.data.sipdKegiatans);
-            }
-            if (Array.isArray(json.data.sipdSubKegiatans) && json.data.sipdSubKegiatans.length > 0) {
-              setSipdSubKegiatans(json.data.sipdSubKegiatans);
-            }
-            if (Array.isArray(json.data.years) && json.data.years.length > 0) {
-              setYears(json.data.years);
-            }
+  const [isRefreshingRemote, setIsRefreshingRemote] = useState(false);
+
+  // Fungsi Sinkronisasi Data Terpadu dari Remote Database Hostinger MySQL
+  const refreshDataFromDatabase = useCallback(async (silent = true) => {
+    try {
+      if (!silent) setIsRefreshingRemote(true);
+      const res = await fetch(`/api/api.php?action=load_all&_t=${Date.now()}`);
+      if (res.ok) {
+        const json = await res.json();
+        if (json && json.status === 'success' && json.data) {
+          // 1. Projects Data
+          if (Array.isArray(json.data.projects) && json.data.projects.length > 0) {
+            const mapped = json.data.projects.map(mapProjectClean);
+            setProjects(mapped);
+            try {
+              localStorage.setItem('simon_projects_v2', JSON.stringify(mapped));
+            } catch (e) {}
+          }
+
+          // 2. Monitoring Paket Pekerjaan 2026
+          if (Array.isArray(json.data.paketPekerjaanList) && json.data.paketPekerjaanList.length > 0) {
+            setPaketPekerjaanList(json.data.paketPekerjaanList);
+            try {
+              localStorage.setItem('simon_paket_pekerjaan_2026', JSON.stringify(json.data.paketPekerjaanList));
+            } catch (e) {}
+          }
+
+          // 3. System Settings (Termasuk Running Text Pengumuman)
+          if (json.data.systemSettings) {
+            const remote = json.data.systemSettings;
+            setSystemSettings((prev) => {
+              const updated = {
+                ...prev,
+                ...remote,
+                namaSistem: remote.namaSistem || remote.nama_sistem || prev.namaSistem,
+                subNama: remote.subNama || remote.sub_nama || prev.subNama,
+                instansi: remote.instansi || prev.instansi,
+                pemerintahDaerah: remote.pemerintahDaerah || remote.pemerintah_daerah || prev.pemerintahDaerah,
+                runningText: remote.runningText !== undefined
+                  ? remote.runningText
+                  : (remote.running_text !== undefined ? remote.running_text : (prev.runningText || DEFAULT_SYSTEM_SETTINGS.runningText)),
+                showGaleriSlideshow: remote.showGaleriSlideshow !== undefined ? remote.showGaleriSlideshow : prev.showGaleriSlideshow,
+                showSlideshowUnggulan: remote.showSlideshowUnggulan !== undefined ? remote.showSlideshowUnggulan : prev.showSlideshowUnggulan,
+                showPetaKoordinat: remote.showPetaKoordinat !== undefined ? remote.showPetaKoordinat : prev.showPetaKoordinat,
+                showKurvaS: remote.showKurvaS !== undefined ? remote.showKurvaS : prev.showKurvaS,
+                slideshowUnggulan: Array.isArray(remote.slideshowUnggulan) && remote.slideshowUnggulan.length > 0
+                  ? remote.slideshowUnggulan
+                  : (Array.isArray(prev.slideshowUnggulan) && prev.slideshowUnggulan.length > 0 ? prev.slideshowUnggulan : DEFAULT_SYSTEM_SETTINGS.slideshowUnggulan),
+                galeri: Array.isArray(remote.galeri) && remote.galeri.length > 0
+                  ? remote.galeri
+                  : prev.galeri
+              };
+              try {
+                localStorage.setItem('simon_system_settings', JSON.stringify(updated));
+              } catch (e) {}
+              return updated;
+            });
+          }
+
+          // 4. Users Data
+          if (Array.isArray(json.data.users) && json.data.users.length > 0) {
+            setUsers(json.data.users);
+            try {
+              localStorage.setItem('simon_users', JSON.stringify(json.data.users));
+            } catch (e) {}
+          }
+
+          // 5. Tags Data
+          if (Array.isArray(json.data.tags) && json.data.tags.length > 0) {
+            setTags(json.data.tags);
+          }
+
+          // 6. SIPD Data
+          if (Array.isArray(json.data.sipdPrograms) && json.data.sipdPrograms.length > 0) {
+            setSipdPrograms(json.data.sipdPrograms);
+          }
+          if (Array.isArray(json.data.sipdKegiatans) && json.data.sipdKegiatans.length > 0) {
+            setSipdKegiatans(json.data.sipdKegiatans);
+          }
+          if (Array.isArray(json.data.sipdSubKegiatans) && json.data.sipdSubKegiatans.length > 0) {
+            setSipdSubKegiatans(json.data.sipdSubKegiatans);
+          }
+
+          // 7. Years Data
+          if (Array.isArray(json.data.years) && json.data.years.length > 0) {
+            setYears(json.data.years);
+          }
+
+          if (!silent) {
+            showToast('Sinkronisasi data database berhasil!', 'success');
           }
         }
-      } catch (err) {
-        // Fallback offline / local dev
       }
-    };
-    fetchRemoteData();
-    return () => {
-      isMounted = false;
-    };
+    } catch (err) {
+      if (!silent) {
+        showToast('Gagal terhubung ke database remote. Menggunakan cache lokal.', 'info');
+      }
+    } finally {
+      if (!silent) setIsRefreshingRemote(false);
+    }
   }, []);
+
+  // Sync saat awal aplikasi dimuat
+  useEffect(() => {
+    refreshDataFromDatabase(true);
+  }, [refreshDataFromDatabase]);
+
+  // Sync otomatis saat tab/jendela browser kembali aktif (onFocus)
+  useEffect(() => {
+    const handleWindowFocus = () => {
+      refreshDataFromDatabase(true);
+    };
+    window.addEventListener('focus', handleWindowFocus);
+    return () => {
+      window.removeEventListener('focus', handleWindowFocus);
+    };
+  }, [refreshDataFromDatabase]);
+
+  // Sync polling background berkala (setiap 30 detik)
+  useEffect(() => {
+    const intervalTimer = setInterval(() => {
+      refreshDataFromDatabase(true);
+    }, 30000);
+    return () => clearInterval(intervalTimer);
+  }, [refreshDataFromDatabase]);
 
   const syncProjectToRemote = async (project) => {
     try {
+      const payload = {
+        ...project,
+        dataPraKontrak: project.tahapPraKontrak || project.dataPraKontrak,
+        statusTahapPraKontrak: project.tahapPraKontrak?.status || project.statusTahapPraKontrak,
+        dataSpj: project.administrasiSPJ || project.dataSpj,
+        spjStatus: project.administrasiSPJ?.status || project.spjStatus,
+        dataFisik: project.dataFisik,
+        dataKeuangan: project.dataKeuangan,
+        dataKontrak: project.dataKontrak
+      };
       await fetch('/api/api.php?action=save_project', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(project)
+        body: JSON.stringify(payload)
       });
     } catch (e) {
       // offline fallback
@@ -793,6 +857,7 @@ export const AppProvider = ({ children }) => {
       localStorage.setItem('simon_is_logged_in', 'true');
     } catch (e) {}
     showToast(`Selamat datang kembali, ${user.nama}!`, 'success');
+    refreshDataFromDatabase(true);
     return { success: true, user };
   };
 
@@ -815,6 +880,7 @@ export const AppProvider = ({ children }) => {
       localStorage.setItem('simon_is_logged_in', 'true');
     } catch (e) {}
     showToast(`Beralih ke akun: ${user.nama} (${ROLE_DEFINITIONS[user.role]?.nama})`, 'info');
+    refreshDataFromDatabase(true);
   };
 
   // Add Year (Superadmin only)
@@ -1103,28 +1169,40 @@ export const AppProvider = ({ children }) => {
       ...galleryItem,
       id: `gal-${Date.now()}`
     };
-    setSystemSettings((prev) => ({
-      ...prev,
-      galeri: [newItem, ...(prev.galeri || [])]
-    }));
+    setSystemSettings((prev) => {
+      const updated = {
+        ...prev,
+        galeri: [newItem, ...(prev.galeri || [])]
+      };
+      syncSettingsToRemote(updated);
+      return updated;
+    });
     showToast('Foto bangunan dinas berhasil ditambahkan ke Galeri Landing Page!', 'success');
     return newItem;
   };
 
   const updateGalleryItem = (id, updatedItem) => {
-    setSystemSettings((prev) => ({
-      ...prev,
-      galeri: (prev.galeri || []).map((item) => (item.id === id ? { ...item, ...updatedItem } : item))
-    }));
+    setSystemSettings((prev) => {
+      const updated = {
+        ...prev,
+        galeri: (prev.galeri || []).map((item) => (item.id === id ? { ...item, ...updatedItem } : item))
+      };
+      syncSettingsToRemote(updated);
+      return updated;
+    });
     showToast('Foto galeri berhasil diperbarui!', 'success');
     return true;
   };
 
   const deleteGalleryItem = (id) => {
-    setSystemSettings((prev) => ({
-      ...prev,
-      galeri: (prev.galeri || []).filter((item) => item.id !== id)
-    }));
+    setSystemSettings((prev) => {
+      const updated = {
+        ...prev,
+        galeri: (prev.galeri || []).filter((item) => item.id !== id)
+      };
+      syncSettingsToRemote(updated);
+      return updated;
+    });
     showToast('Foto galeri berhasil dihapus.', 'info');
     return true;
   };
@@ -2041,7 +2119,9 @@ export const AppProvider = ({ children }) => {
     canInputPendapatan,
     canAccessPendapatanMenu,
     hasMenuAccess,
-    formatCurrency
+    formatCurrency,
+    refreshDataFromDatabase,
+    isRefreshingRemote
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

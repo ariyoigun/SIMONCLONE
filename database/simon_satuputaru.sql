@@ -32,6 +32,7 @@ CREATE TABLE `system_settings` (
   `email` varchar(100) DEFAULT 'dinputaru@demakkab.go.id',
   `website` varchar(150) DEFAULT 'https://dinputaru.demakkab.go.id',
   `logo_url` longtext DEFAULT NULL,
+  `running_text` text DEFAULT 'Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB',
   `nama_kepala_dinas` varchar(150) DEFAULT 'Ir. NANANG TASUNAR DAVID NARUTOMO, MM',
   `nip_kepala_dinas` varchar(50) DEFAULT '196702101993031009',
   `pangkat_kepala_dinas` varchar(100) DEFAULT 'Pembina Utama Madya (IV/d)',
@@ -56,7 +57,7 @@ CREATE TABLE `system_settings` (
 
 INSERT INTO `system_settings` (
   `id`, `nama_sistem`, `sub_nama`, `instansi`, `pemerintah_daerah`, `alamat`, `telepon`, `email`, `website`,
-  `logo_url`, `nama_kepala_dinas`, `nip_kepala_dinas`, `pangkat_kepala_dinas`, `jabatan_kepala_dinas`,
+  `logo_url`, `running_text`, `nama_kepala_dinas`, `nip_kepala_dinas`, `pangkat_kepala_dinas`, `jabatan_kepala_dinas`,
   `nama_sekretaris`, `nip_sekretaris`, `pangkat_sekretaris`, `jabatan_sekretaris`, `max_public_highlights`,
   `show_galeri_slideshow`, `show_slideshow_unggulan`, `show_peta_koordinat`, `show_kurva_s`, `slideshow_unggulan_json`,
   `custom_texts_json`, `bidang_descriptions_json`, `galeri_json`
@@ -71,6 +72,7 @@ INSERT INTO `system_settings` (
   'dinputaru@demakkab.go.id',
   'https://dinputaru.demakkab.go.id',
   '',
+  'Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB',
   'Ir. NANANG TASUNAR DAVID NARUTOMO, MM',
   '196702101993031009',
   'Pembina Utama Madya (IV/d)',

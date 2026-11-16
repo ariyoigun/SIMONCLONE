@@ -1,3 +1,13 @@
+export const INDONESIAN_DAYS = [
+  'Minggu',
+  'Senin',
+  'Selasa',
+  'Rabu',
+  'Kamis',
+  'Jumat',
+  'Sabtu'
+];
+
 export const INDONESIAN_MONTHS = [
   'Januari',
   'Februari',
@@ -52,7 +62,7 @@ export const formatIndonesianDate = (dateInput, withTime = false) => {
  */
 export const getLatestProjectUpdateFormatted = (projects = [], activeYear = 2026, withTime = false) => {
   if (!projects || projects.length === 0) {
-    return `18 November ${activeYear || 2026}`;
+    return getActiveMondayFormatted();
   }
 
   let latestDate = null;
@@ -92,8 +102,37 @@ export const getLatestProjectUpdateFormatted = (projects = [], activeYear = 2026
   }
 
   if (!latestDate) {
-    return `18 November ${activeYear || 2026}`;
+    return getActiveMondayFormatted();
   }
 
   return formatIndonesianDate(latestDate, withTime);
+};
+
+/**
+ * Menghitung dan memformat tanggal Hari Senin pada minggu aktif berjalan.
+ * Format: "Senin, [Tanggal] [Nama Bulan] [Tahun]"
+ * Contoh: Jika sekarang hari Selasa, 17 November 2026,
+ * maka akan menghasilkan: "Senin, 16 November 2026".
+ * Keterangan update selalu berubah mengikuti hari Senin pada minggu yang aktif.
+ */
+export const getActiveMondayFormatted = (referenceDate = new Date()) => {
+  const d = referenceDate instanceof Date && !isNaN(referenceDate.getTime())
+    ? new Date(referenceDate)
+    : new Date();
+
+  // 0 = Minggu, 1 = Senin, 2 = Selasa, 3 = Rabu, 4 = Kamis, 5 = Jumat, 6 = Sabtu
+  const day = d.getDay();
+  // Di Indonesia awal pekan kerja aktif adalah Senin.
+  // Jika hari Minggu (0), pekan yang berjalan ditutup dan Senin aktif berjarak 6 hari lalu.
+  // Jika Senin (1), jarak 0 hari. Selasa (2), jarak 1 hari, dst.
+  const diff = day === 0 ? 6 : day - 1;
+
+  const monday = new Date(d);
+  monday.setDate(d.getDate() - diff);
+
+  const dateNum = monday.getDate();
+  const monthName = INDONESIAN_MONTHS[monday.getMonth()] || 'November';
+  const yearNum = monday.getFullYear();
+
+  return `Senin, ${dateNum} ${monthName} ${yearNum}`;
 };

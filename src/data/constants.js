@@ -873,6 +873,7 @@ export const DEFAULT_SYSTEM_SETTINGS = {
   deskripsi:
     'Platform terpadu pemantauan dan pengendalian paket pekerjaan konstruksi, preservasi jalan, pengelolaan sumber daya air, cipta karya, dan penataan ruang di Kabupaten Demak dari perencanaan pra-kontrak hingga serah terima akhir.',
   logoUrl: '', // Kosong = gunakan logo dinas PU default beraksen emas
+  runningText: 'Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB',
   maxPublicHighlights: 10,
   showGaleriSlideshow: false,
   showSlideshowUnggulan: true,

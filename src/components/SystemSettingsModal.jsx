@@ -36,7 +36,8 @@ import {
   ExternalLink,
   EyeOff,
   CheckCircle2,
-  AlertCircle
+  AlertCircle,
+  Megaphone
 } from 'lucide-react';
 import { DEFAULT_CUSTOM_TEXTS, DEFAULT_BIDANG_DESCRIPTIONS, BIDANG_LIST } from '../data/constants';
 import { LOGO_PRESETS } from '../data/logoPresets';
@@ -99,6 +100,7 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
     singkatanInstansi: '',
     deskripsi: '',
     logoUrl: '',
+    runningText: '',
     maxPublicHighlights: 10,
     alamat: '',
     telepon: '',
@@ -281,6 +283,7 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
         singkatanInstansi: systemSettings.singkatanInstansi || 'DINPUTARU Demak',
         deskripsi: systemSettings.deskripsi || '',
         logoUrl: systemSettings.logoUrl || '',
+        runningText: systemSettings.runningText || 'Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB',
         maxPublicHighlights: systemSettings.maxPublicHighlights !== undefined ? systemSettings.maxPublicHighlights : 10,
         alamat: systemSettings.alamat || '',
         telepon: systemSettings.telepon || '',
@@ -1015,6 +1018,73 @@ const SystemSettingsModal = ({ isOpen, onClose }) => {
                       <span style={{ fontSize: 12.5, color: '#64748b' }}>
                         Menentukan berapa banyak paket pekerjaan berstatus sorotan publik yang ditampilkan di halaman depan masyarakat.
                       </span>
+                    </div>
+                  </div>
+
+                  {/* Pengaturan Running Text Pengumuman Sistem */}
+                  <div
+                    className="form-group"
+                    style={{
+                      gridColumn: '1 / -1',
+                      background: 'linear-gradient(135deg, #f8fafc, #f1f5f9)',
+                      border: '1.5px solid #cbd5e1',
+                      borderRadius: 14,
+                      padding: '16px 20px',
+                      marginTop: 4,
+                      boxShadow: '0 1px 3px rgba(0,0,0,0.04)'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                      <div
+                        style={{
+                          width: 34,
+                          height: 34,
+                          borderRadius: 8,
+                          background: 'rgba(245, 158, 11, 0.15)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: '#d97706',
+                          flexShrink: 0
+                        }}
+                      >
+                        <Megaphone size={18} />
+                      </div>
+                      <div>
+                        <div style={{ fontSize: 13.5, fontWeight: 800, color: '#0f2c59' }}>
+                          Teks Berjalan / Running Text Pengumuman Sistem
+                        </div>
+                        <div style={{ fontSize: 11.5, color: '#64748b' }}>
+                          Teks ini ditampilkan secara otomatis di bilah pengumuman tepat di bawah indikator "Mode Pengguna Aktif" untuk seluruh akun pengguna.
+                        </div>
+                      </div>
+                    </div>
+
+                    <textarea
+                      className="form-control"
+                      rows={2}
+                      value={identityForm.runningText || ''}
+                      onChange={(e) => setIdentityForm({ ...identityForm, runningText: e.target.value })}
+                      placeholder="Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB"
+                      style={{ fontSize: 13, background: '#ffffff', lineHeight: 1.5 }}
+                    />
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 8, flexWrap: 'wrap', gap: 8 }}>
+                      <span style={{ fontSize: 11.5, color: '#64748b' }}>
+                        Format Default: <code>Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB</code>
+                      </span>
+                      <button
+                        type="button"
+                        className="btn btn-outline btn-sm"
+                        style={{ fontSize: 11, padding: '3px 10px', background: '#fff' }}
+                        onClick={() =>
+                          setIdentityForm({
+                            ...identityForm,
+                            runningText: 'Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB'
+                          })
+                        }
+                      >
+                        Gunakan Teks Default
+                      </button>
                     </div>
                   </div>
 

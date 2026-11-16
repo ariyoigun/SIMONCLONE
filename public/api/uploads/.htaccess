@@ -1,0 +1,13 @@
+# Allow direct public access to uploaded images
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+</IfModule>
+
+# Disable PHP script execution inside uploads directory for security
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|cgi|sh)$">
+    Deny from all
+</FilesMatch>

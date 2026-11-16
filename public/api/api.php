@@ -35,6 +35,130 @@ if ($pdo) {
     } catch (Exception $e) {}
 }
 
+/**
+ * ==============================================================================
+ * HELPER: PENYIMPANAN GAMBAR DI SERVER WEB (/api/uploads/)
+ * ==============================================================================
+ * Menyimpan base64 data URI ke file fisik di folder uploads/
+ * Mengembalikan path URL relatif web: '/api/uploads/nama_file.jpg'
+ */
+function saveBase64ImageToServer($dataString, $prefix = 'img') {
+    if (empty($dataString) || !is_string($dataString)) {
+        return $dataString;
+    }
+
+    // Jika sudah berupa URL (http, https, /api/uploads/ dll), kembalikan langsung
+    if (preg_match('#^(https?://|/api/uploads/|uploads/)#i', $dataString)) {
+        return $dataString;
+    }
+
+    // Periksa apakah string berupa Data URI: data:image/...;base64,...
+    if (preg_match('#^data:image/([a-zA-Z0-9\+\-\.]+);base64,(.+)$#s', $dataString, $matches)) {
+        $rawExt = strtolower($matches[1]);
+        $base64Data = $matches[2];
+
+        $extMap = [
+            'jpeg' => 'jpg',
+            'jpg' => 'jpg',
+            'png' => 'png',
+            'webp' => 'webp',
+            'gif' => 'gif',
+            'svg+xml' => 'svg'
+        ];
+        $ext = $extMap[$rawExt] ?? 'jpg';
+
+        $decoded = base64_decode($base64Data, true);
+        if ($decoded === false) {
+            return $dataString;
+        }
+
+        $uploadsDir = __DIR__ . '/uploads';
+        if (!is_dir($uploadsDir)) {
+            @mkdir($uploadsDir, 0755, true);
+        }
+
+        $safePrefix = preg_replace('/[^a-zA-Z0-9_-]/', '_', $prefix);
+        $fileName = $safePrefix . '_' . time() . '_' . substr(bin2hex(random_bytes(6)), 0, 8) . '.' . $ext;
+        $filePath = $uploadsDir . '/' . $fileName;
+
+        if (@file_put_contents($filePath, $decoded) !== false) {
+            return '/api/uploads/' . $fileName;
+        }
+    }
+
+    return $dataString;
+}
+
+// 1.01 UPLOAD BERKAS GAMBAR KE SERVER (MULTIPART ATAU BASE64)
+if ($action === 'upload_image' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    $uploadsDir = __DIR__ . '/uploads';
+    if (!is_dir($uploadsDir)) {
+        @mkdir($uploadsDir, 0755, true);
+    }
+
+    // A. Form-Data Multipart Upload ($_FILES)
+    if (!empty($_FILES['image']) || !empty($_FILES['file'])) {
+        $file = !empty($_FILES['image']) ? $_FILES['image'] : $_FILES['file'];
+        if ($file['error'] !== UPLOAD_ERR_OK) {
+            http_response_code(400);
+            echo json_encode(['status' => 'error', 'message' => 'Gagal mengunggah berkas gambar (kode: ' . $file['error'] . ')']);
+            exit;
+        }
+
+        $prefix = preg_replace('/[^a-zA-Z0-9_-]/', '_', $_POST['prefix'] ?? 'img');
+        $origName = $file['name'] ?? '';
+        $ext = strtolower(pathinfo($origName, PATHINFO_EXTENSION));
+        $allowed = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+        if (!in_array($ext, $allowed)) {
+            $ext = 'jpg';
+        }
+
+        $fileName = $prefix . '_' . time() . '_' . substr(bin2hex(random_bytes(6)), 0, 8) . '.' . $ext;
+        $targetPath = $uploadsDir . '/' . $fileName;
+
+        if (move_uploaded_file($file['tmp_name'], $targetPath)) {
+            $url = '/api/uploads/' . $fileName;
+            echo json_encode([
+                'status' => 'success',
+                'url' => $url,
+                'fileName' => $fileName,
+                'message' => 'Gambar berhasil diunggah ke server'
+            ]);
+            exit;
+        } else {
+            http_response_code(500);
+            echo json_encode(['status' => 'error', 'message' => 'Gagal memindahkan berkas ke folder uploads']);
+            exit;
+        }
+    }
+
+    // B. JSON Base64 Payload
+    $rawInput = file_get_contents('php://input');
+    $input = json_decode($rawInput, true);
+    $dataUri = $input['image'] ?? $input['data'] ?? '';
+    $prefix = $input['prefix'] ?? 'img';
+
+    if (!empty($dataUri)) {
+        $savedUrl = saveBase64ImageToServer($dataUri, $prefix);
+        if (strpos($savedUrl, '/api/uploads/') === 0) {
+            echo json_encode([
+                'status' => 'success',
+                'url' => $savedUrl,
+                'message' => 'Gambar base64 berhasil disimpan ke server'
+            ]);
+            exit;
+        } else {
+            http_response_code(500);
+            echo json_encode(['status' => 'error', 'message' => 'Gagal memproses gambar base64']);
+            exit;
+        }
+    }
+
+    http_response_code(400);
+    echo json_encode(['status' => 'error', 'message' => 'Tidak ada data gambar yang diterima']);
+    exit;
+}
+
 // 1.05 API Otentikasi Login Terpadu Langsung ke Database MySQL
 if ($action === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     $input = json_decode(file_get_contents('php://input'), true) ?? [];
@@ -300,6 +424,7 @@ if ($action === 'load_all') {
             $settings['showSlideshowUnggulan'] = isset($settingsRaw['show_slideshow_unggulan']) ? (bool)$settingsRaw['show_slideshow_unggulan'] : true;
             $settings['showPetaKoordinat'] = isset($settingsRaw['show_peta_koordinat']) ? (bool)$settingsRaw['show_peta_koordinat'] : false;
             $settings['showKurvaS'] = isset($settingsRaw['show_kurva_s']) ? (bool)$settingsRaw['show_kurva_s'] : false;
+            $settings['runningText'] = $settingsRaw['running_text'] ?? 'Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB';
             $settings['slideshowUnggulan'] = !empty($settingsRaw['slideshow_unggulan_json']) ? json_decode($settingsRaw['slideshow_unggulan_json'], true) : [];
             $settings['galeri'] = !empty($settingsRaw['galeri_json']) ? json_decode($settingsRaw['galeri_json'], true) : [];
             $settings['customTexts'] = !empty($settingsRaw['custom_texts_json']) ? json_decode($settingsRaw['custom_texts_json'], true) : [];
@@ -639,6 +764,12 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             spj_checklist_json = VALUES(spj_checklist_json),
             logs_json = VALUES(logs_json)";
 
+        $praKontrakData = $p['dataPraKontrak'] ?? $p['tahapPraKontrak'] ?? [];
+        $statusTahapPraKontrak = $p['statusTahapPraKontrak'] ?? ($praKontrakData['status'] ?? 'identifikasi_kebutuhan');
+        $spjData = $p['dataSpj'] ?? $p['administrasiSPJ'] ?? [];
+        $spjStatus = $p['spjStatus'] ?? ($spjData['status'] ?? 'belum_masuk');
+        $fotoDokumentasi = $f['fotoDokumentasi'] ?? $p['fotoDokumentasi'] ?? [];
+
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             ':id' => $p['id'],
@@ -671,20 +802,20 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             ':longitude' => $p['longitude'] ?? '',
             ':tags_json' => json_encode($p['tags'] ?? []),
             ':is_public_highlight' => !empty($p['isPublicHighlight']) ? 1 : 0,
-            ':status_tahap_pra_kontrak' => $p['statusTahapPraKontrak'] ?? 'identifikasi_kebutuhan',
-            ':pra_kontrak_json' => json_encode($p['dataPraKontrak'] ?? []),
+            ':status_tahap_pra_kontrak' => $statusTahapPraKontrak,
+            ':pra_kontrak_json' => json_encode($praKontrakData),
             ':progres_rencana' => (float)($f['progresRencana'] ?? 0),
             ':progres_realisasi' => (float)($f['progresRealisasi'] ?? 0),
             ':deviasi_fisik' => (float)($f['deviasiFisik'] ?? 0),
             ':status_deviasi' => $f['statusDeviasi'] ?? 'Aman',
             ':kurva_s_json' => json_encode($f['mingguan'] ?? []),
-            ':foto_dokumentasi_json' => json_encode($f['fotoDokumentasi'] ?? []),
+            ':foto_dokumentasi_json' => json_encode($fotoDokumentasi),
             ':total_pencairan' => (float)($q['totalPencairan'] ?? 0),
             ':persen_keuangan' => (float)($q['persenKeuangan'] ?? 0),
             ':sisa_anggaran' => (float)($q['sisaAnggaran'] ?? 0),
             ':termin_json' => json_encode($q['terminHistory'] ?? []),
-            ':spj_status' => $p['spjStatus'] ?? 'belum_diajukan',
-            ':spj_checklist_json' => json_encode($p['dataSpj'] ?? []),
+            ':spj_status' => $spjStatus,
+            ':spj_checklist_json' => json_encode($spjData),
             ':logs_json' => json_encode($p['logs'] ?? [])
         ]);
 
@@ -883,6 +1014,10 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     try {
+        try {
+            $pdo->exec("ALTER TABLE system_settings ADD COLUMN running_text TEXT NULL AFTER logo_url");
+        } catch (Exception $ign) {}
+
         $params = [
             ':nama_sistem' => $input['namaSistem'] ?? 'SIMON - SATU PUTARU',
             ':sub_nama' => $input['subNama'] ?? 'Sistem Informasi Monitoring Progres Pekerjaan DINPUTARU',
@@ -893,6 +1028,7 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             ':email' => $input['email'] ?? '',
             ':website' => $input['website'] ?? '',
             ':logo_url' => $input['logoUrl'] ?? '',
+            ':running_text' => $input['runningText'] ?? ($input['running_text'] ?? 'Admin Data melakukan update setiap hari Senin Jam 08.00-10.00 WIB | Verifikasi Data Jam 10.00-12.00 WIB'),
             ':nama_kepala_dinas' => $input['namaKepalaDinas'] ?? '',
             ':nip_kepala_dinas' => $input['nipKepalaDinas'] ?? '',
             ':pangkat_kepala_dinas' => $input['pangkatKepalaDinas'] ?? '',
@@ -915,6 +1051,7 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 email = :email,
                 website = :website,
                 logo_url = :logo_url,
+                running_text = :running_text,
                 nama_kepala_dinas = :nama_kepala_dinas,
                 nip_kepala_dinas = :nip_kepala_dinas,
                 pangkat_kepala_dinas = :pangkat_kepala_dinas,
@@ -955,6 +1092,7 @@ if ($action === 'save_settings' && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 telepon = :telepon,
                 email = :email,
                 website = :website,
+                running_text = :running_text,
                 nama_kepala_dinas = :nama_kepala_dinas,
                 nip_kepala_dinas = :nip_kepala_dinas,
                 pangkat_kepala_dinas = :pangkat_kepala_dinas,
