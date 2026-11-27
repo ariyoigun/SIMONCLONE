@@ -96,7 +96,7 @@ export const AppProvider = ({ children }) => {
             }
           };
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return DEFAULT_SYSTEM_SETTINGS;
   });
@@ -117,7 +117,7 @@ export const AppProvider = ({ children }) => {
           const missing = INITIAL_USERS.filter((iu) => !existingIds.has(iu.id));
           return [...loaded, ...missing];
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return INITIAL_USERS;
   });
@@ -135,7 +135,7 @@ export const AppProvider = ({ children }) => {
             password: parsed.password || 'pupr2025'
           };
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return null;
   });
@@ -162,7 +162,7 @@ export const AppProvider = ({ children }) => {
         if (Array.isArray(parsed) && parsed.length >= 4 && parsed.some((k) => k.nama === 'Swakelola')) {
           return parsed;
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return DEFAULT_KATEGORI_PEKERJAAN;
   });
@@ -177,7 +177,7 @@ export const AppProvider = ({ children }) => {
         if (Array.isArray(parsed) && parsed.length >= 10 && parsed.some((s) => s.id === 'batal')) {
           return parsed;
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return TAHAPAN_PRA_KONTRAK;
   });
@@ -197,7 +197,7 @@ export const AppProvider = ({ children }) => {
         if (Array.isArray(parsed) && parsed.length > 0) {
           return parsed;
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return SUMBER_DANA;
   });
@@ -209,7 +209,7 @@ export const AppProvider = ({ children }) => {
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-      } catch (e) {}
+      } catch (e) { }
     }
     return INITIAL_SIPD_PROGRAMS;
   });
@@ -220,7 +220,7 @@ export const AppProvider = ({ children }) => {
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-      } catch (e) {}
+      } catch (e) { }
     }
     return INITIAL_SIPD_KEGIATAN;
   });
@@ -231,7 +231,7 @@ export const AppProvider = ({ children }) => {
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-      } catch (e) {}
+      } catch (e) { }
     }
     return INITIAL_SIPD_SUB_KEGIATAN;
   });
@@ -243,7 +243,7 @@ export const AppProvider = ({ children }) => {
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-      } catch (e) {}
+      } catch (e) { }
     }
     return generateDummyPendapatanTransactions(2026);
   });
@@ -254,157 +254,157 @@ export const AppProvider = ({ children }) => {
       try {
         const parsed = JSON.parse(saved);
         if (parsed && parsed.targetTahunanTotal) return parsed;
-      } catch (e) {}
+      } catch (e) { }
     }
     return DEFAULT_TARGET_CONFIG;
   });
 
   // Projects Normalization Helper (Universal Clean Mapping)
   const mapProjectClean = (p) => {
-      // Clean kategori pekerjaan
-      const kategoriPekerjaan = p.kategoriPekerjaan || (p.bidangId === 'tata_ruang' ? 'Jakon' : 'Fisik');
+    // Clean kategori pekerjaan
+    const kategoriPekerjaan = p.kategoriPekerjaan || (p.bidangId === 'tata_ruang' ? 'Jakon' : 'Fisik');
 
-      // Clean tipe pengadaan
-      let tipePengadaan = p.tipePengadaan || 'Tender';
-      if (tipePengadaan.includes('Tender / Seleksi')) {
-        tipePengadaan = kategoriPekerjaan === 'Jakon' ? 'Seleksi' : 'Tender';
-      } else if (tipePengadaan.includes('Katalog') || tipePengadaan.includes('Minikompetisi')) {
-        tipePengadaan = kategoriPekerjaan === 'Barang' ? 'e-Purchasing' : 'Minikom';
-      } else if (tipePengadaan.includes('Pengadaan Langsung')) {
-        tipePengadaan = 'Pengadaan Langsung';
-      } else if (tipePengadaan.includes('Penunjukan Langsung')) {
-        tipePengadaan = 'Pengadaan Langsung';
+    // Clean tipe pengadaan
+    let tipePengadaan = p.tipePengadaan || 'Tender';
+    if (tipePengadaan.includes('Tender / Seleksi')) {
+      tipePengadaan = kategoriPekerjaan === 'Jakon' ? 'Seleksi' : 'Tender';
+    } else if (tipePengadaan.includes('Katalog') || tipePengadaan.includes('Minikompetisi')) {
+      tipePengadaan = kategoriPekerjaan === 'Barang' ? 'e-Purchasing' : 'Minikom';
+    } else if (tipePengadaan.includes('Pengadaan Langsung')) {
+      tipePengadaan = 'Pengadaan Langsung';
+    } else if (tipePengadaan.includes('Penunjukan Langsung')) {
+      tipePengadaan = 'Pengadaan Langsung';
+    }
+
+    // Check contract info & progress
+    const totalCair = parseFloat(p.dataKeuangan?.totalPencairan) || 0;
+    const fRealisasi = parseFloat(p.dataFisik?.progresRealisasi) || 0;
+    const fRencana = parseFloat(p.dataFisik?.progresRencana) || 0;
+    const kNilai = parseFloat(p.dataKontrak?.nilaiKontrak) || 0;
+    const kDate = p.dataKontrak?.tanggalKontrak;
+    const kNo = p.dataKontrak?.nomorKontrak;
+    const kPenyedia = p.dataKontrak?.namaPenyedia;
+    const hasContractor = Boolean(kPenyedia) && kPenyedia !== '-' && kPenyedia !== 'Belum Ditunjuk / Tahap Pemilihan';
+
+    const hasContractInfo =
+      Boolean(p.isKontrak) ||
+      p.tahapPraKontrak?.status === 'kontrak' ||
+      p.statusTahapPraKontrak === 'kontrak' ||
+      p.statusTahapPraKontrak === 'pelaksanaan_kontrak' ||
+      Boolean(kDate) ||
+      (kNilai > 0) ||
+      Boolean(kNo) ||
+      hasContractor ||
+      (totalCair > 0) ||
+      (fRealisasi > 0);
+
+    const isBatal = p.tahapPraKontrak?.status === 'batal' || p.statusDeviasi === 'Batal';
+    const isKontrak = !isBatal && hasContractInfo;
+    const statusTahap = isBatal ? 'batal' : (isKontrak ? 'kontrak' : (p.tahapPraKontrak?.status || 'rup'));
+
+    // Clean SPJ status
+    const baseValue = kNilai > 0 ? kNilai : (parseFloat(p.paguAnggaran) || 1);
+    let spjStatusClean = p.administrasiSPJ?.status || p.spjStatus;
+    if (!spjStatusClean || spjStatusClean === 'belum_diajukan' || spjStatusClean === 'sp2d_terbit') {
+      if (totalCair > 0 && totalCair >= baseValue) {
+        spjStatusClean = 'sudah_sp2d';
+      } else if (totalCair > 0) {
+        spjStatusClean = 'sudah_masuk';
+      } else {
+        spjStatusClean = isKontrak ? 'belum_masuk' : 'belum_masuk';
       }
+    }
 
-      // Check contract info & progress
-      const totalCair = parseFloat(p.dataKeuangan?.totalPencairan) || 0;
-      const fRealisasi = parseFloat(p.dataFisik?.progresRealisasi) || 0;
-      const fRencana = parseFloat(p.dataFisik?.progresRencana) || 0;
-      const kNilai = parseFloat(p.dataKontrak?.nilaiKontrak) || 0;
-      const kDate = p.dataKontrak?.tanggalKontrak;
-      const kNo = p.dataKontrak?.nomorKontrak;
-      const kPenyedia = p.dataKontrak?.namaPenyedia;
-      const hasContractor = Boolean(kPenyedia) && kPenyedia !== '-' && kPenyedia !== 'Belum Ditunjuk / Tahap Pemilihan';
+    // SIPD Mapping
+    let matchedSub = null;
+    if (p.subKegiatanId) {
+      matchedSub = INITIAL_SIPD_SUB_KEGIATAN.find((s) => s.id === p.subKegiatanId);
+    }
+    if (!matchedSub && p.kodeSubKegiatan) {
+      matchedSub = INITIAL_SIPD_SUB_KEGIATAN.find((s) => s.kodeSubKegiatan === p.kodeSubKegiatan);
+    }
+    if (!matchedSub) {
+      matchedSub = matchProjectToSubKegiatan(p, INITIAL_SIPD_SUB_KEGIATAN);
+    }
 
-      const hasContractInfo =
-        Boolean(p.isKontrak) ||
-        p.tahapPraKontrak?.status === 'kontrak' ||
-        p.statusTahapPraKontrak === 'kontrak' ||
-        p.statusTahapPraKontrak === 'pelaksanaan_kontrak' ||
-        Boolean(kDate) ||
-        (kNilai > 0) ||
-        Boolean(kNo) ||
-        hasContractor ||
-        (totalCair > 0) ||
-        (fRealisasi > 0);
+    const terminHistory = Array.isArray(p.dataKeuangan?.terminHistory) && p.dataKeuangan.terminHistory.length > 0
+      ? p.dataKeuangan.terminHistory
+      : (totalCair > 0 ? [{
+        id: `TRM-${p.id}-1`,
+        terminKe: totalCair >= baseValue ? 'Pelunasan SP2D 100%' : 'Pencairan SP2D Termin',
+        nomorSP2D: kNo ? `SP2D-${kNo}` : 'SP2D-2026-OKT',
+        tanggalSP2D: kDate || '2026-10-31',
+        jumlah: totalCair,
+        persen: kNilai > 0 ? parseFloat(((totalCair / kNilai) * 100).toFixed(2)) : 0,
+        keterangan: 'Pencairan SP2D Keuangan s/d Oktober 2026'
+      }] : []);
 
-      const isBatal = p.tahapPraKontrak?.status === 'batal' || p.statusDeviasi === 'Batal';
-      const isKontrak = !isBatal && hasContractInfo;
-      const statusTahap = isBatal ? 'batal' : (isKontrak ? 'kontrak' : (p.tahapPraKontrak?.status || 'rup'));
-
-      // Clean SPJ status
-      const baseValue = kNilai > 0 ? kNilai : (parseFloat(p.paguAnggaran) || 1);
-      let spjStatusClean = p.administrasiSPJ?.status || p.spjStatus;
-      if (!spjStatusClean || spjStatusClean === 'belum_diajukan' || spjStatusClean === 'sp2d_terbit') {
-        if (totalCair > 0 && totalCair >= baseValue) {
-          spjStatusClean = 'sudah_sp2d';
-        } else if (totalCair > 0) {
-          spjStatusClean = 'sudah_masuk';
-        } else {
-          spjStatusClean = isKontrak ? 'belum_masuk' : 'belum_masuk';
-        }
-      }
-
-      // SIPD Mapping
-      let matchedSub = null;
-      if (p.subKegiatanId) {
-        matchedSub = INITIAL_SIPD_SUB_KEGIATAN.find((s) => s.id === p.subKegiatanId);
-      }
-      if (!matchedSub && p.kodeSubKegiatan) {
-        matchedSub = INITIAL_SIPD_SUB_KEGIATAN.find((s) => s.kodeSubKegiatan === p.kodeSubKegiatan);
-      }
-      if (!matchedSub) {
-        matchedSub = matchProjectToSubKegiatan(p, INITIAL_SIPD_SUB_KEGIATAN);
-      }
-
-      const terminHistory = Array.isArray(p.dataKeuangan?.terminHistory) && p.dataKeuangan.terminHistory.length > 0
-        ? p.dataKeuangan.terminHistory
-        : (totalCair > 0 ? [{
-            id: `TRM-${p.id}-1`,
-            terminKe: totalCair >= baseValue ? 'Pelunasan SP2D 100%' : 'Pencairan SP2D Termin',
-            nomorSP2D: kNo ? `SP2D-${kNo}` : 'SP2D-2026-OKT',
-            tanggalSP2D: kDate || '2026-10-31',
-            jumlah: totalCair,
-            persen: kNilai > 0 ? parseFloat(((totalCair / kNilai) * 100).toFixed(2)) : 0,
-            keterangan: 'Pencairan SP2D Keuangan s/d Oktober 2026'
-          }] : []);
-
-      return {
-        ...p,
-        programId: p.programId || matchedSub?.programId || '',
-        kegiatanId: p.kegiatanId || matchedSub?.kegiatanId || '',
-        subKegiatanId: p.subKegiatanId || matchedSub?.id || '',
-        kodeSubKegiatan: p.kodeSubKegiatan || matchedSub?.kodeSubKegiatan || '',
-        namaSubKegiatan: p.namaSubKegiatan || matchedSub?.namaSubKegiatan || '',
-        kategoriPekerjaan,
-        tipePengadaan,
-        isKontrak,
-        jenisAnggaran: p.jenisAnggaran || 'Murni',
-        kecamatan: p.kecamatan || 'Demak',
-        desa: p.desa || 'Bintoro',
-        tags: p.tags || [],
-        latitude: p.latitude || '-6.8942',
-        longitude: p.longitude || '110.6385',
-        isPublicHighlight: p.isPublicHighlight !== undefined ? p.isPublicHighlight : true,
-        tahapPraKontrak: {
-          status: statusTahap,
-          targetMulaiTender: p.tahapPraKontrak?.targetMulaiTender || p.dataKontrak?.tanggalMulai || '',
-          targetSelesaiTender: p.tahapPraKontrak?.targetSelesaiTender || p.dataKontrak?.tanggalSelesai || '',
-          catatanPraKontrak: isBatal
-            ? (p.tahapPraKontrak?.catatanPraKontrak || 'Pekerjaan dibatalkan')
-            : (isKontrak ? 'Kontrak pelaksanaan pekerjaan telah diterbitkan dan sedang berjalan' : (p.tahapPraKontrak?.catatanPraKontrak || 'Tahapan persiapan RUP'))
-        },
-        dataKontrak: {
-          ...p.dataKontrak,
-          nilaiKontrak: kNilai,
-          tanggalKontrak: kDate || '',
-          tanggalMulai: p.dataKontrak?.tanggalMulai || '',
-          tanggalSelesai: p.dataKontrak?.tanggalSelesai || '',
-          namaPenyedia: kPenyedia || (isKontrak ? 'Penyedia Jasa Konstruksi' : 'Belum Ditunjuk / Tahap Pemilihan')
-        },
-        dataFisik: {
-          ...p.dataFisik,
-          progresRencana: fRencana,
-          progresRealisasi: fRealisasi,
-          statusDeviasi: isBatal ? 'Batal' : (p.dataFisik?.statusDeviasi || (fRealisasi >= 100 ? 'Selesai' : ((fRealisasi - fRencana) < -5 ? 'Kritis' : ((fRealisasi - fRencana) < 0 ? 'Perhatian' : 'Aman'))))
-        },
-        dataKeuangan: {
-          ...p.dataKeuangan,
-          totalPencairan: totalCair,
-          persenKeuangan: p.dataKeuangan?.persenKeuangan || (kNilai > 0 ? parseFloat(((totalCair / kNilai) * 100).toFixed(2)) : (parseFloat(p.paguAnggaran) > 0 ? parseFloat(((totalCair / parseFloat(p.paguAnggaran)) * 100).toFixed(2)) : 0)),
-          sisaAnggaran: Math.max(0, (kNilai > 0 ? kNilai : (parseFloat(p.paguAnggaran) || 0)) - totalCair),
-          terminHistory
-        },
-        administrasiSPJ: {
-          status: spjStatusClean,
-          tanggalMasuk: p.administrasiSPJ?.tanggalMasuk || (spjStatusClean !== 'belum_masuk' ? (kDate || '2026-10-15') : ''),
-          tanggalKoreksi: p.administrasiSPJ?.tanggalKoreksi || '',
-          tanggalSPM: p.administrasiSPJ?.tanggalSPM || (spjStatusClean === 'sudah_sp2d' ? '2026-10-25' : ''),
-          nomorSPM: p.administrasiSPJ?.nomorSPM || (spjStatusClean === 'sudah_sp2d' ? (kNo ? `900/SPM/${kNo}` : '900/SPM/DPU/2026') : ''),
-          catatanVerifikator: p.administrasiSPJ?.catatanVerifikator || (spjStatusClean === 'sudah_sp2d' ? 'Berkas SPJ lengkap & SP2D lunas 100%' : (spjStatusClean === 'sudah_masuk' ? 'Berkas SPJ termin masuk, proses verifikasi SP2D' : 'Belum menyerahkan berkas SPJ')),
-          petugasVerifikator: p.administrasiSPJ?.petugasVerifikator || (spjStatusClean !== 'belum_masuk' ? 'Tim Verifikasi SPJ Keuangan' : '')
-        },
-        tahapanPencairan: p.tahapanPencairan || {
-          berkasBelumMasuk: !isKontrak && totalCair === 0,
-          berkasMasuk: totalCair > 0 || fRealisasi > 0,
-          koreksi: false,
-          berkasRevisiMasuk: false,
-          spm: totalCair > 0,
-          selesai: fRealisasi >= 100 && totalCair >= baseValue,
-          catatanPencairan: ''
-        },
-        logs: Array.isArray(p.logs) ? p.logs : []
-      };
+    return {
+      ...p,
+      programId: p.programId || matchedSub?.programId || '',
+      kegiatanId: p.kegiatanId || matchedSub?.kegiatanId || '',
+      subKegiatanId: p.subKegiatanId || matchedSub?.id || '',
+      kodeSubKegiatan: p.kodeSubKegiatan || matchedSub?.kodeSubKegiatan || '',
+      namaSubKegiatan: p.namaSubKegiatan || matchedSub?.namaSubKegiatan || '',
+      kategoriPekerjaan,
+      tipePengadaan,
+      isKontrak,
+      jenisAnggaran: p.jenisAnggaran || 'Murni',
+      kecamatan: p.kecamatan || 'Demak',
+      desa: p.desa || 'Bintoro',
+      tags: p.tags || [],
+      latitude: p.latitude || '-6.8942',
+      longitude: p.longitude || '110.6385',
+      isPublicHighlight: p.isPublicHighlight !== undefined ? p.isPublicHighlight : true,
+      tahapPraKontrak: {
+        status: statusTahap,
+        targetMulaiTender: p.tahapPraKontrak?.targetMulaiTender || p.dataKontrak?.tanggalMulai || '',
+        targetSelesaiTender: p.tahapPraKontrak?.targetSelesaiTender || p.dataKontrak?.tanggalSelesai || '',
+        catatanPraKontrak: isBatal
+          ? (p.tahapPraKontrak?.catatanPraKontrak || 'Pekerjaan dibatalkan')
+          : (isKontrak ? 'Kontrak pelaksanaan pekerjaan telah diterbitkan dan sedang berjalan' : (p.tahapPraKontrak?.catatanPraKontrak || 'Tahapan persiapan RUP'))
+      },
+      dataKontrak: {
+        ...p.dataKontrak,
+        nilaiKontrak: kNilai,
+        tanggalKontrak: kDate || '',
+        tanggalMulai: p.dataKontrak?.tanggalMulai || '',
+        tanggalSelesai: p.dataKontrak?.tanggalSelesai || '',
+        namaPenyedia: kPenyedia || (isKontrak ? 'Penyedia Jasa Konstruksi' : 'Belum Ditunjuk / Tahap Pemilihan')
+      },
+      dataFisik: {
+        ...p.dataFisik,
+        progresRencana: fRencana,
+        progresRealisasi: fRealisasi,
+        statusDeviasi: isBatal ? 'Batal' : (p.dataFisik?.statusDeviasi || (fRealisasi >= 100 ? 'Selesai' : ((fRealisasi - fRencana) < -5 ? 'Kritis' : ((fRealisasi - fRencana) < 0 ? 'Perhatian' : 'Aman'))))
+      },
+      dataKeuangan: {
+        ...p.dataKeuangan,
+        totalPencairan: totalCair,
+        persenKeuangan: p.dataKeuangan?.persenKeuangan || (kNilai > 0 ? parseFloat(((totalCair / kNilai) * 100).toFixed(2)) : (parseFloat(p.paguAnggaran) > 0 ? parseFloat(((totalCair / parseFloat(p.paguAnggaran)) * 100).toFixed(2)) : 0)),
+        sisaAnggaran: Math.max(0, (kNilai > 0 ? kNilai : (parseFloat(p.paguAnggaran) || 0)) - totalCair),
+        terminHistory
+      },
+      administrasiSPJ: {
+        status: spjStatusClean,
+        tanggalMasuk: p.administrasiSPJ?.tanggalMasuk || (spjStatusClean !== 'belum_masuk' ? (kDate || '2026-10-15') : ''),
+        tanggalKoreksi: p.administrasiSPJ?.tanggalKoreksi || '',
+        tanggalSPM: p.administrasiSPJ?.tanggalSPM || (spjStatusClean === 'sudah_sp2d' ? '2026-10-25' : ''),
+        nomorSPM: p.administrasiSPJ?.nomorSPM || (spjStatusClean === 'sudah_sp2d' ? (kNo ? `900/SPM/${kNo}` : '900/SPM/DPU/2026') : ''),
+        catatanVerifikator: p.administrasiSPJ?.catatanVerifikator || (spjStatusClean === 'sudah_sp2d' ? 'Berkas SPJ lengkap & SP2D lunas 100%' : (spjStatusClean === 'sudah_masuk' ? 'Berkas SPJ termin masuk, proses verifikasi SP2D' : 'Belum menyerahkan berkas SPJ')),
+        petugasVerifikator: p.administrasiSPJ?.petugasVerifikator || (spjStatusClean !== 'belum_masuk' ? 'Tim Verifikasi SPJ Keuangan' : '')
+      },
+      tahapanPencairan: p.tahapanPencairan || {
+        berkasBelumMasuk: !isKontrak && totalCair === 0,
+        berkasMasuk: totalCair > 0 || fRealisasi > 0,
+        koreksi: false,
+        berkasRevisiMasuk: false,
+        spm: totalCair > 0,
+        selesai: fRealisasi >= 100 && totalCair >= baseValue,
+        catatanPencairan: ''
+      },
+      logs: Array.isArray(p.logs) ? p.logs : []
+    };
   };
 
   // Projects State (Master Data Terpadu untuk 4 Menu + Menu 5 SIPD)
@@ -424,7 +424,7 @@ export const AppProvider = ({ children }) => {
     return INITIAL_PROJECTS.map(mapProjectClean);
   });
 
-  
+
   // Master Data Paket Pekerjaan TA 2026 (478 Paket dari Monitoring Paket 2026.xlsx)
   const [paketPekerjaanList, setPaketPekerjaanList] = useState(() => {
     const saved = localStorage.getItem('simon_paket_pekerjaan_2026');
@@ -435,7 +435,7 @@ export const AppProvider = ({ children }) => {
         if (hasContracts && parsed.length >= MONITORING_PAKET_2026.length) {
           return parsed;
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return MONITORING_PAKET_2026;
   });
@@ -588,7 +588,7 @@ export const AppProvider = ({ children }) => {
             setProjects(mapped);
             try {
               localStorage.setItem('simon_projects_v2', JSON.stringify(mapped));
-            } catch (e) {}
+            } catch (e) { }
           }
 
           // 2. Monitoring Paket Pekerjaan 2026
@@ -596,7 +596,7 @@ export const AppProvider = ({ children }) => {
             setPaketPekerjaanList(json.data.paketPekerjaanList);
             try {
               localStorage.setItem('simon_paket_pekerjaan_2026', JSON.stringify(json.data.paketPekerjaanList));
-            } catch (e) {}
+            } catch (e) { }
           }
 
           // 3. System Settings (Termasuk Running Text Pengumuman)
@@ -626,7 +626,7 @@ export const AppProvider = ({ children }) => {
               };
               try {
                 localStorage.setItem('simon_system_settings', JSON.stringify(updated));
-              } catch (e) {}
+              } catch (e) { }
               return updated;
             });
           }
@@ -636,7 +636,7 @@ export const AppProvider = ({ children }) => {
             setUsers(json.data.users);
             try {
               localStorage.setItem('simon_users', JSON.stringify(json.data.users));
-            } catch (e) {}
+            } catch (e) { }
           }
 
           // 5. Tags Data
@@ -816,7 +816,7 @@ export const AppProvider = ({ children }) => {
         try {
           localStorage.setItem('simon_current_user', JSON.stringify(remoteUser));
           localStorage.setItem('simon_is_logged_in', 'true');
-        } catch (e) {}
+        } catch (e) { }
         showToast(`Selamat datang kembali, ${remoteUser.nama}!`, 'success');
         return { success: true, user: remoteUser };
       } else if (json && json.message) {
@@ -855,7 +855,7 @@ export const AppProvider = ({ children }) => {
     try {
       localStorage.setItem('simon_current_user', JSON.stringify(user));
       localStorage.setItem('simon_is_logged_in', 'true');
-    } catch (e) {}
+    } catch (e) { }
     showToast(`Selamat datang kembali, ${user.nama}!`, 'success');
     refreshDataFromDatabase(true);
     return { success: true, user };
@@ -867,7 +867,7 @@ export const AppProvider = ({ children }) => {
     try {
       localStorage.removeItem('simon_current_user');
       localStorage.removeItem('simon_is_logged_in');
-    } catch (e) {}
+    } catch (e) { }
     showToast('Anda telah keluar dari sistem SIMON - SATU PUTARU (DINPUTARU).', 'info');
   };
 
@@ -878,7 +878,7 @@ export const AppProvider = ({ children }) => {
     try {
       localStorage.setItem('simon_current_user', JSON.stringify(user));
       localStorage.setItem('simon_is_logged_in', 'true');
-    } catch (e) {}
+    } catch (e) { }
     showToast(`Beralih ke akun: ${user.nama} (${ROLE_DEFINITIONS[user.role]?.nama})`, 'info');
     refreshDataFromDatabase(true);
   };
@@ -1670,16 +1670,17 @@ export const AppProvider = ({ children }) => {
         progresRealisasi: realisasi,
         deviasiFisik: deviasi,
         statusDeviasi: isBatal ? 'Batal' : statusDeviasi,
-        fotoDokumentasi: projectData.dataFisik?.fotoDokumentasi || [],
+        fotoDokumentasi: projectData.dataFisik?.fotoDokumentasi || projectData.fotoDokumentasi || [],
         mingguanKurvaS: projectData.dataFisik?.mingguanKurvaS || []
       },
+      fotoDokumentasi: projectData.fotoDokumentasi || projectData.dataFisik?.fotoDokumentasi || [],
       dataKeuangan: {
         ...projectData.dataKeuangan,
         terminHistory: terminList,
         totalPencairan,
         persenKeuangan
-          },
-          logs: updatedData.logs !== undefined ? updatedData.logs : (Array.isArray(p.logs) ? p.logs : []),
+      },
+      logs: projectData.logs || [],
       updatedAt: new Date().toLocaleString('id-ID'),
       updatedBy: currentUser.nama
     };
@@ -1767,11 +1768,13 @@ export const AppProvider = ({ children }) => {
           dataFisik: {
             ...p.dataFisik,
             ...updatedData.dataFisik,
+            fotoDokumentasi: updatedData.dataFisik?.fotoDokumentasi || updatedData.fotoDokumentasi || p.dataFisik?.fotoDokumentasi || p.fotoDokumentasi || [],
             progresRencana: rencana,
             progresRealisasi: realisasi,
             deviasiFisik: deviasi,
             statusDeviasi: isBatal ? 'Batal' : statusDeviasi
           },
+          fotoDokumentasi: updatedData.fotoDokumentasi || updatedData.dataFisik?.fotoDokumentasi || p.fotoDokumentasi || p.dataFisik?.fotoDokumentasi || [],
           dataKeuangan: {
             ...p.dataKeuangan,
             ...updatedData.dataKeuangan,
@@ -1907,7 +1910,7 @@ export const AppProvider = ({ children }) => {
     return true;
   };
 
-  
+
   // Add Project Audit & Progress Log
   const addProjectLog = (projectId, { aksi, keterangan, dataChanged = {} }) => {
     const target = projects.find((p) => p.id === projectId);
@@ -2076,7 +2079,7 @@ export const AppProvider = ({ children }) => {
     updateSipdSubKegiatan,
     deleteSipdSubKegiatan,
     resetSipdToDefault,
-        canManageSipd,
+    canManageSipd,
     // Master & Monitoring Paket Pekerjaan TA 2026 (478 Paket)
     paketPekerjaanList,
     accessiblePaketPekerjaan,

@@ -120,12 +120,14 @@ const updatedList = MONITORING_PAKET_2026.map(mp => {
       rekeningRekanan: kRek,
       npwpRekanan: kNpwp
     },
+    fotoDokumentasi: matched.fotoDokumentasi || pF.fotoDokumentasi || mp.fotoDokumentasi || [],
     dataFisik: {
       progresRencana: fRencana,
       progresRealisasi: fRealisasi,
       deviasiFisik: fDeviasi,
       statusDeviasi: fStatus,
-      mingguan: pF.mingguan || []
+      mingguan: pF.mingguan || [],
+      fotoDokumentasi: pF.fotoDokumentasi || matched.fotoDokumentasi || mp.fotoDokumentasi || []
     },
     dataKeuangan: {
       totalPencairan: qCair,

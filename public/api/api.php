@@ -770,6 +770,19 @@ if ($action === 'save_project' && $_SERVER['REQUEST_METHOD'] === 'POST') {
         $spjStatus = $p['spjStatus'] ?? ($spjData['status'] ?? 'belum_masuk');
         $fotoDokumentasi = $f['fotoDokumentasi'] ?? $p['fotoDokumentasi'] ?? [];
 
+        if (is_array($fotoDokumentasi)) {
+            foreach ($fotoDokumentasi as &$item) {
+                if (is_array($item) && !empty($item['url']) && preg_match('#^data:image/#', $item['url'])) {
+                    $prefix = 'doc_' . preg_replace('/[^a-zA-Z0-9_-]/', '_', $p['id'] ?? 'p') . '_' . preg_replace('/[^a-zA-Z0-9]/', '', $item['tahap'] ?? '0');
+                    $savedUrl = saveBase64ImageToServer($item['url'], $prefix);
+                    if ($savedUrl) {
+                        $item['url'] = $savedUrl;
+                    }
+                }
+            }
+            unset($item);
+        }
+
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             ':id' => $p['id'],
@@ -863,13 +876,27 @@ if ($action === 'save_paket_pekerjaan' && $_SERVER['REQUEST_METHOD'] === 'POST')
         $q = $p['dataKeuangan'] ?? [];
         $tp = $p['tahapanPencairan'] ?? null;
 
+        $fotoDokumentasi = $f['fotoDokumentasi'] ?? $p['fotoDokumentasi'] ?? [];
+        if (is_array($fotoDokumentasi)) {
+            foreach ($fotoDokumentasi as &$item) {
+                if (is_array($item) && !empty($item['url']) && preg_match('#^data:image/#', $item['url'])) {
+                    $prefix = 'doc_pkt_' . preg_replace('/[^a-zA-Z0-9_-]/', '_', $p['id'] ?? 'p') . '_' . preg_replace('/[^a-zA-Z0-9]/', '', $item['tahap'] ?? '0');
+                    $savedUrl = saveBase64ImageToServer($item['url'], $prefix);
+                    if ($savedUrl) {
+                        $item['url'] = $savedUrl;
+                    }
+                }
+            }
+            unset($item);
+        }
+
         $sql = "INSERT INTO monitoring_paket (
             id, tahun_anggaran, no_urut_kategori, kategori_paket, kategori_paket_id, bidang_id,
             sub_bagian, sub_kegiatan, nama_paket, kategori_pekerjaan, jenis_pengadaan, metode_pemilihan,
             tipe_pengadaan, pagu_anggaran, hps, nilai_kontrak, nomor_kontrak, tanggal_kontrak,
             tanggal_mulai, tanggal_selesai, pelaksana_nama, pelaksana_bank, pelaksana_rekening, pelaksana_npwp,
             kecamatan, desa, lokasi_lengkap, latitude, longitude, tags_json, is_public_highlight,
-            status_tahap_pra_kontrak, progres_rencana, progres_realisasi, deviasi_fisik, status_deviasi, kurva_s_json,
+            status_tahap_pra_kontrak, progres_rencana, progres_realisasi, deviasi_fisik, status_deviasi, kurva_s_json, foto_dokumentasi_json,
             total_pencairan, persen_keuangan, sisa_anggaran, termin_json, spj_status, spj_checklist_json,
             tahapan_pencairan_json, logs_json
         ) VALUES (
@@ -878,7 +905,7 @@ if ($action === 'save_paket_pekerjaan' && $_SERVER['REQUEST_METHOD'] === 'POST')
             :tipe_pengadaan, :pagu_anggaran, :hps, :nilai_kontrak, :nomor_kontrak, :tanggal_kontrak,
             :tanggal_mulai, :tanggal_selesai, :pelaksana_nama, :pelaksana_bank, :pelaksana_rekening, :pelaksana_npwp,
             :kecamatan, :desa, :lokasi_lengkap, :latitude, :longitude, :tags_json, :is_public_highlight,
-            :status_tahap_pra_kontrak, :progres_rencana, :progres_realisasi, :deviasi_fisik, :status_deviasi, :kurva_s_json,
+            :status_tahap_pra_kontrak, :progres_rencana, :progres_realisasi, :deviasi_fisik, :status_deviasi, :kurva_s_json, :foto_dokumentasi_json,
             :total_pencairan, :persen_keuangan, :sisa_anggaran, :termin_json, :spj_status, :spj_checklist_json,
             :tahapan_pencairan_json, :logs_json
         ) ON DUPLICATE KEY UPDATE
@@ -918,6 +945,7 @@ if ($action === 'save_paket_pekerjaan' && $_SERVER['REQUEST_METHOD'] === 'POST')
             deviasi_fisik = VALUES(deviasi_fisik),
             status_deviasi = VALUES(status_deviasi),
             kurva_s_json = VALUES(kurva_s_json),
+            foto_dokumentasi_json = VALUES(foto_dokumentasi_json),
             total_pencairan = VALUES(total_pencairan),
             persen_keuangan = VALUES(persen_keuangan),
             sisa_anggaran = VALUES(sisa_anggaran),
@@ -966,6 +994,7 @@ if ($action === 'save_paket_pekerjaan' && $_SERVER['REQUEST_METHOD'] === 'POST')
             ':deviasi_fisik' => (float)($f['deviasiFisik'] ?? 0),
             ':status_deviasi' => $f['statusDeviasi'] ?? 'Aman',
             ':kurva_s_json' => !empty($f['mingguan']) ? json_encode($f['mingguan'], JSON_UNESCAPED_UNICODE) : null,
+            ':foto_dokumentasi_json' => !empty($fotoDokumentasi) ? json_encode($fotoDokumentasi, JSON_UNESCAPED_UNICODE) : null,
             ':total_pencairan' => (float)($q['totalPencairan'] ?? 0),
             ':persen_keuangan' => (float)($q['persenKeuangan'] ?? 0),
             ':sisa_anggaran' => (float)($q['sisaAnggaran'] ?? 0),

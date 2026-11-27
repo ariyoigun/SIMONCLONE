@@ -1,9 +1,9 @@
 /**
- * DATA REAL PAKET PEKERJAAN 2026
- * Dihasilkan dari Dokumen Excel: Program Kegiatan Sub Kegiatan Pekerjaan 2026
- * DINPUTARU KABUPATEN DEMAK
- * Total Pekerjaan: 558 Paket
- * Dilengkapi data kontrak, realisasi fisik, SP2D, dan audit log riwayat
+ * DATA REAL PAKET PEKERJAAN 2026 (LAPORAN PERKEMBANGAN FISIK & KEUANGAN BULAN NOVEMBER 2026)
+ * Dihasilkan dari Dokumen Excel Resmi: 11._Lap_Perkemb_Fisik_dan_Keu_TA_2026_DINPUTARU_BLN_NOV_
+ * OPD: DINAS PEKERJAAN UMUM DAN PENATAAN RUANG KABUPATEN DEMAK
+ * Urutan Paket: Disinkronkan dan Diurutkan Sesuai Dokumen Excel
+ * Total Pekerjaan: 584 Paket (APBD & BANGUB)
  */
 
 export const REAL_PROJECTS_2026 = [
@@ -57,12 +57,15 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 26.32,
-      "deviasiFisik": 1.32,
+      "progresRencana": 75,
+      "progresRealisasi": 75,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 41947136,
       "persenKeuangan": 26.32,
@@ -71,18 +74,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_1-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 41947136,
           "persen": 26.32,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -150,32 +153,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 85,
-      "progresRealisasi": 88.44,
-      "deviasiFisik": 3.44,
+      "progresRencana": 90,
+      "progresRealisasi": 90.76,
+      "deviasiFisik": 0.76,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 44218950,
-      "persenKeuangan": 88.44,
-      "sisaAnggaran": 5781050,
+      "totalPencairan": 45378950,
+      "persenKeuangan": 90.76,
+      "sisaAnggaran": 4621050,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_2-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 44218950,
-          "persen": 88.44,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 45378950,
+          "persen": 90.76,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -243,12 +249,15 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 7.59,
-      "progresRealisasi": 7.59,
+      "progresRencana": 75,
+      "progresRealisasi": 75,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 1290000,
       "persenKeuangan": 7.59,
@@ -257,18 +266,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_3-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 1290000,
           "persen": 7.59,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -340,8 +349,11 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 89.89,
       "deviasiFisik": 4.89,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 48452825,
       "persenKeuangan": 89.89,
@@ -350,18 +362,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_4-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 48452825,
           "persen": 89.89,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -429,32 +441,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 83.33,
-      "progresRealisasi": 81.47,
-      "deviasiFisik": -1.86,
-      "statusDeviasi": "Waspada",
-      "mingguan": []
+      "progresRencana": 90,
+      "progresRealisasi": 91.66,
+      "deviasiFisik": 1.66,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 11710298280,
-      "persenKeuangan": 81.47,
-      "sisaAnggaran": 2663125720,
+      "totalPencairan": 12641747185,
+      "persenKeuangan": 87.95,
+      "sisaAnggaran": 1731676815,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_5-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 11710298280,
-          "persen": 81.47,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 12641747185,
+          "persen": 87.95,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -522,32 +537,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 83.33,
-      "progresRealisasi": 79.51,
-      "deviasiFisik": -3.82,
-      "statusDeviasi": "Waspada",
-      "mingguan": []
+      "progresRencana": 90,
+      "progresRealisasi": 91.66,
+      "deviasiFisik": 1.66,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 1287929268,
-      "persenKeuangan": 79.51,
-      "sisaAnggaran": 331858600,
+      "totalPencairan": 1399830532,
+      "persenKeuangan": 86.42,
+      "sisaAnggaran": 219957336,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_6-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 1287929268,
-          "persen": 79.51,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 1399830532,
+          "persen": 86.42,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -615,32 +633,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 54.77,
+      "progresRencana": 60,
+      "progresRealisasi": 64.77,
       "deviasiFisik": 4.77,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 24645250,
-      "persenKeuangan": 54.77,
-      "sisaAnggaran": 20354750,
+      "totalPencairan": 29145250,
+      "persenKeuangan": 64.77,
+      "sisaAnggaran": 15854750,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_7-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 24645250,
-          "persen": 54.77,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 29145250,
+          "persen": 64.77,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -708,32 +729,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 14.47,
-      "deviasiFisik": 4.47,
+      "progresRencana": 93,
+      "progresRealisasi": 93.7,
+      "deviasiFisik": 0.7,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 17000000,
-      "persenKeuangan": 14.47,
-      "sisaAnggaran": 100500000,
+      "totalPencairan": 110100000,
+      "persenKeuangan": 93.7,
+      "sisaAnggaran": 7400000,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_8-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 17000000,
-          "persen": 14.47,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 110100000,
+          "persen": 93.7,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -802,31 +826,34 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 80,
-      "progresRealisasi": 75.72,
-      "deviasiFisik": -4.28,
-      "statusDeviasi": "Waspada",
-      "mingguan": []
+      "progresRealisasi": 82.13,
+      "deviasiFisik": 2.13,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 584260900,
-      "persenKeuangan": 75.72,
-      "sisaAnggaran": 187339100,
+      "totalPencairan": 633750900,
+      "persenKeuangan": 82.13,
+      "sisaAnggaran": 137849100,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_9-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 584260900,
-          "persen": 75.72,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 633750900,
+          "persen": 82.13,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -898,8 +925,11 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 94.86,
       "deviasiFisik": 4.86,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 18971250,
       "persenKeuangan": 94.86,
@@ -908,18 +938,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_10-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 18971250,
           "persen": 94.86,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -988,31 +1018,34 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 70,
-      "progresRealisasi": 72.69,
-      "deviasiFisik": 2.69,
+      "progresRealisasi": 75.6,
+      "deviasiFisik": 5.6,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 39229500,
-      "persenKeuangan": 65.38,
-      "sisaAnggaran": 20770500,
+      "totalPencairan": 45361000,
+      "persenKeuangan": 75.6,
+      "sisaAnggaran": 14639000,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_11-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 39229500,
-          "persen": 65.38,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 45361000,
+          "persen": 75.6,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1081,31 +1114,34 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 85,
-      "progresRealisasi": 88.07,
-      "deviasiFisik": 3.07,
+      "progresRealisasi": 94.73,
+      "deviasiFisik": 9.73,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 43781000,
-      "persenKeuangan": 70.61,
-      "sisaAnggaran": 18219000,
+      "totalPencairan": 54601500,
+      "persenKeuangan": 88.07,
+      "sisaAnggaran": 7398500,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_12-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 43781000,
-          "persen": 70.61,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 54601500,
+          "persen": 88.07,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1177,28 +1213,31 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 95,
       "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 39869875,
-      "persenKeuangan": 88.6,
-      "sisaAnggaran": 5130125,
+      "totalPencairan": 42750375,
+      "persenKeuangan": 95,
+      "sisaAnggaran": 2249625,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_13-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 39869875,
-          "persen": 88.6,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 42750375,
+          "persen": 95,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1267,31 +1306,34 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 50,
-      "progresRealisasi": 50.35,
-      "deviasiFisik": 0.35,
+      "progresRealisasi": 69.5,
+      "deviasiFisik": 19.5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 143426256,
-      "persenKeuangan": 42.99,
-      "sisaAnggaran": 190193744,
+      "totalPencairan": 197206256,
+      "persenKeuangan": 59.11,
+      "sisaAnggaran": 136413744,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_14-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 143426256,
-          "persen": 42.99,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 197206256,
+          "persen": 59.11,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1360,31 +1402,34 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 80,
-      "progresRealisasi": 82.57,
-      "deviasiFisik": 2.57,
+      "progresRealisasi": 90.37,
+      "deviasiFisik": 10.37,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 41286375,
-      "persenKeuangan": 82.57,
-      "sisaAnggaran": 8713625,
+      "totalPencairan": 45186375,
+      "persenKeuangan": 90.37,
+      "sisaAnggaran": 4813625,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_15-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 41286375,
-          "persen": 82.57,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 45186375,
+          "persen": 90.37,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1456,8 +1501,11 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -1539,8 +1587,11 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 19880002,
       "persenKeuangan": 28.31,
@@ -1549,18 +1600,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_17-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 19880002,
           "persen": 28.31,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1628,32 +1679,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 17.64,
-      "deviasiFisik": 2.64,
+      "progresRencana": 75,
+      "progresRealisasi": 75,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 194150007,
-      "persenKeuangan": 17.64,
-      "sisaAnggaran": 906623963,
+      "totalPencairan": 252425007,
+      "persenKeuangan": 22.93,
+      "sisaAnggaran": 848348963,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_18-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 194150007,
-          "persen": 17.64,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 252425007,
+          "persen": 22.93,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1722,31 +1776,34 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 50,
-      "progresRealisasi": 50,
-      "deviasiFisik": 0,
+      "progresRealisasi": 62,
+      "deviasiFisik": 12,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 1500000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 3500000,
+      "totalPencairan": 2500000,
+      "persenKeuangan": 50,
+      "sisaAnggaran": 2500000,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_19-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 1500000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 2500000,
+          "persen": 50,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1814,32 +1871,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 58,
-      "progresRealisasi": 58.33,
-      "deviasiFisik": 0.33,
+      "progresRencana": 90,
+      "progresRealisasi": 91.66,
+      "deviasiFisik": 1.66,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 322191787,
-      "persenKeuangan": 57.53,
-      "sisaAnggaran": 237808213,
+      "totalPencairan": 362806577,
+      "persenKeuangan": 64.79,
+      "sisaAnggaran": 197193423,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_20-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 322191787,
-          "persen": 57.53,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 362806577,
+          "persen": 64.79,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -1908,31 +1968,34 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 55,
-      "progresRealisasi": 58.87,
-      "deviasiFisik": 3.87,
+      "progresRealisasi": 63.92,
+      "deviasiFisik": 8.92,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 73101000,
-      "persenKeuangan": 48.73,
-      "sisaAnggaran": 76899000,
+      "totalPencairan": 88311000,
+      "persenKeuangan": 58.87,
+      "sisaAnggaran": 61689000,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_21-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 73101000,
-          "persen": 48.73,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 88311000,
+          "persen": 58.87,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2000,32 +2063,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 70,
-      "progresRealisasi": 73.01,
-      "deviasiFisik": 3.01,
+      "progresRencana": 80,
+      "progresRealisasi": 82.61,
+      "deviasiFisik": 2.61,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 35755000,
-      "persenKeuangan": 73.01,
-      "sisaAnggaran": 13217176,
+      "totalPencairan": 40455000,
+      "persenKeuangan": 82.61,
+      "sisaAnggaran": 8517176,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_22-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 35755000,
-          "persen": 73.01,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 40455000,
+          "persen": 82.61,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2093,32 +2159,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 65,
-      "progresRealisasi": 67.15,
-      "deviasiFisik": 2.15,
+      "progresRencana": 70,
+      "progresRealisasi": 75.23,
+      "deviasiFisik": 5.23,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 364213321,
-      "persenKeuangan": 63.86,
-      "sisaAnggaran": 206132267,
+      "totalPencairan": 414436121,
+      "persenKeuangan": 72.66,
+      "sisaAnggaran": 155909467,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_23-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 364213321,
-          "persen": 63.86,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 414436121,
+          "persen": 72.66,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2186,32 +2255,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 97.74,
-      "progresRealisasi": 97.74,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 48872000,
-      "persenKeuangan": 97.74,
-      "sisaAnggaran": 1128000,
+      "totalPencairan": 49172000,
+      "persenKeuangan": 98.34,
+      "sisaAnggaran": 828000,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_24-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 48872000,
-          "persen": 97.74,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 49172000,
+          "persen": 98.34,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2283,8 +2355,11 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 9433000,
       "persenKeuangan": 94.33,
@@ -2293,18 +2368,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_25-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 9433000,
           "persen": 94.33,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2372,32 +2447,35 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 47.87,
-      "deviasiFisik": 32.87,
+      "progresRencana": 45,
+      "progresRealisasi": 48.36,
+      "deviasiFisik": 3.36,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 14478500,
-      "persenKeuangan": 17.44,
-      "sisaAnggaran": 68521500,
+      "totalPencairan": 40135500,
+      "persenKeuangan": 48.36,
+      "sisaAnggaran": 42864500,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_26-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 14478500,
-          "persen": 17.44,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 40135500,
+          "persen": 48.36,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2465,12 +2543,15 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 29.24,
-      "progresRealisasi": 29.24,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 193497000,
       "persenKeuangan": 29.24,
@@ -2479,18 +2560,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_27-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 193497000,
           "persen": 29.24,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2562,8 +2643,11 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
       "totalPencairan": 19650000,
       "persenKeuangan": 98.25,
@@ -2572,18 +2656,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sek_28-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 19650000,
           "persen": 98.25,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2655,28 +2739,31 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 76.02,
       "deviasiFisik": 1.02,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
     "dataKeuangan": {
-      "totalPencairan": 124348500,
-      "persenKeuangan": 65.16,
-      "sisaAnggaran": 66492660,
+      "totalPencairan": 145073250,
+      "persenKeuangan": 76.02,
+      "sisaAnggaran": 45767910,
       "terminHistory": [
         {
           "id": "TRM-prj_sek_29-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-SEK",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 124348500,
-          "persen": 65.16,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-SEK-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 145073250,
+          "persen": 76.02,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2748,8 +2835,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 35,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 868172100,
       "persenKeuangan": 30,
@@ -2762,7 +2853,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 868172100,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -2805,7 +2896,9 @@ export const REAL_PROJECTS_2026 = [
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Bonang)",
     "latitude": -6.8944,
     "longitude": 110.6385,
-    "tags": [],
+    "tags": [
+      "Program Prioritas Bupati"
+    ],
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
@@ -2839,8 +2932,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 35,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -2869,7 +2966,7 @@ export const REAL_PROJECTS_2026 = [
     ]
   },
   {
-    "id": "prj_sda_bk_32",
+    "id": "prj_cipta_karya_270",
     "tahunAnggaran": 2026,
     "bidangId": "sda_bk",
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
@@ -2877,7 +2974,7 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
-    "kodeRup": "RUP-2026-SDA-0032",
+    "kodeRup": "RUP-2026-CIP-0270",
     "tipePengadaan": "Pengadaan Langsung",
     "paguAnggaran": 23360000,
     "hps": 23360000,
@@ -2920,8 +3017,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 41.78,
       "deviasiFisik": 1.78,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 9760000,
       "persenKeuangan": 41.78,
@@ -2930,18 +3031,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sda_bk_32-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 9760000,
           "persen": 41.78,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -2950,12 +3051,12 @@ export const REAL_PROJECTS_2026 = [
     },
     "logs": [
       {
-        "id": "log_init_prj_sda_bk_32",
+        "id": "log_init_prj_cipta_karya_270",
         "timestamp": "2026-10-31 16:30:00",
-        "userName": "Koordinator SDA & BK",
+        "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 9.760.000 dan fisik mencapai 41.78% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 40.530.500 dan fisik mencapai 32.44% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -3013,8 +3114,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -3096,8 +3201,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -3175,12 +3284,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 40,
+      "progresRealisasi": 40,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -3258,12 +3371,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 40,
+      "progresRealisasi": 40,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -3345,8 +3462,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -3428,8 +3549,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -3505,32 +3630,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 8,
-      "progresRealisasi": 10.22,
-      "deviasiFisik": 2.22,
+      "progresRencana": 15,
+      "progresRealisasi": 17.12,
+      "deviasiFisik": 2.12,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 6760000,
-      "persenKeuangan": 8.37,
-      "sisaAnggaran": 74040000,
+      "totalPencairan": 13830000,
+      "persenKeuangan": 17.12,
+      "sisaAnggaran": 66970000,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_39-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 6760000,
-          "persen": 8.37,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 13830000,
+          "persen": 17.12,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -3598,32 +3727,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 60,
-      "progresRealisasi": 62.44,
-      "deviasiFisik": 2.44,
+      "progresRencana": 70,
+      "progresRealisasi": 75.75,
+      "deviasiFisik": 5.75,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 1197302115,
-      "persenKeuangan": 60.48,
-      "sisaAnggaran": 782428107,
+      "totalPencairan": 1486270915,
+      "persenKeuangan": 75.07,
+      "sisaAnggaran": 493459307,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_40-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 1197302115,
-          "persen": 60.48,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 1486270915,
+          "persen": 75.07,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -3689,32 +3822,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 55,
-      "progresRealisasi": 58.11,
-      "deviasiFisik": 3.11,
+      "progresRencana": 65,
+      "progresRealisasi": 70.13,
+      "deviasiFisik": 5.13,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 145269500,
-      "persenKeuangan": 58.11,
-      "sisaAnggaran": 104730500,
+      "totalPencairan": 175329500,
+      "persenKeuangan": 70.13,
+      "sisaAnggaran": 74670500,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_41-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 145269500,
-          "persen": 58.11,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 175329500,
+          "persen": 70.13,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -3780,32 +3917,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 95,
-      "progresRealisasi": 99.58,
-      "deviasiFisik": 4.58,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 109935600,
-      "persenKeuangan": 73.29,
-      "sisaAnggaran": 40064400,
+      "totalPencairan": 149373400,
+      "persenKeuangan": 99.58,
+      "sisaAnggaran": 626600,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_42-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 109935600,
-          "persen": 73.29,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 149373400,
+          "persen": 99.58,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -3871,12 +4012,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 16.73,
-      "deviasiFisik": 1.73,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 100350000,
       "persenKeuangan": 16.73,
@@ -3885,18 +4030,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sda_bk_43-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 100350000,
           "persen": 16.73,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -3962,12 +4107,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 95,
-      "progresRealisasi": 99.35,
-      "deviasiFisik": 4.35,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198700700,
       "persenKeuangan": 99.35,
@@ -3976,18 +4125,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sda_bk_44-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 198700700,
           "persen": 99.35,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -4053,12 +4202,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 85,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 286148100,
       "persenKeuangan": 30,
@@ -4071,7 +4224,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 286148100,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -4144,12 +4297,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 85,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -4231,8 +4388,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 293154900,
       "persenKeuangan": 30,
@@ -4245,7 +4406,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 293154900,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -4322,8 +4483,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 463492000,
       "persenKeuangan": 100,
@@ -4336,7 +4501,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 463492000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -4345,7 +4510,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.3/005/SP/TENDER/SDABK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -4413,8 +4578,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -4492,12 +4661,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 85,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 578701800,
       "persenKeuangan": 30,
@@ -4510,7 +4683,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 578701800,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -4583,12 +4756,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 85,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -4638,16 +4815,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -4664,12 +4841,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 80,
+      "progresRealisasi": 85,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -4719,16 +4900,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -4745,12 +4926,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 80,
+      "progresRealisasi": 85,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -4828,12 +5013,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 30,
-      "deviasiFisik": -20,
-      "statusDeviasi": "Kritis",
-      "mingguan": []
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 573583800,
       "persenKeuangan": 30,
@@ -4846,7 +5035,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 573583800,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -4919,12 +5108,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 30,
-      "deviasiFisik": -20,
-      "statusDeviasi": "Kritis",
-      "mingguan": []
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -5004,8 +5197,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 148914000,
       "persenKeuangan": 100,
@@ -5018,7 +5215,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 148914000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -5027,7 +5224,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/004/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -5095,8 +5292,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 298936000,
       "persenKeuangan": 100,
@@ -5109,7 +5310,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 298936000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -5118,7 +5319,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/005/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -5186,23 +5387,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 198978000,
-      "terminHistory": []
+      "totalPencairan": 198978000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_58-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/008/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 198978000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/008/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -5267,23 +5482,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 129642000,
-      "terminHistory": []
+      "totalPencairan": 129642000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_59-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/009/SPK/PL/SDABK/VII/2026",
+          "tanggalSP2D": "2026-07-30",
+          "jumlah": 129642000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/009/SPK/PL/SDABK/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -5348,8 +5577,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198740000,
       "persenKeuangan": 100,
@@ -5362,7 +5595,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 198740000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -5371,7 +5604,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/007/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -5435,27 +5668,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
-      "progresRealisasi": 90,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 489472000,
-      "terminHistory": []
+      "totalPencairan": 489472000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_61-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.3/004/SP/TENDER/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 489472000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/004/SP/TENDER/SDABK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -5520,32 +5767,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 286263000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 667947000,
+      "totalPencairan": 954210000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_62-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.3/001/SP/TENDER/SDABK/VIII/2026",
           "tanggalSP2D": "2026-08-18",
-          "jumlah": 286263000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 954210000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/001/SP/TENDER/SDABK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -5611,8 +5862,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -5692,8 +5947,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 75,
       "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 290591400,
       "persenKeuangan": 30,
@@ -5706,7 +5965,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-09-08",
           "jumlah": 290591400,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -5783,8 +6042,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 75,
       "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -5862,12 +6125,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 60,
-      "progresRealisasi": 65,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -5943,12 +6210,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 60,
-      "progresRealisasi": 65,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6028,8 +6299,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 35.1,
       "deviasiFisik": 0.1,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 8200000,
       "persenKeuangan": 35.1,
@@ -6038,18 +6313,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sda_bk_68-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 8200000,
           "persen": 35.1,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -6117,27 +6392,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 960738000,
-      "terminHistory": []
+      "totalPencairan": 288221400,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 672516600,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_69-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/023/SP/TENDER.P/SDABK/X/2026",
+          "tanggalSP2D": "2026-10-29",
+          "jumlah": 288221400,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-29",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -6200,12 +6489,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6283,12 +6576,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6366,12 +6663,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6449,12 +6750,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6536,8 +6841,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6615,27 +6924,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 785960000,
-      "terminHistory": []
+      "totalPencairan": 235788000,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 550172000,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_75-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/021/SP/TENDER.P/SDABK/X/2026",
+          "tanggalSP2D": "2026-10-29",
+          "jumlah": 235788000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-29",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -6698,12 +7021,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6781,12 +7108,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6864,12 +7195,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -6947,12 +7282,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7030,12 +7369,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7113,12 +7456,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7196,12 +7543,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7279,12 +7630,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7362,12 +7717,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7445,12 +7804,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7528,12 +7891,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7611,12 +7978,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7694,12 +8065,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7777,27 +8152,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 588931000,
-      "terminHistory": []
+      "totalPencairan": 176679300,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 412251700,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_89-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/018/SP/TENDER.P/SDABK/X/2026",
+          "tanggalSP2D": "2026-10-29",
+          "jumlah": 176679300,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-29",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -7860,12 +8249,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -7943,12 +8336,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8026,12 +8423,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8109,12 +8510,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8192,12 +8597,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8275,12 +8684,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8358,12 +8771,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8441,12 +8858,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8524,12 +8945,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8607,12 +9032,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8691,12 +9120,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8774,12 +9207,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8857,12 +9294,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -8940,12 +9381,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -9023,12 +9468,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -9104,12 +9553,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 70,
-      "progresRealisasi": 75,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 139354800,
       "persenKeuangan": 30,
@@ -9122,7 +9575,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 139354800,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -9195,12 +9648,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 70,
-      "progresRealisasi": 75,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -9280,8 +9737,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -9361,8 +9822,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198760000,
       "persenKeuangan": 100,
@@ -9375,7 +9840,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 198760000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -9384,7 +9849,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/006/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -9450,12 +9915,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -9535,8 +10004,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 149374000,
       "persenKeuangan": 100,
@@ -9549,7 +10022,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 149374000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -9558,7 +10031,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/012/SPK/PL/SDABK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -9626,8 +10099,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -9707,8 +10184,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99036000,
       "persenKeuangan": 100,
@@ -9721,7 +10202,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 99036000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -9730,7 +10211,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/003/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -9798,8 +10279,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99074000,
       "persenKeuangan": 100,
@@ -9812,7 +10297,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 99074000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -9821,7 +10306,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/010/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -9889,8 +10374,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -9970,8 +10459,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 248866000,
       "persenKeuangan": 100,
@@ -9984,7 +10477,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 248866000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -9993,7 +10486,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/001/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -10057,12 +10550,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 85,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -10142,8 +10639,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -10223,8 +10724,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -10304,8 +10809,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -10385,8 +10894,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -10466,8 +10979,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -10547,23 +11064,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 199048000,
-      "terminHistory": []
+      "totalPencairan": 199048000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_122-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/011/SPK/PL/SDABK/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 199048000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/011/SPK/PL/SDABK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -10628,32 +11159,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 146481000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 341789000,
+      "totalPencairan": 488270000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_123-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.3/011/SP/TENDER/SDABK/VIII/2026",
           "tanggalSP2D": "2026-08-18",
-          "jumlah": 146481000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 488270000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/011/SP/TENDER/SDABK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -10717,12 +11252,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 80,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 410356800,
       "persenKeuangan": 30,
@@ -10735,7 +11274,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 410356800,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -10810,12 +11349,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 85,
-      "progresRealisasi": 90,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 293054400,
       "persenKeuangan": 30,
@@ -10828,7 +11371,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 293054400,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -10905,8 +11448,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -10944,7 +11491,7 @@ export const REAL_PROJECTS_2026 = [
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0127",
-    "tipePengadaan": "Pengadaan Langsung",
+    "tipePengadaan": "Tender / Seleksi Umum",
     "paguAnggaran": 1280000000,
     "hps": 1280000000,
     "kecamatan": "Demak",
@@ -10959,24 +11506,24 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-13",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-13"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.7/028/SP/TENDER.P/SDABK/XI/2026",
+      "tanggalKontrak": "2026-11-13",
+      "tanggalMulai": "2026-11-13",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
       "namaPenyedia": "-",
@@ -10989,8 +11536,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11042,24 +11593,24 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-13",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-13"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/017/SPK/PGWS.P/SDABK/XI/2026",
+      "tanggalKontrak": "2026-11-13",
+      "tanggalMulai": "2026-11-13",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
       "namaPenyedia": "-",
@@ -11072,8 +11623,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11151,12 +11706,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11234,12 +11793,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11317,12 +11880,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11357,7 +11924,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Pembangunan Sabuk Desa di Dukuh Lengkong Desa Sayung",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0132",
     "tipePengadaan": "Tender / Seleksi Umum",
@@ -11400,27 +11967,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 959159000,
-      "terminHistory": []
+      "totalPencairan": 287747700,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 671411300,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_132-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/015/SP/TENDER.P/SDABK/X/2026",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 287747700,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -11440,7 +12021,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Pengelolaan SDA dan Bangunan Pengaman Pantai pada Wilayah Sungai (WS) dalam 1 (satu) Daerah Kabupaten/Kota",
     "namaPaket": "Belanja Jasa Konsultan Pengawas Pembangunan Sabuk Desa di Dukuh Lengkong Desa Sayung",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-SDA-0133",
     "tipePengadaan": "Pengadaan Langsung",
@@ -11483,12 +12064,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11566,12 +12151,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11649,12 +12238,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11732,12 +12325,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11815,12 +12412,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11898,12 +12499,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -11981,12 +12586,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -12064,12 +12673,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -12147,12 +12760,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -12230,12 +12847,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -12315,8 +12936,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198907000,
       "persenKeuangan": 100,
@@ -12329,7 +12954,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 198907000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -12338,7 +12963,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-30",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/002/SPK/PL/SDABK/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -12404,12 +13029,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 15,
-      "progresRealisasi": 15,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -12487,27 +13116,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 957232988.451036,
-      "terminHistory": []
+      "totalPencairan": 287169600,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 670063388.451036,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_sda_bk_145-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/027/SP/TENDER.P/SDABK/X/2026",
+          "tanggalSP2D": "2026-10-29",
+          "jumlah": 287169600,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-29",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -12570,12 +13213,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 5,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -12654,31 +13301,35 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 40,
-      "progresRealisasi": 40.89,
-      "deviasiFisik": 0.89,
+      "progresRealisasi": 53.7,
+      "deviasiFisik": 13.7,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 713151284,
-      "persenKeuangan": 40.89,
-      "sisaAnggaran": 1031000416,
+      "totalPencairan": 722806284,
+      "persenKeuangan": 41.44,
+      "sisaAnggaran": 1021345416,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_147-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 713151284,
-          "persen": 40.89,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 722806284,
+          "persen": 41.44,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -12748,8 +13399,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 97854200,
       "persenKeuangan": 97.85,
@@ -12758,18 +13413,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sda_bk_148-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 97854200,
           "persen": 97.85,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -12835,32 +13490,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 75,
-      "progresRealisasi": 77.04,
-      "deviasiFisik": 2.04,
+      "progresRencana": 80,
+      "progresRealisasi": 83.94,
+      "deviasiFisik": 3.94,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 204647218,
-      "persenKeuangan": 77.04,
-      "sisaAnggaran": 60977782,
+      "totalPencairan": 218454718,
+      "persenKeuangan": 82.24,
+      "sisaAnggaran": 47170282,
       "terminHistory": [
         {
           "id": "TRM-prj_sda_bk_149-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 204647218,
-          "persen": 77.04,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 218454718,
+          "persen": 82.24,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -12928,12 +13587,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -13013,8 +13676,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -13094,8 +13761,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 49550000,
       "persenKeuangan": 100,
@@ -13108,7 +13779,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-12",
           "jumlah": 49550000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -13117,7 +13788,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/04Pr/SPK/SPAM.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -13185,8 +13856,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 49550000,
       "persenKeuangan": 100,
@@ -13199,7 +13874,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-12",
           "jumlah": 49550000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -13208,7 +13883,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/05Pr/SPK/SPAM.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -13276,8 +13951,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99367000,
       "persenKeuangan": 100,
@@ -13290,7 +13969,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-05-11",
           "jumlah": 99367000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -13299,7 +13978,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-05-11",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/06Pr/SPK/SPAM.PL.CK/V/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -13367,23 +14046,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 299100000,
-      "terminHistory": []
+      "totalPencairan": 299100000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_155-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.05.AE/SPAM.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-24",
+          "jumlah": 299100000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-24",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK.05.AE/SPAM.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -13448,8 +14141,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -13518,7 +14215,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-08-24",
       "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0.199,
+      "nilaiKontrak": 199300000,
       "namaPenyedia": "CV BAROKAH JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -13526,15 +14223,19 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 100,
-      "progresRealisasi": 90,
-      "deviasiFisik": -10,
-      "statusDeviasi": "Waspada",
-      "mingguan": []
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 0.199,
+      "sisaAnggaran": 199300000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -13606,12 +14307,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 50,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -13680,7 +14385,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-08-24",
       "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0.199,
+      "nilaiKontrak": 199480000,
       "namaPenyedia": "CV.DUTA KENCANA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -13691,23 +14396,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 0.199,
-      "terminHistory": []
+      "totalPencairan": 199480000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_159-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.09.AE/SPAM.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-24",
+          "jumlah": 199480000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-24",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK.09.AE/SPAM.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -13761,7 +14480,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-08-24",
       "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0.199,
+      "nilaiKontrak": 199370000,
       "namaPenyedia": "CV BAROKAH JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -13772,23 +14491,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 0.199,
-      "terminHistory": []
+      "totalPencairan": 199370000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_160-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.07.AE/SPAM.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-24",
+          "jumlah": 199370000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-24",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK.07.AE/SPAM.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -13853,8 +14586,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -13934,23 +14671,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 199380000,
-      "terminHistory": []
+      "totalPencairan": 199380000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_162-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.12.AE/SPAM.Reg/PL.CK./IX/2026",
+          "tanggalSP2D": "2026-09-14",
+          "jumlah": 199380000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-14",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK.12.AE/SPAM.Reg/PL.CK./IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14004,7 +14755,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-08-24",
       "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0.199,
+      "nilaiKontrak": 199370000,
       "namaPenyedia": "CV BAROKAH JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -14015,23 +14766,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 0.199,
-      "terminHistory": []
+      "totalPencairan": 199370000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_163-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.08.AE/SPAM.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-24",
+          "jumlah": 199370000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-24",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK.08.AE/SPAM.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -14085,23 +14850,27 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-09-15",
       "tanggalMulai": "15 September - 13 November 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0.19,
+      "nilaiKontrak": 19603000,
       "namaPenyedia": "CV. PRIORITAS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 75,
-      "progresRealisasi": 75,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 0.19,
+      "sisaAnggaran": 19603000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14147,42 +14916,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 24 Desember2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 24 Desember2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/07Pgw/SPK/SPAM.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-09",
+      "tanggalMulai": "10 November - 24 Desember2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 33241000,
+      "namaPenyedia": "CV. PRIORITAS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 12,
+      "progresRealisasi": 8.5,
+      "deviasiFisik": -3.5,
+      "statusDeviasi": "Waspada",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 33241000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14207,7 +14980,7 @@ export const REAL_PROJECTS_2026 = [
     ]
   },
   {
-    "id": "prj_cipta_karya_166",
+    "id": "prj_cipta_karya_270",
     "tahunAnggaran": 2026,
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Penyediaan Air Minum (SPAM) di Daerah Kabupaten/Kota",
@@ -14215,7 +14988,7 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
-    "kodeRup": "RUP-2026-CIP-0166",
+    "kodeRup": "RUP-2026-CIP-0270",
     "tipePengadaan": "Swakelola",
     "paguAnggaran": 90000000,
     "hps": 90000000,
@@ -14254,32 +15027,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 69.57,
-      "progresRealisasi": 69.57,
+      "progresRencana": 71.01,
+      "progresRealisasi": 71.01,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 55582500,
-      "persenKeuangan": 61.76,
-      "sisaAnggaran": 34417500,
+      "totalPencairan": 63912500,
+      "persenKeuangan": 71.01,
+      "sisaAnggaran": 26087500,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_166-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 55582500,
-          "persen": 61.76,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 63912500,
+          "persen": 71.01,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -14288,12 +15065,12 @@ export const REAL_PROJECTS_2026 = [
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_166",
+        "id": "log_init_prj_cipta_karya_270",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 55.582.500 dan fisik mencapai 69.57% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 40.530.500 dan fisik mencapai 32.44% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -14319,42 +15096,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 24 Desember2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 24 Desember2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.15.AE/SPAM.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 24 Desember2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 249350000,
+      "namaPenyedia": "CV. IMARA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 17,
+      "progresRealisasi": 6,
+      "deviasiFisik": -11,
+      "statusDeviasi": "Kritis",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 250000000,
+      "sisaAnggaran": 249350000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14400,42 +15181,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 24 Desember2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 24 Desember2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.14.AE/SPAM.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 24 Desember2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 248770000,
+      "namaPenyedia": "CV. TIRTO TOWO TEHNIK",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 6,
+      "progresRealisasi": 11,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 250000000,
+      "sisaAnggaran": 248770000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14481,42 +15266,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 24 Desember2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 24 Desember2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.18.AE/SPAM.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 24 Desember2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 199540000,
+      "namaPenyedia": "CV BRYAN JAYA PERKASA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 8,
+      "progresRealisasi": 11,
+      "deviasiFisik": 3,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199540000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14562,42 +15351,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 24 Desember2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 24 Desember2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.19.AE/SPAM.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 24 Desember2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 299000000,
+      "namaPenyedia": "CV. PUTRA KENCANA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 17,
+      "progresRealisasi": 6,
+      "deviasiFisik": -11,
+      "statusDeviasi": "Kritis",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 300000000,
+      "sisaAnggaran": 299000000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14669,12 +15462,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 45,
-      "progresRealisasi": 63,
-      "deviasiFisik": 18,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -14743,7 +15540,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-08-24",
       "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0.199,
+      "nilaiKontrak": 199390000,
       "namaPenyedia": "CV BAROKAH JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -14754,12 +15551,16 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 0.199,
+      "sisaAnggaran": 199390000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14805,42 +15606,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 24 Desember2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 24 Desember2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.17.AE/SPAM.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 24 Desember2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 199560700,
+      "namaPenyedia": "CV.DUTA KENCANA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 34,
+      "progresRealisasi": 32,
+      "deviasiFisik": -2,
+      "statusDeviasi": "Waspada",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199560700,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -14916,8 +15721,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -14967,42 +15776,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 24 Desember2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 24 Desember2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.18.AE/SPAM.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 24 Desember2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 199250000,
+      "namaPenyedia": "CV. TIRTO TOWO TEHNIK",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 34,
+      "progresRealisasi": 8,
+      "deviasiFisik": -26,
+      "statusDeviasi": "Kritis",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199250000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -15078,8 +15891,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -15148,7 +15965,7 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-08-24",
       "tanggalMulai": "24 Agustus - 22 Oktober 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0.41,
+      "nilaiKontrak": 41386000,
       "namaPenyedia": "CV.DINASTI JAVA GROUP",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
@@ -15159,12 +15976,16 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 0.41,
+      "sisaAnggaran": 41386000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -15236,32 +16057,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 7.47,
-      "deviasiFisik": 2.47,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 37349300,
-      "persenKeuangan": 7.47,
-      "sisaAnggaran": 462650700,
+      "totalPencairan": 38249300,
+      "persenKeuangan": 7.65,
+      "sisaAnggaran": 461750700,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_178-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 37349300,
-          "persen": 7.47,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 38249300,
+          "persen": 7.65,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -15327,32 +16152,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 55,
-      "progresRealisasi": 56.19,
-      "deviasiFisik": 1.19,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 22250000,
-      "persenKeuangan": 56.19,
-      "sisaAnggaran": 17350000,
+      "totalPencairan": 23750000,
+      "persenKeuangan": 59.97,
+      "sisaAnggaran": 15850000,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_179-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 22250000,
-          "persen": 56.19,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 23750000,
+          "persen": 59.97,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -15371,7 +16200,7 @@ export const REAL_PROJECTS_2026 = [
     ]
   },
   {
-    "id": "prj_cipta_karya_180",
+    "id": "prj_cipta_karya_270",
     "tahunAnggaran": 2026,
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
@@ -15379,7 +16208,7 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Swakelola",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
-    "kodeRup": "RUP-2026-CIP-0180",
+    "kodeRup": "RUP-2026-CIP-0270",
     "tipePengadaan": "Swakelola",
     "paguAnggaran": 190000000,
     "hps": 190000000,
@@ -15419,31 +16248,35 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 75,
-      "progresRealisasi": 78.61,
-      "deviasiFisik": 3.61,
+      "progresRealisasi": 79.82,
+      "deviasiFisik": 4.82,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 112260217,
-      "persenKeuangan": 59.08,
-      "sisaAnggaran": 77739783,
+      "totalPencairan": 151661441,
+      "persenKeuangan": 79.82,
+      "sisaAnggaran": 38338559,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_180-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 112260217,
-          "persen": 59.08,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 151661441,
+          "persen": 79.82,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -15452,12 +16285,12 @@ export const REAL_PROJECTS_2026 = [
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_180",
+        "id": "log_init_prj_cipta_karya_270",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 112.260.217 dan fisik mencapai 78.61% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 40.530.500 dan fisik mencapai 32.44% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -15513,8 +16346,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -15591,11 +16428,15 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 75,
-      "progresRealisasi": 8.76,
-      "deviasiFisik": -66.24,
+      "progresRealisasi": 47.55,
+      "deviasiFisik": -27.45,
       "statusDeviasi": "Kritis",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
@@ -15608,7 +16449,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-07",
           "jumlah": 99200000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -15617,7 +16458,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.2.8/625.6  05/TPS-KSM.BT/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -15681,12 +16522,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 75,
-      "progresRealisasi": 64.67,
-      "deviasiFisik": -10.33,
-      "statusDeviasi": "Kritis",
-      "mingguan": []
+      "progresRencana": 95,
+      "progresRealisasi": 90.18,
+      "deviasiFisik": -4.82,
+      "statusDeviasi": "Waspada",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
@@ -15699,7 +16544,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-07",
           "jumlah": 99200000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -15708,7 +16553,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.2.8/625.7 04/KSM.MM/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -15773,11 +16618,15 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 75,
-      "progresRealisasi": 47.76,
-      "deviasiFisik": -27.24,
+      "progresRealisasi": 50,
+      "deviasiFisik": -25,
       "statusDeviasi": "Kritis",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
@@ -15790,7 +16639,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-07",
           "jumlah": 99200000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -15799,7 +16648,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.2.8/625.5 17/TPS-KSM.SR/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -15864,11 +16713,15 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 75,
-      "progresRealisasi": 17.5,
-      "deviasiFisik": -57.5,
+      "progresRealisasi": 50,
+      "deviasiFisik": -25,
       "statusDeviasi": "Kritis",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
@@ -15881,7 +16734,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-07",
           "jumlah": 99200000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -15890,7 +16743,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.2.8/625.3 17/BPSPAMS.KMD/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -15954,12 +16807,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 75,
-      "progresRealisasi": 71.03,
-      "deviasiFisik": -3.97,
+      "progresRencana": 95,
+      "progresRealisasi": 90.62,
+      "deviasiFisik": -4.38,
       "statusDeviasi": "Waspada",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99200000,
       "persenKeuangan": 100,
@@ -15972,7 +16829,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-07",
           "jumlah": 99200000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -15981,7 +16838,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.2.8/625.4 12/KSM.TB/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -16019,16 +16876,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -16045,12 +16902,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 10,
+      "progresRealisasi": 10,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -16130,8 +16991,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 80,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -16211,8 +17076,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99367000,
       "persenKeuangan": 100,
@@ -16225,7 +17094,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-05-08",
           "jumlah": 99367000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -16234,7 +17103,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-05-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/07Pr/SPK/SPAL.PL.CK/V/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -16302,23 +17171,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 99398000,
-      "terminHistory": []
+      "totalPencairan": 99398000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_190-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/01BIMTEK/SPK/PLP.CK.X/2026",
+          "tanggalSP2D": "2026-10-23",
+          "jumlah": 99398000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-10-23",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/01BIMTEK/SPK/PLP.CK.X/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -16332,7 +17215,7 @@ export const REAL_PROJECTS_2026 = [
     ]
   },
   {
-    "id": "prj_cipta_karya_191",
+    "id": "prj_cipta_karya_270",
     "tahunAnggaran": 2026,
     "bidangId": "cipta_karya",
     "subBagian": "Pengelolaan dan Pengembangan Sistem Air Limbah Domestik dalam Daerah Kabupaten/Kota",
@@ -16340,7 +17223,7 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
-    "kodeRup": "RUP-2026-CIP-0191",
+    "kodeRup": "RUP-2026-CIP-0270",
     "tipePengadaan": "Pengadaan Langsung",
     "paguAnggaran": 103072000,
     "hps": 103072000,
@@ -16379,32 +17262,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 5,
-      "progresRealisasi": 3.44,
-      "deviasiFisik": -1.56,
-      "statusDeviasi": "Waspada",
-      "mingguan": []
+      "progresRencana": 20,
+      "progresRealisasi": 23.65,
+      "deviasiFisik": 3.65,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 3550000,
-      "persenKeuangan": 3.44,
-      "sisaAnggaran": 99522000,
+      "totalPencairan": 24375000,
+      "persenKeuangan": 23.65,
+      "sisaAnggaran": 78697000,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_191-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 3550000,
-          "persen": 3.44,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 24375000,
+          "persen": 23.65,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -16413,12 +17300,12 @@ export const REAL_PROJECTS_2026 = [
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_191",
+        "id": "log_init_prj_cipta_karya_270",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 3.550.000 dan fisik mencapai 3.44% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 40.530.500 dan fisik mencapai 32.44% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -16474,8 +17361,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -16530,7 +17421,7 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-03-01",
+      "targetMulaiTender": "10 November - 18 Desember 2026",
       "targetSelesaiTender": "2026-11-30",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
@@ -16538,16 +17429,16 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 18 Desember 2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.20.NT/PPSD.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 18 Desember 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "nilaiKontrak": 299550000,
+      "namaPenyedia": "CV HIDAYAH BARU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -16557,12 +17448,16 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 300000000,
+      "sisaAnggaran": 299550000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -16638,8 +17533,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -16689,42 +17588,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "10 November - 21 Desember 2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "10 November - 21 Desember 2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/08Pgw/SPK/DRAINASE.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "10 November - 21 Desember 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 19655000,
+      "namaPenyedia": "CV.DINASTI JAVA GROUP",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 30,
+      "progresRealisasi": 30,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 20000000,
+      "sisaAnggaran": 19655000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -16796,32 +17699,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 4,
-      "progresRealisasi": 6.82,
-      "deviasiFisik": 2.82,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 30000000,
-      "persenKeuangan": 6.82,
-      "sisaAnggaran": 410000000,
+      "totalPencairan": 32200000,
+      "persenKeuangan": 7.32,
+      "sisaAnggaran": 407800000,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_196-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 30000000,
-          "persen": 6.82,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 32200000,
+          "persen": 7.32,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -16891,8 +17798,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -16972,8 +17883,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -17053,8 +17968,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -17136,8 +18055,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99000000,
       "persenKeuangan": 100,
@@ -17150,7 +18073,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-10",
           "jumlah": 99000000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -17159,7 +18082,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/SPK.03.AM/PPSD.Reg/PL.CK./VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -17229,8 +18152,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 148000000,
       "persenKeuangan": 100,
@@ -17243,7 +18170,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-10",
           "jumlah": 148000000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -17252,7 +18179,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/SPK.04.AM/PPSD.Reg/PL.CK./VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -17322,8 +18249,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 98400000,
       "persenKeuangan": 100,
@@ -17336,7 +18267,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-10",
           "jumlah": 98400000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -17345,7 +18276,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/SPK.02.AM/PPSD.Reg/PL.CK./VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -17409,36 +18340,40 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 95,
-      "progresRealisasi": 95,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 139530000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 325570000,
+      "totalPencairan": 465100000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_203-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.05.CK/VIII/2026",
           "tanggalSP2D": "2026-08-13",
-          "jumlah": 139530000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 465100000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/SP/Tender/PPSD.05.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -17504,32 +18439,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 284520000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 663880000,
+      "totalPencairan": 948400000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_204-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.04.CK/VIII/2026",
           "tanggalSP2D": "2026-08-13",
-          "jumlah": 284520000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 948400000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/SP/Tender/PPSD.04.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -17597,23 +18536,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 1905600000,
-      "terminHistory": []
+      "totalPencairan": 1905600000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_205-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.03.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-13",
+          "jumlah": 1905600000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/SP/Tender/PPSD.03.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17681,32 +18634,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 424500000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 990500000,
+      "totalPencairan": 1415000000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_206-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.06.CK/VIII/2026",
           "tanggalSP2D": "2026-08-13",
-          "jumlah": 424500000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 1415000000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/SP/Tender/PPSD.06.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -17772,23 +18729,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 98.9,
-      "terminHistory": []
+      "totalPencairan": 98900000,
+      "persenKeuangan": 100000000,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_207-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK.01.AM/PPSD.Reg/PL.CK./VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 98900000,
+          "persen": 100000000,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK.01.AM/PPSD.Reg/PL.CK./VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -17853,32 +18824,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 283770000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 662130000,
+      "totalPencairan": 945900000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_208-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.02.CK/VIII/2026",
           "tanggalSP2D": "2026-08-13",
-          "jumlah": 283770000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 945900000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/SP/Tender/PPSD.02.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -17944,32 +18919,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 283920000,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 662480000,
+      "totalPencairan": 946400000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_209-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.3/SP/Tender/PPSD.01.CK/VIII/2026",
           "tanggalSP2D": "2026-08-13",
-          "jumlah": 283920000,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 946400000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-13",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.3/SP/Tender/PPSD.01.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -18037,8 +19016,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 49774000,
       "persenKeuangan": 100,
@@ -18051,7 +19034,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-05",
           "jumlah": 49774000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -18060,7 +19043,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-05",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/02Pr/SPK/DRAINASE.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -18130,8 +19113,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 49544000,
       "persenKeuangan": 100,
@@ -18144,7 +19131,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-05",
           "jumlah": 49544000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -18153,7 +19140,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-05",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/03Pr/SPK/DRAINASE.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -18217,12 +19204,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
-      "progresRealisasi": 90,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -18298,12 +19289,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
-      "progresRealisasi": 90,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -18353,42 +19348,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "13 November - 20 Desember 2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "13 November - 20 Desember 2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/SPK.21.NT/PPSD.Perub/PL.CK./XI/2026",
+      "tanggalKontrak": "2026-11-11",
+      "tanggalMulai": "13 November - 20 Desember 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 199420000,
+      "namaPenyedia": "CV WIDI PRATAMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 10,
+      "progresRealisasi": 3,
+      "deviasiFisik": -7,
+      "statusDeviasi": "Waspada",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199420000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -18466,23 +19465,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 22013000,
-      "terminHistory": []
+      "totalPencairan": 22013000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_215-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026",
+          "tanggalSP2D": "2026-09-28",
+          "jumlah": 22013000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/010Pr/SPK/DR.PLP.CK.IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -18547,8 +19560,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -18628,8 +19645,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -18709,8 +19730,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -18788,12 +19813,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -18871,12 +19900,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -18952,12 +19985,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -19036,27 +20073,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 25,
+      "progresRealisasi": 20,
+      "deviasiFisik": -5,
+      "statusDeviasi": "Waspada",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 1207300000,
-      "terminHistory": []
+      "totalPencairan": 362190000,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 845110000,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_222-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender.Perub/PPSD.08.CK/X/2026",
+          "tanggalSP2D": "2026-10-30",
+          "jumlah": 362190000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -19119,27 +20170,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 27,
+      "progresRealisasi": 12,
+      "deviasiFisik": -15,
+      "statusDeviasi": "Kritis",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 1476300000,
-      "terminHistory": []
+      "totalPencairan": 442890000,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 1033410000,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_223-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.3/SP/Tender.Perub/PPSD.07.CK/X/2026",
+          "tanggalSP2D": "2026-10-30",
+          "jumlah": 442890000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-30",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -19204,8 +20269,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -19283,32 +20352,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 65,
-      "progresRealisasi": 69.99,
-      "deviasiFisik": 4.99,
+      "progresRencana": 85,
+      "progresRealisasi": 86.58,
+      "deviasiFisik": 1.58,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 489917400,
-      "persenKeuangan": 69.99,
-      "sisaAnggaran": 210082600,
+      "totalPencairan": 606074460,
+      "persenKeuangan": 86.58,
+      "sisaAnggaran": 93925540,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_225-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 489917400,
-          "persen": 69.99,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 606074460,
+          "persen": 86.58,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -19352,7 +20425,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-07",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-05",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -19366,7 +20439,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/PL.BG.04.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-07",
       "tanggalMulai": "2026-08-07",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-05",
       "nilaiKontrak": 81283000,
       "namaPenyedia": "CV. SALSABIL",
       "bankRekanan": "Bank Jateng",
@@ -19374,12 +20447,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
-      "progresRealisasi": 90,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -19433,7 +20510,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-03-31",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -19447,7 +20524,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "027/01Pr/SPK/BG.PL.CK/III/2026",
       "tanggalKontrak": "2026-03-12",
       "tanggalMulai": "2026-03-12",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-03-31",
       "nilaiKontrak": 3959000,
       "namaPenyedia": "ZAHRA SALSABILA JESSEDANTA PUTRI",
       "bankRekanan": "Bank Jateng",
@@ -19459,8 +20536,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 3959000,
       "persenKeuangan": 100,
@@ -19473,7 +20554,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-12",
           "jumlah": 3959000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -19482,7 +20563,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/01Pr/SPK/BG.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -19524,7 +20605,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -19538,7 +20619,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/04Pgw/SPK/BG.PL.CK.VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 1914000,
       "namaPenyedia": "IMAN SETYA PRISISWANTO",
       "bankRekanan": "Bank Jateng",
@@ -19550,8 +20631,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -19631,8 +20716,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -19661,7 +20750,7 @@ export const REAL_PROJECTS_2026 = [
     ]
   },
   {
-    "id": "prj_cipta_karya_230",
+    "id": "prj_cipta_karya_270",
     "tahunAnggaran": 2026,
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
@@ -19669,7 +20758,7 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
-    "kodeRup": "RUP-2026-CIP-0230",
+    "kodeRup": "RUP-2026-CIP-0270",
     "tipePengadaan": "Pengadaan Langsung",
     "paguAnggaran": 7862480,
     "hps": 7862480,
@@ -19708,32 +20797,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 14,
-      "progresRealisasi": 15.26,
-      "deviasiFisik": 1.26,
+      "progresRencana": 40,
+      "progresRealisasi": 40.7,
+      "deviasiFisik": 0.7,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 1150000,
-      "persenKeuangan": 14.63,
-      "sisaAnggaran": 6712480,
+      "totalPencairan": 3200000,
+      "persenKeuangan": 40.7,
+      "sisaAnggaran": 4662480,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_230-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 1150000,
-          "persen": 14.63,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 3200000,
+          "persen": 40.7,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -19742,12 +20835,12 @@ export const REAL_PROJECTS_2026 = [
     },
     "logs": [
       {
-        "id": "log_init_prj_cipta_karya_230",
+        "id": "log_init_prj_cipta_karya_270",
         "timestamp": "2026-10-31 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 1.150.000 dan fisik mencapai 15.26% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D tercatat Rp 40.530.500 dan fisik mencapai 32.44% per laporan bulan Oktober 2026."
       }
     ]
   },
@@ -19779,7 +20872,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-09",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -19793,7 +20886,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026",
       "tanggalKontrak": "2026-09-28",
       "tanggalMulai": "2026-09-28",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-09",
       "nilaiKontrak": 11834000,
       "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
@@ -19801,27 +20894,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 11834000,
-      "terminHistory": []
+      "totalPencairan": 11834000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_231-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026",
+          "tanggalSP2D": "2026-09-28",
+          "jumlah": 11834000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/09Pr/SPK/BG.PLP.CK.IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -19862,7 +20969,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-09",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -19876,7 +20983,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/08Pr/SPK/BG.PLP.CK.IX/2026",
       "tanggalKontrak": "2026-09-28",
       "tanggalMulai": "2026-09-28",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-09",
       "nilaiKontrak": 50527000,
       "namaPenyedia": "CV.DINASTI JAVA GROUP",
       "bankRekanan": "Bank Jateng",
@@ -19884,12 +20991,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -19922,8 +21033,8 @@ export const REAL_PROJECTS_2026 = [
     "tahunAnggaran": 2026,
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
-    "namaPaket": "Rehabilitasi Pendopo Bupati Setda Kabupaten Demak",
-    "kategoriPekerjaan": "Fisik",
+    "namaPaket": "Jasa Perencanaan Rehabilitasi Pendopo Bupati Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0233",
@@ -19945,7 +21056,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-09",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -19959,7 +21070,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/010Pr/SPK/BG.PLP.CK.IX/2026",
       "tanggalKontrak": "2026-09-28",
       "tanggalMulai": "2026-09-28",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-09",
       "nilaiKontrak": 13818000,
       "namaPenyedia": "CV. RAF INOVASI",
       "bankRekanan": "Bank Jateng",
@@ -19967,36 +21078,50 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 13818000,
-      "terminHistory": []
+      "totalPencairan": 13818000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_233-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/010Pr/SPK/BG.PLP.CK.IX/2026",
+          "tanggalSP2D": "2026-09-28",
+          "jumlah": 13818000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/010Pr/SPK/BG.PLP.CK.IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_233",
-        "timestamp": "2026-10-31 16:30:00",
+        "timestamp": "2026-11-20 16:30:00",
         "userName": "Koordinator Cipta Karya",
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
-        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+        "keterangan": "Realisasi SP2D sebesar Rp 13.818.000 dan fisik mencapai 100% per laporan November 2026."
       }
     ]
   },
@@ -20027,24 +21152,24 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-11-06",
+      "targetSelesaiTender": "2026-12-20",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-06"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "nomorKontrak": "000.3.2/013Pgw/SPK/BG.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-06",
+      "tanggalMulai": "2026-11-06",
+      "tanggalSelesai": "2026-12-20",
+      "nilaiKontrak": 31565000,
+      "namaPenyedia": "CV.PRIORITAS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -20054,12 +21179,16 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 32000000,
+      "sisaAnggaran": 31565000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20107,42 +21236,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-03",
+      "targetSelesaiTender": "2026-12-22",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-03"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/07Pgw/SPK/BG.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-03",
+      "tanggalMulai": "2026-11-03",
+      "tanggalSelesai": "2026-12-22",
+      "nilaiKontrak": 7713000,
+      "namaPenyedia": "ILHAM NILNA FAUZI, S.T",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 8000000,
+      "sisaAnggaran": 7713000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20190,42 +21323,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-03",
+      "targetSelesaiTender": "2026-12-22",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-03"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/08Pgw/SPK/BG.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-03",
+      "tanggalMulai": "2026-11-03",
+      "tanggalSelesai": "2026-12-22",
+      "nilaiKontrak": 7185000,
+      "namaPenyedia": "HELMY HIMAWAN, S.T",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 8000000,
+      "sisaAnggaran": 7185000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20273,42 +21410,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-06",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-06"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.02.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-06",
+      "tanggalMulai": "2026-11-06",
+      "tanggalSelesai": "2026-12-20",
+      "nilaiKontrak": 282928000,
+      "namaPenyedia": "TALITHA JAYA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 22,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 283740480,
+      "sisaAnggaran": 282928000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20356,42 +21497,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-06",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-06"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.04.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-06",
+      "tanggalMulai": "2026-11-06",
+      "tanggalSelesai": "2026-12-20",
+      "nilaiKontrak": 380623000,
+      "namaPenyedia": "CV . KEMBAR JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 21,
+      "deviasiFisik": 1,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 381328560,
+      "sisaAnggaran": 380623000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20439,42 +21584,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-06",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-06"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.01.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-06",
+      "tanggalMulai": "2026-11-06",
+      "tanggalSelesai": "2026-12-20",
+      "nilaiKontrak": 377662000,
+      "namaPenyedia": "CV. CAHAYA TESCHA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 22,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 378041760,
+      "sisaAnggaran": 377662000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20522,42 +21671,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-06",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-06"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.05.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-06",
+      "tanggalMulai": "2026-11-06",
+      "tanggalSelesai": "2026-12-20",
+      "nilaiKontrak": 138419000,
+      "namaPenyedia": "CV. MITRA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 139659120,
+      "sisaAnggaran": 138419000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20605,42 +21758,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-06",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-06"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.03.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-06",
+      "tanggalMulai": "2026-11-06",
+      "tanggalSelesai": "2026-12-20",
+      "nilaiKontrak": 282937000,
+      "namaPenyedia": "CV. IVVA CAHAYA HATI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 21,
+      "deviasiFisik": 1,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 283740480,
+      "sisaAnggaran": 282937000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20688,42 +21845,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-03",
+      "targetSelesaiTender": "2026-12-22",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-03"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.3/05/SP/Perub.BG.CK/XI/2026",
+      "tanggalKontrak": "2026-11-03",
+      "tanggalMulai": "2026-11-03",
+      "tanggalSelesai": "2026-12-22",
+      "nilaiKontrak": 462203000,
+      "namaPenyedia": "CV INDAH LESTARI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 30,
+      "progresRealisasi": 50,
+      "deviasiFisik": 20,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 478551960,
+      "sisaAnggaran": 462203000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20771,42 +21932,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-03",
+      "targetSelesaiTender": "2026-12-22",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-03"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.3/04/SP/Perub.BG.CK/XI/2026",
+      "tanggalKontrak": "2026-11-03",
+      "tanggalMulai": "2026-11-03",
+      "tanggalSelesai": "2026-12-22",
+      "nilaiKontrak": 564049000,
+      "namaPenyedia": "CV. ANSINDI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 30,
+      "progresRealisasi": 35,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 574532640,
+      "sisaAnggaran": 564049000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -20856,7 +22021,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -20870,7 +22035,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/BG.06.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 185834000,
       "namaPenyedia": "CV. HIDAYAT",
       "bankRekanan": "Bank Jateng",
@@ -20882,23 +22047,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 185834000,
-      "terminHistory": []
+      "totalPencairan": 185834000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_244-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.06.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 185834000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.06.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -20937,7 +22116,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -20951,7 +22130,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/BG.08.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 137668000,
       "namaPenyedia": "CV. AZZA",
       "bankRekanan": "Bank Jateng",
@@ -20963,23 +22142,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 137668000,
-      "terminHistory": []
+      "totalPencairan": 137668000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_245-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.08.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 137668000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.08.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -21044,8 +22237,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -21099,7 +22296,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21113,7 +22310,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/BG.05.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 183684000,
       "namaPenyedia": "CV. MITRA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -21125,23 +22322,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 183684000,
-      "terminHistory": []
+      "totalPencairan": 183684000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_247-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.05.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 183684000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.05.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -21180,7 +22391,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21194,7 +22405,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/BG.09.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 92158000,
       "namaPenyedia": "CV. SAHALA",
       "bankRekanan": "Bank Jateng",
@@ -21206,23 +22417,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 92158000,
-      "terminHistory": []
+      "totalPencairan": 92158000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_248-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.09.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 92158000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.09.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -21260,24 +22485,24 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-09-04",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-09-04"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/SPK/BG.13.PL.CK/IX/2026",
-      "tanggalKontrak": "2026-09-04",
-      "tanggalMulai": "2026-09-04",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 185133000,
-      "namaPenyedia": "CV. INDAH LESTARI",
+      "nomorKontrak": "000.3.2/SPK/BG.10.PL.CK/VIII/2026",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
+      "tanggalSelesai": "2026-10-08",
+      "nilaiKontrak": 185209000,
+      "namaPenyedia": "ABI BERKAH JAYA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -21287,32 +22512,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 185133000,
-      "persenKeuangan": 100,
-      "sisaAnggaran": 0,
+      "persenKeuangan": 99.96,
+      "sisaAnggaran": 76000,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_249-1",
-          "terminKe": "Pelunasan SP2D 100%",
-          "nomorSP2D": "SP2D-000.3.2/SPK/BG.13.PL.CK/IX/2026",
-          "tanggalSP2D": "2026-09-04",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.10.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
           "jumlah": 185133000,
-          "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "persen": 99.96,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-09-04",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/000.3.2/SPK/BG.13.PL.CK/IX/2026",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -21352,7 +22581,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21366,7 +22595,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/BG.07.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 185788000,
       "namaPenyedia": "CV. HIDAYAT",
       "bankRekanan": "Bank Jateng",
@@ -21378,23 +22607,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 185788000,
-      "terminHistory": []
+      "totalPencairan": 185788000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_250-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.07.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 185788000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.07.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -21432,50 +22675,64 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-09-04",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-08-10",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-09-04"
+        "targetMulaiPekerjaan": "2026-08-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "000.3.2/SPK/BG.14.PL.CK/IX/2026",
-      "tanggalKontrak": "2026-09-04",
-      "tanggalMulai": "2026-09-04",
-      "tanggalSelesai": "2026-11-30",
+      "nomorKontrak": "000.3.2/SPK/BG.11.PL.CK/VIII/2026",
+      "tanggalKontrak": "2026-08-10",
+      "tanggalMulai": "2026-08-10",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 185460000,
-      "namaPenyedia": "CV. MITRA JAYA ABADI",
+      "namaPenyedia": "ABI BERKAH JAYA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 65.57,
-      "progresRealisasi": 93.78,
-      "deviasiFisik": 28.21,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 185460000,
-      "terminHistory": []
+      "totalPencairan": 185383000,
+      "persenKeuangan": 99.96,
+      "sisaAnggaran": 77000,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_251-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.11.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 185383000,
+          "persen": 99.96,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -21514,7 +22771,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-03",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-01",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21528,7 +22785,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-03",
       "tanggalMulai": "2026-08-03",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-01",
       "nilaiKontrak": 188307000,
       "namaPenyedia": "CV INDAH LESTARI",
       "bankRekanan": "Bank Jateng",
@@ -21540,8 +22797,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 188307000,
       "persenKeuangan": 100,
@@ -21554,7 +22815,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-03",
           "jumlah": 188307000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -21563,7 +22824,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-03",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/SPK/PL.BG.01.PL.CK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -21605,7 +22866,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-03",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-01",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21619,7 +22880,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-03",
       "tanggalMulai": "2026-08-03",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-01",
       "nilaiKontrak": 187732000,
       "namaPenyedia": "CV. HARGOSARI",
       "bankRekanan": "Bank Jateng",
@@ -21631,8 +22892,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 187732000,
       "persenKeuangan": 100,
@@ -21645,7 +22910,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-03",
           "jumlah": 187732000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -21654,7 +22919,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-03",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/SPK/PL.BG.02.PL.CK/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -21696,7 +22961,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-03",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-01",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21710,7 +22975,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/PL.BG.03.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-03",
       "tanggalMulai": "2026-08-03",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-01",
       "nilaiKontrak": 140057000,
       "namaPenyedia": "CV. MITRAKU",
       "bankRekanan": "Bank Jateng",
@@ -21722,23 +22987,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 140057000,
-      "terminHistory": []
+      "totalPencairan": 140057000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_254-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/PL.BG.03.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-03",
+          "jumlah": 140057000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-03",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/PL.BG.03.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -21777,7 +23056,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21791,7 +23070,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/SPK/BG.12.PL.CK/VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 138176000,
       "namaPenyedia": "CV. HIDAYAT",
       "bankRekanan": "Bank Jateng",
@@ -21803,23 +23082,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 138176000,
-      "terminHistory": []
+      "totalPencairan": 138176000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_255-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/BG.12.PL.CK/VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 138176000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/BG.12.PL.CK/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -21858,7 +23151,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-04-10",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21872,7 +23165,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "027/02Pr/SPK/BG.PL.CK/III/2026",
       "tanggalKontrak": "2026-03-12",
       "tanggalMulai": "2026-03-12",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-04-10",
       "nilaiKontrak": 27777000,
       "namaPenyedia": "CV.PRIORITAS",
       "bankRekanan": "Bank Jateng",
@@ -21884,8 +23177,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 27777000,
       "persenKeuangan": 100,
@@ -21898,7 +23195,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-12",
           "jumlah": 27777000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -21907,7 +23204,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/02Pr/SPK/BG.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -21949,7 +23246,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-04-10",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -21963,7 +23260,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "027/03Pr/SPK/BG.PL.CK/III/2026",
       "tanggalKontrak": "2026-03-12",
       "tanggalMulai": "2026-03-12",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-04-10",
       "nilaiKontrak": 24859000,
       "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
@@ -21975,8 +23272,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 24859000,
       "persenKeuangan": 100,
@@ -21989,7 +23290,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-12",
           "jumlah": 24859000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -21998,7 +23299,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/03Pr/SPK/BG.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -22040,7 +23341,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-04-10",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -22054,7 +23355,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "027/04Pr/SPK/BG.PL.CK/III/2026",
       "tanggalKontrak": "2026-03-12",
       "tanggalMulai": "2026-03-12",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-04-10",
       "nilaiKontrak": 15806000,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -22066,8 +23367,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 15806000,
       "persenKeuangan": 100,
@@ -22080,7 +23385,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-12",
           "jumlah": 15806000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -22089,7 +23394,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-12",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/04Pr/SPK/BG.PL.CK/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -22133,7 +23438,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-09",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -22147,7 +23452,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/05Pr/SPK/BG.PLP.CK.IX/2026",
       "tanggalKontrak": "2026-09-28",
       "tanggalMulai": "2026-09-28",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-09",
       "nilaiKontrak": 11632000,
       "namaPenyedia": "CV. RAF INOVASI",
       "bankRekanan": "Bank Jateng",
@@ -22155,27 +23460,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 30,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 11632000,
-      "terminHistory": []
+      "totalPencairan": 11632000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_259-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/05Pr/SPK/BG.PLP.CK.IX/2026",
+          "tanggalSP2D": "2026-09-28",
+          "jumlah": 11632000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/05Pr/SPK/BG.PLP.CK.IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -22240,8 +23559,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -22295,7 +23618,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -22309,7 +23632,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/01Pgw/SPK/BG.PL.CK.VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 21534000,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -22321,8 +23644,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -22376,7 +23703,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -22390,7 +23717,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/02Pgw/SPK/BG.PL.CK.VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 18856000,
       "namaPenyedia": "CV. REKA ADI KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -22402,23 +23729,37 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 18856000,
-      "terminHistory": []
+      "totalPencairan": 18856000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_262-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/02Pgw/SPK/BG.PL.CK.VIII/2026",
+          "tanggalSP2D": "2026-08-10",
+          "jumlah": 18856000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/02Pgw/SPK/BG.PL.CK.VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -22457,7 +23798,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-08",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -22471,7 +23812,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/03Pgw/SPK/BG.PL.CK.VIII/2026",
       "tanggalKontrak": "2026-08-10",
       "tanggalMulai": "2026-08-10",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-08",
       "nilaiKontrak": 8796000,
       "namaPenyedia": "CV. JK KONSULTAN",
       "bankRekanan": "Bank Jateng",
@@ -22483,8 +23824,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -22536,27 +23881,27 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-10",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/012Pgw/SPK/BG.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "2026-11-10",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 7856000,
+      "namaPenyedia": "ILHAM NILNA FAUZI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -22566,12 +23911,16 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 8000000,
+      "sisaAnggaran": 7856000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -22647,8 +23996,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -22728,8 +24081,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -22809,8 +24166,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -22890,8 +24251,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -22971,8 +24336,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -23011,8 +24380,8 @@ export const REAL_PROJECTS_2026 = [
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0270",
     "tipePengadaan": "Pengadaan Langsung",
-    "paguAnggaran": 124929000,
-    "hps": 124929000,
+    "paguAnggaran": 119929000,
+    "hps": 119929000,
     "kecamatan": "Demak",
     "desa": "",
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
@@ -23048,32 +24417,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 32.44,
-      "progresRealisasi": 32.44,
+      "progresRencana": 38.13,
+      "progresRealisasi": 38.13,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 40530500,
-      "persenKeuangan": 32.44,
-      "sisaAnggaran": 84398500,
+      "totalPencairan": 45730500,
+      "persenKeuangan": 38.13,
+      "sisaAnggaran": 74198500,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_270-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 40530500,
-          "persen": 32.44,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 45730500,
+          "persen": 38.13,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -23115,42 +24488,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-05",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.3/07/SP/Perub.BG.CK/XI/2026",
+      "tanggalKontrak": "2026-11-05",
+      "tanggalMulai": "2026-11-05",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 466811000,
+      "namaPenyedia": "CV. RIZKY JAYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 478544800,
+      "sisaAnggaran": 466811000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23202,7 +24579,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-02",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-13",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -23216,7 +24593,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/011Pr/SPK/BG.PLP.CK.X/2026",
       "tanggalKontrak": "2026-10-02",
       "tanggalMulai": "2026-10-02",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-13",
       "nilaiKontrak": 7781000,
       "namaPenyedia": "FASTABIQ FADZIL ADHA",
       "bankRekanan": "Bank Jateng",
@@ -23224,27 +24601,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 7781000,
-      "terminHistory": []
+      "totalPencairan": 7781000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_272-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/011Pr/SPK/BG.PLP.CK.X/2026",
+          "tanggalSP2D": "2026-10-02",
+          "jumlah": 7781000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-10-02",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/011Pr/SPK/BG.PLP.CK.X/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -23281,42 +24672,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-05",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/011Pgw/SPK/BG.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-05",
+      "tanggalMulai": "2026-11-05",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 11819000,
+      "namaPenyedia": "ILHAM NILNA FAUZI, S.T",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 12000000,
+      "sisaAnggaran": 11819000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23364,42 +24759,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-10",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.07.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "2026-11-10",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 284302000,
+      "namaPenyedia": "CV. AGA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 30,
+      "deviasiFisik": 10,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 286122200,
+      "sisaAnggaran": 284302000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23447,42 +24846,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-10",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.06.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "2026-11-10",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 235361000,
+      "namaPenyedia": "CV. RIZKY JAYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 25,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 236084500,
+      "sisaAnggaran": 235361000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23530,42 +24933,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-10",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/SPK/BG.08.PLP.CK/XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "2026-11-10",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 186048000,
+      "namaPenyedia": "CV. INDAH LESTARI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 21,
+      "deviasiFisik": 1,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 187577600,
+      "sisaAnggaran": 186048000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23613,42 +25020,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/016Pr/SPK/BG.PLP.CK.X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-12",
+      "nilaiKontrak": 49640000,
+      "namaPenyedia": "CV. SKALATIS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49640000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23696,42 +25107,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/014Pr/SPK/BG.PLP.CK.X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-12",
+      "nilaiKontrak": 49629000,
+      "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49629000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23779,42 +25194,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-12",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/015Pr/SPK/BG.PLP.CK.X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-12",
+      "nilaiKontrak": 49640000,
+      "namaPenyedia": "CV. SKALATIS",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49640000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -23892,8 +25311,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -23932,8 +25355,8 @@ export const REAL_PROJECTS_2026 = [
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0281",
     "tipePengadaan": "Pengadaan Langsung",
-    "paguAnggaran": 12000000,
-    "hps": 12000000,
+    "paguAnggaran": 17000000,
+    "hps": 17000000,
     "kecamatan": "Demak",
     "desa": "",
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
@@ -23945,42 +25368,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/09Pgw/SPK/BG.PLP.CK.X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 16581000,
+      "namaPenyedia": "HELMY HIMAWAN, S.T",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 12000000,
+      "sisaAnggaran": 16581000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -24028,42 +25455,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.3/02/SP/Perub.BG.CK/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 654927000,
+      "namaPenyedia": "CV. RIZKY JAYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 35,
+      "progresRealisasi": 36,
+      "deviasiFisik": 1,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 666589600,
+      "sisaAnggaran": 654927000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -24111,27 +25542,27 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-26",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-26"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/012Pr/SPK/BG.PLP.CK.X/2026",
+      "tanggalKontrak": "2026-10-26",
+      "tanggalMulai": "2026-10-26",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 99308000,
+      "namaPenyedia": "CV. ATHAR",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -24141,12 +25572,16 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99308000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -24194,42 +25629,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-26",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-26"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/013Pr/SPK/BG.PLP.CK.X/2026",
+      "tanggalKontrak": "2026-10-26",
+      "tanggalMulai": "2026-10-26",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 99539000,
+      "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 60,
+      "progresRealisasi": 60,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99539000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -24278,42 +25717,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-05",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.3/06/SP/Perub.BG.CK/XI/2026",
+      "tanggalKontrak": "2026-11-05",
+      "tanggalMulai": "2026-11-05",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 1386983000,
+      "namaPenyedia": "CV. MITRA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1432181600,
+      "sisaAnggaran": 1386983000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -24342,8 +25785,8 @@ export const REAL_PROJECTS_2026 = [
     "tahunAnggaran": 2026,
     "bidangId": "cipta_karya",
     "subBagian": "Penyelenggaraan Bangunan Gedung di Wilayah Daerah Kabupaten/Kota, Pemberian Izin Mendirikan Bangunan (IMB) dan Sertifikat Laik Fungsi Bangunan Gedung",
-    "namaPaket": "Jasa Desain Arsitektural - Pembangunan Pagar Pendopo Setda Kabupaten Demak",
-    "kategoriPekerjaan": "Fisik",
+    "namaPaket": "Jasa Desain Arsitektural - Perencanaan Pembangunan Pagar Pendopo Setda Kabupaten Demak",
+    "kategoriPekerjaan": "Jakon",
     "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-CIP-0286",
@@ -24361,62 +25804,76 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-28",
+      "targetSelesaiTender": "2026-10-09",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-28"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/07Pr/SPK/BG.PLP.CK.IX/2026",
+      "tanggalKontrak": "2026-09-28",
+      "tanggalMulai": "2026-09-28",
+      "tanggalSelesai": "2026-10-09",
+      "nilaiKontrak": 29728000,
+      "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 30000000,
-      "terminHistory": []
+      "totalPencairan": 29728000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_286-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/07Pr/SPK/BG.PLP.CK.IX/2026",
+          "tanggalSP2D": "2026-09-28",
+          "jumlah": 29728000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/07Pr/SPK/BG.PLP.CK.IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
         "id": "log_init_prj_cipta_karya_286",
-        "timestamp": "2026-10-31 15:00:00",
-        "userName": "Admin SIMON SATU PUTARU",
-        "userRole": "Sistem Monitoring",
-        "action": "Pendaftaran Paket APBD 2026",
-        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 30.000.000 (Murni)."
+        "timestamp": "2026-11-20 16:30:00",
+        "userName": "Koordinator Cipta Karya",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D sebesar Rp 29.728.000 dan fisik mencapai 100% per laporan November 2026."
       }
     ]
   },
@@ -24444,42 +25901,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-05",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/010Pgw/SPK/BG.PLP.CK.XI/2026",
+      "tanggalKontrak": "2026-11-05",
+      "tanggalMulai": "2026-11-05",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 23735000,
+      "namaPenyedia": "CV. DIKA ARSITEKTUR DESAIN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 24000000,
+      "sisaAnggaran": 23735000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -24532,7 +25993,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-12-24",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -24546,7 +26007,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.3/01/SP/Perub.BG.CK/X/2026",
       "tanggalKontrak": "2026-10-05",
       "tanggalMulai": "2026-10-05",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-12-24",
       "nilaiKontrak": 7215931000,
       "namaPenyedia": "CV.SEMBILAN SEMBILAN",
       "bankRekanan": "Bank Jateng",
@@ -24554,12 +26015,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
-      "deviasiFisik": 0,
+      "progresRencana": 35,
+      "progresRealisasi": 46,
+      "deviasiFisik": 11,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 2164779300,
       "persenKeuangan": 30,
@@ -24572,7 +26037,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-10-05",
           "jumlah": 2164779300,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -24625,7 +26090,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-12-24",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -24639,7 +26104,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/05Pgw/SPK/BG.PLP.CK.X/2026",
       "tanggalKontrak": "2026-10-05",
       "tanggalMulai": "2026-10-05",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-12-24",
       "nilaiKontrak": 39732000,
       "namaPenyedia": "CV. DE SATU",
       "bankRekanan": "Bank Jateng",
@@ -24647,12 +26112,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 30,
+      "progresRealisasi": 30,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -24709,7 +26178,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-30",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-12-18",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -24723,7 +26192,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.3/03/SP/Perub.BG.CK/X/2026",
       "tanggalKontrak": "2026-10-30",
       "tanggalMulai": "2026-10-30",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-12-18",
       "nilaiKontrak": 3584729000,
       "namaPenyedia": "CV. KIAN AGENG REZEKI",
       "bankRekanan": "Bank Jateng",
@@ -24731,12 +26200,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
-      "deviasiFisik": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 25,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -24788,42 +26261,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-30",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-30"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/06Pgw/SPK/BG.PLP.CK.X/2026",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "2026-10-30",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 29718000,
+      "namaPenyedia": "CV. Askha",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 20,
+      "progresRealisasi": 20,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 30000000,
+      "sisaAnggaran": 29718000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -24875,7 +26352,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-10-09",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -24889,7 +26366,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "000.3.2/06Pr/SPK/BG.PLP.CK.IX/2026",
       "tanggalKontrak": "2026-09-28",
       "tanggalMulai": "2026-09-28",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-10-09",
       "nilaiKontrak": 29550000,
       "namaPenyedia": "CV ATHAR",
       "bankRekanan": "Bank Jateng",
@@ -24897,27 +26374,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 50,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 29550000,
-      "terminHistory": []
+      "totalPencairan": 29550000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_cipta_karya_292-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/06Pr/SPK/BG.PLP.CK.IX/2026",
+          "tanggalSP2D": "2026-09-28",
+          "jumlah": 29550000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/06Pr/SPK/BG.PLP.CK.IX/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -24979,31 +26470,35 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 60,
-      "progresRealisasi": 70.46,
-      "deviasiFisik": 10.46,
+      "progresRealisasi": 72.83,
+      "deviasiFisik": 12.83,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 129453500,
-      "persenKeuangan": 64.73,
-      "sisaAnggaran": 70546500,
+      "totalPencairan": 144548500,
+      "persenKeuangan": 72.27,
+      "sisaAnggaran": 55451500,
       "terminHistory": [
         {
           "id": "TRM-prj_cipta_karya_293-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 129453500,
-          "persen": 64.73,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 144548500,
+          "persen": 72.27,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -25045,42 +26540,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-29",
+      "targetSelesaiTender": "2026-11-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 100000000,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PRC.SPK.BM.110.1/IX/2026",
+      "tanggalKontrak": "2026-09-29",
+      "tanggalMulai": "2026-09-29",
+      "tanggalSelesai": "2026-11-27",
+      "nilaiKontrak": 99594750,
+      "namaPenyedia": "CV. GEOPAKSI KARYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99594750,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -25128,42 +26627,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-29",
+      "targetSelesaiTender": "2026-11-28",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PRC.SPK.BM.110.2/IX/2026",
+      "tanggalKontrak": "2026-09-29",
+      "tanggalMulai": "2026-09-29",
+      "tanggalSelesai": "2026-11-28",
+      "nilaiKontrak": 99279500,
+      "namaPenyedia": "CV. KARISTI KONSULTAN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99279500,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -25211,42 +26714,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "027.2/PRC.SPK.BM.115.3/X/2026",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 99131325,
+      "namaPenyedia": "CV. SUDUT DUA TUJUH",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99131325,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -25294,42 +26801,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "027.2/PRC.SPK.BM.115.4/X/2026",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 99142425,
+      "namaPenyedia": "CV. CITRA GRAHITA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99142425,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -25377,42 +26888,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PRC.SPK.BM.115.1/X/2026",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 99626000,
+      "namaPenyedia": "CV. PURUSARA TEKNIK",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99626000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -25460,42 +26975,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PRC.SPK.BM.115.2/X/2026",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 99579400,
+      "namaPenyedia": "CV. MITRA DESIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99579400,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -25543,42 +27062,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-07",
+      "targetSelesaiTender": "20 Desember",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-07"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "027.2/PRC.SPK.BM.116.5/X/2026",
+      "tanggalKontrak": "2026-10-07",
+      "tanggalMulai": "2026-10-07",
+      "tanggalSelesai": "20 Desember",
+      "nilaiKontrak": 99168510,
+      "namaPenyedia": "CV. KARSA ADICIPTA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99168510,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -25640,7 +27163,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.43.3/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199353000,
@@ -25654,8 +27177,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199353000,
       "persenKeuangan": 100,
@@ -25665,19 +27192,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_301-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.43.3/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 199353000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.43.3/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -25731,7 +27258,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.32/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 148865000,
@@ -25745,8 +27272,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 148865000,
       "persenKeuangan": 100,
@@ -25756,19 +27287,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_302-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.32/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 148865000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.32/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -25836,8 +27367,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -25903,46 +27438,50 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.30/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
-      "nilaiKontrak": 149606000,
+      "nilaiKontrak": 149384000,
       "namaPenyedia": "CV. WAHYU ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
-      "progresRealisasi": 60,
-      "deviasiFisik": -30,
-      "statusDeviasi": "Kritis",
-      "mingguan": []
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 149384000,
-      "persenKeuangan": 99.85,
-      "sisaAnggaran": 222000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_304-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.30/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 149384000,
-          "persen": 99.85,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-08-05",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.30/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -25978,42 +27517,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-08",
+      "targetSelesaiTender": "2026-11-06",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-08"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/PL.SPK.BM.103.1/IX/2026",
+      "tanggalKontrak": "2026-09-08",
+      "tanggalMulai": "2026-09-08",
+      "tanggalSelesai": "2026-11-06",
+      "nilaiKontrak": 199440000,
+      "namaPenyedia": "CV. WAHYU ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199440000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -26075,7 +27618,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.043/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 98530000,
@@ -26089,8 +27632,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 98530000,
       "persenKeuangan": 100,
@@ -26100,19 +27647,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_306-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.043/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 98530000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.043/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26166,7 +27713,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.27/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 149296000,
@@ -26180,8 +27727,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 149296000,
       "persenKeuangan": 100,
@@ -26191,19 +27742,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_307-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.27/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 149296000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.27/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26257,7 +27808,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.43.2/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199335000,
@@ -26271,8 +27822,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199335000,
       "persenKeuangan": 100,
@@ -26282,19 +27837,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_308-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.43.2/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 199335000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.43.2/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26348,7 +27903,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.042/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199251000,
@@ -26362,8 +27917,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199251000,
       "persenKeuangan": 100,
@@ -26373,19 +27932,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_309-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.042/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 199251000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.042/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26439,7 +27998,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.33/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199214000,
@@ -26453,8 +28012,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199214000,
       "persenKeuangan": 100,
@@ -26464,19 +28027,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_310-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.33/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 199214000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.33/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26530,7 +28093,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.03.02.2/PL.SPK.BM.039/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 149454000,
@@ -26544,8 +28107,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 149454000,
       "persenKeuangan": 100,
@@ -26555,19 +28122,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_311-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.03.02.2/PL.SPK.BM.039/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 149454000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.039/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26621,7 +28188,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.55/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 99390000,
@@ -26635,8 +28202,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99390000,
       "persenKeuangan": 100,
@@ -26646,19 +28217,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_312-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.55/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 99390000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.55/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26712,7 +28283,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.35/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 99129000,
@@ -26726,8 +28297,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99129000,
       "persenKeuangan": 100,
@@ -26737,19 +28312,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_313-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.35/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 99129000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.35/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26813,32 +28388,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 23.35,
-      "progresRealisasi": 23.35,
-      "deviasiFisik": 0,
+      "progresRencana": 65,
+      "progresRealisasi": 80.29,
+      "deviasiFisik": 15.29,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 39236500,
-      "persenKeuangan": 49.05,
-      "sisaAnggaran": 40763500,
+      "totalPencairan": 53536500,
+      "persenKeuangan": 66.92,
+      "sisaAnggaran": 26463500,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_314-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 39236500,
-          "persen": 49.05,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 53536500,
+          "persen": 66.92,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -26908,8 +28487,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199130000,
       "persenKeuangan": 100,
@@ -26922,7 +28505,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-07",
           "jumlah": 199130000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -26931,7 +28514,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PL.SPK.BM.005/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -26999,8 +28582,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198886000,
       "persenKeuangan": 100,
@@ -27013,7 +28600,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-07",
           "jumlah": 198886000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -27022,7 +28609,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PL.SPK.BM.006/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27090,8 +28677,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 148834000,
       "persenKeuangan": 100,
@@ -27104,7 +28695,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-07",
           "jumlah": 148834000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -27113,7 +28704,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PL.SPK.BM.007/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27167,7 +28758,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.28/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199034000,
@@ -27181,8 +28772,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199034000,
       "persenKeuangan": 100,
@@ -27192,19 +28787,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_318-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.28/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 199034000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.28/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27268,12 +28863,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
-      "progresRealisasi": 90,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 298414000,
       "persenKeuangan": 100,
@@ -27286,7 +28885,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 298414000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -27295,7 +28894,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPPBJ.BM.57/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27363,8 +28962,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199405000,
       "persenKeuangan": 100,
@@ -27377,7 +28980,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-18",
           "jumlah": 199405000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -27386,7 +28989,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.056/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27440,7 +29043,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.31/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 198549000,
@@ -27454,8 +29057,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198549000,
       "persenKeuangan": 100,
@@ -27465,19 +29072,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_321-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.31/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 198549000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.31/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27531,7 +29138,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.36/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 174127000,
@@ -27545,8 +29152,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 174127000,
       "persenKeuangan": 100,
@@ -27556,19 +29167,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_322-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.36/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 174127000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.36/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27622,7 +29233,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.37/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 149183000,
@@ -27636,8 +29247,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 149183000,
       "persenKeuangan": 100,
@@ -27647,19 +29262,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_323-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.37/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 149183000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.37/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27713,7 +29328,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.03.02.2/PL.SPK.BM.038/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 198604000,
@@ -27727,8 +29342,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198604000,
       "persenKeuangan": 100,
@@ -27738,19 +29357,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_324-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.03.02.2/PL.SPK.BM.038/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 198604000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.03.02.2/PL.SPK.BM.038/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27814,12 +29433,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 955444001,
       "persenKeuangan": 100,
@@ -27832,7 +29455,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-20",
           "jumlah": 955444001,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -27841,7 +29464,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.03.02.2/APBD.SP.BM.74/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27882,7 +29505,7 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-04-08",
+      "targetMulaiTender": "'8 April 2026",
       "targetSelesaiTender": "2026-05-07",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
@@ -27890,13 +29513,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-08"
+        "targetMulaiPekerjaan": "'8 April 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.016/IV/2026",
       "tanggalKontrak": "2026-04-08",
-      "tanggalMulai": "2026-04-08",
+      "tanggalMulai": "'8 April 2026",
       "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 14705000,
       "namaPenyedia": "CV. KUBANG ENGINEERING CONSULTANT",
@@ -27909,8 +29532,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 14705000,
       "persenKeuangan": 100,
@@ -27923,7 +29550,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-08",
           "jumlah": 14705000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -27932,7 +29559,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.016/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -27970,42 +29597,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-21",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-21"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.83.3/VIII/2026",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 14857350,
+      "namaPenyedia": "BAMBANG RIYANTO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14857350,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -28054,7 +29685,7 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-04-07",
+      "targetMulaiTender": "'07 April 2026",
       "targetSelesaiTender": "2026-06-05",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
@@ -28062,13 +29693,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-07"
+        "targetMulaiPekerjaan": "'07 April 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027/PL.SPK.BM.009/IV/2026",
       "tanggalKontrak": "2026-04-07",
-      "tanggalMulai": "2026-04-07",
+      "tanggalMulai": "'07 April 2026",
       "tanggalSelesai": "2026-06-05",
       "nilaiKontrak": 149223000,
       "namaPenyedia": "CV. INDAH LESTARI",
@@ -28081,8 +29712,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 149223000,
       "persenKeuangan": 100,
@@ -28095,7 +29730,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-07",
           "jumlah": 149223000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -28104,7 +29739,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/PL.SPK.BM.009/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -28168,12 +29803,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 90,
-      "deviasiFisik": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 954431000,
       "persenKeuangan": 100,
@@ -28186,7 +29825,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-20",
           "jumlah": 954431000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -28195,7 +29834,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.03.02.2/APBD.SP.BM.75/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -28236,7 +29875,7 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-04-08",
+      "targetMulaiTender": "'8 April 2026",
       "targetSelesaiTender": "2026-05-07",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
@@ -28244,13 +29883,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-08"
+        "targetMulaiPekerjaan": "'8 April 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.017/IV/2026",
       "tanggalKontrak": "2026-04-08",
-      "tanggalMulai": "2026-04-08",
+      "tanggalMulai": "'8 April 2026",
       "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 14705000,
       "namaPenyedia": "CV. KUBANG ENGINEERING CONSULTANT",
@@ -28263,8 +29902,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 14705000,
       "persenKeuangan": 100,
@@ -28277,7 +29920,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-08",
           "jumlah": 14705000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -28286,7 +29929,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.017/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -28324,42 +29967,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-21",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-21"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.83.2/VIII/2026",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 14861790,
+      "namaPenyedia": "VYXY ANGGREINI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14861790,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -28435,8 +30082,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -28516,8 +30167,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -28597,8 +30252,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -28676,25 +30335,29 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 50,
-      "deviasiFisik": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 586551392,
-      "persenKeuangan": 30.86,
-      "sisaAnggaran": 1313953249,
+      "totalPencairan": 570151392,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 1330353249,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_335-1",
           "terminKe": "Pencairan SP2D Termin",
           "nomorSP2D": "SP2D-000.3.7/APBD.SP.BM.069/VIII/2026",
           "tanggalSP2D": "2026-08-21",
-          "jumlah": 586551392,
-          "persen": 30.86,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 570151392,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -28744,7 +30407,7 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-04-08",
+      "targetMulaiTender": "'8 April 2026",
       "targetSelesaiTender": "2026-05-07",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
@@ -28752,13 +30415,13 @@ export const REAL_PROJECTS_2026 = [
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-04-08"
+        "targetMulaiPekerjaan": "'8 April 2026"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "027.2/PRC.SPK.BM.010/IV/2026",
       "tanggalKontrak": "2026-04-08",
-      "tanggalMulai": "2026-04-08",
+      "tanggalMulai": "'8 April 2026",
       "tanggalSelesai": "2026-05-07",
       "nilaiKontrak": 29646000,
       "namaPenyedia": "CV. PRIORITAS",
@@ -28771,8 +30434,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 29646000,
       "persenKeuangan": 100,
@@ -28785,7 +30452,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-08",
           "jumlah": 29646000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -28794,7 +30461,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.010/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -28832,42 +30499,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-21",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-21"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.020.1/VIII/2026",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 29690280,
+      "namaPenyedia": "CV.KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 30000000,
+      "sisaAnggaran": 29690280,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -28916,22 +30587,22 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-07-23",
-      "targetSelesaiTender": "2026-09-20",
+      "targetMulaiTender": "2026-03-01",
+      "targetSelesaiTender": "2026-11-30",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-07-23"
+        "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/ PL.SPK.BM.21/VII/2026",
       "tanggalKontrak": "2026-07-23",
-      "tanggalMulai": "2026-07-23",
-      "tanggalSelesai": "2026-09-20",
+      "tanggalMulai": "2026-03-01",
+      "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 198789359,
       "namaPenyedia": "CV. TIRTA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -28939,27 +30610,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 198789359,
-      "terminHistory": []
+      "totalPencairan": 16400000,
+      "persenKeuangan": 82,
+      "sisaAnggaran": 3600000,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_338-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 16400000,
+          "persen": 82,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -29020,12 +30705,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
-      "progresRealisasi": 90,
-      "deviasiFisik": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198789359,
       "persenKeuangan": 100,
@@ -29038,7 +30727,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-23",
           "jumlah": 198789359,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -29047,7 +30736,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-23",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/ PL.SPK.BM.21/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -29101,7 +30790,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.34/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 198958000,
@@ -29111,27 +30800,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 40,
-      "deviasiFisik": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 198958000,
-      "terminHistory": []
+      "totalPencairan": 198958000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_340-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.34/VIII/2026",
+          "tanggalSP2D": "'5 Agustus 2026",
+          "jumlah": 198958000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.34/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -29196,8 +30899,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 198651000,
       "persenKeuangan": 100,
@@ -29210,7 +30917,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-07",
           "jumlah": 198651000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -29219,7 +30926,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PL.SPK.BM.008/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -29273,7 +30980,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.040/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199455000,
@@ -29283,12 +30990,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 50,
-      "deviasiFisik": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199455000,
       "persenKeuangan": 100,
@@ -29298,19 +31009,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_342-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.040/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 199455000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.040/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -29348,42 +31059,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-21",
+      "targetSelesaiTender": "2026-12-19",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-21"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBD.SP.BM.107.1/IX/2026",
+      "tanggalKontrak": "2026-09-21",
+      "tanggalMulai": "2026-09-21",
+      "tanggalSelesai": "2026-12-19",
+      "nilaiKontrak": 735767589,
+      "namaPenyedia": "CV. MAHKOTA JAYA GROUP",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 750000000,
+      "sisaAnggaran": 735767589,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -29429,27 +31144,27 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-05",
+      "targetSelesaiTender": "2026-12-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.111/X/2026",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
+      "tanggalSelesai": "2026-12-07",
+      "nilaiKontrak": 492810141,
+      "namaPenyedia": "CV. INDAH LESTARI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
@@ -29459,12 +31174,16 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
+      "sisaAnggaran": 492810141,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -29536,12 +31255,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 40,
-      "progresRealisasi": 60,
-      "deviasiFisik": 20,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99601000,
       "persenKeuangan": 100,
@@ -29554,7 +31277,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-04",
           "jumlah": 99601000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -29563,7 +31286,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-04",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.023/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -29627,12 +31350,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 491900000,
       "persenKeuangan": 100,
@@ -29645,7 +31372,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-20",
           "jumlah": 491900000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -29654,7 +31381,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01M09RW6VFV2GRYK6Y2BA3M2PR",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -29708,7 +31435,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "000.3.2/PL.SPK.BM.29/VIII/2026",
-      "tanggalKontrak": "2026-08-05",
+      "tanggalKontrak": "'5 Agustus 2026",
       "tanggalMulai": "2026-08-05",
       "tanggalSelesai": "2026-10-03",
       "nilaiKontrak": 199228000,
@@ -29718,12 +31445,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 70,
-      "deviasiFisik": 40,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199228000,
       "persenKeuangan": 100,
@@ -29733,19 +31464,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_347-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.29/VIII/2026",
-          "tanggalSP2D": "2026-08-05",
+          "tanggalSP2D": "'5 Agustus 2026",
           "jumlah": 199228000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-08-05",
+      "tanggalMasuk": "'5 Agustus 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.29/VIII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -29815,32 +31546,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 442424160,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 1032323039,
+      "totalPencairan": 1474747199,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_348-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.72/VIII/2026",
           "tanggalSP2D": "2026-08-20",
-          "jumlah": 442424160,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 1474747199,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.7/BANGUB.SP.BM.72/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -29897,43 +31632,47 @@ export const REAL_PROJECTS_2026 = [
       "tanggalKontrak": "2026-09-07",
       "tanggalMulai": "2026-09-07",
       "tanggalSelesai": "2026-12-05",
-      "nilaiKontrak": 0.1,
+      "nilaiKontrak": 1970225025,
       "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 55.68,
-      "deviasiFisik": 5.68,
+      "progresRencana": 80,
+      "progresRealisasi": 85,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 591067508,
-      "persenKeuangan": 591067508000,
-      "sisaAnggaran": 0,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 1379157517,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_349-1",
-          "terminKe": "Pelunasan SP2D 100%",
+          "terminKe": "Pencairan SP2D Termin",
           "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.098/IX/2026",
           "tanggalSP2D": "2026-09-07",
           "jumlah": 591067508,
-          "persen": 591067508000,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_sp2d",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "sudah_sp2d",
+      "status": "sudah_masuk",
       "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
-      "nomorSPM": "900/SPM/000.3.7/BANGUB.SP.BM.098/IX/2026",
-      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -29984,7 +31723,7 @@ export const REAL_PROJECTS_2026 = [
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.111/X/2026",
       "tanggalKontrak": "2026-10-01",
       "tanggalMulai": "2026-10-01",
       "tanggalSelesai": "2026-12-08",
@@ -29995,27 +31734,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 20,
-      "deviasiFisik": 10,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 441501918,
-      "terminHistory": []
+      "totalPencairan": 132450575,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 309051343,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_350-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.111/X/2026",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 132450575,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -30078,12 +31831,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 52.4,
-      "deviasiFisik": 2.4,
+      "progresRencana": 80,
+      "progresRealisasi": 85,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 293158632,
       "persenKeuangan": 30,
@@ -30096,7 +31853,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-09-07",
           "jumlah": 293158632,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -30171,36 +31928,40 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
-      "progresRealisasi": 100,
-      "deviasiFisik": 10,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 295318331,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 689076106,
+      "totalPencairan": 984394437,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_352-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.7.2/BANGUB.SP.BM.076/VIII/2026",
           "tanggalSP2D": "2026-08-21",
-          "jumlah": 295318331,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 984394437,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-21",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.7.2/BANGUB.SP.BM.076/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -30264,27 +32025,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
+      "progresRencana": 90,
       "progresRealisasi": 90,
-      "deviasiFisik": 60,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 981104275,
-      "terminHistory": []
+      "totalPencairan": 294331283,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 686772992,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_353-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.103/IX/2026",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 294331283,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -30347,27 +32122,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 60,
-      "deviasiFisik": 30,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 984248552,
-      "terminHistory": []
+      "totalPencairan": 295274565,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688973987,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_354-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M4A5NAHA5XG6H3N48VFBXVKA",
+          "tanggalSP2D": "2026-10-08",
+          "jumlah": 295274565,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -30419,7 +32208,7 @@ export const REAL_PROJECTS_2026 = [
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.118/X/2026",
       "tanggalKontrak": "2026-10-08",
       "tanggalMulai": "2026-10-08",
       "tanggalSelesai": "2026-12-10",
@@ -30430,27 +32219,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 35,
-      "deviasiFisik": 5,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 984972001,
-      "terminHistory": []
+      "totalPencairan": 295491600,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 689480401,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_355-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.118/X/2026",
+          "tanggalSP2D": "2026-10-08",
+          "jumlah": 295491600,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -30500,7 +32303,7 @@ export const REAL_PROJECTS_2026 = [
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.115/X/2026",
       "tanggalKontrak": "2026-10-01",
       "tanggalMulai": "2026-10-01",
       "tanggalSelesai": "2026-12-09",
@@ -30511,27 +32314,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 40,
-      "deviasiFisik": 10,
+      "progresRencana": 85,
+      "progresRealisasi": 85,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 490510253,
-      "terminHistory": []
+      "totalPencairan": 147153076,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 343357177,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_356-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.115/X/2026",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 147153076,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -30598,32 +32415,36 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 291068101,
-      "persenKeuangan": 30.78,
-      "sisaAnggaran": 654603512,
+      "totalPencairan": 970227002,
+      "persenKeuangan": 102.6,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_357-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-EP-01M0A1MW6ZSB74YWKTWVKA9AK4",
           "tanggalSP2D": "2026-08-20",
-          "jumlah": 291068101,
-          "persen": 30.78,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 970227002,
+          "persen": 102.6,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/EP-01M0A1MW6ZSB74YWKTWVKA9AK4",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -30687,36 +32508,40 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
+      "progresRencana": 100,
       "progresRealisasi": 100,
-      "deviasiFisik": 10,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 590384179,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 1377563085,
+      "totalPencairan": 1967947264,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_358-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.70/VIII/2026",
           "tanggalSP2D": "2026-08-20",
-          "jumlah": 590384179,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 1967947264,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.7/BANGUB.SP.BM.70/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -30780,36 +32605,40 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
+      "progresRencana": 100,
       "progresRealisasi": 100,
-      "deviasiFisik": 10,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 294919469,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 688145429,
+      "totalPencairan": 983064898,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_359-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.093/VIII/2026",
           "tanggalSP2D": "2026-08-28",
-          "jumlah": 294919469,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 983064898,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.7/BANGUB.SP.BM.093/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -30871,12 +32700,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 40,
-      "deviasiFisik": 10,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 235739405,
       "persenKeuangan": 30,
@@ -30889,7 +32722,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-10-01",
           "jumlah": 235739405,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -30953,7 +32786,7 @@ export const REAL_PROJECTS_2026 = [
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.116/X/2026",
       "tanggalKontrak": "2026-10-05",
       "tanggalMulai": "2026-10-05",
       "tanggalSelesai": "2026-12-08",
@@ -30964,27 +32797,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 10,
-      "deviasiFisik": -20,
-      "statusDeviasi": "Kritis",
-      "mingguan": []
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 983503178,
-      "terminHistory": []
+      "totalPencairan": 295050953,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688452225,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_361-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.116/X/2026",
+          "tanggalSP2D": "2026-10-05",
+          "jumlah": 295050953,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-05",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -31047,36 +32894,40 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 50,
-      "deviasiFisik": 0,
+      "progresRencana": 80,
+      "progresRealisasi": 85,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 295536232,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 689584540,
+      "totalPencairan": 985120772,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_362-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-EP-01M1NM4XB142X3Z1DAW5822M5Y",
           "tanggalSP2D": "2026-09-07",
-          "jumlah": 295536232,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 985120772,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/EP-01M1NM4XB142X3Z1DAW5822M5Y",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -31140,27 +32991,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 90,
-      "deviasiFisik": 40,
+      "progresRencana": 85,
+      "progresRealisasi": 85,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 983392334,
-      "terminHistory": []
+      "totalPencairan": 295017700,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688374634,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_363-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M1GNBZK0FJJD94YTXEGB4JSR",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 295017700,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -31223,12 +33088,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 90,
+      "progresRencana": 100,
       "progresRealisasi": 100,
-      "deviasiFisik": 10,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 294915190,
       "persenKeuangan": 30,
@@ -31241,7 +33110,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-31",
           "jumlah": 294915190,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -31316,12 +33185,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 40,
-      "deviasiFisik": 10,
+      "progresRencana": 85,
+      "progresRealisasi": 85,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 294304762,
       "persenKeuangan": 30,
@@ -31334,7 +33207,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-09-07",
           "jumlah": 294304762,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -31398,7 +33271,7 @@ export const REAL_PROJECTS_2026 = [
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.107.2/IX/2026",
       "tanggalKontrak": "2026-09-21",
       "tanggalMulai": "2026-09-21",
       "tanggalSelesai": "2026-12-09",
@@ -31409,27 +33282,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 30,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 980937999,
-      "terminHistory": []
+      "totalPencairan": 294281400,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 686656599,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_366-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.107.2/IX/2026",
+          "tanggalSP2D": "2026-09-21",
+          "jumlah": 294281400,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-21",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -31496,8 +33383,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -31573,12 +33464,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 93.25,
-      "deviasiFisik": 63.25,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 206311703,
       "persenKeuangan": 30,
@@ -31591,7 +33486,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-10-01",
           "jumlah": 206311703,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -31666,12 +33561,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 60,
-      "deviasiFisik": 30,
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 295138963,
       "persenKeuangan": 30,
@@ -31684,7 +33583,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-10-01",
           "jumlah": 295138963,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -31761,8 +33660,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 20,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -31840,36 +33743,40 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 80,
+      "progresRencana": 100,
       "progresRealisasi": 100,
-      "deviasiFisik": 20,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 295348553,
-      "persenKeuangan": 30,
-      "sisaAnggaran": 689146623,
+      "totalPencairan": 984495176,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_371-1",
-          "terminKe": "Pencairan SP2D Termin",
+          "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-000.3.7/BANGUB.SP.BM.71/VIII/2026",
           "tanggalSP2D": "2026-08-20",
-          "jumlah": 295348553,
-          "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "jumlah": 984495176,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
+      "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-20",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.7/BANGUB.SP.BM.71/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -31937,8 +33844,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 2424634000,
       "persenKeuangan": 100,
@@ -31951,7 +33862,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-31",
           "jumlah": 2424634000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -31960,7 +33871,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-31",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/APBD.SP.BM.03/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -32028,8 +33939,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 24891000,
       "persenKeuangan": 100,
@@ -32042,7 +33957,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-31",
           "jumlah": 24891000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -32051,7 +33966,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-31",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PWS.SPK.BM.004/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -32091,42 +34006,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-16",
+      "targetSelesaiTender": "14 Desember",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.144/X/2026",
+      "tanggalKontrak": "2026-10-16",
+      "tanggalMulai": "2026-10-16",
+      "tanggalSelesai": "14 Desember",
+      "nilaiKontrak": 199443000,
+      "namaPenyedia": "CV. KUSUMA BARU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199443000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32157,7 +34076,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan Desa Pulosari Kec Karangtengah",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0375",
     "tipePengadaan": "Pengadaan Langsung",
@@ -32174,42 +34093,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.190/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 99378000,
+      "namaPenyedia": "CV. ERLANGGA PUTRA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 99378000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32257,42 +34180,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.189/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 199471000,
+      "namaPenyedia": "CV. JASA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199471000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32340,42 +34267,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "'4 November 2026",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "'4 November 2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.209/XI/2026",
+      "tanggalKontrak": "2026-11-04",
+      "tanggalMulai": "'4 November 2026",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 149486000,
+      "namaPenyedia": "CV.BANGUN BUMI NUSANTARA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 55,
+      "progresRealisasi": 55,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 150000000,
+      "sisaAnggaran": 149486000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32406,7 +34337,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Talud Jalan Desa Rejosari Kecamatan Mijen",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0378",
     "tipePengadaan": "Pengadaan Langsung",
@@ -32423,42 +34354,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-20",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-20"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.157/X/2026",
+      "tanggalKontrak": "2026-10-20",
+      "tanggalMulai": "2026-10-20",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 198819000,
+      "namaPenyedia": "CV.BANGUN BUMI NUSANTARA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 55,
+      "progresRealisasi": 55,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 198819000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32506,42 +34441,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.149/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 198760000,
+      "namaPenyedia": "CV. KAWAN KITA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 55,
+      "progresRealisasi": 55,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 198760000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32589,42 +34528,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.293/X/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 968429490,
+      "namaPenyedia": "CV. GUNUNG MODIN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 968429490,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32655,7 +34598,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan desa karangrejo kec. Bonang",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0381",
     "tipePengadaan": "Pengadaan Langsung",
@@ -32672,42 +34615,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.148/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 149001000,
+      "namaPenyedia": "CV. PURNA WIJAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 55,
+      "progresRealisasi": 55,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 150000000,
+      "sisaAnggaran": 149001000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32755,42 +34702,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.274/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 737371801,
+      "namaPenyedia": "CV. BANGUN MULYO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 750000000,
+      "sisaAnggaran": 737371801,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32821,7 +34772,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Desa Tambakroto Rw 3 Kec. Sayung",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0383",
     "tipePengadaan": "Pengadaan Langsung",
@@ -32838,42 +34789,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.292/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 491686840,
+      "namaPenyedia": "CV. HAKA KREASI MULIA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
+      "sisaAnggaran": 491686840,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32904,7 +34859,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Dukuh Timbulsloko",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0384",
     "tipePengadaan": "Pengadaan Langsung",
@@ -32921,42 +34876,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-16",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.147/X/2026",
+      "tanggalKontrak": "2026-10-16",
+      "tanggalMulai": "2026-10-16",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 968559754,
+      "namaPenyedia": "CV. SURYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 60,
+      "progresRealisasi": 60,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 968559754,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -32987,7 +34946,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Penghubung Desa Banjarejo dan Desa Sidokumpul Kec. Guntur",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0385",
     "tipePengadaan": "Pengadaan Langsung",
@@ -33004,42 +34963,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-13",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-13"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.298/XI/2026",
+      "tanggalKontrak": "2026-11-13",
+      "tanggalMulai": "2026-11-13",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 483043603,
+      "namaPenyedia": "CV. PUTRA WIJAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
+      "sisaAnggaran": 483043603,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33087,53 +35050,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.152/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 298807000,
+      "namaPenyedia": "CV. WAHYU ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 55,
+      "progresRealisasi": 55,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 300000000,
-      "terminHistory": []
+      "totalPencairan": 89642100,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 209164900,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_386-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.2/PLP.SPK.BM.152/X/2026",
+          "tanggalSP2D": "2026-10-19",
+          "jumlah": 89642100,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-19",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -33153,7 +35130,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Sumberejo - Bonang",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0387",
     "tipePengadaan": "Pengadaan Langsung",
@@ -33170,42 +35147,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.271/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 494637371,
+      "namaPenyedia": "CV. HIDAYAH BARU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
+      "sisaAnggaran": 494637371,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33253,42 +35234,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.273/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 967013732,
+      "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 967013732,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33367,8 +35352,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -33450,8 +35439,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -33503,42 +35496,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.284/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 966993867,
+      "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 966993867,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33569,7 +35566,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan antar Desa Bantengmati",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0392",
     "tipePengadaan": "Pengadaan Langsung",
@@ -33586,42 +35583,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.240/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14835150,
+      "namaPenyedia": "abdul halim",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14835150,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33652,7 +35653,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Bengkal Karanganyar",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0393",
     "tipePengadaan": "Pengadaan Langsung",
@@ -33669,42 +35670,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.260/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 22155000,
+      "namaPenyedia": "CV.DINASTI JAVA GROUP",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 22500000,
+      "sisaAnggaran": 22155000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33752,42 +35757,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.268/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 962081079,
+      "namaPenyedia": "CV. REZA JATI TUNGGAL",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 962081079,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33835,42 +35844,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.255/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14799000,
+      "namaPenyedia": "MUHAMMAD KURNIAWAN, ST",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14799000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33901,7 +35914,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bulusari - Kalisari",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0396",
     "tipePengadaan": "Pengadaan Langsung",
@@ -33919,42 +35932,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.278/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 4476698001,
+      "namaPenyedia": "CV. KIAN AGENG REZEKI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 4550000000,
+      "sisaAnggaran": 4476698001,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -33985,7 +36002,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Bulusari - Kalisari",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0397",
     "tipePengadaan": "Pengadaan Langsung",
@@ -34002,42 +36019,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.263/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 49161000,
+      "namaPenyedia": "CV. RIZKI SURYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49161000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34068,7 +36089,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bulusari - Onggorawe",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0398",
     "tipePengadaan": "Pengadaan Langsung",
@@ -34086,42 +36107,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.279/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 2925450000,
+      "namaPenyedia": "CV. KEMBAR PUTRA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 2970000000,
+      "sisaAnggaran": 2925450000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34152,7 +36177,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Bulusari - Onggorawe",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0399",
     "tipePengadaan": "Pengadaan Langsung",
@@ -34169,42 +36194,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.253/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 29777000,
+      "namaPenyedia": "CV. HOBI KERJA CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 30000000,
+      "sisaAnggaran": 29777000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34252,42 +36281,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.267/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 967169465,
+      "namaPenyedia": "CV. MITRA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 967169465,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34335,42 +36368,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.249/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14607000,
+      "namaPenyedia": "YUNUS ISKANDAR, ST",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14607000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34419,42 +36456,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBD.SP.BM.139/X/2026",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 7330771001,
+      "namaPenyedia": "CV. TIRTA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 60,
+      "progresRealisasi": 65,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 7450000000,
+      "sisaAnggaran": 7330771001,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34502,42 +36543,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.160/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 49494900,
+      "namaPenyedia": "CV.KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 60,
+      "progresRealisasi": 65,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49494900,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34585,42 +36630,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.252/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14657000,
+      "namaPenyedia": "KUSWANTORO, ST",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14657000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34651,7 +36700,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Dukuh Timbulsloko",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0405",
     "tipePengadaan": "Pengadaan Langsung",
@@ -34668,42 +36717,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.159/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 14640900,
+      "namaPenyedia": "CV.KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 60,
+      "progresRealisasi": 6,
+      "deviasiFisik": -54,
+      "statusDeviasi": "Kritis",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14640900,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34751,42 +36804,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.285/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 967468281,
+      "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 967468281,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34834,42 +36891,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.242/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14835150,
+      "namaPenyedia": "Vyxy anggreini",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14835150,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -34918,42 +36979,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.275/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1930461417,
+      "namaPenyedia": "CV. CIPTA KARYA DIMYATI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1970000000,
+      "sisaAnggaran": 1930461417,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35001,42 +37066,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.259/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 29698000,
+      "namaPenyedia": "CV. GLOBAL DISAIN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 30000000,
+      "sisaAnggaran": 29698000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35085,42 +37154,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-13",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-13"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.297/XI/2026",
+      "tanggalKontrak": "2026-11-13",
+      "tanggalMulai": "2026-11-13",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 1741163477,
+      "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1775000000,
+      "sisaAnggaran": 1741163477,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35168,42 +37241,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-13",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-13"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.247/XI/2026",
+      "tanggalKontrak": "2026-11-13",
+      "tanggalMulai": "2026-11-13",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 24203000,
+      "namaPenyedia": "CV. RIZKI SURYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 25000000,
+      "sisaAnggaran": 24203000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35252,42 +37329,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.269/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1924331098,
+      "namaPenyedia": "CV. AGA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1970000000,
+      "sisaAnggaran": 1924331098,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35335,42 +37416,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.248/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 29506000,
+      "namaPenyedia": "CV.MITRA BERSAMA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 30000000,
+      "sisaAnggaran": 29506000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35419,42 +37504,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.289/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1460531922,
+      "namaPenyedia": "CV. MAHESA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1480000000,
+      "sisaAnggaran": 1460531922,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35502,42 +37591,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.250/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 19663000,
+      "namaPenyedia": "RAHAB LEGOWO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 20000000,
+      "sisaAnggaran": 19663000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35585,42 +37678,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-04",
+      "targetSelesaiTender": "2026-12-23",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-04"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.216/XI/2026",
+      "tanggalKontrak": "2026-11-04",
+      "tanggalMulai": "2026-11-04",
+      "tanggalSelesai": "2026-12-23",
+      "nilaiKontrak": 974538927,
+      "namaPenyedia": "CV. BRYAN  JAYA  PERKASA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 974538927,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35668,42 +37765,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-04",
+      "targetSelesaiTender": "2026-12-23",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-04"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.256/XI/2026",
+      "tanggalKontrak": "2026-11-04",
+      "tanggalMulai": "2026-11-04",
+      "tanggalSelesai": "2026-12-23",
+      "nilaiKontrak": 14653000,
+      "namaPenyedia": "BAMBANG TRI JOKO, ST",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14653000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35734,7 +37835,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Onggorawe - Mranggen",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0418",
     "tipePengadaan": "Pengadaan Langsung",
@@ -35751,42 +37852,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.272/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 963874545,
+      "namaPenyedia": "CV. CAHAYA TESCHA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 963874545,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35817,7 +37922,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Onggorawe - Mranggen",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0419",
     "tipePengadaan": "Pengadaan Langsung",
@@ -35834,42 +37939,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.246/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14774000,
+      "namaPenyedia": "PUGUH TRIYADI NUGROHO, ST",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14774000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35900,7 +38009,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Pamongan - Bulusari",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0420",
     "tipePengadaan": "Pengadaan Langsung",
@@ -35917,42 +38026,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.281/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 970301689,
+      "namaPenyedia": "CV. MAZDA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 970301689,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -35983,7 +38096,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Pamongan - Bulusari",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0421",
     "tipePengadaan": "Pengadaan Langsung",
@@ -36000,42 +38113,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.251/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14668000,
+      "namaPenyedia": "SYAEFUDIN, ST",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14668000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36084,42 +38201,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.282/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1738829059,
+      "namaPenyedia": "CV. KEMBAR PUTRA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1775000000,
+      "sisaAnggaran": 1738829059,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36167,42 +38288,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.241/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 24397800,
+      "namaPenyedia": "cv.java nardi design",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 25000000,
+      "sisaAnggaran": 24397800,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36233,7 +38358,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Sayung - Sidogemah",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0424",
     "tipePengadaan": "Pengadaan Langsung",
@@ -36251,42 +38376,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.294/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1832248057,
+      "namaPenyedia": "CV. TIRTA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1871500000,
+      "sisaAnggaran": 1832248057,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36317,7 +38446,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Sayung - Sidogemah",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0425",
     "tipePengadaan": "Pengadaan Langsung",
@@ -36334,42 +38463,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.254/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 28277000,
+      "namaPenyedia": "CV. HOBI KERJA CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 28500000,
+      "sisaAnggaran": 28277000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36418,53 +38551,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-23",
+      "targetSelesaiTender": "2026-12-10",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-23"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.167/X/2026",
+      "tanggalKontrak": "2026-10-23",
+      "tanggalMulai": "2026-10-23",
+      "tanggalSelesai": "2026-12-10",
+      "nilaiKontrak": 2920902459,
+      "namaPenyedia": "CV. BINTORO KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 75,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 2970000000,
-      "terminHistory": []
+      "totalPencairan": 876270738,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 2044631721,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_426-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/APBDP.SP.BM.167/X/2026",
+          "tanggalSP2D": "2026-10-23",
+          "jumlah": 876270738,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-23",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -36501,42 +38648,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-27",
+      "targetSelesaiTender": "2026-12-25",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-27"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.182/X/2026",
+      "tanggalKontrak": "2026-10-27",
+      "tanggalMulai": "2026-10-27",
+      "tanggalSelesai": "2026-12-25",
+      "nilaiKontrak": 29625900,
+      "namaPenyedia": "CV.KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 30000000,
+      "sisaAnggaran": 29625900,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36567,7 +38718,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Tedunan - Mutihkulon",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0428",
     "tipePengadaan": "Pengadaan Langsung",
@@ -36584,42 +38735,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.283/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 967812871,
+      "namaPenyedia": "CV. DUTA KENCANA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 967812871,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36650,7 +38805,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan  Peningkatan Jalan Tedunan - Mutihkulon",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0429",
     "tipePengadaan": "Pengadaan Langsung",
@@ -36667,42 +38822,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.243/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14835150,
+      "namaPenyedia": "Fatchur Roehman",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14835150,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36750,42 +38909,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.243/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14835150,
+      "namaPenyedia": "Achmed Rifai",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14835150,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -36834,53 +38997,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-28",
+      "targetSelesaiTender": "2026-12-11",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-28"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.187/X/2026",
+      "tanggalKontrak": "2026-10-28",
+      "tanggalMulai": "2026-10-28",
+      "tanggalSelesai": "2026-12-11",
+      "nilaiKontrak": 1736053677,
+      "namaPenyedia": "CV. AGA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 1775000000,
-      "terminHistory": []
+      "totalPencairan": 520816103,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 1215237574,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_431-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/APBDP.SP.BM.187/X/2026",
+          "tanggalSP2D": "2026-10-28",
+          "jumlah": 520816103,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-28",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -36917,42 +39094,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-28",
+      "targetSelesaiTender": "2026-12-11",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-28"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.194/X/2026",
+      "tanggalKontrak": "2026-10-28",
+      "tanggalMulai": "2026-10-28",
+      "tanggalSelesai": "2026-12-11",
+      "nilaiKontrak": 24331000,
+      "namaPenyedia": "CV. MITRA BERSAMA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 25000000,
+      "sisaAnggaran": 24331000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37001,42 +39182,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.280/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1443410609,
+      "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1480000000,
+      "sisaAnggaran": 1443410609,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37084,42 +39269,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.257/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 19728000,
+      "namaPenyedia": "EKO YUDHI MAHNANTO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 20000000,
+      "sisaAnggaran": 19728000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37150,7 +39339,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Wonokerto - Tambakbulusan",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0435",
     "tipePengadaan": "Pengadaan Langsung",
@@ -37168,42 +39357,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.276/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1743687729,
+      "namaPenyedia": "CV. REZA JATI TUNGGAL",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 1775000000,
+      "sisaAnggaran": 1743687729,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37234,7 +39427,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Peningkatan Jalan Wonokerto - Tambakbulusan",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0436",
     "tipePengadaan": "Pengadaan Langsung",
@@ -37251,42 +39444,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.245/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 24423000,
+      "namaPenyedia": "CV. RIZKI SURYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 25000000,
+      "sisaAnggaran": 24423000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37334,42 +39531,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.290/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 970100183,
+      "namaPenyedia": "CV. MAHESA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 985000000,
+      "sisaAnggaran": 970100183,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37400,7 +39601,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Jasa Konsultansi Pengawasan Rehabilitasi Jalan Brumbung - Menur Kec. Mranggen Kab. Demak",
     "kategoriPekerjaan": "Jakon",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0438",
     "tipePengadaan": "Pengadaan Langsung",
@@ -37417,42 +39618,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.258/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 14726000,
+      "namaPenyedia": "CV. PARMAGA UTAMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14726000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37501,53 +39706,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.141/X/2026",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 5781806546,
+      "namaPenyedia": "CV. CAHAYA SEMBILAN PURNAMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 5950000000,
-      "terminHistory": []
+      "totalPencairan": 1734541964,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 4047264582,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_439-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/APBDP.SP.BM.141/X/2026",
+          "tanggalSP2D": "2026-10-15",
+          "jumlah": 1734541964,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-15",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -37584,42 +39803,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.134/X/2026",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 49575375,
+      "namaPenyedia": "CV. MITRA DESIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49575375,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37668,42 +39891,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-16",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.111/X/2026",
+      "tanggalKontrak": "2026-10-16",
+      "tanggalMulai": "2026-10-16",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 10676185000,
+      "namaPenyedia": "MITRA JAYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 10850000000,
+      "sisaAnggaran": 10676185000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37751,42 +39978,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-15",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-15"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.P.SPK.BM.135/X/2026",
+      "tanggalKontrak": "2026-10-15",
+      "tanggalMulai": "2026-10-15",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 49584255,
+      "namaPenyedia": "CV. MITRA DESIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49584255,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37817,7 +40048,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Betonisasi Jalan antar Desa Karangsari menuju Wonoagung Kec.Karangtengah Kab.Demak",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0443",
     "tipePengadaan": "Pengadaan Langsung",
@@ -37834,42 +40065,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-02",
+      "targetSelesaiTender": "2026-12-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-02"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.200/XI/2026",
+      "tanggalKontrak": "2026-11-02",
+      "tanggalMulai": "2026-11-02",
+      "tanggalSelesai": "2026-12-16",
+      "nilaiKontrak": 199080000,
+      "namaPenyedia": "CV Cakrawala",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199080000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -37917,42 +40152,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-05",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SPK.BM.220/XI/2026",
+      "tanggalKontrak": "2026-11-05",
+      "tanggalMulai": "2026-11-05",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 148911000,
+      "namaPenyedia": "CV. mitra jaya",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 150000000,
+      "sisaAnggaran": 148911000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38030,8 +40269,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -38066,7 +40309,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pembangunan Jalan pada ruas jalan Gemulak - Timbulsloko",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0446",
     "tipePengadaan": "Pengadaan Langsung",
@@ -38083,42 +40326,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.277/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 591816352,
+      "namaPenyedia": "CV. CAHAYA SEMBILAN PURNAMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 600000000,
+      "sisaAnggaran": 591816352,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38166,42 +40413,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.291/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 589263756,
+      "namaPenyedia": "CV. TIRTA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 600000000,
+      "sisaAnggaran": 589263756,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38249,42 +40500,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-05",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.221/XI/2026",
+      "tanggalKontrak": "2026-11-05",
+      "tanggalMulai": "2026-11-05",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 348870000,
+      "namaPenyedia": "CV. GARUDA KARYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 350000000,
+      "sisaAnggaran": 348870000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38315,7 +40570,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan belakang pasar sayung",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0449",
     "tipePengadaan": "Pengadaan Langsung",
@@ -38332,42 +40587,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-16",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PL.SPK.BM.143/X/2026",
+      "tanggalKontrak": "2026-10-16",
+      "tanggalMulai": "2026-10-16",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 199269000,
+      "namaPenyedia": "CV. HIDAYAH BARU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199269000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38398,7 +40657,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Bengkal Karanganyar",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0450",
     "tipePengadaan": "Pengadaan Langsung",
@@ -38416,53 +40675,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.287/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 1453892974,
+      "namaPenyedia": "CV KEMBAR JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 1477500000,
-      "terminHistory": []
+      "totalPencairan": 436167892,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 1017725082,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_450-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/APBDP.SP.BM.287/XI/2026",
+          "tanggalSP2D": "2026-11-12",
+          "jumlah": 436167892,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-11-12",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38482,7 +40755,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan bogorame timbulsloko Kec. Sayung",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0451",
     "tipePengadaan": "Pengadaan Langsung",
@@ -38499,42 +40772,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-10",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.230/XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "2026-11-10",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 199192000,
+      "namaPenyedia": "CV ASSALAMAHWAL BAROKAH",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199192000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38565,7 +40842,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Jalan Cangkring - Karangrejo",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0452",
     "tipePengadaan": "Pengadaan Langsung",
@@ -38612,8 +40889,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -38665,42 +40946,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.150/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 198534000,
+      "namaPenyedia": "CV. PURNA WIJAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 198534000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38748,42 +41033,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-19",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PL.SPK.BM.158/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-19",
+      "nilaiKontrak": 378188000,
+      "namaPenyedia": "CV ALIF PUTRA PERSADA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 380000000,
+      "sisaAnggaran": 378188000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38831,42 +41120,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-30",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-30"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.195/X/2026",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "2026-10-30",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 398941000,
+      "namaPenyedia": "CV. MAHESA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 400000000,
+      "sisaAnggaran": 398941000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -38914,53 +41207,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-19",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-19"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PL.SPK.BM.152/X/2026",
+      "tanggalKontrak": "2026-10-19",
+      "tanggalMulai": "2026-10-19",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 397940000,
+      "namaPenyedia": "CV. IMYAYO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 400000000,
-      "terminHistory": []
+      "totalPencairan": 119382000,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 278558000,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_456-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.152/X/2026",
+          "tanggalSP2D": "2026-10-19",
+          "jumlah": 119382000,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-19",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -38997,42 +41304,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.288/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 491638323,
+      "namaPenyedia": "CV. MITRA USAHA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
+      "sisaAnggaran": 491638323,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -39110,8 +41421,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -39163,42 +41478,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-28",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-28"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.185/X/2026",
+      "tanggalKontrak": "2026-10-28",
+      "tanggalMulai": "2026-10-28",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 344205000,
+      "namaPenyedia": "CV. SAHALA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 345000000,
+      "sisaAnggaran": 344205000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -39229,7 +41548,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan jalan prampelan bulusari",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0460",
     "tipePengadaan": "Pengadaan Langsung",
@@ -39246,53 +41565,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-16",
+      "targetSelesaiTender": "2026-12-14",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PL.SPK.BM.142/X/2026",
+      "tanggalKontrak": "2026-10-16",
+      "tanggalMulai": "2026-10-16",
+      "tanggalSelesai": "2026-12-14",
+      "nilaiKontrak": 149056000,
+      "namaPenyedia": "CV. MAHESA KONSTRUKSI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 150000000,
-      "terminHistory": []
+      "totalPencairan": 149056000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_460-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.142/X/2026",
+          "tanggalSP2D": "2026-10-16",
+          "jumlah": 149056000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-10-16",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.142/X/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -39329,42 +41662,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.193/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 299016000,
+      "namaPenyedia": "CV. TALITHA JAYA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 300000000,
+      "sisaAnggaran": 299016000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -39395,7 +41732,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Peningkatan Ruas Jalan Ngemplak - Brumbung (Desa Ngemplak) Kecamatan Mranggen Demak",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0462",
     "tipePengadaan": "Pengadaan Langsung",
@@ -39412,42 +41749,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-05",
+      "targetSelesaiTender": "2026-12-17",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-05"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.222/XI/2026",
+      "tanggalKontrak": "2026-11-05",
+      "tanggalMulai": "2026-11-05",
+      "tanggalSelesai": "2026-12-17",
+      "nilaiKontrak": 299326000,
+      "namaPenyedia": "CV. ALIF PUTRA PERSADA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 300000000,
+      "sisaAnggaran": 299326000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -39478,7 +41819,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Jalan Ngemplak - Waru (Desa Waru Kecamatan Mranggen)",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0463",
     "tipePengadaan": "Pengadaan Langsung",
@@ -39495,42 +41836,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.191/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 249313000,
+      "namaPenyedia": "CV. ARTHA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 250000000,
+      "sisaAnggaran": 249313000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -39561,7 +41906,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rekonstruksi Ruas Jalan Purwosari - Prampelan Desa Purwosari Kec. Sayung",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0464",
     "tipePengadaan": "Pengadaan Langsung",
@@ -39578,42 +41923,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-22",
+      "targetSelesaiTender": "2026-12-20",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-22"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.168/X/2026",
+      "tanggalKontrak": "2026-10-22",
+      "tanggalMulai": "2026-10-22",
+      "tanggalSelesai": "2026-12-20",
+      "nilaiKontrak": 398310000,
+      "namaPenyedia": "CV. LUMBUNG ARTHA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 400000000,
+      "sisaAnggaran": 398310000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -39689,8 +42038,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 197600000,
       "persenKeuangan": 100,
@@ -39703,7 +42056,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-16",
           "jumlah": 197600000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -39712,7 +42065,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-16",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.02/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -39780,8 +42133,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 188097048,
       "persenKeuangan": 100,
@@ -39794,7 +42151,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-16",
           "jumlah": 188097048,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -39803,7 +42160,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-16",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01KXD89MFMSHMQJ7PANKNEERC6",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -39857,7 +42214,7 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataKontrak": {
       "nomorKontrak": "EP-01KW94RJ27DTEGTV2ZD8ZX85GF",
-      "tanggalKontrak": "2026-07-02",
+      "tanggalKontrak": "'02 Juli 2026",
       "tanggalMulai": "2026-07-02",
       "tanggalSelesai": "2026-07-16",
       "nilaiKontrak": 187663260,
@@ -39871,8 +42228,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 187663260,
       "persenKeuangan": 100,
@@ -39882,19 +42243,19 @@ export const REAL_PROJECTS_2026 = [
           "id": "TRM-prj_bina_marga_467-1",
           "terminKe": "Pelunasan SP2D 100%",
           "nomorSP2D": "SP2D-EP-01KW94RJ27DTEGTV2ZD8ZX85GF",
-          "tanggalSP2D": "2026-07-02",
+          "tanggalSP2D": "'02 Juli 2026",
           "jumlah": 187663260,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
       "status": "sudah_sp2d",
-      "tanggalMasuk": "2026-07-02",
+      "tanggalMasuk": "'02 Juli 2026",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01KW94RJ27DTEGTV2ZD8ZX85GF",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -39962,8 +42323,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 199404000,
       "persenKeuangan": 100,
@@ -39976,7 +42341,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-03-16",
           "jumlah": 199404000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -39985,7 +42350,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-03-16",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PEMEL.SP.BM.01/III/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40053,8 +42418,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 187962549,
       "persenKeuangan": 100,
@@ -40067,7 +42436,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-09-04",
           "jumlah": 187962549,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -40076,7 +42445,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-09-04",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01M1G0JF6ZGPVQ5MG421RQA5WN",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40144,8 +42513,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 188097048,
       "persenKeuangan": 100,
@@ -40158,7 +42531,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-17",
           "jumlah": 188097048,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -40167,7 +42540,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-17",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01KXHXCNFCYTACM7900S9DFCGT",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40235,8 +42608,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 187008416,
       "persenKeuangan": 100,
@@ -40249,7 +42626,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-24",
           "jumlah": 187008416,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -40258,7 +42635,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-24",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01M0CF8AXNG5GFZ75M9GSEHT6Q",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40300,7 +42677,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-06",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-08-20",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -40314,7 +42691,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "EP-01KYV2VG3NHHNNZ8X1V6BV61K6",
       "tanggalKontrak": "2026-08-06",
       "tanggalMulai": "2026-08-06",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-08-20",
       "nilaiKontrak": 186046989,
       "namaPenyedia": "CV. BOKAMA JAYA MANDIRI",
       "bankRekanan": "Bank Jateng",
@@ -40326,8 +42703,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 186046989,
       "persenKeuangan": 100,
@@ -40340,7 +42721,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-06",
           "jumlah": 186046989,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -40349,7 +42730,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-06",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01KYV2VG3NHHNNZ8X1V6BV61K6",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40391,7 +42772,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-28",
-      "targetSelesaiTender": "2026-11-30",
+      "targetSelesaiTender": "2026-09-11",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -40405,7 +42786,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH",
       "tanggalKontrak": "2026-08-28",
       "tanggalMulai": "2026-08-28",
-      "tanggalSelesai": "2026-11-30",
+      "tanggalSelesai": "2026-09-11",
       "nilaiKontrak": 187558321,
       "namaPenyedia": "CV. MUDI PUTRA JAYA",
       "bankRekanan": "Bank Jateng",
@@ -40417,8 +42798,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 187558321,
       "persenKeuangan": 100,
@@ -40431,7 +42816,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-28",
           "jumlah": 187558321,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -40440,7 +42825,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-08-28",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01M0Y4Z5NCWGHVWFJA7JDQFYSH",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40508,8 +42893,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 195757380,
       "persenKeuangan": 100,
@@ -40522,7 +42911,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-06-11",
           "jumlah": 195757380,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -40531,7 +42920,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-06-11",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01KTB0XPQ8R4H2W2SY5BQ09703",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40599,8 +42988,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 195757380,
       "persenKeuangan": 100,
@@ -40613,7 +43006,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-09-08",
           "jumlah": 195757380,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -40622,7 +43015,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-09-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01M1N8N5S92115F4NXAFJ2ZWFG",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -40688,32 +43081,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 43.66,
-      "progresRealisasi": 43.66,
+      "progresRencana": 57.94,
+      "progresRealisasi": 57.94,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 622586830,
-      "persenKeuangan": 35.99,
-      "sisaAnggaran": 1107413170,
+      "totalPencairan": 993844737,
+      "persenKeuangan": 57.45,
+      "sisaAnggaran": 736155263,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_476-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 622586830,
-          "persen": 35.99,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 993844737,
+          "persen": 57.45,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -40755,42 +43152,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-16",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "EP-01M79FZD53KMSWYG78TVF6GC8R",
+      "tanggalKontrak": "2026-11-16",
+      "tanggalMulai": "2026-11-16",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 193745860,
+      "namaPenyedia": "CV. BEJO MULYO JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 193745860,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -40868,8 +43269,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -40951,8 +43356,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -41004,42 +43413,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-13",
+      "targetSelesaiTender": "2026-11-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-13"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "EP-01M77GEYH4941J59VQ7033YBFN",
+      "tanggalKontrak": "2026-11-13",
+      "tanggalMulai": "2026-11-13",
+      "tanggalSelesai": "2026-11-27",
+      "nilaiKontrak": 191021117,
+      "namaPenyedia": "CV. MUDI PUTRA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 191021117,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -41087,42 +43500,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-23",
+      "targetSelesaiTender": "2026-12-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-23"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "EP-01M7M3HPR3TX851FXSR52Z3GN7",
+      "tanggalKontrak": "2026-11-23",
+      "tanggalMulai": "2026-11-23",
+      "tanggalSelesai": "2026-12-07",
+      "nilaiKontrak": 97819305,
+      "namaPenyedia": "CV. LUMBUNG ARTHA JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 80,
+      "progresRealisasi": 85,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 100000000,
+      "sisaAnggaran": 97819305,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -41194,12 +43611,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 174470599,
       "persenKeuangan": 87.24,
@@ -41208,18 +43629,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_bina_marga_482-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 174470599,
           "persen": 87.24,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -41289,8 +43710,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 86658587,
       "persenKeuangan": 100,
@@ -41303,7 +43728,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-31",
           "jumlah": 86658587,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -41312,7 +43737,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-31",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/EP-01KYKEVJFNZQXCBPV715VJKR94",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -41376,32 +43801,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 8.18,
-      "progresRealisasi": 8.18,
+      "progresRencana": 18.77,
+      "progresRealisasi": 18.77,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 31616000,
-      "persenKeuangan": 7.03,
-      "sisaAnggaran": 418384000,
+      "totalPencairan": 42929500,
+      "persenKeuangan": 9.54,
+      "sisaAnggaran": 407070500,
       "terminHistory": [
         {
           "id": "TRM-prj_bina_marga_484-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 31616000,
-          "persen": 7.03,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 42929500,
+          "persen": 9.54,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -41471,8 +43900,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -41552,8 +43985,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -41633,8 +44070,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -41684,42 +44125,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-25",
+      "targetSelesaiTender": "2026-12-07",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-25"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 50000000,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.102.1/VIII/2026",
+      "tanggalKontrak": "2026-08-25",
+      "tanggalMulai": "2026-08-25",
+      "tanggalSelesai": "2026-12-07",
+      "nilaiKontrak": 49787940,
+      "namaPenyedia": "CV. MITRA BERSAMA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49787940,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -41765,42 +44210,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-24",
+      "targetSelesaiTender": "2026-12-06",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-24"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.78.2/VIII/2026",
+      "tanggalKontrak": "2026-08-24",
+      "tanggalMulai": "2026-08-24",
+      "tanggalSelesai": "2026-12-06",
+      "nilaiKontrak": 49804590,
+      "namaPenyedia": "CV. MITRA BERSAMA MANDIRI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49804590,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -41846,42 +44295,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-27",
+      "targetSelesaiTender": "2026-12-09",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-27"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.83.5/VIII/2026",
+      "tanggalKontrak": "2026-08-27",
+      "tanggalMulai": "2026-08-27",
+      "tanggalSelesai": "2026-12-09",
+      "nilaiKontrak": 49794600,
+      "namaPenyedia": "3A DESIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49794600,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -41927,42 +44380,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-16",
+      "targetSelesaiTender": "2026-12-29",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.110.1/IX/2026",
+      "tanggalKontrak": "2026-09-16",
+      "tanggalMulai": "2026-09-16",
+      "tanggalSelesai": "2026-12-29",
+      "nilaiKontrak": 49777950,
+      "namaPenyedia": "3A DESIGN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49777950,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42008,42 +44465,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-12-02",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.78.3/VIII/2026",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-12-02",
+      "nilaiKontrak": 49776840,
+      "namaPenyedia": "CV. PARMAGA UTAMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 95,
+      "progresRealisasi": 95,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49776840,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42089,42 +44550,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
+      "status": "kontrak",
+      "targetMulaiTender": "31 Agustus 2026 s/13 Desember 2026",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "31 Agustus 2026 s/13 Desember 2026"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.93.1/VIII/2026",
+      "tanggalKontrak": "2026-08-31",
+      "tanggalMulai": "31 Agustus 2026 s/13 Desember 2026",
       "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nilaiKontrak": 49722450,
+      "namaPenyedia": "CV. PARMAGA UTAMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
-      "statusDeviasi": "Aman",
-      "mingguan": []
+      "progresRencana": 75,
+      "progresRealisasi": 50,
+      "deviasiFisik": -25,
+      "statusDeviasi": "Kritis",
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49722450,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42170,42 +44635,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-20",
+      "targetSelesaiTender": "2026-12-02",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-20"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.78.1/VIII/2026",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-12-02",
+      "nilaiKontrak": 49611450,
+      "namaPenyedia": "CV. RIZKY SURYA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49611450,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42251,42 +44720,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-08",
+      "targetSelesaiTender": "2026-12-21",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-08"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.103.2/IX/2026",
+      "tanggalKontrak": "2026-09-08",
+      "tanggalMulai": "2026-09-08",
+      "tanggalSelesai": "2026-12-21",
+      "nilaiKontrak": 49772955,
+      "namaPenyedia": "CV. PURUSARA TEKNIK",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 60,
+      "progresRealisasi": 60,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49772955,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42332,42 +44805,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-08-31",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-31"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.93.2/VIII/2026",
+      "tanggalKontrak": "2026-08-31",
+      "tanggalMulai": "2026-08-31",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 49661400,
+      "namaPenyedia": "CV. GLOBAL DESAIN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49661400,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42413,42 +44890,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-09-08",
+      "targetSelesaiTender": "2026-12-21",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-08"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.103.3/IX/2026",
+      "tanggalKontrak": "2026-09-08",
+      "tanggalMulai": "2026-09-08",
+      "tanggalSelesai": "2026-12-21",
+      "nilaiKontrak": 49661400,
+      "namaPenyedia": "CV. KUBANG ENGINEERING CONSULTANT",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 70,
+      "progresRealisasi": 70,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 50000000,
+      "sisaAnggaran": 49661400,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42520,12 +45001,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 285021623,
       "persenKeuangan": 30,
@@ -42538,7 +45023,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-20",
           "jumlah": 285021623,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -42615,8 +45100,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 14779000,
       "persenKeuangan": 100,
@@ -42629,7 +45118,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-15",
           "jumlah": 14779000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -42638,7 +45127,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-15",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.015/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -42679,39 +45168,43 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-08-21",
+      "targetSelesaiTender": "2026-11-18",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-21"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.83.4/VIII/2026",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-11-18",
+      "nilaiKontrak": 14740000,
+      "namaPenyedia": "Rahab Legowo",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14740000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -42783,12 +45276,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 75,
-      "progresRealisasi": 75,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -42842,7 +45339,7 @@ export const REAL_PROJECTS_2026 = [
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-01",
-      "targetSelesaiTender": "2026-11-29",
+      "targetSelesaiTender": "'29 November 2026",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
@@ -42856,7 +45353,7 @@ export const REAL_PROJECTS_2026 = [
       "nomorKontrak": "'000.3.7/APBD.SP.BM.96/IX/2026",
       "tanggalKontrak": "2026-09-01",
       "tanggalMulai": "2026-09-01",
-      "tanggalSelesai": "2026-11-29",
+      "tanggalSelesai": "'29 November 2026",
       "nilaiKontrak": 953717401,
       "namaPenyedia": "CV. MUNZAROH INDAH",
       "bankRekanan": "Bank Jateng",
@@ -42864,12 +45361,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 30,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 286115220,
       "persenKeuangan": 30,
@@ -42882,7 +45383,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-09-01",
           "jumlah": 286115220,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -42959,8 +45460,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 14710000,
       "persenKeuangan": 100,
@@ -42973,7 +45478,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-08",
           "jumlah": 14710000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -42982,7 +45487,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.014/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -43023,39 +45528,43 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-08-21",
+      "targetSelesaiTender": "2026-11-29",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-21"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.83.1/VIII/2026",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-11-29",
+      "nilaiKontrak": 14861790,
+      "namaPenyedia": "JUWARNO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 30,
-      "progresRealisasi": 30,
+      "progresRencana": 90,
+      "progresRealisasi": 90,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14861790,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -43086,7 +45595,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Pelebaran Ruas Jalan Brumbung - Menur Desa Brumbung Kec. Mranggen Kab. Demak",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0505",
     "tipePengadaan": "Pengadaan Langsung",
@@ -43103,42 +45612,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-10",
+      "targetSelesaiTender": "2026-12-24",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-10"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.231/XI/2026",
+      "tanggalKontrak": "2026-11-10",
+      "tanggalMulai": "2026-11-10",
+      "tanggalSelesai": "2026-12-24",
+      "nilaiKontrak": 149460000,
+      "namaPenyedia": "CV. RAKA SEJAHTERA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 150000000,
+      "sisaAnggaran": 149460000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -43212,12 +45725,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 25,
+      "progresRencana": 75,
+      "progresRealisasi": 75,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 2892391130,
       "persenKeuangan": 30.09,
@@ -43230,7 +45747,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-23",
           "jumlah": 2892391130,
           "persen": 30.09,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -43303,12 +45820,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 75,
+      "progresRealisasi": 75,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -43386,12 +45907,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 75,
+      "progresRealisasi": 75,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 1044154998,
       "persenKeuangan": 30.48,
@@ -43404,7 +45929,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-30",
           "jumlah": 1044154998,
           "persen": 30.48,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -43481,8 +46006,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 24812000,
       "persenKeuangan": 100,
@@ -43495,7 +46024,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-08",
           "jumlah": 24812000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -43504,7 +46033,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.011/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -43568,12 +46097,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 20,
-      "progresRealisasi": 20,
+      "progresRencana": 75,
+      "progresRealisasi": 75,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -43649,12 +46182,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 30,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 285317015,
       "persenKeuangan": 30,
@@ -43667,7 +46204,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-08-31",
           "jumlah": 285317015,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -43744,8 +46281,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 14842000,
       "persenKeuangan": 100,
@@ -43758,7 +46299,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-08",
           "jumlah": 14842000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -43767,7 +46308,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.012/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -43808,39 +46349,43 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-08-31",
+      "targetSelesaiTender": "2026-12-28",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-08-31"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.95/VIII/2026",
+      "tanggalKontrak": "2026-08-31",
+      "tanggalMulai": "2026-08-31",
+      "tanggalSelesai": "2026-12-28",
+      "nilaiKontrak": 14696400,
+      "namaPenyedia": "Yunus Iskandar",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 30,
-      "deviasiFisik": 5,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14696400,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -43912,27 +46457,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 199117737,
-      "terminHistory": []
+      "totalPencairan": 199117000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 737,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_514-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.60/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 199117000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -43993,27 +46552,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 398786000,
-      "terminHistory": []
+      "totalPencairan": 398786000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_515-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.58/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 398786000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/PL.SPK.BM.58/VIII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -44074,27 +46647,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 10,
-      "progresRealisasi": 10,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 199161933,
-      "terminHistory": []
+      "totalPencairan": 199161000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 933,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_516-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.2/PL.SPK.BM.59/VIII/2026",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 199161000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -44155,12 +46742,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 30,
-      "deviasiFisik": 5,
+      "progresRencana": 45,
+      "progresRealisasi": 45,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 285331518,
       "persenKeuangan": 30,
@@ -44173,7 +46764,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-09-11",
           "jumlah": 285331518,
           "persen": 30,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -44250,8 +46841,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 14847000,
       "persenKeuangan": 100.03,
@@ -44264,7 +46859,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-04-08",
           "jumlah": 14847000,
           "persen": 100.03,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -44273,7 +46868,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-04-08",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027.2/PRC.SPK.BM.012/IV/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -44314,39 +46909,43 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-09-14",
+      "targetSelesaiTender": "2026-12-22",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-09-14"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "nomorKontrak": "000.3.2/PWS.SPK.BM.093.3/VII/2026",
+      "tanggalKontrak": "2026-09-14",
+      "tanggalMulai": "2026-09-14",
+      "tanggalSelesai": "2026-12-22",
+      "nilaiKontrak": 14796300,
+      "namaPenyedia": "SYAEFUDIN",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 30,
-      "deviasiFisik": 5,
+      "progresRencana": 45,
+      "progresRealisasi": 45,
+      "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 15000000,
+      "sisaAnggaran": 14796300,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -44394,42 +46993,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-04",
+      "targetSelesaiTender": "2026-12-18",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-04"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.210/XI/2026",
+      "tanggalKontrak": "2026-11-04",
+      "tanggalMulai": "2026-11-04",
+      "tanggalSelesai": "2026-12-18",
+      "nilaiKontrak": 199319000,
+      "namaPenyedia": "CV. BANGUN KARYA SEJAHTERA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199319000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -44477,42 +47080,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.286/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 688189313,
+      "namaPenyedia": "CV. WIJAYA KUSUMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 700000000,
+      "sisaAnggaran": 688189313,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -44560,42 +47167,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-17",
+      "targetSelesaiTender": "2026-12-16",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-17"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.311/XI/2026",
+      "tanggalKontrak": "2026-11-17",
+      "tanggalMulai": "2026-11-17",
+      "tanggalSelesai": "2026-12-16",
+      "nilaiKontrak": 495302307,
+      "namaPenyedia": "CV.  ALBAR  PUTRA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
+      "sisaAnggaran": 495302307,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -44673,8 +47284,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -44726,42 +47341,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.188/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 174389000,
+      "namaPenyedia": "CV. BANGKIT SENTOSA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 175000000,
+      "sisaAnggaran": 174389000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -44809,42 +47428,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-30",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-30"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.199/X/2026",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "2026-10-30",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 199174000,
+      "namaPenyedia": "CV SIDOREJO JOYO MULYO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 60,
+      "progresRealisasi": 60,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199174000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -44892,53 +47515,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-08",
+      "targetSelesaiTender": "2026-12-21",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-08"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "EP-01M49PWMKECKTTWZVRMFGMEN1X",
+      "tanggalKontrak": "2026-10-08",
+      "tanggalMulai": "2026-10-08",
+      "tanggalSelesai": "2026-12-21",
+      "nilaiKontrak": 688338333,
+      "namaPenyedia": "CV SETIAJI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 700000000,
-      "terminHistory": []
+      "totalPencairan": 206501500,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 481836833,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_526-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-EP-01M49PWMKECKTTWZVRMFGMEN1X",
+          "tanggalSP2D": "2026-10-08",
+          "jumlah": 206501500,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-08",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -44975,42 +47612,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-30",
+      "targetSelesaiTender": "2026-12-13",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-30"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.201/X/2026",
+      "tanggalKontrak": "2026-10-30",
+      "tanggalMulai": "2026-10-30",
+      "tanggalSelesai": "2026-12-13",
+      "nilaiKontrak": 199125000,
+      "namaPenyedia": "CV. RAKA SEJAHTERA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 50,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 200000000,
+      "sisaAnggaran": 199125000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -45058,42 +47699,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-16",
+      "targetSelesaiTender": "2026-12-30",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-16"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.303/XI/2026",
+      "tanggalKontrak": "2026-11-16",
+      "tanggalMulai": "2026-11-16",
+      "tanggalSelesai": "2026-12-30",
+      "nilaiKontrak": 488392220,
+      "namaPenyedia": "CV. ANUGRAH MEKAR JAYA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 30,
+      "progresRealisasi": 30,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
+      "sisaAnggaran": 488392220,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -45124,7 +47769,7 @@ export const REAL_PROJECTS_2026 = [
     "subBagian": "Penyelenggaraan Jalan Kabupaten/Kota",
     "namaPaket": "Rehabilitasi Jembatan Desa Kedungwaru Bandungrejo",
     "kategoriPekerjaan": "Fisik",
-    "jenisAnggaran": "Perubahan",
+    "jenisAnggaran": "Murni",
     "sumberDana": "APBD Murni (DAU)",
     "kodeRup": "RUP-2026-BIN-0529",
     "tipePengadaan": "Pengadaan Langsung",
@@ -45141,53 +47786,67 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-11-12",
+      "targetSelesaiTender": "2026-12-26",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-11-12"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.7/APBDP.SP.BM.270/XI/2026",
+      "tanggalKontrak": "2026-11-12",
+      "tanggalMulai": "2026-11-12",
+      "tanggalSelesai": "2026-12-26",
+      "nilaiKontrak": 492936296,
+      "namaPenyedia": "CV. ATTAQI MULIA ABADI",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 500000000,
-      "terminHistory": []
+      "totalPencairan": 147880889,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 345055407,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bina_marga_529-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-000.3.7/APBDP.SP.BM.270/XI/2026",
+          "tanggalSP2D": "2026-11-12",
+          "jumlah": 147880889,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-11-12",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -45254,8 +47913,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 0,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -45307,42 +47970,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.193.1/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 173784000,
+      "namaPenyedia": "CV. ARGO DAHONO",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 175000000,
+      "sisaAnggaran": 173784000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -45390,42 +48057,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.219/XI/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 149173000,
+      "namaPenyedia": "CV. CITRA DELIMA",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 150000000,
+      "sisaAnggaran": 149173000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -45473,42 +48144,46 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "status": "kontrak",
+      "targetMulaiTender": "2026-10-29",
+      "targetSelesaiTender": "2026-12-27",
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-29"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "-",
+      "nomorKontrak": "000.3.2/PLP.SPK.BM.192/X/2026",
+      "tanggalKontrak": "2026-10-29",
+      "tanggalMulai": "2026-10-29",
+      "tanggalSelesai": "2026-12-27",
+      "nilaiKontrak": 149460000,
+      "namaPenyedia": "CV. URIP KARYA BARU",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 40,
+      "progresRealisasi": 42,
+      "deviasiFisik": 2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
-      "sisaAnggaran": 150000000,
+      "sisaAnggaran": 149460000,
       "terminHistory": []
     },
     "spjStatus": "belum_masuk",
@@ -45580,12 +48255,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 25,
-      "progresRealisasi": 25,
-      "deviasiFisik": 0,
+      "progresRencana": 80,
+      "progresRealisasi": 85,
+      "deviasiFisik": 5,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -45665,8 +48344,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 64.09,
       "deviasiFisik": 4.09,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 64092200,
       "persenKeuangan": 64.09,
@@ -45675,18 +48358,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sda_bk_535-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 64092200,
           "persen": 64.09,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -45756,8 +48439,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 84.17,
       "deviasiFisik": 4.17,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 75755000,
       "persenKeuangan": 84.17,
@@ -45766,18 +48453,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_sda_bk_536-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 75755000,
           "persen": 84.17,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -45847,8 +48534,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99630000,
       "persenKeuangan": 100,
@@ -45861,7 +48552,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-02-27",
           "jumlah": 99630000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -45870,7 +48561,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-02-27",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/SPK/Kons.01/TARU/II/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -45934,32 +48625,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 60,
-      "progresRealisasi": 77.87,
-      "deviasiFisik": 17.87,
+      "progresRencana": 80,
+      "progresRealisasi": 81.51,
+      "deviasiFisik": 1.51,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 61631412,
-      "persenKeuangan": 77.87,
-      "sisaAnggaran": 17518588,
+      "totalPencairan": 64511412,
+      "persenKeuangan": 81.51,
+      "sisaAnggaran": 14638588,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_538-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 61631412,
-          "persen": 77.87,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 64511412,
+          "persen": 81.51,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -46029,8 +48724,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 38.47,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 26366200,
       "persenKeuangan": 38.47,
@@ -46039,18 +48738,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_tata_ruang_539-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 26366200,
           "persen": 38.47,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -46120,8 +48819,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99608000,
       "persenKeuangan": 100,
@@ -46134,7 +48837,7 @@ export const REAL_PROJECTS_2026 = [
           "tanggalSP2D": "2026-07-10",
           "jumlah": 99608000,
           "persen": 100,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
@@ -46143,7 +48846,7 @@ export const REAL_PROJECTS_2026 = [
       "status": "sudah_sp2d",
       "tanggalMasuk": "2026-07-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "2026-10-25",
+      "tanggalSPM": "2026-11-15",
       "nomorSPM": "900/SPM/027/SPK/Kons.02/TARU/VII/2026",
       "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
@@ -46184,59 +48887,63 @@ export const REAL_PROJECTS_2026 = [
     "isKontrak": true,
     "tahapPraKontrak": {
       "status": "kontrak",
-      "targetMulaiTender": "2026-03-01",
-      "targetSelesaiTender": "2026-11-30",
+      "targetMulaiTender": "2026-10-01",
+      "targetSelesaiTender": "2026-10-14",
       "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
     "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
       "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
-        "targetMulaiPekerjaan": "2026-03-01"
+        "targetMulaiPekerjaan": "2026-10-01"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
-      "tanggalMulai": "2026-03-01",
-      "tanggalSelesai": "2026-11-30",
-      "nilaiKontrak": 0,
-      "namaPenyedia": "Penyedia Jasa Konstruksi",
+      "nomorKontrak": "000.3.2/SPK/MICE.04/TARU/X/2026",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-10-14",
+      "nilaiKontrak": 99305000,
+      "namaPenyedia": "CV. AZUMI GEMILANG",
       "bankRekanan": "Bank Jateng",
       "rekeningRekanan": "",
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 99.3,
-      "progresRealisasi": 99.3,
+      "progresRencana": 100,
+      "progresRealisasi": 100,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 99305000,
-      "persenKeuangan": 99.3,
-      "sisaAnggaran": 695000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_541-1",
-          "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-000.3.2/SPK/MICE.04/TARU/X/2026",
+          "tanggalSP2D": "2026-10-01",
           "jumlah": 99305000,
-          "persen": 99.3,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
-    "spjStatus": "sudah_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-10-01",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/000.3.2/SPK/MICE.04/TARU/X/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
       "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
@@ -46298,32 +49005,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 49.63,
-      "progresRealisasi": 49.63,
+      "progresRencana": 62.19,
+      "progresRealisasi": 62.19,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 39197000,
-      "persenKeuangan": 12.69,
-      "sisaAnggaran": 269703000,
+      "totalPencairan": 192103000,
+      "persenKeuangan": 62.19,
+      "sisaAnggaran": 116797000,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_542-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 39197000,
-          "persen": 12.69,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 192103000,
+          "persen": 62.19,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -46363,16 +49074,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -46389,12 +49100,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
+      "progresRencana": 5,
+      "progresRealisasi": 5,
       "deviasiFisik": 0,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 0,
       "persenKeuangan": 0,
@@ -46470,32 +49185,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 65,
-      "progresRealisasi": 69.15,
-      "deviasiFisik": 4.15,
+      "progresRencana": 80,
+      "progresRealisasi": 88.45,
+      "deviasiFisik": 8.45,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 120754496,
-      "persenKeuangan": 69.15,
-      "sisaAnggaran": 53865504,
+      "totalPencairan": 146644496,
+      "persenKeuangan": 83.98,
+      "sisaAnggaran": 27975504,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_544-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 120754496,
-          "persen": 69.15,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 146644496,
+          "persen": 83.98,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -46565,8 +49284,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 6.58,
       "deviasiFisik": 1.58,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 3290000,
       "persenKeuangan": 6.58,
@@ -46575,18 +49298,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_tata_ruang_545-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 3290000,
           "persen": 6.58,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -46653,11 +49376,15 @@ export const REAL_PROJECTS_2026 = [
     },
     "dataFisik": {
       "progresRencana": 65,
-      "progresRealisasi": 69.26,
-      "deviasiFisik": 4.26,
+      "progresRealisasi": 76.86,
+      "deviasiFisik": 11.86,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 34630919,
       "persenKeuangan": 69.26,
@@ -46666,18 +49393,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_tata_ruang_546-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 34630919,
           "persen": 69.26,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -46717,16 +49444,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_78",
     "kodeSubKegiatan": "1.03.12.2.02.03",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -46743,27 +49470,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 0,
-      "progresRealisasi": 0,
-      "deviasiFisik": 0,
+      "progresRencana": 50,
+      "progresRealisasi": 54.97,
+      "deviasiFisik": 4.97,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 90000000,
-      "terminHistory": []
+      "totalPencairan": 49475000,
+      "persenKeuangan": 54.97,
+      "sisaAnggaran": 40525000,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_547-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 49475000,
+          "persen": 54.97,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -46828,8 +49569,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 89.4,
       "deviasiFisik": 4.4,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 8940000,
       "persenKeuangan": 89.4,
@@ -46838,18 +49583,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_tata_ruang_548-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 8940000,
           "persen": 89.4,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -46915,32 +49660,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 50,
-      "progresRealisasi": 54.29,
-      "deviasiFisik": 4.29,
+      "progresRencana": 65,
+      "progresRealisasi": 67.44,
+      "deviasiFisik": 2.44,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 13877229,
-      "persenKeuangan": 54.29,
-      "sisaAnggaran": 11682771,
+      "totalPencairan": 17237229,
+      "persenKeuangan": 67.44,
+      "sisaAnggaran": 8322771,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_549-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 13877229,
-          "persen": 54.29,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 17237229,
+          "persen": 67.44,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47006,32 +49755,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 35,
-      "progresRealisasi": 41.59,
-      "deviasiFisik": 6.59,
+      "progresRencana": 40,
+      "progresRealisasi": 49.77,
+      "deviasiFisik": 9.77,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 21293100,
-      "persenKeuangan": 41.59,
-      "sisaAnggaran": 29906900,
+      "totalPencairan": 22368800,
+      "persenKeuangan": 43.69,
+      "sisaAnggaran": 28831200,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_550-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 21293100,
-          "persen": 41.59,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 22368800,
+          "persen": 43.69,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47101,8 +49854,12 @@ export const REAL_PROJECTS_2026 = [
       "progresRealisasi": 49.2,
       "deviasiFisik": 4.2,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 4920000,
       "persenKeuangan": 49.2,
@@ -47111,18 +49868,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_tata_ruang_551-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 4920000,
           "persen": 49.2,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47188,27 +49945,41 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 70,
-      "progresRealisasi": 70,
-      "deviasiFisik": 0,
+      "progresRencana": 90,
+      "progresRealisasi": 99.73,
+      "deviasiFisik": 9.73,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 0,
-      "persenKeuangan": 0,
-      "sisaAnggaran": 99731000,
-      "terminHistory": []
+      "totalPencairan": 99731000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_tata_ruang_552-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-027/SPK/Kons.03/TARU/VII/2026",
+          "tanggalSP2D": "2026-07-10",
+          "jumlah": 99731000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
+        }
+      ]
     },
-    "spjStatus": "belum_masuk",
+    "spjStatus": "sudah_sp2d",
     "administrasiSPJ": {
-      "status": "belum_masuk",
-      "tanggalMasuk": "",
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-07-10",
       "tanggalKoreksi": "",
-      "tanggalSPM": "",
-      "nomorSPM": "",
-      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
-      "petugasVerifikator": ""
+      "tanggalSPM": "2026-11-15",
+      "nomorSPM": "900/SPM/027/SPK/Kons.03/TARU/VII/2026",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi SPJ Keuangan"
     },
     "logs": [
       {
@@ -47269,12 +50040,16 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 60,
+      "progresRencana": 65,
       "progresRealisasi": 69.49,
-      "deviasiFisik": 9.49,
+      "deviasiFisik": 4.49,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
       "totalPencairan": 20847875,
       "persenKeuangan": 69.49,
@@ -47283,18 +50058,18 @@ export const REAL_PROJECTS_2026 = [
         {
           "id": "TRM-prj_tata_ruang_553-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
           "jumlah": 20847875,
           "persen": 69.49,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47360,32 +50135,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 45,
-      "progresRealisasi": 49.12,
-      "deviasiFisik": 4.12,
+      "progresRencana": 55,
+      "progresRealisasi": 72.14,
+      "deviasiFisik": 17.14,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 101891473,
-      "persenKeuangan": 49.12,
-      "sisaAnggaran": 105538527,
+      "totalPencairan": 119781473,
+      "persenKeuangan": 57.75,
+      "sisaAnggaran": 87648527,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_554-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 101891473,
-          "persen": 49.12,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 119781473,
+          "persen": 57.75,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47451,32 +50230,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 40,
-      "progresRealisasi": 41.6,
-      "deviasiFisik": 1.6,
+      "progresRencana": 65,
+      "progresRealisasi": 70.9,
+      "deviasiFisik": 5.9,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 10400000,
-      "persenKeuangan": 41.6,
-      "sisaAnggaran": 14600000,
+      "totalPencairan": 16426000,
+      "persenKeuangan": 65.7,
+      "sisaAnggaran": 8574000,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_555-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 10400000,
-          "persen": 41.6,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 16426000,
+          "persen": 65.7,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47542,32 +50325,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 42.5,
-      "progresRealisasi": 48.42,
-      "deviasiFisik": 5.92,
+      "progresRencana": 58.5,
+      "progresRealisasi": 59.38,
+      "deviasiFisik": 0.88,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 91948300,
-      "persenKeuangan": 48.25,
-      "sisaAnggaran": 98601700,
+      "totalPencairan": 116303300,
+      "persenKeuangan": 61.04,
+      "sisaAnggaran": 74246700,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_556-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 91948300,
-          "persen": 48.25,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 116303300,
+          "persen": 61.04,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47633,32 +50420,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 40,
-      "progresRealisasi": 49.17,
-      "deviasiFisik": 9.17,
+      "progresRencana": 50,
+      "progresRealisasi": 51.57,
+      "deviasiFisik": 1.57,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 36880075,
-      "persenKeuangan": 49.17,
-      "sisaAnggaran": 38119925,
+      "totalPencairan": 38680075,
+      "persenKeuangan": 51.57,
+      "sisaAnggaran": 36319925,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_557-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 36880075,
-          "persen": 49.17,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 38680075,
+          "persen": 51.57,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47724,32 +50515,36 @@ export const REAL_PROJECTS_2026 = [
       "npwpRekanan": ""
     },
     "dataFisik": {
-      "progresRencana": 45,
-      "progresRealisasi": 47.66,
-      "deviasiFisik": 2.66,
+      "progresRencana": 67,
+      "progresRealisasi": 67.18,
+      "deviasiFisik": 0.18,
       "statusDeviasi": "Aman",
-      "mingguan": []
+      "mingguan": [],
+      "fotoDokumentasi": []
     },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
     "dataKeuangan": {
-      "totalPencairan": 55068225,
-      "persenKeuangan": 47.66,
-      "sisaAnggaran": 60481775,
+      "totalPencairan": 77623225,
+      "persenKeuangan": 67.18,
+      "sisaAnggaran": 37926775,
       "terminHistory": [
         {
           "id": "TRM-prj_tata_ruang_558-1",
           "terminKe": "Pencairan SP2D Termin",
-          "nomorSP2D": "SP2D-2026-OKT",
-          "tanggalSP2D": "2026-10-31",
-          "jumlah": 55068225,
-          "persen": 47.66,
-          "keterangan": "Pencairan SP2D Keuangan s/d Oktober 2026"
+          "nomorSP2D": "SP2D-2026-NOV",
+          "tanggalSP2D": "2026-11-20",
+          "jumlah": 77623225,
+          "persen": 67.18,
+          "keterangan": "Pencairan SP2D Keuangan s/d November 2026"
         }
       ]
     },
     "spjStatus": "sudah_masuk",
     "administrasiSPJ": {
       "status": "sudah_masuk",
-      "tanggalMasuk": "2026-10-15",
+      "tanggalMasuk": "2026-11-10",
       "tanggalKoreksi": "",
       "tanggalSPM": "",
       "nomorSPM": "",
@@ -47764,6 +50559,2544 @@ export const REAL_PROJECTS_2026 = [
         "userRole": "Koordinator Bidang",
         "action": "Input SP2D & Progres Fisik",
         "keterangan": "Realisasi SP2D tercatat Rp 55.068.225 dan fisik mencapai 47.66% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_sda_bk_123",
+    "tahunAnggaran": 2026,
+    "bidangId": "sda_bk",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Pembangunan Perkuatan Tebing Sungai Kalilanang Desa Mranak Kec. Wonosalam KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-SDA-0123",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 500000000,
+    "hps": 500000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "18 Agustus 2026",
+      "targetSelesaiTender": "31 Oktober 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "18 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.3/011/SP/TENDER/SDABK/VIII/2026",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
+      "nilaiKontrak": 488270000,
+      "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 488270000,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_1-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-1",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 488270000,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/1",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_123",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 146.481.000 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_sda_bk_124",
+    "tahunAnggaran": 2026,
+    "bidangId": "sda_bk",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Ronggo Desa Kendodong Kec. Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-SDA-0124",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1400000000,
+    "hps": 1400000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "18 Agustus 2026",
+      "targetSelesaiTender": "31 Oktober 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "18 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.3/010/SP/TENDER/SDABK/VIII/2026",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
+      "nilaiKontrak": 1367856000,
+      "namaPenyedia": "CV. PULUNG MANUNGGAL",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 410356800,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 957499200,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_2-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-2",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 410356800,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_124",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 410.356.800 dan fisik mencapai 80% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_sda_bk_125",
+    "tahunAnggaran": 2026,
+    "bidangId": "sda_bk",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Perkuatan Tebing Sungai Tangking - Solondoko Desa Tambakbulusan Kec. Karangtengah KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-SDA-0125",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Karangtengah",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Karangtengah)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "18 Agustus 2026",
+      "targetSelesaiTender": "31 Oktober 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "18 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.3/012/SP/TENDER/SDABK/VIII/2026",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-10-31",
+      "nilaiKontrak": 976848000,
+      "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 293054400,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 683793600,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_3-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-3",
+          "tanggalSP2D": "2026-08-18",
+          "jumlah": 293054400,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-18",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_sda_bk_125",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator SDA & BK",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 293.054.400 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_348",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Pelebaran Jalan geneng - ngaluran KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0348",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1500000000,
+    "hps": 1500000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "20 Agustus 2026",
+      "targetSelesaiTender": "17 November 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "20 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.72/VIII/2026",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
+      "nilaiKontrak": 1474747199,
+      "namaPenyedia": "CV.BRYAN JAYA PERKASA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 1474747199,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_4-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-4",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 1474747199,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/4",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_348",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 442.424.160 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_349",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Pembangunan Talud/Penahan Tebing/Pembentuk Badan Jalan jalan karanggawang- nggaji KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0349",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 2000000000,
+    "hps": 2000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 September 2026",
+      "targetSelesaiTender": "05 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "7 September 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.098/IX/2026",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
+      "nilaiKontrak": 197022502500,
+      "namaPenyedia": "CV. GARUDA KARYA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 591067508,
+      "persenKeuangan": 0.3,
+      "sisaAnggaran": 196431434992,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_5-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-5",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 591067508,
+          "persen": 0.3,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_349",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 591.067.508 dan fisik mencapai 55.68% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_350",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Pembangunan Talud/Penahan Tebing/Pembentuk Badan Jalan MIJEN - WEDUNG KABUPATEN DEMAK (RUAS NO. 13) KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0350",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 450000000,
+    "hps": 450000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "1 Oktober 2026",
+      "targetSelesaiTender": "08 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "1 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/06",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-08",
+      "nilaiKontrak": 441501918,
+      "namaPenyedia": "CV. SUMBER JAYA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 132450575,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 309051343,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_6-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-6",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 132450575,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_350",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 20% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_351",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Pembangunan Talud/Penahan Tebing/Pembentuk Badan Jalan Ruas Kalikondang menuju Desa Sumberejo Kec. Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0351",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 September 2026",
+      "targetSelesaiTender": "05 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "7 September 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M1NKRMJSBFDFE6WF48NHRZAS,",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
+      "nilaiKontrak": 977195440,
+      "namaPenyedia": "CV. REZA JATI TUNGGAL",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 293158632,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 684036808,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_7-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-7",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 293158632,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_351",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 293.158.632 dan fisik mencapai 52.4% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_352",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Brumbung - Menur Kecamatan Mranggen KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0352",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Mranggen",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Mranggen)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "21 Agustus 2026",
+      "targetSelesaiTender": "18 November 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "21 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7.2/BANGUB.SP.BM.076/VIII/2026",
+      "tanggalKontrak": "2026-08-21",
+      "tanggalMulai": "2026-08-21",
+      "tanggalSelesai": "2026-11-18",
+      "nilaiKontrak": 984394437,
+      "namaPenyedia": "CV. MAHESA KONSTRUKSI",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 70,
+      "progresRealisasi": 70,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 984394437,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_8-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-8",
+          "tanggalSP2D": "2026-08-21",
+          "jumlah": 984394437,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-21",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/8",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_352",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.318.331 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_353",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Desa Karangrejo menuju Wonosalam kec. Wonosalam KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0353",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 September 2026",
+      "targetSelesaiTender": "05 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "7 September 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.103/IX/2026",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
+      "nilaiKontrak": 981104275,
+      "namaPenyedia": "CV. CAHAYA SEMBILAN PURNAMA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 90,
+      "progresRealisasi": 90,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 294331283,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 686772992,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_9-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-9",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 294331283,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_353",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_354",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Desa Karangsari menuju Jalan Desa Wonoagung Kec. Karangtengah KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0354",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Karangtengah",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Karangtengah)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "8 Oktober 2026",
+      "targetSelesaiTender": "10 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "8 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M4A5NAHA5XG6H3N48VFBXVKA",
+      "tanggalKontrak": "2026-10-08",
+      "tanggalMulai": "2026-10-08",
+      "tanggalSelesai": "2026-12-10",
+      "nilaiKontrak": 984248552,
+      "namaPenyedia": "CV. KIAN AGENG REZEKI",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 295274565,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688973987,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_10-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-10",
+          "tanggalSP2D": "2026-10-08",
+          "jumlah": 295274565,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_354",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 60% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_355",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Desa Katonsari Menuju Desa Donorojo Kec. Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0355",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "8 Oktober 2026",
+      "targetSelesaiTender": "10 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "8 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/11",
+      "tanggalKontrak": "2026-10-08",
+      "tanggalMulai": "2026-10-08",
+      "tanggalSelesai": "2026-12-10",
+      "nilaiKontrak": 984972001,
+      "namaPenyedia": "CV. BINTORO KONSTRUKSI",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 295491600,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 689480401,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_11-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-11",
+          "tanggalSP2D": "2026-10-08",
+          "jumlah": 295491600,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-08",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_355",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 35% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_356",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Desa Rejosari - Desa Tlogorejo Kec Karangawen KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0356",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 500000000,
+    "hps": 500000000,
+    "kecamatan": "Karangawen",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Karangawen)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "1 Oktober 2026",
+      "targetSelesaiTender": "9 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "1 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/12",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-09",
+      "nilaiKontrak": 490510253,
+      "namaPenyedia": "CV. MITRA JAYA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 85,
+      "progresRealisasi": 85,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 147153076,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 343357177,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_12-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-12",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 147153076,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_356",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 40% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_357",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan DESA TEMPURAN KE DESA BANGO KEC. DEMAK KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0357",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "20 Agustus 2026",
+      "targetSelesaiTender": "17 November 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "20 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M0A1MW6ZSB74YWKTWVKA9AK4",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
+      "nilaiKontrak": 945671613,
+      "namaPenyedia": "CV. GENERASI PUTRA JATAYU",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 970227002,
+      "persenKeuangan": 102.6,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_13-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-13",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 970227002,
+          "persen": 102.6,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/13",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_357",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 291.068.101 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_358",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Jalan Gajah - Dempet KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0358",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 2000000000,
+    "hps": 2000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "20 Agustus 2026",
+      "targetSelesaiTender": "17 November 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "20 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.70/VIII/2026",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
+      "nilaiKontrak": 1967947264,
+      "namaPenyedia": "CV. GRAHA SENTOSA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 1967947264,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_14-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-14",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 1967947264,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/14",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_358",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 590.384.179 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_359",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan jalan tlogorejo - kendaldoyong KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0359",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "28 Agustus 2026",
+      "targetSelesaiTender": "25 November 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "28 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.093/VIII/2026",
+      "tanggalKontrak": "2026-08-28",
+      "tanggalMulai": "2026-08-28",
+      "tanggalSelesai": "2026-11-25",
+      "nilaiKontrak": 983064898,
+      "namaPenyedia": "CV. KAWAN KITA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 983064898,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_15-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-15",
+          "tanggalSP2D": "2026-08-28",
+          "jumlah": 983064898,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-28",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/15",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_359",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 294.919.469 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_360",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan KALIKONDANG - SUMBEREJO (RUAS 218) KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0360",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 800000000,
+    "hps": 800000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "1 Oktober 2026",
+      "targetSelesaiTender": "10 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "1 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M3R2EN296GBEQ1AZM1SCYKCR",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-10",
+      "nilaiKontrak": 785798015,
+      "namaPenyedia": "CV. DWI KARYA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 235739405,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 550058610,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_16-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-16",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 235739405,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_360",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 235.739.405 dan fisik mencapai 40% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_361",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Karangrowo- Kalianyar Kecamatan Wonosalam KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0361",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "5 Oktober 2026",
+      "targetSelesaiTender": "8 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "5 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/17",
+      "tanggalKontrak": "2026-10-05",
+      "tanggalMulai": "2026-10-05",
+      "tanggalSelesai": "2026-12-08",
+      "nilaiKontrak": 983503178,
+      "namaPenyedia": "CV. SUKA MULIA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 295050953,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688452225,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_17-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-17",
+          "tanggalSP2D": "2026-10-05",
+          "jumlah": 295050953,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-05",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_361",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 10% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_362",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Mangunjiwan Kecamatan Kota KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0362",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 September 2026",
+      "targetSelesaiTender": "05 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "7 September 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M1NM4XB142X3Z1DAW5822M5Y",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
+      "nilaiKontrak": 985120772,
+      "namaPenyedia": "CV. MAHESA KONSTRUKSI",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 985120772,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_18-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-18",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 985120772,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/18",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_362",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.536.232 dan fisik mencapai 50% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_363",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Menuju TPA BERAHAN KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0363",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 September 2026",
+      "targetSelesaiTender": "05 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "7 September 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M1GNBZK0FJJD94YTXEGB4JSR",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
+      "nilaiKontrak": 983392334,
+      "namaPenyedia": "CV. KAWAN KITA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 85,
+      "progresRealisasi": 85,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 295017700,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688374634,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_19-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-19",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 295017700,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_363",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 90% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_364",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan peningkatan jalan Desa kakung - Tlogorejo ruas Sumberejo Kecamatan Mranggen Kabupaten Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0364",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Mranggen",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Mranggen)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "31 Agustus 2026",
+      "targetSelesaiTender": "28 November 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "31 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.091/VIII/2026",
+      "tanggalKontrak": "2026-08-31",
+      "tanggalMulai": "2026-08-31",
+      "tanggalSelesai": "2026-11-28",
+      "nilaiKontrak": 983050634,
+      "namaPenyedia": "CV. KARYA ADI MAS",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 294915190,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688135444,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_20-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-20",
+          "tanggalSP2D": "2026-08-31",
+          "jumlah": 294915190,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-08-31",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_364",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 294.915.190 dan fisik mencapai 100% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_365",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Peningkatan jalan Gemulak Bedono Kecamatan Sayung Kabupaten Demak KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0365",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Sayung",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Sayung)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "7 September 2026",
+      "targetSelesaiTender": "05 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "7 September 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.099/IX/2026",
+      "tanggalKontrak": "2026-09-07",
+      "tanggalMulai": "2026-09-07",
+      "tanggalSelesai": "2026-12-05",
+      "nilaiKontrak": 981015872,
+      "namaPenyedia": "CV. MAHKOTA JAYA GROUP",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 85,
+      "progresRealisasi": 85,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 294304762,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 686711110,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_21-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-21",
+          "tanggalSP2D": "2026-09-07",
+          "jumlah": 294304762,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-07",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_365",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 294.304.762 dan fisik mencapai 40% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_366",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Rehabilitasi Jl. Ruas Desa Bakalrejo - Bumiharjo Kec. Guntur KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0366",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Guntur",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Guntur)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "21 September 2026",
+      "targetSelesaiTender": "09 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "21 September 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/22",
+      "tanggalKontrak": "2026-09-21",
+      "tanggalMulai": "2026-09-21",
+      "tanggalSelesai": "2026-12-09",
+      "nilaiKontrak": 980937999,
+      "namaPenyedia": "CV. MAHKOTA JAYA GROUP",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 294281400,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 686656599,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_22-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-22",
+          "tanggalSP2D": "2026-09-21",
+          "jumlah": 294281400,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-09-21",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_366",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 0 dan fisik mencapai 30% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_367",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Rehabilitasi Jl. Ruas Desa Bakalrejo - Temuroso Kec. Guntur KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0367",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1500000000,
+    "hps": 1500000000,
+    "kecamatan": "Guntur",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Guntur)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": false,
+    "tahapPraKontrak": {
+      "status": "rup",
+      "targetMulaiTender": "",
+      "targetSelesaiTender": "",
+      "catatanPraKontrak": "Persiapan"
+    },
+    "statusTahapPraKontrak": "rup",
+    "dataPraKontrak": {
+      "tahapSaatIni": "rup",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "2026-08-01"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/23",
+      "tanggalKontrak": "2026-08-18",
+      "tanggalMulai": "2026-08-18",
+      "tanggalSelesai": "2026-11-30",
+      "nilaiKontrak": 0,
+      "namaPenyedia": "-",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 0,
+      "progresRealisasi": 0,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 0,
+      "persenKeuangan": 0,
+      "sisaAnggaran": 1500000000,
+      "terminHistory": []
+    },
+    "spjStatus": "belum_masuk",
+    "administrasiSPJ": {
+      "status": "belum_masuk",
+      "tanggalMasuk": "",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Penyedia belum menyerahkan berkas SPJ",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_367",
+        "timestamp": "2026-10-31 15:00:00",
+        "userName": "Admin SIMON SATU PUTARU",
+        "userRole": "Sistem Monitoring",
+        "action": "Pendaftaran Paket APBD 2026",
+        "keterangan": "Paket pekerjaan terdaftar pada DPA 2026 dengan pagu Rp 1.500.000.000 (Murni)."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_368",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan SAMBUNG - MLEKANG KEC. GAJAH KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0368",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 700000000,
+    "hps": 700000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "1 Oktober 2026",
+      "targetSelesaiTender": "09 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "1 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M3QZH21YT3M36RRR590XMFCS",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-09",
+      "nilaiKontrak": 687705676,
+      "namaPenyedia": "CV. SUKA MULIA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 206311703,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 481393973,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_24-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-24",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 206311703,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_368",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 206.311.703 dan fisik mencapai 93.25% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_369",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rehabilitasi Jalan Telogorejo- Bumiharjo Kecamatan Guntur KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0369",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Guntur",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Guntur)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "1 Oktober 2026",
+      "targetSelesaiTender": "09 Desember 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "1 Oktober 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "EP-01M3R4T5RBZEZP9XN9V0JJ0GCV",
+      "tanggalKontrak": "2026-10-01",
+      "tanggalMulai": "2026-10-01",
+      "tanggalSelesai": "2026-12-09",
+      "nilaiKontrak": 983796544,
+      "namaPenyedia": "CV. SUKA MULIA",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 80,
+      "progresRealisasi": 80,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 295138963,
+      "persenKeuangan": 30,
+      "sisaAnggaran": 688657581,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_25-1",
+          "terminKe": "Pencairan SP2D Termin",
+          "nomorSP2D": "SP2D-BANGUB-2026-25",
+          "tanggalSP2D": "2026-10-01",
+          "jumlah": 295138963,
+          "persen": 30,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_masuk",
+    "administrasiSPJ": {
+      "status": "sudah_masuk",
+      "tanggalMasuk": "2026-10-01",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "",
+      "nomorSPM": "",
+      "catatanVerifikator": "Berkas SPJ termin masuk, proses verifikasi SP2D",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_369",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.138.963 dan fisik mencapai 60% per laporan bulan Oktober 2026."
+      }
+    ]
+  },
+  {
+    "id": "prj_bina_marga_371",
+    "tahunAnggaran": 2026,
+    "bidangId": "bina_marga",
+    "subBagian": "Bantuan Keuangan Provinsi Jawa Tengah (BANGUB)",
+    "namaPaket": "Rekontruksi Jalan DESA KUNIR KE DESA BRAKAS KECAMATAN DEMPET KAB. DEMAK (BANGUB)",
+    "kategoriPekerjaan": "Fisik",
+    "jenisAnggaran": "Murni",
+    "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "kodeRup": "RUP-2026-BIN-0371",
+    "tipePengadaan": "Tender",
+    "paguAnggaran": 1000000000,
+    "hps": 1000000000,
+    "kecamatan": "Demak",
+    "desa": "",
+    "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
+    "latitude": -6.8944,
+    "longitude": 110.6385,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
+    "subKegiatanId": "sub_bangub_1",
+    "kodeSubKegiatan": "1.03.10.2.99",
+    "isKontrak": true,
+    "tahapPraKontrak": {
+      "status": "kontrak",
+      "targetMulaiTender": "20 Agustus 2026",
+      "targetSelesaiTender": "17 November 2026",
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
+    },
+    "statusTahapPraKontrak": "kontrak",
+    "dataPraKontrak": {
+      "tahapSaatIni": "kontrak",
+      "jadwalPraKontrak": {
+        "targetMulaiPekerjaan": "20 Agustus 2026"
+      }
+    },
+    "dataKontrak": {
+      "nomorKontrak": "000.3.7/BANGUB.SP.BM.71/VIII/2026",
+      "tanggalKontrak": "2026-08-20",
+      "tanggalMulai": "2026-08-20",
+      "tanggalSelesai": "2026-11-17",
+      "nilaiKontrak": 984495176,
+      "namaPenyedia": "CV. HIDAYAH BARU",
+      "bankRekanan": "Bank Jateng",
+      "rekeningRekanan": "",
+      "npwpRekanan": ""
+    },
+    "dataFisik": {
+      "progresRencana": 100,
+      "progresRealisasi": 100,
+      "deviasiFisik": 0,
+      "statusDeviasi": "Aman",
+      "mingguan": [],
+      "fotoDokumentasi": []
+    },
+    "fotoDokumentasi": [],
+    "dokumentasi": null,
+    "fotoLapangan": null,
+    "dataKeuangan": {
+      "totalPencairan": 984495176,
+      "persenKeuangan": 100,
+      "sisaAnggaran": 0,
+      "terminHistory": [
+        {
+          "id": "TRM-prj_bangub_26-1",
+          "terminKe": "Pelunasan SP2D 100%",
+          "nomorSP2D": "SP2D-BANGUB-2026-26",
+          "tanggalSP2D": "2026-08-20",
+          "jumlah": 984495176,
+          "persen": 100,
+          "keterangan": "Pencairan SP2D Bantuan Provinsi s/d November 2026"
+        }
+      ]
+    },
+    "spjStatus": "sudah_sp2d",
+    "administrasiSPJ": {
+      "status": "sudah_sp2d",
+      "tanggalMasuk": "2026-08-20",
+      "tanggalKoreksi": "",
+      "tanggalSPM": "2026-10-25",
+      "nomorSPM": "900/SPM/BANGUB/26",
+      "catatanVerifikator": "Berkas SPJ lengkap & SP2D lunas 100%",
+      "petugasVerifikator": "Tim Verifikasi Bantuan Provinsi"
+    },
+    "logs": [
+      {
+        "id": "log_init_prj_bina_marga_371",
+        "timestamp": "2026-10-31 16:30:00",
+        "userName": "Koordinator Bina Marga",
+        "userRole": "Koordinator Bidang",
+        "action": "Input SP2D & Progres Fisik",
+        "keterangan": "Realisasi SP2D tercatat Rp 295.348.553 dan fisik mencapai 100% per laporan bulan Oktober 2026."
       }
     ]
   }

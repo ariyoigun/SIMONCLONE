@@ -963,7 +963,6 @@ export function matchProjectToSubKegiatan(project, subKegiatanList = INITIAL_SIP
   return null;
 }
 
-
 /**
  * Membangun struktur pohon hierarki Program -> Kegiatan -> Sub Kegiatan -> Pekerjaan
  */

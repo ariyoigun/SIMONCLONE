@@ -378,6 +378,7 @@ CREATE TABLE IF NOT EXISTS \`projects\` (
   \`deviasi_fisik\` decimal(6,2) NOT NULL DEFAULT 0.00,
   \`status_deviasi\` varchar(50) NOT NULL DEFAULT 'Aman',
   \`kurva_s_json\` longtext DEFAULT NULL,
+  \`foto_dokumentasi_json\` longtext DEFAULT NULL,
   
   -- Modul Progres Keuangan
   \`total_pencairan\` decimal(18,2) NOT NULL DEFAULT 0.00,
@@ -420,7 +421,7 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   \`tipe_pengadaan\`, \`pagu_anggaran\`, \`hps\`, \`nilai_kontrak\`, \`nomor_kontrak\`, \`tanggal_kontrak\`, \`tanggal_mulai\`, 
   \`tanggal_selesai\`, \`pelaksana_nama\`, \`pelaksana_bank\`, \`pelaksana_rekening\`, \`pelaksana_npwp\`, \`kecamatan\`, \`desa\`, \`lokasi_lengkap\`, 
   \`latitude\`, \`longitude\`, \`tags_json\`, \`is_public_highlight\`, \`status_tahap_pra_kontrak\`, \`pra_kontrak_json\`,
-  \`progres_rencana\`, \`progres_realisasi\`, \`deviasi_fisik\`, \`status_deviasi\`, \`kurva_s_json\`,
+  \`progres_rencana\`, \`progres_realisasi\`, \`deviasi_fisik\`, \`status_deviasi\`, \`kurva_s_json\`, \`foto_dokumentasi_json\`,
   \`total_pencairan\`, \`persen_keuangan\`, \`sisa_anggaran\`, \`termin_json\`, \`spj_status\`, \`spj_checklist_json\`, \`logs_json\`
 ) VALUES
 `;
@@ -469,6 +470,7 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   ${sqlEscape(f.deviasiFisik || 0)},
   ${sqlEscape(f.statusDeviasi || 'Aman')},
   ${sqlEscape(f.mingguan || [])},
+  ${sqlEscape(f.fotoDokumentasi || p.fotoDokumentasi || [])},
   ${sqlEscape(q.totalPencairan || 0)},
   ${sqlEscape(q.persenKeuangan || 0)},
   ${sqlEscape(q.sisaAnggaran || 0)},
@@ -476,7 +478,7 @@ for (let i = 0; i < REAL_PROJECTS_2026.length; i += batchSize) {
   ${sqlEscape(p.administrasiSPJ?.status || p.spjStatus || "belum_masuk")},
   ${sqlEscape(p.administrasiSPJ || p.dataSpj || null)},
   ${sqlEscape(p.logs || [])}
-)`;
+)`.replace(/\r?\n/g, '\n');
   }).join(',\n');
 
   sql += rowsSql + `
@@ -486,6 +488,7 @@ ON DUPLICATE KEY UPDATE
   \`nilai_kontrak\` = VALUES(\`nilai_kontrak\`),
   \`progres_rencana\` = VALUES(\`progres_rencana\`),
   \`progres_realisasi\` = VALUES(\`progres_realisasi\`),
+  \`foto_dokumentasi_json\` = VALUES(\`foto_dokumentasi_json\`),
   \`total_pencairan\` = VALUES(\`total_pencairan\`);\n\n`;
 }
 
