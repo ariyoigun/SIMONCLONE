@@ -1010,12 +1010,10 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
           <div
             className="modal-body"
             style={{
-              padding: '20px 24px 350px 24px',
+              padding: '20px 24px 80px 24px',
               overflowY: 'auto',
               flex: 1,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 18
+              display: 'block'
             }}
           >
             {/* =========================================================================
@@ -1028,7 +1026,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                 background: '#ffffff',
                 boxShadow: '0 2px 4px rgba(2, 132, 199, 0.04)',
                 overflow: 'hidden',
-                transition: 'border-color 0.2s'
+                transition: 'border-color 0.2s',
+                marginBottom: 16
               }}
             >
               {/* Accordion Header */}
@@ -1523,7 +1522,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                 border: '1.5px solid #fde68a',
                 background: '#ffffff',
                 boxShadow: '0 2px 4px rgba(217, 119, 6, 0.04)',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                marginBottom: 16
               }}
             >
               {/* Accordion Header */}
@@ -1772,7 +1772,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                 border: '1.5px solid #a7f3d0',
                 background: '#ffffff',
                 boxShadow: '0 2px 4px rgba(5, 150, 105, 0.04)',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                marginBottom: 16
               }}
             >
               {/* Accordion Header */}
@@ -2098,7 +2099,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                 border: '1.5px solid #c7d2fe',
                 background: '#ffffff',
                 boxShadow: '0 2px 4px rgba(99, 102, 241, 0.04)',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                marginBottom: 16
               }}
             >
               {/* Accordion Header */}
@@ -2468,7 +2470,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                 border: '1.5px solid #a5f3fc',
                 background: '#ffffff',
                 boxShadow: '0 2px 4px rgba(8, 145, 178, 0.04)',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                marginBottom: 16
               }}
             >
               {/* Accordion Header */}
@@ -2807,7 +2810,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                 border: '1.5px solid #fecdd3',
                 background: '#ffffff',
                 boxShadow: '0 2px 4px rgba(225, 29, 72, 0.04)',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                marginBottom: 24
               }}
             >
               {/* Accordion Header */}
@@ -3050,9 +3054,6 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
                 </div>
               )}
             </div>
-
-            {/* Spacer ekstra di bawah agar scroll leluasa sampai ke isian terbawah */}
-            <div style={{ height: 320, minHeight: 320, flexShrink: 0 }} />
           </div>
 
           {/* Footer Modal Action Buttons */}
