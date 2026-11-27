@@ -36,6 +36,8 @@ const StageProgressDiagram = ({
   const [selectedBidang, setSelectedBidang] = useState('ALL');
   const [selectedKecamatan, setSelectedKecamatan] = useState('ALL');
   const [selectedAnggaran, setSelectedAnggaran] = useState('ALL');
+  const [selectedStatus, setSelectedStatus] = useState('ALL'); // 'ALL' | 'Aman' | 'Terlambat' | 'Kritis' | 'Selesai' | 'Pra-Kontrak'
+  const [sortBy, setSortBy] = useState('default'); // 'default' (Sesuai Excel) | 'pagu_desc' | 'pagu_asc' | 'fisik_desc' | 'fisik_asc' | 'kontrak_desc'
 
   // State dropdown accordion untuk daftar pekerjaan per bidang
   const [expandedBidangs, setExpandedBidangs] = useState({});
@@ -110,6 +112,23 @@ const StageProgressDiagram = ({
     // Jenis Anggaran filter
     if (selectedAnggaran !== 'ALL' && p.jenisAnggaran !== selectedAnggaran) {
       return false;
+    }
+
+    // Status Pekerjaan filter (Aman, Terlambat, Kritis, dll.)
+    if (selectedStatus !== 'ALL') {
+      const devStatus = p.dataFisik?.statusDeviasi || 'Aman';
+      const realFisik = parseFloat(p.dataFisik?.progresRealisasi) || 0;
+      if (selectedStatus === 'Aman') {
+        if (!p.isKontrak || devStatus !== 'Aman') return false;
+      } else if (selectedStatus === 'Terlambat') {
+        if (devStatus !== 'Terlambat') return false;
+      } else if (selectedStatus === 'Kritis') {
+        if (devStatus !== 'Kritis') return false;
+      } else if (selectedStatus === 'Selesai') {
+        if (realFisik < 100) return false;
+      } else if (selectedStatus === 'Pra-Kontrak') {
+        if (p.isKontrak) return false;
+      }
     }
 
     // Search query
@@ -508,7 +527,50 @@ const StageProgressDiagram = ({
                 ))}
               </select>
 
-              {(selectedStage || selectedBidang !== 'ALL' || selectedKecamatan !== 'ALL' || selectedAnggaran !== 'ALL' || searchQuery) && (
+              {/* Filter Status Pekerjaan */}
+              <select
+                className="select-filter"
+                value={selectedStatus}
+                onChange={(e) => setSelectedStatus(e.target.value)}
+                style={{
+                  padding: '6px 10px',
+                  fontSize: 12,
+                  background: selectedStatus !== 'ALL' ? '#f0fdf4' : '#fff',
+                  borderColor: selectedStatus !== 'ALL' ? '#16a34a' : '#cbd5e1'
+                }}
+                title="Filter berdasarkan status pekerjaan (Aman, Terlambat, Kritis, Selesai, Pra-Kontrak)"
+              >
+                <option value="ALL">Semua Status Pekerjaan</option>
+                <option value="Aman">🟢 Status: Aman Terkendali</option>
+                <option value="Terlambat">🟡 Status: Terlambat</option>
+                <option value="Kritis">🔴 Status: Kritis (SCM)</option>
+                <option value="Selesai">🔵 Status: Selesai 100%</option>
+                <option value="Pra-Kontrak">⚪ Status: Pra-Kontrak / Persiapan</option>
+              </select>
+
+              {/* Sort Order Selector (Default: Sesuai File Excel) */}
+              <select
+                className="select-filter"
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                style={{
+                  padding: '6px 10px',
+                  fontSize: 12,
+                  background: sortBy !== 'default' ? '#eff6ff' : '#fff',
+                  borderColor: sortBy !== 'default' ? '#2563eb' : '#cbd5e1',
+                  fontWeight: sortBy !== 'default' ? 700 : 500
+                }}
+                title="Urutan daftar pekerjaan per bidang (Default: Urutan asli file Excel)"
+              >
+                <option value="default">📋 Urutan: Sesuai File Excel (Default)</option>
+                <option value="pagu_desc">💰 Urutan: Pagu Terbesar</option>
+                <option value="pagu_asc">📉 Urutan: Pagu Terkecil</option>
+                <option value="kontrak_desc">📑 Urutan: Nilai Kontrak Terbesar</option>
+                <option value="fisik_desc">📈 Urutan: Realisasi Fisik Tertinggi</option>
+                <option value="fisik_asc">📊 Urutan: Realisasi Fisik Terendah</option>
+              </select>
+
+              {(selectedStage || selectedBidang !== 'ALL' || selectedKecamatan !== 'ALL' || selectedAnggaran !== 'ALL' || selectedStatus !== 'ALL' || sortBy !== 'default' || searchQuery) && (
                 <button
                   className="btn btn-outline btn-sm"
                   onClick={() => {
@@ -516,6 +578,8 @@ const StageProgressDiagram = ({
                     setSelectedBidang('ALL');
                     setSelectedKecamatan('ALL');
                     setSelectedAnggaran('ALL');
+                    setSelectedStatus('ALL');
+                    setSortBy('default');
                     setSearchQuery('');
                   }}
                   title="Reset semua filter"
@@ -530,7 +594,21 @@ const StageProgressDiagram = ({
           {/* Dropdown List Pekerjaan Terpisah Per Bidang */}
           {(() => {
             const groupedBidangs = BIDANG_LIST.map((bidang) => {
-              const bProjects = filteredProjects.filter((p) => p.bidangId === bidang.id);
+              let bProjects = filteredProjects.filter((p) => p.bidangId === bidang.id);
+
+              // Sort pekerjaan per bidang: Default adalah urutan file Excel asli
+              if (sortBy === 'pagu_desc') {
+                bProjects = [...bProjects].sort((a, b) => (parseFloat(b.paguAnggaran) || 0) - (parseFloat(a.paguAnggaran) || 0));
+              } else if (sortBy === 'pagu_asc') {
+                bProjects = [...bProjects].sort((a, b) => (parseFloat(a.paguAnggaran) || 0) - (parseFloat(b.paguAnggaran) || 0));
+              } else if (sortBy === 'kontrak_desc') {
+                bProjects = [...bProjects].sort((a, b) => (parseFloat(b.dataKontrak?.nilaiKontrak) || 0) - (parseFloat(a.dataKontrak?.nilaiKontrak) || 0));
+              } else if (sortBy === 'fisik_desc') {
+                bProjects = [...bProjects].sort((a, b) => (parseFloat(b.dataFisik?.progresRealisasi) || 0) - (parseFloat(a.dataFisik?.progresRealisasi) || 0));
+              } else if (sortBy === 'fisik_asc') {
+                bProjects = [...bProjects].sort((a, b) => (parseFloat(a.dataFisik?.progresRealisasi) || 0) - (parseFloat(b.dataFisik?.progresRealisasi) || 0));
+              }
+
               const bTerkontrak = bProjects.filter((p) => p.isKontrak);
               const bTotalPagu = bProjects.reduce((sum, p) => sum + (parseFloat(p.paguAnggaran) || 0), 0);
               const bTotalKontrak = bTerkontrak.reduce((sum, p) => sum + (parseFloat(p.dataKontrak?.nilaiKontrak) || 0), 0);
