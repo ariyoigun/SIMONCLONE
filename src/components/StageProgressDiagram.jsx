@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LIFECYCLE_STAGES, getProjectLifecycleStage, BIDANG_LIST, KECAMATAN_DEMAK, JENIS_ANGGARAN } from '../data/constants';
+import { LIFECYCLE_STAGES, getProjectLifecycleStage, getProjectStageOrder, BIDANG_LIST, KECAMATAN_DEMAK, JENIS_ANGGARAN } from '../data/constants';
 import {
   Layers,
   ArrowRight,
@@ -74,13 +74,28 @@ const StageProgressDiagram = ({
   const totalProjectsCount = projects.length;
   const latestUpdateFormatted = getLatestProjectUpdateFormatted(projects);
 
-  // Calculate statistics per stage
+  const activeProjectsList = projects.filter((p) => getProjectLifecycleStage(p) !== 'batal');
+  const batalProjectsList = projects.filter((p) => getProjectLifecycleStage(p) === 'batal');
+  const totalActiveCount = activeProjectsList.length;
+
+  // Calculate statistics per stage (Kumulatif: jika sudah melewati suatu tahap, maka dihitung satu)
   const stageStats = LIFECYCLE_STAGES.map((stage) => {
-    const stageProjects = projects.filter((p) => getProjectLifecycleStage(p) === stage.id);
+    let stageProjects = [];
+    if (stage.id === 'batal') {
+      stageProjects = batalProjectsList;
+    } else {
+      // Paket aktif yang telah mencapai atau melewati tahap ini
+      stageProjects = projects.filter(
+        (p) => getProjectLifecycleStage(p) !== 'batal' && getProjectStageOrder(p) >= stage.order
+      );
+    }
+
     const count = stageProjects.length;
     const paguTotal = stageProjects.reduce((sum, p) => sum + (parseFloat(p.paguAnggaran) || 0), 0);
     const kontrakTotal = stageProjects.reduce((sum, p) => sum + (parseFloat(p.dataKontrak?.nilaiKontrak) || 0), 0);
-    const persen = totalProjectsCount > 0 ? ((count / totalProjectsCount) * 100).toFixed(1) : 0;
+    const persen = stage.id === 'batal'
+      ? (totalProjectsCount > 0 ? ((count / totalProjectsCount) * 100).toFixed(1) : '0.0')
+      : (totalActiveCount > 0 ? ((count / totalActiveCount) * 100).toFixed(1) : '0.0');
 
     return {
       ...stage,
@@ -92,11 +107,59 @@ const StageProgressDiagram = ({
     };
   });
 
+  // Segmen distribusi non-tumpang tindih untuk diagram batang atas
+  const selesaiCount = projects.filter((p) => getProjectLifecycleStage(p) === 'selesai').length;
+  const fisikCount = projects.filter((p) => getProjectLifecycleStage(p) === 'fisik').length;
+  const praKontrakCount = projects.filter((p) => ['rup', 'perencanaan', 'pbj', 'sppbj'].includes(getProjectLifecycleStage(p))).length;
+  const batalCount = batalProjectsList.length;
+
+  const distributionSegments = [
+    {
+      id: 'selesai',
+      nama: 'Selesai 100%',
+      singkatan: 'Selesai 100%',
+      warna: '#16a34a',
+      count: selesaiCount,
+      persen: totalProjectsCount > 0 ? ((selesaiCount / totalProjectsCount) * 100).toFixed(1) : 0
+    },
+    {
+      id: 'fisik',
+      nama: 'Pelaksanaan Fisik',
+      singkatan: 'Fisik Berjalan',
+      warna: '#4f46e5',
+      count: fisikCount,
+      persen: totalProjectsCount > 0 ? ((fisikCount / totalProjectsCount) * 100).toFixed(1) : 0
+    },
+    {
+      id: 'sppbj',
+      nama: 'Pra-Kontrak (Tahap 1-4)',
+      singkatan: 'Pra-Kontrak',
+      warna: '#ea580c',
+      count: praKontrakCount,
+      persen: totalProjectsCount > 0 ? ((praKontrakCount / totalProjectsCount) * 100).toFixed(1) : 0
+    },
+    {
+      id: 'batal',
+      nama: 'Paket Batal',
+      singkatan: 'Paket Batal',
+      warna: '#dc2626',
+      count: batalCount,
+      persen: totalProjectsCount > 0 ? ((batalCount / totalProjectsCount) * 100).toFixed(1) : 0
+    }
+  ].filter((s) => s.count > 0);
+
   // Filter projects for the table below
   const filteredProjects = projects.filter((p) => {
-    // Stage filter
-    if (selectedStage && getProjectLifecycleStage(p) !== selectedStage) {
-      return false;
+    // Stage filter (Kumulatif untuk tahap 1-6, tepat untuk batal)
+    if (selectedStage) {
+      if (selectedStage === 'batal') {
+        if (getProjectLifecycleStage(p) !== 'batal') return false;
+      } else {
+        const targetStage = LIFECYCLE_STAGES.find((s) => s.id === selectedStage);
+        if (!targetStage || getProjectLifecycleStage(p) === 'batal' || getProjectStageOrder(p) < targetStage.order) {
+          return false;
+        }
+      }
     }
 
     // Bidang filter
@@ -199,7 +262,7 @@ const StageProgressDiagram = ({
               border: '1px solid #e2e8f0'
             }}
           >
-            {stageStats.map((st) => {
+            {distributionSegments.map((st) => {
               if (st.count === 0) return null;
               const isSelected = selectedStage === st.id;
               return (
@@ -249,7 +312,7 @@ const StageProgressDiagram = ({
               fontSize: 11.5
             }}
           >
-            {stageStats.map((st) => (
+            {distributionSegments.map((st) => (
               <div
                 key={st.id}
                 onClick={() => setSelectedStage(selectedStage === st.id ? null : st.id)}
@@ -260,10 +323,10 @@ const StageProgressDiagram = ({
                   cursor: 'pointer',
                   padding: '3px 8px',
                   borderRadius: 6,
-                  background: selectedStage === st.id ? st.bgLight : 'transparent',
+                  background: selectedStage === st.id ? `${st.warna}15` : 'transparent',
                   fontWeight: selectedStage === st.id ? 800 : 500,
                   color: selectedStage === st.id ? st.warna : '#475569',
-                  border: selectedStage === st.id ? `1px solid ${st.borderColor}` : '1px solid transparent',
+                  border: selectedStage === st.id ? `1px solid ${st.warna}` : '1px solid transparent',
                   transition: 'all 0.15s ease'
                 }}
               >
@@ -275,7 +338,7 @@ const StageProgressDiagram = ({
                     background: st.warna
                   }}
                 />
-                <span>{st.singkatan} ({st.count})</span>
+                <span>{st.singkatan} ({st.count} - {st.persen}%)</span>
               </div>
             ))}
           </div>
@@ -340,7 +403,7 @@ const StageProgressDiagram = ({
                       letterSpacing: 0.3
                     }}
                   >
-                    Tahap {st.order}
+                    {st.id === 'batal' ? 'Paket Batal' : `Tahap ${st.order}`}
                   </span>
 
                   {isSelected && (
@@ -387,7 +450,9 @@ const StageProgressDiagram = ({
 
                 {/* Rupiah Value */}
                 <div style={{ fontSize: 11, fontWeight: 700, color: st.warna, wordBreak: 'break-all' }}>
-                  {st.id === 'fisik' || st.id === 'selesai'
+                  {st.id === 'batal'
+                    ? 'Pagu Dihapus / Rp 0'
+                    : st.id === 'fisik' || st.id === 'selesai'
                     ? `Rp ${Math.round(st.kontrakTotal).toLocaleString('id-ID')} Kontrak`
                     : `Rp ${Math.round(st.paguTotal).toLocaleString('id-ID')} Pagu`}
                 </div>
@@ -609,7 +674,8 @@ const StageProgressDiagram = ({
                 bProjects = [...bProjects].sort((a, b) => (parseFloat(a.dataFisik?.progresRealisasi) || 0) - (parseFloat(b.dataFisik?.progresRealisasi) || 0));
               }
 
-              const bTerkontrak = bProjects.filter((p) => p.isKontrak);
+              const bTerkontrak = bProjects.filter((p) => p.isKontrak && !p.isBatal);
+              const bBatal = bProjects.filter((p) => p.isBatal || p.statusTahapPraKontrak === 'batal');
               const bTotalPagu = bProjects.reduce((sum, p) => sum + (parseFloat(p.paguAnggaran) || 0), 0);
               const bTotalKontrak = bTerkontrak.reduce((sum, p) => sum + (parseFloat(p.dataKontrak?.nilaiKontrak) || 0), 0);
               const bRataFisik =
@@ -627,6 +693,7 @@ const StageProgressDiagram = ({
                 bidang,
                 projects: bProjects,
                 terkontrakCount: bTerkontrak.length,
+                batalCount: bBatal.length,
                 totalPagu: bTotalPagu,
                 totalKontrak: bTotalKontrak,
                 rataFisik: bRataFisik,
@@ -992,7 +1059,27 @@ const StageProgressDiagram = ({
 
                                         {/* Status di Tahap Ini */}
                                         <td>
-                                          {p.isKontrak ? (
+                                          {p.isBatal || p.statusTahapPraKontrak === 'batal' ? (
+                                            <div>
+                                              <span
+                                                style={{
+                                                  display: 'inline-block',
+                                                  padding: '2px 8px',
+                                                  borderRadius: 4,
+                                                  background: 'rgba(220, 38, 38, 0.1)',
+                                                  color: '#dc2626',
+                                                  fontSize: 11,
+                                                  fontWeight: 800,
+                                                  border: '1px solid rgba(220, 38, 38, 0.25)'
+                                                }}
+                                              >
+                                                Paket Batal
+                                              </span>
+                                              <div style={{ fontSize: 11, color: '#ef4444', marginTop: 3, maxWidth: 220 }}>
+                                                {p.keterangan || 'Dihapus di APBD-P / Tidak Dilaksanakan'}
+                                              </div>
+                                            </div>
+                                          ) : p.isKontrak ? (
                                             <div>
                                               <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontWeight: 700, fontSize: 12.5 }}>
                                                 <span style={{ color: fRealisasi >= 100 ? '#0284c7' : '#059669' }}>

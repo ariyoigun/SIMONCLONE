@@ -2805,7 +2805,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -2902,7 +2904,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -2987,7 +2991,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -3084,16 +3090,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -3171,16 +3179,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_30",
     "kodeSubKegiatan": "1.03.02.2.01.01",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -3258,7 +3268,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -3345,7 +3357,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "Perubahan",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -3432,16 +3446,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket dihapus diperubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -3519,16 +3535,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_31",
     "kodeSubKegiatan": "1.03.02.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket dihapus diperubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -3604,7 +3622,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_32",
     "kodeSubKegiatan": "1.03.02.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -3701,7 +3721,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_32",
     "kodeSubKegiatan": "1.03.02.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -3796,7 +3818,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_33",
     "kodeSubKegiatan": "1.03.02.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -3891,7 +3915,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_34",
     "kodeSubKegiatan": "1.03.02.2.01.24",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -3986,7 +4012,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_35",
     "kodeSubKegiatan": "1.03.02.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -4081,7 +4109,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_36",
     "kodeSubKegiatan": "1.03.02.2.01.26",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -4176,7 +4206,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -4271,7 +4303,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -4358,7 +4392,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -4453,7 +4489,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -4548,7 +4586,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -4635,7 +4675,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -4730,7 +4772,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -4815,16 +4859,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "isKontrak": true,
+    "isBatal": true,
+    "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "kontrak",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "kontrak",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "kontrak",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -4900,16 +4946,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "isKontrak": true,
+    "isBatal": true,
+    "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "kontrak",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "kontrak",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "kontrak",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -4987,7 +5035,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -5082,7 +5132,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -5167,7 +5219,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -5262,7 +5316,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -5357,7 +5413,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -5452,7 +5510,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -5547,7 +5607,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -5642,7 +5704,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -5737,7 +5801,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -5832,7 +5898,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -5917,7 +5985,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-08",
@@ -6012,7 +6082,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-08",
@@ -6099,7 +6171,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -6184,7 +6258,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -6269,7 +6345,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "swakelola",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -6366,7 +6444,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -6463,7 +6543,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -6550,7 +6632,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -6637,7 +6721,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -6724,7 +6810,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -6811,16 +6899,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "swakelola PERUBAHAN",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -6898,7 +6988,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -6995,7 +7087,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -7082,7 +7176,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -7169,7 +7265,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -7256,7 +7354,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -7343,7 +7443,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -7430,7 +7532,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -7517,7 +7621,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -7604,7 +7710,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -7691,7 +7799,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -7778,7 +7888,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -7865,7 +7977,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -7952,7 +8066,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -8039,7 +8155,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -8126,7 +8244,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -8223,7 +8343,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -8310,7 +8432,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -8397,7 +8521,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -8484,7 +8610,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -8571,7 +8699,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -8658,7 +8788,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -8745,7 +8877,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -8832,7 +8966,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -8919,7 +9055,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -9006,7 +9144,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -9094,7 +9234,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -9181,7 +9323,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -9268,7 +9412,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_37",
     "kodeSubKegiatan": "1.03.02.2.01.08",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -9355,7 +9501,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_38",
     "kodeSubKegiatan": "1.03.02.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -9442,7 +9590,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_38",
     "kodeSubKegiatan": "1.03.02.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -9527,7 +9677,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_39",
     "kodeSubKegiatan": "1.03.02.2.01.10",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -9622,7 +9774,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_39",
     "kodeSubKegiatan": "1.03.02.2.01.10",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -9707,16 +9861,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_40",
     "kodeSubKegiatan": "1.03.02.2.01.11",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -9792,7 +9948,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_40",
     "kodeSubKegiatan": "1.03.02.2.01.11",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -9889,7 +10047,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_40",
     "kodeSubKegiatan": "1.03.02.2.01.11",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -9974,7 +10134,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -10069,16 +10231,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10154,7 +10318,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -10249,7 +10415,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -10344,16 +10512,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10429,7 +10599,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -10524,7 +10696,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -10609,16 +10783,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10694,16 +10870,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10779,16 +10957,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10864,16 +11044,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -10949,16 +11131,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11034,7 +11218,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -11125,11 +11311,16 @@ export const REAL_PROJECTS_2026 = [
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
     "latitude": -6.8944,
     "longitude": 110.6385,
-    "tags": [],
-    "isPublicHighlight": false,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -11221,12 +11412,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -11318,12 +11512,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -11418,16 +11615,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -11506,7 +11705,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-13",
@@ -11593,7 +11794,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-13",
@@ -11680,7 +11883,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -11767,7 +11972,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -11854,7 +12061,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -11941,7 +12150,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -12038,7 +12249,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -12125,7 +12338,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -12212,7 +12427,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -12299,7 +12516,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -12386,7 +12605,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -12473,7 +12694,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -12560,7 +12783,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -12647,7 +12872,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -12734,7 +12961,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_41",
     "kodeSubKegiatan": "1.03.02.2.01.63",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -12821,7 +13050,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_42",
     "kodeSubKegiatan": "1.03.02.2.01.13",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -12906,7 +13137,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -13003,7 +13236,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -13090,7 +13325,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -13187,7 +13424,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_43",
     "kodeSubKegiatan": "1.03.02.2.02.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -13274,7 +13513,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_44",
     "kodeSubKegiatan": "1.03.02.2.02.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -13369,7 +13610,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_45",
     "kodeSubKegiatan": "1.03.02.2.02.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -13464,7 +13707,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_46",
     "kodeSubKegiatan": "1.03.02.2.02.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -13561,7 +13806,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_sda_bk_47",
     "kodeSubKegiatan": "1.03.02.2.02.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -13646,16 +13893,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_48",
     "kodeSubKegiatan": "1.03.02.2.02.06",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -13731,7 +13980,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_49",
     "kodeSubKegiatan": "1.03.03.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
@@ -13826,7 +14077,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_49",
     "kodeSubKegiatan": "1.03.03.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
@@ -13921,7 +14174,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_49",
     "kodeSubKegiatan": "1.03.03.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-05-11",
@@ -14016,7 +14271,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
@@ -14111,16 +14368,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -14196,7 +14455,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
@@ -14281,7 +14542,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "14 September - 12 November 2026",
@@ -14366,7 +14629,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
@@ -14461,7 +14726,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
@@ -14556,16 +14823,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -14641,7 +14910,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "14 September - 12 November 2026",
@@ -14736,7 +15007,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
@@ -14831,7 +15104,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "15 September - 13 November 2026",
@@ -14916,7 +15191,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 24 Desember2026",
@@ -15001,7 +15278,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -15096,7 +15375,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 24 Desember2026",
@@ -15181,7 +15462,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 24 Desember2026",
@@ -15266,7 +15549,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 24 Desember2026",
@@ -15351,7 +15636,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_50",
     "kodeSubKegiatan": "1.03.03.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 24 Desember2026",
@@ -15436,7 +15723,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "14 September - 12 November 2026",
@@ -15521,7 +15810,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
@@ -15606,7 +15897,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 24 Desember2026",
@@ -15691,16 +15984,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15776,7 +16071,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 24 Desember2026",
@@ -15861,16 +16158,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -15946,7 +16245,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_51",
     "kodeSubKegiatan": "1.03.03.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "24 Agustus - 22 Oktober 2026",
@@ -16031,7 +16332,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_52",
     "kodeSubKegiatan": "1.03.05.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -16126,7 +16429,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_53",
     "kodeSubKegiatan": "1.03.05.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -16221,7 +16526,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -16316,16 +16623,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -16401,7 +16710,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "7 Juli - Desember 2026",
@@ -16496,7 +16807,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "7 Juli - Desember 2026",
@@ -16591,7 +16904,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "7 Juli - Desember 2026",
@@ -16686,7 +17001,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "7 Juli - Desember 2026",
@@ -16781,7 +17098,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "7 Juli - Desember 2026",
@@ -16876,7 +17195,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_54",
     "kodeSubKegiatan": "1.03.05.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "swakelola",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -16961,7 +17282,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-02-25",
@@ -17046,7 +17369,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-05-08",
@@ -17141,7 +17466,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "23 Oktober - 6 November 2026",
@@ -17236,7 +17563,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_55",
     "kodeSubKegiatan": "1.03.05.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -17331,16 +17660,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17418,7 +17749,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 18 Desember 2026",
@@ -17503,7 +17836,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "28 September - 9 Oktober 2026",
@@ -17588,7 +17923,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 November - 21 Desember 2026",
@@ -17673,7 +18010,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -17768,16 +18107,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17853,16 +18194,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -17938,16 +18281,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_56",
     "kodeSubKegiatan": "1.03.06.2.01.01",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -18025,7 +18370,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
@@ -18122,7 +18469,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
@@ -18219,7 +18568,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
@@ -18314,7 +18665,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -18409,7 +18762,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -18506,7 +18861,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -18604,7 +18961,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -18699,7 +19058,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "10 Agustus - 8 Oktober 2026",
@@ -18794,7 +19155,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -18889,7 +19252,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -18986,7 +19351,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-05",
@@ -19083,7 +19450,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-05",
@@ -19178,7 +19547,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -19263,7 +19634,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "19 Agustus - 16 November 2026",
@@ -19348,7 +19721,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "13 November - 20 Desember 2026",
@@ -19435,7 +19810,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "28 September - 9 Oktober 2026",
@@ -19530,16 +19907,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "minggu ini kontrak",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19615,7 +19994,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "28 September - 9 Oktober 2026",
@@ -19700,16 +20081,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "minggu ini kontrak",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -19787,7 +20170,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "20 oktober - 18 desember 2026",
@@ -19874,7 +20259,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "30 Oktober - 18 Desember 2026",
@@ -19959,7 +20346,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "30 Oktober - 18 Desember 2026",
@@ -20047,7 +20436,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "30 Oktober - 18 Desember 2026",
@@ -20144,7 +20535,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "30 Oktober - 18 Desember 2026",
@@ -20239,16 +20632,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_57",
     "kodeSubKegiatan": "1.03.06.2.01.09",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "swakelola",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -20326,7 +20721,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_58",
     "kodeSubKegiatan": "1.03.06.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -20421,7 +20818,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-07",
@@ -20506,7 +20905,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
@@ -20601,7 +21002,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -20686,16 +21089,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -20771,7 +21176,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -20868,7 +21275,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
@@ -20965,7 +21374,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
@@ -21052,7 +21463,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
@@ -21149,7 +21562,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-06",
@@ -21236,7 +21651,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-03",
@@ -21323,7 +21740,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-03",
@@ -21410,7 +21829,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-06",
@@ -21497,7 +21918,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-06",
@@ -21584,7 +22007,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-06",
@@ -21671,7 +22096,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-06",
@@ -21758,7 +22185,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-06",
@@ -21845,7 +22274,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-03",
@@ -21932,7 +22363,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_59",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-03",
@@ -22017,7 +22450,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -22112,7 +22547,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -22207,16 +22644,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -22292,7 +22731,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -22387,7 +22828,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -22482,7 +22925,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -22577,7 +23022,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -22672,7 +23119,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -22767,7 +23216,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-03",
@@ -22862,7 +23313,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-03",
@@ -22957,7 +23410,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-03",
@@ -23052,7 +23507,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -23147,7 +23604,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
@@ -23242,7 +23701,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
@@ -23337,7 +23798,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-12",
@@ -23434,7 +23897,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
@@ -23529,16 +23994,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -23614,7 +24081,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -23699,7 +24168,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -23794,7 +24265,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-10",
@@ -23881,7 +24354,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-10",
@@ -23966,16 +24441,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24051,16 +24528,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24136,16 +24615,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24221,16 +24702,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24306,16 +24789,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -24391,7 +24876,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -24488,7 +24975,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-05",
@@ -24575,7 +25064,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-02",
@@ -24672,7 +25163,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-05",
@@ -24759,7 +25252,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-10",
@@ -24846,7 +25341,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-10",
@@ -24933,7 +25430,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-10",
@@ -25020,7 +25519,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -25107,7 +25608,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -25194,7 +25697,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -25281,16 +25786,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Tidak dilaksanakan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -25368,7 +25875,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -25455,7 +25964,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -25542,7 +26053,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-26",
@@ -25629,7 +26142,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-26",
@@ -25717,7 +26232,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-05",
@@ -25804,7 +26321,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
@@ -25901,7 +26420,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-05",
@@ -25989,7 +26510,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -26086,7 +26609,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -26174,7 +26699,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-30",
@@ -26261,7 +26788,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-30",
@@ -26348,7 +26877,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_cipta_karya_60",
     "kodeSubKegiatan": "1.03.08.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-28",
@@ -26443,7 +26974,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_cipta_karya_61",
     "kodeSubKegiatan": "1.03.08.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -26540,7 +27073,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-29",
@@ -26627,7 +27162,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-29",
@@ -26714,7 +27251,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -26801,7 +27340,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -26888,7 +27429,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -26975,7 +27518,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -27062,7 +27607,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_62",
     "kodeSubKegiatan": "1.03.10.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-07",
@@ -27147,7 +27694,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -27242,7 +27791,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -27337,16 +27888,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -27422,7 +27975,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -27517,7 +28072,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-08",
@@ -27602,7 +28159,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -27697,7 +28256,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -27792,7 +28353,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -27887,7 +28450,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -27982,7 +28547,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -28077,7 +28644,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -28172,7 +28741,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -28267,7 +28838,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -28362,7 +28935,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -28457,7 +29032,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-07",
@@ -28552,7 +29129,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-07",
@@ -28647,7 +29226,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-07",
@@ -28742,7 +29323,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -28837,7 +29420,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -28932,7 +29517,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -29027,7 +29614,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -29122,7 +29711,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -29217,7 +29808,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -29312,7 +29905,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -29407,7 +30002,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -29502,7 +30099,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "'8 April 2026",
@@ -29597,7 +30196,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-21",
@@ -29682,7 +30283,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "'07 April 2026",
@@ -29777,7 +30380,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -29872,7 +30477,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "'8 April 2026",
@@ -29967,7 +30574,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-21",
@@ -30052,16 +30661,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30137,16 +30748,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30222,16 +30835,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": true,
     "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -30309,7 +30924,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-21",
@@ -30404,7 +31021,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "'8 April 2026",
@@ -30499,7 +31118,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-21",
@@ -30584,7 +31205,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "swakelola",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -30679,7 +31302,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-23",
@@ -30774,7 +31399,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -30869,7 +31496,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-07",
@@ -30964,7 +31593,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -31059,7 +31690,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-21",
@@ -31144,7 +31777,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "retender",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -31229,7 +31864,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-04",
@@ -31324,7 +31961,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -31419,7 +32058,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-05",
@@ -31511,12 +32152,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -31608,12 +32252,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-07",
@@ -31704,11 +32351,16 @@ export const REAL_PROJECTS_2026 = [
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
     "latitude": -6.8944,
     "longitude": 110.6385,
-    "tags": [],
-    "isPublicHighlight": false,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-01",
@@ -31800,12 +32452,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-07",
@@ -31897,12 +32552,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-21",
@@ -31994,12 +32652,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-07",
@@ -32091,12 +32752,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-08",
@@ -32188,12 +32852,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-08",
@@ -32284,11 +32951,16 @@ export const REAL_PROJECTS_2026 = [
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Karangawen)",
     "latitude": -6.8944,
     "longitude": 110.6385,
-    "tags": [],
-    "isPublicHighlight": false,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-01",
@@ -32380,12 +33052,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -32477,12 +33152,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -32574,12 +33252,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-28",
@@ -32670,11 +33351,16 @@ export const REAL_PROJECTS_2026 = [
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
     "latitude": -6.8944,
     "longitude": 110.6385,
-    "tags": [],
-    "isPublicHighlight": false,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-01",
@@ -32766,12 +33452,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-05",
@@ -32863,12 +33552,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-07",
@@ -32960,12 +33652,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-07",
@@ -33057,12 +33752,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-31",
@@ -33154,12 +33852,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-07",
@@ -33251,12 +33952,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-21",
@@ -33348,28 +34052,31 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "RETENDER",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
     },
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/23",
+      "tanggalKontrak": "2026-08-18",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
@@ -33434,11 +34141,16 @@ export const REAL_PROJECTS_2026 = [
     "lokasiLengkap": "Kabupaten Demak, Jawa Tengah (Kecamatan Demak)",
     "latitude": -6.8944,
     "longitude": 110.6385,
-    "tags": [],
-    "isPublicHighlight": false,
+    "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
+      "Proyek Strategis"
+    ],
+    "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-01",
@@ -33530,12 +34242,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-01",
@@ -33630,16 +34345,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": true,
+    "isBatal": true,
+    "isKontrak": false,
+    "keterangan": "Paket Batal / Dihapus di Perubahan",
     "tahapPraKontrak": {
-      "status": "kontrak",
+      "status": "batal",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
+      "catatanPraKontrak": "Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan"
     },
-    "statusTahapPraKontrak": "kontrak",
+    "statusTahapPraKontrak": "batal",
     "dataPraKontrak": {
-      "tahapSaatIni": "kontrak",
+      "tahapSaatIni": "batal",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -33712,12 +34429,15 @@ export const REAL_PROJECTS_2026 = [
     "latitude": -6.8944,
     "longitude": 110.6385,
     "tags": [
+      "Bantuan Keuangan Provinsi (BANGUB)",
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -33814,7 +34534,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-31",
@@ -33909,7 +34631,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-31",
@@ -34006,7 +34730,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-16",
@@ -34093,7 +34819,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -34180,7 +34908,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -34267,7 +34997,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "'4 November 2026",
@@ -34354,7 +35086,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-20",
@@ -34441,7 +35175,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -34528,7 +35264,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -34615,7 +35353,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -34702,7 +35442,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -34789,7 +35531,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -34876,7 +35620,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-16",
@@ -34963,7 +35709,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-13",
@@ -35050,7 +35798,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -35147,7 +35897,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -35234,7 +35986,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -35322,16 +36076,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS Proses SPPBJ",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35409,16 +36165,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS Proses SPPBJ",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -35496,7 +36254,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -35583,7 +36343,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -35670,7 +36432,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -35757,7 +36521,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -35844,7 +36610,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -35932,7 +36700,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36019,7 +36789,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36107,7 +36879,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36194,7 +36968,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36281,7 +37057,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36368,7 +37146,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36456,7 +37236,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -36543,7 +37325,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -36630,7 +37414,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36717,7 +37503,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -36804,7 +37592,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36891,7 +37681,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -36979,7 +37771,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -37066,7 +37860,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -37154,7 +37950,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-13",
@@ -37241,7 +38039,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-13",
@@ -37329,7 +38129,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -37416,7 +38218,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -37504,7 +38308,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -37591,7 +38397,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -37678,7 +38486,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-04",
@@ -37765,7 +38575,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-04",
@@ -37852,7 +38664,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -37939,7 +38753,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38026,7 +38842,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38113,7 +38931,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38201,7 +39021,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38288,7 +39110,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38376,7 +39200,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38463,7 +39289,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38551,7 +39379,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-23",
@@ -38648,7 +39478,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-27",
@@ -38735,7 +39567,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38822,7 +39656,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38909,7 +39745,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -38997,7 +39835,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-28",
@@ -39094,7 +39934,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-28",
@@ -39182,7 +40024,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -39269,7 +40113,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -39357,7 +40203,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -39444,7 +40292,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -39531,7 +40381,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -39618,7 +40470,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -39706,7 +40560,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -39803,7 +40659,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -39891,7 +40749,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-16",
@@ -39978,7 +40838,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-15",
@@ -40065,7 +40927,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-02",
@@ -40152,7 +41016,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS (belum tanyang)",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-05",
@@ -40239,16 +41105,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS (belum tanyang)",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -40326,7 +41194,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -40413,7 +41283,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -40500,7 +41372,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-05",
@@ -40587,7 +41461,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-16",
@@ -40675,7 +41551,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -40772,7 +41650,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-10",
@@ -40859,16 +41739,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "(belum tanyang)",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -40946,7 +41828,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -41033,7 +41917,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -41120,7 +42006,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-30",
@@ -41207,7 +42095,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-19",
@@ -41304,7 +42194,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -41391,16 +42283,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -41478,7 +42372,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-28",
@@ -41565,7 +42461,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PROGRAM PRIORITAS",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-16",
@@ -41662,7 +42560,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -41749,7 +42649,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-05",
@@ -41836,7 +42738,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -41923,7 +42827,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_63",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -42008,7 +42914,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-16",
@@ -42103,7 +43011,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-16",
@@ -42198,7 +43108,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-02",
@@ -42293,7 +43205,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-16",
@@ -42388,7 +43302,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-04",
@@ -42483,7 +43399,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-17",
@@ -42578,7 +43496,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-24",
@@ -42673,7 +43593,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-06",
@@ -42768,7 +43690,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-28",
@@ -42863,7 +43787,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-06-11",
@@ -42958,7 +43884,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-08",
@@ -43055,7 +43983,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -43152,7 +44082,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-16",
@@ -43239,16 +44171,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -43326,16 +44260,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -43413,7 +44349,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-13",
@@ -43500,7 +44438,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_64",
     "kodeSubKegiatan": "1.03.10.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "PERUBAHAN",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-23",
@@ -43585,7 +44525,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -43680,7 +44622,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-31",
@@ -43775,7 +44719,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -43870,16 +44816,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -43955,16 +44903,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -44040,16 +44990,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_65",
     "kodeSubKegiatan": "1.03.10.2.01.04",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -44125,7 +45077,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-25",
@@ -44210,7 +45164,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-24",
@@ -44295,7 +45251,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-27",
@@ -44380,7 +45338,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-16",
@@ -44465,7 +45425,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -44550,7 +45512,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "31 Agustus 2026 s/13 Desember 2026",
@@ -44635,7 +45599,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -44720,7 +45686,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-08",
@@ -44805,7 +45773,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-31",
@@ -44890,7 +45860,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_66",
     "kodeSubKegiatan": "1.03.10.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-08",
@@ -44975,7 +45947,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-20",
@@ -45070,7 +46044,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-15",
@@ -45165,7 +46141,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-21",
@@ -45250,7 +46228,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -45335,7 +46315,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-01",
@@ -45430,7 +46412,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-08",
@@ -45525,7 +46509,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-21",
@@ -45612,7 +46598,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_67",
     "kodeSubKegiatan": "1.03.10.2.01.06",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-10",
@@ -45699,7 +46687,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-23",
@@ -45794,7 +46784,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-23",
@@ -45881,7 +46873,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -45976,7 +46970,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-08",
@@ -46071,7 +47067,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-30",
@@ -46156,7 +47154,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-31",
@@ -46251,7 +47251,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-08",
@@ -46346,7 +47348,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-31",
@@ -46431,7 +47435,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -46526,7 +47532,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -46621,7 +47629,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-08-18",
@@ -46716,7 +47726,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-11",
@@ -46811,7 +47823,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-04-08",
@@ -46906,7 +47920,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-09-14",
@@ -46993,7 +48009,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-04",
@@ -47080,7 +48098,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -47167,7 +48187,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-17",
@@ -47254,16 +48276,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "BELUM TAYANG",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -47341,7 +48365,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -47428,7 +48454,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-30",
@@ -47515,7 +48543,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-08",
@@ -47612,7 +48642,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-30",
@@ -47699,7 +48731,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-16",
@@ -47786,7 +48820,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-11-12",
@@ -47883,16 +48919,18 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
-    "isKontrak": false,
+    "isBatal": false,
+    "isKontrak": true,
+    "keterangan": "BELUM TAYANG",
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
       "targetSelesaiTender": "2026-11-30",
-      "catatanPraKontrak": "Pekerjaan dalam tahapan persiapan RUP"
+      "catatanPraKontrak": "Kontrak pelaksanaan pekerjaan telah berjalan"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-03-01"
       }
@@ -47970,7 +49008,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -48057,7 +49097,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -48144,7 +49186,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bina_marga_68",
     "kodeSubKegiatan": "1.03.10.2.01.07",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-29",
@@ -48229,7 +49273,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_69",
     "kodeSubKegiatan": "1.03.11.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-22",
@@ -48314,7 +49360,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_69",
     "kodeSubKegiatan": "1.03.11.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -48409,7 +49457,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_sda_bk_70",
     "kodeSubKegiatan": "1.03.11.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -48504,7 +49554,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_71",
     "kodeSubKegiatan": "1.03.12.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-02-27",
@@ -48599,7 +49651,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_72",
     "kodeSubKegiatan": "1.03.12.2.01.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -48694,7 +49748,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_73",
     "kodeSubKegiatan": "1.03.12.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -48789,7 +49845,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-10",
@@ -48884,7 +49942,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-10-01",
@@ -48979,7 +50039,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49074,7 +50136,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_74",
     "kodeSubKegiatan": "1.03.12.2.01.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49159,7 +50223,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_75",
     "kodeSubKegiatan": "1.03.12.2.01.05",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49254,7 +50320,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_76",
     "kodeSubKegiatan": "1.03.12.2.02.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49349,7 +50417,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_77",
     "kodeSubKegiatan": "1.03.12.2.02.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49444,7 +50514,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_78",
     "kodeSubKegiatan": "1.03.12.2.02.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49539,7 +50611,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_79",
     "kodeSubKegiatan": "1.03.12.2.02.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49634,7 +50708,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_80",
     "kodeSubKegiatan": "1.03.12.2.03.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49729,7 +50805,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_81",
     "kodeSubKegiatan": "1.03.12.2.03.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49824,7 +50902,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_82",
     "kodeSubKegiatan": "1.03.12.2.03.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -49919,7 +50999,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_83",
     "kodeSubKegiatan": "1.03.12.2.03.04",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-07-10",
@@ -50014,7 +51096,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_84",
     "kodeSubKegiatan": "1.03.12.2.04.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -50109,7 +51193,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_85",
     "kodeSubKegiatan": "1.03.12.2.04.02",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -50204,7 +51290,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_86",
     "kodeSubKegiatan": "1.03.12.2.04.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -50299,7 +51387,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_86",
     "kodeSubKegiatan": "1.03.12.2.04.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -50394,7 +51484,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_87",
     "kodeSubKegiatan": "2.10.01.2.01.03",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -50489,7 +51581,9 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": false,
     "subKegiatanId": "sub_tata_ruang_88",
     "kodeSubKegiatan": "2.10.02.2.01.01",
+    "isBatal": false,
     "isKontrak": true,
+    "keterangan": "",
     "tahapPraKontrak": {
       "status": "kontrak",
       "targetMulaiTender": "2026-03-01",
@@ -50571,6 +51665,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-SDA-0123",
     "tipePengadaan": "Tender",
     "paguAnggaran": 500000000,
@@ -50669,6 +51766,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-SDA-0124",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1400000000,
@@ -50767,6 +51867,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-SDA-0125",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -50865,6 +51968,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0348",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1500000000,
@@ -50963,6 +52069,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0349",
     "tipePengadaan": "Tender",
     "paguAnggaran": 2000000000,
@@ -51061,6 +52170,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0350",
     "tipePengadaan": "Tender",
     "paguAnggaran": 450000000,
@@ -51159,6 +52271,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0351",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -51257,6 +52372,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0352",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -51355,6 +52473,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0353",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -51453,6 +52574,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0354",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -51551,6 +52675,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0355",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -51649,6 +52776,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0356",
     "tipePengadaan": "Tender",
     "paguAnggaran": 500000000,
@@ -51747,6 +52877,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0357",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -51845,6 +52978,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0358",
     "tipePengadaan": "Tender",
     "paguAnggaran": 2000000000,
@@ -51943,6 +53079,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0359",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -52041,6 +53180,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0360",
     "tipePengadaan": "Tender",
     "paguAnggaran": 800000000,
@@ -52139,6 +53281,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0361",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -52237,6 +53382,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0362",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -52335,6 +53483,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0363",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -52433,6 +53584,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0364",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -52531,6 +53685,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0365",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -52629,6 +53786,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0366",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -52727,6 +53887,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "RETENDER",
     "kodeRup": "RUP-2026-BIN-0367",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1500000000,
@@ -52743,16 +53906,16 @@ export const REAL_PROJECTS_2026 = [
     "isPublicHighlight": true,
     "subKegiatanId": "sub_bangub_1",
     "kodeSubKegiatan": "1.03.10.2.99",
-    "isKontrak": false,
+    "isKontrak": true,
     "tahapPraKontrak": {
-      "status": "rup",
+      "status": "kontrak",
       "targetMulaiTender": "",
       "targetSelesaiTender": "",
-      "catatanPraKontrak": "Persiapan"
+      "catatanPraKontrak": "Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)"
     },
-    "statusTahapPraKontrak": "rup",
+    "statusTahapPraKontrak": "kontrak",
     "dataPraKontrak": {
-      "tahapSaatIni": "rup",
+      "tahapSaatIni": "kontrak",
       "jadwalPraKontrak": {
         "targetMulaiPekerjaan": "2026-08-01"
       }
@@ -52815,6 +53978,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0368",
     "tipePengadaan": "Tender",
     "paguAnggaran": 700000000,
@@ -52913,6 +54079,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0369",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,
@@ -53011,6 +54180,9 @@ export const REAL_PROJECTS_2026 = [
     "kategoriPekerjaan": "Fisik",
     "jenisAnggaran": "Murni",
     "sumberDana": "Bantuan Keuangan Provinsi (BANGUB)",
+    "isBangub": true,
+    "isBatal": false,
+    "keterangan": "Bantuan Keuangan Provinsi",
     "kodeRup": "RUP-2026-BIN-0371",
     "tipePengadaan": "Tender",
     "paguAnggaran": 1000000000,

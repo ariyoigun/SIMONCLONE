@@ -9816,8 +9816,8 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -9844,7 +9844,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -18885,11 +18885,11 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
-      "nomorKontrak": "",
-      "tanggalKontrak": "",
+      "nomorKontrak": "000.3.7/BANGUB.SP.2026/23",
+      "tanggalKontrak": "2026-08-18",
       "tanggalMulai": "2026-03-01",
       "tanggalSelesai": "2026-11-30",
       "nilaiKontrak": 0,
@@ -18913,7 +18913,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -19613,8 +19613,8 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -19641,7 +19641,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -22263,8 +22263,8 @@ export const MONITORING_PAKET_2026 = [
       "APBD Perubahan"
     ],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -22291,7 +22291,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -22694,8 +22694,8 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -22722,7 +22722,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -23212,8 +23212,8 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -23240,7 +23240,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -23914,8 +23914,8 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -23942,7 +23942,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -25188,8 +25188,8 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -25216,7 +25216,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -32109,8 +32109,8 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -32137,7 +32137,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -39340,8 +39340,8 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -39368,7 +39368,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -39426,8 +39426,8 @@ export const MONITORING_PAKET_2026 = [
       "Program Prioritas Bupati"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -39454,7 +39454,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -41192,8 +41192,8 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -41220,7 +41220,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -41278,8 +41278,8 @@ export const MONITORING_PAKET_2026 = [
       "Proyek Strategis"
     ],
     "isPublicHighlight": true,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -41306,7 +41306,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,
@@ -41720,8 +41720,8 @@ export const MONITORING_PAKET_2026 = [
     "longitude": 110.6385,
     "tags": [],
     "isPublicHighlight": false,
-    "isKontrak": false,
-    "statusTahapPraKontrak": "rup",
+    "isKontrak": true,
+    "statusTahapPraKontrak": "kontrak",
     "dataKontrak": {
       "nomorKontrak": "",
       "tanggalKontrak": "",
@@ -41748,7 +41748,7 @@ export const MONITORING_PAKET_2026 = [
       "terminHistory": []
     },
     "tahapanPencairan": {
-      "berkasBelumMasuk": true,
+      "berkasBelumMasuk": false,
       "berkasMasuk": false,
       "koreksi": false,
       "berkasRevisiMasuk": false,

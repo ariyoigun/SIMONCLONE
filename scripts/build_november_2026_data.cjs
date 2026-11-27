@@ -455,9 +455,9 @@ for (let i = 8; i < rows.length; i++) {
       if (isPerubahan) tags.push('APBD Perubahan');
       if (pagu >= 1000000000) tags.push('Proyek Strategis');
 
-      const hasContract = Boolean(tglKontrak) || (nilaiKontrak > 0) || Boolean(noKontrak) || (Boolean(pelaksana) && pelaksana !== '-') || (fRealisasi > 0) || (pencairan > 0);
-      const isKontrak = hasContract;
-      const statusTahapPraKontrak = isKontrak ? 'kontrak' : 'rup';
+      const isBatal = (pagu === 0) || /dihapus|batal|tidak dilaksanakan/i.test(keterangan);
+      const isKontrak = !isBatal;
+      const statusTahapPraKontrak = isBatal ? 'batal' : 'kontrak';
 
       let spjStatus = 'belum_masuk';
       if (baseValue > 0 && pencairan >= baseValue) {
@@ -512,14 +512,16 @@ for (let i = 8; i < rows.length; i++) {
         isPublicHighlight: existing?.isPublicHighlight !== undefined ? existing.isPublicHighlight : (pagu >= 1000000000 || isPrioritas),
         subKegiatanId: curSubKeg.id,
         kodeSubKegiatan: curSubKeg.kodeSubKegiatan,
+        isBatal: Boolean(isBatal),
         isKontrak: Boolean(isKontrak),
+        keterangan: keterangan || (isBatal ? 'Paket Batal / Dihapus di Perubahan' : (isPrioritas ? 'PROGRAM PRIORITAS' : (isPerubahan ? 'PERUBAHAN' : ''))),
         tahapPraKontrak: {
           status: statusTahapPraKontrak,
           targetMulaiTender: tanggalMulai || '',
           targetSelesaiTender: tanggalSelesai || '',
-          catatanPraKontrak: isKontrak
-            ? 'Kontrak pelaksanaan pekerjaan telah berjalan'
-            : 'Pekerjaan dalam tahapan persiapan RUP'
+          catatanPraKontrak: isBatal
+            ? 'Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan'
+            : 'Kontrak pelaksanaan pekerjaan telah berjalan'
         },
         statusTahapPraKontrak,
         dataPraKontrak: {
@@ -616,7 +618,9 @@ if (wsBg) {
     const fRealisasi = parseFloat(rawFisik.toFixed(2));
     const fTarget = fRealisasi;
 
-    const isKontrak = (nilaiKontrak > 0) || Boolean(pelaksana);
+    const isBatal = (pagu === 0) || /dihapus|batal|tidak dilaksanakan/i.test(String(r[17] || ''));
+    const isKontrak = !isBatal;
+    const statusTahapPraKontrak = isBatal ? 'batal' : 'kontrak';
     const baseVal = nilaiKontrak > 0 ? nilaiKontrak : (pagu > 0 ? pagu : 1);
     const persenKeu = parseFloat(((pencairan / baseVal) * 100).toFixed(2));
 
@@ -655,6 +659,9 @@ if (wsBg) {
       kategoriPekerjaan: 'Fisik',
       jenisAnggaran: 'Murni',
       sumberDana: 'Bantuan Keuangan Provinsi (BANGUB)',
+      isBangub: true,
+      isBatal: Boolean(isBatal),
+      keterangan: String(r[17] || '') || (isBatal ? 'Paket Batal' : 'Bantuan Keuangan Provinsi'),
       kodeRup: existing?.kodeRup || `RUP-2026-BG-${String(noBg).padStart(4, '0')}`,
       tipePengadaan,
       paguAnggaran: pagu,
@@ -670,14 +677,16 @@ if (wsBg) {
       kodeSubKegiatan: '1.03.10.2.99',
       isKontrak: Boolean(isKontrak),
       tahapPraKontrak: {
-        status: isKontrak ? 'kontrak' : 'rup',
+        status: statusTahapPraKontrak,
         targetMulaiTender: tglMulai || '',
         targetSelesaiTender: tglSelesai || '',
-        catatanPraKontrak: isKontrak ? 'Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)' : 'Persiapan'
+        catatanPraKontrak: isBatal
+          ? 'Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan'
+          : 'Pelaksanaan pekerjaan Bantuan Keuangan Provinsi (BANGUB)'
       },
-      statusTahapPraKontrak: isKontrak ? 'kontrak' : 'rup',
+      statusTahapPraKontrak,
       dataPraKontrak: {
-        tahapSaatIni: isKontrak ? 'kontrak' : 'rup',
+        tahapSaatIni: statusTahapPraKontrak,
         jadwalPraKontrak: { targetMulaiPekerjaan: tglMulai || '2026-08-01' }
       },
       dataKontrak: {

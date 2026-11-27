@@ -465,11 +465,11 @@ export const LIFECYCLE_STAGES = [
   },
   {
     id: 'batal',
-    order: 99,
-    nama: 'Dibatalkan (Batal)',
-    singkatan: 'Batal',
-    badgeText: 'Status: Batal',
-    deskripsi: 'Pekerjaan dibatalkan dan tidak dilanjutkan',
+    order: 7,
+    nama: 'Paket Batal',
+    singkatan: 'Paket Batal',
+    badgeText: 'Paket Batal',
+    deskripsi: 'Pekerjaan dihapus pada APBD Perubahan atau tidak dilaksanakan',
     warna: '#DC2626',
     warnaHover: '#B91C1C',
     bgLight: 'rgba(220, 38, 38, 0.1)',
@@ -478,23 +478,31 @@ export const LIFECYCLE_STAGES = [
 ];
 
 export const getProjectLifecycleStage = (project) => {
-  const status = project.tahapPraKontrak?.status;
-  if (status === 'batal') return 'batal';
+  const pagu = parseFloat(project?.paguAnggaran || 0);
+  const ket = (project?.keterangan || '').toLowerCase();
+  const status = project?.tahapPraKontrak?.status || project?.statusTahapPraKontrak;
 
-  if (project.isKontrak || status === 'kontrak') {
-    const fRealisasi = parseFloat(project.dataFisik?.progresRealisasi || 0);
-    if (fRealisasi >= 100) {
-      return 'selesai';
-    }
-    return 'fisik';
+  if (project?.isBatal || status === 'batal' || pagu === 0 || ket.includes('dihapus') || ket.includes('batal') || ket.includes('tidak dilaksanakan')) {
+    return 'batal';
   }
 
-  // Belum kontrak (Tahapan Pra-kontrak 1 - 10)
-  if (status === 'rup' || status === 'survei_lokasi' || status === 'survei_harga') return 'rup';
-  if (status === 'perencanaan' || status === 'hps') return 'perencanaan';
-  if (status === 'kirim_lpse' || status === 'rpp' || status === 'revisi' || status === 'tayang' || status === 're_tender' || status === 'pemilihan' || status === 'pbj') return 'pbj';
-  if (status === 'sppbj' || status === 'evaluasi') return 'sppbj';
-  return 'rup';
+  const fRealisasi = parseFloat(project?.dataFisik?.progresRealisasi || 0);
+  if (fRealisasi >= 100) {
+    return 'selesai';
+  }
+
+  return 'fisik';
+};
+
+export const getProjectStageOrder = (project) => {
+  const stage = getProjectLifecycleStage(project);
+  if (stage === 'batal') return 0;
+  if (stage === 'selesai') return 6;
+  if (stage === 'fisik') return 5;
+  if (stage === 'sppbj') return 4;
+  if (stage === 'pbj') return 3;
+  if (stage === 'perencanaan') return 2;
+  return 1;
 };
 
 export const DEFAULT_YEARS = [2024, 2025, 2026, 2027];

@@ -892,7 +892,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
         style={{
           maxWidth: '1000px',
           width: '95%',
-          maxHeight: '92vh',
+          maxHeight: '94vh',
+          height: '92vh',
           display: 'flex',
           flexDirection: 'column'
         }}
@@ -1009,7 +1010,7 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
           <div
             className="modal-body"
             style={{
-              padding: '20px 24px',
+              padding: '20px 24px 350px 24px',
               overflowY: 'auto',
               flex: 1,
               display: 'flex',
@@ -3050,6 +3051,8 @@ const ProjectModal = ({ isOpen, onClose, initialData = null }) => {
               )}
             </div>
 
+            {/* Spacer ekstra di bawah agar scroll leluasa sampai ke isian terbawah */}
+            <div style={{ height: 320, minHeight: 320, flexShrink: 0 }} />
           </div>
 
           {/* Footer Modal Action Buttons */}
